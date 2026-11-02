@@ -1,7 +1,7 @@
 {
  "source_words": "audio/final.words.json",
  "fps": 30,
- "total_s": 465.48,
+ "total_s": 467.24,
  "scenes": [
   {
    "id": "S01",
@@ -12,7 +12,7 @@
    "changes": [
     "cutaway draws on, contents go blue on 'refrigerator'",
     "side walls glow and shimmer on 'heat up'",
-    "question types on through 'food cold'"
+    "question types on 'food cold'"
    ],
    "text": [
     "Why does your fridge heat up to keep food cold?",
@@ -23,15 +23,15 @@
     "1.1"
    ],
    "start": 0.0,
-   "end": 3.21,
-   "duration": 3.21,
+   "end": 4.21,
+   "duration": 4.21,
    "cues": [
     0.54,
     1.48,
-    2.41
+    2.28
    ],
    "words": "why does your refrigerator have to heat up to keep your food cold",
-   "change_every_s": 1.1
+   "change_every_s": 1.4
   },
   {
    "id": "S02",
@@ -49,8 +49,8 @@
    "facts": [
     "1.1"
    ],
-   "start": 3.21,
-   "end": 9.65,
+   "start": 4.21,
+   "end": 10.65,
    "duration": 6.44,
    "cues": [
     0.41,
@@ -81,8 +81,8 @@
    "facts": [
     "1.1"
    ],
-   "start": 9.65,
-   "end": 16.09,
+   "start": 10.65,
+   "end": 17.09,
    "duration": 6.44,
    "cues": [
     0.83,
@@ -112,8 +112,8 @@
    "facts": [
     "5.3"
    ],
-   "start": 16.09,
-   "end": 26.51,
+   "start": 17.09,
+   "end": 27.51,
    "duration": 10.42,
    "cues": [
     1.95,
@@ -145,8 +145,8 @@
    "facts": [
     "2.2"
    ],
-   "start": 26.51,
-   "end": 36.33,
+   "start": 27.51,
+   "end": 37.33,
    "duration": 9.82,
    "cues": [
     1.23,
@@ -177,8 +177,8 @@
     "2.1",
     "2.2"
    ],
-   "start": 36.33,
-   "end": 43.95,
+   "start": 37.33,
+   "end": 44.95,
    "duration": 7.62,
    "cues": [
     0.81,
@@ -208,8 +208,8 @@
     "2.1",
     "2.2"
    ],
-   "start": 43.95,
-   "end": 50.73,
+   "start": 44.95,
+   "end": 51.73,
    "duration": 6.78,
    "cues": [
     0.3,
@@ -236,8 +236,8 @@
    "facts": [
     "2.2"
    ],
-   "start": 50.73,
-   "end": 57.45,
+   "start": 51.73,
+   "end": 58.45,
    "duration": 6.72,
    "cues": [
     3.13,
@@ -267,8 +267,8 @@
    "facts": [
     "2.1"
    ],
-   "start": 57.45,
-   "end": 76.69,
+   "start": 58.45,
+   "end": 77.69,
    "duration": 19.24,
    "cues": [
     1.59,
@@ -296,8 +296,8 @@
    "facts": [
     "2.3"
    ],
-   "start": 76.69,
-   "end": 85.51,
+   "start": 77.69,
+   "end": 86.51,
    "duration": 8.82,
    "cues": [
     3.43,
@@ -327,8 +327,8 @@
     "3.1",
     "3.3"
    ],
-   "start": 85.51,
-   "end": 95.35,
+   "start": 86.51,
+   "end": 96.35,
    "duration": 9.84,
    "cues": [
     3.99,
@@ -360,8 +360,8 @@
    "facts": [
     "3.9"
    ],
-   "start": 95.35,
-   "end": 106.65,
+   "start": 96.35,
+   "end": 107.65,
    "duration": 11.3,
    "cues": [
     1.25,
@@ -391,8 +391,8 @@
    "facts": [
     "3.6"
    ],
-   "start": 106.65,
-   "end": 116.59,
+   "start": 107.65,
+   "end": 117.59,
    "duration": 9.94,
    "cues": [
     1.43,
@@ -427,8 +427,8 @@
     "3.11",
     "5.3"
    ],
-   "start": 116.59,
-   "end": 135.25,
+   "start": 117.59,
+   "end": 136.25,
    "duration": 18.66,
    "cues": [
     1.79,
@@ -459,8 +459,8 @@
     "3.2",
     "2.3"
    ],
-   "start": 135.25,
-   "end": 151.57,
+   "start": 136.25,
+   "end": 152.57,
    "duration": 16.32,
    "cues": [
     0.83,
@@ -491,8 +491,8 @@
    "facts": [
     "1.1"
    ],
-   "start": 151.57,
-   "end": 163.45,
+   "start": 152.57,
+   "end": 164.45,
    "duration": 11.88,
    "cues": [
     3.91,
@@ -523,8 +523,8 @@
     "4.1",
     "3.3"
    ],
-   "start": 163.45,
-   "end": 174.59,
+   "start": 164.45,
+   "end": 175.59,
    "duration": 11.14,
    "cues": [
     3.13,
@@ -556,8 +556,8 @@
     "3.4",
     "3.9"
    ],
-   "start": 174.59,
-   "end": 192.17,
+   "start": 175.59,
+   "end": 193.17,
    "duration": 17.58,
    "cues": [
     3.89,
@@ -587,8 +587,8 @@
    "facts": [
     "3.5"
    ],
-   "start": 192.17,
-   "end": 201.13,
+   "start": 193.17,
+   "end": 202.13,
    "duration": 8.96,
    "cues": [
     1.51,
@@ -621,8 +621,8 @@
     "3.3",
     "3.4"
    ],
-   "start": 201.13,
-   "end": 205.47,
+   "start": 202.13,
+   "end": 206.47,
    "duration": 4.34,
    "cues": [
     2.79
@@ -650,8 +650,8 @@
    "facts": [
     "3.8"
    ],
-   "start": 205.47,
-   "end": 217.41,
+   "start": 206.47,
+   "end": 218.41,
    "duration": 11.94,
    "cues": [
     6.81,
@@ -683,8 +683,8 @@
    "facts": [
     "3.8"
    ],
-   "start": 217.41,
-   "end": 227.63,
+   "start": 218.41,
+   "end": 228.63,
    "duration": 10.22,
    "cues": [
     6.99,
@@ -713,8 +713,8 @@
    "facts": [
     "4.1"
    ],
-   "start": 227.63,
-   "end": 245.25,
+   "start": 228.63,
+   "end": 246.25,
    "duration": 17.62,
    "cues": [
     8.57,
@@ -747,8 +747,8 @@
    "facts": [
     "4.2"
    ],
-   "start": 245.25,
-   "end": 259.31,
+   "start": 246.25,
+   "end": 260.31,
    "duration": 14.06,
    "cues": [
     0.3,
@@ -784,8 +784,8 @@
    "facts": [
     "4.3"
    ],
-   "start": 259.31,
-   "end": 272.87,
+   "start": 260.31,
+   "end": 273.87,
    "duration": 13.56,
    "cues": [
     2.59,
@@ -821,8 +821,8 @@
     "4.4",
     "4.1"
    ],
-   "start": 272.87,
-   "end": 284.09,
+   "start": 273.87,
+   "end": 285.09,
    "duration": 11.22,
    "cues": [
     1.35,
@@ -853,8 +853,8 @@
    "facts": [
     "5.1"
    ],
-   "start": 284.09,
-   "end": 299.31,
+   "start": 285.09,
+   "end": 300.31,
    "duration": 15.22,
    "cues": [
     10.19,
@@ -883,8 +883,8 @@
    "facts": [
     "5.2"
    ],
-   "start": 299.31,
-   "end": 306.79,
+   "start": 300.31,
+   "end": 307.79,
    "duration": 7.48,
    "cues": [
     2.01,
@@ -913,8 +913,8 @@
     "5.3",
     "5.1"
    ],
-   "start": 306.79,
-   "end": 316.99,
+   "start": 307.79,
+   "end": 317.99,
    "duration": 10.2,
    "cues": [
     1.87,
@@ -953,8 +953,8 @@
    "facts": [
     "5.8"
    ],
-   "start": 316.99,
-   "end": 333.95,
+   "start": 317.99,
+   "end": 334.95,
    "duration": 16.96,
    "cues": [
     1.71,
@@ -991,8 +991,8 @@
    "facts": [
     "5.4"
    ],
-   "start": 333.95,
-   "end": 347.77,
+   "start": 334.95,
+   "end": 348.77,
    "duration": 13.82,
    "cues": [
     2.23,
@@ -1022,8 +1022,8 @@
    "facts": [
     "5.6"
    ],
-   "start": 347.77,
-   "end": 364.07,
+   "start": 348.77,
+   "end": 365.07,
    "duration": 16.3,
    "cues": [
     3.07,
@@ -1059,8 +1059,8 @@
    "facts": [
     "5.7"
    ],
-   "start": 364.07,
-   "end": 382.65,
+   "start": 365.07,
+   "end": 383.65,
    "duration": 18.58,
    "cues": [
     3.13,
@@ -1097,8 +1097,8 @@
     "5.3",
     "1.1"
    ],
-   "start": 382.65,
-   "end": 391.25,
+   "start": 383.65,
+   "end": 392.25,
    "duration": 8.6,
    "cues": [
     2.65,
@@ -1133,8 +1133,8 @@
    "facts": [
     "6.1"
    ],
-   "start": 391.25,
-   "end": 411.75,
+   "start": 392.25,
+   "end": 412.75,
    "duration": 20.5,
    "cues": [
     7.37,
@@ -1169,8 +1169,8 @@
    "facts": [
     "6.2"
    ],
-   "start": 411.75,
-   "end": 422.63,
+   "start": 412.75,
+   "end": 423.63,
    "duration": 10.88,
    "cues": [
     3.75,
@@ -1201,8 +1201,8 @@
    "facts": [
     "6.3"
    ],
-   "start": 422.63,
-   "end": 442.11,
+   "start": 423.63,
+   "end": 443.11,
    "duration": 19.48,
    "cues": [
     1.99,
@@ -1236,8 +1236,8 @@
     "2.3",
     "3.8"
    ],
-   "start": 442.11,
-   "end": 452.51,
+   "start": 443.11,
+   "end": 453.51,
    "duration": 10.4,
    "cues": [
     2.29,
@@ -1265,40 +1265,40 @@
     "6.3",
     "1.1"
    ],
-   "start": 452.51,
-   "end": 457.61,
-   "duration": 5.1,
+   "start": 453.51,
+   "end": 458.15,
+   "duration": 4.64,
    "cues": [
     0.57,
     3.07
    ],
    "words": "much of that warmth on the side of the cabinet is heat that came from inside your fridge",
-   "change_every_s": 2.5
+   "change_every_s": 2.3
   },
   {
    "id": "S40",
    "beat": 7,
-   "anchor": "next time on the hidden mechanism",
+   "anchor": "next time on designed otherwise",
    "tool": "motion-canvas",
    "visual": "The fridge cutaway stays on screen, warm sides gently shimmering; a small channel wordmark settles at the bottom with 'Next time'.",
    "changes": [
-    "wordmark settles on 'hidden mechanism'",
+    "wordmark settles on 'designed otherwise'",
     "'Next time' on 'next time'"
    ],
    "text": [
-    "THE HIDDEN MECHANISM",
+    "DESIGNED OTHERWISE",
     "Next time"
    ],
    "facts": [],
-   "start": 457.61,
-   "end": 465.48,
-   "duration": 7.87,
+   "start": 458.15,
+   "end": 467.24,
+   "duration": 9.09,
    "cues": [
-    0.91,
+    1.45,
     0.3
    ],
-   "words": "next time on the hidden mechanism another everyday machine that works in a way you'd never guess from the outside",
-   "change_every_s": 3.9
+   "words": "next time on designed otherwise another everyday machine that works in a way you'd never guess from the outside",
+   "change_every_s": 4.5
   }
  ]
 }

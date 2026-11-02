@@ -12,12 +12,12 @@ Put your hand on the side of a running fridge and it's often warm. That's not a 
 
 Chapters
 0:00 The warm fridge
-0:26 Cold isn't a thing
-1:25 The loop: evaporator, compressor, condenser, capillary tube
-3:47 Why it has to run hot
-4:44 The second heater
-6:31 The bill and the open-door myth
-7:22 It moves heat
+0:30 Cold isn't a thing
+1:29 The loop: evaporator, compressor, condenser, capillary tube
+3:51 Why it has to run hot
+4:48 The second heater
+6:35 The bill and the open-door myth
+7:26 It moves heat
 
 Sources: every claim in this video was checked against at least two independent sources (manufacturer service manuals, ENERGY STAR, the U.S. Department of Energy, university and engineering references). Full list: [source list to be linked].
 

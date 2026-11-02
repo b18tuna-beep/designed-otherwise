@@ -20,7 +20,7 @@ SCENES = [
     # ---------------------------------------------------------------- 1. cold open: one fridge, investigated
     dict(id="S01", beat=1, anchor="why does your refrigerator have to heat up", tool="motion-canvas",
          visual="The fridge cutaway (the drawing used all episode), large: cold blue contents inside, the side walls glowing orange, heat shimmer rising off them. Coil, heater, compressor and condenser stay subdued until their reveals. The question (required on screen within 10 s) types on beside it at a smaller size.",
-         changes=["cutaway draws on, contents go blue on 'refrigerator'", "side walls glow and shimmer on 'heat up'", "question types on through 'food cold'"],
+         changes=["cutaway draws on, contents go blue on 'refrigerator'", "side walls glow and shimmer on 'heat up'", "question types on 'food cold'"],
          text=["Why does your fridge heat up to keep food cold?", "cold inside", "warm outside"], facts=["1.1"]),
     dict(id="S02", beat=1, anchor="it sounds backwards", tool="blender",
          visual="HERO 1 (3D). An ordinary, intact fridge in a dark kitchen, doors shut. Slow push toward the side panel. The warmth is a graphic orange overlay composited over a neutral render (the cabinet and grille must not look incandescent); the grille area gets the same overlay. A 2D chalk hand outline (composited) presses flat against the side panel.",
@@ -188,8 +188,8 @@ SCENES = [
          visual="The loop shrinks to the left and its condenser lights; the fridge side view takes over on the right with hot-wall tubing in the side panel glowing and shimmering: the warmth emerges at the condenser, not through the insulated wall.",
          changes=["loop hands off to the cabinet on 'warmth on the side'", "side tubing glows on 'came from inside'"],
          text=["Much of that warmth came from inside."], facts=["3.8", "6.3", "1.1"]),
-    dict(id="S40", beat=7, anchor="next time on the hidden mechanism", tool="motion-canvas",
+    dict(id="S40", beat=7, anchor="next time on designed otherwise", tool="motion-canvas",
          visual="The fridge cutaway stays on screen, warm sides gently shimmering; a small channel wordmark settles at the bottom with 'Next time'.",
-         changes=["wordmark settles on 'hidden mechanism'", "'Next time' on 'next time'"],
-         text=["THE HIDDEN MECHANISM", "Next time"], facts=[]),
+         changes=["wordmark settles on 'designed otherwise'", "'Next time' on 'next time'"],
+         text=["DESIGNED OTHERWISE", "Next time"], facts=[]),
 ]

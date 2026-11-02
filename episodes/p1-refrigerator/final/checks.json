@@ -1,15 +1,28 @@
 {
- "loudness_lufs": -14.16,
+ "loudness_lufs": -14.13,
  "loudness_ok": true,
- "true_peak_dbtp": -1.76,
+ "true_peak_dbtp": -1.69,
  "true_peak_ok": true,
- "sample_peak_db": -1.8,
+ "sample_peak_db": -1.7,
  "no_clipping": true,
- "video_s": 465.5,
- "final_s": 465.5,
- "timeline_s": 465.48,
+ "video_s": 467.233333,
+ "final_s": 467.166,
+ "timeline_s": 467.24,
  "sync_ok": true,
  "narration_gaps_over_2_5s": [],
  "gaps_ok": true,
- "captions": 248
+ "captions": 248,
+ "sting": {
+  "cut_frame": 825,
+  "cut_s": 27.5,
+  "sting_s": 3.2,
+  "episode_s": 467.166,
+  "final_s": 470.399333,
+  "length_ok": true,
+  "loudness_lufs": -14.1,
+  "loudness_ok": true,
+  "true_peak_dbtp": -1.8,
+  "true_peak_ok": true
+ },
+ "_note": "v4 2026-11-02: 1.0 s pause after the opening question (Michael's note), intro sting THE HINGE at 27.5 s, caption 2 held through the pause."
 }
