@@ -1,0 +1,13 @@
+# Storyboard v1 external review (ChatGPT Pro, 2026-10-27) and what v2 did with it
+
+Applied: loop scenes demonstrate boiling, compression (vapor stays vapor), condensation inside the condenser, and a walled narrow bore (S14, S15, S17, S18); S18 flow corrected to high pressure right, low left; S22 reframed as heat removed per unit of electricity on one scale; S08/S39 heat routed via the coil and condenser, never through the wall; one coil-and-heater assembly carried S04 to S27 to S28 to S29 with frost that thins heat transfer but does not stop it, and melts in the 3D hero; no refrigerant flow during defrost; arrowheads reserved for heat (style bible 3.7); qualifiers at label size; persistent fridge cutaway, INSIDE | KITCHEN zones and a corner locator; S30 "power while on" and "two service-manual examples"; S31 single run-time scale; S33 alternatives separated with the switch on the electric version only; S34 sequential recap; S35 staged; S37/S38 accounting with the electricity contribution; S40 keeps the fridge on screen.
+
+Not applied as written: S01 keeps the on-screen question (Michael's rubric: question spoken and on screen within 10 s), with the cold-inside/warm-outside image added. S09 keeps a small Clausius caption because the narration names it. S37 keeps a small, fast-fading blue region at the door because the script says "a brief puff of cold air".
+
+No narration or fact changes.
+
+# Round 2 (v2 review) and what v3 did with it
+
+Applied: S12 captions now "higher / lower boiling temperature" with thermometers marked as boiling temperature and bubbles inside the liquid; frost is a separate chalk-white deposit (thin blue edge) over unchanged coil geometry that bridges gaps (style bible updated); S19 tube walls touch along one solder joint with heat crossing the contact; S33 shows inside | cabinet face | door seal with heat reaching the face and the face staying dry; S39 headline restored to "Much of that warmth came from inside."; S06 "On its own: hotter to colder"; S17 now one connected path rising the way the loop flows (vapor in at the bottom from the compressor, liquid out at the top); S14 continuity note (close-up is the evaporator side rotated 90°); S26 ends on the condenser vs kitchen-air comparison; S31 upper limit is a neutral endcap, not an event tick; S02 warmth will be a 2D overlay on a neutral render; S29 no airflow while the heater glows; S01 fridge enlarged with machinery subdued.
+
+Kept, with reason: S01 question stays on screen (Michael's rubric), now smaller; S09 Clausius caption shows only while George says the name; S37 small blue puff stays because the script says "a brief puff of cold air" (a cold region, not an arrow, fading within a second).

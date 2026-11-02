@@ -1,0 +1,29 @@
+name: Studio token check
+
+# Confirms STUDIO_TOKEN can read the studio and create/delete a release there.
+# Run once after Michael saves the secret, and whenever a hand-off step fails with 401/403.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Read and write releases on the studio
+        env:
+          GH_TOKEN: ${{ secrets.STUDIO_TOKEN }}
+        run: |
+          R=b18tuna-beep/designed-otherwise-studio
+          [ -z "$GH_TOKEN" ] && { echo "::error title=STUDIO_TOKEN::secret missing"; exit 1; }
+          gh api "repos/$R" --jq .full_name > /dev/null 2>err.txt || { echo "::error title=STUDIO_TOKEN::cannot read $R: $(head -c 300 err.txt)"; exit 1; }
+          tag="token-check-$GITHUB_RUN_ID"
+          if gh release create "$tag" -R $R --title "token check" --notes "temporary" --draft > /dev/null 2>err.txt; then
+            gh release delete "$tag" -R $R --yes
+            echo "::notice title=STUDIO_TOKEN::OK, can read $R and write releases"
+          else
+            echo "::error title=STUDIO_TOKEN::cannot write releases: $(head -c 300 err.txt)"; exit 1
+          fi

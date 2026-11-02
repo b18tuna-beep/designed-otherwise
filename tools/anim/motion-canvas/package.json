@@ -1,0 +1,20 @@
+{
+  "name": "hm-motion-canvas",
+  "private": true,
+  "scripts": {
+    "serve": "vite --port 9000 --strictPort",
+    "render": "node render.mjs"
+  },
+  "dependencies": {
+    "@motion-canvas/2d": "3.17.2",
+    "@motion-canvas/core": "3.17.2",
+    "@motion-canvas/ffmpeg": "3.17.2",
+    "@motion-canvas/ui": "3.17.2",
+    "@motion-canvas/vite-plugin": "3.17.2"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  }
+}

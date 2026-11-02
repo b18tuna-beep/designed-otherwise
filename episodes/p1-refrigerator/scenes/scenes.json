@@ -1,0 +1,1304 @@
+{
+ "source_words": "audio/final.words.json",
+ "fps": 30,
+ "total_s": 465.48,
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": 1,
+   "anchor": "why does your refrigerator have to heat up",
+   "tool": "motion-canvas",
+   "visual": "The fridge cutaway (the drawing used all episode), large: cold blue contents inside, the side walls glowing orange, heat shimmer rising off them. Coil, heater, compressor and condenser stay subdued until their reveals. The question (required on screen within 10 s) types on beside it at a smaller size.",
+   "changes": [
+    "cutaway draws on, contents go blue on 'refrigerator'",
+    "side walls glow and shimmer on 'heat up'",
+    "question types on through 'food cold'"
+   ],
+   "text": [
+    "Why does your fridge heat up to keep food cold?",
+    "cold inside",
+    "warm outside"
+   ],
+   "facts": [
+    "1.1"
+   ],
+   "start": 0.0,
+   "end": 3.21,
+   "duration": 3.21,
+   "cues": [
+    0.54,
+    1.48,
+    2.41
+   ],
+   "words": "why does your refrigerator have to heat up to keep your food cold",
+   "change_every_s": 1.1
+  },
+  {
+   "id": "S02",
+   "beat": 1,
+   "anchor": "it sounds backwards",
+   "tool": "blender",
+   "visual": "HERO 1 (3D). An ordinary, intact fridge in a dark kitchen, doors shut. Slow push toward the side panel. The warmth is a graphic orange overlay composited over a neutral render (the cabinet and grille must not look incandescent); the grille area gets the same overlay. A 2D chalk hand outline (composited) presses flat against the side panel.",
+   "changes": [
+    "push-in starts on 'backwards'",
+    "chalk hand lands on the side on 'put your hand'",
+    "side panel warms under the hand on 'running fridge'",
+    "grille glow on 'grille at the bottom'"
+   ],
+   "text": [],
+   "facts": [
+    "1.1"
+   ],
+   "start": 3.21,
+   "end": 9.65,
+   "duration": 6.44,
+   "cues": [
+    0.41,
+    1.51,
+    2.69,
+    3.93
+   ],
+   "words": "it sounds backwards but put your hand on the side of a running fridge or near the grille at the bottom and you'll often feel warmth",
+   "change_every_s": 1.6
+  },
+  {
+   "id": "S03",
+   "beat": 1,
+   "anchor": "in a hot room the sides",
+   "tool": "motion-canvas",
+   "visual": "Match cut to the same side panel in 2D (side view). A thermometer clamps onto it and climbs through the heat scale. The qualifier sits right beside the reading at label size.",
+   "changes": [
+    "thermometer clamps on 'the sides'",
+    "reading climbs past 50 °C on 'hotter than'",
+    "°F line on 'Fahrenheit'",
+    "qualifier holds through the line"
+   ],
+   "text": [
+    "> 50 °C",
+    "≈ 120 °F",
+    "some models, in a hot room"
+   ],
+   "facts": [
+    "1.1"
+   ],
+   "start": 9.65,
+   "end": 16.09,
+   "duration": 6.44,
+   "cues": [
+    0.83,
+    2.13,
+    5.57,
+    5.15
+   ],
+   "words": "in a hot room the sides of some models get hotter than fifty degrees celsius that's about a hundred and twenty fahrenheit",
+   "change_every_s": 1.6
+  },
+  {
+   "id": "S04",
+   "beat": 1,
+   "anchor": "that heat isn't a defect",
+   "tool": "motion-canvas",
+   "visual": "Back to the cutaway; push into the freezer. The cold coil assembly enlarges (the exact silhouette reused in S27-S29), then the heater rod just below it lights orange.",
+   "changes": [
+    "push into the freezer on 'whole trick'",
+    "cold coil fills frame on 'coldest part'",
+    "heater lights on 'second heater'",
+    "heater pulses on 'on purpose'"
+   ],
+   "text": [
+    "COLD COIL",
+    "HEATER"
+   ],
+   "facts": [
+    "5.3"
+   ],
+   "start": 16.09,
+   "end": 26.51,
+   "duration": 10.42,
+   "cues": [
+    1.95,
+    4.91,
+    6.81,
+    8.93
+   ],
+   "words": "that heat isn't a defect it's the whole trick and tucked away inside right next to the coldest part of the machine there's a second heater one that switches on on purpose",
+   "change_every_s": 2.6
+  },
+  {
+   "id": "S05",
+   "beat": 2,
+   "anchor": "let's start with the way we talk about cold",
+   "tool": "motion-canvas",
+   "visual": "Same cutaway, door swings open. The phrase 'Let the cold out.' appears, then 'Keep the cold in.'; each is struck through while orange heat arrows flow from the kitchen INTO the open fridge. Blue stays confined to the inside.",
+   "changes": [
+    "door opens on 'talk about cold'",
+    "'Let the cold out.' on 'let the cold out'",
+    "'Keep the cold in.' replaces it on 'keep the cold in'",
+    "strike + heat arrows flow in on 'no such substance'"
+   ],
+   "text": [
+    "“Let the cold out.”",
+    "“Keep the cold in.”",
+    "heat gets in",
+    "door open"
+   ],
+   "facts": [
+    "2.2"
+   ],
+   "start": 26.51,
+   "end": 36.33,
+   "duration": 9.82,
+   "cues": [
+    1.23,
+    4.93,
+    5.83,
+    7.17
+   ],
+   "words": "let's start with the way we talk about cold we talk about cold as if it were a thing let the cold out keep the cold in but there's no such substance there is no cold to add",
+   "change_every_s": 2.5
+  },
+  {
+   "id": "S06",
+   "beat": 2,
+   "anchor": "what exists is heat",
+   "tool": "motion-canvas",
+   "visual": "Two blocks touching, hot (orange) and cold (blue), each with a thermometer. Orange arrows run from the hot block into the cold one; the hot thermometer falls as the cold one rises.",
+   "changes": [
+    "blocks appear on 'heat'",
+    "arrows start on 'one way'",
+    "thermometers converge on 'hotter to colder'"
+   ],
+   "text": [
+    "hotter",
+    "colder",
+    "On its own: hotter to colder"
+   ],
+   "facts": [
+    "2.1",
+    "2.2"
+   ],
+   "start": 36.33,
+   "end": 43.95,
+   "duration": 7.62,
+   "cues": [
+    0.81,
+    5.49,
+    6.59
+   ],
+   "words": "what exists is heat energy that flows because of a difference in temperature and on its own heat only flows one way from hotter to colder",
+   "change_every_s": 2.5
+  },
+  {
+   "id": "S07",
+   "beat": 2,
+   "anchor": "a hot mug warms your hands",
+   "tool": "motion-canvas",
+   "visual": "One chalk hand, fixed in the center. A hot mug slides in on the left and orange arrows run into the hand; the mug leaves, a cold glass slides in on the right and orange arrows run out of the hand into the glass.",
+   "changes": [
+    "mug and arrows into the hand on 'hot mug'",
+    "glass replaces mug on 'cold drink'",
+    "arrows hand to glass on 'losing heat'"
+   ],
+   "text": [
+    "hot mug",
+    "cold drink",
+    "the hand is losing heat to the drink"
+   ],
+   "facts": [
+    "2.1",
+    "2.2"
+   ],
+   "start": 43.95,
+   "end": 50.73,
+   "duration": 6.78,
+   "cues": [
+    0.3,
+    1.87,
+    5.55
+   ],
+   "words": "a hot mug warms your hands a cold drink never chills them by pushing cold in your hands are simply losing heat to it",
+   "change_every_s": 2.3
+  },
+  {
+   "id": "S08",
+   "beat": 2,
+   "anchor": "so a refrigerator doesn't make cold",
+   "tool": "motion-canvas",
+   "visual": "Cutaway again. Orange arrows leave the milk and the leftovers and travel up to the cold coil on the freezer's back wall (not through the cabinet wall). The milk outline settles to blue.",
+   "changes": [
+    "arrows from milk to coil on 'removes heat'",
+    "milk turns blue on 'taken out of it'"
+   ],
+   "text": [
+    "removes heat",
+    "heat goes to the cold coil"
+   ],
+   "facts": [
+    "2.2"
+   ],
+   "start": 50.73,
+   "end": 57.45,
+   "duration": 6.72,
+   "cues": [
+    3.13,
+    5.93
+   ],
+   "words": "so a refrigerator doesn't make cold it removes heat your milk is cold because heat has been taken out of it",
+   "change_every_s": 3.4
+  },
+  {
+   "id": "S09",
+   "beat": 2,
+   "anchor": "here's the problem",
+   "tool": "motion-canvas",
+   "visual": "A slope anchored to real places: the warm kitchen (orange tint) at the top, the fridge cutaway at the bottom. A heat ball rolls down into the fridge on its own and won't roll back up. A small caption names the rule only while George says it, then fades.",
+   "changes": [
+    "KITCHEN / INSIDE labels on 'kitchen is warmer'",
+    "ball rolls down on 'warmer'",
+    "ball stalls at the bottom on 'never go by itself'",
+    "caption fades in on 'Clausius statement'"
+   ],
+   "text": [
+    "KITCHEN · warmer",
+    "INSIDE · colder",
+    "heat won't climb back up on its own",
+    "Clausius statement · second law of thermodynamics"
+   ],
+   "facts": [
+    "2.1"
+   ],
+   "start": 57.45,
+   "end": 76.69,
+   "duration": 19.24,
+   "cues": [
+    1.59,
+    2.07,
+    8.79,
+    12.69
+   ],
+   "words": "here's the problem your kitchen is warmer than the inside of your fridge getting heat out of the cold box and into the warm room means moving it in the one direction it will never go by itself physicists have a name for this rule it's the clausius statement of the second law of thermodynamics moving heat from a cold place to a warmer one takes work",
+   "change_every_s": 4.8
+  },
+  {
+   "id": "S10",
+   "beat": 2,
+   "anchor": "so your fridge works like a heat pump",
+   "tool": "motion-canvas",
+   "visual": "Same slope. A pump appears on it with a lime electric bolt; it lifts the heat ball out of the fridge, uphill, into the kitchen.",
+   "changes": [
+    "lime bolt on 'electricity'",
+    "ball lifted uphill on 'push heat uphill'"
+   ],
+   "text": [
+    "KITCHEN",
+    "HEAT PUMP"
+   ],
+   "facts": [
+    "2.3"
+   ],
+   "start": 76.69,
+   "end": 85.51,
+   "duration": 8.82,
+   "cues": [
+    3.43,
+    4.47
+   ],
+   "words": "so your fridge works like a heat pump it spends electricity to push heat uphill out of your food and into your kitchen",
+   "change_every_s": 4.4
+  },
+  {
+   "id": "S11",
+   "beat": 3,
+   "anchor": "to pull that off it uses one fluid",
+   "tool": "motion-canvas",
+   "visual": "The fixed loop draws on over two zones: INSIDE THE FRIDGE (cold tint, left of a dashed wall) and KITCHEN. Stations are ghosted. One violet drop starts at the top and travels right-to-left along the top branch, toward the inside.",
+   "changes": [
+    "zones and wall on 'sealed loop'",
+    "loop draws on on 'refrigerant'",
+    "single drop starts on 'follow one drop'"
+   ],
+   "text": [
+    "REFRIGERANT",
+    "one sealed loop, one drop to follow",
+    "INSIDE THE FRIDGE",
+    "KITCHEN"
+   ],
+   "facts": [
+    "3.1",
+    "3.3"
+   ],
+   "start": 85.51,
+   "end": 95.35,
+   "duration": 9.84,
+   "cues": [
+    3.99,
+    5.11,
+    5.93
+   ],
+   "words": "to pull that off it uses one fluid travelling around and around a sealed loop the refrigerant follow one drop of it all the way round and the whole machine makes sense",
+   "change_every_s": 3.3
+  },
+  {
+   "id": "S12",
+   "beat": 3,
+   "anchor": "the trick it relies on is boiling",
+   "tool": "motion-canvas",
+   "visual": "The drop's tube section, shown twice side by side, each with a pressure gauge and a thermometer marking its boiling temperature. High pressure: higher boiling temperature, still liquid. Low pressure: lower boiling temperature, bubbles forming inside the liquid.",
+   "changes": [
+    "both tube sections on 'boiling'",
+    "left gauge high on 'raise the pressure'",
+    "right gauge drops and bubbles form on 'lower the pressure'"
+   ],
+   "text": [
+    "HIGH PRESSURE",
+    "LOW PRESSURE",
+    "higher boiling temperature",
+    "lower boiling temperature",
+    "boiling temperature",
+    "pressure"
+   ],
+   "facts": [
+    "3.9"
+   ],
+   "start": 95.35,
+   "end": 106.65,
+   "duration": 11.3,
+   "cues": [
+    1.25,
+    8.09,
+    4.83
+   ],
+   "words": "the trick it relies on is boiling a liquid's boiling point depends on pressure lower the pressure and it boils at a lower temperature raise the pressure and the boiling point climbs",
+   "change_every_s": 3.8
+  },
+  {
+   "id": "S13",
+   "beat": 3,
+   "anchor": "household refrigerants boil far below freezing",
+   "tool": "motion-canvas",
+   "visual": "Thermometer with the 32 °F water-freezes line. A violet marker drops to 11 °F; 'at ordinary air pressure' sits right beside it at label size. Next to it, violet liquid in an open flask bubbles.",
+   "changes": [
+    "freezing line on 'below freezing'",
+    "isobutane marker on 'isobutane'",
+    "flask bubbles on 'boils'"
+   ],
+   "text": [
+    "32 °F (0 °C) water freezes",
+    "≈ 11 °F (−12 °C)",
+    "ISOBUTANE BOILS",
+    "at ordinary air pressure"
+   ],
+   "facts": [
+    "3.6"
+   ],
+   "start": 106.65,
+   "end": 116.59,
+   "duration": 9.94,
+   "cues": [
+    1.43,
+    5.71,
+    7.45
+   ],
+   "words": "household refrigerants boil far below freezing even at ordinary air pressure isobutane one of the common ones boils at about eleven degrees fahrenheit",
+   "change_every_s": 3.3
+  },
+  {
+   "id": "S14",
+   "beat": 3,
+   "anchor": "now the loop stop one is the evaporator",
+   "tool": "motion-canvas",
+   "visual": "Zoom out of the evaporator's place in the loop (corner locator ringed). A big evaporator tube inside the cold zone: violet liquid on the left boils into bubbles and then vapor toward the right. Orange heat arrows come down into the tube from a leftovers box, the air, walls and door. The unlit defrost heater outline sits quietly below (seed for S27). Continuity: the close-up is the left (evaporator) side of the loop rotated 90° in the transition, so left-to-right here is top-to-bottom in the loop; the same tracked drop carries back to the loop.",
+   "changes": [
+    "zoom into evaporator on 'evaporator'",
+    "bubbles form on 'boils'",
+    "heat arrows from leftovers on 'leftovers'",
+    "arrows from walls and door on 'creeping in'"
+   ],
+   "text": [
+    "EVAPORATOR: low pressure, so it boils",
+    "leftovers, air",
+    "walls, door",
+    "liquid",
+    "vapor",
+    "defrost heater (off)"
+   ],
+   "facts": [
+    "3.1",
+    "3.11",
+    "5.3"
+   ],
+   "start": 116.59,
+   "end": 135.25,
+   "duration": 18.66,
+   "cues": [
+    1.79,
+    6.63,
+    12.77,
+    14.55
+   ],
+   "words": "now the loop stop one is the evaporator a coil inside the fridge here the refrigerant is kept at low pressure so it boils and boiling soaks up heat that heat comes from inside the fridge from the air the shelves last night's leftovers and the warmth that keeps creeping in through the walls and door this is where it all ends up",
+   "change_every_s": 4.7
+  },
+  {
+   "id": "S15",
+   "beat": 3,
+   "anchor": "stop two is the compressor",
+   "tool": "motion-canvas",
+   "visual": "Locator rings the compressor. Spread-out violet vapor enters a compression chamber; a piston pushes it into a smaller space; it leaves as tightly packed vapor (never liquid) through a pipe with an orange heat halo. A lime bolt powers it.",
+   "changes": [
+    "chamber opens on 'compressor'",
+    "piston squeezes on 'squeezes'",
+    "orange halo on outgoing pipe on 'much hotter'",
+    "lime bolt on 'electricity'"
+   ],
+   "text": [
+    "COMPRESSOR squeezes vapor",
+    "still vapor, now high pressure and hot"
+   ],
+   "facts": [
+    "3.2",
+    "2.3"
+   ],
+   "start": 135.25,
+   "end": 151.57,
+   "duration": 16.32,
+   "cues": [
+    0.83,
+    5.67,
+    7.91,
+    12.17
+   ],
+   "words": "stop two is the compressor the cold low pressure vapor flows into it and the compressor squeezes it into a high pressure vapor that is much hotter hot enough to be well above room temperature this is where the electricity does its main job the compressor is doing the work",
+   "change_every_s": 4.1
+  },
+  {
+   "id": "S16",
+   "beat": 3,
+   "anchor": "stop three is the condenser",
+   "tool": "motion-canvas",
+   "visual": "Three side views of fridges, each with its condenser glowing orange: coil on the back, tubing in the side walls, coil in a bottom compartment with a fan.",
+   "changes": [
+    "back coil on 'on the back'",
+    "side walls on 'side walls'",
+    "bottom + fan on 'fan blowing'"
+   ],
+   "text": [
+    "CONDENSER: three common places",
+    "back coil",
+    "in the side walls",
+    "bottom, fan-cooled"
+   ],
+   "facts": [
+    "1.1"
+   ],
+   "start": 151.57,
+   "end": 163.45,
+   "duration": 11.88,
+   "cues": [
+    3.91,
+    6.05,
+    9.65
+   ],
+   "words": "stop three is the condenser depending on the design that's a coil on the back tubing hidden inside the side walls or a coil in a compartment at the bottom with a fan blowing across it",
+   "change_every_s": 4.0
+  },
+  {
+   "id": "S17",
+   "beat": 3,
+   "anchor": "the vapor arriving here is hotter than your kitchen",
+   "tool": "motion-canvas",
+   "visual": "Locator rings the condenser. Inside it, one connected path rising the way the loop flows (up the right side): vapor enters at the bottom from the compressor, turns part liquid in the middle pass, leaves as liquid at the top toward the capillary tube. Orange heat arrows leave into the kitchen. The phase-change label sits beside the condenser.",
+   "changes": [
+    "heat arrows out on 'flows out'",
+    "vapor merges into liquid down the passes on 'condenses'"
+   ],
+   "text": [
+    "CONDENSER",
+    "vapor turns to liquid",
+    "hotter than the room, so heat leaves",
+    "in from the compressor",
+    "out to the capillary tube"
+   ],
+   "facts": [
+    "4.1",
+    "3.3"
+   ],
+   "start": 163.45,
+   "end": 174.59,
+   "duration": 11.14,
+   "cues": [
+    3.13,
+    7.69
+   ],
+   "words": "the vapor arriving here is hotter than your kitchen so heat flows out of it into the room the easy direction as it loses heat the vapor condenses back into a liquid still under high pressure",
+   "change_every_s": 5.6
+  },
+  {
+   "id": "S18",
+   "beat": 3,
+   "anchor": "stop four is the expansion device",
+   "tool": "motion-canvas",
+   "visual": "Locator rings the top branch. Expanded in place, flow right-to-left: wide high-pressure liquid on the RIGHT, forced through a long, very narrow bore with visible walls, out into a wider low-pressure tube on the LEFT where bubbles start but liquid remains, heading to the evaporator. Gauges: high right, low left.",
+   "changes": [
+    "narrow bore draws on 'capillary tube'",
+    "flow squeezes through on 'restricts the flow'",
+    "left gauge drops on 'pressure drops'",
+    "bubbles start on 'boil again'"
+   ],
+   "text": [
+    "CAPILLARY TUBE: a long, very narrow bore",
+    "HIGH PRESSURE",
+    "LOW PRESSURE",
+    "to the evaporator",
+    "pressure"
+   ],
+   "facts": [
+    "3.4",
+    "3.9"
+   ],
+   "start": 174.59,
+   "end": 192.17,
+   "duration": 17.58,
+   "cues": [
+    3.89,
+    6.45,
+    11.99,
+    16.27
+   ],
+   "words": "stop four is the expansion device in a typical household fridge it's a capillary tube a long very thin tube that restricts the flow it holds back the high pressure side from the low pressure side past it the pressure drops the boiling point drops with it and the refrigerant starts to boil again",
+   "change_every_s": 4.4
+  },
+  {
+   "id": "S19",
+   "beat": 3,
+   "anchor": "in many fridges this tube is soldered",
+   "tool": "motion-canvas",
+   "visual": "Locator rings both the capillary tube and the suction line. Enlarged: the thin capillary (warm violet liquid) lies on top of the wide suction line (cold violet vapor); their outer walls touch along one chalk solder joint, interiors stay separate. Orange arrows cross the contact from capillary into the suction line.",
+   "changes": [
+    "both lines identified on the locator on 'this tube'",
+    "solder bands on 'soldered'",
+    "heat arrows cross on 'hands some of its heat'"
+   ],
+   "text": [
+    "capillary tube: warm liquid",
+    "suction line to the compressor: cold vapor",
+    "solder joint"
+   ],
+   "facts": [
+    "3.5"
+   ],
+   "start": 192.17,
+   "end": 201.13,
+   "duration": 8.96,
+   "cues": [
+    1.51,
+    2.05,
+    6.43
+   ],
+   "words": "in many fridges this tube is soldered to the line carrying cold vapor back to the compressor so the warm liquid hands some of its heat to that vapor on the way",
+   "change_every_s": 3.0
+  },
+  {
+   "id": "S20",
+   "beat": 3,
+   "anchor": "and then the refrigerant is back in the evaporator",
+   "tool": "motion-canvas",
+   "visual": "Pull back to the full loop over its zones, all four stations lit, refrigerant circulating continuously: heat in on the inside, heat out to the kitchen.",
+   "changes": [
+    "all stations light on 'loop starts again'"
+   ],
+   "text": [
+    "EVAPORATOR",
+    "COMPRESSOR",
+    "CONDENSER",
+    "CAPILLARY TUBE",
+    "INSIDE THE FRIDGE",
+    "KITCHEN"
+   ],
+   "facts": [
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4"
+   ],
+   "start": 201.13,
+   "end": 205.47,
+   "duration": 4.34,
+   "cues": [
+    2.79
+   ],
+   "words": "and then the refrigerant is back in the evaporator and the loop starts again",
+   "change_every_s": 4.3
+  },
+  {
+   "id": "S21",
+   "beat": 3,
+   "anchor": "now do the accounting",
+   "tool": "motion-canvas",
+   "visual": "Energy bars, sourced on the locator: an orange bar (heat removed from inside, evaporator) plus a lime bar (electricity in, compressor) stack into one taller bar of heat into the kitchen; the electricity part keeps a lime outline so its origin stays visible.",
+   "changes": [
+    "orange bar on 'pulled out of the inside'",
+    "lime bar on 'electrical energy'",
+    "bars stack on 'equals'"
+   ],
+   "text": [
+    "Energy is conserved",
+    "heat removed from inside",
+    "electricity in",
+    "heat into the kitchen"
+   ],
+   "facts": [
+    "3.8"
+   ],
+   "start": 205.47,
+   "end": 217.41,
+   "duration": 11.94,
+   "cues": [
+    6.81,
+    8.87,
+    5.31
+   ],
+   "words": "now do the accounting energy is conserved so the heat the fridge dumps into your kitchen equals all the heat it pulled out of the inside plus the electrical energy it used to do it",
+   "change_every_s": 4.0
+  },
+  {
+   "id": "S22",
+   "beat": 3,
+   "anchor": "on a tough standard test",
+   "tool": "motion-canvas",
+   "visual": "One unit scale (0, 1, 2). A lime bar of exactly 1 unit (electricity in). Below it an orange bar of heat removed from inside: solid to 1.4, lighter to 2, with a plain bracket over the 1.4 to 2 range. Electricity and heat stay separate rows.",
+   "changes": [
+    "scale and lime bar on 'every unit of electricity'",
+    "orange bar grows to 1.4 then the range to 2 on 'one point four to two'"
+   ],
+   "text": [
+    "per unit of electricity, on a standard compressor test",
+    "electricity in",
+    "heat removed from inside",
+    "≈ 1.4 to 2",
+    "0",
+    "1",
+    "2"
+   ],
+   "facts": [
+    "3.8"
+   ],
+   "start": 217.41,
+   "end": 227.63,
+   "duration": 10.22,
+   "cues": [
+    6.99,
+    4.15
+   ],
+   "words": "on a tough standard test a household compressor moves roughly one point four to two units of heat for every unit of electricity it uses",
+   "change_every_s": 5.1
+  },
+  {
+   "id": "S23",
+   "beat": 4,
+   "anchor": "so here's the missing context to the title",
+   "tool": "motion-canvas",
+   "visual": "The loop with the condenser lit on the kitchen side, thermometers attached to the condenser and to the kitchen air. While the condenser reads hotter, orange heat crosses into the room; when it drops to match, the arrows stop. Then a quick callback to the warm cabinet side from S01.",
+   "changes": [
+    "condenser thermometer rises on 'hotter than the air'",
+    "heat arrows flow on 'leave the condenser'",
+    "bars equal and arrows stop on 'room temperature couldn't'",
+    "warm cabinet side callback on 'get rid of anything'"
+   ],
+   "text": [
+    "the condenser must be hotter than the room",
+    "condenser",
+    "kitchen air"
+   ],
+   "facts": [
+    "4.1"
+   ],
+   "start": 227.63,
+   "end": 245.25,
+   "duration": 17.62,
+   "cues": [
+    8.57,
+    5.49,
+    15.25,
+    16.23
+   ],
+   "words": "so here's the missing context to the title heat only flows downhill for heat to leave the condenser on its own the refrigerant inside has to be hotter than the air in your kitchen that's the compressor's whole job push it well above room temperature a condenser that stayed at room temperature couldn't get rid of anything",
+   "change_every_s": 4.4
+  },
+  {
+   "id": "S24",
+   "beat": 4,
+   "anchor": "dust lint and pet hair",
+   "tool": "motion-canvas",
+   "visual": "Condenser coil close-up: grey lint lodges in the gaps between fins; the neutral air marks thin out on the far side; the compressor run-time bar stretches longer. The cleaning card gets real space.",
+   "changes": [
+    "lint fills the gaps on 'dust'",
+    "air marks thin on 'block the airflow'",
+    "run-time bar stretches on 'harder and longer'",
+    "card on 'Hotpoint'"
+   ],
+   "text": [
+    "compressor run time",
+    "longer",
+    "Hotpoint: clean the coils",
+    "at least once a year",
+    "some models don't need routine cleaning"
+   ],
+   "facts": [
+    "4.2"
+   ],
+   "start": 245.25,
+   "end": 259.31,
+   "duration": 14.06,
+   "cues": [
+    0.3,
+    2.17,
+    5.91,
+    7.57
+   ],
+   "words": "dust lint and pet hair on the condenser block the airflow and make it run hotter so the compressor has to work harder and longer hotpoint says to clean the coils at least once a year some models don't need routine cleaning at all",
+   "change_every_s": 3.5
+  },
+  {
+   "id": "S25",
+   "beat": 4,
+   "anchor": "space matters too",
+   "tool": "motion-canvas",
+   "visual": "Top view, unmistakable: wall behind and beside, FRONT (door) marked. Two panels. GE: plain gap marks at the sides only. Samsung: gap marks at the sides and the back.",
+   "changes": [
+    "walls and FRONT mark on 'air gaps'",
+    "'vary by model' on 'vary a lot'",
+    "GE panel on 'one G E'",
+    "Samsung panel on 'Samsung'"
+   ],
+   "text": [
+    "GE side-by-side: 1/8 in, sides only",
+    "Samsung: 5 cm ≈ 2 in, sides and back",
+    "FRONT (door)",
+    "wall",
+    "top view",
+    "air gaps vary by model",
+    "1/8 in",
+    "5 cm"
+   ],
+   "facts": [
+    "4.3"
+   ],
+   "start": 259.31,
+   "end": 272.87,
+   "duration": 13.56,
+   "cues": [
+    2.59,
+    3.67,
+    4.91,
+    9.25
+   ],
+   "words": "space matters too manufacturers specify air gaps and they vary a lot one g e side by side asks for just an eighth of an inch at the sides samsung recommends at least five centimetres about two inches at the sides and back",
+   "change_every_s": 3.4
+  },
+  {
+   "id": "S26",
+   "beat": 4,
+   "anchor": "and putting a fridge next to an oven",
+   "tool": "motion-canvas",
+   "visual": "The fridge cutaway stays put with its condenser at the bottom. Each heat source arrives on its word (oven, dishwasher, heating vent, sunlight) and sends orange heat toward the fridge. It ends on the S23 comparison: the kitchen-air thermometer creeps up toward the condenser's.",
+   "changes": [
+    "oven on 'oven'",
+    "dishwasher on 'dishwasher'",
+    "vent on 'heating vent'",
+    "sun on 'sunlight'"
+   ],
+   "text": [
+    "heat around the fridge makes shedding heat harder",
+    "oven",
+    "dishwasher",
+    "heating vent",
+    "sunlight",
+    "condenser",
+    "room air"
+   ],
+   "facts": [
+    "4.4",
+    "4.1"
+   ],
+   "start": 272.87,
+   "end": 284.09,
+   "duration": 11.22,
+   "cues": [
+    1.35,
+    1.93,
+    2.83,
+    4.35
+   ],
+   "words": "and putting a fridge next to an oven a dishwasher a heating vent or in direct sunlight makes it harder for it to shed heat energy guides and installation instructions say to avoid it",
+   "change_every_s": 2.8
+  },
+  {
+   "id": "S27",
+   "beat": 5,
+   "anchor": "now for that second heater",
+   "tool": "motion-canvas",
+   "visual": "The cutaway, freezer door opening; then the same coil-and-heater assembly from S04 enlarged (coil geometry never changes). Chalk moisture dots drift from the door and food and settle as a separate chalk-white frost deposit (thin blue edge) on the fins and tubes. The heater outline is unlit.",
+   "changes": [
+    "door opens on 'open the door'",
+    "moisture drifts in on 'humid'",
+    "frost starts on the fins on 'freezes'"
+   ],
+   "text": [
+    "FROST",
+    "below freezing",
+    "door open",
+    "moisture from food and from humid air when the door opens"
+   ],
+   "facts": [
+    "5.1"
+   ],
+   "start": 284.09,
+   "end": 299.31,
+   "duration": 15.22,
+   "cues": [
+    10.19,
+    7.99,
+    13.41
+   ],
+   "words": "now for that second heater the evaporator stays below freezing and the air inside your fridge carries moisture from your food and from warm humid kitchen air that rushes in every time you open the door that moisture condenses on the cold coil and freezes frost",
+   "change_every_s": 5.1
+  },
+  {
+   "id": "S28",
+   "beat": 5,
+   "anchor": "frost conducts heat very poorly",
+   "tool": "motion-canvas",
+   "visual": "Same assembly: the white frost deposit thickens and bridges some gaps between fins. Two separate effects: fewer, thinner orange heat arrows still reach the coil (insulation), and fewer air marks get through the bridged gaps (clogging).",
+   "changes": [
+    "frost thickens on 'layer'",
+    "heat arrows thin on 'insulates'",
+    "air marks thin on 'chokes the airflow'"
+   ],
+   "text": [
+    "frost insulates the coil and clogs the gaps",
+    "less heat gets in",
+    "less air gets through"
+   ],
+   "facts": [
+    "5.2"
+   ],
+   "start": 299.31,
+   "end": 306.79,
+   "duration": 7.48,
+   "cues": [
+    2.01,
+    2.41,
+    3.45
+   ],
+   "words": "frost conducts heat very poorly a layer of it insulates the coil and chokes the airflow so the fridge cools worse and wastes energy",
+   "change_every_s": 2.5
+  },
+  {
+   "id": "S29",
+   "beat": 5,
+   "anchor": "a frost free fridge solves it",
+   "tool": "blender",
+   "visual": "HERO 2 (3D). The same frosted coil, same orientation. A lime power lead feeds the heater rod below it; the rod glows orange; frost melts back from the bottom up, exposing bare fins; meltwater drops fall. No refrigerant flow and no fan airflow while the heater glows; if airflow resumes through the cleared coil it is only after the glow ends. Camera then slides to a glass-tube heater variant.",
+   "changes": [
+    "lime lead + heater glow on 'electric heater'",
+    "frost melts back on 'mounted on or just below'",
+    "slide to glass-tube variant on 'glass tube'"
+   ],
+   "text": [
+    "DEFROST HEATER",
+    "glass-tube heater"
+   ],
+   "facts": [
+    "5.3",
+    "5.1"
+   ],
+   "start": 306.79,
+   "end": 316.99,
+   "duration": 10.2,
+   "cues": [
+    1.87,
+    3.11,
+    9.15
+   ],
+   "words": "a frost free fridge solves it with an electric heater mounted on or just below the evaporator often a metal rod or a heating element inside a glass tube",
+   "change_every_s": 3.4
+  },
+  {
+   "id": "S30",
+   "beat": 5,
+   "anchor": "while it's on it can draw about three times",
+   "tool": "motion-canvas",
+   "visual": "Title 'POWER WHILE ON', subtitle 'two service-manual examples'. Lime bars: heater example 1 ≈ 450 W, heater example 2 ≈ 470 W, compressor 120-160 W. Then a clock: the heater switches off after minutes (the main event of the last line).",
+   "changes": [
+    "title and heater bars on 'three times'",
+    "subtitle on 'service manuals'",
+    "≈ 450 W on 'four hundred and fifty'",
+    "≈ 470 W on 'four hundred and seventy'",
+    "compressor bar and '≈ 3×' bracket on 'compressor roughly'",
+    "clock runs and heater switches off on 'only runs'"
+   ],
+   "text": [
+    "POWER WHILE ON",
+    "two service-manual examples",
+    "≈ 450 W",
+    "≈ 470 W",
+    "120–160 W",
+    "≈ 3×",
+    "heater, ex. 1",
+    "heater, ex. 2",
+    "compressor",
+    "runs for minutes, then off"
+   ],
+   "facts": [
+    "5.8"
+   ],
+   "start": 316.99,
+   "end": 333.95,
+   "duration": 16.96,
+   "cues": [
+    1.71,
+    4.73,
+    7.2,
+    8.37,
+    10.53,
+    14.63
+   ],
+   "words": "while it's on it can draw about three times as much power as the compressor in the two service manuals we checked the heater drew about four hundred and fifty to four hundred and seventy watts the compressor roughly a hundred and twenty to a hundred and sixty but the heater only runs for minutes at a time",
+   "change_every_s": 2.8
+  },
+  {
+   "id": "S31",
+   "beat": 5,
+   "anchor": "so when does it switch on",
+   "tool": "motion-canvas",
+   "visual": "One scale of accumulated compressor running time, 0 to 100+ hours. A run-time cursor advances only while the compressor runs. Older timer: a defrost tick every 8 h. Adaptive control: no event tick; a neutral chalk endcap marks the upper limit, with 'up to 100+ h, with the doors shut' attached to it.",
+   "changes": [
+    "run-time cursor starts on 'how long the compressor'",
+    "timer ticks on 'every eight hours'",
+    "adaptive tick on 'a hundred hours'"
+   ],
+   "text": [
+    "compressor running time (hours)",
+    "0",
+    "25",
+    "50",
+    "75",
+    "100",
+    "older timer: about every 8 h of running",
+    "adaptive control: up to 100+ h, with the doors shut"
+   ],
+   "facts": [
+    "5.4"
+   ],
+   "start": 333.95,
+   "end": 347.77,
+   "duration": 13.82,
+   "cues": [
+    2.23,
+    6.97,
+    12.31
+   ],
+   "words": "so when does it switch on it goes by how long the compressor has been running older timers start a defrost about every eight hours of running newer controls adapt keep the doors shut and some models wait a hundred hours or more",
+   "change_every_s": 4.6
+  },
+  {
+   "id": "S32",
+   "beat": 5,
+   "anchor": "then there's the water",
+   "tool": "motion-canvas",
+   "visual": "Side cross-section: chalk meltwater drops run from the coil down one continuous drain tube into the shallow pan beside the condenser. Orange heat enters the pan from the condenser; neutral moisture dots rise off the water surface into the kitchen.",
+   "changes": [
+    "drops run down on 'drains through a tube'",
+    "heat into the pan on 'condenser's warmth'",
+    "moisture rises on 'evaporate'"
+   ],
+   "text": [
+    "drain tube",
+    "drain pan",
+    "condenser",
+    "into the kitchen"
+   ],
+   "facts": [
+    "5.6"
+   ],
+   "start": 347.77,
+   "end": 364.07,
+   "duration": 16.3,
+   "cues": [
+    3.07,
+    6.85,
+    9.77
+   ],
+   "words": "then there's the water in many fridges the melted frost drains through a tube to a shallow pan down near the condenser there the condenser's warmth and in many models its fan evaporate the water back into your kitchen the fridge uses its own waste heat to get rid of its own meltwater",
+   "change_every_s": 5.4
+  },
+  {
+   "id": "S33",
+   "beat": 5,
+   "anchor": "and there's more deliberate heat",
+   "tool": "motion-canvas",
+   "visual": "Where the door seals, up close (inside | cabinet face | door seal), two versions in turn: a warm violet refrigerant tube behind the cabinet face; then a small electric heater with a lime feed and the energy-saver switch on that electric version only. Heat reaches the cabinet face; condensation beads on that face fade and it stays dry.",
+   "changes": [
+    "edge section on 'warm the edges'",
+    "refrigerant tube version on 'refrigerant tubing'",
+    "electric version on 'small electric heaters'",
+    "condensation vanishes on 'stop condensation'",
+    "switch flips on 'energy saver'"
+   ],
+   "text": [
+    "where the door seals, up close",
+    "inside",
+    "cabinet face",
+    "door seal",
+    "warm refrigerant tube",
+    "small electric heater",
+    "energy saver switch",
+    "stays dry: no condensation"
+   ],
+   "facts": [
+    "5.7"
+   ],
+   "start": 364.07,
+   "end": 382.65,
+   "duration": 18.58,
+   "cues": [
+    3.13,
+    7.13,
+    8.75,
+    11.47,
+    15.45
+   ],
+   "words": "and there's more deliberate heat many fridges warm the edges of the cabinet where the doors seal either with a loop of warm refrigerant tubing or with small electric heaters the point is to stop condensation forming on the outside some models even have an energy saver switch that turns that heater off",
+   "change_every_s": 3.7
+  },
+  {
+   "id": "S34",
+   "beat": 5,
+   "anchor": "so the box that keeps your food cold",
+   "tool": "motion-canvas",
+   "visual": "The S04 cutaway again; the explained heat locations light one after another and are numbered: 1 defrost heater, 2 door edges, 3 condenser. A recap of where the heat is, not one simultaneous state.",
+   "changes": [
+    "1 door edges light on 'warm edges'",
+    "2 defrost heater lights on 'heater mounted'",
+    "3 condenser joins as the recap ends"
+   ],
+   "text": [
+    "where the heat is",
+    "defrost heater",
+    "door edges",
+    "condenser",
+    "1",
+    "2",
+    "3"
+   ],
+   "facts": [
+    "5.7",
+    "5.3",
+    "1.1"
+   ],
+   "start": 382.65,
+   "end": 391.25,
+   "duration": 8.6,
+   "cues": [
+    2.65,
+    5.01,
+    6.45
+   ],
+   "words": "so the box that keeps your food cold has warm edges around its doors and a heater mounted right next to its coldest coil",
+   "change_every_s": 2.9
+  },
+  {
+   "id": "S35",
+   "beat": 6,
+   "anchor": "all of that shows up on your electricity bill",
+   "tool": "motion-canvas",
+   "visual": "The example's identity first: 'ENERGY STAR example, 18 cu ft top-freezer'. Then its bar at 363 kWh/yr, then the dashed federal limit at 404 kWh/yr, then '≈ 10% under'.",
+   "changes": [
+    "'a few hundred kWh/yr' on 'few hundred'",
+    "example label on 'ENERGY STAR'",
+    "bar on 'three hundred and sixty three'",
+    "limit line on 'federal limit'",
+    "'≈ 10% under' on 'ten percent'"
+   ],
+   "text": [
+    "electricity meter",
+    "a few hundred kWh/yr",
+    "ENERGY STAR example",
+    "18 cu ft top-freezer",
+    "363 kWh/yr",
+    "federal limit 404 kWh/yr",
+    "≈ 10% under"
+   ],
+   "facts": [
+    "6.1"
+   ],
+   "start": 391.25,
+   "end": 411.75,
+   "duration": 20.5,
+   "cues": [
+    7.37,
+    12.09,
+    13.93,
+    18.55,
+    17.37
+   ],
+   "words": "all of that shows up on your electricity bill the good news is how small it has become a new efficient refrigerator uses a few hundred kilowatt hours a year one eighteen cubic foot top freezer model on the energy star list is rated at three hundred and sixty three kilowatt hours a year that's about ten percent under the federal limit for its size",
+   "change_every_s": 4.1
+  },
+  {
+   "id": "S36",
+   "beat": 6,
+   "anchor": "in nineteen seventy four",
+   "tool": "motion-canvas",
+   "visual": "Bar chart: 1974 average new fridge > 1,800 kWh/yr, tall; today 'a few hundred', about a quarter. A bigger fridge icon under today's bar on 'hold more'.",
+   "changes": [
+    "1974 bar on 'eighteen hundred'",
+    "today's bar on 'quarter'",
+    "bigger fridge icon on 'hold more'"
+   ],
+   "text": [
+    "energy use per year",
+    "> 1,800 kWh/yr",
+    "1974, average new fridge",
+    "a few hundred",
+    "today",
+    "≈ ¼ the energy",
+    "holds more"
+   ],
+   "facts": [
+    "6.2"
+   ],
+   "start": 411.75,
+   "end": 422.63,
+   "duration": 10.88,
+   "cues": [
+    3.75,
+    7.15,
+    9.85
+   ],
+   "words": "in nineteen seventy four the average new fridge used more than eighteen hundred new fridges use roughly a quarter of the energy of mid seventies models and they hold more",
+   "change_every_s": 3.6
+  },
+  {
+   "id": "S37",
+   "beat": 6,
+   "anchor": "which brings us to the old advice",
+   "tool": "motion-canvas",
+   "visual": "One closed kitchen boundary. Fridge door open. A small blue region at the door (the brief puff of cold air) fades fast. Orange heat from the room enters the fridge and reaches the coil, then leaves through the condenser with a lime-sourced extra added; only after that does the wall thermometer rise.",
+   "changes": [
+    "door opens on 'open fridge door'",
+    "heat into the fridge on 'won't cool'",
+    "heat out at the condenser plus electricity on 'through the condenser'",
+    "thermometer rises on 'room ends up warmer'",
+    "blue puff fades on 'brief puff'"
+   ],
+   "text": [
+    "one closed kitchen",
+    "room gets warmer",
+    "door open"
+   ],
+   "facts": [
+    "6.3"
+   ],
+   "start": 422.63,
+   "end": 442.11,
+   "duration": 19.48,
+   "cues": [
+    1.99,
+    4.23,
+    9.13,
+    13.67,
+    16.31
+   ],
+   "words": "which brings us to the old advice about the open fridge door leaving it open won't cool your kitchen every bit of heat it pulls out goes straight back into the same room through the condenser along with heat from the electricity it uses so the room ends up warmer all you get is a brief puff of cold air at the door",
+   "change_every_s": 3.9
+  },
+  {
+   "id": "S38",
+   "beat": 7,
+   "anchor": "so your fridge doesn't make cold",
+   "tool": "motion-canvas",
+   "visual": "The full loop over its zones, running: three heat arrows in on the inside, four out to the kitchen (the extra one born at the lime compressor input).",
+   "changes": [
+    "loop and zones on 'moves heat'",
+    "flow highlights on 'boiling and squeezing'",
+    "extra outgoing arrow from the compressor on 'a little extra'"
+   ],
+   "text": [
+    "It moves heat.",
+    "plus a little extra from the electricity",
+    "INSIDE THE FRIDGE",
+    "KITCHEN"
+   ],
+   "facts": [
+    "2.2",
+    "2.3",
+    "3.8"
+   ],
+   "start": 442.11,
+   "end": 452.51,
+   "duration": 10.4,
+   "cues": [
+    2.29,
+    5.49,
+    8.29
+   ],
+   "words": "so your fridge doesn't make cold it moves heat out of the cold box around a loop of boiling and squeezing and into your kitchen with a little extra added on the way",
+   "change_every_s": 3.5
+  },
+  {
+   "id": "S39",
+   "beat": 7,
+   "anchor": "much of that warmth on the side",
+   "tool": "motion-canvas",
+   "visual": "The loop shrinks to the left and its condenser lights; the fridge side view takes over on the right with hot-wall tubing in the side panel glowing and shimmering: the warmth emerges at the condenser, not through the insulated wall.",
+   "changes": [
+    "loop hands off to the cabinet on 'warmth on the side'",
+    "side tubing glows on 'came from inside'"
+   ],
+   "text": [
+    "Much of that warmth came from inside."
+   ],
+   "facts": [
+    "3.8",
+    "6.3",
+    "1.1"
+   ],
+   "start": 452.51,
+   "end": 457.61,
+   "duration": 5.1,
+   "cues": [
+    0.57,
+    3.07
+   ],
+   "words": "much of that warmth on the side of the cabinet is heat that came from inside your fridge",
+   "change_every_s": 2.5
+  },
+  {
+   "id": "S40",
+   "beat": 7,
+   "anchor": "next time on the hidden mechanism",
+   "tool": "motion-canvas",
+   "visual": "The fridge cutaway stays on screen, warm sides gently shimmering; a small channel wordmark settles at the bottom with 'Next time'.",
+   "changes": [
+    "wordmark settles on 'hidden mechanism'",
+    "'Next time' on 'next time'"
+   ],
+   "text": [
+    "THE HIDDEN MECHANISM",
+    "Next time"
+   ],
+   "facts": [],
+   "start": 457.61,
+   "end": 465.48,
+   "duration": 7.87,
+   "cues": [
+    0.91,
+    0.3
+   ],
+   "words": "next time on the hidden mechanism another everyday machine that works in a way you'd never guess from the outside",
+   "change_every_s": 3.9
+  }
+ ]
+}

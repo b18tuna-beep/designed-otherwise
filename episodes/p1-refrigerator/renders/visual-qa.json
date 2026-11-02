@@ -1,0 +1,337 @@
+[
+ {
+  "id": "S01",
+  "verdict": "PASS",
+  "problems": [
+   "Opening check holds: the question is spoken 0.0 to 2.9 s (independent faster-whisper run on the final mix) and fully on screen at 3.0 s"
+  ],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S02",
+  "verdict": "PASS",
+  "problems": [
+   "Confirmed on the regenerated strip; unchanged from pass 4. minor (non-blocking): the hand is dark-filled"
+  ],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S03",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S04",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S05",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S06",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S07",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S08",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S09",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): after the caption lands (~12.7 s) the only change to the cut is the caption fading; 'heat won't climb back up on its own' is allowed but not used"
+  ],
+  "fixes": [
+   "Optional: land 'heat won't climb back up on its own' at ~17 s ('takes work')"
+  ],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S10",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S11",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): blank board from 0 to ~4 s now that the label waits for the loop"
+  ],
+  "fixes": [
+   "Optional: draw the zones on at ~1 s"
+  ],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S12",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): bubbles are 4 small dark dots; readable but weak at TV size"
+  ],
+  "fixes": [
+   "Enlarge bubbles to violet outlined circles ~18 px at 1080 and add a few more"
+  ],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S13",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S14",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the 'leftovers, air' source sits above the cold-zone panel (outside the fridge region); 'EVAPORATOR: low pressure, so it boils' sits ~65 px from the top edge"
+  ],
+  "fixes": [
+   "Move the leftovers box inside the cold-zone panel; drop the title to clear 96 px from the top"
+  ],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S15",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S16",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S17",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): U-bends are chalk rather than pipe-coloured; 'vapor turns to liquid' is on screen from 0 s"
+  ],
+  "fixes": [
+   "Draw the U-bends as part of the pipe; fade the label in at 7.63 s"
+  ],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S18",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S19",
+  "verdict": "PASS",
+  "problems": [
+   "Non-blocking regression: the cut now lands 0.54 s (16 frames) before 'In many fridges' (192.71 s on the clean narration track); in pass 6 it was 0.24 s. The re-timed words.json has a low-confidence 'In' (p=0.41) starting 0.4 s early, at 192.32. The cut falls in silence after 'boil again', so the visuals still carry; S11 (0.52 s) and S09 (0.46 s) have similar pre-existing leads",
+   "minor (non-blocking): crossing heat arrows are ~3 to 4 px at 1080 (flow weight is 8 px), though now readable"
+  ],
+  "fixes": [
+   "Optional: in build_scenes.py, when an anchor's first word has p < 0.5, start the scene 0.15 s before the next word minus that word's typical length (here about 192.55 s), or pin S19 start to 192.55"
+  ],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S20",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S21",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S22",
+  "verdict": "PASS",
+  "problems": [
+   "Re-checked: cut 0.20 s before 'On'; lime bar 0.10 s before 'every unit of electricity'; orange bar 0.22 s before 'one point four' (spoken as '1.4'). The visuals match pass 6 frame for frame at matched scene times",
+   "minor (non-blocking): the lime bar is on screen from 0 s rather than landing on 'every unit of electricity'"
+  ],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S23",
+  "verdict": "PASS",
+  "problems": [
+   "Cue 3 now lands at 242.88 s, 0.10 s before 'room temperature couldn't' (room@242.98 in the independent transcription of the narration stem). The heat arrows keep flowing and the condenser stays hot through 'Push it well above room temperature', then the arrows stop and the condenser drops toward room air before the callback lands at 243.86 s. Longest stretch without a change is 6.7 s (236.2 to 242.88), under 8 s"
+  ],
+  "fixes": [],
+  "judged_in": "pass8"
+ },
+ {
+  "id": "S24",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S25",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S26",
+  "verdict": "PASS",
+  "problems": [
+   "Measured on full-res frames from /tmp/claude-0/ep5/episode_comp.mp4 at 5.3, 8.0 and 10.8 s: 33 px between 'condenser' and 'room air' on one shared baseline; 'condenser' starts at x=108 at the end of the push (leftmost content, the heating vent, is at x=96, on the margin)",
+   "minor (non-blocking): 'room air' ends 15 px from the oven outline (no overlap; 20 px+ would read more comfortably)"
+  ],
+  "fixes": [
+   "Optional: give 'room air' 5 px more clearance from the oven"
+  ],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S27",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S28",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S29",
+  "verdict": "PASS",
+  "problems": [
+   "Re-checked with the 4-frame head skip: glow ramps from about 0.9 s and is ~70% up by 'electric heater' (rel 1.97); melt starts about 3.0 to 3.3 s ('mounted' rel 3.21); the slide starts on 'glass' (rel 9.25) and settles at frame 304 of 306, so it holds 2 frames before the cut (the scene got 4 frames shorter, which used up most of the head skip). Non-blocking, as in pass 5",
+   "minor (non-blocking): the label starts fading in at ~9.2 s while the rod shot and falling drops are still on screen; the variant settles about 1 frame before the cut; the unlit rod renders copper-brown before the heater is on; the background is neutral grey (about #30333A) rather than slate"
+  ],
+  "fixes": [
+   "Optional: delay the label fade-in until the tube enters frame (~9.9 s); render the unlit rod neutral grey"
+  ],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S30",
+  "verdict": "PASS",
+  "problems": [
+   "'≈ 450 W' lands at 324.19 s, 0.13 s before '450' (324.32). '≈ 470 W' lands at 325.36 s, 0.20 s before '470' (325.56 to 325.58), within the tolerance used for S22"
+  ],
+  "fixes": [],
+  "judged_in": "pass8"
+ },
+ {
+  "id": "S31",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S32",
+  "verdict": "PASS",
+  "problems": [
+   "Cue 2 (heat into the pan) now lands at 354.62 s, 0.10 s before 'condenser's warmth' (354.72). Pass 7's parse matched the earlier 'condenser' at 353.3 s, about 1.4 s early. That miss was in my pass 7 too: the apostrophe broke my own quote parsing, so the check didn't catch it",
+   "minor (non-blocking): the condenser-to-pan heat arrow is still short"
+  ],
+  "fixes": [],
+  "judged_in": "pass8"
+ },
+ {
+  "id": "S33",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S34",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S35",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S36",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the 'holds more' icons sit top-centre, not under today's bar"
+  ],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S37",
+  "verdict": "PASS",
+  "problems": [
+   "Cue 2 (heat into the fridge) now lands at 426.86 s, 0.10 s before 'won't cool' (426.94 to 426.96)"
+  ],
+  "fixes": [],
+  "judged_in": "pass8"
+ },
+ {
+  "id": "S38",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the extra arrow starts about 60 px right of the bolt, so its link to the electricity reads by proximity only"
+  ],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S39",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ },
+ {
+  "id": "S40",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass8 (pixel-identical to pass 7 over the whole scene; verdict carried)"
+ }
+]

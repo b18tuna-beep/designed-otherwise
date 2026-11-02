@@ -1,0 +1,91 @@
+name: Assemble final video
+
+# Composites the Blender heroes under their 2D overlays, splices them into the episode, lays narration
+# over a ducked music bed, writes captions and runs the loudness/sync checks (tools/audio/assemble.py).
+# Inputs all come from the PRIVATE studio: episode-<episode> (episode.mp4, overlays-frames.tar),
+# heroes-<episode> (S02.mp4 ...), narration-<episode> (final.flac) and the music library (assets/music,
+# read through a sparse checkout). The finished files go back ONLY to the studio release
+# render-<job> in the layout its build-video upload stage expects:
+#   video.mp4, captions.srt, checks.json, thumb-1.jpg .. thumb-3.jpg
+# Nothing finished and no music is ever stored in this public repo.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode folder name"
+        default: p1-refrigerator
+      job:
+        description: "Studio job slug the render belongs to"
+        default: 2026-11-p1-fridge
+      narration:
+        description: "Asset in studio release narration-<episode>"
+        default: final.flac
+      heroes:
+        description: "Composite the Blender hero shots (P1: S02, S29)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: assemble-${{ inputs.job }}
+  cancel-in-progress: false
+
+jobs:
+  assemble:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Music library from the studio (sparse, read-only)
+        uses: actions/checkout@v4
+        with:
+          repository: b18tuna-beep/designed-otherwise-studio
+          token: ${{ secrets.STUDIO_TOKEN }}
+          path: _studio
+          sparse-checkout: assets/music
+          persist-credentials: false
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          cp _studio/assets/music/*.mp3 assets/music/
+          ls -la assets/music
+      - name: Fetch renders and narration from the studio
+        env:
+          STUDIO_TOKEN: ${{ secrets.STUDIO_TOKEN }}
+          EP: ${{ inputs.episode }}
+          NARR: ${{ inputs.narration }}
+          HEROES: ${{ inputs.heroes }}
+        run: |
+          bash tools/ci/studio.sh fetch "episode-$EP" in episode.mp4
+          bash tools/ci/studio.sh fetch "narration-$EP" in "$NARR"
+          if [ "$HEROES" = "true" ]; then
+            bash tools/ci/studio.sh fetch "episode-$EP" in overlays-frames.tar
+            mkdir -p in/overlays && tar -xf in/overlays-frames.tar -C in/overlays
+            bash tools/ci/studio.sh fetch "heroes-$EP" tools/anim/motion-canvas/src/p1/renders '*.mp4'
+          fi
+          ls -la in tools/anim/motion-canvas/src/p1/renders 2>/dev/null || true
+      - name: Composite heroes
+        if: inputs.heroes
+        run: python3 tools/anim/composite_heroes.py in/episode.mp4 in/overlays out/episode_comp.mp4
+      - name: Assemble and check
+        env: {NARR: "${{ inputs.narration }}", HEROES: "${{ inputs.heroes }}"}
+        run: |
+          set +e -o pipefail
+          video=in/episode.mp4; [ "$HEROES" = "true" ] && video=out/episode_comp.mp4
+          python3 tools/audio/assemble.py "$video" "in/$NARR" out/final 2>&1 | tee assemble.log; rc=${PIPESTATUS[0]}
+          echo "::notice title=Checks::$(tr -d '\n ' < out/final/checks.json 2>/dev/null | cut -c1-900)"
+          [ "$rc" -eq 0 ] || { echo "::error title=Assembly checks failed::$(tail -c 900 assemble.log | tr '\n' ' ')"; exit 1; }
+      - name: Hand to the studio (private release render-<job>)
+        env:
+          STUDIO_TOKEN: ${{ secrets.STUDIO_TOKEN }}
+          EP: ${{ inputs.episode }}
+          JOB: ${{ inputs.job }}
+        run: |
+          F=out/final
+          mv $F/final.mp4 $F/video.mp4
+          cp episodes/$EP/final/thumbs/thumb-*.jpg $F/
+          bash tools/ci/studio.sh release "render-$JOB" $F/video.mp4 $F/captions.srt $F/checks.json $F/thumb-*.jpg
+          bash tools/ci/studio.sh preview "assemble/$JOB/run-${{ github.run_id }}" $F/checks.json $F/captions.srt

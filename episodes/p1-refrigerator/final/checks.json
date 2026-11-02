@@ -1,0 +1,15 @@
+{
+ "loudness_lufs": -14.16,
+ "loudness_ok": true,
+ "true_peak_dbtp": -1.76,
+ "true_peak_ok": true,
+ "sample_peak_db": -1.8,
+ "no_clipping": true,
+ "video_s": 465.5,
+ "final_s": 465.5,
+ "timeline_s": 465.48,
+ "sync_ok": true,
+ "narration_gaps_over_2_5s": [],
+ "gaps_ok": true,
+ "captions": 248
+}

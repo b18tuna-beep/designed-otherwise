@@ -1,0 +1,37 @@
+[
+  {
+    "id": "3.11",
+    "verdict": "PASS",
+    "safe_wording": "That heat comes from inside the fridge. From the air, the shelves, last night's leftovers, and the warmth that keeps creeping in through the walls and door.",
+    "bonus_supported": true,
+    "bonus_safe_wording": "In a typical home, opening the door and loading food account for only a modest share of a fridge's energy. Most of its work goes into fighting warmth that seeps in from the room through the walls and door seals.",
+    "confirmed_sources": [
+      {
+        "url": "https://core.ac.uk/download/268638659.pdf",
+        "publisher": "Clemson University (TigerPrints), S. Shoai Naini, M.S. thesis, 2015, 'Experimental Investigation of Heat Leakage and Air Leakage in Domestic Refrigerators'",
+        "quote": "There is always heat flux travelling through the walls of the unit"
+      },
+      {
+        "url": "https://digitalcommons.njit.edu/fac_pubs/10004",
+        "publisher": "New Jersey Institute of Technology faculty publication, 'An experimental and numerical study of refrigerator heat leakage at the gasket region'",
+        "quote": "comprising 17% and 14% heat leakage of the total load in the fresh-food and freezer compartments, respectively."
+      },
+      {
+        "url": "https://www.ideals.illinois.edu/items/9769",
+        "publisher": "University of Illinois ACRC TR-21, B.E. Boughton, A.M. Clausing, T.A. Newell, 1992, 'An Investigation of Household Refrigerator Cabinet Loads'",
+        "quote": "the complete edge loss accounts for approximately 30% of the overall cabinet load"
+      },
+      {
+        "url": "https://trace.tennessee.edu/utk_gradthes/3003",
+        "publisher": "University of Tennessee, Knoxville, R.A. Hoskins, M.S. thesis, 1977, 'Energy Conservation and Economic Analysis of Residential Refrigerators' (bonus source)",
+        "quote": "The remaining 44% is from door openings, heaters, fans, food, gasket area infiltration, and miscellaneous heat sources."
+      },
+      {
+        "url": "https://minerva-access.unimelb.edu.au/server/api/core/bitstreams/be85a93a-3ce5-5c17-9a5e-b582aadef433/content",
+        "publisher": "University of Melbourne, Harrington, Aye and Fuller, Energy Efficiency (journal), 'Opening the door on refrigerator energy consumption: quantifying the key drivers in the home' (bonus source)",
+        "quote": "User interactions typically account for 15% of total energy consumed by main household refrigerating appliances."
+      }
+    ],
+    "problems": "Core claim is well supported by four independent academic sources (Clemson, NJIT, Illinois ACRC, UTK). Bonus: no source gives a modern, explicit 'cabinet leakage is X% of the load' number. Hoskins (1977) attributes 56% of total heat gain to conduction through cabinet walls and doors (the 56% figure is in the abstract; full sentence too long to quote), but that fridge is decades old and had more heaters. Harrington et al. (c. 2018-2019, 235 homes) show user interactions are typically about 15% of energy and that room temperature drives most of the rest, but they do not split out wall and gasket leakage from other ambient-driven loads (defrost, anti-sweat heaters). So narrate 'most' or 'the bulk', never a specific percentage, and do not say 'the largest single source' as a hard number. Publication year for the Melbourne paper was not shown on the page."
+  }
+]

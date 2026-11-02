@@ -1,0 +1,128 @@
+name: Render episode (Motion Canvas)
+
+# Renders the Motion Canvas `episode` project (silent 1080p30 animation) split into time chunks on
+# parallel runners, or the `overlays` project (transparent PNG frames for the hero composites).
+# Results go to the PRIVATE studio release episode-<episode>:
+#   project=episode  -> episode.mp4 (chunks are uploaded, joined frame-exactly, then removed)
+#   project=overlays -> overlays-frames.tar (PNG frames 000000.png..., in scene order)
+# Three stills of the episode go to the studio previews branch for a quick look.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode folder name"
+        default: p1-refrigerator
+      project:
+        description: "episode | overlays"
+        type: choice
+        options: [episode, overlays]
+        default: episode
+      chunks:
+        description: "Parallel runners for project=episode (overlays always uses 1)"
+        default: "4"
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.p.outputs.matrix }}
+      total_frames: ${{ steps.p.outputs.total_frames }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        env: {EP: "${{ inputs.episode }}", PROJECT: "${{ inputs.project }}", CHUNKS: "${{ inputs.chunks }}"}
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json, os
+          ep, project = os.environ["EP"], os.environ["PROJECT"]
+          k = int(os.environ["CHUNKS"]) if project == "episode" else 1
+          total = json.load(open(f"episodes/{ep}/scenes/scenes.json"))["total_s"]
+          n = round(total * 30)
+          size = -(-n // k)
+          chunks = [{"i": i, "f0": a, "f1": min(a + size, n)} for i, a in enumerate(range(0, n, size))]
+          if project != "episode":
+              chunks = [{"i": 0, "f0": 0, "f1": 0}]
+          print("matrix=" + json.dumps({"chunk": chunks}))
+          print(f"total_frames={n}")
+          EOF
+
+  render:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    defaults: {run: {working-directory: tools/anim/motion-canvas}}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm, cache-dependency-path: tools/anim/motion-canvas/package-lock.json}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - run: npm ci --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium > /dev/null
+      - name: Render frames
+        env:
+          PROJECT: ${{ inputs.project }}
+          F0: ${{ matrix.chunk.f0 }}
+          F1: ${{ matrix.chunk.f1 }}
+          RENDER_TIMEOUT_MIN: "100"
+        run: |
+          if [ "$PROJECT" = "episode" ]; then
+            export RANGE="$(python3 -c "import os; print(f\"{int(os.environ['F0'])/30:.6f},{int(os.environ['F1'])/30:.6f}\")")"
+            echo "range $RANGE s"
+          fi
+          node render.mjs ../../../out/frames "$PROJECT" --frames
+      - name: Encode chunk (episode) or pack frames (overlays)
+        working-directory: .
+        env:
+          STUDIO_TOKEN: ${{ secrets.STUDIO_TOKEN }}
+          EP: ${{ inputs.episode }}
+          PROJECT: ${{ inputs.project }}
+          I: ${{ matrix.chunk.i }}
+          F0: ${{ matrix.chunk.f0 }}
+          F1: ${{ matrix.chunk.f1 }}
+        run: |
+          if [ "$PROJECT" = "episode" ]; then
+            name=$(printf 'chunk-%02d.mp4' "$I")
+            python3 tools/anim/encode_chunk.py out/frames $((F1 - F0)) "out/$name"
+            bash tools/ci/studio.sh release "episode-$EP" "out/$name"
+          else
+            tar -cf out/overlays-frames.tar -C out/frames .
+            bash tools/ci/studio.sh release "episode-$EP" out/overlays-frames.tar
+          fi
+
+  stitch:
+    needs: [plan, render]
+    if: inputs.project == 'episode'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - name: Join chunks frame-exactly
+        env:
+          STUDIO_TOKEN: ${{ secrets.STUDIO_TOKEN }}
+          EP: ${{ inputs.episode }}
+          TOTAL: ${{ needs.plan.outputs.total_frames }}
+        run: |
+          bash tools/ci/studio.sh fetch "episode-$EP" in 'chunk-*.mp4'
+          ls in/chunk-*.mp4 | sort | sed "s|^|file '$PWD/|; s|$|'|" > list.txt
+          mkdir -p out
+          ffmpeg -loglevel error -y -f concat -safe 0 -i list.txt -c copy -movflags +faststart out/episode.mp4
+          got=$(ffprobe -v error -count_packets -select_streams v:0 -show_entries stream=nb_read_packets -of csv=p=0 out/episode.mp4)
+          echo "::notice title=Episode frames::$got of $TOTAL"
+          [ "$got" -eq "$TOTAL" ] || { echo "::error title=Frame count::joined $got frames, timeline needs $TOTAL"; exit 1; }
+          for t in 30 50 70; do
+            ffmpeg -loglevel error -y -ss "$(python3 -c "print($TOTAL/30*$t/100)")" -i out/episode.mp4 -frames:v 1 -vf scale=960:-2 "out/still-$t.jpg"
+          done
+      - name: Hand to the studio (private) and remove the chunks
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}", EP: "${{ inputs.episode }}"}
+        run: |
+          bash tools/ci/studio.sh release "episode-$EP" out/episode.mp4
+          bash tools/ci/studio.sh drop "episode-$EP" $(cd in && ls chunk-*.mp4)
+          bash tools/ci/studio.sh preview "episode/$EP/run-${{ github.run_id }}" out/still-*.jpg

@@ -1,0 +1,68 @@
+name: Narrate
+
+# Reads a narration text file in the channel voice (style/voice.md), produces word-level
+# timestamps, checks every script word was spoken, and hands the audio to the PRIVATE studio:
+#   studio release narration-<episode>: <name>.flac (lossless, for assembly), <name>.mp3, <name>.words.json
+#   studio previews branch narration/<episode>/run-<id>/: mp3, words.json, check.txt
+# Nothing is kept in this public repo (no artifacts, no previews here).
+
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "Narration text file, e.g. episodes/p1-refrigerator/script/narration.txt"
+        required: true
+      name:
+        description: "Output name (e.g. script-v1, final)"
+        default: narration
+      voice:
+        description: "Kokoro voice (channel voice: bm_george; change only with Michael's approval)"
+        default: bm_george
+      speed:
+        description: "Speed (channel: 1.0)"
+        default: "1.0"
+
+permissions:
+  contents: read
+
+jobs:
+  narrate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11", cache: pip, cache-dependency-path: tools/requirements-voice.txt}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg > /dev/null
+      - run: |
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q -r tools/requirements-voice.txt
+      - name: Episode from the text path
+        env: {TEXT: "${{ inputs.text }}"}
+        run: |
+          ep=$(echo "$TEXT" | sed -n 's|^episodes/\([^/]*\)/.*|\1|p'); ep=${ep:-misc}
+          echo "EP=$ep" >> "$GITHUB_ENV"
+      - name: Synthesize
+        env: {VOICE: "${{ inputs.voice }}", SPEED: "${{ inputs.speed }}", TEXT: "${{ inputs.text }}", NAME: "${{ inputs.name }}"}
+        run: |
+          mkdir -p out
+          python tools/voice/kokoro_tts.py "$VOICE" "$SPEED" "$TEXT" "out/$NAME.wav"
+      - name: Word timestamps and script check
+        env: {TEXT: "${{ inputs.text }}", NAME: "${{ inputs.name }}"}
+        run: |
+          set +e
+          python tools/captions/word_timestamps.py "out/$NAME.wav" "$TEXT" "out/$NAME.words.json" | tee out/check.txt
+          code=${PIPESTATUS[0]}
+          echo "::notice title=Word check::$(head -1 out/check.txt)"
+          [ "$code" -eq 2 ] && echo "::warning title=Mismatches::$(tail -n +2 out/check.txt | head -20 | tr '\n' ' ')"
+          exit 0
+      - name: MP3 at YouTube loudness, plus lossless FLAC for assembly
+        env: {NAME: "${{ inputs.name }}"}
+        run: |
+          ffmpeg -loglevel error -y -i "out/$NAME.wav" -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 44100 -b:a 160k "out/$NAME.mp3"
+          ffmpeg -loglevel error -y -i "out/$NAME.wav" -c:a flac "out/$NAME.flac"
+      - name: Hand to the studio (private)
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}", NAME: "${{ inputs.name }}"}
+        run: |
+          bash tools/ci/studio.sh release "narration-$EP" "out/$NAME.flac" "out/$NAME.mp3" "out/$NAME.words.json"
+          bash tools/ci/studio.sh preview "narration/$EP/run-${{ github.run_id }}" "out/$NAME.mp3" "out/$NAME.words.json" out/check.txt

@@ -1,0 +1,347 @@
+[
+ {
+  "id": "S01",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S02",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the hand is a chalk outline with a solid dark fill, so on the white cabinet it reads as a black hand rather than a chalk sketch; the push-in is gentle (about 11% over the shot), within the 15% limit"
+  ],
+  "fixes": [
+   "Optional: fill the hand with a 20% chalk tint (or leave it unfilled) so it reads as a chalk outline"
+  ],
+  "judged_in": "pass4"
+ },
+ {
+  "id": "S03",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S04",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S05",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass4"
+ },
+ {
+  "id": "S06",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S07",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S08",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S09",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): after the caption lands (~12.7 s) the only change to the cut is the caption fading; 'heat won't climb back up on its own' is allowed but not used"
+  ],
+  "fixes": [
+   "Optional: land 'heat won't climb back up on its own' at ~17 s ('takes work')"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S10",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S11",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): blank board from 0 to ~4 s now that the label waits for the loop"
+  ],
+  "fixes": [
+   "Optional: draw the zones on at ~1 s"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S12",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): bubbles are 4 small dark dots; readable but weak at TV size"
+  ],
+  "fixes": [
+   "Enlarge bubbles to violet outlined circles ~18 px at 1080 and add a few more"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S13",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S14",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the 'leftovers, air' source sits above the cold-zone panel (outside the fridge region); 'EVAPORATOR: low pressure, so it boils' sits ~65 px from the top edge"
+  ],
+  "fixes": [
+   "Move the leftovers box inside the cold-zone panel; drop the title to clear 96 px from the top"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S15",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S16",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S17",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): U-bends are chalk rather than pipe-coloured; 'vapor turns to liquid' is on screen from 0 s"
+  ],
+  "fixes": [
+   "Draw the U-bends as part of the pipe; fade the label in at 7.63 s"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S18",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S19",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): crossing heat arrows are ~3 to 4 px at 1080 (flow weight is 8 px), though now readable"
+  ],
+  "fixes": [
+   "Raise arrow stroke to 8 px"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S20",
+  "verdict": "FAIL",
+  "problems": [
+   "EVAPORATOR now clears the zone wall, but it starts at x=79 at 1080, inside the 96 px safe margin"
+  ],
+  "fixes": [
+   "Shift the label right so it starts at least x=96 (move it about 20 px right; there is room before the pipe), or set it right-aligned over the evaporator"
+  ],
+  "judged_in": "pass4"
+ },
+ {
+  "id": "S21",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S22",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the lime bar is on screen from 0 s rather than landing on 'every unit of electricity'"
+  ],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S23",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the callback is a small generic fridge icon rather than the S01 cutaway"
+  ],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S24",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S25",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S26",
+  "verdict": "FAIL",
+  "problems": [
+   "At the end of the push, 'condenser' starts at x=87 at 1080, 9 px inside the 96 px safe margin"
+  ],
+  "fixes": [
+   "Move the thermometer pair about 20 px right (to x = -720 and -560), or reduce the push so the pair stays inside 96 px"
+  ],
+  "judged_in": "pass4"
+ },
+ {
+  "id": "S27",
+  "verdict": "FAIL",
+  "problems": [
+   "'door open' now sits above the door, clear of the outlines, but it starts at x=66 at 1080, inside the 96 px safe margin (the cabinet sits far left in this layout, so the door-side rule pushes the label off the safe area)"
+  ],
+  "fixes": [
+   "Clamp the door label's x so it never starts left of 96 px (here, right-shift it about 35 px, or centre it over the door panel)"
+  ],
+  "judged_in": "pass4"
+ },
+ {
+  "id": "S28",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S29",
+  "verdict": "FAIL",
+  "problems": [
+   "Frost breaks the style rule: at the start of the shot the frosted coil is saturated cyan (about #54DEFD), not a chalk-white deposit with a thin blue edge. It's indistinguishable from bare blue metal, and it doesn't match the chalk-white frost on the same coil in S27 and S28 at the cut",
+   "Under the heater glow, the frosted fins pick up a pink/lavender cast (visible at ~7.4 s) that reads close to the violet refrigerant colour",
+   "The camera slide to the glass-tube heater starts at ~7.2 s, about 2 s before 'glass tube' (cue 9.19 s), so the glass tube is on screen while 'metal rod' is spoken; 'DEFROST HEATER' rides over the moving coil during the slide",
+   "Passes otherwise: the lead is lime, the rod glow ramps in on 'electric heater', frost melts back from the bottom up and exposes the blue fins, meltwater drops fall, and there's no refrigerant or airflow during the glow"
+  ],
+  "fixes": [
+   "Give the frost its own material: chalk (#ECE7DC) emission or albedo with low specular, plus a thin cold-blue rim (fresnel or outline), so the cold fill light can't push it to cyan; check it matches S28's frost at the cut",
+   "Clamp frost and fin emission/albedo so heater light warms toward white or orange, never pink: lower the glow light's influence on the frost, or neutralise the fill",
+   "Start the slide at ~8.9 s so it lands on 'glass tube'; fade 'DEFROST HEATER' out before the slide begins"
+  ],
+  "judged_in": "pass4"
+ },
+ {
+  "id": "S30",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the clock's elapsed arc is still orange (it marks time, not heat)"
+  ],
+  "fixes": [
+   "Draw the clock arc in chalk"
+  ],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S31",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S32",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the condenser-to-pan heat arrow is still short"
+  ],
+  "fixes": [],
+  "judged_in": "pass4"
+ },
+ {
+  "id": "S33",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S34",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S35",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S36",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the 'holds more' icons sit top-centre, not under today's bar"
+  ],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S37",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the blue puff sits low left of the cabinet, near the bottom of the open door rather than in the opening"
+  ],
+  "fixes": [],
+  "judged_in": "pass4"
+ },
+ {
+  "id": "S38",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the extra arrow starts about 60 px right of the bolt, so its link to the electricity reads by proximity only"
+  ],
+  "fixes": [],
+  "judged_in": "pass4"
+ },
+ {
+  "id": "S39",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S40",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ }
+]

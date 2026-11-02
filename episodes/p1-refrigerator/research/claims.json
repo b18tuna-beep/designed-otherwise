@@ -1,0 +1,1834 @@
+[
+  {
+    "id": "1.1",
+    "beat": 1,
+    "claim": "A running refrigerator dumps heat through its outer surfaces; depending on design the condenser is an exposed coil on the back, tubing bonded inside the side walls (hot-wall), or a fan-cooled coil in a machine compartment at the bottom/back, and many models also run warm refrigerant tubing around the door openings.",
+    "numbers": [
+      {
+        "value": "about 40",
+        "unit": "degC",
+        "context": "Haier: side/back surface in normal operation at 25 degC ambient"
+      },
+      {
+        "value": "about 50",
+        "unit": "degC",
+        "context": "Haier: just after power-on"
+      },
+      {
+        "value": "about 60 to 65",
+        "unit": "degC",
+        "context": "Haier: when ambient is above 35 degC"
+      },
+      {
+        "value": "85",
+        "unit": "degC",
+        "context": "Haier: maximum surface temperature allowed by the standard it cites"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Question: Sides of refrigerator or back of refrigerator is hot",
+        "publisher": "Haier (India support)",
+        "url": "https://www.haier.com/in/service-support/self-service/20160707_102142.shtml",
+        "type": "manufacturer",
+        "quote": "surface temperature must not pass over 85 ℃",
+        "locator": "Answer text; also gives about 40 degC normal, about 50 degC at power-on, 60-65 degC above 35 degC ambient (paraphrased by fetch tool)",
+        "opened": true
+      },
+      {
+        "title": "Why the sides of your Samsung refrigerator get hot",
+        "publisher": "Samsung Canada support",
+        "url": "https://www.samsung.com/ca/support/home-appliances/why-the-sides-of-your-samsung-refrigerator-get-hot",
+        "type": "manufacturer",
+        "quote": "heat dissipation pipes are installed along the outer walls",
+        "locator": "Article body",
+        "opened": true
+      },
+      {
+        "title": "Modelling of a Hot-Wall Condenser Used in Domestic Refrigerators (COBEM 2013)",
+        "publisher": "Labigalini & Seixlack, ABCM",
+        "url": "https://www.abcm.org.br/anais/cobem/2013/PDF/2476.pdf",
+        "type": "paper",
+        "quote": "The serpentine is welded to the inner surface of the lining plate of the refrigerator's side walls",
+        "locator": "Introduction",
+        "opened": true
+      },
+      {
+        "title": "Technical Service Guide, GE PSH23SGNAFBS (Arctica side-by-side, inverter compressor), PUB # 31-9090 02/02",
+        "publisher": "GE Consumer Home Services Training (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/ge/psh23sgnafbs/9252118-technical-service-guide",
+        "type": "manufacturer",
+        "quote": "The fan is mounted in the machine compartment with the No-Clean condenser.",
+        "locator": "p. 20",
+        "opened": true
+      },
+      {
+        "title": "All About Servicing Top Freezer Refrigerator, Publication #5995562831 (May 2010)",
+        "publisher": "Frigidaire / Electrolux Home Products (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/5995562831_frigidaire_refrigerator_tm_2010_service_manual.pdf",
+        "type": "manufacturer",
+        "quote": "The condenser is located under the cabinet bottom.",
+        "locator": "p. 4:1",
+        "opened": true
+      },
+      {
+        "title": "Hotpoint Top-Mount No-Frost Refrigerator Use and Care Guide, Pub. No. 39-6291",
+        "publisher": "GE Appliances (Hotpoint brand)",
+        "url": "https://www.geappliances.com/content/older-pdfs/39-6291.PDF",
+        "type": "manufacturer",
+        "quote": "In the refrigeration process, it is normal that heat be expelled in the area under the refrigerator.",
+        "locator": "Normal operation section",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "corrected",
+    "notes": "All three condenser layouts exist. Service literature for U.S. full-size models (GE PSH23, Frigidaire top-freezer, Maytag, Whirlpool, KitchenAid) shows fan-cooled condensers in a bottom/rear machine compartment; the COBEM paper says internal (hot-wall) condensers are 'commonly found in refrigerators produced in North America' while external condensers dominate in Europe, South America and Asia. No source gives market shares, so the script should not claim one layout is 'most common today'. GE Monogram built-ins put the condenser at the top behind a grille (31-9091 p. 50). Haier temperatures come from Haier India, a non-U.S. page."
+  },
+  {
+    "id": "1.2",
+    "beat": 1,
+    "claim": "The compressor of a conventional (fixed-speed) refrigerator normally runs hot, with the shell often far above room temperature, but some inverter compressors can feel near room temperature while running.",
+    "numbers": [
+      {
+        "value": "85 to 90",
+        "unit": "degC",
+        "context": "Haier: typical compressor casing temperature"
+      },
+      {
+        "value": "100 to 110",
+        "unit": "degC",
+        "context": "Haier: motor stator core and windings"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Haier HRN-186 manual, 5.2 Normal Phenomena (Not Troubles) for Refrigerators",
+        "publisher": "Haier (hosted on manualslib.com)",
+        "url": "https://www.manualslib.com/manual/2446807/Haier-Hrn-186.html?page=11",
+        "type": "manufacturer",
+        "quote": "its casing is generally at a temperature between 85 ℃~90℃",
+        "locator": "Page 11, section 5.2",
+        "opened": true
+      },
+      {
+        "title": "Refrigerator compressor getting hot",
+        "publisher": "PartSelect",
+        "url": "https://partselect.com/blog/refrigerator-compressor-getting-hot",
+        "type": "reference",
+        "quote": "It's normal for your refrigerator compressor to be warm",
+        "locator": "Blog body",
+        "opened": true
+      },
+      {
+        "title": "Technical Service Guide, GE PSH23SGNAFBS (Arctica side-by-side, inverter compressor), PUB # 31-9090 02/02",
+        "publisher": "GE Consumer Home Services Training (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/ge/psh23sgnafbs/9252118-technical-service-guide",
+        "type": "manufacturer",
+        "quote": "The compressor exterior may be room temperature while operating.",
+        "locator": "p. 14",
+        "opened": true
+      }
+    ],
+    "confidence": "medium",
+    "status": "corrected",
+    "notes": "Hypothesis was too absolute. Haier gives 85-90 degC casing for its compressor; GE's inverter-compressor guide says the exterior may be at room temperature. Script should say the compressor 'can run hot' or 'often runs hot' rather than always. The hot surfaces most viewers feel are condenser surfaces, not the compressor."
+  },
+  {
+    "id": "2.1",
+    "beat": 2,
+    "claim": "Heat flows spontaneously only from a hotter body to a colder one; moving heat from cold to hot requires work (Clausius statement of the second law).",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "Second Law of Thermodynamics",
+        "publisher": "Georgia State University, Dept. of Physics and Astronomy (HyperPhysics, R. Nave)",
+        "url": "http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/seclaw.html",
+        "type": "university",
+        "quote": "It is not possible for heat to flow from a colder body to a warmer body without any work having been done to accomplish this flow.",
+        "locator": "Refrigerator statement of the second law",
+        "opened": true
+      },
+      {
+        "title": "6.4 The second law of thermodynamics: Kelvin-Planck and Clausius statements, Introduction to Engineering Thermodynamics (Yan)",
+        "publisher": "LibreTexts Engineering",
+        "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introduction_to_Engineering_Thermodynamics_(Yan)/06%3A_Entropy_and_the_Second_Law_of_Thermodynamics/6.04%3A_The_second_law_of_thermodynamics-_Kelvin-Planck_and_Clausius_statements",
+        "type": "textbook",
+        "quote": "it is impossible to construct a device that operates in a cycle and produces no effect other than the transfer of heat from a lower-temperature body to a higher-temperature body.",
+        "locator": "Clausius statement section",
+        "opened": true
+      },
+      {
+        "title": "College Physics for AP Courses, 14.1 Heat",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/college-physics-ap-courses/pages/14-1-heat",
+        "type": "textbook",
+        "quote": "Macroscopically, heat appears to transfer thermal energy spontaneously in only one direction.",
+        "locator": "Section 14.1",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "Nuance for accuracy: at the molecular level energy moves both ways, but the net flow is hot to cold (OpenStax 14.1; also UIUC Physics Van Q&A 28372). Avoid saying heat 'can never' move from cold to hot; say 'never on its own'. HyperPhysics quote is two fragments joined by the fetch tool; checker should confirm exact wording."
+  },
+  {
+    "id": "2.2",
+    "beat": 2,
+    "claim": "Cold is not a substance that gets added; heat is energy transferred because of a temperature difference, and a refrigerator cools food by removing heat from it.",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "College Physics for AP Courses, 14.1 Heat",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/college-physics-ap-courses/pages/14-1-heat",
+        "type": "textbook",
+        "quote": "Heat is the spontaneous transfer of energy due to a temperature difference.",
+        "locator": "Section 14.1, definition",
+        "opened": true
+      },
+      {
+        "title": "University Physics Volume 2, Section 4.3 Refrigerators and Heat Pumps",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+        "type": "textbook",
+        "quote": "A household refrigerator removes heat from the food within it while exhausting heat to the surrounding air.",
+        "locator": "Section 4.3",
+        "opened": true
+      },
+      {
+        "title": "Refrigerator",
+        "publisher": "Georgia State University, Dept. of Physics and Astronomy (HyperPhysics, R. Nave)",
+        "url": "http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/refrig.html",
+        "type": "university",
+        "quote": "a refrigerant liquid is forced to evaporate and extract energy from the cold area.",
+        "locator": "Refrigerator page",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "corrected",
+    "notes": "No source uses the exact phrase 'cold is not a thing'; the claim is reworded to what the sources support (heat = energy transfer; cooling = removing heat). Script can still say 'there is no such thing as adding cold' as a framing line supported by these definitions."
+  },
+  {
+    "id": "2.3",
+    "beat": 2,
+    "claim": "A refrigerator is a heat pump: it uses work (electrical energy driving a compressor) to move heat from a colder space to a warmer one.",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "University Physics Volume 2, Section 4.3 Refrigerators and Heat Pumps",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+        "type": "textbook",
+        "quote": "Either a refrigerator or a heat pump is an engine running in reverse.",
+        "locator": "Section 4.3, opening",
+        "opened": true
+      },
+      {
+        "title": "College Physics, Section 15.5 Applications of Thermodynamics: Heat Pumps and Refrigerators",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/college-physics/pages/15-5-applications-of-thermodynamics-heat-pumps-and-refrigerators",
+        "type": "textbook",
+        "quote": "The electrically driven compressor (work input W) raises the temperature and pressure of the gas",
+        "locator": "Section 15.5, heat pump cycle",
+        "opened": true
+      },
+      {
+        "title": "Refrigerator",
+        "publisher": "Georgia State University, Dept. of Physics and Astronomy (HyperPhysics, R. Nave)",
+        "url": "http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/refrig.html",
+        "type": "university",
+        "quote": "internal energy will not spontaneously flow from a cold region to a hot region.",
+        "locator": "Refrigerator page; page adds that the flow can be forced by doing work",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": ""
+  },
+  {
+    "id": "3.1",
+    "beat": 3,
+    "claim": "In the evaporator the refrigerant is at low pressure; it boils (vaporizes) and absorbs heat from the refrigerated space, mostly as latent heat of vaporization.",
+    "numbers": [
+      {
+        "value": "approximately 95",
+        "unit": "%",
+        "context": "SWEP: share of the evaporator's absorbed energy that is latent (evaporation) rather than superheat"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Technical Service Guide, GE PSH23SGNAFBS (Arctica side-by-side, inverter compressor), PUB # 31-9090 02/02",
+        "publisher": "GE Consumer Home Services Training (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/ge/psh23sgnafbs/9252118-technical-service-guide",
+        "type": "manufacturer",
+        "quote": "As the refrigerant vaporizes, it absorbs heat.",
+        "locator": "p. 6; same page: 'Low pressure in the evaporator, caused by the suction of the compressor' causes the liquid to vaporize",
+        "opened": true
+      },
+      {
+        "title": "University Physics Volume 2, Section 4.3 Refrigerators and Heat Pumps",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+        "type": "textbook",
+        "quote": "The coolant extracts heat from the refrigerator at the evaporator, causing coolant to vaporize.",
+        "locator": "Section 4.3",
+        "opened": true
+      },
+      {
+        "title": "SWEP Refrigerant Handbook, 6. Evaporators",
+        "publisher": "SWEP (brazed plate heat exchanger manufacturer)",
+        "url": "https://swep.net/refrigerant-handbook/6.-evaporators/asas8",
+        "type": "manufacturer",
+        "quote": "The latent energy absorbed in the evaporation represents the majority, approximately 95%,",
+        "locator": "Evaporators chapter",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "The 95% figure is from a heat exchanger manufacturer's general refrigeration handbook, not household-fridge specific; use as 'most of the heat' rather than a precise number."
+  },
+  {
+    "id": "3.2",
+    "beat": 3,
+    "claim": "The compressor squeezes the low-pressure vapor into high-pressure, high-temperature vapor, hot enough to be well above room temperature.",
+    "numbers": [
+      {
+        "value": "54.4 (130)",
+        "unit": "degC (degF)",
+        "context": "ASHRAE LBP rating condition condensing temperature for household-class compressors"
+      },
+      {
+        "value": "32.2 (90)",
+        "unit": "degC (degF)",
+        "context": "ASHRAE LBP rating ambient temperature"
+      }
+    ],
+    "sources": [
+      {
+        "title": "College Physics, Section 15.5 Applications of Thermodynamics: Heat Pumps and Refrigerators",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/college-physics/pages/15-5-applications-of-thermodynamics-heat-pumps-and-refrigerators",
+        "type": "textbook",
+        "quote": "The electrically driven compressor (work input W) raises the temperature and pressure of the gas",
+        "locator": "Section 15.5",
+        "opened": true
+      },
+      {
+        "title": "Maytag Services service manual, document 16025628 (2005)",
+        "publisher": "Maytag Services (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/maytag/amanaasd2324hrseries/23678349-service/",
+        "type": "manufacturer",
+        "quote": "Compressor forces high temperature vapor into fan cooled tube and wire condenser.",
+        "locator": "Refrigeration cycle section, approx. p. 5-6 (page footers sparse)",
+        "opened": true
+      },
+      {
+        "title": "Special Recipro compressors (applications page)",
+        "publisher": "Samsung Electronics compressor business",
+        "url": "https://www.samsung.com/global/business/compressor/applications/special-recipro",
+        "type": "manufacturer",
+        "quote": "Condensing Temp. : 54.4℃(130℉)",
+        "locator": "ASHRAE Conditions (LBP) table",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "The 54.4 degC condensing value is a standardized rating condition, not a measured operating value for every fridge; see 3.7."
+  },
+  {
+    "id": "3.3",
+    "beat": 3,
+    "claim": "In the condenser the hot high-pressure vapor gives off heat to the surrounding (kitchen) air and condenses into a high-pressure liquid.",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "Technical Service Guide, GE PSH23SGNAFBS (Arctica side-by-side, inverter compressor), PUB # 31-9090 02/02",
+        "publisher": "GE Consumer Home Services Training (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/ge/psh23sgnafbs/9252118-technical-service-guide",
+        "type": "manufacturer",
+        "quote": "As heat is removed from the high-pressure vapor, it begins to condense into a high-pressure liquid.",
+        "locator": "p. 6",
+        "opened": true
+      },
+      {
+        "title": "College Physics, Section 15.5 Applications of Thermodynamics: Heat Pumps and Refrigerators",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/college-physics/pages/15-5-applications-of-thermodynamics-heat-pumps-and-refrigerators",
+        "type": "textbook",
+        "quote": "heat transfer to the room occurs and the gas condenses to a liquid.",
+        "locator": "Section 15.5",
+        "opened": true
+      },
+      {
+        "title": "Refrigerator",
+        "publisher": "Georgia State University, Dept. of Physics and Astronomy (HyperPhysics, R. Nave)",
+        "url": "http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/refrig.html",
+        "type": "university",
+        "quote": "Then it is compressed and forced to condense in the hot area.",
+        "locator": "Refrigerator page",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": ""
+  },
+  {
+    "id": "3.4",
+    "beat": 3,
+    "claim": "Household refrigerators typically meter refrigerant through a capillary tube, a long narrow restriction that separates the high-pressure side from the low-pressure side; the pressure drop lets part of the liquid flash to vapor, chilling the rest before it enters the evaporator.",
+    "numbers": [
+      {
+        "value": "approximately 30",
+        "unit": "% of refrigerant",
+        "context": "GE: fraction that vaporizes immediately on leaving the capillary (single source, see 3.10)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Technical Service Guide, GE PSH23SGNAFBS (Arctica side-by-side, inverter compressor), PUB # 31-9090 02/02",
+        "publisher": "GE Consumer Home Services Training (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/ge/psh23sgnafbs/9252118-technical-service-guide",
+        "type": "manufacturer",
+        "quote": "The capillary tube restricts the amount of refrigerant that leaves the condenser.",
+        "locator": "p. 6; p. 9: primary function is to control flow into the evaporator",
+        "opened": true
+      },
+      {
+        "title": "All About Servicing Top Freezer Refrigerator, Publication #5995562831 (May 2010)",
+        "publisher": "Frigidaire / Electrolux Home Products (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/5995562831_frigidaire_refrigerator_tm_2010_service_manual.pdf",
+        "type": "manufacturer",
+        "quote": "The basic components of a refrigerator are a compressor, condenser, evaporator, heat exchanger",
+        "locator": "p. 7:2; heat exchanger described as capillary tube plus suction line",
+        "opened": true
+      },
+      {
+        "title": "SWEP Refrigerant Handbook, 2. Compression cycle",
+        "publisher": "SWEP",
+        "url": "https://swep.net/refrigerant-handbook/2.-compression-cycle/zx3",
+        "type": "manufacturer",
+        "quote": "The expansion valve separates the high-pressure part of the system from the low-pressure part.",
+        "locator": "Compression cycle chapter",
+        "opened": true
+      },
+      {
+        "title": "College Physics, Section 15.5 Applications of Thermodynamics: Heat Pumps and Refrigerators",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/college-physics/pages/15-5-applications-of-thermodynamics-heat-pumps-and-refrigerators",
+        "type": "textbook",
+        "quote": "The liquid then flows back through a pressure-reducing valve to the outdoor evaporator coils",
+        "locator": "Section 15.5 (heat pump example)",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "Capillary use is confirmed by GE (31-9090, 31-9091), Frigidaire and Maytag service literature. GE describes the capillary in terms of restricting flow rather than 'dropping pressure'; the pressure drop is the consequence of the restriction. SWEP and OpenStax describe the generic expansion device (valve), not a capillary specifically."
+  },
+  {
+    "id": "3.5",
+    "beat": 3,
+    "claim": "In household refrigerators the capillary tube is bonded (soldered) to the suction line to form a heat exchanger: warm liquid in the capillary gives heat to the cold vapor returning to the compressor, which also keeps the suction line from sweating.",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "Technical Service Guide, GE PSH23SGNAFBS (Arctica side-by-side, inverter compressor), PUB # 31-9090 02/02",
+        "publisher": "GE Consumer Home Services Training (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/ge/psh23sgnafbs/9252118-technical-service-guide",
+        "type": "manufacturer",
+        "quote": "The heat exchange occurs where the capillary is soldered to the outside of the suction tube.",
+        "locator": "p. 9; also p. 9: helps to prevent the suction tube from sweating",
+        "opened": true
+      },
+      {
+        "title": "Maytag Services service manual, document 16025628 (2005)",
+        "publisher": "Maytag Services (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/maytag/amanaasd2324hrseries/23678349-service/",
+        "type": "manufacturer",
+        "quote": "To raise temperature of gas, suction line is placed in heat exchange with capillary.",
+        "locator": "Refrigeration cycle section, approx. p. 5-6",
+        "opened": true
+      },
+      {
+        "title": "All About Servicing Top Freezer Refrigerator, Publication #5995562831 (May 2010)",
+        "publisher": "Frigidaire / Electrolux Home Products (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/5995562831_frigidaire_refrigerator_tm_2010_service_manual.pdf",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "p. 7:2: heat exchanger is made up of the capillary tube and suction line (paraphrased by fetch tool; no verbatim quote captured)",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": ""
+  },
+  {
+    "id": "3.6",
+    "beat": 3,
+    "claim": "The two common household refrigerants boil far below freezing at atmospheric pressure: isobutane (R-600a) at about -11.7 degC (about 11 degF) and R-134a at about -26.3 degC (about -15 degF).",
+    "numbers": [
+      {
+        "value": "-11.78 (10.80)",
+        "unit": "degC (degF)",
+        "context": "Isobutane normal boiling point, Wikipedia infobox"
+      },
+      {
+        "value": "262 +/- 2",
+        "unit": "K",
+        "context": "Isobutane Tboil, NIST WebBook average of 24 of 25 values (about -11 degC)"
+      },
+      {
+        "value": "10.9",
+        "unit": "degF",
+        "context": "Isobutane boiling range, National Refrigerants SDS"
+      },
+      {
+        "value": "-26.3 (-15.34)",
+        "unit": "degC (degF)",
+        "context": "R-134a at atmospheric pressure, Wikipedia"
+      },
+      {
+        "value": "246.6 and 247.1",
+        "unit": "K",
+        "context": "R-134a Tboil values in NIST WebBook (about -26.5 and -26.0 degC)"
+      },
+      {
+        "value": "-26.2 (-15.1)",
+        "unit": "degC (degF)",
+        "context": "R-134a, Honeywell Genetron 134a SDS"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Isobutane: Phase change data",
+        "publisher": "NIST Chemistry WebBook",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C75285&Mask=4",
+        "type": "government",
+        "quote": "Average of 24 out of 25 values",
+        "locator": "Tboil = 262 +/- 2 K, method AVG",
+        "opened": true
+      },
+      {
+        "title": "Isobutane",
+        "publisher": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Isobutane",
+        "type": "reference",
+        "quote": "−11.78 °C (10.80 °F; 261.37 K)",
+        "locator": "Infobox, boiling point",
+        "opened": true
+      },
+      {
+        "title": "Safety Data Sheet R600a Isobutane",
+        "publisher": "National Refrigerants, Inc.",
+        "url": "https://refrigerants.com/wp-content/uploads/SDS-R600a-ISOBUTANE.pdf",
+        "type": "manufacturer",
+        "quote": "BOILING RANGE: 10.9˚F",
+        "locator": "Section 9",
+        "opened": true
+      },
+      {
+        "title": "1,1,1,2-Tetrafluoroethane: Phase change data",
+        "publisher": "NIST Chemistry WebBook",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C811972&Mask=4#Thermo-Phase",
+        "type": "government",
+        "quote": "",
+        "locator": "Tboil table: 246.6 K (PCR Inc., 1990) and 247.1 K (Dietrich, 1952; TRC uncertainty 2 K)",
+        "opened": true
+      },
+      {
+        "title": "R-134a",
+        "publisher": "Wikipedia (via wikiwand.com)",
+        "url": "https://wikiwand.com/en/R-134a",
+        "type": "reference",
+        "quote": "−26.3 °C (−15.34 °F) at atmospheric pressure",
+        "locator": "Infobox/body",
+        "opened": true
+      },
+      {
+        "title": "Safety Data Sheet, Genetron 134a",
+        "publisher": "Honeywell (hosted by Delta College facilities)",
+        "url": "https://delta.edu/employees/facilities/_safety-data-sheets/honeywell-genetron-134a-honeywell.pdf",
+        "type": "manufacturer",
+        "quote": "BOILING POINT: -26.2°C (-15.1°F)",
+        "locator": "Physical and chemical properties section",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "On screen, round to: isobutane boils at about 11 degF (-12 degC); R-134a at about -15 degF (-26 degC). The NIST isobutane value has +/-2 K spread, so use 'about'. PubChem pages for both compounds were blocked by the permission system and not opened."
+  },
+  {
+    "id": "3.6b",
+    "beat": 3,
+    "claim": "U.S. household refrigerators have shifted from R-134a toward isobutane (R-600a): EPA's SNAP program listed isobutane as acceptable for household refrigerators in 2011 (charge capped at 57 g), raised the hydrocarbon charge limit to 150 g in 2018, and EPA's Technology Transitions rule limits new household refrigerators and freezers to refrigerants with GWP of 150 or less from January 1, 2025.",
+    "numbers": [
+      {
+        "value": "57 (2.0)",
+        "unit": "g (oz)",
+        "context": "2011 SNAP charge limit per sealed system for isobutane/R-441A in household refrigerators"
+      },
+      {
+        "value": "roughly 140",
+        "unit": "g",
+        "context": "typical U.S. household refrigerator HFC-134a charge, per EPA 2011 rule"
+      },
+      {
+        "value": "150",
+        "unit": "g",
+        "context": "2018 SNAP revised hydrocarbon charge limit (per ACHR News)"
+      },
+      {
+        "value": "150",
+        "unit": "GWP",
+        "context": "Technology Transitions limit for household refrigerators and freezers"
+      },
+      {
+        "value": "January 1, 2025",
+        "unit": "date",
+        "context": "Manufacture/import compliance date"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Protection of Stratospheric Ozone: Listing of Substitutes for Refrigeration and Air Conditioning (SNAP), Final Rule, 76 FR, Dec 20, 2011",
+        "publisher": "U.S. EPA / Federal Register (govinfo.gov)",
+        "url": "https://www.govinfo.gov/content/pkg/FR-2011-12-20/html/2011-32175.htm",
+        "type": "government",
+        "quote": "limits the refrigerant charge in this end-use to 57 grams (2.0 ounces) or less for each sealed refrigeration system",
+        "locator": "Section I.A.2.a; Summary lists isobutane (R-600a) and R-441A as acceptable; Section V.D: typical HFC-134a charge roughly 140 g",
+        "opened": true
+      },
+      {
+        "title": "Technology Transitions Sector Tables",
+        "publisher": "U.S. EPA",
+        "url": "https://www.epa.gov/climate-hfcs-reduction/technology-transitions-sector-tables",
+        "type": "government",
+        "quote": "",
+        "locator": "Products table, row Household refrigerators and freezers: GWP limit 150; manufacture and import compliance date January 1, 2025",
+        "opened": true
+      },
+      {
+        "title": "EPA allows increased hydrocarbon charge in household refrigerators",
+        "publisher": "ACHR News",
+        "url": "https://achrnews.com/articles/139645-epa-allows-increased-hydrocarbon-charge-in-household-refrigerators",
+        "type": "reference",
+        "quote": "from 57 grams to 150 grams",
+        "locator": "Article dated Sept 5, 2018",
+        "opened": true
+      },
+      {
+        "title": "SNAP Rule 22 fact sheet (Aug 2018)",
+        "publisher": "U.S. EPA",
+        "url": "https://www.epa.gov/sites/production/files/2018-09/documents/snap_rule22_factsheet_082818.pdf",
+        "type": "government",
+        "quote": "are being revised to reflect the updated UL Standard 60335-2-24.",
+        "locator": "Fact sheet body",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "EPA documents count as one publisher; ACHR News is the independent second source (charge limit only). Inference not directly sourced here: R-134a's GWP exceeds 150, so the 2025 limit excludes it for new household units; add a GWP source if the script states the number. EPA proposed reforms to the Technology Transitions rule on Sept 30, 2025; the news release opened did not mention household refrigerators, so the household limit appears unchanged as of that release, but check status before publishing."
+  },
+  {
+    "id": "3.7",
+    "beat": 3,
+    "claim": "Household-class compressors are rated at about -23 degC (-10 degF) evaporating and 54 degC (130 degF) condensing, and are built for evaporating temperatures of roughly -35 to -10 degC; real condenser surfaces typically sit around 40 degC in a 25 degC room.",
+    "numbers": [
+      {
+        "value": "-23.3 (-10)",
+        "unit": "degC (degF)",
+        "context": "ASHRAE LBP rating evaporating temperature"
+      },
+      {
+        "value": "54.4 (130)",
+        "unit": "degC (degF)",
+        "context": "ASHRAE LBP rating condensing temperature"
+      },
+      {
+        "value": "-35 to -10",
+        "unit": "degC",
+        "context": "Embraco EM R60CLP (R-600a) application evaporating range"
+      },
+      {
+        "value": "37 to 45",
+        "unit": "degC",
+        "context": "Refrigerant temperature at condenser inlet in a cited R134a static-condenser test (Bansal and Chin 2001, via COBEM paper)"
+      },
+      {
+        "value": "about 40",
+        "unit": "degC",
+        "context": "Haier: condenser-side surface in normal operation at 25 degC ambient"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Special Recipro compressors (applications page)",
+        "publisher": "Samsung Electronics compressor business",
+        "url": "https://www.samsung.com/global/business/compressor/applications/special-recipro",
+        "type": "manufacturer",
+        "quote": "Evaporating Temp. : -23.3℃(-10℉)",
+        "locator": "ASHRAE Conditions (LBP) table",
+        "opened": true
+      },
+      {
+        "title": "Compressor technical datasheet EM R60CLP",
+        "publisher": "Embraco (Nidec)",
+        "url": "https://embraco.com/productselector/pdfs/FT024847_4.pdf",
+        "type": "manufacturer",
+        "quote": "-35°C para -10°C",
+        "locator": "Application range field; test conditions ASHRAE LBP -23.3 degC evap / 54.4 degC cond",
+        "opened": true
+      },
+      {
+        "title": "Modelling of a Hot-Wall Condenser Used in Domestic Refrigerators (COBEM 2013)",
+        "publisher": "Labigalini & Seixlack, ABCM",
+        "url": "https://www.abcm.org.br/anais/cobem/2013/PDF/2476.pdf",
+        "type": "paper",
+        "quote": "",
+        "locator": "Cites Bansal and Chin (2001): refrigerant inlet temperatures 37 to 45 degC, ambient 20 to 25 degC, inlet pressures 8.15 to 10.16 bar",
+        "opened": true
+      },
+      {
+        "title": "Question: Sides of refrigerator or back of refrigerator is hot",
+        "publisher": "Haier (India support)",
+        "url": "https://www.haier.com/in/service-support/self-service/20160707_102142.shtml",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "Normal operation about 40 degC at 25 degC ambient (paraphrased by fetch tool)",
+        "opened": true
+      }
+    ],
+    "confidence": "medium",
+    "status": "corrected",
+    "notes": "No source found that states 'typical operating' evaporator and condenser refrigerant temperatures for U.S. household fridges. What exists: standardized rating conditions (ASHRAE LBP), a compressor's design range, one cited test, and a manufacturer surface-temperature FAQ. Script should say 'roughly' and frame rating conditions as a test standard. NIST IR 6945 notes that actual evaporating/condensing temperatures were not measured in its tests."
+  },
+  {
+    "id": "3.8",
+    "beat": 3,
+    "claim": "By the first law, the heat released at the condenser equals the heat removed from inside plus the work (electrical energy) put into the compressor; a refrigerator's coefficient of performance is heat removed divided by work input, and household compressors are rated at a COP of roughly 1.4 to 1.7 under standard test conditions.",
+    "numbers": [
+      {
+        "value": "Qh = Qc + W",
+        "unit": "equation",
+        "context": "Energy balance"
+      },
+      {
+        "value": "COP_ref = Qc / W",
+        "unit": "equation",
+        "context": "Definition"
+      },
+      {
+        "value": "2 to 6",
+        "unit": "dimensionless",
+        "context": "OpenStax: range quoted generally for air conditioners and refrigerators"
+      },
+      {
+        "value": "1.40",
+        "unit": "W/W",
+        "context": "Embraco EM R60CLP at ASHRAE LBP (-23.3 / 54.4 degC); EER 4.78 Btu/Wh"
+      },
+      {
+        "value": "about 1.7",
+        "unit": "W/W (computed)",
+        "context": "KitchenAid KBFA compressor: 905 Btu/h at 153 W; 905/3.412/153 = 1.73, rating conditions not stated"
+      }
+    ],
+    "sources": [
+      {
+        "title": "College Physics, Section 15.5 Applications of Thermodynamics: Heat Pumps and Refrigerators",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/college-physics/pages/15-5-applications-of-thermodynamics-heat-pumps-and-refrigerators",
+        "type": "textbook",
+        "quote": "We thus define the coefficient of performance",
+        "locator": "Section 15.5: Qh = Qc + W and COP_ref = Qc/W; values 'ranging from 2 to 6'",
+        "opened": true
+      },
+      {
+        "title": "University Physics Volume 2, Section 4.3 Refrigerators and Heat Pumps",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+        "type": "textbook",
+        "quote": "",
+        "locator": "Section 4.3: W = Qh - Qc and K_R = Qc/W",
+        "opened": true
+      },
+      {
+        "title": "Compressor technical datasheet EM R60CLP",
+        "publisher": "Embraco (Nidec)",
+        "url": "https://embraco.com/productselector/pdfs/FT024847_4.pdf",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "Performance table: COP 1.40 W/W, EER 4.78 Btu/Wh, 124 W input, ASHRAE LBP 32 degC",
+        "opened": true
+      },
+      {
+        "title": "KitchenAid Job Aid: French Door Bottom-Mount Refrigerator, Part No. 4317387 (KAR-16), models KBFA20ER/KBFA25ER",
+        "publisher": "Whirlpool Corporation (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/4317387_kar-16_kitchenaid_french_door_bottom-mount_refrigerator.pdf",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "p. 1-4 component specs: compressor 905 BTUH, 60 Hz / 153 watts",
+        "opened": true
+      }
+    ],
+    "confidence": "medium",
+    "status": "corrected",
+    "notes": "Energy balance and COP definition: high confidence. No credible source found for a whole-appliance COP of a household fridge in real use; the 2-6 range in OpenStax is generic and higher than household compressor ratings. Use compressor ratings (about 1.4-1.7 at harsh ASHRAE test conditions) with that framing, or avoid a COP number. The KitchenAid COP is my calculation from two listed specs."
+  },
+  {
+    "id": "3.9",
+    "beat": 3,
+    "claim": "A liquid's boiling point depends on pressure: lowering the pressure lowers the temperature at which the refrigerant boils, which is why low pressure in the evaporator lets it boil well below freezing, and high pressure in the condenser lets it condense above room temperature.",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "SWEP Refrigerant Handbook, 6. Evaporators",
+        "publisher": "SWEP",
+        "url": "https://swep.net/refrigerant-handbook/6.-evaporators/asas8",
+        "type": "manufacturer",
+        "quote": "To change the evaporation temperature, the pressure must be changed.",
+        "locator": "Evaporators chapter; also gives the mountain-top water boiling example",
+        "opened": true
+      },
+      {
+        "title": "Refrigerator",
+        "publisher": "Georgia State University, Dept. of Physics and Astronomy (HyperPhysics, R. Nave)",
+        "url": "http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/refrig.html",
+        "type": "university",
+        "quote": "successively lowering and raising the pressure",
+        "locator": "Refrigerator page: refrigerant made to evaporate and condense by this",
+        "opened": true
+      },
+      {
+        "title": "Technical Service Guide, GE PSH23SGNAFBS (Arctica side-by-side, inverter compressor), PUB # 31-9090 02/02",
+        "publisher": "GE Consumer Home Services Training (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/ge/psh23sgnafbs/9252118-technical-service-guide",
+        "type": "manufacturer",
+        "quote": "Low pressure in the evaporator, caused by the suction of the compressor",
+        "locator": "p. 6; continues: causes the liquid refrigerant to vaporize",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "SWEP also says: 'liquid can be vaporized at any desired temperature by changing the pressure around it.' (compression cycle chapter). Both SWEP pages count as one publisher."
+  },
+  {
+    "id": "3.10",
+    "beat": 3,
+    "claim": "In one GE refrigerator, roughly 30 percent of the refrigerant flashes to vapor the instant it leaves the capillary tube.",
+    "numbers": [
+      {
+        "value": "approximately 30",
+        "unit": "%",
+        "context": "Refrigerant vaporizing immediately on exiting the capillary, GE PSH23 series"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Technical Service Guide, GE PSH23SGNAFBS (Arctica side-by-side, inverter compressor), PUB # 31-9090 02/02",
+        "publisher": "GE Consumer Home Services Training (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/ge/psh23sgnafbs/9252118-technical-service-guide",
+        "type": "manufacturer",
+        "quote": "Approximately 30% of the refrigerant will vaporize immediately upon exiting the capillary.",
+        "locator": "p. 6",
+        "opened": true
+      }
+    ],
+    "confidence": "medium",
+    "status": "supported",
+    "notes": "SINGLE SOURCE. Physically plausible (flash gas fraction depends on temperatures), but only one manual gives the number. Use as 'about a third, according to GE's service guide' or drop the number."
+  },
+  {
+    "id": "4.1",
+    "beat": 4,
+    "claim": "For heat to leave the condenser on its own, the refrigerant there must be hotter than the room air; that is why the compressor raises it well above kitchen temperature.",
+    "numbers": [
+      {
+        "value": "about 40 vs 25",
+        "unit": "degC",
+        "context": "Haier: condenser surface vs ambient"
+      }
+    ],
+    "sources": [
+      {
+        "title": "SWEP Refrigerant Handbook, 2. Compression cycle",
+        "publisher": "SWEP",
+        "url": "https://swep.net/refrigerant-handbook/2.-compression-cycle/zx3",
+        "type": "manufacturer",
+        "quote": "The surrounding medium must be at a lower temperature than the condensing temperature of the refrigerant.",
+        "locator": "Compression cycle chapter",
+        "opened": true
+      },
+      {
+        "title": "Second Law of Thermodynamics",
+        "publisher": "Georgia State University, Dept. of Physics and Astronomy (HyperPhysics, R. Nave)",
+        "url": "http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/seclaw.html",
+        "type": "university",
+        "quote": "It is not possible for heat to flow from a colder body to a warmer body without any work having been done to accomplish this flow.",
+        "locator": "Refrigerator statement",
+        "opened": true
+      },
+      {
+        "title": "Question: Sides of refrigerator or back of refrigerator is hot",
+        "publisher": "Haier (India support)",
+        "url": "https://www.haier.com/in/service-support/self-service/20160707_102142.shtml",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "About 40 degC surface in normal operation at 25 degC ambient",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": ""
+  },
+  {
+    "id": "4.2",
+    "beat": 4,
+    "claim": "Dust, lint and pet hair on the condenser block airflow and raise condenser temperature, so the fridge cools less efficiently and the compressor works harder; manufacturers advise keeping coils clean (Hotpoint: at least once a year; Whirlpool: every 3 to 6 months in homes with pets or heavy dust), though some newer models need no routine cleaning.",
+    "numbers": [
+      {
+        "value": "at least once a year",
+        "unit": "interval",
+        "context": "Hotpoint use and care guide"
+      },
+      {
+        "value": "3 to 6",
+        "unit": "months",
+        "context": "Whirlpool: inspect and clean in homes with pets, heavy kitchen traffic or construction dust"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Outside of Cabinet Feels Warm - Side by Side Refrigerator",
+        "publisher": "Whirlpool Corporation product help",
+        "url": "https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Side_By_Side_Refrigerator/Other_Concerns/Outside_of_Cabinet_Feels_Warm_-_Side_by_Side_Refrigerator",
+        "type": "manufacturer",
+        "quote": "Airflow blocked by lint, pet hair and dirt will cause the condenser and heat loop temperature to increase.",
+        "locator": "Condenser section",
+        "opened": true
+      },
+      {
+        "title": "Hotpoint Top-Mount No-Frost Refrigerator Use and Care Guide, Pub. No. 39-6291",
+        "publisher": "GE Appliances (Hotpoint brand)",
+        "url": "https://www.geappliances.com/content/older-pdfs/39-6291.PDF",
+        "type": "manufacturer",
+        "quote": "This easy cleaning operation should be done at least once a year.",
+        "locator": "Condenser cleaning; preceding sentence: 'For most efficient operation, you need to keep the condenser clean.'",
+        "opened": true
+      },
+      {
+        "title": "How and When to Safely Clean the Condenser Coils",
+        "publisher": "Whirlpool Corporation product help",
+        "url": "https://producthelp.whirlpool.com/Refrigeration/Full-size_Refrigerators/Cleaning_and_Care/How_and_When_to_Safely_Clean_the_Condenser_Coils",
+        "type": "manufacturer",
+        "quote": "Households with pets, heavy kitchen traffic, or dust from construction should inspect and clean every 3 to 6 months.",
+        "locator": "Body; also: some models do not require cleaning",
+        "opened": true
+      },
+      {
+        "title": "Refrigerator Energy Efficiency At A Glance (archived 2008)",
+        "publisher": "ENERGY STAR (U.S. EPA/DOE), via UNT web archive",
+        "url": "https://webarchive.library.unt.edu/eot2008/20081106154120/http:/www.energystar.gov/ia/partners/manuf_res/salestraining_res/Refrigerator_AtAGlance.pdf",
+        "type": "government",
+        "quote": "Keep coils clean.",
+        "locator": "Tips section",
+        "opened": true
+      },
+      {
+        "title": "Refrigerator compressor getting hot",
+        "publisher": "PartSelect",
+        "url": "https://partselect.com/blog/refrigerator-compressor-getting-hot",
+        "type": "reference",
+        "quote": "A hot compressor is typically caused by dirty condenser coils",
+        "locator": "Blog body",
+        "opened": true
+      }
+    ],
+    "confidence": "medium",
+    "status": "corrected",
+    "notes": "Direction of the effect is well supported; no DOE or ENERGY STAR page opened gives a quantified energy penalty, so do not cite a percent. The energy.gov Energy Saver refrigerator page returned an error and could not be opened. Whirlpool's page is internally inconsistent: meta description says every 2-3 months, body says routine cleaning is not typically needed in normal homes. GE's PSH23 guide refers to a 'No-Clean condenser' (p. 20)."
+  },
+  {
+    "id": "4.3",
+    "beat": 4,
+    "claim": "Manufacturers specify air clearances around a refrigerator, and the figures vary widely by model: from about 1/8 inch at the sides on a GE side-by-side to 5 cm (2 inches) at the sides and back on a Samsung recommendation.",
+    "numbers": [
+      {
+        "value": "top 1, sides 0.125, rear 0.5",
+        "unit": "inch",
+        "context": "GE PSH23 side-by-side minimum clearance for air circulation"
+      },
+      {
+        "value": "sides 3/4, top 1, back 1",
+        "unit": "inch",
+        "context": "Hotpoint top-mount no-frost (39-6291)"
+      },
+      {
+        "value": "sides and back 5, top 2.5",
+        "unit": "cm",
+        "context": "Samsung Canada recommendation"
+      },
+      {
+        "value": "1 3/4 (40)",
+        "unit": "inch (mm)",
+        "context": "Frigidaire: hinge side against a wall, for door swing"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Technical Service Guide, GE PSH23SGNAFBS (Arctica side-by-side, inverter compressor), PUB # 31-9090 02/02",
+        "publisher": "GE Consumer Home Services Training (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/ge/psh23sgnafbs/9252118-technical-service-guide",
+        "type": "manufacturer",
+        "quote": "Minimum clearance required for air circulation:",
+        "locator": "p. 3: Top 1\", Sides 0.125\", Rear 0.5\"",
+        "opened": true
+      },
+      {
+        "title": "Hotpoint Top-Mount No-Frost Refrigerator Use and Care Guide, Pub. No. 39-6291",
+        "publisher": "GE Appliances (Hotpoint brand)",
+        "url": "https://www.geappliances.com/content/older-pdfs/39-6291.PDF",
+        "type": "manufacturer",
+        "quote": "Allow the following clearances for ease of installation, proper air circulation and plumbing and electrical connections:",
+        "locator": "Installation section: 3/4 in sides, 1 in top, 1 in back",
+        "opened": true
+      },
+      {
+        "title": "Why the sides of your Samsung refrigerator get hot",
+        "publisher": "Samsung Canada support",
+        "url": "https://www.samsung.com/ca/support/home-appliances/why-the-sides-of-your-samsung-refrigerator-get-hot",
+        "type": "manufacturer",
+        "quote": "Keep at least a 5 cm gap on the sides and back, and a 2.5 cm space above the unit for optimal air circulation.",
+        "locator": "Article body",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "Models with hot-wall (side) condensers tend to ask for side clearance; fan-cooled bottom-condenser models ask for little. ENERGY STAR advises checking the owner's manual for the distance. Virginia Cooperative Extension (BSE-309) suggests 'allow two inches' and doubling the manufacturer's figure, which is advice, not a spec."
+  },
+  {
+    "id": "4.4",
+    "beat": 4,
+    "claim": "Placing a refrigerator next to heat sources such as an oven, dishwasher, heating vent or direct sunlight makes it harder for it to shed heat and is discouraged in energy-saving guidance and installation instructions.",
+    "numbers": [
+      {
+        "value": "60 to 110",
+        "unit": "degF",
+        "context": "Frigidaire: do not install where room temperature falls below 60 degF or rises above 110 degF"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Refrigerator Energy Efficiency At A Glance (archived 2008)",
+        "publisher": "ENERGY STAR (U.S. EPA/DOE), via UNT web archive",
+        "url": "https://webarchive.library.unt.edu/eot2008/20081106154120/http:/www.energystar.gov/ia/partners/manuf_res/salestraining_res/Refrigerator_AtAGlance.pdf",
+        "type": "government",
+        "quote": "Position your refrigerator away from heat sources such as:",
+        "locator": "Tips; list continues: ovens, dishwashers, direct sunlight",
+        "opened": true
+      },
+      {
+        "title": "Appliances (home energy guide)",
+        "publisher": "State of Illinois (Keep Warm Illinois)",
+        "url": "https://keepwarm.illinois.gov/content/dam/soi/en/web/keepwarm/documents/homeappliances.pdf",
+        "type": "government",
+        "quote": "is located in direct sunlight or next to the dishwasher or stove/oven",
+        "locator": "Refrigerator section (fragment of a longer sentence)",
+        "opened": true
+      },
+      {
+        "title": "ENERGY SERIES: What about Refrigerators and Freezers? (BSE-309NP, 2020)",
+        "publisher": "Virginia Cooperative Extension, Virginia Tech",
+        "url": "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/2908/2908-9022/BSE-309.pdf",
+        "type": "university",
+        "quote": "Position your refrigerator away from heat sources such as a heating vent",
+        "locator": "Tips",
+        "opened": true
+      },
+      {
+        "title": "All About Servicing Top Freezer Refrigerator, Publication #5995562831 (May 2010)",
+        "publisher": "Frigidaire / Electrolux Home Products (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/5995562831_frigidaire_refrigerator_tm_2010_service_manual.pdf",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "p. 2:3: keep out of direct sunlight and away from heat sources; not where temperature drops below 60 degF or rises above 110 degF",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "corrected",
+    "notes": "Hypothesis attributed this to a DOE tip; the energy.gov Energy Saver refrigerator page could not be opened (site error) and the archived DOE EERE tips page opened did not include it. Supported instead by ENERGY STAR, the State of Illinois, Virginia Tech extension and Frigidaire. No source quantifies the energy penalty."
+  },
+  {
+    "id": "5.1",
+    "beat": 5,
+    "claim": "Frost forms on the evaporator because its surface stays below freezing and moisture in the air (from the cabinets, food and especially warm humid air entering during door openings) condenses and freezes on it.",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "Theoretical and Experimental Investigation of the Effect of Frost on Refrigerator Evaporator Performance (M.Sc. thesis, 2002)",
+        "publisher": "Tolga N. Aynur, Istanbul Technical University",
+        "url": "https://polen.itu.edu.tr/items/69c6cc6f-8186-4ac0-9818-b78252ee63cd",
+        "type": "university",
+        "quote": "the surface temperature of the household refrigerator evaporator is always below the freezing point of the water.",
+        "locator": "English abstract; also 'The air dragged from the cabinets, contains moisture.'",
+        "opened": true
+      },
+      {
+        "title": "Defrost on refrigeration evaporators",
+        "publisher": "INTARCON (refrigeration equipment manufacturer)",
+        "url": "https://www.intarcon.com/en/defrost-on-refrigeration-evaporators/",
+        "type": "manufacturer",
+        "quote": "mainly the result of condensation and freezing of moisture in the air.",
+        "locator": "Article body; also notes warm moist air entering through doors during opening",
+        "opened": true
+      },
+      {
+        "title": "Technical Service Guide, Monogram Side-By-Side Refrigerators With Electronic Controls, Pub #31-9091 03/02",
+        "publisher": "GE Consumer Home Services Training (hosted on serviplus.com.mx)",
+        "url": "https://visualizador.serviplus.com.mx/datos_pt/refr/manuales/ServiceManual_31-9091.pdf",
+        "type": "manufacturer",
+        "quote": "If the doors are not opened, the compressor will run up to 60 hours between defrosts.",
+        "locator": "p. 21: adaptive defrost shortens the interval with door openings",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "INTARCON writes about commercial evaporators generally; the ITU thesis is household-specific. GE's adaptive defrost logic (fewer door openings, longer between defrosts) is indirect evidence that door openings drive frost."
+  },
+  {
+    "id": "5.2",
+    "beat": 5,
+    "claim": "Frost has very low thermal conductivity, so it insulates the evaporator and narrows the air passages, cutting heat transfer and efficiency.",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "Theoretical and Experimental Investigation of the Effect of Frost on Refrigerator Evaporator Performance (M.Sc. thesis, 2002)",
+        "publisher": "Tolga N. Aynur, Istanbul Technical University",
+        "url": "https://polen.itu.edu.tr/items/69c6cc6f-8186-4ac0-9818-b78252ee63cd",
+        "type": "university",
+        "quote": "Thermal conductivity of the frost is so low that it insulates",
+        "locator": "English abstract; also notes air-side pressure drop increases",
+        "opened": true
+      },
+      {
+        "title": "Defrost on refrigeration evaporators",
+        "publisher": "INTARCON",
+        "url": "https://www.intarcon.com/en/defrost-on-refrigeration-evaporators/",
+        "type": "manufacturer",
+        "quote": "acts as a thermal insulator",
+        "locator": "Article body",
+        "opened": true
+      },
+      {
+        "title": "Refrigerators and freezers energy tips (archived 2008)",
+        "publisher": "U.S. DOE EERE Consumer's Guide, via UNT web archive",
+        "url": "https://webarchive.library.unt.edu/eot2008/20080921073515/http://www1.eere.energy.gov/consumer/tips/refrigerators.html",
+        "type": "government",
+        "quote": "Regularly defrost manual-defrost refrigerators and freezers; frost buildup decreases the energy efficiency of the unit.",
+        "locator": "Tips list",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": ""
+  },
+  {
+    "id": "5.3",
+    "beat": 5,
+    "claim": "Frost-free refrigerators melt evaporator frost with an electric defrost heater mounted on or under the evaporator, typically a radiant (glass-tube) or calrod-type element, rated at roughly 450 to 600 watts in the service documents found.",
+    "numbers": [
+      {
+        "value": "600",
+        "unit": "W",
+        "context": "Frigidaire top-freezer, 'on some models'"
+      },
+      {
+        "value": "470 +/- 5%",
+        "unit": "W at 115 VAC",
+        "context": "KitchenAid KBFA French door"
+      },
+      {
+        "value": "450",
+        "unit": "W (30 ohms)",
+        "context": "Frigidaire counter-depth side-by-side data sheet"
+      }
+    ],
+    "sources": [
+      {
+        "title": "All About Servicing Top Freezer Refrigerator, Publication #5995562831 (May 2010)",
+        "publisher": "Frigidaire / Electrolux Home Products (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/5995562831_frigidaire_refrigerator_tm_2010_service_manual.pdf",
+        "type": "manufacturer",
+        "quote": "The defrost heater is a radiant \"U\" shaped resistance heater, rated at 600 watts on some models.",
+        "locator": "p. 5:7",
+        "opened": true
+      },
+      {
+        "title": "KitchenAid Job Aid: French Door Bottom-Mount Refrigerator, Part No. 4317387 (KAR-16), models KBFA20ER/KBFA25ER",
+        "publisher": "Whirlpool Corporation (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/4317387_kar-16_kitchenaid_french_door_bottom-mount_refrigerator.pdf",
+        "type": "manufacturer",
+        "quote": "470 ± 5% watts @ 115VAC",
+        "locator": "p. 1-4, Evaporator heater spec; 29 ohms +/-5%",
+        "opened": true
+      },
+      {
+        "title": "Service Data Sheet, Frigidaire counter-depth side-by-side (GLRT188WDZ0 listing)",
+        "publisher": "Frigidaire / Electrolux (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/frigidaire/glrt188wdz0/21330382-service-data-sheet",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "Defrost heater row: 450 W, 30 ohms",
+        "opened": true
+      },
+      {
+        "title": "Technical Service Guide, Monogram Side-By-Side Refrigerators With Electronic Controls, Pub #31-9091 03/02",
+        "publisher": "GE Consumer Home Services Training (hosted on serviplus.com.mx)",
+        "url": "https://visualizador.serviplus.com.mx/datos_pt/refr/manuales/ServiceManual_31-9091.pdf",
+        "type": "manufacturer",
+        "quote": "The defrost heater is a single calrod-type, radiant heater mounted on the evaporator.",
+        "locator": "p. 22",
+        "opened": true
+      },
+      {
+        "title": "Maytag Services service manual, document 16025628 (2005)",
+        "publisher": "Maytag Services (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/maytag/amanaasd2324hrseries/23678349-service/",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "Defrost section: timer activates 'radiant electric defrost heater suspended from evaporator'; watts per Technical Data Sheet",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "corrected",
+    "notes": "Heater types: radiant tube and calrod confirmed; foil heaters were NOT confirmed by any source opened, so leave them out. GE guides list a heater check of about 37 ohms (31-9090 p. 36), roughly 390 W at 120 V by my calculation; not used as a figure. Whirlpool 2001 job aid gives 19-27 ohms (p. 5-4), no wattage."
+  },
+  {
+    "id": "5.4",
+    "beat": 5,
+    "claim": "Defrost is triggered after a set amount of compressor run time, either by a mechanical timer (about every 8 hours of run time for roughly 25 to 35 minutes) or by an adaptive defrost control that stretches the interval from a few hours up to 60 to 100 or more hours depending on door openings and how long the last defrost took.",
+    "numbers": [
+      {
+        "value": "8",
+        "unit": "hours compressor run time",
+        "context": "Maytag mechanical timer interval; 33-minute cycle"
+      },
+      {
+        "value": "about 30",
+        "unit": "minutes",
+        "context": "Frigidaire mechanical timer defrost length"
+      },
+      {
+        "value": "6 to 12 (72 vacation)",
+        "unit": "hours run time",
+        "context": "Frigidaire ADC; base 6 h; max 24 min"
+      },
+      {
+        "value": "8 to 60",
+        "unit": "hours run time",
+        "context": "GE adaptive defrost; max heater-on 35 min (31-9091) or 40 min (31-9090)"
+      },
+      {
+        "value": "8 to 100+",
+        "unit": "hours",
+        "context": "Whirlpool 2001 job aid; max 37 min including 4 min drip"
+      },
+      {
+        "value": "6 to 96",
+        "unit": "hours run time",
+        "context": "Frigidaire data sheet; 24-minute defrost"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Maytag Services service manual, document 16025628 (2005)",
+        "publisher": "Maytag Services (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/maytag/amanaasd2324hrseries/23678349-service/",
+        "type": "manufacturer",
+        "quote": "Every 8 hours of compressor run time defrost timer activates radiant electric defrost heater suspended from evaporator.",
+        "locator": "Defrost section, approx. p. 5-6",
+        "opened": true
+      },
+      {
+        "title": "All About Servicing Top Freezer Refrigerator, Publication #5995562831 (May 2010)",
+        "publisher": "Frigidaire / Electrolux Home Products (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/5995562831_frigidaire_refrigerator_tm_2010_service_manual.pdf",
+        "type": "manufacturer",
+        "quote": "The ADC has a base defrost interval of 6 hours of run time.",
+        "locator": "p. 5:9; p. 5:10: 'The maximum defrost cycle must be terminated after 24 minutes.'",
+        "opened": true
+      },
+      {
+        "title": "Technical Service Guide, Monogram Side-By-Side Refrigerators With Electronic Controls, Pub #31-9091 03/02",
+        "publisher": "GE Consumer Home Services Training (hosted on serviplus.com.mx)",
+        "url": "https://visualizador.serviplus.com.mx/datos_pt/refr/manuales/ServiceManual_31-9091.pdf",
+        "type": "manufacturer",
+        "quote": "If the doors are not opened, the compressor will run up to 60 hours between defrosts.",
+        "locator": "p. 21; p. 20: max heater-on 35 minutes",
+        "opened": true
+      },
+      {
+        "title": "Whirlpool 2001 K Model Counter Depth Side-By-Side Refrigerator With Variable Capacity Compressor, Job Aid 8178066A",
+        "publisher": "Whirlpool Corporation (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/8178066a_r-95_whirlpool_2001_k_model_counter_depth_side-by-side_refrigerator_with_variable_capacity_compressor.pdf",
+        "type": "manufacturer",
+        "quote": "Time between defrost periods will vary between 8 and 100+ hours.",
+        "locator": "p. 3-4",
+        "opened": true
+      },
+      {
+        "title": "Service Data Sheet, Frigidaire counter-depth side-by-side (GLRT188WDZ0 listing)",
+        "publisher": "Frigidaire / Electrolux (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/frigidaire/glrt188wdz0/21330382-service-data-sheet",
+        "type": "manufacturer",
+        "quote": "24 minute s every 6 to 96 hours of compressor run time.",
+        "locator": "Defrost timer row (spacing as extracted)",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "Wide spread between brands and eras; script should give a range or a specific named example. GE 31-9090 spec table lists '60hrs @ 45 min' while its text says max 40 min; internal inconsistency noted."
+  },
+  {
+    "id": "5.5",
+    "beat": 5,
+    "claim": "A bimetal defrost thermostat (terminator) on the evaporator lets the heater run only while the coil is cold and opens once the coil warms to roughly 40 to 50 degF, ending the heat.",
+    "numbers": [
+      {
+        "value": "opens 47 / closes 25",
+        "unit": "degF",
+        "context": "Frigidaire top-freezer, p. 5:7"
+      },
+      {
+        "value": "open above 42 +/- 5, closed below 12 +/- 7",
+        "unit": "degF",
+        "context": "KitchenAid KBFA"
+      },
+      {
+        "value": "cut-out 47 (8) / cut-in 25 (-4)",
+        "unit": "degF (degC)",
+        "context": "Frigidaire data sheet"
+      }
+    ],
+    "sources": [
+      {
+        "title": "All About Servicing Top Freezer Refrigerator, Publication #5995562831 (May 2010)",
+        "publisher": "Frigidaire / Electrolux Home Products (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/5995562831_frigidaire_refrigerator_tm_2010_service_manual.pdf",
+        "type": "manufacturer",
+        "quote": "The contacts in the defrost thermostat are set to open at 47°F and close at 25°F.",
+        "locator": "p. 5:7",
+        "opened": true
+      },
+      {
+        "title": "KitchenAid Job Aid: French Door Bottom-Mount Refrigerator, Part No. 4317387 (KAR-16), models KBFA20ER/KBFA25ER",
+        "publisher": "Whirlpool Corporation (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/4317387_kar-16_kitchenaid_french_door_bottom-mount_refrigerator.pdf",
+        "type": "manufacturer",
+        "quote": "42°F ±5°",
+        "locator": "p. 1-4, bimetal: open above 42 degF +/-5, closed below 12 degF +/-7",
+        "opened": true
+      },
+      {
+        "title": "Service Data Sheet, Frigidaire counter-depth side-by-side (GLRT188WDZ0 listing)",
+        "publisher": "Frigidaire / Electrolux (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/frigidaire/glrt188wdz0/21330382-service-data-sheet",
+        "type": "manufacturer",
+        "quote": "25°F -4°C 47°F 8°C",
+        "locator": "Defrost thermostat row",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "Electronic GE models end defrost via the control/thermistor and use a thermodisc only as an over-temperature safety: 60/45 degF in Monogram 31-9091 (p. 20, 23) and 140/110 degF in PSH23 31-9090 (p. 16). Do not present a single universal temperature."
+  },
+  {
+    "id": "5.6",
+    "beat": 5,
+    "claim": "Meltwater drains through a tube to a pan in the machine compartment next to the condenser, where condenser heat and the condenser fan's airflow evaporate it back into the kitchen.",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "Maytag Services service manual, document 16025628 (2005)",
+        "publisher": "Maytag Services (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/maytag/amanaasd2324hrseries/23678349-service/",
+        "type": "manufacturer",
+        "quote": "Air circulated by condenser fan over pan evaporates water.",
+        "locator": "Defrost/drain section, approx. p. 5-6",
+        "opened": true
+      },
+      {
+        "title": "US 5,499,514 Defrost water drain system for a refrigerator (1996)",
+        "publisher": "Whirlpool Corp. (Google Patents)",
+        "url": "https://patents.google.com/patent/US5499514",
+        "type": "manufacturer",
+        "quote": "an evaporator pan which is generally located below the freezer compartment in a compressor compartment adjacent a condenser",
+        "locator": "Background",
+        "opened": true
+      },
+      {
+        "title": "US 2013/0276471 A1 Refrigerator appliance having a drain pan (2013)",
+        "publisher": "General Electric Co. (Google Patents)",
+        "url": "https://patents.google.com/patent/US20130276471A1/en",
+        "type": "manufacturer",
+        "quote": "the drain pan can be positioned adjacent the condenser that operates at a relatively high temperature",
+        "locator": "Background",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "Some high-end models add a drain pan heater (GE Monogram 31-9091: pan heater on during the 20-minute dwell, p. 20)."
+  },
+  {
+    "id": "5.7",
+    "beat": 5,
+    "claim": "Many refrigerators deliberately warm the cabinet edges where doors seal: either a warm refrigerant loop (post-condenser loop, perimeter hot tube, 'yoder loop') or small electric mullion/flange heaters, to stop condensation on the outside; some models have an energy saver switch that turns the electric heater off in dry conditions.",
+    "numbers": [
+      {
+        "value": "1350 to 1500",
+        "unit": "ohms",
+        "context": "KitchenAid flipper mullion heater resistance (about 9-10 W at 115 V by my calculation)"
+      },
+      {
+        "value": "up to 24",
+        "unit": "hours",
+        "context": "Whirlpool: period the edges may feel warmer than usual"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Maytag Services service manual, document 16025628 (2005)",
+        "publisher": "Maytag Services (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/maytag/amanaasd2324hrseries/23678349-service/",
+        "type": "manufacturer",
+        "quote": "Helps control exterior condensation on flange, center mullion, and around freezer door.",
+        "locator": "p. 6, post-condenser loop",
+        "opened": true
+      },
+      {
+        "title": "US 4,884,415 Heat transfer barrier for the yoder loop of a refrigerator cabinet (1989)",
+        "publisher": "Maytag Corp. (Google Patents)",
+        "url": "https://patents.google.com/patent/US4884415",
+        "type": "manufacturer",
+        "quote": "used to prevent condensation of moisture adjacent the front door openings",
+        "locator": "Description of the Prior Art",
+        "opened": true
+      },
+      {
+        "title": "All About Servicing Top Freezer Refrigerator, Publication #5995562831 (May 2010)",
+        "publisher": "Frigidaire / Electrolux Home Products (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/5995562831_frigidaire_refrigerator_tm_2010_service_manual.pdf",
+        "type": "manufacturer",
+        "quote": "units are equipped with a perimeter hot tube and/or a center mullion heater.",
+        "locator": "p. 5:5; p. 7:2",
+        "opened": true
+      },
+      {
+        "title": "Outside of Cabinet Feels Warm - Side by Side Refrigerator",
+        "publisher": "Whirlpool Corporation product help",
+        "url": "https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Side_By_Side_Refrigerator/Other_Concerns/Outside_of_Cabinet_Feels_Warm_-_Side_by_Side_Refrigerator",
+        "type": "manufacturer",
+        "quote": "This heat is necessary to keep moisture and frost from forming on the refrigerator exterior.",
+        "locator": "Body; preceding: heat loop within walls near gasket areas",
+        "opened": true
+      },
+      {
+        "title": "How to Use the Humidity Control or Energy Saver Feature",
+        "publisher": "Whirlpool Corporation product help",
+        "url": "https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Product_Info/Product_Assistance/How_to_Use_the_Humidity_Control_or_Energy_Saver_Feature",
+        "type": "manufacturer",
+        "quote": "The Energy Saver Feature controls a heater that helps to reduce moisture on the vertical hinged seal.",
+        "locator": "Body",
+        "opened": true
+      },
+      {
+        "title": "Hotpoint Top-Mount No-Frost Refrigerator Use and Care Guide, Pub. No. 39-6291",
+        "publisher": "GE Appliances (Hotpoint brand)",
+        "url": "https://www.geappliances.com/content/older-pdfs/39-6291.PDF",
+        "type": "manufacturer",
+        "quote": "This turns off the heater in your refrigerator that prevents moisture from forming on the exterior of the refrigerator.",
+        "locator": "Energy saver switch section",
+        "opened": true
+      },
+      {
+        "title": "KitchenAid Job Aid: French Door Bottom-Mount Refrigerator, Part No. 4317387 (KAR-16), models KBFA20ER/KBFA25ER",
+        "publisher": "Whirlpool Corporation (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/4317387_kar-16_kitchenaid_french_door_bottom-mount_refrigerator.pdf",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "p. 5-2: flipper mullion 1350-1500 ohms; p. 6-3: Service Test 131 Mullion Heater Off and On",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "Confirmed; safe to use in the video. Whirlpool's energy-saver page uses 'On' and 'Off' inconsistently between sections, so describe the switch generically. 'Yoder loop' is an industry term found in a Maytag patent; 'post-condenser loop', 'perimeter hot tube' and 'heat loop' are the service-manual names. Penn State EGEE 102 adds that 'A small amount is used to keep the cabinet from sweating, to defrost the refrigerator, and to illuminate the interior.'"
+  },
+  {
+    "id": "5.8",
+    "beat": 5,
+    "claim": "The defrost heater draws roughly three times the power of the compressor itself, though it runs only for minutes at a time.",
+    "numbers": [
+      {
+        "value": "450 vs 120 to 150 (130 to 160)",
+        "unit": "W",
+        "context": "Frigidaire data sheet: defrost heater vs compressor last-third-of-cycle wattage at 65 degF (90 degF)"
+      },
+      {
+        "value": "470 vs 153",
+        "unit": "W",
+        "context": "KitchenAid KBFA: evaporator heater vs compressor rating"
+      },
+      {
+        "value": "0.6",
+        "unit": "%",
+        "context": "NIST: defrost added only 0.6% to energy consumption for one tested unit"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Service Data Sheet, Frigidaire counter-depth side-by-side (GLRT188WDZ0 listing)",
+        "publisher": "Frigidaire / Electrolux (hosted on manualmachine.com)",
+        "url": "https://manualmachine.com/frigidaire/glrt188wdz0/21330382-service-data-sheet",
+        "type": "manufacturer",
+        "quote": "",
+        "locator": "Defrost heater 450 W; compressor last-third-of-cycle 120-150 W at 65 degF, 130-160 W at 90 degF",
+        "opened": true
+      },
+      {
+        "title": "KitchenAid Job Aid: French Door Bottom-Mount Refrigerator, Part No. 4317387 (KAR-16), models KBFA20ER/KBFA25ER",
+        "publisher": "Whirlpool Corporation (hosted on applianceassistant.com)",
+        "url": "https://applianceassistant.com/ServiceManuals/4317387_kar-16_kitchenaid_french_door_bottom-mount_refrigerator.pdf",
+        "type": "manufacturer",
+        "quote": "470 ± 5% watts @ 115VAC",
+        "locator": "p. 1-4; compressor '60 Hz / 153 watts' same page",
+        "opened": true
+      },
+      {
+        "title": "Refrigerator Energy Consumption Test Results using the U.S. DOE and ISO Test Procedures, NISTIR 6945 (2003)",
+        "publisher": "NIST (D. A. Yashar)",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir6945.pdf",
+        "type": "government",
+        "quote": "accounting for the defrost energy adds only 0.6 % to the energy consumption for this unit.",
+        "locator": "p. 13",
+        "opened": true
+      }
+    ],
+    "confidence": "medium",
+    "status": "supported",
+    "notes": "New claim. Power ratio is solid for these two models. The NIST result shows the energy share of defrost can be small for some units; avoid implying defrost dominates the bill."
+  },
+  {
+    "id": "5.9",
+    "beat": 5,
+    "claim": "Manual-defrost refrigerators use less electricity than comparable automatic-defrost models; one extension publication puts the difference at 35 to 40 percent.",
+    "numbers": [
+      {
+        "value": "35 to 40",
+        "unit": "%",
+        "context": "Virginia Cooperative Extension: manual vs automatic defrost energy"
+      }
+    ],
+    "sources": [
+      {
+        "title": "ENERGY SERIES: What about Refrigerators and Freezers? (BSE-309NP, 2020)",
+        "publisher": "Virginia Cooperative Extension, Virginia Tech",
+        "url": "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/2908/2908-9022/BSE-309.pdf",
+        "type": "university",
+        "quote": "Manual defrost models consume 35 to 40 percent less energy than comparable automatic defrost models.",
+        "locator": "Tips section",
+        "opened": true
+      },
+      {
+        "title": "Appliances (home energy guide)",
+        "publisher": "State of Illinois (Keep Warm Illinois)",
+        "url": "https://keepwarm.illinois.gov/content/dam/soi/en/web/keepwarm/documents/homeappliances.pdf",
+        "type": "government",
+        "quote": "Manual defrosting refrigerators use less electricity than automatic defrost models.",
+        "locator": "Refrigerator section",
+        "opened": true
+      }
+    ],
+    "confidence": "low",
+    "status": "supported",
+    "notes": "Qualitative claim has 2 sources; the 35-40% NUMBER IS SINGLE-SOURCE and conflicts with NIST IR 6945 (defrost added 0.6% for one unit). The difference likely includes fans and anti-sweat heaters, not only the defrost heater. Recommend not using the percentage."
+  },
+  {
+    "id": "6.1",
+    "beat": 6,
+    "claim": "A new full-size ENERGY STAR refrigerator uses on the order of 330 to 400 kWh per year (for a 14 to 18 cubic foot top-freezer), about 9 to 10 percent below the federal maximum; the average most-used refrigerator in U.S. homes (all ages) used 617 kWh in 2020.",
+    "numbers": [
+      {
+        "value": "363 vs 404",
+        "unit": "kWh/yr",
+        "context": "ENERGY STAR listing: 18.0 cu ft top freezer, rated vs federal standard"
+      },
+      {
+        "value": "332 vs 371",
+        "unit": "kWh/yr",
+        "context": "ENERGY STAR listing: 14.3 cu ft top freezer"
+      },
+      {
+        "value": "about 9",
+        "unit": "%",
+        "context": "ENERGY STAR certified vs federal minimum"
+      },
+      {
+        "value": "about 150",
+        "unit": "USD",
+        "context": "ENERGY STAR lifetime savings over 12 years"
+      },
+      {
+        "value": "617",
+        "unit": "kWh per household",
+        "context": "EIA RECS 2020 average, most-used refrigerator"
+      },
+      {
+        "value": "839",
+        "unit": "kWh per household",
+        "context": "EIA RECS 2020 average, all refrigerators in households"
+      },
+      {
+        "value": "about 87",
+        "unit": "USD",
+        "context": "EIA: average 2020 cost to run the most-used refrigerator"
+      }
+    ],
+    "sources": [
+      {
+        "title": "ENERGY STAR Product Finder: Criterion 453-8145",
+        "publisher": "ENERGY STAR (U.S. EPA)",
+        "url": "https://www.energystar.gov/productfinder/product/certified-residential-refrigerators/details/3419003/export/pdf",
+        "type": "government",
+        "quote": "Annual Energy Use (kWh/yr): 363",
+        "locator": "Product detail; US Federal Standard (kWh/yr): 404; Top Freezer; 18.0 ft3",
+        "opened": true
+      },
+      {
+        "title": "ENERGY STAR Refrigerators",
+        "publisher": "ENERGY STAR (U.S. EPA)",
+        "url": "https://www.energystar.gov/products/refrigerators",
+        "type": "government",
+        "quote": "ENERGY STAR certified refrigerators are about 9 percent more energy efficient than models that meet the federal minimum",
+        "locator": "Product overview",
+        "opened": true
+      },
+      {
+        "title": "Table CE5.3b Detailed household site electricity end-use consumption, part 2, averages, 2020",
+        "publisher": "U.S. EIA, RECS 2020",
+        "url": "https://www.eia.gov/consumption/residential/data/2020/c&e/pdf/ce5.3b.pdf",
+        "type": "government",
+        "quote": "",
+        "locator": "All homes row: Most used refrigerators 617; All refrigerators 839; Second refrigerators 494 (kWh per household)",
+        "opened": true
+      },
+      {
+        "title": "Electricity use in homes",
+        "publisher": "U.S. EIA Energy Explained",
+        "url": "https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php",
+        "type": "government",
+        "quote": "The most-used refrigerator in a home cost about $87 on average to operate in 2020.",
+        "locator": "Refrigerators section",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "corrected",
+    "notes": "No single 'typical modern fridge' figure exists; energy use scales with size and configuration (side-by-side and French-door models use more). The listings are examples of small/medium top-freezers; script should say 'a few hundred kWh a year' or name the example. EIA figure is the installed stock, including older units. A second ENERGY STAR listing (Conservator VNRV143AW, 332 vs 371 kWh/yr) opened at https://www.energystar.gov/productfinder/product/certified-residential-refrigerators/details/4429311/export/pdf."
+  },
+  {
+    "id": "6.2",
+    "beat": 6,
+    "claim": "New refrigerators use roughly one-quarter of the energy of mid-1970s models while offering more storage: about 1,800 kWh per year in 1974 versus roughly 250 to 500 kWh per year by 2008.",
+    "numbers": [
+      {
+        "value": "about 1,800",
+        "unit": "kWh/yr",
+        "context": "1974 average, per DOE EERE chart"
+      },
+      {
+        "value": "250 to 500",
+        "unit": "kWh/yr",
+        "context": "2008, per DOE EERE chart"
+      },
+      {
+        "value": "about 25",
+        "unit": "%",
+        "context": "today's energy vs 1975 (DOE) or 1972 (ASAP)"
+      },
+      {
+        "value": "almost 30",
+        "unit": "% more storage volume",
+        "context": "ASAP"
+      },
+      {
+        "value": "nearly 160 vs about 55",
+        "unit": "USD/yr",
+        "context": "Penn State: typical 1973 model vs new top-freezer with automatic defrost"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Saving Energy: Refrigerator (archived 2012)",
+        "publisher": "U.S. DOE EERE Building Technologies, via UNT web archive",
+        "url": "https://webarchive.library.unt.edu/web/20120927012044/http://www1.eere.energy.gov/buildings/saving_energy_refrigerator.html",
+        "type": "government",
+        "quote": "Today's refrigerators use only about 25% of the energy required to power models built in 1975.",
+        "locator": "Page body; chart text: about 1,800 kWh in 1974 to 250-500 in 2008",
+        "opened": true
+      },
+      {
+        "title": "Refrigerators (product page)",
+        "publisher": "Appliance Standards Awareness Project",
+        "url": "https://www.appliance-standards.org/node/6769",
+        "type": "reference",
+        "quote": "New refrigerators sold today on average use just one-quarter of the energy of refrigerators in 1972, even as refrigerators today offer almost 30% more storage volume.",
+        "locator": "Product summary",
+        "opened": true
+      },
+      {
+        "title": "EGEE 102: Energy Conservation and Environmental Protection, Energy Efficiency of a Refrigerator",
+        "publisher": "Penn State College of Earth and Mineral Sciences",
+        "url": "https://www.e-education.psu.edu/egee102/print/book/export/html/2010",
+        "type": "university",
+        "quote": "a typical model sold in 1973 will cost nearly 160 dollars / year",
+        "locator": "Lesson page; new model 'will be about 55 dollars / year'",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "Dollar figures in Penn State depend on an assumed electricity price. ENERGY STAR consumer pages disagree on how much more an 'old' fridge uses: ~20% (products page) vs ~35% (Flip Your Fridge fact sheet, 2021); they define 'old' loosely. The current energy.gov 'refrigerator standards save consumers billions' article returned an error and was not opened."
+  },
+  {
+    "id": "6.3",
+    "beat": 6,
+    "claim": "Leaving the refrigerator door open does not cool the kitchen; it warms it overall, because the condenser dumps the heat it pulls out back into the same room plus the heat from the electrical energy used to run it.",
+    "numbers": [],
+    "sources": [
+      {
+        "title": "Open Refrigerator (Ask the Van Q&A 1790)",
+        "publisher": "University of Illinois Urbana-Champaign, Physics Van",
+        "url": "https://van.physics.illinois.edu/ask/listing/1790",
+        "type": "university",
+        "quote": "some of the electrical energy gets converted to heat, so more heat gets dumped outside the fridge than gets pumped out",
+        "locator": "Answer by 'Mats'",
+        "opened": true
+      },
+      {
+        "title": "Physics 1B Tutorial 3 answers",
+        "publisher": "University of California San Diego (CASS archive)",
+        "url": "https://cass.ucsd.edu/archive/physics/ph1b/tutorials/tut3_ans.html",
+        "type": "university",
+        "quote": "The energy that you must use to operate the refrigerator is transformed into heat and exhausted into the room.",
+        "locator": "Tutorial answer; also 'This will heat up the room further.'",
+        "opened": true
+      },
+      {
+        "title": "University Physics Volume 2, Section 4.3 Refrigerators and Heat Pumps",
+        "publisher": "OpenStax (Rice University)",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+        "type": "textbook",
+        "quote": "A household refrigerator removes heat from the food within it while exhausting heat to the surrounding air.",
+        "locator": "Section 4.3 (mechanism)",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "OpenStax UP2 chapter 4 Conceptual Question 3 asks this exact question (https://openstax.org/books/university-physics-volume-2/pages/4-conceptual-questions) but the answer is not on that page. Nuance: right in front of the open door you feel a brief blast of cold air (UCSD acknowledges this)."
+  },
+  {
+    "id": "6.4",
+    "beat": 6,
+    "claim": "Refrigerators account for roughly 7 to 8 percent of U.S. household electricity use (about 103 billion kWh of 1,305 billion kWh in 2020, per EIA's Residential Energy Consumption Survey).",
+    "numbers": [
+      {
+        "value": "103.1",
+        "unit": "billion kWh",
+        "context": "All refrigerators, RECS 2020"
+      },
+      {
+        "value": "1,305",
+        "unit": "billion kWh",
+        "context": "Total household electricity, RECS 2020"
+      },
+      {
+        "value": "about 7.9",
+        "unit": "%",
+        "context": "My calculation: 103.1 / 1,305"
+      },
+      {
+        "value": "7",
+        "unit": "%",
+        "context": "RECS 2015, per EIA Today in Energy"
+      },
+      {
+        "value": "99 / 34",
+        "unit": "% of homes",
+        "context": "Homes with a refrigerator / with two or more (2020)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Table CE5.1b Detailed household site electricity end-use consumption, part 2, totals, 2020",
+        "publisher": "U.S. EIA, RECS 2020",
+        "url": "https://www.eia.gov/consumption/residential/data/2020/c&e/pdf/ce5.1b.pdf",
+        "type": "government",
+        "quote": "",
+        "locator": "All homes row: All refrigerators 103.1; Most used 75.8; Second 21.0; Separate freezers 23.4 (billion kWh)",
+        "opened": true
+      },
+      {
+        "title": "Table CE2.1 Annual household site fuel consumption, totals, 2020",
+        "publisher": "U.S. EIA, RECS 2020",
+        "url": "https://www.eia.gov/consumption/residential/data/2020/c&e/pdf/ce2.1.pdf",
+        "type": "government",
+        "quote": "",
+        "locator": "All homes, Electricity (billion kWh): 1,305",
+        "opened": true
+      },
+      {
+        "title": "Today in Energy, detail id 37813",
+        "publisher": "U.S. EIA",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=37813",
+        "type": "government",
+        "quote": "As a group, refrigerators use 7% of the electricity consumed.",
+        "locator": "Article body, citing RECS 2015",
+        "opened": true
+      },
+      {
+        "title": "Electricity use in homes",
+        "publisher": "U.S. EIA Energy Explained",
+        "url": "https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php",
+        "type": "government",
+        "quote": "Nearly all homes—99%—have a refrigerator, and in 2020, 34% of U.S. homes had two or more.",
+        "locator": "Refrigerators section",
+        "opened": true
+      }
+    ],
+    "confidence": "high",
+    "status": "supported",
+    "notes": "ALL SOURCES ARE EIA (one publisher), so strictly this has one independent source; EIA is the primary U.S. authority and no independent second source was found. The 2020 percentage is my calculation, not an EIA-stated figure; separate freezers add another ~1.8%. EIA also notes lighting and refrigerators are the next two largest electricity end uses after space conditioning and water heating."
+  }
+]

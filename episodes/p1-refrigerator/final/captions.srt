@@ -1,0 +1,992 @@
+1
+00:00:00,020 --> 00:00:01,900
+Why does your refrigerator have to heat up
+
+2
+00:00:01,920 --> 00:00:03,150
+to keep your food cold?
+
+3
+00:00:03,360 --> 00:00:04,420
+It sounds backwards.
+
+4
+00:00:04,440 --> 00:00:06,180
+But put your hand on the side of a running
+
+5
+00:00:06,200 --> 00:00:07,900
+fridge, or near the grille at the bottom,
+
+6
+00:00:07,920 --> 00:00:09,630
+and you'll often feel warmth.
+
+7
+00:00:09,800 --> 00:00:11,620
+In a hot room, the sides of some models
+
+8
+00:00:11,640 --> 00:00:13,770
+get hotter than fifty degrees Celsius.
+
+9
+00:00:14,040 --> 00:00:15,300
+That's about a hundred and twenty
+
+10
+00:00:15,320 --> 00:00:16,030
+Fahrenheit.
+
+11
+00:00:16,240 --> 00:00:17,690
+That heat isn't a defect.
+
+12
+00:00:17,760 --> 00:00:18,890
+It's the whole trick.
+
+13
+00:00:19,040 --> 00:00:21,080
+And tucked away inside, right next to the
+
+14
+00:00:21,100 --> 00:00:22,980
+coldest part of the machine, there's a
+
+15
+00:00:23,000 --> 00:00:23,910
+second heater.
+
+16
+00:00:24,100 --> 00:00:25,910
+One that switches on on purpose.
+
+17
+00:00:26,660 --> 00:00:28,320
+Let's start with the way we talk about
+
+18
+00:00:28,340 --> 00:00:28,930
+cold.
+
+19
+00:00:29,060 --> 00:00:31,330
+We talk about cold as if it were a thing.
+
+20
+00:00:31,540 --> 00:00:32,420
+Let the cold out.
+
+21
+00:00:32,440 --> 00:00:33,420
+Keep the cold in.
+
+22
+00:00:33,440 --> 00:00:34,870
+But there's no such substance.
+
+23
+00:00:35,080 --> 00:00:36,460
+There is no cold to add.
+
+24
+00:00:36,480 --> 00:00:38,460
+What exists is heat: energy that flows
+
+25
+00:00:38,480 --> 00:00:40,370
+because of a difference in temperature.
+
+26
+00:00:40,560 --> 00:00:42,750
+And on its own, heat only flows one way.
+
+27
+00:00:42,860 --> 00:00:43,990
+From hotter to colder.
+
+28
+00:00:44,100 --> 00:00:45,720
+A hot mug warms your hands.
+
+29
+00:00:45,740 --> 00:00:47,800
+A cold drink never chills them by pushing
+
+30
+00:00:47,820 --> 00:00:48,710
+cold in.
+
+31
+00:00:48,800 --> 00:00:50,860
+Your hands are simply losing heat to it.
+
+32
+00:00:50,880 --> 00:00:52,910
+So a refrigerator doesn't make cold.
+
+33
+00:00:53,780 --> 00:00:54,890
+It removes heat.
+
+34
+00:00:55,040 --> 00:00:56,740
+Your milk is cold because heat has been
+
+35
+00:00:56,760 --> 00:00:57,580
+taken out of it.
+
+36
+00:00:57,600 --> 00:00:58,850
+Here's the problem.
+
+37
+00:00:59,040 --> 00:01:00,740
+Your kitchen is warmer than the inside of
+
+38
+00:01:00,760 --> 00:01:01,490
+your fridge.
+
+39
+00:01:01,700 --> 00:01:03,700
+Getting heat out of the cold box and into
+
+40
+00:01:03,720 --> 00:01:05,540
+the warm room means moving it in the one
+
+41
+00:01:05,560 --> 00:01:07,590
+direction it will never go by itself.
+
+42
+00:01:08,000 --> 00:01:09,770
+Physicists have a name for this rule.
+
+43
+00:01:09,940 --> 00:01:11,660
+It's the Clausius statement of the second
+
+44
+00:01:11,680 --> 00:01:13,090
+law of thermodynamics.
+
+45
+00:01:13,400 --> 00:01:15,520
+Moving heat from a cold place to a warmer
+
+46
+00:01:15,540 --> 00:01:16,690
+one takes work.
+
+47
+00:01:16,840 --> 00:01:18,970
+So your fridge works like a heat pump.
+
+48
+00:01:19,780 --> 00:01:22,200
+It spends electricity to push heat uphill,
+
+49
+00:01:22,220 --> 00:01:25,170
+out of your food and into your kitchen.
+
+50
+00:01:25,660 --> 00:01:28,120
+To pull that off, it uses one fluid
+
+51
+00:01:28,140 --> 00:01:29,800
+travelling around and around a sealed
+
+52
+00:01:29,820 --> 00:01:30,370
+loop.
+
+53
+00:01:30,580 --> 00:01:31,520
+The refrigerant.
+
+54
+00:01:31,540 --> 00:01:33,560
+Follow one drop of it all the way round,
+
+55
+00:01:33,580 --> 00:01:35,190
+and the whole machine makes sense.
+
+56
+00:01:35,500 --> 00:01:37,290
+The trick it relies on is boiling.
+
+57
+00:01:37,580 --> 00:01:39,300
+A liquid's boiling point depends on
+
+58
+00:01:39,320 --> 00:01:39,950
+pressure.
+
+59
+00:01:40,280 --> 00:01:42,060
+Lower the pressure, and it boils at a
+
+60
+00:01:42,080 --> 00:01:43,070
+lower temperature.
+
+61
+00:01:43,540 --> 00:01:45,340
+Raise the pressure, and the boiling point
+
+62
+00:01:45,360 --> 00:01:45,990
+climbs.
+
+63
+00:01:46,800 --> 00:01:48,500
+Household refrigerants boil far below
+
+64
+00:01:48,520 --> 00:01:51,370
+freezing, even at ordinary air pressure.
+
+65
+00:01:52,460 --> 00:01:54,360
+Isobutane, one of the common ones, boils
+
+66
+00:01:54,380 --> 00:01:56,450
+at about eleven degrees Fahrenheit.
+
+67
+00:01:56,740 --> 00:01:57,630
+Now, the loop.
+
+68
+00:01:57,860 --> 00:01:59,980
+Stop one is the evaporator, a coil inside
+
+69
+00:02:00,000 --> 00:02:00,690
+the fridge.
+
+70
+00:02:00,980 --> 00:02:02,400
+Here the refrigerant is kept at low
+
+71
+00:02:02,420 --> 00:02:04,600
+pressure, so it boils, and boiling soaks
+
+72
+00:02:04,620 --> 00:02:05,270
+up heat.
+
+73
+00:02:05,480 --> 00:02:07,350
+That heat comes from inside the fridge.
+
+74
+00:02:07,560 --> 00:02:09,440
+From the air, the shelves, last night's
+
+75
+00:02:09,460 --> 00:02:11,220
+leftovers, and the warmth that keeps
+
+76
+00:02:11,240 --> 00:02:13,290
+creeping in through the walls and door.
+
+77
+00:02:13,500 --> 00:02:15,090
+This is where it all ends up.
+
+78
+00:02:15,400 --> 00:02:16,830
+Stop two is the compressor.
+
+79
+00:02:17,400 --> 00:02:19,860
+The cold, low pressure vapor flows into
+
+80
+00:02:19,880 --> 00:02:22,040
+it, and the compressor squeezes it into a
+
+81
+00:02:22,060 --> 00:02:24,090
+high pressure vapor that is much hotter.
+
+82
+00:02:24,400 --> 00:02:25,700
+Hot enough to be well above room
+
+83
+00:02:25,720 --> 00:02:26,550
+temperature.
+
+84
+00:02:26,880 --> 00:02:28,540
+This is where the electricity does its
+
+85
+00:02:28,560 --> 00:02:29,410
+main job.
+
+86
+00:02:29,640 --> 00:02:31,330
+The compressor is doing the work.
+
+87
+00:02:31,720 --> 00:02:33,250
+Stop three is the condenser.
+
+88
+00:02:33,600 --> 00:02:35,740
+Depending on the design, that's a coil on
+
+89
+00:02:35,760 --> 00:02:37,920
+the back, tubing hidden inside the side
+
+90
+00:02:37,940 --> 00:02:40,380
+walls, or a coil in a compartment at the
+
+91
+00:02:40,400 --> 00:02:42,910
+bottom with a fan blowing across it.
+
+92
+00:02:43,600 --> 00:02:45,400
+The vapor arriving here is hotter than
+
+93
+00:02:45,420 --> 00:02:47,540
+your kitchen, so heat flows out of it into
+
+94
+00:02:47,560 --> 00:02:48,250
+the room.
+
+95
+00:02:48,460 --> 00:02:49,570
+The easy direction.
+
+96
+00:02:49,760 --> 00:02:52,100
+As it loses heat, the vapor condenses back
+
+97
+00:02:52,120 --> 00:02:54,350
+into a liquid, still under high pressure.
+
+98
+00:02:54,740 --> 00:02:56,570
+Stop four is the expansion device.
+
+99
+00:02:56,800 --> 00:02:58,560
+In a typical household fridge it's a
+
+100
+00:02:58,580 --> 00:03:00,940
+capillary tube, a long, very thin tube
+
+101
+00:03:00,960 --> 00:03:02,330
+that restricts the flow.
+
+102
+00:03:02,500 --> 00:03:04,420
+It holds back the high pressure side from
+
+103
+00:03:04,440 --> 00:03:05,790
+the low pressure side.
+
+104
+00:03:06,000 --> 00:03:08,160
+Past it, the pressure drops, the boiling
+
+105
+00:03:08,180 --> 00:03:10,340
+point drops with it, and the refrigerant
+
+106
+00:03:10,360 --> 00:03:11,790
+starts to boil again.
+
+107
+00:03:12,320 --> 00:03:14,820
+In many fridges this tube is soldered to
+
+108
+00:03:14,840 --> 00:03:16,900
+the line carrying cold vapor back to the
+
+109
+00:03:16,920 --> 00:03:19,200
+compressor, so the warm liquid hands some
+
+110
+00:03:19,220 --> 00:03:21,070
+of its heat to that vapor on the way.
+
+111
+00:03:21,280 --> 00:03:22,860
+And then the refrigerant is back in the
+
+112
+00:03:22,880 --> 00:03:25,210
+evaporator, and the loop starts again.
+
+113
+00:03:25,620 --> 00:03:26,830
+Now do the accounting.
+
+114
+00:03:27,100 --> 00:03:28,600
+Energy is conserved.
+
+115
+00:03:28,620 --> 00:03:30,480
+So the heat the fridge dumps into your
+
+116
+00:03:30,500 --> 00:03:32,800
+kitchen equals all the heat it pulled out
+
+117
+00:03:32,820 --> 00:03:35,400
+of the inside, plus the electrical energy
+
+118
+00:03:35,420 --> 00:03:36,970
+it used to do it.
+
+119
+00:03:37,560 --> 00:03:40,000
+On a tough standard test, a household
+
+120
+00:03:40,020 --> 00:03:43,000
+compressor moves roughly one point four to
+
+121
+00:03:43,020 --> 00:03:45,260
+two units of heat for every unit of
+
+122
+00:03:45,280 --> 00:03:46,850
+electricity it uses.
+
+123
+00:03:47,780 --> 00:03:49,920
+So here's the missing context to the
+
+124
+00:03:49,940 --> 00:03:50,570
+title.
+
+125
+00:03:51,020 --> 00:03:52,510
+Heat only flows downhill.
+
+126
+00:03:52,760 --> 00:03:54,260
+For heat to leave the condenser on its
+
+127
+00:03:54,280 --> 00:03:56,280
+own, the refrigerant inside has to be
+
+128
+00:03:56,300 --> 00:03:57,910
+hotter than the air in your kitchen.
+
+129
+00:03:58,160 --> 00:04:00,180
+That's the compressor's whole job: push it
+
+130
+00:04:00,200 --> 00:04:01,670
+well above room temperature.
+
+131
+00:04:01,860 --> 00:04:03,140
+A condenser that stayed at room
+
+132
+00:04:03,160 --> 00:04:04,970
+temperature couldn't get rid of anything.
+
+133
+00:04:05,400 --> 00:04:07,500
+Dust, lint and pet hair on the condenser
+
+134
+00:04:07,520 --> 00:04:09,520
+block the airflow and make it run hotter,
+
+135
+00:04:09,540 --> 00:04:11,880
+so the compressor has to work harder and
+
+136
+00:04:11,900 --> 00:04:12,510
+longer.
+
+137
+00:04:12,920 --> 00:04:14,600
+Hotpoint says to clean the coils at least
+
+138
+00:04:14,620 --> 00:04:15,650
+once a year.
+
+139
+00:04:16,520 --> 00:04:18,500
+Some models don't need routine cleaning at
+
+140
+00:04:18,520 --> 00:04:19,130
+all.
+
+141
+00:04:19,460 --> 00:04:20,590
+Space matters too.
+
+142
+00:04:21,160 --> 00:04:23,060
+Manufacturers specify air gaps, and they
+
+143
+00:04:23,080 --> 00:04:24,010
+vary a lot.
+
+144
+00:04:24,320 --> 00:04:26,560
+One G E side by side asks for just an
+
+145
+00:04:26,580 --> 00:04:27,950
+eighth of an inch at the sides.
+
+146
+00:04:28,660 --> 00:04:30,010
+Samsung recommends at least five
+
+147
+00:04:30,100 --> 00:04:31,860
+centimetres, about two inches, at the
+
+148
+00:04:31,880 --> 00:04:32,870
+sides and back.
+
+149
+00:04:33,020 --> 00:04:34,880
+And putting a fridge next to an oven, a
+
+150
+00:04:34,900 --> 00:04:37,300
+dishwasher, a heating vent, or in direct
+
+151
+00:04:37,320 --> 00:04:39,240
+sunlight makes it harder for it to shed
+
+152
+00:04:39,260 --> 00:04:39,870
+heat.
+
+153
+00:04:40,340 --> 00:04:41,440
+Energy guides and installation
+
+154
+00:04:41,460 --> 00:04:43,690
+instructions say to avoid it.
+
+155
+00:04:44,240 --> 00:04:45,750
+Now for that second heater.
+
+156
+00:04:46,020 --> 00:04:47,930
+The evaporator stays below freezing.
+
+157
+00:04:48,220 --> 00:04:49,720
+And the air inside your fridge carries
+
+158
+00:04:49,740 --> 00:04:52,160
+moisture, from your food, and from warm,
+
+159
+00:04:52,180 --> 00:04:53,940
+humid kitchen air that rushes in every
+
+160
+00:04:53,960 --> 00:04:55,250
+time you open the door.
+
+161
+00:04:55,500 --> 00:04:57,340
+That moisture condenses on the cold coil
+
+162
+00:04:57,360 --> 00:04:58,170
+and freezes.
+
+163
+00:04:58,960 --> 00:04:59,440
+Frost.
+
+164
+00:04:59,460 --> 00:05:01,090
+Frost conducts heat very poorly.
+
+165
+00:05:01,280 --> 00:05:02,840
+A layer of it insulates the coil and
+
+166
+00:05:02,860 --> 00:05:04,940
+chokes the airflow, so the fridge cools
+
+167
+00:05:04,960 --> 00:05:06,570
+worse and wastes energy.
+
+168
+00:05:06,940 --> 00:05:08,740
+A frost free fridge solves it with an
+
+169
+00:05:08,760 --> 00:05:11,360
+electric heater, mounted on or just below
+
+170
+00:05:11,380 --> 00:05:12,530
+the evaporator.
+
+171
+00:05:13,260 --> 00:05:15,400
+Often a metal rod, or a heating element
+
+172
+00:05:15,420 --> 00:05:17,010
+inside a glass tube.
+
+173
+00:05:17,140 --> 00:05:19,060
+While it's on, it can draw about three
+
+174
+00:05:19,080 --> 00:05:21,090
+times as much power as the compressor.
+
+175
+00:05:21,340 --> 00:05:23,580
+In the two service manuals we checked, the
+
+176
+00:05:23,600 --> 00:05:25,180
+heater drew about four hundred and fifty
+
+177
+00:05:25,200 --> 00:05:27,190
+to four hundred and seventy watts.
+
+178
+00:05:27,440 --> 00:05:29,024
+The compressor, roughly a hundred and
+
+179
+00:05:29,044 --> 00:05:31,100
+twenty to a hundred and sixty.
+
+180
+00:05:31,120 --> 00:05:33,180
+But the heater only runs for minutes at a
+
+181
+00:05:33,200 --> 00:05:33,810
+time.
+
+182
+00:05:34,100 --> 00:05:35,450
+So when does it switch on?
+
+183
+00:05:35,520 --> 00:05:37,620
+It goes by how long the compressor has
+
+184
+00:05:37,640 --> 00:05:38,570
+been running.
+
+185
+00:05:39,460 --> 00:05:41,360
+Older timers start a defrost about every
+
+186
+00:05:41,380 --> 00:05:42,630
+eight hours of running.
+
+187
+00:05:43,000 --> 00:05:45,450
+Newer controls adapt: keep the doors shut,
+
+188
+00:05:45,500 --> 00:05:47,280
+and some models wait a hundred hours or
+
+189
+00:05:47,300 --> 00:05:47,850
+more.
+
+190
+00:05:47,920 --> 00:05:48,990
+Then there's the water.
+
+191
+00:05:49,180 --> 00:05:51,280
+In many fridges, the melted frost drains
+
+192
+00:05:51,300 --> 00:05:53,140
+through a tube to a shallow pan down near
+
+193
+00:05:53,160 --> 00:05:54,050
+the condenser.
+
+194
+00:05:54,360 --> 00:05:56,380
+There, the condenser's warmth, and in many
+
+195
+00:05:56,400 --> 00:05:58,740
+models its fan, evaporate the water back
+
+196
+00:05:58,760 --> 00:05:59,520
+into your kitchen.
+
+197
+00:05:59,540 --> 00:06:02,460
+The fridge uses its own waste heat to get
+
+198
+00:06:02,480 --> 00:06:04,070
+rid of its own meltwater.
+
+199
+00:06:04,220 --> 00:06:05,930
+And there's more deliberate heat.
+
+200
+00:06:06,820 --> 00:06:08,600
+Many fridges warm the edges of the cabinet
+
+201
+00:06:08,620 --> 00:06:10,740
+where the doors seal, either with a loop
+
+202
+00:06:10,760 --> 00:06:13,260
+of warm refrigerant tubing or with small
+
+203
+00:06:13,280 --> 00:06:14,570
+electric heaters.
+
+204
+00:06:14,740 --> 00:06:16,940
+The point is to stop condensation forming
+
+205
+00:06:16,960 --> 00:06:18,030
+on the outside.
+
+206
+00:06:18,340 --> 00:06:20,320
+Some models even have an energy saver
+
+207
+00:06:20,340 --> 00:06:22,590
+switch that turns that heater off.
+
+208
+00:06:22,800 --> 00:06:25,380
+So the box that keeps your food cold has
+
+209
+00:06:25,400 --> 00:06:27,940
+warm edges around its doors, and a heater
+
+210
+00:06:27,960 --> 00:06:30,590
+mounted right next to its coldest coil.
+
+211
+00:06:31,400 --> 00:06:33,000
+All of that shows up on your electricity
+
+212
+00:06:33,020 --> 00:06:33,770
+bill.
+
+213
+00:06:33,920 --> 00:06:36,190
+The good news is how small it has become.
+
+214
+00:06:36,400 --> 00:06:38,860
+A new, efficient refrigerator uses a few
+
+215
+00:06:38,880 --> 00:06:40,650
+hundred kilowatt hours a year.
+
+216
+00:06:41,020 --> 00:06:43,100
+One eighteen cubic foot top freezer model
+
+217
+00:06:43,120 --> 00:06:45,500
+on the ENERGY STAR list is rated at three
+
+218
+00:06:45,520 --> 00:06:47,480
+hundred and sixty three kilowatt hours a
+
+219
+00:06:47,500 --> 00:06:48,050
+year.
+
+220
+00:06:48,180 --> 00:06:50,160
+That's about ten percent under the federal
+
+221
+00:06:50,180 --> 00:06:51,510
+limit for its size.
+
+222
+00:06:51,900 --> 00:06:54,180
+In nineteen seventy four, the average new
+
+223
+00:06:54,200 --> 00:06:56,710
+fridge used more than eighteen hundred.
+
+224
+00:06:57,260 --> 00:06:59,480
+New fridges use roughly a quarter of the
+
+225
+00:06:59,500 --> 00:07:01,680
+energy of mid seventies models, and they
+
+226
+00:07:01,700 --> 00:07:02,550
+hold more.
+
+227
+00:07:02,780 --> 00:07:04,540
+Which brings us to the old advice about
+
+228
+00:07:04,560 --> 00:07:05,950
+the open fridge door.
+
+229
+00:07:06,200 --> 00:07:08,370
+Leaving it open won't cool your kitchen.
+
+230
+00:07:08,660 --> 00:07:10,320
+Every bit of heat it pulls out goes
+
+231
+00:07:10,340 --> 00:07:12,140
+straight back into the same room through
+
+232
+00:07:12,160 --> 00:07:14,360
+the condenser, along with heat from the
+
+233
+00:07:14,380 --> 00:07:15,790
+electricity it uses.
+
+234
+00:07:16,020 --> 00:07:17,770
+So the room ends up warmer.
+
+235
+00:07:18,000 --> 00:07:20,780
+All you get is a brief puff of cold air at
+
+236
+00:07:20,800 --> 00:07:21,490
+the door.
+
+237
+00:07:22,260 --> 00:07:23,960
+So your fridge doesn't make cold.
+
+238
+00:07:23,980 --> 00:07:25,140
+It moves heat.
+
+239
+00:07:25,160 --> 00:07:27,680
+Out of the cold box, around a loop of
+
+240
+00:07:27,700 --> 00:07:29,580
+boiling and squeezing, and into your
+
+241
+00:07:29,600 --> 00:07:31,840
+kitchen, with a little extra added on the
+
+242
+00:07:31,860 --> 00:07:32,430
+way.
+
+243
+00:07:32,660 --> 00:07:34,240
+Much of that warmth on the side of the
+
+244
+00:07:34,260 --> 00:07:36,820
+cabinet is heat that came from inside your
+
+245
+00:07:36,840 --> 00:07:37,530
+fridge.
+
+246
+00:07:37,760 --> 00:07:40,140
+Next time on The Hidden Mechanism, another
+
+247
+00:07:40,160 --> 00:07:42,520
+everyday machine that works in a way you'd
+
+248
+00:07:42,540 --> 00:07:44,230
+never guess from the outside.
+

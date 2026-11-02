@@ -1,0 +1,334 @@
+[
+ {
+  "id": "S01",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S02",
+  "verdict": "PASS",
+  "problems": [
+   "Confirmed on the regenerated strip; unchanged from pass 4. minor (non-blocking): the hand is dark-filled"
+  ],
+  "fixes": [],
+  "judged_in": "pass5"
+ },
+ {
+  "id": "S03",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S04",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S05",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass4 (PASS, carried over)"
+ },
+ {
+  "id": "S06",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S07",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S08",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S09",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): after the caption lands (~12.7 s) the only change to the cut is the caption fading; 'heat won't climb back up on its own' is allowed but not used"
+  ],
+  "fixes": [
+   "Optional: land 'heat won't climb back up on its own' at ~17 s ('takes work')"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S10",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S11",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): blank board from 0 to ~4 s now that the label waits for the loop"
+  ],
+  "fixes": [
+   "Optional: draw the zones on at ~1 s"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S12",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): bubbles are 4 small dark dots; readable but weak at TV size"
+  ],
+  "fixes": [
+   "Enlarge bubbles to violet outlined circles ~18 px at 1080 and add a few more"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S13",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S14",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the 'leftovers, air' source sits above the cold-zone panel (outside the fridge region); 'EVAPORATOR: low pressure, so it boils' sits ~65 px from the top edge"
+  ],
+  "fixes": [
+   "Move the leftovers box inside the cold-zone panel; drop the title to clear 96 px from the top"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S15",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S16",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S17",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): U-bends are chalk rather than pipe-coloured; 'vapor turns to liquid' is on screen from 0 s"
+  ],
+  "fixes": [
+   "Draw the U-bends as part of the pipe; fade the label in at 7.63 s"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S18",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S19",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): crossing heat arrows are ~3 to 4 px at 1080 (flow weight is 8 px), though now readable"
+  ],
+  "fixes": [
+   "Raise arrow stroke to 8 px"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S20",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass5"
+ },
+ {
+  "id": "S21",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S22",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the lime bar is on screen from 0 s rather than landing on 'every unit of electricity'"
+  ],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S23",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the callback is a small generic fridge icon rather than the S01 cutaway"
+  ],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S24",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S25",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S26",
+  "verdict": "FAIL",
+  "problems": [
+   "The safe margin is fixed ('condenser' starts at x=96), but the narrower 150 px thermometer spacing leaves only ~8 px between 'condenser' and 'room air' on the shared baseline, so they read as one phrase, 'condenser room air' (the same run-together problem failed in S38 in pass 2)"
+  ],
+  "fixes": [
+   "Put at least 24 px between the labels: thermometers at -720 and -545, with the oven narrowed to 170 px (left edge -465) so 'room air' still clears the oven by 20 px or more; or stack each label directly under its own bulb on two rows"
+  ],
+  "judged_in": "pass5"
+ },
+ {
+  "id": "S27",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass5"
+ },
+ {
+  "id": "S28",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S29",
+  "verdict": "PASS",
+  "problems": [
+   "Re-judged on the re-composited file: 'glass-tube heater' now sits centred below the tube (text y 854 to 889 at 1080, ~120 px below the tube, 190 px from the bottom), clear of the fins",
+   "Now passes: the frost is a chalk-white deposit with a cold-blue rim; no pink or violet cast; the lime lead, glow ramp, bottom-up melt, meltwater and the hold until ~9.4 s all match the board",
+   "minor (non-blocking): the label starts fading in at ~9.2 s while the rod shot and falling drops are still on screen; the variant settles about 1 frame before the cut; the unlit rod renders copper-brown before the heater is on; the background is neutral grey (about #30333A) rather than slate"
+  ],
+  "fixes": [
+   "Optional: delay the label fade-in until the tube enters frame (~9.9 s); render the unlit rod neutral grey"
+  ],
+  "judged_in": "pass5 (after label fix)"
+ },
+ {
+  "id": "S30",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the clock's elapsed arc is still orange (it marks time, not heat)"
+  ],
+  "fixes": [
+   "Draw the clock arc in chalk"
+  ],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S31",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S32",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the condenser-to-pan heat arrow is still short"
+  ],
+  "fixes": [],
+  "judged_in": "pass4 (PASS, carried over)"
+ },
+ {
+  "id": "S33",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S34",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S35",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S36",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the 'holds more' icons sit top-centre, not under today's bar"
+  ],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S37",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the blue puff sits low left of the cabinet, near the bottom of the open door rather than in the opening"
+  ],
+  "fixes": [],
+  "judged_in": "pass4 (PASS, carried over)"
+ },
+ {
+  "id": "S38",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the extra arrow starts about 60 px right of the bolt, so its link to the electricity reads by proximity only"
+  ],
+  "fixes": [],
+  "judged_in": "pass4 (PASS, carried over)"
+ },
+ {
+  "id": "S39",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3 (PASS, carried over)"
+ },
+ {
+  "id": "S40",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ }
+]

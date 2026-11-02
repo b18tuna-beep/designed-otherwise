@@ -1,0 +1,363 @@
+[
+ {
+  "id": "S01",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S02",
+  "verdict": "FAIL",
+  "problems": [
+   "The real render is a held still: cut and c1 are pixel-identical and the fridge stays the same size to the end, so 'push-in starts on backwards' never happens",
+   "The warm side-panel overlay is still offset ~45 px right and ~30 px down (1080 scale): it overhangs into the background past the panel edge and below the base, and leaves a strip of the panel uncovered on its left",
+   "The grille-glow overlay slides out onto the floor to the left of the base instead of sitting on the grille"
+  ],
+  "fixes": [
+   "Render the shot as an animated camera push (slow dolly, max 15%) or apply a 2D scale-from-centre push on the plate with overlays parented to it",
+   "Corner-pin both overlays to the panel and grille quads exported from the Blender camera for every frame (or the start and end frame of the push), then clip to those quads"
+  ],
+  "judged_in": "pass2 (pending hero re-render, not re-judged)"
+ },
+ {
+  "id": "S03",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S04",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S05",
+  "verdict": "FAIL",
+  "problems": [
+   "'door open' (now 34 px) overlaps the door panel's top edge: the final 'n' sits on the hinge corner where the door meets the cabinet"
+  ],
+  "fixes": [
+   "Anchor 'door open' above the door panel's free (outer) edge with at least 24 px clearance from the door and cabinet outlines, and at least 96 px from the frame edge"
+  ],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S06",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S07",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S08",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S09",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): after the caption lands (~12.7 s) the only change to the cut is the caption fading; 'heat won't climb back up on its own' is allowed but not used"
+  ],
+  "fixes": [
+   "Optional: land 'heat won't climb back up on its own' at ~17 s ('takes work')"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S10",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S11",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): blank board from 0 to ~4 s now that the label waits for the loop"
+  ],
+  "fixes": [
+   "Optional: draw the zones on at ~1 s"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S12",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): bubbles are 4 small dark dots; readable but weak at TV size"
+  ],
+  "fixes": [
+   "Enlarge bubbles to violet outlined circles ~18 px at 1080 and add a few more"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S13",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S14",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the 'leftovers, air' source sits above the cold-zone panel (outside the fridge region); 'EVAPORATOR: low pressure, so it boils' sits ~65 px from the top edge"
+  ],
+  "fixes": [
+   "Move the leftovers box inside the cold-zone panel; drop the title to clear 96 px from the top"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S15",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S16",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S17",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): U-bends are chalk rather than pipe-coloured; 'vapor turns to liquid' is on screen from 0 s"
+  ],
+  "fixes": [
+   "Draw the U-bends as part of the pipe; fade the label in at 7.63 s"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S18",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S19",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): crossing heat arrows are ~3 to 4 px at 1080 (flow weight is 8 px), though now readable"
+  ],
+  "fixes": [
+   "Raise arrow stroke to 8 px"
+  ],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S20",
+  "verdict": "FAIL",
+  "problems": [
+   "'EVAPORATOR' is still cut by the dashed zone wall, now between 'T' and 'OR' (the wall moved, but not far enough)"
+  ],
+  "fixes": [
+   "Move the wall at least 24 px past the label's right edge (about x=-130 in loop space), or right-align the label to end 24 px left of the wall"
+  ],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S21",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S22",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the lime bar is on screen from 0 s rather than landing on 'every unit of electricity'"
+  ],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S23",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the callback is a small generic fridge icon rather than the S01 cutaway"
+  ],
+  "fixes": [],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S24",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S25",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S26",
+  "verdict": "FAIL",
+  "problems": [
+   "The condenser/kitchen-air thermometer pair has moved off the oven, but at the end of the push 'condenser' starts 45 px from the left frame edge (safe margin is 96 px); the two labels sit on staggered baselines"
+  ],
+  "fixes": [
+   "Shift the thermometer pair right so its leftmost glyph stays at least 96 px from the edge through the end of the push (there is ~75 px free before the oven), and put both labels on one baseline"
+  ],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S27",
+  "verdict": "FAIL",
+  "problems": [
+   "'door open' overlaps the door's top edge and the cabinet corner, as in S05, and starts 51 px from the left frame edge",
+   "minor: a drifting moisture dot crosses 'below freezing' at ~14.6 s"
+  ],
+  "fixes": [
+   "Anchor 'door open' above the door panel's free (outer) edge with at least 24 px clearance from the door and cabinet outlines, and at least 96 px from the frame edge",
+   "Keep drift paths out of the label boxes"
+  ],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S28",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S29",
+  "verdict": "FAIL",
+  "problems": [
+   "The real hero render is a single held frame for the whole 10.3 s: the heater rod stays dark, no frost melts back, no meltwater falls, and there is no slide to a glass-tube variant (planned changes 1 to 3 never happen; rubric 2 and 3)",
+   "The power lead renders pale cream (≈ #E5E8A2), not lime #D6F25C, so it doesn't read as electricity",
+   "'glass-tube heater' label appears at 9.2 s with no glass tube on screen; the coil shows no distinct chalk-white frost deposit to melt"
+  ],
+  "fixes": [
+   "Render the animated sequence (heater emission ramps to heat colour at 1.91 s, frost mesh shrinks bottom-up from 3.09 s, a few meltwater drops, camera slide to a glass-tube heater at 9.19 s), split across the runner matrix as in the setup-check workflow",
+   "Set the lead material to emission #D6F25C so it survives the cold lighting",
+   "Model frost as a separate chalk-white shell over the blue coil; only show 'glass-tube heater' once that variant is in frame"
+  ],
+  "judged_in": "pass2 (pending hero re-render, not re-judged)"
+ },
+ {
+  "id": "S30",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the clock's elapsed arc is still orange (it marks time, not heat)"
+  ],
+  "fixes": [
+   "Draw the clock arc in chalk"
+  ],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S31",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S32",
+  "verdict": "FAIL",
+  "problems": [
+   "'condenser' now sits inside the machine compartment, and the compartment divider line runs straight through the text",
+   "minor: rising moisture dots are still muted gray at low contrast"
+  ],
+  "fixes": [
+   "Put 'condenser' below the condenser body inside the compartment (at least 12 px clear of the divider and the cabinet base), or outside the cabinet to the left; draw the moisture dots in chalk"
+  ],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S33",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S34",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S35",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ },
+ {
+  "id": "S36",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the 'holds more' icons sit top-centre, not under today's bar"
+  ],
+  "fixes": [],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S37",
+  "verdict": "FAIL",
+  "problems": [
+   "'door open' overlaps the door's top edge and the cabinet corner, as in S05"
+  ],
+  "fixes": [
+   "Anchor 'door open' above the door panel's free (outer) edge with at least 24 px clearance from the door and cabinet outlines, and at least 96 px from the frame edge"
+  ],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S38",
+  "verdict": "FAIL",
+  "problems": [
+   "'plus a little extra from the electricity' is clear of 'KITCHEN' now, but its descenders end 116 px from the bottom (inside the 120 px zone)",
+   "The extra arrow still starts on the lime bolt and crosses the loop pipe near the bottom-right bend"
+  ],
+  "fixes": [
+   "Raise the label 10 px or more (or put it right of the arrowhead); start the arrow 12 px right of the bolt and route it below the pipe"
+  ],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S39",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass3"
+ },
+ {
+  "id": "S40",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": [],
+  "judged_in": "pass2 (PASS, carried over)"
+ }
+]

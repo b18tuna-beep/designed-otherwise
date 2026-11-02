@@ -1,0 +1,473 @@
+[
+ {
+  "id": "S01",
+  "verdict": "FAIL",
+  "problems": [
+   "'warm outside' label bottom edge sits ~45 px from the bottom of the 1080 frame (inside the 120 px unsafe zone)",
+   "Side walls are already orange and shimmering at 0.3 s, so the planned 'side walls glow on heat up' (1.48 s) never happens; cut and c1 differ only by the question text",
+   "Condenser compartment is already heat_soft orange from frame 1; spec says it stays subdued until its reveal"
+  ],
+  "fixes": [
+   "Raise or scale the shared cutaway (about 0.9x, centred) so the cabinet base clears 130 px; put 'warm outside' beside the right wall at mid height instead of under the cabinet",
+   "Start the side walls in chalk, then animate the orange glow and shimmer in at 1.40 s (2 to 4 frames before 'heat up')",
+   "Draw the condenser and compressor in grid/muted until S16"
+  ]
+ },
+ {
+  "id": "S02",
+  "verdict": "FAIL",
+  "problems": [
+   "2D warm overlay is an axis-aligned rounded rectangle that overhangs the side panel by ~25 px (75 px at 1080) into empty background and ignores the panel's perspective",
+   "Grille-glow overlay sits inside the bottom 120 px"
+  ],
+  "fixes": [
+   "Corner-pin the overlay: export the side panel's 4 projected corners from the Blender camera to JSON and fill that quad (clip to it), same for the grille",
+   "Frame the hero render so the grille sits at least 130 px above the bottom edge (lower the camera target or raise the fridge in frame)"
+  ]
+ },
+ {
+  "id": "S03",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): qualifier 'some models, in a hot room' renders ~39 px, under the 44 px label size the style bible asks for qualifiers"
+  ],
+  "fixes": [
+   "Bump the qualifier to 44 px Archivo SemiCondensed so it reads as first-class text next to the number"
+  ]
+ },
+ {
+  "id": "S04",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): 'push into the freezer' is shown as a locator box plus inset, not a push; acceptable under the locator rule"
+  ],
+  "fixes": []
+ },
+ {
+  "id": "S05",
+  "verdict": "FAIL",
+  "problems": [
+   "The 'open door' is a single diagonal chalk line jutting from the top-right corner toward the top edge (~66 px from the top at 1080); it doesn't read as a door",
+   "Heat arrows end on the closed right side wall, not at a door opening, which suggests heat entering through the insulated wall (rubric 7)",
+   "'Keep the cold in.' is stacked under the first quote instead of replacing it (minor)"
+  ],
+  "fixes": [
+   "Draw the open door as a door panel hinged on the fresh-food compartment's right edge, swung toward the viewer (full compartment height parallelogram), reusable for S27 and S37",
+   "Route the three heat arrows through the door opening so their heads land on the shelves/food inside",
+   "Crossfade 'Let the cold out.' out as 'Keep the cold in.' lands, then strike the remaining line"
+  ]
+ },
+ {
+  "id": "S06",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S07",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the mug stays on screen when the glass arrives (spec says it leaves); arrowheads into the hand touch the thumb outline"
+  ],
+  "fixes": [
+   "Optional: slide the mug out at 1.87 s and stop arrowheads 8 px short of the hand outline"
+  ]
+ },
+ {
+  "id": "S08",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): cutaway base line sits ~90 px from the bottom (structure only, no text)"
+  ],
+  "fixes": [
+   "Covered by the global cutaway reposition in S01"
+  ]
+ },
+ {
+  "id": "S09",
+  "verdict": "FAIL",
+  "problems": [
+   "'Clausius statement · second law of thermodynamics' caption sits ~90 px from the bottom (inside the unsafe zone) at ~32 px, under the 34 px minimum",
+   "From ~12.7 s to the cut at 19.3 s ('moving heat from a cold place to a warmer one takes work') nothing changes except the caption fading; the allowed line 'heat won't climb back up on its own' never appears"
+  ],
+  "fixes": [
+   "Move the caption up under the slope's midpoint at 34 px or larger, at least 150 px above the bottom",
+   "At 'never go by itself' (~8.8 s) show 'heat won't climb back up on its own'; at 'takes work' (~17 s) nudge the ball a short way up the slope and let it roll back, as the setup for S10's pump"
+  ]
+ },
+ {
+  "id": "S10",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the lime bolt floats below the pump with no connection"
+  ],
+  "fixes": [
+   "Attach the bolt to the pump with a short lime lead"
+  ]
+ },
+ {
+  "id": "S11",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): 'REFRIGERANT' label is on screen from 0 s, before the loop exists (show, then label)"
+  ],
+  "fixes": [
+   "Fade the label in with the loop draw-on at 5.17 s"
+  ]
+ },
+ {
+  "id": "S12",
+  "verdict": "FAIL",
+  "problems": [
+   "Pressure gauges are bare semicircles with no needle, so 'left gauge high' and 'right gauge drops' never happen; pressure is carried only by text",
+   "Boiling on the low-pressure side is a single dark dot, not bubbles forming in the liquid"
+  ],
+  "fixes": [
+   "Add a chalk gauge needle (plain line, no arrowhead) to both gauges: left needle rises to ~75% at 'raise the pressure' (8.05 s), right needle falls from ~75% to ~20% at 'lower the pressure' (4.83 s)",
+   "Low-pressure tube: spawn 8 to 12 violet bubbles (violet outline over the violet fill, per style rule 3) along the tube floor, growing and rising continuously from 4.83 s"
+  ]
+ },
+ {
+  "id": "S13",
+  "verdict": "FAIL",
+  "problems": [
+   "Flask 'boils' is one violet dot hovering above the liquid surface; there are no bubbles in the liquid, so the boiling claim is not shown"
+  ],
+  "fixes": [
+   "Animate a continuous stream of violet bubbles forming at the flask bottom, rising and bursting at the surface, with a few spaced violet vapor particles drifting up out of the mouth, from 7.43 s"
+  ]
+ },
+ {
+  "id": "S14",
+  "verdict": "FAIL",
+  "problems": [
+   "Boiling ('bubbles form on boils') is one dark dot; the vapor half is plain refrigerant_soft fill, not spaced violet particles",
+   "The 'leftovers box' is a tiny empty rectangle pinned in the top-left corner (inside the top safe margin) with no arrow from it; the arrows start in empty space above the label, and no wall or door is drawn as a source"
+  ],
+  "fixes": [
+   "Draw liquid-to-vapor as a gradient of form: solid violet left, bubbles mid-tube, spaced moving violet particles on the right",
+   "Put a leftovers container inside the cold zone above the tube and start the first arrows at it (12.77 s); at 14.53 s draw a cabinet wall segment and door edge at the zone border and start arrows from those, ending on the tube"
+  ]
+ },
+ {
+  "id": "S15",
+  "verdict": "FAIL",
+  "problems": [
+   "The piston drives the vapor toward the inlet side, away from the outlet, and one particle stays behind the piston throughout",
+   "The outlet pipe never shows tightly packed vapor leaving; its orange heat halo is only two specks at the pipe ends",
+   "'still vapor, now high pressure and hot' overlaps the chamber's right wall and is ~30 px"
+  ],
+  "fixes": [
+   "Put the piston on the inlet side and compress toward the outlet; after the stroke, stream densely spaced violet particles (never solid fill) along the outlet pipe",
+   "Draw a continuous 6 px heat halo along the whole outlet pipe at 7.91 s",
+   "Move the label under the outlet pipe with 24 px clearance at 34 px or larger"
+  ]
+ },
+ {
+  "id": "S16",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S17",
+  "verdict": "FAIL",
+  "problems": [
+   "The three passes are separate capsules with no U-bends, so the condenser isn't one connected path",
+   "Vapor in the lower pass is a single dot rather than spaced particles; the 'vapor turns to liquid' label from the spec never appears"
+  ],
+  "fixes": [
+   "Join the passes with U-bends into one serpentine rising bottom to top; fill bottom pass with spaced moving violet particles, middle with particles merging into a growing solid violet slug, top solid",
+   "Fade in 'vapor turns to liquid' beside the middle pass at 7.63 s"
+  ]
+ },
+ {
+  "id": "S18",
+  "verdict": "FAIL",
+  "problems": [
+   "There is no left (low-pressure) gauge at all, and the right gauge has no needle, so 'left gauge drops' never happens",
+   "'Bubbles start on boil again' is one dot"
+  ],
+  "fixes": [
+   "Add a second gauge under LOW PRESSURE; both with chalk needles, left falling from high to low at 12.01 s",
+   "From 16.27 s, spawn bubbles in the low-pressure tube near the bore exit, with spaced vapor particles carried left"
+  ]
+ },
+ {
+  "id": "S19",
+  "verdict": "FAIL",
+  "problems": [
+   "'solder joint' label ends ~24 px from the right frame edge (safe margin is 96 px)",
+   "Heat arrows across the joint are hairline (~3 px at 1080) with tiny heads; the key heat handoff is not readable at TV size",
+   "Cold vapor in the suction line is a single dot, not spaced particles"
+  ],
+  "fixes": [
+   "Put 'solder joint' above the capillary at the joint's left third, inside the safe area",
+   "Draw the crossing heat arrows at flow weight (8 px) with standard heads, 4 to 5 of them",
+   "Show spaced violet vapor particles moving in the suction line"
+  ]
+ },
+ {
+  "id": "S20",
+  "verdict": "FAIL",
+  "problems": [
+   "A violet refrigerant dot sits loose in the middle of the loop, outside any pipe, and no refrigerant moves inside the pipes (style: refrigerant only inside tubes, never stops while the loop is on screen)",
+   "All stations are lit from 0.3 s, so 'all stations light on loop starts again' doesn't happen",
+   "Lime bolt reaches ~60 px from the bottom; 'EVAPORATOR' label is crossed by the dashed zone wall"
+  ],
+  "fixes": [
+   "Fix the loop component's drop/particle path so particles are positioned on the pipe path (looks like the path parameter is unset and falls back to the centre); run continuous violet particles round the loop",
+   "Start the stations at grid/muted and light them at 2.79 s",
+   "Move the bolt up beside the compressor; move EVAPORATOR label left of the dashed wall or onto the evaporator's left side"
+  ]
+ },
+ {
+  "id": "S21",
+  "verdict": "FAIL",
+  "problems": [
+   "All three bar labels sit ~90 px from the bottom (inside the unsafe zone) and the bars hug the bottom edge, leaving the top half empty"
+  ],
+  "fixes": [
+   "Raise the bar baseline to ~y 760 at 1080 so labels clear 150 px from the bottom"
+  ]
+ },
+ {
+  "id": "S22",
+  "verdict": "FAIL",
+  "problems": [
+   "Build order is reversed: at 5.1 s the lighter 1.4 to 2 range block and '≈ 1.4 to 2' sit alone on the row, reading as a 0.6-unit bar, until the solid 0 to 1.4 bar arrives ~2.5 s later; a gap separates the two segments"
+  ],
+  "fixes": [
+   "At 4.15 s grow the solid orange bar 0 to 1.4, then add the lighter 1.4 to 2 range and bracket; remove the gap so the range continues the solid bar"
+  ]
+ },
+ {
+  "id": "S23",
+  "verdict": "FAIL",
+  "problems": [
+   "The S01 callback cabinet is dropped onto the bottom-left over the loop, overlapping 'INSIDE THE FRIDGE' and the loop, and runs to ~20 px from the bottom edge",
+   "'EVAPORATOR' label is crossed by the dashed zone wall"
+  ],
+  "fixes": [
+   "For the callback, crossfade (0.4 s) to the S01 cutaway at the S01 position and scale, or clear the thermometers and place it on the right at full size inside the safe area",
+   "Same label fix as S20"
+  ]
+ },
+ {
+  "id": "S24",
+  "verdict": "FAIL",
+  "problems": [
+   "Compressor run-time bar is lime; lime means electricity only (rubric 4)",
+   "Lint lands at ~3 s, ~2 s after 'dust' (0.3 s)"
+  ],
+  "fixes": [
+   "Draw the run-time bar in chalk with a muted track; stretch it on 'harder and longer'",
+   "Start the lint at 0.2 s"
+  ]
+ },
+ {
+  "id": "S25",
+  "verdict": "FAIL",
+  "problems": [
+   "'top view · air gaps vary by model' sits ~90 px from the bottom (unsafe zone)",
+   "The GE side-gap marks are ~3 px at 1080 and not readable; walls and FRONT are on screen from 0 s rather than landing on 'air gaps'"
+  ],
+  "fixes": [
+   "Move the caption to the top under the panel headings",
+   "Draw the gaps as chalk bracket marks at hairline weight and exaggerate the GE gap to at least 12 px so it reads; draw walls on at 2.57 s"
+  ]
+ },
+ {
+  "id": "S26",
+  "verdict": "FAIL",
+  "problems": [
+   "The heating-vent heat arrow runs straight through the oven box",
+   "Source labels (oven, dishwasher) sit ~114 px from the bottom, inside the unsafe zone"
+  ],
+  "fixes": [
+   "Move the vent to the far right or route its arrow below the oven; keep each arrow from crossing another shape",
+   "Raise the appliance row ~40 px"
+  ]
+ },
+ {
+  "id": "S27",
+  "verdict": "FAIL",
+  "problems": [
+   "Nothing changes from 0.3 s until the moisture drift at ~8.3 s (rubric 3: over 8 s)",
+   "'FROST' label is on screen from 0 s before any frost exists",
+   "The open door is again a stray diagonal line, now on the top-left (opposite side to S05) and running to the frame edge",
+   "Frost reads as white bars replacing the coil, without the thin blue edge, so it hides the blue coil it sits on"
+  ],
+  "fixes": [
+   "At ~4.5 s ('carries moisture from your food') start chalk moisture dots drifting from the food inside the cabinet; keep the door opening for 10.47 s",
+   "Show 'FROST' only on 'freezes' (13.71 s)",
+   "Use the shared door panel from the S05 fix, hinged on the same side",
+   "Draw frost as a chalk-white deposit with a 2 px cold edge growing over the unchanged blue coil, which stays visible underneath"
+  ]
+ },
+ {
+  "id": "S28",
+  "verdict": "FAIL",
+  "problems": [
+   "The insulation arrows stop ~20 px (60 px at 1080) short of the frosted coil, reading as frost blocking heat completely (rubric 7)",
+   "There is no before state, so 'fewer, thinner arrows' never reads; arrows are hairline",
+   "In c2 the air marks and 'less air gets through' are muted gray at very low contrast"
+  ],
+  "fixes": [
+   "Open on 4 full-weight arrows reaching the bare coil (match S14), then at 2.41 s drop to 2 thinner arrows that pass through the frost and touch the tubes",
+   "Draw air marks and 'less air gets through' in chalk; thin the marks from ~8 to ~3 at 3.45 s"
+  ]
+ },
+ {
+  "id": "S29",
+  "verdict": "FAIL",
+  "problems": [
+   "2D overlay 'DEFROST HEATER' is on screen but the scene's text list is empty (rubric 1)",
+   "The label sits on a falling meltwater drop (labels must not sit on moving elements)"
+  ],
+  "fixes": [
+   "Remove the label, or add 'DEFROST HEATER' to scenes.json text and the fact map (5.3) before use",
+   "If kept, place it above the rod, clear of drop paths"
+  ]
+ },
+ {
+  "id": "S30",
+  "verdict": "FAIL",
+  "problems": [
+   "Heater bars land at ~1.6 s and nothing changes until the compressor bar at ~10.5 s (about 8.2 s static) while the 450 to 470 W figures are spoken",
+   "The 'runs for minutes, then off' clock never appears before the cut",
+   "Bar labels sit ~84 px from the bottom (unsafe zone)"
+  ],
+  "fixes": [
+   "At 1.63 s show only the title and a single heater bar 'about three times' the compressor ghost; land '≈ 450 W' and '≈ 470 W' on their spoken words (~6 to 9 s)",
+   "Land the clock and heater-off at 15.45 s and hold it to the cut",
+   "Raise the bar baseline so labels clear 150 px"
+  ]
+ },
+ {
+  "id": "S31",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the first timer tick sits at 0 h, implying a defrost at hour zero; ticks should start at 8 h"
+  ],
+  "fixes": [
+   "Start the ticks at 8 h (12 ticks to 96 h)"
+  ]
+ },
+ {
+  "id": "S32",
+  "verdict": "FAIL",
+  "problems": [
+   "Evaporating-water dots rise inside the fresh-food compartment outline, so moisture appears to go back into the fridge (rubric 7), and they are barely visible",
+   "'condenser' label sits ~102 px from the bottom; the heat-into-pan arrow is ~30 px long and hard to see"
+  ],
+  "fixes": [
+   "Draw the pan in the machine compartment and send chalk moisture dots up and out through the bottom grille into the kitchen on the right, outside the cabinet",
+   "Raise the cutaway; draw the condenser-to-pan heat as 2 or 3 flow-weight arrows"
+  ]
+ },
+ {
+  "id": "S33",
+  "verdict": "FAIL",
+  "problems": [
+   "At 4.1 s ('warm the edges') only five floating chalk dots are on screen; the edge section doesn't draw on until ~7 s",
+   "The condensation beads float in empty space instead of beading on the cabinet face, so 'condensation vanishes' isn't shown on the surface",
+   "'energy saver switch' label butts against the heater line"
+  ],
+  "fixes": [
+   "Draw the inside / cabinet face / door seal section on at 3.19 s with the beads sitting on the cabinet face",
+   "Fade the beads on the face at 11.57 s",
+   "Put the switch and its label outside the section box on the right"
+  ]
+ },
+ {
+  "id": "S34",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): door edges light first but are numbered 2; cabinet base and 'condenser' label sit ~114 px from the bottom"
+  ],
+  "fixes": [
+   "Number in lighting order or light in number order; apply the global cutaway raise"
+  ]
+ },
+ {
+  "id": "S35",
+  "verdict": "FAIL",
+  "problems": [
+   "The first ~7.4 s is a blank board except a stray lime hairline at the bottom (the zero-height bar) while 'all of that shows up on your electricity bill' is spoken",
+   "'363 kWh/yr' lands ~4 s after its bar; the screen goes blank before the cut",
+   "'federal limit 404 kWh/yr' is ~33 px muted gray"
+  ],
+  "fixes": [
+   "Open with a lime electricity-meter glyph (the style bible's 'meter in the bill beat') spinning from 0.5 s; hide the bar until it grows",
+   "Land '363 kWh/yr' with the bar at 13.97 s; hold the final state to the cut",
+   "Set the limit label in chalk at 34 px or larger"
+  ]
+ },
+ {
+  "id": "S36",
+  "verdict": "FAIL",
+  "problems": [
+   "Bar labels '1974, average new fridge' and 'today' sit ~90 px from the bottom (unsafe zone)",
+   "The 'hold more' bigger-fridge icon never appears before the cut",
+   "First ~3.8 s blank while 'in nineteen seventy four the average new fridge' is spoken"
+  ],
+  "fixes": [
+   "Raise the baseline so labels clear 150 px",
+   "Land the bigger-fridge icon at 9.9 s and hold it 0.8 s or more",
+   "Draw the empty axis and '1974, average new fridge' label at 0.3 s"
+  ]
+ },
+ {
+  "id": "S37",
+  "verdict": "FAIL",
+  "problems": [
+   "The brief blue puff at the door never appears, so the closing line has no visual",
+   "Door is a stray diagonal line, and the inbound heat arrow runs across the cabinet's top-left wall into the freezer",
+   "The wall thermometer starts orange; room temperature should be chalk on the temperature scale"
+  ],
+  "fixes": [
+   "At the door opening show a small cold-blue region at the opening that fades quickly (by 16.31 s, as spec)",
+   "Use the shared door panel; route the heat arrow through the opening to the coil",
+   "Start the thermometer fill chalk and warm it to orange at 13.67 s"
+  ]
+ },
+ {
+  "id": "S38",
+  "verdict": "FAIL",
+  "problems": [
+   "Same loose violet dot in the centre of the loop as S20; no refrigerant circulates in the pipes",
+   "'flow highlights on boiling and squeezing' doesn't happen (c1 and c2 identical)",
+   "The extra outgoing arrow appears under the condenser with no link to the compressor or the lime input"
+  ],
+  "fixes": [
+   "Same particle-path fix as S20",
+   "At 5.37 s pulse bubbles in the evaporator, then the compressor squeeze",
+   "At 8.17 s birth the 4th orange arrow at the compressor's lime input and carry it into the condenser's outgoing set"
+  ]
+ },
+ {
+  "id": "S39",
+  "verdict": "FAIL",
+  "problems": [
+   "A violet refrigerant dot rides on the condenser's middle heat arrow, outside the pipe",
+   "Side tubing is already lit at 0.3 s, so 'side tubing glows on came from inside' doesn't happen; cut and c1 are identical",
+   "Nothing links the loop's condenser to the side-wall tubing; the loop's heat arrows point at the cabinet side, reading as heat going into the wall"
+  ],
+  "fixes": [
+   "Same particle-path fix as S20",
+   "Start the side tubing in chalk and light it at 3.05 s",
+   "Morph the loop's condenser into the side-wall tubing (or draw a violet pipe from the condenser into the side panel), then show heat leaving outward from the wall into the kitchen"
+  ]
+ },
+ {
+  "id": "S40",
+  "verdict": "FAIL",
+  "problems": [
+   "Wordmark and 'Next time' sit ~90 px from the bottom (unsafe zone); 'Next time' is ~27 px muted gray, below the 34 px minimum"
+  ],
+  "fixes": [
+   "Settle the wordmark at least 150 px from the bottom (or beside the cabinet) and set 'Next time' in chalk at 34 px or larger"
+  ]
+ }
+]

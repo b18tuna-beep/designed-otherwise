@@ -1,0 +1,101 @@
+name: Render Blender hero
+
+# Renders one Blender hero shot split across parallel runners, stitches it to 1080p and hands it
+# to the PRIVATE studio: release heroes-<episode> gets <name>.mp4, the studio previews branch gets
+# one still at blender/<episode>/<name>-frame.png. Frame chunks pass between jobs as 1-day artifacts
+# (intermediate stills only, never the hero video).
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "Scene script, e.g. episodes/p1-refrigerator/scenes/blender/hero1_fridge.py"
+        required: true
+      name:
+        description: "Output name = hero scene id, e.g. S02"
+        required: true
+      frames:
+        description: "Shot length in frames (30 fps)"
+        required: true
+      chunks:
+        description: "Number of parallel runners"
+        default: "8"
+      res:
+        description: "Resolution percent of 1920x1080"
+        default: "67"
+      samples:
+        description: "Cycles samples (0 = script default)"
+        default: "10"
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.p.outputs.matrix }}
+    steps:
+      - id: p
+        env: {FRAMES: "${{ inputs.frames }}", CHUNKS: "${{ inputs.chunks }}"}
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json, os
+          n, k = int(os.environ["FRAMES"]), int(os.environ["CHUNKS"])
+          size = -(-n // k)
+          chunks = [f"{a} {min(a + size - 1, n)}" for a in range(1, n + 1, size)]
+          print("matrix=" + json.dumps({"chunk": chunks}))
+          EOF
+
+  render:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Blender 4.2 LTS (mirrors with timeouts, apt fallback)
+        timeout-minutes: 15
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libegl1 libxkbcommon0 libsm6 > /dev/null
+          got=""
+          for base in https://mirrors.ocf.berkeley.edu/blender/release/Blender4.2 https://ftp.nluug.nl/pub/graphics/blender/release/Blender4.2 https://download.blender.org/release/Blender4.2; do
+            tar=$(curl -sS --connect-timeout 15 --max-time 60 "$base/" | grep -o 'blender-4\.2\.[0-9]*-linux-x64\.tar\.xz' | sort -uV | tail -1) || true
+            [ -n "$tar" ] || continue
+            if curl -sSL --fail --connect-timeout 15 --max-time 420 --retry 2 -o /tmp/blender.tar.xz "$base/$tar"; then got="$tar"; break; fi
+          done
+          if [ -n "$got" ]; then tar -xJf /tmp/blender.tar.xz -C "$HOME" && echo "$HOME/${got%.tar.xz}" >> "$GITHUB_PATH"
+          else sudo apt-get install -y -qq blender > /dev/null; fi
+      - name: Render chunk
+        env: {SCRIPT: "${{ inputs.script }}", FRAMES: "${{ inputs.frames }}", RES: "${{ inputs.res }}", SAMPLES: "${{ inputs.samples }}", CHUNK: "${{ matrix.chunk }}"}
+        run: |
+          set -o pipefail
+          blender -b --factory-startup -P "$SCRIPT" -- out/frames $CHUNK --frames "$FRAMES" --res "$RES" --samples "$SAMPLES" 2>&1 | grep --line-buffered -E "Saved:|blender:|Error|Traceback"
+      - uses: actions/upload-artifact@v4
+        with: {name: "frames-${{ strategy.job-index }}", path: out/frames/, retention-days: 1}
+
+  stitch:
+    needs: render
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - uses: actions/download-artifact@v4
+        with: {pattern: "frames-*", path: out/frames, merge-multiple: true}
+      - name: Stitch to 1080p
+        env: {FRAMES: "${{ inputs.frames }}", NAME: "${{ inputs.name }}", SCRIPT: "${{ inputs.script }}"}
+        run: |
+          n=$(ls out/frames/*.png | wc -l); echo "frames: $n"; [ "$n" -eq "$FRAMES" ]
+          ffmpeg -loglevel error -y -framerate 30 -i out/frames/f_%04d.png \
+            -vf "scale=1920:1080:flags=lanczos" -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p "out/$NAME.mp4"
+          cp "out/frames/f_$(printf %04d $(( FRAMES * 2 / 3 )))".png "out/$NAME-frame.png"
+          ep=$(echo "$SCRIPT" | sed -n 's|^episodes/\([^/]*\)/.*|\1|p'); echo "EP=${ep:-misc}" >> "$GITHUB_ENV"
+          ls -la out/*.mp4
+      - name: Hand to the studio (private)
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}", NAME: "${{ inputs.name }}"}
+        run: |
+          bash tools/ci/studio.sh release "heroes-$EP" "out/$NAME.mp4"
+          bash tools/ci/studio.sh preview "blender/$EP" "out/$NAME-frame.png"

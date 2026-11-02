@@ -1,0 +1,28 @@
+out/
+output/
+in/
+_studio/
+node_modules/
+dist/
+*.wav
+*.mp3
+*.flac
+*.mp4
+*.mov
+*.blend1
+__pycache__/
+.venv/
+.env
+media/
+tools/anim/motion-canvas/src/p1/renders/
+
+# Never in this public repo: credentials of any kind
+client_secret*.json
+token*.json
+!style/tokens.json
+*.enc
+vault/
+
+# Music is licensed for use in videos, not for redistribution: it lives only in the private studio.
+assets/music/*
+!assets/music/README.md

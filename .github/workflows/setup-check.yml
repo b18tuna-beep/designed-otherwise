@@ -1,0 +1,185 @@
+name: Setup check (toolchain test renders)
+
+# Installs every tool in the pipeline, renders a 5 second test in each,
+# and publishes one frame per tool (and the voice audition mp3s) to the PRIVATE studio's
+# `previews` branch. Test videos are not kept; frame chunks pass between jobs as 1-day artifacts.
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Run one job only (motion-canvas, revideo, manim, blender, kokoro, chatterbox) or 'all'"
+        default: all
+
+permissions:
+  contents: read
+
+env:
+  PREVIEW_DIR: setup/run-${{ github.run_id }}
+
+jobs:
+  motion-canvas:
+    if: inputs.only == 'all' || inputs.only == 'motion-canvas'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    defaults: {run: {working-directory: tools/anim/motion-canvas}}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm, cache-dependency-path: tools/anim/motion-canvas/package-lock.json}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - run: npm ci --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium > /dev/null
+      - name: Render
+        run: node render.mjs ../../../out
+      - name: Frame grab
+        working-directory: .
+        run: ffmpeg -loglevel error -y -ss 4.2 -i out/motion-canvas-test.mp4 -frames:v 1 out/motion-canvas.png
+      - name: Publish
+        working-directory: .
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}"}
+        run: bash tools/ci/studio.sh preview "$PREVIEW_DIR" out/motion-canvas.png
+
+  revideo:
+    if: inputs.only == 'all' || inputs.only == 'revideo'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    defaults: {run: {working-directory: tools/anim/revideo}}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm, cache-dependency-path: tools/anim/revideo/package-lock.json}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - run: PUPPETEER_SKIP_DOWNLOAD=1 npm ci --no-audit --no-fund
+      - name: Render (system Chrome through the single-process wrapper)
+        run: REAL_CHROME="$(command -v google-chrome || command -v google-chrome-stable)" npx tsx render.ts ../../../out
+      - name: Frame grab
+        working-directory: .
+        run: ffmpeg -loglevel error -y -ss 4.2 -i out/revideo-test.mp4 -frames:v 1 out/revideo.png
+      - name: Publish
+        working-directory: .
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}"}
+        run: bash tools/ci/studio.sh preview "$PREVIEW_DIR" out/revideo.png
+
+  manim:
+    if: inputs.only == 'all' || inputs.only == 'manim'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg libcairo2-dev libpango1.0-dev pkg-config > /dev/null
+          mkdir -p ~/.local/share/fonts && cp style/fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
+      - run: pip install -q "manim>=0.19"
+      - name: Render
+        run: |
+          manim -qh --fps 30 --media_dir out/manim -o manim-test tools/tests/manim_test.py ManimTest
+          f=$(find out/manim -name 'manim-test.mp4' | head -1); cp "$f" out/manim-test.mp4
+          ffmpeg -loglevel error -y -ss 4.2 -i out/manim-test.mp4 -frames:v 1 out/manim.png
+      - name: Publish
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}"}
+        run: bash tools/ci/studio.sh preview "$PREVIEW_DIR" out/manim.png
+
+  blender:
+    if: inputs.only == 'all' || inputs.only == 'blender'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      matrix:
+        chunk: ["1 50", "51 100", "101 150"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Blender 4.2 LTS (latest patch, mirrors with timeouts, apt fallback)
+        timeout-minutes: 15
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libegl1 libxkbcommon0 libsm6 > /dev/null
+          got=""
+          for base in https://mirrors.ocf.berkeley.edu/blender/release/Blender4.2 https://ftp.nluug.nl/pub/graphics/blender/release/Blender4.2 https://download.blender.org/release/Blender4.2; do
+            tar=$(curl -sS --connect-timeout 15 --max-time 60 "$base/" | grep -o 'blender-4\.2\.[0-9]*-linux-x64\.tar\.xz' | sort -uV | tail -1) || true
+            [ -n "$tar" ] || { echo "no listing from $base"; continue; }
+            echo "trying $base/$tar"
+            if curl -sSL --fail --connect-timeout 15 --max-time 420 --retry 2 -o /tmp/blender.tar.xz "$base/$tar"; then got="$tar"; break; fi
+          done
+          if [ -n "$got" ]; then
+            tar -xJf /tmp/blender.tar.xz -C "$HOME" && echo "$HOME/${got%.tar.xz}" >> "$GITHUB_PATH"
+          else
+            echo "::warning title=Blender::mirrors failed, using Ubuntu's blender package"
+            sudo apt-get install -y -qq blender > /dev/null
+          fi
+      - name: Render chunk (Cycles CPU)
+        run: |
+          blender --version | head -1
+          set -o pipefail
+          blender -b --factory-startup -P tools/tests/blender_test.py -- out/blender-frames ${{ matrix.chunk }} 2>&1 | grep --line-buffered -E "Saved:|blender:|Error|Traceback"
+      - uses: actions/upload-artifact@v4
+        with: {name: "blender-frames-${{ strategy.job-index }}", path: out/blender-frames/, retention-days: 1}
+
+  blender-assemble:
+    needs: blender
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - uses: actions/download-artifact@v4
+        with: {pattern: "blender-frames-*", path: out/blender-frames, merge-multiple: true}
+      - name: Stitch
+        run: |
+          n=$(ls out/blender-frames/*.png | wc -l); echo "frames: $n"; [ "$n" -eq 150 ]
+          ffmpeg -loglevel error -y -framerate 30 -i out/blender-frames/f_%04d.png -c:v libx264 -pix_fmt yuv420p -crf 18 out/blender-test.mp4
+          cp out/blender-frames/f_0140.png out/blender.png
+      - name: Publish
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}"}
+        run: bash tools/ci/studio.sh preview "$PREVIEW_DIR" out/blender.png
+
+  kokoro:
+    if: inputs.only == 'all' || inputs.only == 'kokoro'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11", cache: pip, cache-dependency-path: tools/requirements-voice.txt}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg > /dev/null
+      - run: |
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q -r tools/requirements-voice.txt
+      - name: Voice audition (4 voices, same paragraph)
+        run: python tools/voice/audition.py am_michael,am_fenrir,af_heart,bm_george 1.0 tools/voice/audition_text.txt out/voices
+      - name: Word timestamps and script check (faster-whisper)
+        run: |
+          for f in out/voices/*.wav; do
+            python tools/captions/word_timestamps.py "$f" tools/voice/audition_text.txt "${f%.wav}.words.json" || true
+          done
+      - name: MP3 at YouTube loudness
+        run: |
+          for f in out/voices/*.wav; do
+            ffmpeg -loglevel error -y -i "$f" -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 44100 -b:a 160k "${f%.wav}.mp3"
+          done
+      - name: Publish
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}"}
+        run: bash tools/ci/studio.sh preview "$PREVIEW_DIR/voices" out/voices/*.mp3 out/voices/*.words.json
+
+  chatterbox:
+    if: inputs.only == 'all' || inputs.only == 'chatterbox'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - name: Free disk space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL || true
+      - run: pip install -q chatterbox-tts
+      - name: Render backup voice
+        run: |
+          mkdir -p out/voices
+          python tools/voice/chatterbox_test.py tools/voice/audition_text.txt out/voices/chatterbox.wav
+          ffmpeg -loglevel error -y -i out/voices/chatterbox.wav -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 44100 -b:a 160k out/voices/chatterbox.mp3
+      - name: Publish
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}"}
+        run: bash tools/ci/studio.sh preview "$PREVIEW_DIR/voices" out/voices/chatterbox.mp3

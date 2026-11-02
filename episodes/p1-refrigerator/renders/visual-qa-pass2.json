@@ -1,0 +1,369 @@
+[
+ {
+  "id": "S01",
+  "verdict": "FAIL",
+  "problems": [
+   "The question text runs to ~10 px from the right frame edge (about 30 px at 1080, well outside the 96 px safe margin); 'fridge' nearly touches the edge",
+   "'warm outside' still ends ~114 px above the bottom edge at 1080, just inside the 120 px zone"
+  ],
+  "fixes": [
+   "Shift the question block left so its right edge sits at least 96 px from the frame edge (or narrow the wrap width to ~720 px at 1080)",
+   "Move 'warm outside' beside the right wall at mid-height, or raise the cutaway another 10 px"
+  ]
+ },
+ {
+  "id": "S02",
+  "verdict": "FAIL",
+  "problems": [
+   "The real render is a held still: cut and c1 are pixel-identical and the fridge stays the same size to the end, so 'push-in starts on backwards' never happens",
+   "The warm side-panel overlay is still offset ~45 px right and ~30 px down (1080 scale): it overhangs into the background past the panel edge and below the base, and leaves a strip of the panel uncovered on its left",
+   "The grille-glow overlay slides out onto the floor to the left of the base instead of sitting on the grille"
+  ],
+  "fixes": [
+   "Render the shot as an animated camera push (slow dolly, max 15%) or apply a 2D scale-from-centre push on the plate with overlays parented to it",
+   "Corner-pin both overlays to the panel and grille quads exported from the Blender camera for every frame (or the start and end frame of the push), then clip to those quads"
+  ]
+ },
+ {
+  "id": "S03",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S04",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S05",
+  "verdict": "FAIL",
+  "problems": [
+   "The heat arrows still cross the open door panel (and its handle) and the cabinet's right wall line, so heat looks like it passes through the door rather than into the opening (rubric 7)",
+   "'door open' label is ~22 px at 1080, below the 34 px minimum"
+  ],
+  "fixes": [
+   "Swing the door wider so its panel sits clear of the cabinet with a visible gap, and route the three arrows through that gap into the opening so they never cross the door or wall outline",
+   "Set 'door open' at 34 px or larger"
+  ]
+ },
+ {
+  "id": "S06",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S07",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S08",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S09",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): after the caption lands (~12.7 s) the only change to the cut is the caption fading; 'heat won't climb back up on its own' is allowed but not used"
+  ],
+  "fixes": [
+   "Optional: land 'heat won't climb back up on its own' at ~17 s ('takes work')"
+  ]
+ },
+ {
+  "id": "S10",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S11",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): blank board from 0 to ~4 s now that the label waits for the loop"
+  ],
+  "fixes": [
+   "Optional: draw the zones on at ~1 s"
+  ]
+ },
+ {
+  "id": "S12",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): bubbles are 4 small dark dots; readable but weak at TV size"
+  ],
+  "fixes": [
+   "Enlarge bubbles to violet outlined circles ~18 px at 1080 and add a few more"
+  ]
+ },
+ {
+  "id": "S13",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S14",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the 'leftovers, air' source sits above the cold-zone panel (outside the fridge region); 'EVAPORATOR: low pressure, so it boils' sits ~65 px from the top edge"
+  ],
+  "fixes": [
+   "Move the leftovers box inside the cold-zone panel; drop the title to clear 96 px from the top"
+  ]
+ },
+ {
+  "id": "S15",
+  "verdict": "FAIL",
+  "problems": [
+   "'still vapor, now high pressure and hot' still starts on top of the chamber's right border (the 'l' of 'still' is crossed by the outline)"
+  ],
+  "fixes": [
+   "Move the label under the outlet pipe, left-aligned to the pipe start with 24 px clearance from the chamber"
+  ]
+ },
+ {
+  "id": "S16",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S17",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): U-bends are chalk rather than pipe-coloured; 'vapor turns to liquid' is on screen from 0 s"
+  ],
+  "fixes": [
+   "Draw the U-bends as part of the pipe; fade the label in at 7.63 s"
+  ]
+ },
+ {
+  "id": "S18",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S19",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): crossing heat arrows are ~3 to 4 px at 1080 (flow weight is 8 px), though now readable"
+  ],
+  "fixes": [
+   "Raise arrow stroke to 8 px"
+  ]
+ },
+ {
+  "id": "S20",
+  "verdict": "FAIL",
+  "problems": [
+   "'EVAPORATOR' is still cut by the dashed zone wall ('EVAPO|RATOR')"
+  ],
+  "fixes": [
+   "Place the label left of the dashed wall (inside the cold zone) or under the evaporator; same fix carries to the dimmed loop in S23"
+  ]
+ },
+ {
+  "id": "S21",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S22",
+  "verdict": "PASS",
+  "problems": [
+   "minor (non-blocking): the lime bar is on screen from 0 s rather than landing on 'every unit of electricity'"
+  ],
+  "fixes": []
+ },
+ {
+  "id": "S23",
+  "verdict": "FAIL",
+  "problems": [
+   "The callback cabinet lands on the loop's bottom-right corner and cuts through the 'KITCHEN' label ('KITCH|EN')",
+   "Dimmed loop still shows 'EVAPORATOR' crossed by the dashed wall, and its labels (CAPILLARY TUBE, EVAPORATOR, COMPRESSOR, INSIDE THE FRIDGE, KITCHEN) are not in this scene's text list (rubric 1)"
+  ],
+  "fixes": [
+   "At 15.43 s crossfade the loop out and bring the S01 cutaway in at its S01 position, or place the callback right of the thermometers with clearance",
+   "Hide the dimmed loop's labels in S23 or add them to S23's text list; apply the S20 label fix"
+  ]
+ },
+ {
+  "id": "S24",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S25",
+  "verdict": "FAIL",
+  "problems": [
+   "The new gap labels collide with the outlines: both GE '1/8 in' labels sit on the fridge/wall edges, and all three Samsung '5 cm' labels touch or cross the wall and cabinet lines"
+  ],
+  "fixes": [
+   "Put each gap label outside the alcove, connected to its gap by a plain hairline leader (no arrowhead), with at least 12 px clearance from any outline"
+  ]
+ },
+ {
+  "id": "S26",
+  "verdict": "FAIL",
+  "problems": [
+   "The 'condenser · kitchen air' thermometers and label overlap the oven box ('kitc|hen air' crosses the oven outline; the kitchen-air bulb touches it)"
+  ],
+  "fixes": [
+   "Move the thermometer pair to the clear space top-left under the heading, or to the right of the dishwasher"
+  ]
+ },
+ {
+  "id": "S27",
+  "verdict": "FAIL",
+  "problems": [
+   "'door open' label is ~22 px at 1080, below the 34 px minimum",
+   "'FROST' is stacked tight on 'below freezing' and drifting moisture dots pass over the label text",
+   "Not verifiable from the strip: there is no sampled frame between 0.3 s and 9.2 s, and the first planned change is at 8.27 s; confirm the new 'below freezing' beat lands on its word (~2 s) so the opening isn't static for over 8 s"
+  ],
+  "fixes": [
+   "Set 'door open' at 34 px or larger",
+   "Put 'below freezing' beside the coil (left side) and keep 'FROST' alone above it; keep drift paths clear of labels",
+   "Add 'below freezing' to the scene's changes/cues so the strip samples it"
+  ]
+ },
+ {
+  "id": "S28",
+  "verdict": "FAIL",
+  "problems": [
+   "The insulation arrows are still hairline (~3 px at 1080) with tiny heads and end at the frost's outer surface, so frost reads as stopping heat (rubric 7)",
+   "No before state is visible (no arrows at 0.3 s), so 'fewer, thinner arrows' still doesn't read"
+  ],
+  "fixes": [
+   "At 0.2 s show 4 flow-weight arrows reaching the coil tubes, then at 2.41 s drop to 2 thinner (still at least 4 px) arrows that pass through the frost and end on the tubes",
+   "Add the before-state as a sampled cue"
+  ]
+ },
+ {
+  "id": "S29",
+  "verdict": "FAIL",
+  "problems": [
+   "The real hero render is a single held frame for the whole 10.3 s: the heater rod stays dark, no frost melts back, no meltwater falls, and there is no slide to a glass-tube variant (planned changes 1 to 3 never happen; rubric 2 and 3)",
+   "The power lead renders pale cream (≈ #E5E8A2), not lime #D6F25C, so it doesn't read as electricity",
+   "'glass-tube heater' label appears at 9.2 s with no glass tube on screen; the coil shows no distinct chalk-white frost deposit to melt"
+  ],
+  "fixes": [
+   "Render the animated sequence (heater emission ramps to heat colour at 1.91 s, frost mesh shrinks bottom-up from 3.09 s, a few meltwater drops, camera slide to a glass-tube heater at 9.19 s), split across the runner matrix as in the setup-check workflow",
+   "Set the lead material to emission #D6F25C so it survives the cold lighting",
+   "Model frost as a separate chalk-white shell over the blue coil; only show 'glass-tube heater' once that variant is in frame"
+  ]
+ },
+ {
+  "id": "S30",
+  "verdict": "FAIL",
+  "problems": [
+   "Nothing changes from ~2.2 s (heater bars and both numbers) until the compressor bar at 10.45 s, about 8.2 s, while '450 to 470 watts' is spoken at ~6 to 9 s (rubric 3)",
+   "minor: the clock's elapsed arc is orange; it marks time, not heat"
+  ],
+  "fixes": [
+   "Grow the two heater bars at 1.63 s without numbers and land '≈ 450 W' and '≈ 470 W' on their spoken words (~6.5 s and ~8 s)",
+   "Draw the clock arc in chalk"
+  ]
+ },
+ {
+  "id": "S31",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S32",
+  "verdict": "FAIL",
+  "problems": [
+   "The cutaway still sits low: the 'condenser' label ends ~90 px from the bottom at 1080 (inside the 120 px zone)",
+   "Heat into the pan is still a ~15 px orange tick, and the rising moisture dots are dim gray at low contrast"
+  ],
+  "fixes": [
+   "Raise the cross-section ~40 px or put 'condenser' beside the condenser",
+   "Draw 2 or 3 flow-weight heat arrows from condenser to pan; draw moisture dots in chalk"
+  ]
+ },
+ {
+  "id": "S33",
+  "verdict": "FAIL",
+  "problems": [
+   "'energy saver switch' still crosses the orange heater line (the final 'h' sits on the line)",
+   "The bottom labels ('warm refrigerant tube', 'small electric heater') end ~114 px from the bottom at 1080, inside the 120 px zone"
+  ],
+  "fixes": [
+   "Put the switch and its label outside the section box to the right",
+   "Raise both sections ~20 px or move the bottom labels above the panels"
+  ]
+ },
+ {
+  "id": "S34",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S35",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ },
+ {
+  "id": "S36",
+  "verdict": "FAIL",
+  "problems": [
+   "The 'holds more' fridge icons sit tight against '> 1,800 kWh/yr' (~3 px gap) at the top left, so they read as part of the 1974 label rather than as today's bigger fridge"
+  ],
+  "fixes": [
+   "Place one larger fridge icon with 'holds more' under or beside today's bar, at least 24 px from any other text"
+  ]
+ },
+ {
+  "id": "S37",
+  "verdict": "FAIL",
+  "problems": [
+   "The inbound heat arrow crosses the open door panel and its handle, and the condenser's outgoing arrows also pass through the bottom of the door graphic",
+   "'door open' label is ~22 px at 1080, below the 34 px minimum"
+  ],
+  "fixes": [
+   "Use the S05 door fix (panel clear of the cabinet with a gap) and route all arrows through the gap or below the door",
+   "Set 'door open' at 34 px or larger"
+  ]
+ },
+ {
+  "id": "S38",
+  "verdict": "FAIL",
+  "problems": [
+   "'plus a little extra from the electricity' is stacked directly under 'KITCHEN' with no gap, so the two labels run together",
+   "The extra arrow is drawn across the lime bolt and the loop pipe"
+  ],
+  "fixes": [
+   "Move the extra-heat label to the right of the new arrow's head, 24 px clear of 'KITCHEN'",
+   "Start the extra arrow just right of the bolt and route it below the pipe into the condenser's outgoing set"
+  ]
+ },
+ {
+  "id": "S39",
+  "verdict": "FAIL",
+  "problems": [
+   "The shrunken loop keeps 'INSIDE THE FRIDGE' and 'KITCHEN' labels at ~15 px (1080 scale), illegible and not in this scene's text list (rubric 1)"
+  ],
+  "fixes": [
+   "Hide the loop's labels in S39, or keep them at 34 px and add them to the text list"
+  ]
+ },
+ {
+  "id": "S40",
+  "verdict": "PASS",
+  "problems": [],
+  "fixes": []
+ }
+]
