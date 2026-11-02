@@ -135,7 +135,7 @@ def main():
     compose.banner(os.path.join(HERE, "render", "banner-hero.png"), banner_path)
     ban = Image.open(banner_path)
     # Facebook cover and share image: crops of the banner around the lockup (mobile crops the cover's sides)
-    save(ban.crop((280, 400, 2280, 1161)).resize((1640, 624), Image.LANCZOS), "facebook-cover-1640x624.png")
+    save(ban.crop((130, 470, 2430, 1345)).resize((1640, 624), Image.LANCZOS), "facebook-cover-1640x624.png")  # lockup sits high: Facebook centres the avatar over the lower cover
     save(ban.crop((400, 260, 2160, 1184)).resize((1200, 630), Image.LANCZOS), "share-image-1200x630.png")
     # end screen: the hero render with the drawing layer but no wordmark, so YouTube's tiles can sit on it
     save(compose.backdrop(os.path.join(HERE, "render", "banner-hero.png")).resize((1920, 1080), Image.LANCZOS), "end-screen-1920x1080.png")
