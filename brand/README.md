@@ -18,4 +18,4 @@ Michael: the v1 kit was all mark and the rest looked flat. v2 adds:
 - **Finish**: film grain and a vignette on everything; avatars keep the flat mark (it reads at 32-48 px) on a glowing, grained ground.
 
 ## Build
-`python brand/build.py` writes everything to `brand/export/`: SVG + 2048 px marks (dark, light, transparent), horizontal and stacked wordmarks, YouTube profile/banner/watermark, Google avatar, Instagram, TikTok, Facebook profile/cover, app icon, favicons, share image, end screen, and preview sheets. Avatars use a larger fill because platforms crop to a circle. Still to come: animated intro sting.
+`python brand/build.py` writes everything to `brand/export/`: SVG + 2048 px marks (dark, light, transparent), horizontal and stacked wordmarks, YouTube profile/banner/watermark, Google avatar, Instagram, TikTok, Facebook profile/cover, app icon, favicons, share image, end screen, and preview sheets. Avatars use a larger fill because platforms crop to a circle. Animated intro: `tools/intro/` (THE HINGE, 3.2 s, same in every video).
