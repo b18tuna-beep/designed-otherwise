@@ -1,0 +1,32 @@
+name: Demand scan (video idea catalogue)
+
+# YouTube autocomplete expansion + search-results read for topic demand. Public data only.
+# Raw results go to the private studio release `research-catalogue` (never committed here).
+
+on:
+  workflow_dispatch:
+    inputs:
+      top:
+        description: "How many top subjects get a YouTube search-results read"
+        default: "250"
+      extra:
+        description: "File in this repo with extra topics (one per line) to read too"
+        default: "tools/research/extra_topics.txt"
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan
+        run: python3 tools/research/demand_scan.py out --top "${{ inputs.top }}" --extra "${{ inputs.extra }}"
+      - name: Hand raw results to the studio
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}"}
+        run: |
+          stamp=$(date -u +%Y%m%d)
+          for f in autocomplete.json subjects.csv serp.json; do cp "out/$f" "out/$stamp-$f"; done
+          bash tools/ci/studio.sh release research-catalogue out/$stamp-autocomplete.json out/$stamp-subjects.csv out/$stamp-serp.json

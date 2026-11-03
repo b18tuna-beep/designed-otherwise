@@ -1,0 +1,139 @@
+# Extra topics measured alongside the autocomplete subjects: broad "unexpected design" range (Michael 2026-11-02:
+# not only appliances; educational + unexpected design). One per line; plain subjects become "how does X work".
+# Everyday objects
+zipper
+velcro
+ballpoint pen
+pin tumbler lock
+toilet flush
+why do sinks have a p trap
+soda can
+safety pin
+can opener
+why do pencils have hexagon shape
+duct tape
+bubble wrap
+umbrella
+light switch
+# Built world and infrastructure
+traffic light
+roundabout
+elevator
+escalator
+revolving door
+water tower
+city sewer system
+power grid
+why do bridges have expansion joints
+tuned mass damper skyscraper
+dam
+canal lock
+lighthouse fresnel lens
+why are train wheels cone shaped
+why are manhole covers round
+why do roads have rumble strips
+why do highways have cloverleaf interchanges
+why are airplane windows round
+crosswalk button
+# Body
+hiccups
+why do we yawn
+goosebumps
+why do fingers wrinkle in water
+why do we have fingerprints
+how does the stomach not digest itself
+why do ears pop
+blind spot eye
+sneeze
+immune system
+why do we dream
+# Nature and biomimicry
+why are honeycombs hexagons
+why do birds fly in v formation
+termite mound ventilation
+shark skin
+gecko feet
+how did a kingfisher shape the bullet train
+how do owls fly silently
+spider silk
+how do trees move water up
+why do leaves change color
+how do cats always land on their feet
+camouflage octopus
+# Money and systems
+credit card
+barcode
+qr code
+gps
+atm
+how is paper money made hard to counterfeit
+shipping container
+zip code
+airline ticket pricing
+how does a credit score work
+how do stores set prices
+# Tech
+noise cancelling headphones
+touchscreen
+smoke detector
+battery
+solar panel
+wifi
+bluetooth
+camera autofocus
+airbag
+seatbelt lock
+abs brakes
+car differential
+cruise control
+microwave oven
+induction stove
+thermostat
+air conditioner
+refrigerator
+# Food and sport
+golf ball dimples
+curveball
+popcorn
+pressure cooker
+why does bread rise
+how does yeast work
+why does coffee keep you awake
+canning food
+carbonation
+# Air, sea and space
+how do planes fly
+why do ships float
+submarine
+why do planes not fly in straight lines
+jet engine
+helicopter
+parachute
+hot air balloon
+satellites
+how does the iss stay up
+rocket
+# Sound, light, weather
+why is the sky blue
+rainbow
+thunder
+how do hurricanes form
+sonic boom
+echo
+mirror
+fiber optics
+# Odd and counterintuitive
+why do mirrors flip left and right
+why is ice slippery
+why does salt melt ice
+why do clocks go clockwise
+why does a spinning top not fall
+how does a bicycle stay upright
+why does a boomerang come back
+how do magnets work
+how does glue stick
+how do non stick pans work
+how does a vaccine work
+how does anesthesia work
+how does soap work
+how do noise machines help you sleep
