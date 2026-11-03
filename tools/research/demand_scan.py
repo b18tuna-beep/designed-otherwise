@@ -134,13 +134,15 @@ def main():
     os.makedirs(out, exist_ok=True)
 
     ac = {}
-    for p in PREFIXES:
+    for p in (PREFIXES if top > 0 else []):
         for l in LETTERS:
             ac[p + l] = autocomplete(p + l)
             time.sleep(0.15)
     json.dump(ac, open(os.path.join(out, "autocomplete.json"), "w"), indent=0)
     print("autocomplete queries", len(ac), "suggestions", len({s for v in ac.values() for s in v}))
 
+    if top == 0 and os.environ.get("SUBJECTS_FROM"):
+        ac = json.load(open(os.environ["SUBJECTS_FROM"]))
     subj = subjects(ac)
     rows = sorted(subj.items(), key=lambda kv: (-kv[1]["appearances"], kv[1]["best_rank"]))
     with open(os.path.join(out, "subjects.csv"), "w", newline="") as fh:
@@ -150,7 +152,8 @@ def main():
             w.writerow([k, v["appearances"], v["best_rank"], " | ".join(v["examples"])])
     print("subjects", len(rows))
 
-    targets = [k for k, _ in rows[:top]] + [e for e in extra if e.lower() not in subj]
+    head = [k for k, _ in rows[:top]]
+    targets = head + [e for e in extra if e.lower() not in head]   # extras always get a read
     res = {}
     for i, s in enumerate(targets):
         q = s if s.startswith(("how ", "why ", "what ")) else f"how does {s} work"

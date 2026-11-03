@@ -24,9 +24,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Scan
         run: python3 tools/research/demand_scan.py out --top "${{ inputs.top }}" --extra "${{ inputs.extra }}"
+        env: {SUBJECTS_FROM: ""}
       - name: Hand raw results to the studio
         env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}"}
         run: |
-          stamp=$(date -u +%Y%m%d)
+          stamp=$(date -u +%Y%m%d)-run$GITHUB_RUN_NUMBER
           for f in autocomplete.json subjects.csv serp.json; do cp "out/$f" "out/$stamp-$f"; done
           bash tools/ci/studio.sh release research-catalogue out/$stamp-autocomplete.json out/$stamp-subjects.csv out/$stamp-serp.json
