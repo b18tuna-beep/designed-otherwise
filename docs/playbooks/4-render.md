@@ -14,7 +14,7 @@ gh api -X POST repos/b18tuna-beep/designed-otherwise/actions/workflows/<file>.ym
 | 5 | `render-episode.yml` | project `episode`, chunks 4 | release `episode-<ep>`: `episode.mp4` (frame count checked against scenes.json); 3 stills on previews |
 | 6 | `assemble.yml` | episode, job (studio slug), narration asset | release `render-<job>`: video.mp4, captions.srt, checks.json, thumb-1..3.jpg |
 
-| 7 | intro | `tools/intro/insert_sting.py video.mp4 captions.srt <cut_s> sting.mp4 out/` | THE HINGE (3.2 s, identical in every video) after the cold open, on the scene boundary after its last line; captions shift, chapters after the cut move +3.2 s. Build the sting once with `tools/intro/hinge.py` + `sonic_logo.py` (see `tools/intro/README.md`). |
+| 7 | intro | `tools/intro/mix_with_sting.py silent.mp4 narration.wav music.wav captions.srt <cut_s> sting.mp4 logo.wav out/` (stems from assemble.py; never splice into a finished mix: Michael 2026-11-03, the hard music cut was jarring) | THE HINGE (3.2 s, identical in every video) after the cold open, on the scene boundary after its last line; captions shift, chapters after the cut move +3.2 s. Build the sting once with `tools/intro/hinge.py` + `sonic_logo.py` (see `tools/intro/README.md`). |
 
 `captions.yml` re-times words for a take that was edited after narration (e.g. a spliced line).
 
