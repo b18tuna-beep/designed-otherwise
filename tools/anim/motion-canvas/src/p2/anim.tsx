@@ -38,37 +38,55 @@ const PulseRow = ({x = 0, y = 0, n = 11, gap = 120, on: o = 1}: any) => (
   </Node>
 );
 // stiletto and flat shoe outlines (side view, toe to the right), standing on y = 0
-const Stiletto = ({x = 0, y = 0}: any) => (
-  <Node x={x} y={y}>
-    <Spline points={[[160, 0], [60, -6], [-40, -30], [-120, -70], [-150, -110], [-120, -120], [-60, -86], [40, -60], [130, -40], [168, -14]]}
-      closed stroke={C.chalk} lineWidth={LW.structure} smoothness={0.4} />
-    <Line points={[[-138, -86], [-130, 0]]} stroke={C.chalk} lineWidth={LW.emphasis} lineCap="round" />
+const Stiletto = ({x = 0, y = 0, s = 1}: any) => (
+  <Node x={x} y={y} scale={s}>
+    {/* pointed toe on the floor, arched sole rising to a high heel seat */}
+    <Spline closed smoothness={0.3} fill={C.bg} stroke={C.chalk} lineWidth={LW.structure}
+      points={[[196, -4], [140, -30], [60, -54], [-20, -94], [-100, -150], [-160, -188], [-178, -150], [-158, -128], [-110, -116], [-60, -76], [0, -28], [60, -4], [130, 0]]} />
+    {/* thin heel spike down to the floor */}
+    <Line closed points={[[-176, -138], [-148, -126], [-154, 0], [-162, 0]]} fill={C.chalk} />
   </Node>
 );
-const Flat = ({x = 0, y = 0}: any) => (
-  <Node x={x} y={y}>
-    <Rect y={-40} width={300} height={80} radius={[30, 50, 8, 8]} stroke={C.chalk} lineWidth={LW.structure} />
-    <Line points={[[-150, -8], [150, -8]]} stroke={C.chalk} lineWidth={LW.hairline} />
+const Flat = ({x = 0, y = 0, s = 1}: any) => (
+  <Node x={x} y={y} scale={s}>
+    <Spline closed smoothness={0.35} fill={C.bg} stroke={C.chalk} lineWidth={LW.structure}
+      points={[[150, 0], [158, -28], [120, -58], [40, -70], [-40, -88], [-120, -92], [-150, -60], [-150, 0]]} />
+    <Line points={[[-150, -14], [150, -14]]} stroke={C.chalk} lineWidth={LW.hairline} />
   </Node>
 );
 // skulls for the jaw-to-ear story (profile, facing left)
+const teeth = (x0: number, x1: number, y: number, len: number, step = 22) =>
+  Array.from({length: Math.floor((x1 - x0) / step) + 1}, (_, i) => (
+    <Line points={[[x0 + i * step, y], [x0 + i * step, y + len]]} stroke={C.chalk} lineWidth={LW.structure - 1} lineCap="round" />
+  ));
+// early synapsid (reptile-like) skull, profile facing left: long low snout, many teeth,
+// eye socket plus the temporal opening behind it, jaw joint at the very back
 const ReptileSkull = ({x = 0, y = 0}: any) => (
   <Node x={x} y={y}>
-    <Spline closed smoothness={0.35} stroke={C.chalk} lineWidth={LW.structure}
-      points={[[-330, 10], [-200, -40], [-40, -90], [120, -110], [230, -80], [260, 0], [220, 40], [60, 30], [-120, 30]]} />
-    <Spline smoothness={0.35} stroke={C.chalk} lineWidth={LW.structure} lineCap="round"
-      points={[[-320, 30], [-150, 60], [60, 70], [190, 70]]} />
-    <Circle x={-40} y={-30} size={56} stroke={C.chalk} lineWidth={LW.hairline + 1} />
+    <Spline closed smoothness={0.3} fill={C.bg} stroke={C.chalk} lineWidth={LW.structure}
+      points={[[-300, 14], [-210, -36], [-70, -82], [40, -104], [150, -100], [238, -72], [276, -10], [268, 42], [150, 26], [0, 22], [-150, 18], [-290, 20]]} />
+    <Circle x={30} y={-52} size={54} stroke={C.chalk} lineWidth={LW.hairline + 1} />
+    <Circle x={160} y={-40} width={80} height={52} stroke={C.chalk} lineWidth={LW.hairline + 1} />
+    <Spline closed smoothness={0.3} fill={C.bg} stroke={C.chalk} lineWidth={LW.structure}
+      points={[[-286, 34], [-100, 36], [100, 40], [250, 50], [266, 64], [250, 82], [100, 86], [-100, 72], [-276, 52]]} />
+    {teeth(-276, 120, 20, 12)}
+    {teeth(-265, 110, 36, -10)}
+    <Line points={[[-210, 20], [-210, 44]]} stroke={C.chalk} lineWidth={LW.structure + 1} lineCap="round" />
   </Node>
 );
+// mammal skull, profile facing left: rounded braincase, shorter snout, a single lower jawbone
+// hinged in front of the ear; the middle ear (dashed) sits behind the jaw hinge
 const MammalSkull = ({x = 0, y = 0}: any) => (
   <Node x={x} y={y}>
-    <Spline closed smoothness={0.4} stroke={C.chalk} lineWidth={LW.structure}
-      points={[[-260, 20], [-200, -40], [-60, -140], [100, -160], [230, -90], [260, 30], [180, 70], [40, 50], [-120, 40]]} />
-    <Spline smoothness={0.4} stroke={C.chalk} lineWidth={LW.structure} lineCap="round"
-      points={[[-250, 50], [-100, 90], [60, 100], [110, 40]]} />
-    <Circle x={-90} y={-40} size={56} stroke={C.chalk} lineWidth={LW.hairline + 1} />
-    <Circle x={150} y={10} size={90} stroke={C.muted} lineWidth={LW.hairline} lineDash={[8, 8]} />
+    <Spline closed smoothness={0.4} fill={C.bg} stroke={C.chalk} lineWidth={LW.structure}
+      points={[[-250, 30], [-200, -8], [-110, -50], [-20, -112], [80, -160], [190, -150], [262, -88], [278, 0], [242, 50], [150, 42], [40, 44], [-100, 40], [-245, 40]]} />
+    <Circle x={-40} y={-30} size={70} stroke={C.chalk} lineWidth={LW.hairline + 1} />
+    <Line points={[[-80, 18], [90, 12]]} stroke={C.chalk} lineWidth={LW.hairline + 1} lineCap="round" />
+    <Spline closed smoothness={0.3} fill={C.bg} stroke={C.chalk} lineWidth={LW.structure}
+      points={[[-248, 50], [-100, 56], [40, 62], [78, 40], [98, 10], [118, 4], [124, 18], [106, 42], [112, 72], [70, 96], [-100, 86], [-240, 66]]} />
+    {teeth(-236, -20, 40, 12)}
+    {teeth(-226, -10, 56, -10)}
+    <Circle x={185} y={25} size={96} stroke={C.muted} lineWidth={LW.hairline} lineDash={[8, 8]} />
   </Node>
 );
 // specimen jar line drawing with a small cochlea inside
@@ -183,15 +201,17 @@ export const ANIM: Record<string, () => Built> = {
     };
   },
   S05: () => {
-    const head = sig(1), pos = sig<P>([-9, -63] as any), scl = sig(0.42), loc = sig(0), secO = sig(1);
+    const head = sig(1), pos = sig<P>([214, 26] as any), scl = sig(0.3), loc = sig(0), secO = sig(1);
     return {
       drift: false,
       base: <Node>
-        <Head y={60} s={4.4} opacity={() => head() * 0.35} />
+        <Spline closed smoothness={0.45} stroke={C.chalk} lineWidth={LW.emphasis} opacity={() => head() * 0.4}
+          points={[[-150, 470], [-160, 330], [-230, 290], [-300, 250], [-310, 190], [-330, 150], [-322, 110], [-385, 60], [-352, 0], [-332, -50],
+            [-346, -120], [-300, -280], [-170, -400], [20, -440], [220, -390], [360, -250], [410, -60], [380, 120], [280, 260], [220, 330], [230, 470]]} />
         <Locator focus="whole" opacity={loc} />
       </Node>,
       steps: [
-        <Node position={pos as any} scale={scl} opacity={secO}><EarSection k={2.2} /></Node>,
+        <Node position={pos as any} scale={scl} opacity={secO}><EarSection k={2.6} /></Node>,
         function* () {
           yield* all(head(0, 0.6), pos([LOC.x + 60 * LOC.s, LOC.y + 40 * LOC.s] as any, 1.1, ease), scl(LOC.s, 1.1, ease), loc(1, 1.1, ease));
           yield* secO(0, 0.2);
@@ -218,11 +238,11 @@ export const ANIM: Record<string, () => Built> = {
           {/* drum flex is driven below */}
         </Node>,
         <Node>
-          <Leader from={[-330, -380]} to={at([-80, -134])} />
+          <Leader from={[-330, -380]} to={at([-80, -150])} />
           <Label text="HAMMER" x={-330} y={-410} />
-          <Leader from={[-10, -380]} to={at([-20, -146])} />
+          <Leader from={[-10, -380]} to={at([0, -164])} />
           <Label text="ANVIL" x={-10} y={-410} />
-          <Leader from={[90, 330]} to={at([80, 46])} />
+          <Leader from={[90, 330]} to={at([66, 50])} />
           <Label text="STIRRUP" x={90} y={360} />
         </Node>,
         <Node>
@@ -287,7 +307,7 @@ export const ANIM: Record<string, () => Built> = {
         </Rect>
         <Line points={[[0, -330], [0, 330]]} stroke={C.chalk} lineWidth={LW.structure} />
         <Label text="AIR" x={-430} y={-330} />
-        <Label text="FLUID" x={430} y={-330} />
+        <Label text="FLUID" x={250} y={-330} />
         <Rings a={-820} b={0} y={-20} n={3} period={2.0} size={300} on={inn} width={LW.emphasis} />
         <Rings a={0} b={-820} y={-20} n={3} period={2.0} size={300} on={bounce} width={LW.emphasis} phase={0.5} />
         <Node opacity={bounce}><Rings a={0} b={760} y={-20} n={2} period={3.0} size={300} on={0.3} width={LW.hairline} /></Node>
@@ -329,11 +349,13 @@ export const ANIM: Record<string, () => Built> = {
           ))}
         </Node>,
         <Node>
-          <Line points={[[220, 20], [840, 20]]} stroke={C.muted} lineWidth={LW.hairline} />
-          <Stiletto x={400} y={20} />
-          <Flat x={700} y={20} />
-          <Small text="same weight" x={530} y={-200} color={C.chalk} />
-          {[-12, 0, 12].map(d => <Line points={[[270 + d * 0.5, 30], [270 + d * 1.6, 70]]} stroke={C.chalk} lineWidth={LW.structure} lineCap="round" />)}
+          <Line points={[[200, 20], [860, 20]]} stroke={C.muted} lineWidth={LW.structure} />
+          <Stiletto x={400} y={20} s={0.85} />
+          <Flat x={745} y={20} s={0.82} />
+          <Small text="same weight" x={560} y={-165} color={C.chalk} />
+          {/* pressure: dense short ticks under the heel tip, sparse under the flat shoe */}
+          {Array.from({length: 9}, (_, i) => { const d = (i - 4) * 4; return <Line points={[[267 + d, 30], [267 + d * 2.2, 66]]} stroke={C.chalk} lineWidth={LW.structure} lineCap="round" />; })}
+          {[650, 720, 790, 850].map(xx => <Line points={[[xx, 30], [xx, 44]]} stroke={C.chalk} lineWidth={LW.hairline} lineCap="round" opacity={0.7} />)}
         </Node>,
         <Node>
           <Line points={[[-760, 290], [-280, 250]]} stroke={C.chalk} lineWidth={LW.emphasis} lineCap="round" />
@@ -347,14 +369,14 @@ export const ANIM: Record<string, () => Built> = {
   },
   S11: () => {
     const hi = sig(0), mig = sig(0);
-    const j: P[] = [[-285, 88], [-250, 92]], e: P[] = [[575, 22], [610, 12]];
+    const j: P[] = [[-174, 58], [-176, 86]], e: P[] = [[612, 36], [638, 26]];
     const path = (a: P, c: P) => (): P => { const u = mig(); return [a[0] + (c[0] - a[0]) * u, a[1] + (c[1] - a[1]) * u - Math.sin(u * Math.PI) * 170]; };
     return {
       base: <Node>
-        <Line points={[[0, -200], [0, 260]]} stroke={C.grid} lineWidth={LW.hairline} />
+        <Line points={[[0, -160], [0, 260]]} stroke={C.grid} lineWidth={LW.hairline} />
         <ReptileSkull x={-440} y={20} />
         <MammalSkull x={450} y={20} />
-        <Line points={[[625, 34], [665, 30]]} stroke={C.chalk} lineWidth={LW.emphasis + 2} lineCap="round" />
+        <Line points={[[652, 52], [680, 50]]} stroke={C.chalk} lineWidth={LW.emphasis + 2} lineCap="round" />
         <Line points={[[-700, 330], [700, 330]]} stroke={C.muted} lineWidth={LW.hairline} />
         <Circle x={() => -700 + 1400 * mig()} y={330} size={26} fill={C.chalk} />
         <Small text="many millions of years" x={0} y={385} opacity={() => (mig() > 0 ? 1 : 0)} />
@@ -362,18 +384,18 @@ export const ANIM: Record<string, () => Built> = {
           {j.map((a, i) => <Circle position={path(a, e[i]) as any} size={() => 30 - mig() * 10} fill={() => (hi() > 0.5 ? C.chalk : C.bg)}
             stroke={C.chalk} lineWidth={LW.structure} />)}
         </Node>
-        <Small text="jaw joint" x={-265} y={150} color={C.chalk} opacity={() => hi() * (1 - mig())} />
+        <Small text="jaw joint" x={-176} y={150} color={C.chalk} opacity={() => hi() * (1 - mig())} />
         <Locator focus="middle" />
       </Node>,
       steps: [
         <Node>
-          <Line points={[[-300, 20], [-250, 12]]} stroke={C.chalk} lineWidth={LW.emphasis + 2} lineCap="round" />
-          <Label text="1 ear bone: birds, reptiles" x={-440} y={-230} size={40} spacing={1} />
+          <Line points={[[-214, 6], [-176, 0]]} stroke={C.chalk} lineWidth={LW.emphasis + 2} lineCap="round" />
+          <Label text="1 ear bone: birds, reptiles" x={-440} y={-190} size={40} spacing={1} />
         </Node>,
         function* () { yield* hi(1, 0.6, ease); },
         function* () { yield* mig(1, 3.2, ease); },
         <Node>
-          <Label text="3 ear bones: mammals" x={450} y={-230} size={40} spacing={1} />
+          <Label text="3 ear bones: mammals" x={400} y={-190} size={40} spacing={1} />
           <Small text="hammer + anvil: once the jaw joint" x={450} y={200} color={C.chalk} />
         </Node>,
       ],
@@ -438,9 +460,9 @@ export const ANIM: Record<string, () => Built> = {
         <Line points={[[-750, -105], [-750, -20]]} stroke={C.muted} lineWidth={LW.hairline} />
       </Node>,
       <Node>
-        <Label text="APEX" x={750} y={-240} offset={[1, 0]} />
-        <Small text="wide, floppy" x={750} y={-185} offset={[1, 0]} color={C.chalk} />
-        <Line points={[[750, -155], [750, -95]]} stroke={C.muted} lineWidth={LW.hairline} />
+        <Label text="APEX" x={750} y={190} offset={[1, 0]} />
+        <Small text="wide, floppy" x={750} y={245} offset={[1, 0]} color={C.chalk} />
+        <Line points={[[750, 125], [750, 160]]} stroke={C.muted} lineWidth={LW.hairline} />
       </Node>,
     ],
   }),
@@ -450,7 +472,7 @@ export const ANIM: Record<string, () => Built> = {
       base: <Node>
         <Membrane y={-60} bump={twBump(at, amp)} />
         <Small text="BASE" x={-750} y={-180} offset={[-1, 0]} />
-        <Small text="APEX" x={750} y={-250} offset={[1, 0]} />
+        <Small text="APEX" x={750} y={-190} offset={[1, 0]} />
         <Node opacity={keys}><Keys y={190} lit={() => at() * 25} /></Node>
         <Line points={() => [[-750 + 1500 * at(), 20], [-750 + 1500 * at(), 100]]} stroke={C.chalk} lineWidth={LW.hairline} opacity={() => amp() / 40} />
         <Locator focus="cochlea" />
@@ -485,17 +507,17 @@ export const ANIM: Record<string, () => Built> = {
   }),
   S17: () => ({
     base: <Node>
-      <DraftCard x={-60} y={60} w={1520} h={640} />
+      <DraftCard x={-150} y={95} w={1300} h={600} />
       <Locator focus="cochlea" />
     </Node>,
     steps: [
-      <Title text="Georg von Békésy" x={-740} y={-110} size={80} offset={[-1, 0]} />,
+      <Title text="Georg von Békésy" x={-740} y={-100} size={80} offset={[-1, 0]} />,
       <Node>
         <Small text="Nobel Prize" x={-740} y={20} offset={[-1, 0]} color={C.chalk} />
         <Num text="1961" x={-530} y={18} offset={[-1, 0]} />
       </Node>,
       <Node>
-        <Jar x={420} y={60} />
+        <Jar x={320} y={80} />
         <Small text="worked largely on cadaver cochleas" x={-740} y={160} offset={[-1, 0]} color={C.chalk} />
       </Node>,
     ],
@@ -543,7 +565,7 @@ export const ANIM: Record<string, () => Built> = {
           <Rect width={760} height={600} radius={10} fill={C.panel} stroke={C.grid} lineWidth={LW.hairline} />
           <Line points={[[-320, -170], [320, -170]]} stroke={C.muted} lineWidth={LW.hairline} />
         </Node>
-        <Node x={420} y={150} opacity={wave}>
+        <Node x={420} y={190} opacity={wave}>
           <Line points={[[-300, 0], [300, 0]]} stroke={C.grid} lineWidth={LW.hairline} />
           <Line points={dpts} stroke={C.chalk} lineWidth={LW.structure} lineCap="round" opacity={() => 1 - sus() * 0.6} />
           <Line points={dpts} stroke={V} lineWidth={LW.structure} lineCap="round" opacity={sus} />
@@ -561,12 +583,12 @@ export const ANIM: Record<string, () => Built> = {
         </Node>,
         <Node>
           <Num text={'the ear must\ncontain an\namplifier'} x={-430} y={20} size={50} lineHeight={78} textAlign="center" />
-          <AmpGlyph x={420} y={-170} />
+          <AmpGlyph x={330} y={-140} />
         </Node>,
         function* () { yield* dust(1, 1.0, ease); },
         <Node>
-          <Small text="forgotten" x={250} y={320} offset={[1, 0]} color={C.chalk} />
-          <Num text={() => `≈ ${Math.round(yrs())} years`} x={280} y={318} offset={[-1, 0]} />
+          <Small text="forgotten" x={250} y={350} offset={[1, 0]} color={C.chalk} />
+          <Num text={() => `≈ ${Math.round(yrs())} years`} x={280} y={348} offset={[-1, 0]} />
         </Node>,
       ],
       ambient: function* () {
@@ -597,13 +619,13 @@ export const ANIM: Record<string, () => Built> = {
   }),
   S21: () => ({
     base: <Node>
-      <DraftCard x={-110} y={40} w={1240} h={760} />
+      <DraftCard x={-150} y={50} w={1180} h={740} />
       <Locator focus="cells" />
     </Node>,
     steps: [
       <Node>
-        <Still x={-110} y={-10} name="stereocilia-sem.png" w={1120} h={580} caption="NIDCD / Bechara Kachar (public domain)" />
-        <Small text="FIG. stereocilia (electron microscope)" x={-110} y={350} color={C.chalk} />
+        <Still x={-150} y={0} name="stereocilia-sem.png" w={1060} h={560} caption="NIDCD / Bechara Kachar (public domain)" />
+        <Small text="FIG. stereocilia (electron microscope)" x={-150} y={350} color={C.chalk} />
       </Node>,
     ],
   }),
@@ -712,11 +734,11 @@ export const ANIM: Record<string, () => Built> = {
       steps: [
         <Node>
           <OuterCell x={-330} y={266} s={1} len={L} motor={motor} />
-          <Num text="1985 · Brownell" x={260} y={-200} offset={[-1, 0]} size={46} />
+          <Num text="1985 · Brownell" x={260} y={-160} offset={[-1, 0]} size={46} />
         </Node>,
         function* () { yield* cur(1, 0.4); },
         <Node>
-          <Small text="electromotility" x={260} y={-130} offset={[-1, 0]} color={V} />
+          <Small text="electromotility" x={260} y={-95} offset={[-1, 0]} color={V} />
           <Line points={[[-270, 42], [-230, 42]]} stroke={C.chalk} lineWidth={LW.structure} />
           <Small text="shorter" x={-210} y={42} offset={[-1, 0]} color={C.chalk} />
         </Node>,
@@ -751,10 +773,10 @@ export const ANIM: Record<string, () => Built> = {
       base: <Node>
         <OuterCell x={-650} y={230} s={0.9} />
         <Rect x={-683} y={40} width={44} height={90} radius={6} stroke={C.chalk} lineWidth={LW.structure} />
-        <Line points={[[-661, 0], [-260, -250]]} stroke={C.muted} lineWidth={LW.hairline} />
-        <Line points={[[-661, 85], [-260, 290]]} stroke={C.muted} lineWidth={LW.hairline} />
-        <Rect x={240} y={20} width={1000} height={540} radius={18} fill={C.panel} stroke={C.grid} lineWidth={LW.hairline} />
-        <Node x={240} y={-20} opacity={lat}>
+        <Line points={[[-661, 0], [-260, -190]]} stroke={C.muted} lineWidth={LW.hairline} />
+        <Line points={[[-661, 85], [-260, 310]]} stroke={C.muted} lineWidth={LW.hairline} />
+        <Rect x={240} y={60} width={1000} height={500} radius={18} fill={C.panel} stroke={C.grid} lineWidth={LW.hairline} />
+        <Node x={240} y={30} opacity={lat}>
           <Line points={() => [[-460, -90 - flex() * 16], [460, -90 - flex() * 16]]} stroke={C.chalk} lineWidth={LW.structure} />
           <Line points={() => [[-460, 90 + flex() * 16], [460, 90 + flex() * 16]]} stroke={C.chalk} lineWidth={LW.structure} />
           {Array.from({length: 11}, (_, i) => (
@@ -766,12 +788,12 @@ export const ANIM: Record<string, () => Built> = {
       steps: [
         function* () { yield* lat(1, 0.6, ease); },
         <Node>
-          <Num text="2000 · prestin" x={-220} y={-200} offset={[-1, 0]} size={46} color={V} />
-          <Node x={-200} y={190}>
+          <Num text="2000 · prestin" x={-220} y={-150} offset={[-1, 0]} size={46} color={V} />
+          <Node x={-200} y={240}>
             {[0, 1, 2, 3, 4].map(i => <Line points={[[0, -24 + i * 12], [300, -24 + i * 12]]} stroke={C.muted} lineWidth={LW.hairline} />)}
             <Label text="Presto" x={10} y={-62} offset={[-1, 0]} size={40} spacing={1} />
           </Node>
-          <Small text="presto = fast" x={200} y={180} offset={[-1, 0]} color={C.chalk} />
+          <Small text="presto = fast" x={200} y={230} offset={[-1, 0]} color={C.chalk} />
         </Node>,
         null,
       ],
@@ -779,30 +801,30 @@ export const ANIM: Record<string, () => Built> = {
   },
   S26: () => {
     const lock = sig(0), f = sig(0.05), mark = sig(0);
-    const W = 1400, H = 420;
+    const W = 1400, H = 380;
     const trace = (amp: number, lag: number) => () => Array.from({length: 260}, (_, i) => {
       const u = i / 259, cyc = 3 + 32 * f();
       return [-W / 2 + 40 + (W - 80) * u, Math.sin(u * cyc * Math.PI * 2 - T() * 6 - lag) * amp] as P;
     });
     return {
       base: <Node>
-        <Small text="isolated cells, lab tests" x={-740} y={-330} offset={[-1, 0]} color={C.chalk} />
-        <Rect x={-40} y={-40} width={W} height={H} radius={18} fill={C.panel} stroke={C.grid} lineWidth={LW.hairline} />
-        <Node x={-40} y={-40} opacity={lock}>
-          <Node y={-100}><Line points={trace(55, 0)} stroke={LIME} lineWidth={LW.structure} /></Node>
-          <Node y={100}><Line points={trace(55, 0.15)} stroke={V} lineWidth={LW.structure} /></Node>
-          <Small text="signal" x={-W / 2 + 40} y={-180} offset={[-1, 0]} color={LIME} />
-          <Small text="cell length" x={-W / 2 + 40} y={20} offset={[-1, 0]} color={V} />
+        <Small text="isolated cells, lab tests" x={-740} y={-250} offset={[-1, 0]} color={C.chalk} />
+        <Rect x={-40} y={-10} width={W} height={H} radius={18} fill={C.panel} stroke={C.grid} lineWidth={LW.hairline} />
+        <Node x={-40} y={-10} opacity={lock}>
+          <Node y={-90}><Line points={trace(48, 0)} stroke={LIME} lineWidth={LW.structure} /></Node>
+          <Node y={100}><Line points={trace(48, 0.15)} stroke={V} lineWidth={LW.structure} /></Node>
+          <Small text="signal" x={-W / 2 + 40} y={-160} offset={[-1, 0]} color={LIME} />
+          <Small text="cell length" x={-W / 2 + 40} y={30} offset={[-1, 0]} color={V} />
         </Node>
-        <Line points={[[-740, 270], [660, 270]]} stroke={C.muted} lineWidth={LW.structure} />
-        <Line points={[[380, 240], [380, 300]]} stroke={C.chalk} lineWidth={LW.structure} opacity={() => 0.4 + mark() * 0.6} />
-        <Rect x={() => -740 + 1400 * f()} y={270} width={10} height={44} radius={4} fill={C.chalk} />
+        <Line points={[[-740, 280], [660, 280]]} stroke={C.muted} lineWidth={LW.structure} />
+        <Line points={[[380, 250], [380, 310]]} stroke={C.chalk} lineWidth={LW.structure} opacity={() => 0.4 + mark() * 0.6} />
+        <Rect x={() => -740 + 1400 * f()} y={280} width={10} height={44} radius={4} fill={C.chalk} />
         <Locator focus="cells" />
       </Node>,
       steps: [
         function* () { yield* lock(1, 0.6, ease); },
-        <Small text="tens of thousands of times a second" x={-740} y={340} offset={[-1, 0]} color={C.chalk} />,
-        <Small text="highest pitch we hear" x={380} y={220} color={C.chalk} offset={[0, 1]} />,
+        <Small text="tens of thousands of times a second" x={-740} y={360} offset={[-1, 0]} color={C.chalk} />,
+        <Small text="highest pitch we hear" x={380} y={240} color={C.chalk} offset={[0, 1]} />,
       ],
       ambient: function* () {
         yield* waitFor(cue('S26', 1));
@@ -852,7 +874,7 @@ export const ANIM: Record<string, () => Built> = {
           <Mouse x={-430} y={-60} />
           <Mouse x={330} y={-60} />
           <Small text="normal" x={-430} y={-240} color={C.chalk} />
-          <Label text="no prestin" x={330} y={-240} spacing={1} />
+          <Label text="no prestin" x={300} y={-212} spacing={1} />
           <Rect x={-430} y={340 - 115} width={120} height={230} fill={C.chalk} radius={[8, 8, 0, 0]} />
           <Rect x={330} y={() => 340 - h2() / 2} width={120} height={h2} fill={C.chalk} radius={[8, 8, 0, 0]} />
           <Small text="sensitivity" x={-760} y={110} offset={[-1, 0]} />
@@ -974,7 +996,7 @@ export const ANIM: Record<string, () => Built> = {
             <ProbeCanal />
             <Rings a={480} b={-470} y={10} n={2} period={2.6} size={170} color={V} width={LW.emphasis} />
           </Node>
-          <Label text="checks the ear, not the nerve" x={180} y={-200} offset={[-1, 0]} size={40} spacing={1} />
+          <Label text="checks the ear, not the nerve" x={140} y={-170} offset={[-1, 0]} size={40} spacing={1} />
           <Line points={[[260, -70], [300, -30], [380, -120]]} stroke={C.chalk} lineWidth={LW.emphasis + 2} lineCap="round" lineJoin="round" end={tick} />
         </Node>,
         <Node>
@@ -1058,7 +1080,7 @@ export const ANIM: Record<string, () => Built> = {
             <Rect x={() => LADDER.x + 30 + (660 / 2 ** i) * w() / 2} y={dbY(d) - 18} width={() => (660 / 2 ** i) * w()} height={22} radius={6} fill={C.chalk}
               opacity={0.8} />
           ))}
-          <Label text="louder = less time" x={60} y={dbY(97)} offset={[-1, 0]} size={40} spacing={1} />
+          <Label text="louder = less time" x={-20} y={dbY(97)} offset={[-1, 0]} size={40} spacing={1} />
         </Node>,
       ],
       ambient: function* () { yield* waitFor(cue('S35', 2) + 0.1); yield* w(1, 1.4, ease); },
@@ -1139,15 +1161,15 @@ export const ANIM: Record<string, () => Built> = {
       base: <Node>
         <Ladder dim={0.55} />
         <Node opacity={l85}>
-          <Line points={[[LADDER.x - 14, dbY(85)], [LADDER.x + 620, dbY(85)]]} stroke={C.chalk} lineWidth={LW.emphasis} />
+          <Line points={[[LADDER.x - 14, dbY(85)], [LADDER.x + 560, dbY(85)]]} stroke={C.chalk} lineWidth={LW.emphasis} />
           <Num text="85 dB" x={LADDER.x - 36} y={dbY(85)} offset={[1, 0]} size={44} />
         </Node>
         <Locator focus="cells" />
       </Node>,
       steps: [
         <Node>
-          <Clock x={380} y={dbY(85)} sweep={sweep} />
-          <Small text="85 dB averaged over 8 hours (NIOSH)" x={380} y={dbY(85) + 170} color={C.chalk} />
+          <Clock x={300} y={dbY(85) + 20} sweep={sweep} />
+          <Small text="85 dB averaged over 8 hours (NIOSH)" x={300} y={dbY(85) + 190} color={C.chalk} />
         </Node>,
       ],
       ambient: function* () {

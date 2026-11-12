@@ -65,18 +65,22 @@ export const EarSection = ({x = 0, y = 0, s = 1, k = 1, drum = 0, rock = 0, plun
       <Node opacity={dimMiddle}>
         <Node x={-50} y={-115} rotation={() => val(rock) * 6}>
           <Node x={50} y={115}>
-            <Line points={[[-110, 30], [-82, -92]]} stroke={C.chalk} lineWidth={LW.emphasis * k} lineCap="round" />
-            <Circle x={-74} y={-116} size={52} fill={C.bg} stroke={C.chalk} lineWidth={st} />
-            <Circle x={-22} y={-120} size={56} fill={C.bg} stroke={C.chalk} lineWidth={st} />
-            <Line points={[[-22, -96], [6, 8]]} stroke={C.chalk} lineWidth={LW.emphasis * k} lineCap="round" />
+            {/* hammer (malleus): club-shaped head, neck, long handle lying along the eardrum */}
+            <Spline closed smoothness={0.45} fill={C.bg} stroke={C.chalk} lineWidth={st}
+              points={[[-112, 24], [-104, -30], [-92, -76], [-100, -104], [-98, -138], [-74, -156], [-50, -146], [-44, -120], [-60, -96], [-80, -76], [-94, -28], [-104, 26]]} />
+            {/* anvil (incus): tooth-like body with a short process and a long process down to the stirrup */}
+            <Spline closed smoothness={0.4} fill={C.bg} stroke={C.chalk} lineWidth={st}
+              points={[[-46, -128], [-36, -160], [-6, -166], [18, -152], [52, -158], [56, -142], [22, -124], [14, -96], [16, -40], [20, 2], [8, 10], [0, -36], [-8, -88], [-28, -104]]} />
           </Node>
         </Node>
+        {/* stirrup (stapes): small head, two legs forming an arch, flat footplate in the oval window */}
         <Node x={() => val(plunge) * 8}>
           <Node shadowColor={C.chalk} shadowBlur={() => val(stirrupLit) * 26}>
-            <Circle x={14} y={12} size={22} fill={C.chalk} />
-            <Spline points={[[20, 2], [70, -26], [122, -30]]} stroke={C.chalk} lineWidth={() => st + val(stirrupLit) * 3 * k} smoothness={0.6} lineCap="round" />
-            <Spline points={[[20, 22], [70, 50], [122, 50]]} stroke={C.chalk} lineWidth={() => st + val(stirrupLit) * 3 * k} smoothness={0.6} lineCap="round" />
-            <Line points={[[126, -42], [126, 62]]} stroke={C.chalk} lineWidth={() => LW.emphasis * k + val(stirrupLit) * 4 * k} lineCap="round" />
+            <Circle x={16} y={10} size={20} fill={C.chalk} />
+            <Line points={[[16, 10], [34, 10]]} stroke={C.chalk} lineWidth={st} lineCap="round" />
+            <Spline points={[[34, 10], [60, -26], [96, -40], [120, -40]]} stroke={C.chalk} lineWidth={() => st + 1 * k + val(stirrupLit) * 3 * k} smoothness={0.6} lineCap="round" />
+            <Spline points={[[34, 10], [60, 46], [96, 60], [120, 60]]} stroke={C.chalk} lineWidth={() => st + 1 * k + val(stirrupLit) * 3 * k} smoothness={0.6} lineCap="round" />
+            <Rect x={127} y={10} width={() => 10 * k + val(stirrupLit) * 3 * k} height={118} radius={4 * k} fill={C.chalk} />
           </Node>
         </Node>
       </Node>
@@ -95,7 +99,7 @@ export const EarSection = ({x = 0, y = 0, s = 1, k = 1, drum = 0, rock = 0, plun
 };
 
 // ------------------------------------------------------------------ corner locator: the same section, small, with the current zoom boxed
-export const LOC = {x: 700, y: -372, w: 300, h: 168, s: 0.19};
+export const LOC = {x: 640, y: -330, w: 420, h: 236, s: 0.266}; // 1.4x the P1-size locator, readable on a phone
 export const Locator = ({focus = 'cochlea', x = LOC.x, y = LOC.y, opacity = 1}: any) => {
   const [fx, fy, fw, fh] = EAR_FOCUS[focus] ?? EAR_FOCUS.cochlea;
   const ox = 60, oy = 40; // centre of the section box
@@ -103,7 +107,7 @@ export const Locator = ({focus = 'cochlea', x = LOC.x, y = LOC.y, opacity = 1}: 
     <Node x={x} y={y} opacity={opacity}>
       <Rect width={LOC.w} height={LOC.h} radius={16} fill={C.panel} stroke={C.grid} lineWidth={LW.hairline} />
       <Node scale={LOC.s} x={ox * LOC.s} y={oy * LOC.s}>
-        <EarSection k={2.6} />
+        <EarSection k={2.3} />
       </Node>
       <Rect x={(fx + ox) * LOC.s} y={(fy + oy) * LOC.s} width={fw * LOC.s} height={fh * LOC.s} radius={6}
         stroke={C.chalk} lineWidth={LW.structure} />
