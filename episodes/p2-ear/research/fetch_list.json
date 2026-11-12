@@ -1,0 +1,10 @@
+[
+ {"name": "p1_newborn_screen", "kind": "page", "url": "https://www.eglin.af.mil/News/Photos/igphoto/2000282348/", "pick": "media.defense.gov"},
+ {"name": "p2_ear_bud", "kind": "page", "url": "https://www.eglin.af.mil/News/Photos/igphoto/2000282351/", "pick": "media.defense.gov"},
+ {"name": "p3_baby_bud", "kind": "page", "url": "https://www.eglin.af.mil/News/Photos/igphoto/2000282350/", "pick": "media.defense.gov"},
+ {"name": "p4_sleepy", "kind": "page", "url": "https://www.eglin.af.mil/News/Photos/igphoto/2000282349/", "pick": "media.defense.gov"},
+ {"name": "s1_stereocilia_kachar", "kind": "page", "url": "https://www.nih.gov/file/13346"},
+ {"name": "gray919_ossicles", "kind": "commons", "title": "File:Gray919.png"},
+ {"name": "gray923_cochlea", "kind": "commons", "title": "File:Gray923.png"},
+ {"name": "gray928_cochlea_section", "kind": "commons", "title": "File:Gray928.png"}
+]

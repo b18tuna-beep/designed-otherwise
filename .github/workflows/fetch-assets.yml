@@ -1,0 +1,26 @@
+name: Fetch public-domain assets
+
+# Downloads the public-domain images listed for an episode and hands them to the private studio
+# release `assets-<ep>` with a licenses.json (nothing is committed here).
+
+on:
+  workflow_dispatch:
+    inputs:
+      ep:
+        description: "Episode folder, e.g. p2-ear (reads episodes/<ep>/research/fetch_list.json)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch
+        run: python3 tools/research/fetch_assets.py "episodes/${{ inputs.ep }}/research/fetch_list.json" out
+      - name: Hand to the studio
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}"}
+        run: bash tools/ci/studio.sh release "assets-${{ inputs.ep }}" out/*
