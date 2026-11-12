@@ -1,4 +1,4 @@
-// Scene runner for FPI P1 production scenes.
+// Scene runner shared by every episode (P1 default; P2+ pass their own scenes.json via opts.scenes).
 // Every scene: base layer at t=0, then each storyboard change revealed (or run)
 // exactly at its cue from scenes.json, with ambient motion throughout.
 import {Node, View2D} from '@motion-canvas/2d';
@@ -18,7 +18,12 @@ export interface Built {
   overlay?: boolean; // 2D layer composited over external footage
 }
 
-export const sceneMeta = (id: string) => (SCENES as any).scenes.find((s: any) => s.id === id);
+export interface PlayOpts {
+  transparent?: boolean; // overlay layer: no background fill
+  scenes?: any; // the episode's scenes.json (default: P1)
+  until?: number; // board stills: stop the scene at this time (s) so its last frame is the key pose
+}
+export const sceneMeta = (id: string, scenes: any = SCENES) => scenes.scenes.find((s: any) => s.id === id);
 
 function* reveal(node: Node): ThreadGenerator {
   const y0 = node.y();
@@ -26,8 +31,9 @@ function* reveal(node: Node): ThreadGenerator {
   yield* all(node.opacity(1, 0.55, easeInOutCubic), node.y(y0, 0.6, easeInOutCubic));
 }
 
-export function* play(view: View2D, id: string, build: () => Built, opts: {transparent?: boolean} = {}): ThreadGenerator {
-  const meta = sceneMeta(id);
+export function* play(view: View2D, id: string, build: () => Built, opts: PlayOpts = {}): ThreadGenerator {
+  const meta = sceneMeta(id, opts.scenes ?? SCENES);
+  if (!meta) throw new Error(`scene ${id} not in scenes.json`);
   // Exact frame budget from the narration clock: scene boundaries land on round(t * fps),
   // so cuts never drift. Motion Canvas floors waits to whole frames, hence the +0.5 frame.
   const FPS = 30;
@@ -63,6 +69,6 @@ export function* play(view: View2D, id: string, build: () => Built, opts: {trans
     }
   }
   for (const p of plan) yield delay(p.at, p.run());
-  yield* waitFor(dur);
+  yield* waitFor(opts.until !== undefined ? Math.min(opts.until, dur) : dur);
 }
 
