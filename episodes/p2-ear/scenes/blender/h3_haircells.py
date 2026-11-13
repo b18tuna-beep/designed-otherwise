@@ -11,8 +11,10 @@ Reference (research/assets.md): outer hair cells ~25 um long at the base (we use
 Stereocilia are thickened (~2x) and slightly lengthened, and fewer per tuft
 (~33 outer, ~36 inner, vs ~100 real) so they read at 1080p.
 
-H3: slow lateral dolly at a high, SEM-like angle. Row highlights on 'inner hair
-cells' / 'three rows' are left to the 2D overlay (--highlight dims rows in 3D instead).
+H3: starts wide and high on all four rows (a dark membrane gap separates the inner
+row from the outer three), then dollies along the rows and descends onto one outer
+tuft so its stepped V reads. Row highlights on 'inner hair cells' / 'three rows' are
+left to the 2D overlay (--highlight dims rows in 3D instead).
 H4: wider view; a travelling wave moves the membrane, outer cells lengthen and
 shorten in phase with it; the peak grows on 'hundredfold' and narrows on 'sharpen'.
 H6: from screen-left (base), outer-cell tufts in the first outer row splay and go
@@ -179,9 +181,25 @@ DMG_T = rng.uniform(-7.0, 7.0, NC)          # patchy damage front (um jitter)
 
 if MODE == "h3":
     # cues: 2.59 dolly starts 'hair cells', 7.01 'inner hair cells', 11.25 'three rows'
+    # Wide and high on all four rows (the dark membrane gap separates the inner row
+    # from the three outer rows), then a travelling dolly along the rows that descends
+    # onto one outer-cell tuft (first outer row) so its stepped V reads at 1080p.
+    _o0 = np.where(IS_O & (ROW == 0))[0]
+    HERO = _o0[np.argmin(np.abs(CX[_o0] - 105.0))]
+    HERO_PT = np.array([CX[HERO] + cen[HERO, 0], CY[HERO] + cen[HERO, 1], L0[HERO] + 2.0])
+    WIDE_PT = np.array([10.0, 25.0, 12.0])
+
     def state(t):
-        dx = lerp(0.0, 95.0, seg(t, 2.45, DUR + 0.6))
-        cam_ = ((dx - 5.0, 24.0, 10.0), lerp(320.0, 300.0, seg(t, 0, DUR)), 48.0, -2.0)
+        u = seg(t, 2.45, DUR - 0.5)                  # travel, eased in and out
+        w = float(smoothstep(0.0, 1.0, u))
+        # lateral travel leads, the descent onto the tuft follows (both eased)
+        tx = lerp(WIDE_PT[0], HERO_PT[0], u)
+        ty = lerp(WIDE_PT[1], HERO_PT[1], seg(t, 6.0, DUR - 0.5))
+        tz = lerp(WIDE_PT[2], HERO_PT[2], seg(t, 6.0, DUR - 0.5))
+        dist = math.exp(lerp(math.log(lerp(370.0, 355.0, seg(t, 0, 2.45))), math.log(62.0), w))
+        el = lerp(64.0, 34.0, seg(t, 4.0, DUR - 0.5))
+        az = lerp(-2.0, -18.0, u)
+        cam_ = ((tx, ty, tz), dist, el, az)
         if HIGHLIGHT:   # optional; by default the 2D overlay does the row highlights
             inner_focus = seg(t, 6.85, 7.45) * (1 - seg(t, 11.1, 11.7))
             outer_focus = seg(t, 11.1, 11.7)
