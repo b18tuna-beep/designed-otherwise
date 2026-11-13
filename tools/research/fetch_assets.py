@@ -12,16 +12,24 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
 UA = {"User-Agent": "DesignedOtherwiseAssetFetch/1.0 (educational YouTube channel; public-domain assets only)"}
 
 
-def get(url, binary=False):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
-        data = r.read()
-        return data if binary else data.decode("utf-8", "replace")
+def get(url, binary=False, tries=5):
+    for n in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+                data = r.read()
+                return data if binary else data.decode("utf-8", "replace")
+        except urllib.error.HTTPError as e:  # Wikimedia rate-limits bursts (429): back off and retry
+            if e.code not in (429, 503) or n == tries - 1:
+                raise
+            time.sleep(int(e.headers.get("Retry-After") or 0) or 10 * (n + 1))
 
 
 def from_page(item):
@@ -62,13 +70,15 @@ def main():
             url, meta = from_commons(it) if it["kind"] == "commons" else from_page(it)
             ext = os.path.splitext(urllib.parse.urlparse(url).path)[1].lower() or ".jpg"
             path = os.path.join(out, it["name"] + ext)
-            open(path, "wb").write(get(url, binary=True))
+            data = get(url, binary=True)  # download first so a failure never leaves an empty file behind
+            open(path, "wb").write(data)
             log.append({"name": it["name"], "file": os.path.basename(path), "source": it.get("url") or it.get("title"),
                         "file_url": url, "bytes": os.path.getsize(path), **meta})
             print("ok", it["name"], url)
         except Exception as e:  # noqa: BLE001
             log.append({"name": it["name"], "error": str(e)})
             print("FAIL", it["name"], e)
+        time.sleep(3)  # be polite to Commons between items
     json.dump(log, open(os.path.join(out, "licenses.json"), "w"), indent=1)
 
 
