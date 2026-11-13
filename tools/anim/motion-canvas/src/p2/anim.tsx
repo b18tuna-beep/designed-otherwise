@@ -136,7 +136,7 @@ export const ANIM: Record<string, () => Built> = {
         <DraftCard y={-10} w={1320} h={880} opacity={card}>
           <Label text="NEWBORN HEARING SCREEN" y={380} size={44} spacing={8} />
         </DraftCard>
-        <Node scale={push} y={-60}><Still name="newborn-screen-1.png" w={1180} h={690} caption="USAF photo, newborn hearing screen (public domain)" /></Node>
+        <Node scale={push} y={-60}><Still name="newborn-screen-1.png" w={1180} h={690} caption="U.S. Navy photo, newborn hearing check (public domain)" /></Node>
         {[[-1, -1], [1, -1], [-1, 1], [1, 1]].map(([sx, sy]) => (
           <Node x={sx * 640} y={sy * 395 - 60} opacity={() => 1 - card()}>
             <Line points={[[-24, 0], [24, 0]]} stroke={C.muted} lineWidth={LW.hairline} />
@@ -624,7 +624,7 @@ export const ANIM: Record<string, () => Built> = {
     </Node>,
     steps: [
       <Node>
-        <Still x={-150} y={0} name="stereocilia-sem.png" w={1060} h={560} caption="NIDCD / Bechara Kachar (public domain)" />
+        <Still x={-150} y={0} name="stereocilia-sem.png" w={1060} h={560} caption="NIDCD / Yoshiyuki Kawashima (public domain)" />
         <Small text="FIG. stereocilia (electron microscope)" x={-150} y={350} color={C.chalk} />
       </Node>,
     ],
@@ -990,7 +990,7 @@ export const ANIM: Record<string, () => Built> = {
         <Locator focus="canal" />
       </Node>,
       steps: [
-        <Still x={-390} y={0} name="newborn-screen-2.png" w={860} h={620} caption="USAF photo set, same screening (public domain)" />,
+        <Still x={-390} y={0} name="newborn-screen-2.png" w={860} h={620} caption="U.S. Navy photo, probe at the ear (public domain)" />,
         <Node>
           <Node x={-390} y={0} scale={0.42} opacity={0.4}>
             <ProbeCanal />

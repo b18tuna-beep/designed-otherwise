@@ -26,3 +26,6 @@ vault/
 # Music is licensed for use in videos, not for redistribution: it lives only in the private studio.
 assets/music/*
 !assets/music/README.md
+
+# P2 archival stills are rebuilt from the studio release assets-p2-ear (tools/research/prep_assets_p2.py)
+episodes/*/scenes/assets/*.png
