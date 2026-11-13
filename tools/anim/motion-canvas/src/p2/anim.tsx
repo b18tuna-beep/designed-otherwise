@@ -608,6 +608,8 @@ export const ANIM: Record<string, () => Built> = {
     steps: [
       null,
       <Node>
+        {/* labels sit over chalk cells in the 3D shot: dark backing panel keeps them readable */}
+        <Rect x={-850} y={-356} width={640} height={150} offset={[-1, 0]} radius={12} fill={C.panel} opacity={0.88} />
         <Small text="1 row · inner" x={-820} y={-390} offset={[-1, 0]} color={C.chalk} />
         <Num text="≈ 3,500" x={-560} y={-392} offset={[-1, 0]} size={44} />
       </Node>,
@@ -1090,8 +1092,14 @@ export const ANIM: Record<string, () => Built> = {
     drift: false, overlay: true,
     base: <Node><Locator focus="cells" /></Node>,
     steps: [
-      <Label text="among the first cells noise destroys" x={-820} y={-390} offset={[-1, 0]} spacing={1} />,
-      <Small text="base: high pitches go first" x={-820} y={360} offset={[-1, 0]} color={C.chalk} />,
+      <Node>
+        <Rect x={-850} y={-390} width={900} height={84} offset={[-1, 0]} radius={12} fill={C.panel} opacity={0.88} />
+        <Label text="among the first cells noise destroys" x={-820} y={-390} offset={[-1, 0]} spacing={1} />
+      </Node>,
+      <Node>
+        <Rect x={-850} y={360} width={520} height={70} offset={[-1, 0]} radius={12} fill={C.panel} opacity={0.88} />
+        <Small text="base: high pitches go first" x={-820} y={360} offset={[-1, 0]} color={C.chalk} />
+      </Node>,
     ],
   }),
   S37: () => {
