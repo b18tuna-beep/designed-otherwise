@@ -1,18 +1,18 @@
 # Your Ears Are Making Sound (working title)
 
-P2 · Designed Otherwise · Script v1 (2026-11-12)
+P2 · Designed Otherwise · Script v2 (2026-11-13: Michael's checkpoint-3 notes, new hook cold open with no photo, who Brownell was)
 
 Every line ends with the fact check ids it relies on (`research/factcheck.json`, safe wording only). `[none]` = no factual claim. Numbers are spelled the way George will say them. Format differs from P1 on purpose (inauthentic-content rule): P1 was a paradox explained; P2 is a detective story, a wrong answer that stood for decades until a living ear proved it wrong.
 
-## 1. Cold open (0:00 to 0:35)
+## 1. Cold open: hook (0:00 to ~0:35)
 
-In America, almost every newborn gets a hearing test before leaving the hospital. Someone slips a soft probe into the baby's ear. [1.1, 1.3]
-The probe plays a few quiet clicks. And then it does something strange. It listens. [1.3]
-It's waiting for a sound to come back out of the baby's ear. [1.3]
-Not an echo off the eardrum. A sound made inside the ear itself. [1.3, 1.4]
-Healthy ears make sound. [1.3]
-And more than half of people with normal hearing have ears that quietly give off a faint, steady tone of their own, with no sound going in at all. [5.4]
-Yours may be doing it right now. [5.4]
+Right now, if your hearing is normal, there's a good chance your ears are making a sound. [5.4]
+(1 s beat)
+Not ringing. Usually far too quiet to notice. A faint, steady tone, made inside your ear, and slipping out into your ear canal. [5.4, 5.5]
+It sounds like a myth. But play a sound into a healthy ear, and it answers so reliably that hospitals count on it. [1.3, 5.1]
+Almost every newborn in America gets a hearing test, usually before leaving the hospital. In one common version, a soft probe plays quiet clicks into the baby's ear. And then it listens. [1.1, 1.3]
+It's waiting for a sound to come back out. Not an echo off the eardrum. A sound made inside the ear itself. [1.3, 1.4]
+Healthy ears talk back. [1.3, 5.1]
 To see why, we have to take apart the ear we think we have. [none]
 
 (intro sting)
@@ -64,7 +64,7 @@ Now here's the strange part. About ninety-five percent of the fibres in your hea
 Only about five percent connect to the outer hair cells. [4.2]
 So three-quarters of your hair cells barely talk to the brain. [4.1, 4.2]
 What are they for? [none]
-In nineteen eighty-five, William Brownell and his colleagues found out. They took outer hair cells out of the ear and applied a current. The cells physically changed length. Shorter one way. Longer the other. [4.4]
+In nineteen eighty-five, William Brownell found a big clue. He was a hearing researcher from the University of Florida, working in a lab in Geneva, Switzerland. He and his colleagues took outer hair cells out of animal ears and applied a current. The cells physically changed length. Shorter one way. Longer the other. [4.4, 4.4a]
 They're not just sensors. They're motors. [4.4, 4.7]
 In two thousand, researchers at Northwestern University found the protein that drives them. They named it prestin, after the musical marking presto. Fast. [4.5]
 And fast they are. In lab tests on isolated cells, outer hair cells kept changing length in step with the signal tens of thousands of times a second. Faster than the highest pitch you can hear. [4.6]

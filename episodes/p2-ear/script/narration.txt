@@ -1,10 +1,9 @@
-In America, almost every newborn gets a hearing test before leaving the hospital. Someone slips a soft probe into the baby's ear.
-The probe plays a few quiet clicks. And then it does something strange. It listens.
-It's waiting for a sound to come back out of the baby's ear.
-Not an echo off the eardrum. A sound made inside the ear itself.
-Healthy ears make sound.
-And more than half of people with normal hearing have ears that quietly give off a faint, steady tone of their own, with no sound going in at all.
-Yours may be doing it right now.
+Right now, if your hearing is normal, there's a good chance your ears are making a sound.
+Not ringing. Usually far too quiet to notice. A faint, steady tone, made inside your ear, and slipping out into your ear canal.
+It sounds like a myth. But play a sound into a healthy ear, and it answers so reliably that hospitals count on it.
+Almost every newborn in America gets a hearing test, usually before leaving the hospital. In one common version, a soft probe plays quiet clicks into the baby's ear. And then it listens.
+It's waiting for a sound to come back out. Not an echo off the eardrum. A sound made inside the ear itself.
+Healthy ears talk back.
 To see why, we have to take apart the ear we think we have.
 Here's the ear most of us picture.
 Sound travels down the ear canal and makes the eardrum vibrate.
@@ -45,7 +44,7 @@ Now here's the strange part. About ninety-five percent of the fibres in your hea
 Only about five percent connect to the outer hair cells.
 So three-quarters of your hair cells barely talk to the brain.
 What are they for?
-In nineteen eighty-five, William Brownell and his colleagues found out. They took outer hair cells out of the ear and applied a current. The cells physically changed length. Shorter one way. Longer the other.
+In nineteen eighty-five, William Brownell found a big clue. He was a hearing researcher from the University of Florida, working in a lab in Geneva, Switzerland. He and his colleagues took outer hair cells out of animal ears and applied a current. The cells physically changed length. Shorter one way. Longer the other.
 They're not just sensors. They're motors.
 In two thousand, researchers at Northwestern University found the protein that drives them. They named it prestin, after the musical marking presto. Fast.
 And fast they are. In lab tests on isolated cells, outer hair cells kept changing length in step with the signal tens of thousands of times a second. Faster than the highest pitch you can hear.

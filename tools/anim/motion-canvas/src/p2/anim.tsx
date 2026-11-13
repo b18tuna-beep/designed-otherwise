@@ -117,6 +117,43 @@ const Clock = ({x = 0, y = 0, sweep = 1, size = 220}: any) => (
 
 // probe-in-canal group used by S02, S03, S30, S32 (canal at the top, scope at the bottom)
 const PG = {x: 0, y: -70, s: 0.9};
+// ---- cold open v2 parts (Michael 2026-11-13: hook first, no baby photo)
+const HEAD_PTS: P[] = [[-150, 470], [-160, 330], [-230, 290], [-300, 250], [-310, 190], [-330, 150], [-322, 110], [-385, 60], [-352, 0], [-332, -50],
+  [-346, -120], [-300, -280], [-170, -400], [20, -440], [220, -390], [360, -250], [410, -60], [380, 120], [280, 260], [220, 330], [230, 470]];
+const EAR: P = [214, 26];
+const ProfileHead = ({opacity = 1}: any) => (
+  <Spline closed smoothness={0.45} stroke={C.chalk} lineWidth={LW.emphasis} opacity={opacity} points={HEAD_PTS} />
+);
+// the ear's own faint tone: violet rings that grow out of the ear, steadily, forever
+const EarPulse = ({on: o = 1, far = 0}: any) => (
+  <Node position={EAR} opacity={o}>
+    {Array.from({length: 4}, (_, i) => {
+      const u = () => { const v = T() / 3.2 + i / 4; return v - Math.floor(v); };
+      return <Circle size={() => 36 + (240 + 360 * val(far)) * u()} stroke={V} lineWidth={LW.emphasis}
+        opacity={() => (1 - u()) * Math.min(1, u() * 8)} />;
+    })}
+  </Node>
+);
+const ToneTrace = ({x = 0, y = 0, opacity = 1}: any) => (
+  <Node x={x} y={y} opacity={opacity}>
+    <Rect width={560} height={260} radius={16} fill={C.panel} stroke={C.grid} lineWidth={LW.hairline} />
+    <Line points={() => Array.from({length: 160}, (_, i) => [-240 + 3 * i, 26 * Math.sin(i * 0.42 - T() * 6)] as P)}
+      stroke={V} lineWidth={LW.structure} lineJoin="round" />
+    <Small text="faint, steady tone" y={170} color={C.chalk} />
+  </Node>
+);
+const NewbornRow = ({y = 0}: any) => (
+  <Node y={y}>
+    {Array.from({length: 7}, (_, i) => (
+      <Node x={(i - 3) * 230}>
+        <Rect width={180} height={86} radius={28} stroke={C.chalk} lineWidth={LW.structure} y={30} />
+        <Circle x={-52} y={-2} size={58} stroke={C.chalk} lineWidth={LW.structure} />
+      </Node>
+    ))}
+  </Node>
+);
+const val = (v: any) => (typeof v === 'function' ? v() : v);
+
 const ProbeView = ({rings = 0, outRings = 0, ring = null as any, labels = true}: any) => (
   <Node x={PG.x} y={PG.y} scale={PG.s}>
     <ProbeCanal />
@@ -130,39 +167,50 @@ const ProbeView = ({rings = 0, outRings = 0, ring = null as any, labels = true}:
 export const ANIM: Record<string, () => Built> = {
   // ================================================================ 1. cold open: the test that listens
   S01: () => {
-    const push = sig(1), card = sig(0);
+    const o = sig(0), tr = sig(0), far = sig(0), cap = sig(0);
     return {
+      drift: true,
       base: <Node>
-        <DraftCard y={-10} w={1320} h={880} opacity={card}>
-          <Label text="NEWBORN HEARING SCREEN" y={380} size={44} spacing={8} />
-        </DraftCard>
-        <Node scale={push} y={-60}><Still name="newborn-screen-1.png" w={1180} h={690} caption="U.S. Navy photo, newborn hearing check (public domain)" /></Node>
-        {[[-1, -1], [1, -1], [-1, 1], [1, 1]].map(([sx, sy]) => (
-          <Node x={sx * 640} y={sy * 395 - 60} opacity={() => 1 - card()}>
-            <Line points={[[-24, 0], [24, 0]]} stroke={C.muted} lineWidth={LW.hairline} />
-            <Line points={[[0, -24], [0, 24]]} stroke={C.muted} lineWidth={LW.hairline} />
-          </Node>
-        ))}
+        <Node x={-330}>
+          <ProfileHead opacity={0.55} />
+          <EarPulse on={o} far={far} />
+          <Small text="your ear, right now" x={214} y={300} color={C.chalk} opacity={cap} />
+        </Node>
+        <ToneTrace x={560} y={-20} opacity={tr} />
       </Node>,
       steps: [
-        function* () { yield* push(1.06, 6.4, linear); },
-        function* () { yield* all(card(1, 0.6, ease)); },
+        function* () { yield* all(o(1, 1.4, ease), cap(1, 1.0, ease)); },
+        function* () { yield* tr(1, 1.0, ease); },
+        function* () { yield* far(1, 1.8, ease); },
       ],
     };
   },
   S02: () => {
-    const rings = sig(0), sc = sig(0), sweep = sig(0.16), lab = sig(0);
+    const hook = sig(1), cots = sig(0), cotLab = sig(0), probe = sig(0), rings = sig(0), sc = sig(0), sweep = sig(0.16), lab = sig(0);
     return {
       base: <Node>
-        <ProbeView rings={rings} />
-        <Small text="click" x={-300} y={-250} color={C.chalk} opacity={rings} />
-        <Node opacity={sc}><Scope y={300} click={1} sweep={sweep} /></Node>
-        <Small text="listening" x={-450} y={155} color={C.chalk} opacity={lab} />
+        {/* carries on from S01's head and pulse, then gives way to the cots */}
+        <Node opacity={hook}>
+          <Node x={-330}><ProfileHead opacity={0.55} /><EarPulse on={1} far={1} /></Node>
+          <ToneTrace x={560} y={-20} />
+        </Node>
+        <Node opacity={() => cots() * (1 - probe())}>
+          <NewbornRow y={-40} />
+          <Label text="newborn hearing screen" y={200} size={44} spacing={4} opacity={cotLab} />
+        </Node>
+        <Node opacity={probe}>
+          <ProbeView rings={rings} />
+          <Small text="click" x={-300} y={-250} color={C.chalk} opacity={rings} />
+          <Node opacity={sc}><Scope y={300} click={1} sweep={sweep} /></Node>
+          <Small text="listening" x={-450} y={155} color={C.chalk} opacity={lab} />
+        </Node>
       </Node>,
       steps: [
+        function* () { yield* all(hook(0, 0.7, ease), cots(1, 0.9, ease)); },
+        function* () { yield* cotLab(1, 0.6, ease); },
+        function* () { yield* probe(1, 0.8, ease); },
         function* () { yield* rings(1, 0.6, ease); },
-        function* () { yield* all(rings(0, 0.8), sc(1, 0.6, ease), lab(1, 0.6)); },
-        function* () { yield* sweep(0.86, 4.2, linear); },
+        function* () { yield* all(rings(0, 0.8), sc(1, 0.6, ease), lab(1, 0.6)); yield* sweep(0.86, 3.6, linear); },
       ],
     };
   },
@@ -185,19 +233,17 @@ export const ANIM: Record<string, () => Built> = {
     };
   },
   S04: () => {
-    const ring = sig(0), lab = sig(0), off = sig(1);
+    const o = sig(0);
     return {
       drift: true,
       base: <Node>
-        <HeadGrid y={-40} cols={8} rows={3} dx={190} dy={205} s={0.82} on={OVER_HALF_24} ring={ring} offDim={off} />
-        <Label text="more than half of people with normal hearing" y={-400} size={42} spacing={1} opacity={lab} />
+        <ProfileHead opacity={0.4} />
+        <EarPulse on={o} far={0.4} />
       </Node>,
       steps: [
-        function* () { yield* all(ring(1, 0.8, ease), lab(1, 0.6, ease)); },
-        null,
-        <Title text="Your ears are making sound." y={352} size={84} />,
+        <Title text="Your ears are making sound." y={-470} size={84} />,
       ],
-      ambient: function* () { yield* waitFor(6.2); yield* off(0.4, 0.8, ease); },
+      ambient: function* () { yield* o(1, 0.8, ease); },
     };
   },
   S05: () => {
@@ -988,19 +1034,16 @@ export const ANIM: Record<string, () => Built> = {
     const tick = sig(0);
     return {
       base: <Node>
-        <DraftCard x={-390} y={20} w={940} h={720} />
+        <Node x={-430} y={-40} scale={0.62}><ProbeView ring={1} outRings={1} labels={false} /></Node>
         <Locator focus="canal" />
       </Node>,
       steps: [
-        <Still x={-390} y={0} name="newborn-screen-2.png" w={860} h={620} caption="U.S. Navy photo, probe at the ear (public domain)" />,
+        null,
         <Node>
-          {/* the ear's answer rings out from the probe tip in the photo (the faint diagram overlay sat on the baby's face) */}
-          <Node x={-405 - 480 * 0.42} y={-5 - 10 * 0.42} scale={0.42} opacity={0.9}>
-            <Rings a={480} b={-470} y={10} n={2} period={2.6} size={170} color={V} width={LW.emphasis} />
-          </Node>
           <Label text="checks the ear, not the nerve" x={140} y={-170} offset={[-1, 0]} size={40} spacing={1} />
           <Line points={[[260, -70], [300, -30], [380, -120]]} stroke={C.chalk} lineWidth={LW.emphasis + 2} lineCap="round" lineJoin="round" end={tick} />
         </Node>,
+        <Small text="the nerve gets a different test" x={140} y={-30} offset={[-1, 0]} color={C.chalk} />,
         <Node>
           {Array.from({length: 100}, (_, i) => (
             <Circle x={220 + (i % 10) * 26} y={40 + Math.floor(i / 10) * 26} size={16} fill={i < 98 ? C.chalk : null}

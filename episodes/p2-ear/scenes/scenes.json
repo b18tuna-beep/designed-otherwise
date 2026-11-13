@@ -1,75 +1,84 @@
 {
  "source_words": "audio/final.words.json",
  "fps": 30,
- "total_s": 591.08,
+ "total_s": 605.0,
  "scenes": [
   {
    "id": "S01",
    "beat": 1,
-   "anchor": "in america almost every newborn",
-   "tool": "archival",
-   "visual": "Real photo: a newborn hearing screen with a soft probe in the ear (USAF public-domain photo). Slow push-in. Slate frame, grain, drafting registration marks so it sits in our world.",
+   "anchor": "right now if your hearing is normal",
+   "tool": "motion-canvas",
+   "visual": "Dark slate. A chalk profile head (the one S05 later opens up). Out of the ear, faint violet rings grow, slow and steady, and never stop. A panel beside it draws the steady violet tone trace. 1 s beat after the first line: only the pulse.",
    "changes": [
-    "push-in starts",
-    "photo pins to a drafting card on 'soft probe'"
+    "violet rings start at the ear on 'making a sound'",
+    "steady tone trace draws on 'faint steady tone'",
+    "rings reach further out on 'into your ear canal'"
    ],
    "text": [
-    "NEWBORN HEARING SCREEN"
+    "your ear, right now",
+    "faint, steady tone"
+   ],
+   "facts": [
+    "5.4",
+    "5.5"
+   ],
+   "asset": null,
+   "start": 0.0,
+   "end": 18.29,
+   "duration": 18.29,
+   "cues": [
+    4.34,
+    10.82,
+    14.64
+   ],
+   "words": "right now if your hearing is normal there's a good chance your ears are making a sound not ringing usually far too quiet to notice a faint steady tone made inside your ear and slipping out into your ear canal it sounds like a myth",
+   "change_every_s": 6.1
+  },
+  {
+   "id": "S02",
+   "beat": 1,
+   "anchor": "but play a sound into a healthy ear",
+   "tool": "motion-canvas",
+   "visual": "A row of seven chalk newborn cots (simple outlines, no faces) under 'newborn hearing screen'. Match to the chalk probe-in-canal section; chalk click rings travel in; a scope trace waits, flat, as the probe listens.",
+   "changes": [
+    "head and pulse give way to a row of newborn cots on 'hospitals count on it'",
+    "label on 'almost every newborn'",
+    "cots give way to the probe diagram on 'soft probe'",
+    "three chalk click rings travel in on 'quiet clicks'",
+    "scope trace appears and sweeps, flat, on 'it listens'"
+   ],
+   "text": [
+    "newborn hearing screen",
+    "click",
+    "listening"
    ],
    "facts": [
     "1.1",
     "1.3"
    ],
-   "asset": "P1 'Hear today', U.S. Air Force photo by Samuel King Jr. (public domain); never show the baby's name",
-   "start": 0.0,
-   "end": 9.81,
-   "duration": 9.81,
-   "cues": [
-    3.27,
-    6.62
-   ],
-   "words": "in america almost every newborn gets a hearing test before leaving the hospital someone slips a soft probe into the baby's ear",
-   "change_every_s": 4.9
-  },
-  {
-   "id": "S02",
-   "beat": 1,
-   "anchor": "the probe plays a few quiet clicks",
-   "tool": "motion-canvas",
-   "visual": "Match cut to a chalk diagram of the same probe in an ear canal (side section). Chalk click rings travel inward from the probe. Then stillness: a small microphone icon in the probe 'listens' (a scope trace waits, flat).",
-   "changes": [
-    "three chalk click rings travel in on 'clicks'",
-    "scope trace appears, flat, on 'it listens'",
-    "trace holds flat on 'waiting'"
-   ],
-   "text": [
-    "click",
-    "listening"
-   ],
-   "facts": [
-    "1.3"
-   ],
    "asset": null,
-   "start": 9.81,
-   "end": 20.47,
-   "duration": 10.66,
+   "start": 18.29,
+   "end": 38.37,
+   "duration": 20.08,
    "cues": [
-    1.59,
     4.31,
-    6.37
+    6.61,
+    14.45,
+    15.55,
+    18.35
    ],
-   "words": "the probe plays a few quiet clicks and then it does something strange it listens it's waiting for a sound to come back out of the baby's ear",
-   "change_every_s": 3.6
+   "words": "but play a sound into a healthy ear and it answers so reliably that hospitals count on it almost every newborn in america gets a hearing test usually before leaving the hospital in one common version a soft probe plays quiet clicks into the baby's ear and then it listens",
+   "change_every_s": 4.0
   },
   {
    "id": "S03",
    "beat": 1,
-   "anchor": "not an echo off the eardrum",
+   "anchor": "it's waiting for a sound to come back out",
    "tool": "motion-canvas",
    "visual": "A violet ring emerges from deep inside the ear (beyond the eardrum) and travels OUT to the probe; the scope trace shows a small violet wiggle a few ms after the click.",
    "changes": [
     "violet ring leaves the inner ear on 'made inside'",
-    "scope wiggles violet on 'healthy ears make sound'"
+    "scope wiggles violet on 'the ear itself'"
    ],
    "text": [
     "sound made inside the ear"
@@ -79,45 +88,41 @@
     "1.4"
    ],
    "asset": null,
-   "start": 20.47,
-   "end": 28.57,
-   "duration": 8.1,
+   "start": 38.37,
+   "end": 46.57,
+   "duration": 8.2,
    "cues": [
-    2.59,
-    5.01
+    5.07,
+    5.83
    ],
-   "words": "not an echo off the eardrum a sound made inside the ear itself healthy ears make sound",
-   "change_every_s": 4.0
+   "words": "it's waiting for a sound to come back out not an echo off the eardrum a sound made inside the ear itself",
+   "change_every_s": 4.1
   },
   {
    "id": "S04",
    "beat": 1,
-   "anchor": "and more than half of people",
+   "anchor": "healthy ears talk back",
    "tool": "motion-canvas",
-   "visual": "Pull back to a crowd of simple chalk head silhouettes in a grid; a little over half of them show a faint steady violet tone ring at the ear. Title question types on.",
+   "visual": "Back to the profile head, centred, violet rings at the ear; the title lands.",
    "changes": [
-    "grid of heads on 'people'",
-    "violet rings appear on just over half on 'more than half'",
-    "question types on 'right now'"
+    "title on 'talk back'"
    ],
    "text": [
-    "more than half of people with normal hearing",
     "Your ears are making sound."
    ],
    "facts": [
-    "5.4"
+    "1.3",
+    "5.1"
    ],
    "asset": null,
-   "start": 28.57,
-   "end": 41.49,
-   "duration": 12.92,
+   "start": 46.57,
+   "end": 48.75,
+   "duration": 2.18,
    "cues": [
-    1.01,
-    0.3,
-    11.29
+    0.41
    ],
-   "words": "and more than half of people with normal hearing have ears that quietly give off a faint steady tone of their own with no sound going in at all yours may be doing it right now",
-   "change_every_s": 4.3
+   "words": "healthy ears talk back",
+   "change_every_s": 2.2
   },
   {
    "id": "S05",
@@ -132,12 +137,12 @@
    "text": [],
    "facts": [],
    "asset": null,
-   "start": 41.49,
-   "end": 45.95,
-   "duration": 4.46,
+   "start": 48.75,
+   "end": 53.25,
+   "duration": 4.5,
    "cues": [
-    1.41,
-    2.97
+    1.49,
+    3.0
    ],
    "words": "to see why we have to take apart the ear we think we have",
    "change_every_s": 2.2
@@ -165,14 +170,14 @@
     "2.1"
    ],
    "asset": null,
-   "start": 45.95,
-   "end": 61.99,
-   "duration": 16.04,
+   "start": 53.25,
+   "end": 69.21,
+   "duration": 15.96,
    "cues": [
-    4.73,
-    6.77,
-    10.05,
-    13.95
+    4.75,
+    6.79,
+    10.09,
+    14.01
    ],
    "words": "here's the ear most of us picture sound travels down the ear canal and makes the eardrum vibrate three tiny bones the hammer the anvil and the stirrup pass that vibration on to the entrance of the cochlea",
    "change_every_s": 4.0
@@ -195,15 +200,15 @@
     "2.5"
    ],
    "asset": "G1 Gray's Anatomy 1918, fig. 919 chain of ossicles (public domain, archive.org)",
-   "start": 61.99,
-   "end": 69.57,
-   "duration": 7.58,
+   "start": 69.21,
+   "end": 76.95,
+   "duration": 7.74,
    "cues": [
-    2.53,
-    5.17
+    2.58,
+    5.29
    ],
    "words": "the stirrup the last of the three is the smallest bone in the human body about three millimetres long",
-   "change_every_s": 3.8
+   "change_every_s": 3.9
   },
   {
    "id": "S08",
@@ -220,15 +225,15 @@
    ],
    "facts": [],
    "asset": null,
-   "start": 69.57,
-   "end": 73.37,
-   "duration": 3.8,
+   "start": 76.95,
+   "end": 80.29,
+   "duration": 3.34,
    "cues": [
-    1.27,
-    2.39
+    1.23,
+    2.33
    ],
    "words": "simple enough a microphone with some plumbing",
-   "change_every_s": 1.9
+   "change_every_s": 1.7
   },
   {
    "id": "S09",
@@ -250,16 +255,16 @@
     "2.2"
    ],
    "asset": null,
-   "start": 73.37,
-   "end": 92.21,
-   "duration": 18.84,
+   "start": 80.29,
+   "end": 99.51,
+   "duration": 19.22,
    "cues": [
-    3.77,
-    13.51,
-    10.55
+    4.13,
+    13.91,
+    10.72
    ],
    "words": "but why the bones at all why not let the air push on the cochlea directly because the cochlea is full of fluid and when sound in air hits fluid about ninety nine point nine percent of its energy simply bounces off like shouting at someone underwater",
-   "change_every_s": 6.3
+   "change_every_s": 6.4
   },
   {
    "id": "S10",
@@ -284,14 +289,14 @@
     "2.4"
    ],
    "asset": null,
-   "start": 92.21,
-   "end": 114.95,
-   "duration": 22.74,
+   "start": 99.51,
+   "end": 122.29,
+   "duration": 22.78,
    "cues": [
-    3.79,
-    9.65,
-    11.21,
-    15.21
+    3.92,
+    9.71,
+    11.23,
+    15.25
    ],
    "words": "so the middle ear concentrates the push the eardrum is roughly fifteen to twenty times bigger than the footplate of the stirrup the same force focused onto a tiny spot like a stiletto heel the little bones add a bit of leverage on top together they raise the pressure reaching the cochlea many times over",
    "change_every_s": 5.7
@@ -317,13 +322,13 @@
     "2.7"
    ],
    "asset": null,
-   "start": 114.95,
-   "end": 135.89,
-   "duration": 20.94,
+   "start": 122.29,
+   "end": 143.13,
+   "duration": 20.84,
    "cues": [
-    2.29,
-    10.23,
-    14.23,
+    2.23,
+    10.21,
+    14.21,
     18.45
    ],
    "words": "and here's an odd detail birds and reptiles have just one ear bone the stirrup our other two the hammer and the anvil began as the bones of the jaw joint in our distant reptile like ancestors over many millions of years those old jaw bones shrank and ended up carrying sound instead",
@@ -341,14 +346,14 @@
    "text": [],
    "facts": [],
    "asset": null,
-   "start": 135.89,
-   "end": 145.47,
-   "duration": 9.58,
+   "start": 143.13,
+   "end": 152.81,
+   "duration": 9.68,
    "cues": [
-    7.47
+    7.55
    ],
    "words": "so far this is all passive bones and levers handing vibration along the surprise is in what they hand it to",
-   "change_every_s": 9.6
+   "change_every_s": 9.7
   },
   {
    "id": "S13",
@@ -371,12 +376,12 @@
     "3.3"
    ],
    "asset": null,
-   "start": 145.47,
-   "end": 165.27,
+   "start": 152.81,
+   "end": 172.61,
    "duration": 19.8,
    "cues": [
-    4.87,
-    8.45,
+    4.85,
+    8.43,
     15.19
    ],
    "words": "inside your skull sits the cochlea a fluid filled tube coiled like a snail shell about two and a half turns unrolled it would be only about three centimetres long running along it is a strip called the basilar membrane and it changes from one end to the other",
@@ -400,15 +405,15 @@
     "3.3"
    ],
    "asset": null,
-   "start": 165.27,
-   "end": 173.15,
-   "duration": 7.88,
+   "start": 172.61,
+   "end": 180.51,
+   "duration": 7.9,
    "cues": [
-    2.21,
-    6.21
+    2.17,
+    6.19
    ],
    "words": "near the entrance the base it's narrow and stiff at the far end the apex it's wider and much floppier",
-   "change_every_s": 3.9
+   "change_every_s": 4.0
   },
   {
    "id": "S15",
@@ -430,13 +435,13 @@
     "3.4"
    ],
    "asset": null,
-   "start": 173.15,
-   "end": 190.27,
-   "duration": 17.12,
+   "start": 180.51,
+   "end": 197.71,
+   "duration": 17.2,
    "cues": [
-    3.63,
-    5.45,
-    11.37,
+    3.53,
+    5.37,
+    11.33,
     15.77
    ],
    "words": "so each spot along it responds most to one pitch high notes near the base low notes near the apex pitch is laid out along the spiral a bit like the keys of a piano from about twenty vibrations a second to about twenty thousand",
@@ -460,16 +465,16 @@
     "3.5"
    ],
    "asset": null,
-   "start": 190.27,
-   "end": 201.33,
-   "duration": 11.06,
+   "start": 197.71,
+   "end": 208.63,
+   "duration": 10.92,
    "cues": [
-    3.25,
-    4.43,
+    3.15,
+    4.33,
     9.29
    ],
    "words": "when a sound arrives a ripple runs along the membrane from the base grows to a peak at the place tuned to that pitch then quickly dies away a travelling wave",
-   "change_every_s": 3.7
+   "change_every_s": 3.6
   },
   {
    "id": "S17",
@@ -491,13 +496,13 @@
     "3.6"
    ],
    "asset": null,
-   "start": 201.33,
-   "end": 216.33,
-   "duration": 15.0,
+   "start": 208.63,
+   "end": 223.73,
+   "duration": 15.1,
    "cues": [
-    2.27,
-    4.37,
-    10.89
+    2.25,
+    4.39,
+    10.91
    ],
    "words": "the man who showed this was georg von b k sy he won the nineteen sixty one nobel prize for it and he worked it out largely with cochleas from human cadavers that turned out to matter",
    "change_every_s": 5.0
@@ -524,18 +529,18 @@
     "3.7"
    ],
    "asset": null,
-   "start": 216.33,
-   "end": 240.53,
-   "duration": 24.2,
+   "start": 223.73,
+   "end": 247.99,
+   "duration": 24.26,
    "cues": [
-    0.79,
-    7.15,
-    10.59,
-    16.81,
-    22.19
+    0.73,
+    7.07,
+    10.53,
+    16.75,
+    22.13
    ],
    "words": "because the dead ears missed something later measurements in living animals showed the membrane responding far more strongly to quiet sounds and far more sharply tuned than anything in b k sy's cadavers and that extra sensitivity faded when the animal died something in a living cochlea was adding energy",
-   "change_every_s": 4.8
+   "change_every_s": 4.9
   },
   {
    "id": "S19",
@@ -558,17 +563,17 @@
     "3.8"
    ],
    "asset": null,
-   "start": 240.53,
-   "end": 262.01,
-   "duration": 21.48,
+   "start": 247.99,
+   "end": 269.29,
+   "duration": 21.3,
    "cues": [
-    2.57,
-    9.23,
-    18.47,
-    19.7
+    2.78,
+    9.09,
+    18.35,
+    19.55
    ],
    "words": "someone had predicted exactly this in nineteen forty eight a young cambridge physicist thomas gold argued that the ear must contain an amplifier something actively pumping energy in to overcome the damping of the fluid hardly anyone took it up the idea was largely forgotten for about thirty years",
-   "change_every_s": 5.4
+   "change_every_s": 5.3
   },
   {
    "id": "S20",
@@ -589,13 +594,13 @@
     "4.1"
    ],
    "asset": null,
-   "start": 262.01,
-   "end": 278.11,
-   "duration": 16.1,
+   "start": 269.29,
+   "end": 285.43,
+   "duration": 16.14,
    "cues": [
-    2.59,
-    7.01,
-    11.25
+    2.65,
+    7.07,
+    11.31
    ],
    "words": "to find gold's amplifier look at the hair cells the cochlea has two kinds one row of inner hair cells about three and a half thousand of them and usually three rows of outer hair cells roughly three times as many",
    "change_every_s": 5.4
@@ -615,9 +620,9 @@
    "facts": [
     "4.1"
    ],
-   "asset": "S1 NIDCD / Bechara Kachar stereocilia micrograph (federal work, public domain)",
-   "start": 278.11,
-   "end": 283.05,
+   "asset": "NIDCD stereocilia SEM, cochlea, Yoshiyuki Kawashima (Wikimedia Commons, federal work, public domain)",
+   "start": 285.43,
+   "end": 290.37,
    "duration": 4.94,
    "cues": [
     3.11
@@ -645,14 +650,14 @@
     "4.3"
    ],
    "asset": null,
-   "start": 283.05,
-   "end": 295.35,
-   "duration": 12.3,
+   "start": 290.37,
+   "end": 302.71,
+   "duration": 12.34,
    "cues": [
     2.47,
     4.09,
     7.03,
-    10.53
+    10.55
    ],
    "words": "when the membrane moves the stereocilia bend that opens tiny channels at their tips charged particles rush in and the cell makes an electrical signal for the hearing nerve",
    "change_every_s": 3.1
@@ -679,14 +684,14 @@
     "4.2"
    ],
    "asset": null,
-   "start": 295.35,
-   "end": 315.53,
+   "start": 302.71,
+   "end": 322.89,
    "duration": 20.18,
    "cues": [
-    2.31,
-    2.77,
-    16.09,
-    18.75
+    2.69,
+    3.01,
+    16.07,
+    18.71
    ],
    "words": "now here's the strange part about ninety five percent of the fibres in your hearing nerve carry signals from the inner hair cells only about five percent connect to the outer hair cells so three quarters of your hair cells barely talk to the brain what are they for",
    "change_every_s": 5.0
@@ -713,18 +718,18 @@
     "4.4"
    ],
    "asset": null,
-   "start": 315.53,
-   "end": 332.59,
-   "duration": 17.06,
+   "start": 322.89,
+   "end": 346.47,
+   "duration": 23.58,
    "cues": [
-    4.87,
-    6.99,
-    10.83,
-    12.07,
-    15.55
+    10.95,
+    13.69,
+    17.31,
+    18.69,
+    22.15
    ],
-   "words": "in nineteen eighty five william brownell and his colleagues found out they took outer hair cells out of the ear and applied a current the cells physically changed length shorter one way longer the other they're not just sensors they're motors",
-   "change_every_s": 3.4
+   "words": "in nineteen eighty five william brownell found a big clue he was a hearing researcher from the university of florida working in a lab in geneva switzerland he and his colleagues took outer hair cells out of animal ears and applied a current the cells physically changed length shorter one way longer the other they're not just sensors they're motors",
+   "change_every_s": 4.7
   },
   {
    "id": "S25",
@@ -745,16 +750,16 @@
     "4.5"
    ],
    "asset": null,
-   "start": 332.59,
-   "end": 343.65,
-   "duration": 11.06,
+   "start": 346.47,
+   "end": 357.75,
+   "duration": 11.28,
    "cues": [
-    4.09,
-    8.73,
-    10.01
+    4.17,
+    8.81,
+    10.13
    ],
    "words": "in two thousand researchers at northwestern university found the protein that drives them they named it prestin after the musical marking presto fast",
-   "change_every_s": 3.7
+   "change_every_s": 3.8
   },
   {
    "id": "S26",
@@ -776,16 +781,16 @@
     "4.6"
    ],
    "asset": null,
-   "start": 343.65,
-   "end": 357.43,
-   "duration": 13.78,
+   "start": 357.75,
+   "end": 371.37,
+   "duration": 13.62,
    "cues": [
-    6.27,
-    7.79,
-    11.43
+    6.11,
+    7.63,
+    11.27
    ],
    "words": "and fast they are in lab tests on isolated cells outer hair cells kept changing length in step with the signal tens of thousands of times a second faster than the highest pitch you can hear",
-   "change_every_s": 4.6
+   "change_every_s": 4.5
   },
   {
    "id": "S27",
@@ -807,14 +812,14 @@
     "4.7"
    ],
    "asset": null,
-   "start": 357.43,
-   "end": 369.83,
-   "duration": 12.4,
+   "start": 371.37,
+   "end": 383.81,
+   "duration": 12.44,
    "cues": [
     0.3,
-    5.7,
-    6.71,
-    9.57
+    5.72,
+    6.73,
+    9.59
    ],
    "words": "by pushing on the membrane in time with the sound they boost the faintest vibrations roughly a hundredfold and sharpen the tuning they turn up whispers much more than shouts",
    "change_every_s": 3.1
@@ -839,13 +844,13 @@
     "4.8"
    ],
    "asset": null,
-   "start": 369.83,
-   "end": 382.73,
-   "duration": 12.9,
+   "start": 383.81,
+   "end": 396.69,
+   "duration": 12.88,
    "cues": [
-    1.07,
-    5.7,
-    10.27
+    1.09,
+    5.68,
+    10.23
    ],
    "words": "the proof came from mice mice engineered without prestin lost that movement and became forty to sixty decibels less sensitive even though their hair cells could still sense motion",
    "change_every_s": 4.3
@@ -869,12 +874,12 @@
     "4.7"
    ],
    "asset": null,
-   "start": 382.73,
-   "end": 388.27,
-   "duration": 5.54,
+   "start": 396.69,
+   "end": 402.27,
+   "duration": 5.58,
    "cues": [
     1.39,
-    3.33
+    3.31
    ],
    "words": "gold was right the ear isn't a microphone it has an amplifier built in",
    "change_every_s": 2.8
@@ -899,14 +904,14 @@
     "5.1"
    ],
    "asset": null,
-   "start": 388.27,
-   "end": 408.59,
-   "duration": 20.32,
+   "start": 402.27,
+   "end": 422.49,
+   "duration": 20.22,
    "cues": [
-    3.88,
-    8.95,
-    16.11,
-    13.87
+    3.84,
+    8.93,
+    16.07,
+    13.83
    ],
    "words": "and amplifiers have a side effect in nineteen seventy eight david kemp a physicist working at a london ear hospital played clicks into people's ears and recorded what came back a few milliseconds later a faint sound came back out of the ear made inside the cochlea",
    "change_every_s": 5.1
@@ -929,15 +934,15 @@
     "5.1"
    ],
    "asset": null,
-   "start": 408.59,
-   "end": 415.25,
-   "duration": 6.66,
+   "start": 422.49,
+   "end": 429.23,
+   "duration": 6.74,
    "cues": [
-    0.95,
-    3.35
+    0.97,
+    3.41
    ],
    "words": "it was there in every normal ear he tested and missing in ears with cochlear deafness",
-   "change_every_s": 3.3
+   "change_every_s": 3.4
   },
   {
    "id": "S32",
@@ -957,12 +962,12 @@
     "5.2"
    ],
    "asset": null,
-   "start": 415.25,
-   "end": 427.75,
-   "duration": 12.5,
+   "start": 429.23,
+   "end": 441.71,
+   "duration": 12.48,
    "cues": [
-    4.37,
-    7.83,
+    4.33,
+    7.81,
     10.85
    ],
    "words": "the same outer hair cell activity that boosts incoming sound sends a tiny wave back out through the middle ear to the eardrum where a sensitive microphone can pick it up",
@@ -972,11 +977,12 @@
    "id": "S33",
    "beat": 5,
    "anchor": "these are otoacoustic emissions",
-   "tool": "archival",
-   "visual": "Back to the newborn screening photo (another frame from the same PD set) with the S03 diagram overlaid faintly; 'PASS' style tick (chalk, not a medical UI) and the 98/100 figure.",
+   "tool": "motion-canvas",
+   "visual": "The probe-in-canal diagram again (smaller, left), violet rings from inside the ear looping out to the probe; check mark for 'checks the ear, not the nerve'; 98-of-100 dot grid. No photo (Michael 2026-11-13).",
    "changes": [
-    "photo returns on 'newborn test'",
-    "overlay on 'outer hair cells'",
+    "diagram returns on 'newborn test'",
+    "check and label on 'outer hair cells'",
+    "nerve-test note on 'different test'",
     "98 of 100 on 'ninety-eight'"
    ],
    "text": [
@@ -988,17 +994,18 @@
     "1.4",
     "1.5"
    ],
-   "asset": "P2-P4 same USAF public-domain set",
-   "start": 427.75,
-   "end": 457.73,
-   "duration": 29.98,
+   "asset": null,
+   "start": 441.71,
+   "end": 471.79,
+   "duration": 30.08,
    "cues": [
     3.29,
-    7.99,
+    7.97,
+    17.75,
     24.36
    ],
    "words": "these are otoacoustic emissions and that's what the newborn test is listening for a clear response means the outer hair cells and the middle ear are working it's a check of the ear not the hearing nerve so when the nerve is the question babies get a different test that measures how the nerve and brainstem respond in twenty twenty about ninety eight out of every hundred babies born in the united states were screened",
-   "change_every_s": 10.0
+   "change_every_s": 7.5
   },
   {
    "id": "S34",
@@ -1022,14 +1029,14 @@
     "5.5"
    ],
    "asset": null,
-   "start": 457.73,
-   "end": 485.83,
-   "duration": 28.1,
+   "start": 471.79,
+   "end": 499.87,
+   "duration": 28.08,
    "cues": [
-    0.45,
-    5.21,
-    15.99,
-    24.03
+    0.35,
+    5.15,
+    15.89,
+    23.93
    ],
    "words": "and many healthy ears go further with no sound going in at all they give off faint steady tones spontaneous otoacoustic emissions more than half of people with normal hearing have at least one newborns included and they're more common in women than in men they're very quiet usually far too faint for you to notice here's a simulation of one turned up until you can hear it",
    "change_every_s": 7.0
@@ -1053,16 +1060,16 @@
     "6.1"
    ],
    "asset": null,
-   "start": 485.83,
-   "end": 499.57,
-   "duration": 13.74,
+   "start": 499.87,
+   "end": 513.41,
+   "duration": 13.54,
    "cues": [
-    2.45,
-    7.11,
+    2.39,
+    7.03,
     11.57
    ],
    "words": "an amplifier this good comes at a cost long or repeated exposure to sound at or above eighty five decibels can damage hearing the louder the sound the less time it takes",
-   "change_every_s": 4.6
+   "change_every_s": 4.5
   },
   {
    "id": "S36",
@@ -1082,12 +1089,12 @@
     "6.5"
    ],
    "asset": null,
-   "start": 499.57,
-   "end": 514.09,
-   "duration": 14.52,
+   "start": 513.41,
+   "end": 528.07,
+   "duration": 14.66,
    "cues": [
-    2.83,
-    6.39
+    2.95,
+    6.55
    ],
    "words": "and outer hair cells the amplifiers are among the first cells loud noise destroys high pitches usually go first the most hair cell loss shows up at the high frequency end the base of the cochlea",
    "change_every_s": 7.3
@@ -1109,12 +1116,12 @@
     "6.6"
    ],
    "asset": null,
-   "start": 514.09,
-   "end": 530.71,
-   "duration": 16.62,
+   "start": 528.07,
+   "end": 544.71,
+   "duration": 16.64,
    "cues": [
-    2.23,
-    9.53
+    2.19,
+    9.51
    ],
    "words": "lose the outer hair cells and you lose the amplifier in animal studies hearing became about fifty decibels less sensitive and the sharp tuning blurred quiet sounds vanish sounds close in pitch become harder to tell apart",
    "change_every_s": 8.3
@@ -1138,13 +1145,13 @@
     "6.4"
    ],
    "asset": null,
-   "start": 530.71,
-   "end": 549.71,
-   "duration": 19.0,
+   "start": 544.71,
+   "end": 563.59,
+   "duration": 18.88,
    "cues": [
-    5.01,
-    13.47,
-    17.75
+    4.97,
+    13.43,
+    17.69
    ],
    "words": "and here's the hard part in humans and in mammals generally lost hair cells don't grow back the damage is permanent birds are different in nineteen eighty eight two research teams showed that birds regrow their hair cells after noise damage we can't",
    "change_every_s": 6.3
@@ -1165,14 +1172,14 @@
     "6.1"
    ],
    "asset": null,
-   "start": 549.71,
-   "end": 560.81,
-   "duration": 11.1,
+   "start": 563.59,
+   "end": 574.75,
+   "duration": 11.16,
    "cues": [
-    9.25
+    9.29
    ],
    "words": "for long days around loud sound the us workplace safety agency recommends a limit of eighty five decibels averaged over an eight hour shift",
-   "change_every_s": 11.1
+   "change_every_s": 11.2
   },
   {
    "id": "S40",
@@ -1193,17 +1200,17 @@
     "5.4"
    ],
    "asset": null,
-   "start": 560.81,
-   "end": 580.97,
-   "duration": 20.16,
+   "start": 574.75,
+   "end": 594.99,
+   "duration": 20.24,
    "cues": [
-    4.31,
-    7.01,
-    15.41,
-    18.27
+    4.33,
+    7.03,
+    15.43,
+    18.31
    ],
    "words": "so the next time it's quiet really quiet remember what's going on inside your head a row of tiny motors pushing back against every sound you hear tens of thousands of times a second turning whispers up sharpening every note and quietly singing back",
-   "change_every_s": 5.0
+   "change_every_s": 5.1
   },
   {
    "id": "S41",
@@ -1219,14 +1226,14 @@
    ],
    "facts": [],
    "asset": null,
-   "start": 580.97,
-   "end": 591.08,
-   "duration": 10.11,
+   "start": 594.99,
+   "end": 605.0,
+   "duration": 10.01,
    "cues": [
-    3.83
+    3.75
    ],
    "words": "your ear was never a microphone it was designed otherwise next time on designed otherwise",
-   "change_every_s": 10.1
+   "change_every_s": 10.0
   }
  ]
 }

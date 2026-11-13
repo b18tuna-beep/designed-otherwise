@@ -1073,6 +1073,50 @@
   "notes": "Brownell's paper was on cells isolated from 'the mammalian inner ear' (guinea pig in the original, not stated in the abstract; don't name the animal). Pronunciation: BROWN-ell. The abstract says the length changes 'could significantly influence the mechanics of the cochlear partition'; the amplifier role was a hypothesis in 1985, later supported (4.6, 4.8)."
  },
  {
+  "id": "4.4a",
+  "beat": 4,
+  "claim": "In 1985 William E. Brownell, a hearing researcher from the University of Florida, made the outer-hair-cell electromotility observation while on sabbatical in the laboratory of Bertrand and Bader at the University of Geneva, Switzerland.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Kachar B, Brownell WE, Altschuler R, Fex J. Electrokinetic shape changes of cochlear outer hair cells. Nature 1986;322:365-368",
+    "publisher": "Nature (paper)",
+    "url": "https://www.nature.com/articles/322365a0",
+    "type": "paper",
+    "quote": "William E. Brownell: Departments of Neuroscience and Surgery (ENT), University of Florida, Box J-244, Gainesville, Florida, 32610, USA",
+    "locator": "Author information",
+    "opened": true
+   },
+   {
+    "title": "Brownell WE. What is electromotility? The history of its discovery and its relevance to acoustics. Acoustics Today, Spring 2017",
+    "publisher": "Acoustical Society of America (magazine, first-person history)",
+    "url": "https://acousticstoday.org/issues/2017AT/2017Spring/files/basic-html/page26.html",
+    "type": "article",
+    "quote": "in the medical school laboratories of Daniel Bertrand and Charles Bader at the University of Geneva ... where I was taking a sabbatical from the University of Florida",
+    "locator": "pp. 26 and 28",
+    "opened": true
+   },
+   {
+    "title": "Brownell WE, Kachar B. Outer hair cell motility: a possible electro-kinetic mechanism. In: Peripheral Auditory Mechanisms, Springer 1986",
+    "publisher": "Springer (book chapter)",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-642-50038-1_45",
+    "type": "paper",
+    "quote": "University of Florida, Departments of Neuroscience and Surgery (ENT), Gainesville, FL, USA",
+    "locator": "Author affiliations",
+    "opened": true
+   },
+   {
+    "title": "William E. Brownell (biography)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/William_E._Brownell",
+    "type": "reference",
+    "quote": "a biophysicist who studies the mechanics of mammalian hearing",
+    "locator": "Lead",
+    "opened": true
+   }
+  ]
+ },
+ {
   "id": "4.5",
   "beat": 4,
   "claim": "In 2000 Peter Dallos's group at Northwestern University identified the motor protein that drives this movement and named it prestin, after the musical marking presto (fast).",
