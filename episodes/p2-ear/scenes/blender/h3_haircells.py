@@ -196,9 +196,9 @@ if MODE == "h3":
         tx = lerp(WIDE_PT[0], HERO_PT[0], u)
         ty = lerp(WIDE_PT[1], HERO_PT[1], seg(t, 6.0, DUR - 0.5))
         tz = lerp(WIDE_PT[2], HERO_PT[2], seg(t, 6.0, DUR - 0.5))
-        dist = math.exp(lerp(math.log(lerp(370.0, 355.0, seg(t, 0, 2.45))), math.log(62.0), w))
-        el = lerp(64.0, 34.0, seg(t, 4.0, DUR - 0.5))
-        az = lerp(-2.0, -18.0, u)
+        dist = math.exp(lerp(math.log(lerp(370.0, 355.0, seg(t, 0, 2.45))), math.log(82.0), w))
+        el = lerp(64.0, 47.0, seg(t, 4.0, DUR - 0.5))
+        az = lerp(-2.0, -12.0, u)
         cam_ = ((tx, ty, tz), dist, el, az)
         if HIGHLIGHT:   # optional; by default the 2D overlay does the row highlights
             inner_focus = seg(t, 6.85, 7.45) * (1 - seg(t, 11.1, 11.7))
