@@ -18,3 +18,9 @@ Reference: `episodes/p1-refrigerator/script/`, `board/`, `scenes/`.
 
 ## Packaging
 - Titles and thumbnails: `style/packaging.md`. Three thumbnails (`tools/board/thumbs.py`), Michael picks; the title is approved by him.
+
+## Michael's standing notes (from P2 checkpoint 3, 2026-11-13)
+- Open with a hook, not a photo. The first seconds are a lead-in that makes the viewer curious (a claim about *them*, shown as our own animation), then the intro sting. Never open on a stock or archival photo, and no baby photos as an opener.
+- Every named person gets one line on who they were (role and where they worked at the time), checked like any other claim.
+- First line of the cold open gets a 1 s beat after it (from P1).
+- The checkpoint-3 animatic includes the intro sting at the end of the cold open, so the hook-to-intro hand-off can be judged. Build it with `tools/board/animatic.py`; 2D scenes are held stills, 3D heroes play with their overlays.
