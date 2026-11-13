@@ -174,8 +174,8 @@ export const ANIM: Record<string, () => Built> = {
         <Node x={-330}>
           <ProfileHead opacity={0.55} />
           <EarPulse on={o} far={far} />
-          <Small text="your ear, right now" x={214} y={300} color={C.chalk} opacity={cap} />
         </Node>
+        <Small text="your ear, right now" x={560} y={-200} color={C.chalk} opacity={cap} />
         <ToneTrace x={560} y={-20} opacity={tr} />
       </Node>,
       steps: [
@@ -1043,7 +1043,7 @@ export const ANIM: Record<string, () => Built> = {
           <Label text="checks the ear, not the nerve" x={140} y={-170} offset={[-1, 0]} size={40} spacing={1} />
           <Line points={[[260, -70], [300, -30], [380, -120]]} stroke={C.chalk} lineWidth={LW.emphasis + 2} lineCap="round" lineJoin="round" end={tick} />
         </Node>,
-        <Small text="the nerve gets a different test" x={140} y={-30} offset={[-1, 0]} color={C.chalk} />,
+        <Small text="the nerve gets a different test" x={140} y={340} offset={[-1, 0]} color={C.muted} />,
         <Node>
           {Array.from({length: 100}, (_, i) => (
             <Circle x={220 + (i % 10) * 26} y={40 + Math.floor(i / 10) * 26} size={16} fill={i < 98 ? C.chalk : null}
