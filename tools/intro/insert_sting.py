@@ -35,6 +35,8 @@ def shift_srt(src, dst, cut, by):
     out = []
     for block in open(src, encoding="utf-8").read().strip().split("\n\n"):
         lines = block.split("\n")
+        if len(lines) < 2 or "-->" not in lines[1]:  # empty file or stray text: nothing to shift
+            continue
         a, b = [parse(x.strip()) for x in lines[1].split("-->")]
         if a >= cut:
             a, b = a + by, b + by
