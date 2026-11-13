@@ -190,14 +190,16 @@ if MODE == "h3":
     WIDE_PT = np.array([10.0, 25.0, 12.0])
 
     def state(t):
-        u = seg(t, 2.45, DUR - 0.5)                  # travel, eased in and out
-        w = float(smoothstep(0.0, 1.0, u))
+        # one gentle ease over the whole travel (no compounded easing, so the
+        # first half visibly moves too); log-distance gives an even-feeling push
+        u = float(smoothstep(2.45, DUR - 0.4, t))
+        w = u
         # lateral travel leads, the descent onto the tuft follows (both eased)
         tx = lerp(WIDE_PT[0], HERO_PT[0], u)
-        ty = lerp(WIDE_PT[1], HERO_PT[1], seg(t, 6.0, DUR - 0.5))
-        tz = lerp(WIDE_PT[2], HERO_PT[2], seg(t, 6.0, DUR - 0.5))
+        ty = lerp(WIDE_PT[1], HERO_PT[1], float(smoothstep(4.0, DUR - 0.4, t)))
+        tz = lerp(WIDE_PT[2], HERO_PT[2], float(smoothstep(4.0, DUR - 0.4, t)))
         dist = math.exp(lerp(math.log(lerp(370.0, 355.0, seg(t, 0, 2.45))), math.log(82.0), w))
-        el = lerp(64.0, 47.0, seg(t, 4.0, DUR - 0.5))
+        el = lerp(64.0, 47.0, float(smoothstep(3.0, DUR - 0.4, t)))
         az = lerp(-2.0, -12.0, u)
         cam_ = ((tx, ty, tz), dist, el, az)
         if HIGHLIGHT:   # optional; by default the 2D overlay does the row highlights
