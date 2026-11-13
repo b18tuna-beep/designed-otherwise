@@ -43,8 +43,9 @@ def on_panel(im, size, fill=0.86):
 
 
 def chalk_on_slate(im):
-    """Black-on-white plate -> chalk lines on the panel colour."""
+    """Black-on-white plate -> chalk lines on the panel colour, trimmed to the drawing."""
     g = ImageOps.grayscale(im.convert("RGB"))
+    g = g.crop(ImageOps.invert(g).point(lambda v: 255 if v > 40 else 0).getbbox())
     return ImageOps.colorize(g, black=CHALK, white=BG)
 
 
@@ -58,7 +59,7 @@ def main():
         # Still sizes (w x h) from anim.tsx, rendered at 2x for the 1080p frame
         "newborn-screen-1.png": (crop_frac(navy, (0.0, 0.535, 1.0, 0.923), (2360, 1380)), "n1_navy_newborn_hearing", "S01"),
         "newborn-screen-2.png": (crop_frac(navy, (0.20, 0.655, 0.72, 0.905), (1720, 1240)), "n1_navy_newborn_hearing", "S33"),
-        "grays-1918-ossicles.png": (on_panel(chalk_on_slate(Image.open(os.path.join(src, "gray919_ossicles.png"))), (1840, 1160)),
+        "grays-1918-ossicles.png": (on_panel(chalk_on_slate(Image.open(os.path.join(src, "gray919_ossicles.png"))), (1840, 1160), 0.97),
                                     "gray919_ossicles", "S07"),
         "stereocilia-sem.png": (on_panel(Image.open(os.path.join(src, "s1_stereocilia_cochlea_kawashima.jpg")).convert("RGB"), (2120, 1120), 0.94),
                                 "s1_stereocilia_cochlea_kawashima", "S21"),

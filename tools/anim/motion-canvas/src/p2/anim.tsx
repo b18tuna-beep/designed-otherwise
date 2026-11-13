@@ -992,8 +992,8 @@ export const ANIM: Record<string, () => Built> = {
       steps: [
         <Still x={-390} y={0} name="newborn-screen-2.png" w={860} h={620} caption="U.S. Navy photo, probe at the ear (public domain)" />,
         <Node>
-          <Node x={-390} y={0} scale={0.42} opacity={0.4}>
-            <ProbeCanal />
+          {/* the ear's answer rings out from the probe tip in the photo (the faint diagram overlay sat on the baby's face) */}
+          <Node x={-405 - 480 * 0.42} y={-5 - 10 * 0.42} scale={0.42} opacity={0.9}>
             <Rings a={480} b={-470} y={10} n={2} period={2.6} size={170} color={V} width={LW.emphasis} />
           </Node>
           <Label text="checks the ear, not the nerve" x={140} y={-170} offset={[-1, 0]} size={40} spacing={1} />
