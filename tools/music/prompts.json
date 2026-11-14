@@ -1,0 +1,15 @@
+{
+  "_about": "Instrumental music beds generated with ACE-Step 1.5 (MIT licence, commercial use allowed; github.com/ace-step/ACE-Step-1.5). Replaces the repetitive second-half bed (Michael 2026-11-14). Outputs go to the PRIVATE studio release music-candidates, never this repo.",
+  "undercurrent": {
+    "caption": "minimal ambient electronic underscore for a science documentary, slow pulsing analog synth bass, soft repeating arpeggio, warm evolving pads, curious and quietly tense, steady, no drums, no vocals, instrumental",
+    "bpm": 90, "keyscale": "D minor"
+  },
+  "mechanism": {
+    "caption": "cinematic documentary underscore, ticking plucked synth ostinato, low sustained drone, subtle cello-like swells, gradual build, mysterious and focused, light electronic pulse, no vocals, instrumental",
+    "bpm": 100, "keyscale": "A minor"
+  },
+  "clockwork": {
+    "caption": "inquisitive explainer video background music, music box and marimba motif, soft analog synth pad, light minimal electronic percussion, gentle curiosity with a hint of tension, no vocals, instrumental",
+    "bpm": 84, "keyscale": "E minor"
+  }
+}
