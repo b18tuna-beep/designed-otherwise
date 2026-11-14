@@ -14,9 +14,9 @@ on:
         description: "Episode folder name"
         default: p1-refrigerator
       project:
-        description: "episode | overlays"
+        description: "Motion Canvas project: episode | overlays (P1) or <ep>-episode | <ep>-overlays (p2-episode, p2-overlays)"
         type: choice
-        options: [episode, overlays]
+        options: [episode, overlays, p2-episode, p2-overlays]
         default: episode
       chunks:
         description: "Parallel runners for project=episode (overlays always uses 1)"
@@ -39,12 +39,12 @@ jobs:
           python3 - <<'EOF' >> "$GITHUB_OUTPUT"
           import json, os
           ep, project = os.environ["EP"], os.environ["PROJECT"]
-          k = int(os.environ["CHUNKS"]) if project == "episode" else 1
+          k = int(os.environ["CHUNKS"]) if project.endswith("episode") else 1
           total = json.load(open(f"episodes/{ep}/scenes/scenes.json"))["total_s"]
           n = round(total * 30)
           size = -(-n // k)
           chunks = [{"i": i, "f0": a, "f1": min(a + size, n)} for i, a in enumerate(range(0, n, size))]
-          if project != "episode":
+          if not project.endswith("episode"):
               chunks = [{"i": 0, "f0": 0, "f1": 0}]
           print("matrix=" + json.dumps({"chunk": chunks}))
           print(f"total_frames={n}")
@@ -72,7 +72,7 @@ jobs:
           F1: ${{ matrix.chunk.f1 }}
           RENDER_TIMEOUT_MIN: "100"
         run: |
-          if [ "$PROJECT" = "episode" ]; then
+          if [[ "$PROJECT" == *episode ]]; then
             export RANGE="$(python3 -c "import os; print(f\"{int(os.environ['F0'])/30:.6f},{int(os.environ['F1'])/30:.6f}\")")"
             echo "range $RANGE s"
           fi
@@ -87,7 +87,7 @@ jobs:
           F0: ${{ matrix.chunk.f0 }}
           F1: ${{ matrix.chunk.f1 }}
         run: |
-          if [ "$PROJECT" = "episode" ]; then
+          if [[ "$PROJECT" == *episode ]]; then
             name=$(printf 'chunk-%02d.mp4' "$I")
             python3 tools/anim/encode_chunk.py out/frames $((F1 - F0)) "out/$name"
             bash tools/ci/studio.sh release "episode-$EP" "out/$name"
@@ -98,7 +98,7 @@ jobs:
 
   stitch:
     needs: [plan, render]
-    if: inputs.project == 'episode'
+    if: endsWith(inputs.project, 'episode')
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:

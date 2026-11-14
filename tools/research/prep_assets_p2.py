@@ -2,12 +2,11 @@
 
     python tools/research/prep_assets_p2.py <dir with fetch_assets.py output>
 
-Writes episodes/p2-ear/scenes/assets/*.png (git-ignored: originals come from the studio release `assets-p2-ear`)
+Writes episodes/p2-ear/scenes/assets/*.png (committed: public domain, small; originals in the studio release `assets-p2-ear`)
 and episodes/p2-ear/scenes/assets/credits.json. The <Still> node stretches to its w x h, so every output
 matches the aspect of the Still that loads it (see src/p2/anim.tsx).
 
-  newborn-screen-1.png  S01  U.S. Navy photo, Naples newborn hearing check: wide crop on gloved hands, probe, baby
-  newborn-screen-2.png  S33  same photo, tight crop on the probe at the ear
+  (newborn photos dropped 2026-11-13, Michael: no photo opening; S01/S33 are diagrams now)
   grays-1918-ossicles   S07  Gray's fig. 919, inverted to chalk line art on slate
   stereocilia-sem.png   S21  NIDCD cochlear stereocilia SEM (Kawashima), centred on a slate panel
 The USAF "New Born Hearing Test" photo shows ear-coupler (ABR, nerve) screening, not OAE, so it is not used.
@@ -53,12 +52,9 @@ def main():
     src = sys.argv[1]
     os.makedirs(OUT, exist_ok=True)
     lic = {x["name"]: x for x in json.load(open(os.path.join(src, "licenses.json")))}
-    navy = Image.open(os.path.join(src, "n1_navy_newborn_hearing.jpg")).convert("RGB")
 
     jobs = {
         # Still sizes (w x h) from anim.tsx, rendered at 2x for the 1080p frame
-        "newborn-screen-1.png": (crop_frac(navy, (0.0, 0.535, 1.0, 0.923), (2360, 1380)), "n1_navy_newborn_hearing", "S01"),
-        "newborn-screen-2.png": (crop_frac(navy, (0.20, 0.655, 0.72, 0.905), (1720, 1240)), "n1_navy_newborn_hearing", "S33"),
         "grays-1918-ossicles.png": (on_panel(chalk_on_slate(Image.open(os.path.join(src, "gray919_ossicles.png"))), (1840, 1160), 0.97),
                                     "gray919_ossicles", "S07"),
         "stereocilia-sem.png": (on_panel(Image.open(os.path.join(src, "s1_stereocilia_cochlea_kawashima.jpg")).convert("RGB"), (2120, 1120), 0.94),
