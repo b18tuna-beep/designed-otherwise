@@ -125,4 +125,4 @@ jobs:
         run: |
           bash tools/ci/studio.sh release "episode-$EP" out/episode.mp4
           bash tools/ci/studio.sh drop "episode-$EP" $(cd in && ls chunk-*.mp4)
-          bash tools/ci/studio.sh preview "episode/$EP/run-${{ github.run_id }}" out/still-*.jpg
+          bash tools/ci/studio.sh preview "episode/$EP/run-${{ github.run_id }}" out/still-*.jpg || echo "::warning title=Previews::stills not published (optional)"
