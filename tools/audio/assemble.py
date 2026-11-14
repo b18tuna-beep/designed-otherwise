@@ -1,6 +1,9 @@
-"""Assemble FPI P1: silent animation + narration + ducked music + captions, then run checks.
+"""Assemble an episode: silent animation + narration + ducked music + captions, then run checks.
 
-    python tools/audio/assemble.py <video.mp4> <narration.flac> <out_dir>
+    python tools/audio/assemble.py <video.mp4> <narration.flac|wav> <out_dir> [episode]   (episode defaults to p1-refrigerator)
+
+The music plan is episodes/<ep>/audio/music.json: [{"file": "<name in assets/music>", "from_beat": 1}, ...] (two tracks,
+crossfaded at the start of the second track's beat); without it the P1 plan below is used.
 
 Writes out_dir/final.mp4, captions.srt, mix.wav, checks.json. Exit 1 if any check fails.
 Music plan: Dreamscape under beats 1-4, Frame-Dragging under beats 5-7, 2 s crossfade,
@@ -14,11 +17,15 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-EP = os.path.join(ROOT, "episodes", "p1-refrigerator")
+EP = os.path.join(ROOT, "episodes", sys.argv[4] if len(sys.argv) > 4 else "p1-refrigerator")
+MUSIC_DIR = os.environ.get("MUSIC_DIR", os.path.join(ROOT, "assets", "music"))
 sys.path.insert(0, HERE)
 from mix import duration, loudness, mix, music_bed, sh  # noqa: E402
 
 MUSIC = [("Dreamscape - Density & Time.mp3", 1), ("Frame-Dragging - The Grey Room & Density & Time.mp3", 5)]
+_plan = os.path.join(EP, "audio", "music.json")
+if os.path.exists(_plan):
+    MUSIC = [(m["file"], m["from_beat"]) for m in json.load(open(_plan))]
 
 
 def norm(s):
@@ -108,10 +115,10 @@ def main():
     sh("ffmpeg", "-y", "-loglevel", "error", "-i", narration, "-af", f"apad=whole_dur={vdur:.3f}", "-t", f"{vdur:.3f}",
        "-ar", "48000", "-ac", "1", narr)
 
-    # music: one bed per half, crossfaded at the start of beat 5
-    split = next(s["start"] for s in scenes["scenes"] if s["beat"] == 5)
-    a = music_bed(os.path.join(ROOT, "assets", "music", MUSIC[0][0]), split + 1.0, os.path.join(out, "music-a.wav"))
-    b = music_bed(os.path.join(ROOT, "assets", "music", MUSIC[1][0]), vdur - split + 1.0, os.path.join(out, "music-b.wav"))
+    # music: one bed per half, crossfaded at the start of the second track's beat
+    split = next(s["start"] for s in scenes["scenes"] if s["beat"] == MUSIC[1][1])
+    a = music_bed(os.path.join(MUSIC_DIR, MUSIC[0][0]), split + 1.0, os.path.join(out, "music-a.wav"))
+    b = music_bed(os.path.join(MUSIC_DIR, MUSIC[1][0]), vdur - split + 1.0, os.path.join(out, "music-b.wav"))
     bed = os.path.join(out, "music.wav")
     sh("ffmpeg", "-y", "-loglevel", "error", "-i", a, "-i", b, "-filter_complex",
        "[0:a][1:a]acrossfade=d=2:c1=tri:c2=tri[m]", "-map", "[m]", "-t", f"{vdur:.3f}", bed)
