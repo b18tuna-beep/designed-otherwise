@@ -1,0 +1,39 @@
+{
+ "_style": {
+  "glow": [
+   40,
+   26,
+   70
+  ]
+ },
+ "s1": {
+  "title": "Your ears are making a sound right now",
+  "description": "And hospitals use it to test almost every newborn.\n\n#Shorts #howthingswork #science",
+  "start": 0,
+  "end": 48.52
+ },
+ "s2": {
+  "title": "Why your ears need bones at all",
+  "description": "Air to fluid loses 99.9% of the sound. A stiletto heel fixes it.\n\n#Shorts #howthingswork #science",
+  "start": 83.49,
+  "end": 125.16
+ },
+ "s3": {
+  "title": "Scientists studied dead ears and missed this",
+  "description": "A living cochlea does something a dead one can't.\n\n#Shorts #howthingswork #science",
+  "start": 211.83,
+  "end": 250.72
+ },
+ "s4": {
+  "title": "Your ears are full of tiny motors",
+  "description": "Outer hair cells change length tens of thousands of times a second.\n\n#Shorts #howthingswork #science",
+  "start": 326.09,
+  "end": 374.36
+ },
+ "s5": {
+  "title": "Birds regrow these. You can't.",
+  "description": "Loud noise destroys the ear's amplifier first, and in mammals it doesn't grow back.\n\n#Shorts #howthingswork #science",
+  "start": 531.27,
+  "end": 566.96
+ }
+}
