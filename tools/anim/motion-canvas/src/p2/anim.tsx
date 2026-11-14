@@ -780,13 +780,13 @@ export const ANIM: Record<string, () => Built> = {
         <Locator focus="cells" />
       </Node>,
       steps: [
-        <Node>
-          <OuterCell x={-330} y={266} s={1} len={L} motor={motor} />
-          <Num text="1985 · Brownell" x={260} y={-160} offset={[-1, 0]} size={46} />
-        </Node>,
+        // Michael 2026-11-13: say who Brownell was; the name and place land as George says them
+        <Num text="1985 · William Brownell" x={260} y={-140} offset={[-1, 0]} size={46} />,
+        <Small text="Univ. of Florida · lab in Geneva" x={260} y={-80} offset={[-1, 0]} color={C.chalk} />,
+        <OuterCell x={-330} y={266} s={1} len={L} motor={motor} />,
         function* () { yield* cur(1, 0.4); },
         <Node>
-          <Small text="electromotility" x={260} y={-95} offset={[-1, 0]} color={V} />
+          <Small text="electromotility" x={260} y={-20} offset={[-1, 0]} color={V} />
           <Line points={[[-270, 42], [-230, 42]]} stroke={C.chalk} lineWidth={LW.structure} />
           <Small text="shorter" x={-210} y={42} offset={[-1, 0]} color={C.chalk} />
         </Node>,
@@ -800,11 +800,11 @@ export const ANIM: Record<string, () => Built> = {
         </Node>,
       ],
       ambient: function* () {
-        yield* waitFor(cue('S24', 2));
+        yield* waitFor(cue('S24', 4));
         yield* all(len(0.8, 0.6, ease), motor(1, 0.6));
-        yield* waitFor(cue('S24', 3) - cue('S24', 2) - 0.6);
+        yield* waitFor(cue('S24', 5) - cue('S24', 4) - 0.6);
         yield* len(1.15, 0.8, ease);
-        yield* waitFor(cue('S24', 4) - cue('S24', 3) - 0.8);
+        yield* waitFor(cue('S24', 6) - cue('S24', 5) - 0.8);
         yield* all(len(1, 0.6, ease), osc(1, 0.6));
       },
     };

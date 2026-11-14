@@ -703,6 +703,8 @@
    "tool": "motion-canvas",
    "visual": "Lab-dish card: an isolated outer hair cell (tall cylinder) between two electrodes; the cell visibly shortens and lengthens with the polarity (violet glow marks the motor).",
    "changes": [
+    "name and year on 'william brownell'",
+    "place on 'university of florida'",
     "cell isolated on 'took outer hair cells out'",
     "current on 'applied a current'",
     "shorter on 'shorter'",
@@ -710,18 +712,22 @@
     "MOTOR stamp on 'motors'"
    ],
    "text": [
-    "1985 · Brownell",
+    "1985 · William Brownell",
+    "Univ. of Florida · lab in Geneva",
     "electromotility",
     "MOTOR"
    ],
    "facts": [
-    "4.4"
+    "4.4",
+    "4.4a"
    ],
    "asset": null,
    "start": 322.89,
    "end": 346.47,
    "duration": 23.58,
    "cues": [
+    2.07,
+    5.75,
     10.95,
     13.69,
     17.31,
@@ -729,7 +735,7 @@
     22.15
    ],
    "words": "in nineteen eighty five william brownell found a big clue he was a hearing researcher from the university of florida working in a lab in geneva switzerland he and his colleagues took outer hair cells out of animal ears and applied a current the cells physically changed length shorter one way longer the other they're not just sensors they're motors",
-   "change_every_s": 4.7
+   "change_every_s": 3.4
   },
   {
    "id": "S25",
