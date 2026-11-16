@@ -1,8 +1,10 @@
 {
- "_note": "Kokoro (misaki) phoneme overrides, applied at synthesis only; the word check still uses the plain script. British phoneme set: Q = əʊ, A = eɪ, I = aɪ. Secondary stress on 'tane' keeps isobutane from drifting toward 'isobutene'. Békésy: Hungarian BAY-kay-shee (é = eɪ, s = ʃ). prestin: PRES-tin; the light second stress keeps it from collapsing to 'Preston'.",
+ "_note": "Kokoro (misaki) phoneme overrides, applied at synthesis only; the word check still uses the plain script. British phoneme set: Q = əʊ, A = eɪ, I = aɪ. Secondary stress on 'tane' keeps isobutane from drifting toward 'isobutene'. Békésy: Hungarian BAY-kay-shee (é = eɪ, s = ʃ). prestin: PRES-tin; the light second stress keeps it from collapsing to 'Preston'. braccia: Italian BRAH-cha (historical length unit). Joly: John Joly, JOH-lee (not 'Jolie').",
  "isobutane": "ˌIsQbjˈuːtˌAn",
  "Békésy": "bˈAkAʃi",
  "prestin": "pɹˈɛsˌtɪn",
  "otoacoustic": "ˌQtˌQəkˈuːstɪk",
- "Georg": "ɡˈAɔːɡ"
+ "Georg": "ɡˈAɔːɡ",
+ "braccia": "bɹˈæʧə",
+ "Joly": "ʤˈQli"
 }
