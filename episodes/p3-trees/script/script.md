@@ -1,6 +1,6 @@
 # Trees Don't Pump Water. They Pull It. (working title)
 
-P3 · Designed Otherwise · Script v1 (2026-11-16)
+P3 · Designed Otherwise · Script v1.1 (2026-11-16, fact-check wording applied: research/factcheck.md, 17 PASS / 33 PASS_WITH_EDIT / 0 FAIL)
 
 Every line ends with the claim ids it relies on (`research/claims.json`; wording follows each claim's notes and the fact check's safe wording). `[none]` = no factual claim. `[A1]` = script addendum claim checked separately (`research/factcheck-addendum.md`). Numbers are spelled the way George will say them.
 Format (inauthentic-content rule): P1 was a paradox explained, P2 a detective story. P3 is an engineering challenge: a brief that every obvious solution fails, then nature's answer.
@@ -25,7 +25,7 @@ So let's try to solve it the way an engineer would. And watch every obvious answ
 First idea. Put a pump at the top and suck the water up, like a straw. [none]
 People tried this for centuries. And in the sixteen-hundreds, pump makers kept hitting the same wall. [2.3]
 Their suction pumps would not raise water past about eighteen braccia. Roughly ten or eleven metres. [2.3]
-Galileo thought about the problem, and got it wrong. He blamed the strength of the vacuum. [2.3]
+Galileo puzzled over the problem, and couldn't explain it. [2.3]
 The answer came in the sixteen-forties from Evangelista Torricelli, Galileo's successor in Florence. [2.3, A1]
 A suction pump doesn't really pull water at all. It lowers the pressure above the water, and the weight of the air outside pushes the water up the pipe. [2.2, 2.3]
 And air can only push so hard. At sea level, it balances a column of water about ten metres tall. [2.1]
@@ -54,13 +54,13 @@ Dip a thin glass tube in water, and the water climbs up it on its own. The narro
 And a tree is full of thin tubes. The wood that carries water, the xylem, is a bundle of microscopic pipes. [4.2]
 But they're not thin enough. The narrowest are a few hundredths of a millimetre wide. The widest, about half a millimetre. [4.2]
 In tubes that size, capillary action lifts water a few centimetres, a few metres at most. [4.3]
-To reach a hundred metres, the pipes would need to be more than a hundred times narrower. [4.3]
+To reach a hundred metres by capillary action alone, even the thinnest pipes would need to be about thirty times narrower. [4.3]
 So. Three good ideas. Three failures. [none]
 And yet, the water gets there. [1.1]
 
 ## 5. Nature's answer: pull from the top (~4:20 to 6:40)
 
-The answer was worked out in the eighteen-nineties by two scientists at Trinity College Dublin. Henry Dixon, a botanist, and John Joly, a physicist. [5.1]
+The explanation most scientists accept today was put forward in the eighteen-nineties by two scientists at Trinity College Dublin. Henry Dixon, a botanist, and John Joly, a physicist. [5.1]
 A key clue came from experiments in Germany. Tall stems that had been killed with poison kept drawing water up. The flow only stopped when the leaves were killed. [5.2]
 So the engine isn't in the trunk. It's in the leaves. [5.2, 5.3]
 Inside every leaf, water evaporates from the wet walls of the cells, and the vapour escapes through tiny pores called stomata. [5.3]
@@ -72,7 +72,7 @@ The whole column rises like a rope pulled from the top. [5.4, 5.5]
 It's called the cohesion-tension theory. [5.1]
 And it means the water inside a tree is in a very strange state. [5.5]
 Its pressure is below zero. Not low. Negative. A liquid being stretched. [5.5]
-In many trees, that pull reaches about twenty times the pressure of the air around you, pulling the wrong way. [5.6]
+In many trees, that pull can reach about twenty times the pressure of the air around you, pulling the wrong way. [5.6]
 Pure water can take it, because in the lab it can be stretched much harder before it snaps. [5.7]
 In nineteen sixty-five, scientists measured that pull with a device now nicknamed the pressure bomb. Seal a cut twig in a chamber, raise the pressure until sap appears at the cut, and you've measured how hard the tree was pulling. [5.8]
 You can even watch it work. On a sunny day, a tree trunk shrinks, very slightly, as the pull squeezes it. At night, it swells back. [5.9]
@@ -83,10 +83,10 @@ It took the best part of a century for the idea to win over its doubters, and a 
 
 But stretched water is risky water. [5.5, 6.1]
 Pull too hard, and the column can snap. A bubble of air forms in a pipe, and the pipe fills with air. It's blocked. [6.1]
-Scientists first picked up the sound of this in the nineteen-sixties, as tiny clicks from thirsty plants. Today, ultrasonic sensors record every one. Each pulse is one bubble. [6.3]
+Scientists first picked up the sound of this in the nineteen-sixties, as tiny clicks from thirsty plants. Today, ultrasonic sensors record them. In lab tests, each pulse matches a single bubble. [6.3]
 So trees are built to contain the damage. [6.4]
 Their pipes connect through tiny pits, and the thin membranes in those pits work like safety valves. Water gets through. Air doesn't. [6.4]
-In conifers, like the redwood, each pit even has a little plug that slams shut when the pipe next door fills with air. [6.4]
+In conifers, each pit even has a little plug that slams shut when the pipe next door fills with air. [6.4]
 But safety has a price. The safer the valve, the harder it is to push water through it. [6.4]
 And in a drought, the pull keeps getting stronger, until air starts forcing its way through the valves. [6.1, 6.2]
 Pipe after pipe fills with air, and the tree's plumbing shuts down. [6.2, 6.6]

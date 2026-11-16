@@ -1,0 +1,2233 @@
+[
+ {
+  "id": "1.1",
+  "verdict": "PASS",
+  "safe_wording": "The tallest known living tree is a coast redwood nicknamed Hyperion, in Redwood National Park, California, found in 2006. It is about 116 metres tall, roughly 380 feet.",
+  "allowed_numbers": [
+   {
+    "value": "about 116",
+    "unit": "m (2019, Hyperion)",
+    "source": "Guinness World Records: 116.07 m by 2019"
+   },
+   {
+    "value": "about 380",
+    "unit": "ft",
+    "source": "Guinness: 380 ft 9.7 in (2019); NBC/Reuters 2006: 379.1 ft"
+   },
+   {
+    "value": "2006",
+    "unit": "year found",
+    "source": "Guinness (25 Aug 2006); NPS Hyperion page; NBC Sept 2006"
+   }
+  ],
+  "do_not_say": [
+   "Do not give the discoverers' names (Chris Atkins, Michael Taylor) as checked fact: Guinness only.",
+   "Do not say Hyperion will always be the tallest: NPS says the title 'will change again in the near future'.",
+   "Do not imply viewers should visit it: NPS says it is off trail and visitors have damaged its base."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.guinnessworldrecords.com/world-records/tallest-tree-living",
+    "opened": true,
+    "quote_found": true,
+    "note": "Guinness World Records: page fetched directly. Quote checked: 'By 2019, the height had grown to 116.07 m (380 ft 9.7 in).'"
+   },
+   {
+    "url": "https://www.nbcnews.com/news/amp/wbna15066332",
+    "opened": true,
+    "quote_found": true,
+    "note": "NBC News: page fetched directly. Quote checked: 'Hyperion, is 379.1 feet tall, besting the previous record holder, the 370.5-foot...'"
+   },
+   {
+    "url": "https://www.nps.gov/redw/planyourvisit/hyperion.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "National Park Service, Redwood National and State Parks: page fetched directly. Quote checked: 'Since its “discovery” in 2006, this tree has been on many tree-enthusiast’s buck...'"
+   },
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'With heights nearing 116 meters, (a) coastal redwoods ( Sequoia sempervirens ) a...'"
+   }
+  ],
+  "note": "Guinness (115.55 m in 2006, 116.07 m by 2019) and NBC/Reuters quoting Sillett (379.1 ft = 115.55 m) agree exactly. OpenStax 'nearing 116 meters' independently. NPS confirms only the 2006 discovery, no height."
+ },
+ {
+  "id": "1.2",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Australia's mountain ash, a kind of eucalyptus, grows almost as tall: the tallest known one, in Tasmania, is about 100 metres.",
+  "allowed_numbers": [
+   {
+    "value": "about 100",
+    "unit": "m (tallest mountain ash)",
+    "source": "Guinness: 99.82 m (2014, near Tahune Airwalk, Tasmania); Treelogic/Forestry Tasmania: Centurion 100-101 m"
+   }
+  ],
+  "do_not_say": [
+   "Do not state 'the tallest flowering plant in the world' as settled: only Treelogic (reproducing a Forestry Tasmania release) says it, Guinness lists a yellow meranti at 98.53 m only 1.3 m shorter, and rankings change with each remeasurement (checker's own knowledge, unsourced: a Sabah meranti called Menara was reported at about 100.8 m in 2019).",
+   "Do not give a precise height (99.82 vs 100-101 m conflict).",
+   "Guinness does not print the name 'Centurion'; the link between the Guinness 99.82 m entry and Centurion is by location only. Use the name only alongside 'about 100 m'."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.guinnessworldrecords.com/world-records/tallest-tree-living",
+    "opened": true,
+    "quote_found": true,
+    "note": "Guinness World Records: page fetched directly. Quote checked: 'Oceania Eucalyptus regnans Mountain ash 99.82 2014 Near Tahune Airwalk, Geevesto...'"
+   },
+   {
+    "url": "https://treelogic.com.au/articles/worlds-tallest-hardwood-tree-found-in-tasmania/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Treelogic Pty Ltd (arboricultural consultancy; reproduces Forestry Tasmania announcement): page fetched directly. Quote checked: 'Centurion becomes the tallest known tree existing in Australia, the tallest Euca...'"
+   }
+  ],
+  "note": "Guinness and Treelogic are independent publishers. Heights differ by about 1 m; 'about 100 m' covers both."
+ },
+ {
+  "id": "1.3",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Douglas-firs can approach 100 metres. Oregon's Doerner Fir was measured at about 99 metres, around 325 feet, until a fire in August 2025 burned roughly 15 metres, about 50 feet, off its top. The tree survived.",
+  "allowed_numbers": [
+   {
+    "value": "about 99",
+    "unit": "m (Doerner Fir before fire)",
+    "source": "Live Science: 325 ft (99.1 m); JPR: 327 ft (2008 measurement)"
+   },
+   {
+    "value": "about 325",
+    "unit": "ft",
+    "source": "Live Science 325 ft; JPR 327 ft"
+   },
+   {
+    "value": "about 50 ft / about 15",
+    "unit": "m lost",
+    "source": "Live Science (BLM via AP): about 50 ft (15 m); JPR: 'likely lost about 50 feet'"
+   },
+   {
+    "value": "August 2025",
+    "unit": "date of fire",
+    "source": "JPR: started Aug. 16; Live Science published 21 Aug 2025"
+   }
+  ],
+  "do_not_say": [
+   "Do not call the Doerner Fir the tallest Douglas-fir now: after the fire JPR says it is no longer even the tallest tree in Oregon.",
+   "Do not say exactly 99.7 m or 327 ft as the only figure; sources differ by 2 ft.",
+   "Do not claim a specific cause of the fire (JPR: still under investigation, lightning ruled out)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.livescience.com/planet-earth/one-of-the-worlds-tallest-trees-the-centuries-old-doerner-fir-is-on-fire-in-oregon",
+    "opened": true,
+    "quote_found": true,
+    "note": "Live Science: page fetched directly. Quote checked: 'Measuring 325 feet (99.1 meters) tall and with a diameter of 11.5 feet (3.5 m), ...'"
+   },
+   {
+    "url": "https://www.ijpr.org/environment-energy-and-transportation/2025-08-22/doerner-fir-tree-in-southern-oregon-survives-fire-but-loses-its-record-height",
+    "opened": true,
+    "quote_found": true,
+    "note": "Jefferson Public Radio: page fetched directly. Quote checked: 'The tree is estimated to be roughly 450 years old and was the tallest Douglas fi...'"
+   }
+  ],
+  "note": "Live Science and Jefferson Public Radio are independent. Both confirm the ~50 ft loss."
+ },
+ {
+  "id": "1.4",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Giant sequoias are the biggest trees by volume, but not the tallest. The General Sherman Tree is about 84 metres tall, roughly 275 feet.",
+  "allowed_numbers": [
+   {
+    "value": "about 84",
+    "unit": "m (General Sherman)",
+    "source": "NPS: 83.8 m / 274.9 ft; PBS: 272.4 ft (83.0 m)"
+   },
+   {
+    "value": "about 275",
+    "unit": "ft",
+    "source": "NPS 274.9 ft"
+   },
+   {
+    "value": "about 91 (single source)",
+    "unit": "m (tallest giant sequoia in one study)",
+    "source": "Ambrose et al. 2006: study tree heights 54.5-90.9 m"
+   }
+  ],
+  "do_not_say": [
+   "Do not say 'the tallest giant sequoias reach about 90 m' as a general fact: only one opened source (Ambrose, a 15-tree study range). If used, say 'some giant sequoias top 90 metres'.",
+   "Do not reuse PBS's comparison ('almost the height of an 11-story building'): it is wrong for 272 ft (NPS uses 26 storeys for the largest sequoias).",
+   "Do not use the NPS General Grant metric figure (88.7 m for 268.1 ft) - internal NPS conversion error per claims file."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.nps.gov/seki/learn/nature/sherman.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "National Park Service, Sequoia & Kings Canyon: page fetched directly. Quote checked: 'Height above Base 274.9 83.8'"
+   },
+   {
+    "url": "https://www.pbs.org/wnet/nature/blog/giant-sequoia-fact-sheet",
+    "opened": true,
+    "quote_found": true,
+    "note": "PBS Nature (WNET): page fetched directly. Quote checked: 'The General Sherman is about 101.5 feet in circumference at the base and is 272....'"
+   },
+   {
+    "url": "https://mail.conifers.org/cu/se/ambrose2006.pdf",
+    "opened": true,
+    "quote_found": true,
+    "note": "UC Berkeley / Humboldt State / NAU authors; PDF hosted by The Gymnosperm Database: page fetched directly. Quote checked: 'Study tree heights ranged from 54.5 to 90.9 m, while diameters (DBH) ranged from...'"
+   }
+  ],
+  "note": "NPS and PBS (citing Britannica) agree within 2.5 ft. Ambrose is a single source for the 90.9 m maximum."
+ },
+ {
+  "id": "1.5",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Hyperion is taller than a 30-storey building.",
+  "allowed_numbers": [
+   {
+    "value": "more than 30",
+    "unit": "storeys",
+    "source": "Checker arithmetic: 116 m / 3.0-3.7 m per storey = 31-39; NPS uses 'average 26-story building' for ~84 m sequoias (~3.2 m per storey)"
+   }
+  ],
+  "do_not_say": [
+   "Do not give an exact storey count (e.g. 'a 38-storey building'): no source compares Hyperion to storeys; it is arithmetic and depends on storey height.",
+   "Do not borrow Nature News' '35-storey skyscraper': that is for the 130 m theoretical limit, not Hyperion."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://home.nps.gov/seki/learn/nature/largest-trees-in-world.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "National Park Service, Sequoia & Kings Canyon: page fetched directly. Quote checked: 'The largest of the sequoias are as tall as an average 26-story building'"
+   },
+   {
+    "url": "https://www.nature.com/news/2004/040419/full/news040419-5.html",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature News (Nature Publishing Group; same publisher as Koch 2004 but editorially separate): page fetched directly. Quote checked: 'researchers working in California's redwood forests have placed the theoretical ...'"
+   }
+  ],
+  "note": "Comparison is arithmetic, not a sourced statement. Holds for any storey height up to 3.87 m. Height inputs (Guinness, NPS) are verified."
+ },
+ {
+  "id": "1.6",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "There is no pump inside a tree: no heart, no moving parts. The lift is passive. The tree spends none of its own energy hauling the water up; that work is done by evaporation at the leaves.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not say 'the tree uses no energy at all' or 'water transport costs the tree nothing': living root cells spend energy loading ions (root pressure) and guard cells actively open and close stomata.",
+   "Do not quote the Bentrup/Tyree 'can't have a heart' line as support: Bentrup is a critic of cohesion-tension; the line is Tyree's subtitle quoted inside a challenger's review."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'Transpiration —the loss of water vapor to the atmosphere through stomata—is a pa...'"
+   },
+   {
+    "url": "https://doi.org/10.1038/nature07226",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 455:208-212: abstract via Europe PMC REST, publisher page. Quote checked: 'Plant scientists believe that transpiration-the motion of water from the soil, t...'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'dissections showed there is no anatomical area in the stem or root that could se...'"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00709-016-1009-4",
+    "opened": true,
+    "quote_found": true,
+    "note": "Springer (Protoplasma), open access PMC5591614: abstract via Europe PMC REST, full text via Europe PMC (PMC5591614). Quote checked: 'When you’re a large organism and made of wood, you can’t have a heart or other c...'"
+   }
+  ],
+  "note": "OpenStax Biology ('passive process... ATP is not required for water movement'), Wheeler & Stroock Nature 2008 ('passive, wicking mechanism') and CSBSJU ('no anatomical area... that could serve as a pump') are three independent families."
+ },
+ {
+  "id": "1.7",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Water leaves the tree as vapour through tiny pores in the leaves called stomata. It happens mostly by day; at night, when the stomata close, it slows almost to a stop.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not say transpiration stops completely at night in all trees ('stops' is textbook shorthand; some species keep a little night-time water loss - checker's general knowledge).",
+   "If using 'the tree outside your window is doing it right now', qualify it: daytime, growing season, tree in leaf."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.usgs.gov/water-science-school/science/evapotranspiration-and-water-cycle",
+    "opened": true,
+    "quote_found": true,
+    "note": "USGS Water Science School: page fetched directly. Quote checked: 'Leaves release water vapor into the air through their stomata'"
+   },
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'At night, when stomata shut and transpiration stops, the water is held in the st...'"
+   },
+   {
+    "url": "https://ipm.missouri.edu/meg/2009/6/Guttation-A-Pressure-Relief-for-Plants/index.cfm",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Missouri Integrated Pest Management: page fetched directly. Quote checked: 'Then, when transpiration stops at night, pressure may build up as water moves th...'"
+   },
+   {
+    "url": "https://lwf.wsl.ch/en/demonstration-facility/20-vegetation-and-biodiversity/28-point-dendrometer/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Swiss Federal Research Institute WSL: page fetched directly. Quote checked: 'Tree stems shrink during the day and expand again during the night.'"
+   }
+  ],
+  "note": "USGS (vapour through stomata), OpenStax ('At night, when stomata shut and transpiration stops'), Missouri IPM ('when transpiration stops at night') and WSL (stems shrink by day, expand by night) are independent."
+ },
+ {
+  "id": "2.1",
+  "verdict": "PASS",
+  "safe_wording": "No suction pump, however good, can lift water more than about 10 metres, roughly 33 feet, at sea level. That is the height of a water column that normal air pressure can hold up.",
+  "allowed_numbers": [
+   {
+    "value": "about 10",
+    "unit": "m",
+    "source": "Britannica: 'maximum height of only 10 meters (33 feet)'; TCD: 'about 10m'; OpenStax Physics: 10 m"
+   },
+   {
+    "value": "10.3",
+    "unit": "m (water barometer)",
+    "source": "KFUPM: 1.01 x 10^5 Pa 'corresponds to 10.3 m of water column'; OpenStax Physics 11.4: 10.3 m"
+   },
+   {
+    "value": "about 33",
+    "unit": "ft",
+    "source": "Britannica"
+   },
+   {
+    "value": "10.35",
+    "unit": "m",
+    "source": "Checker arithmetic: 101,325 Pa / (998 kg/m3 x 9.81 m/s2) - confirms 10.3"
+   }
+  ],
+  "do_not_say": [
+   "Do not say exactly 10.3 m is the practical pump limit: in a real pump water boils at low pressure, so practical limits are a bit lower, and the limit falls at altitude (checker/researcher physics knowledge, unsourced).",
+   "Do not quote Brown's 10.4 m alongside 10.3 m; pick 'about 10 metres'."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://faculty.kfupm.edu.sa/PHYS/mohamedk/text/chapter15_4.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "King Fahd University of Petroleum & Minerals, Physics: page fetched directly. Quote checked: 'Approximate average pressure at sea level is given as 1.01 x 10 5 Pa, which corr...'"
+   },
+   {
+    "url": "https://openstax.org/books/college-physics-2e/pages/11-8-cohesion-and-adhesion-in-liquids-surface-tension-and-capillary-action",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'Recall that a column of water can only rise to a height of 10 m when there is a ...'"
+   },
+   {
+    "url": "https://openstax.org/books/college-physics-2e/pages/11-4-variation-of-pressure-with-depth-in-a-fluid",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'Just 10.3 m of water creates the same pressure as 120 km of air.'"
+   },
+   {
+    "url": "https://www.britannica.com/technology/mercury-barometer",
+    "opened": true,
+    "quote_found": true,
+    "note": "Encyclopaedia Britannica: curl 403; opened via WebFetch, quote confirmed verbatim. Quote checked: 'that pumps and siphons could raise water to a maximum height of only 10 meters (...'"
+   },
+   {
+    "url": "https://www.tcd.ie/botany/about/tercentenary/300-years/henry-horatio-dixon/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Trinity College Dublin, School of Natural Sciences (Botany): page fetched directly. Quote checked: 'A mechanical suction pump can only raise water to a height of about 10m before t...'"
+   }
+  ],
+  "note": "KFUPM, Britannica, TCD and OpenStax (one family for its two pages) are independent. Arithmetic checked."
+ },
+ {
+  "id": "2.2",
+  "verdict": "PASS",
+  "safe_wording": "A pump doesn't really pull water up. It lowers the pressure above the water, and the weight of the air outside pushes the water up the pipe. Even a perfect vacuum can't do better than the roughly 10-metre column that air pressure can hold.",
+  "allowed_numbers": [
+   {
+    "value": "about 10",
+    "unit": "m",
+    "source": "KFUPM 10.3 m; Brown 10.4 m; OpenStax barometer h*rho*g = P_atm"
+   }
+  ],
+  "do_not_say": [
+   "Do not say the vacuum 'sucks' or 'pulls' the water - the point of the beat is that it doesn't."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://openstax.org/books/college-physics-2e/pages/11-6-gauge-pressure-absolute-pressure-and-pressure-measurement",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'This device measures atmospheric pressure, rather than gauge pressure, because t...'"
+   },
+   {
+    "url": "https://faculty.kfupm.edu.sa/PHYS/mohamedk/text/chapter15_4.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "King Fahd University of Petroleum & Minerals, Physics: page fetched directly. Quote checked: 'You will find (using the middle sensor) that the pressure at point V (interface ...'"
+   },
+   {
+    "url": "https://arxiv.org/pdf/1404.3066",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Oxford, Faculty of Philosophy (arXiv preprint): page fetched directly. Quote checked: 'The barometric effect could in principle only account for a 10.4 meter rise.'"
+   }
+  ],
+  "note": "OpenStax Physics (barometer h*rho*g = P_atm), KFUPM (pressure at the vacuum interface is zero) and Brown arXiv (barometric effect limited to 10.4 m) are independent. The 'air pushes' framing is standard physics consistent with all three."
+ },
+ {
+  "id": "2.3",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "In the 1600s, people trying to raise water from wells and rivers by suction found it would go no higher than about 18 braccia, around 11 metres. Galileo knew of the limit but could not explain it correctly. In 1643 to 1644, Evangelista Torricelli's mercury tube pointed to the real cause: the weight of the air.",
+  "allowed_numbers": [
+   {
+    "value": "18",
+    "unit": "braccia",
+    "source": "Museo Galileo; Chemistry World"
+   },
+   {
+    "value": "about 11",
+    "unit": "m (historical conversion of 18 braccia)",
+    "source": "Museo Galileo 'around 11 metres'; Chemistry World '(11m)'"
+   },
+   {
+    "value": "1643-44",
+    "unit": "years (mercury barometer)",
+    "source": "Britannica 'invented in 1643-44'; Chemistry World 'Around 1643'"
+   },
+   {
+    "value": "1630",
+    "unit": "year (Baliani letter, single source)",
+    "source": "Museo Galileo only"
+   }
+  ],
+  "do_not_say": [
+   "Do not give the historical limit as 10.3 m; the period figure is '18 braccia, about 11 m' (a braccio varied).",
+   "Do not say 'Florentine pump makers' or 'well diggers': no opened source says so. Chemistry World: 'rivers and wells'.",
+   "Do not state one specific wrong explanation for Galileo: Museo Galileo says he blamed the limited 'force of the vacuum', Chemistry World says 'the weight of water'. Say he 'couldn't explain it correctly'.",
+   "The 1630 Baliani letter was about a siphon over a ~21 m hill, not a pump; if used, describe it that way (Museo Galileo only).",
+   "Do not credit Torricelli alone with the first tube experiments without noting Gasparo Berti's water-tube experiments around 1640 (Britannica and Chemistry World both mention Berti)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.imss.fi.it/vuoto/eesper1.html",
+    "opened": true,
+    "quote_found": true,
+    "note": "Museo Galileo (Institute and Museum of History of Science, Florence): page fetched directly. Quote checked: 'with a pump up to a maximum height of 18 'braccia' (around 11 metres)'"
+   },
+   {
+    "url": "https://www.chemistryworld.com/opinion/torricellis-barometer/1017293.article",
+    "opened": true,
+    "quote_found": true,
+    "note": "Chemistry World (Royal Society of Chemistry): curl 405; opened via WebFetch, quote confirmed verbatim. Quote checked: 'Attempts to pump water from rivers and wells by suction failed when the column o...'"
+   },
+   {
+    "url": "https://www.britannica.com/technology/mercury-barometer",
+    "opened": true,
+    "quote_found": true,
+    "note": "Encyclopaedia Britannica: curl 403; opened via WebFetch, quote confirmed verbatim. Quote checked: 'The mercury barometer is the oldest type of barometer, having been invented in 1...'"
+   },
+   {
+    "url": "https://www.chemistryworld.com/opinion/torricellis-barometer/1017293.article",
+    "opened": true,
+    "quote_found": true,
+    "note": "Chemistry World (Royal Society of Chemistry): curl 405; opened via WebFetch, quote confirmed verbatim. Quote checked: 'Galileo incorrectly suggested that the limit was imposed by the weight of water:'"
+   }
+  ],
+  "note": "Museo Galileo, Chemistry World and Britannica are independent. Britannica and Chemistry World were opened via WebFetch (curl blocked 403/405)."
+ },
+ {
+  "id": "2.4",
+  "verdict": "PASS",
+  "safe_wording": "The tallest trees lift water more than ten times higher than any suction pump can.",
+  "allowed_numbers": [
+   {
+    "value": "more than ten / about 11",
+    "unit": "times",
+    "source": "TCD: 'ten or more times the maximum achieved by a suction pump'; checker arithmetic 116.07 / 10.35 = 11.2"
+   }
+  ],
+  "do_not_say": [
+   "Do not say 'exactly 11 times'."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.tcd.ie/botany/about/tercentenary/300-years/henry-horatio-dixon/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Trinity College Dublin, School of Natural Sciences (Botany): page fetched directly. Quote checked: 'To raise water to the top of the tallest trees requires a suction ten or more ti...'"
+   },
+   {
+    "url": "https://www.guinnessworldrecords.com/world-records/tallest-tree-living",
+    "opened": true,
+    "quote_found": true,
+    "note": "Guinness World Records: page fetched directly. Quote checked: 'By 2019, the height had grown to 116.07 m (380 ft 9.7 in).'"
+   }
+  ],
+  "note": "TCD states it directly; Guinness height plus the verified 10.3 m limit give 11.2x."
+ },
+ {
+  "id": "3.1",
+  "verdict": "PASS",
+  "safe_wording": "Roots can push a little. Root cells pack minerals into the water-conducting pipes, water follows by osmosis, and pressure builds up, mostly at night or on cloudy days when the leaves aren't losing much water.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not present the ion-loading pathway in detail as settled; sources describe it differently (Missouri: solutes 'in cells inside the endodermis'; Ewers: linked to nutrient uptake, especially nitrate).",
+   "Do not say root pressure happens in all plants (UMN: 'only happens in some plants, but not in them all')."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://ipm.missouri.edu/meg/2009/6/Guttation-A-Pressure-Relief-for-Plants/index.cfm",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Missouri Integrated Pest Management: page fetched directly. Quote checked: 'As roots take up fertilizer and other solutes from the soil, these can accumulat...'"
+   },
+   {
+    "url": "https://open.lib.umn.edu/horticulture/chapter/11-1-plants-and-water/",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Minnesota Libraries Publishing (open textbook): page fetched directly. Quote checked: 'Water pressure (turgor) in the root cells during the night or during cloudy days...'"
+   },
+   {
+    "url": "https://doi.org/10.1093/treephys/21.15.1123",
+    "opened": true,
+    "quote_found": true,
+    "note": "Tree Physiology 21:1123-1132: abstract via Europe PMC REST. Quote checked: 'High root pressures were associated with uptake of mineral nutrients from soil, ...'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'Root as an osmometer Analogy - allows for the development of root pressures in t...'"
+   }
+  ],
+  "note": "Missouri IPM, UMN open textbook, Ewers et al. Tree Physiology 2001 and CSBSJU are independent."
+ },
+ {
+  "id": "3.2",
+  "verdict": "PASS",
+  "safe_wording": "You can sometimes see root pressure at work: on still, humid nights, droplets are squeezed out of special pores at the edges and tips of leaves. It's called guttation, and it isn't dew.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not show guttation on a giant redwood; the sources' examples are grasses (fescue, ribbon grass) and small plants.",
+   "Do not call the droplets dew."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://ipm.missouri.edu/meg/2009/6/Guttation-A-Pressure-Relief-for-Plants/index.cfm",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Missouri Integrated Pest Management: page fetched directly. Quote checked: 'you have observed a phenomenon called “guttation”, by which plants exude water f...'"
+   },
+   {
+    "url": "https://open.lib.umn.edu/horticulture/chapter/11-1-plants-and-water/",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Minnesota Libraries Publishing (open textbook): page fetched directly. Quote checked: 'This root pressure is the cause of guttation , the dew-like drops of water that ...'"
+   }
+  ],
+  "note": "Missouri IPM (hydathodes on margins or tips) and UMN (root pressure is the cause of guttation) agree."
+ },
+ {
+  "id": "3.3",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "In birch trees, and in some other plants such as grapevines, the sap that drips from a cut stem in spring is pushed up by the roots.",
+  "allowed_numbers": [
+   {
+    "value": "up to 160",
+    "unit": "kPa (walnut, autumn and spring, root origin)",
+    "source": "Ewers et al. 2001, Juglans regia (orchard and potted trees) - single source"
+   }
+  ],
+  "do_not_say": [
+   "Do not list butternut as a root-pressure example: North Country Now (Cornell CCE) says its roots push sap, but CSBSJU's maple-sap page groups butternut with sugar maple as a stem-pressure exuder, and Cirelli et al. 2008 study butternut alongside maple for stem pressure. Conflict.",
+   "Grapevine is single-source (CSBSJU); birch has two (CSBSJU, North Country Now).",
+   "Walnut root pressure data are for Juglans regia only and only in autumn and spring; winter pressures in the same trees were of stem origin."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lab/maple/maple-sap.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'In some species, like birch ( Betula sp.) and grape ( Vitis sp.), the sap that f...'"
+   },
+   {
+    "url": "https://www.northcountrynow.com/stories/what-makes-maple-sap-run-in-the-north-country-spring,72897",
+    "opened": true,
+    "quote_found": true,
+    "note": "North Country Now (column by a Cornell Cooperative Extension educator): page fetched directly. Quote checked: 'Birch and butternut are exceptions, but their roots generate pressure that force...'"
+   },
+   {
+    "url": "https://doi.org/10.1093/treephys/21.15.1123",
+    "opened": true,
+    "quote_found": true,
+    "note": "Tree Physiology 21:1123-1132: abstract via Europe PMC REST. Quote checked: 'In autumn and spring, xylem pressures were detected in root stumps as well as in...'"
+   }
+  ],
+  "note": "Birch: CSBSJU + North Country Now (independent). Walnut: Ewers only."
+ },
+ {
+  "id": "3.4",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Maple syrup sap is the famous exception. It isn't pushed by the roots; pressure builds inside the trunk itself as cold nights and warm days freeze and thaw the wood.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not explain the exact maple mechanism as settled: Cirelli et al. 2008 describe two competing theories (physical Milburn-O'Malley vs osmotic), and North Country Now ends 'the mystery of sap flow continues'.",
+   "Do not use the UMN open textbook for maple: it wrongly says root pressure drives sugar maple sap in spring.",
+   "Do not say maple has no root pressure ever under any conditions; say maple sap runs are not driven by it."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lab/maple/maple-sap.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'root pressure is not responsible for maple sap flow (Marvin, 1958; Kramer, 1983;...'"
+   },
+   {
+    "url": "https://www.northcountrynow.com/stories/what-makes-maple-sap-run-in-the-north-country-spring,72897",
+    "opened": true,
+    "quote_found": true,
+    "note": "North Country Now (column by a Cornell Cooperative Extension educator): page fetched directly. Quote checked: 'It turns out maple sap flow is due to the way its wood interacts with freeze-tha...'"
+   },
+   {
+    "url": "https://doi.org/10.1093/treephys/28.8.1145",
+    "opened": true,
+    "quote_found": true,
+    "note": "Tree Physiology 28:1145-1155: abstract via Europe PMC REST. Quote checked: 'Two theories have been proposed to explain how high positive pressures are devel...'"
+   },
+   {
+    "url": "https://doi.org/10.1126/science.145.3629.284",
+    "opened": true,
+    "quote_found": true,
+    "note": "Science 145(3629):284-285: abstract via Europe PMC REST. Quote checked: 'Exudation also occurred from detached sugar maple root segments, but not from st...'"
+   }
+  ],
+  "note": "CSBSJU maple-sap lab page ('root pressure is not responsible for maple sap flow'), North Country Now (freeze-thaw), Cirelli et al. 2008 (stem pressures around freezing) and O'Leary & Kramer 1964 (no exudation from maple stumps attached to root systems) are independent."
+ },
+ {
+  "id": "3.5",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Root pressure is weak. Measured values are only a few tenths of a megapascal, enough at best to push water up a few storeys, tens of metres at most, and nowhere near the top of a tall tree.",
+  "allowed_numbers": [
+   {
+    "value": "0.2-0.3",
+    "unit": "MPa (typical measured)",
+    "source": "CSBSJU lecture notes"
+   },
+   {
+    "value": "up to 0.16",
+    "unit": "MPa (walnut)",
+    "source": "Ewers et al. 2001: 'up to 160 kPa'"
+   },
+   {
+    "value": "about 60 ft (about 18 m)",
+    "unit": "max height root pressure can move water",
+    "source": "UMN open textbook"
+   },
+   {
+    "value": "about 10 m per 0.1 MPa",
+    "unit": "static, no friction",
+    "source": "Checker arithmetic: 0.1 MPa / (998 x 9.81) = 10.2 m; 0.16 MPa = 16 m; 0.3 MPa = 31 m"
+   }
+  ],
+  "do_not_say": [
+   "Do not give one precise root pressure value as universal; values vary by species and season.",
+   "Do not say root pressure could lift water 30 m in a real tree: the metre figures ignore friction."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1093/treephys/21.15.1123",
+    "opened": true,
+    "quote_found": true,
+    "note": "Tree Physiology 21:1123-1132: abstract via Europe PMC REST. Quote checked: 'In autumn and spring, xylem pressures of up to 160 kPa were closely correlated w...'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'These can be measured and are about 0.2 - 0.3 MPa.'"
+   },
+   {
+    "url": "https://open.lib.umn.edu/horticulture/chapter/11-1-plants-and-water/",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Minnesota Libraries Publishing (open textbook): page fetched directly. Quote checked: 'One problem with this mechanism is that, at most, root pressure can move water u...'"
+   }
+  ],
+  "note": "CSBSJU, Ewers and UMN are independent and all put it in the same range (0.16-0.3 MPa; ~18 m). Arithmetic checked."
+ },
+ {
+  "id": "3.6",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "How hard roots push varies a lot from species to species, and in some trees it barely registers at all.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not say 'conifers have little or no root pressure': O'Leary & Kramer 1964 saw no exudation from detopped loblolly pine and white spruce seedlings, but the USDA Forest Service (1981) collected root-pressure exudate from detopped Douglas-fir, grand fir and noble fir seedlings. Both used seedlings, not tall trees.",
+   "Do not name a conifer species as lacking root pressure; it is single-source and seedling-only."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1126/science.145.3629.284",
+    "opened": true,
+    "quote_found": true,
+    "note": "Science 145(3629):284-285: abstract via Europe PMC REST. Quote checked: 'Exudation of sap was never observed to occur from stumps of detopped seedlings o...'"
+   },
+   {
+    "url": "https://www.archive.org/download/compositionofroo395ketc/compositionofroo395ketc.pdf",
+    "opened": true,
+    "quote_found": true,
+    "note": "USDA Forest Service, Pacific Northwest Forest and Range Experiment Station: scanned OCR (\"Root\" OCR-garbled); quote confirmed by line search. Quote checked: 'Root pressure exudates collected from detopped seedlings of Douglas-fir, grand f...'"
+   }
+  ],
+  "note": "'Varies between species, absent in some' is supported by O'Leary & Kramer (Science 1964), the contrasting USDA PNW report, plus UMN ('only happens in some plants') and CSBSJU (absent in maple). Conifer-specific framing is single-source."
+ },
+ {
+  "id": "3.7",
+  "verdict": "PASS",
+  "safe_wording": "When a tree is transpiring, the water in its wood is under negative pressure, tension, not positive pressure. It is being pulled, not pushed, so root pressure can't be what lifts water to the top of a tall tree.",
+  "allowed_numbers": [
+   {
+    "value": "about -2",
+    "unit": "MPa (at the leaf surface, varies)",
+    "source": "OpenStax Biology 30.5"
+   },
+   {
+    "value": "-4 to -5",
+    "unit": "atm (damp forest, about -0.4 to -0.5 MPa)",
+    "source": "Scholander et al. 1965, Science 148:339; MPa conversion is checker arithmetic"
+   }
+  ],
+  "do_not_say": [
+   "Do not quote CSBSJU's 'at least 3 MPa required for a 100 m tree' as a measurement: it is a teaching estimate (0.02 MPa/m friction from a Poiseuille calculation plus 0.01 MPa/m gravity)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1126/science.148.3668.339",
+    "opened": true,
+    "quote_found": true,
+    "note": "Science 148(3668):339-346: abstract via Europe PMC REST. Quote checked: 'As long predicted, sap pressures during transpiration are normally negative, ran...'"
+   },
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'it creates negative pressure (tension) equivalent to –2 MPa at the leaf surface.'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'recall that root pressures only generate 0.2-0.3 MPA but that a pressure of at l...'"
+   },
+   {
+    "url": "https://doi.org/10.1098/rstb.1895.0012",
+    "opened": true,
+    "quote_found": true,
+    "note": "Philosophical Transactions of the Royal Society of London B 186:563-576: not in Europe PMC; publisher 403; abstract/first paragraph read via Crossref API, quote confirmed. Quote checked: 'Many theories have been formed to account for the ascent of sap in high trees, w...'"
+   }
+  ],
+  "note": "Scholander 1965 ('sap pressures during transpiration are normally negative'), OpenStax and CSBSJU are independent. Dixon & Joly 1895 abstract (via Crossref) confirms the historical framing."
+ },
+ {
+  "id": "4.1",
+  "verdict": "PASS",
+  "safe_wording": "Water climbs up a thin tube on its own, by capillary action. The narrower the tube, the higher it climbs: halve the width and the water rises twice as high.",
+  "allowed_numbers": [
+   {
+    "value": "h = 14.87 / r",
+    "unit": "m, r in micrometres (water, perfect wetting)",
+    "source": "CSBSJU; checker re-derived: 2 x 0.0728 N/m / (998 kg/m3 x 9.81 m/s2) = 1.487 x 10^-5 m2"
+   },
+   {
+    "value": "0.0728",
+    "unit": "N/m (surface tension of water near 20 C)",
+    "source": "CSBSJU (as 7.28 x 10^-8 MPa m); OpenStax Physics uses water at 20 C"
+   }
+  ],
+  "do_not_say": [
+   "The name 'Jurin's law' is not in any opened source (it is standard physics); fine for an on-screen label but not checked here."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'the height to which a column of water can move is inversely related to the radiu...'"
+   },
+   {
+    "url": "https://openstax.org/books/college-physics-2e/pages/11-8-cohesion-and-adhesion-in-liquids-surface-tension-and-capillary-action",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'One important phenomenon related to the relative strength of cohesive and adhesi...'"
+   },
+   {
+    "url": "https://arxiv.org/pdf/1404.3066",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Oxford, Faculty of Philosophy (arXiv preprint): page fetched directly. Quote checked: 'Capillary rise varies with the inverse of the vessel diameter'"
+   }
+  ],
+  "note": "CSBSJU (formula and table), OpenStax Physics and Brown arXiv ('Capillary rise varies with the inverse of the vessel diameter') are independent. Formula constant checked."
+ },
+ {
+  "id": "4.2",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "A tree's water pipes are microscopic but not that narrow. Conifer tracheids are a few hundredths of a millimetre wide; the vessels of broadleaved trees are often around a tenth of a millimetre, and the very widest, in tropical vines, are over half a millimetre.",
+  "allowed_numbers": [
+   {
+    "value": "10-42",
+    "unit": "um (tracheid diameter, Sperry dataset)",
+    "source": "Sperry et al. 2006 AJB"
+   },
+   {
+    "value": "up to 50-65",
+    "unit": "um (tracheids, mature trunk wood averages)",
+    "source": "Sperry et al. 2006"
+   },
+   {
+    "value": "10-20",
+    "unit": "um (conifer conduits)",
+    "source": "Brown arXiv"
+   },
+   {
+    "value": "about 100",
+    "unit": "um (broadleaved conduits)",
+    "source": "Brown arXiv"
+   },
+   {
+    "value": "over 500",
+    "unit": "um (vessels, tropical lianas)",
+    "source": "Sperry et al. 2006 citing Zimmermann 1983"
+   }
+  ],
+  "do_not_say": [
+   "Do not say tree vessels are 'up to 500 um' as if typical of trees: the >500 um figure is for tropical lianas (vines).",
+   "Do not give 'vessels from under 20 um': no opened source states a lower vessel bound.",
+   "Do not treat OpenStax's 'radii as small as 2.5 x 10^-5 m' (50 um wide) as the narrowest xylem; it is a textbook example value and conflicts with 10 um tracheids."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://sperry.biology.utah.edu/publications/AJB_special_06.pdf",
+    "opened": true,
+    "quote_found": true,
+    "note": "American Journal of Botany 93(10):1490-1500 (author PDF, Sperry lab, University of Utah): two-column PDF; quote confirmed by line search (\"lm\" is the PDF rendering of um). Quote checked: 'Tracheids ranged from 10 to 42 lm in diameter in our data set, with larger avera...'"
+   },
+   {
+    "url": "https://sperry.biology.utah.edu/publications/AJB_special_06.pdf",
+    "opened": true,
+    "quote_found": true,
+    "note": "American Journal of Botany 93(10):1490-1500 (author PDF, Sperry lab, University of Utah): two-column PDF; quote confirmed by line search (\"lm\" is the PDF rendering of um). Quote checked: 'Vessels with diameters in excess of 500 lm occur in adult stems of tropical lian...'"
+   },
+   {
+    "url": "https://arxiv.org/pdf/1404.3066",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Oxford, Faculty of Philosophy (arXiv preprint): PDF line breaks; quote confirmed by line search. Quote checked: 'diameters of xylem conduits in tree trunks vary from 10 to 20µm in conifers to a...'"
+   },
+   {
+    "url": "https://openstax.org/books/college-physics-2e/pages/11-8-cohesion-and-adhesion-in-liquids-surface-tension-and-capillary-action",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'Sap in trees moves through the xylem , which forms tubes with radii as small as ...'"
+   }
+  ],
+  "note": "Sperry (AJB) and Brown (arXiv) are independent; ranges overlap but differ (10-20 vs 10-65 um for conifers)."
+ },
+ {
+  "id": "4.3",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "In pipes that size, capillary action lifts water only a few centimetres in the widest vessels and about three metres in the very narrowest tracheids. To reach 100 metres by capillarity alone, a pipe would need to be about three tenths of a micrometre across, far narrower than any of the tree's water pipes.",
+  "allowed_numbers": [
+   {
+    "value": "about 3",
+    "unit": "m (narrowest tracheids, ~10 um wide)",
+    "source": "Brown arXiv 'a sap rise of only 3m' for 10 um; checker arithmetic r = 5 um gives 2.97 m"
+   },
+   {
+    "value": "about 1.5",
+    "unit": "m (10 um radius)",
+    "source": "CSBSJU table 1.49 m; checker 1.487 m"
+   },
+   {
+    "value": "about 0.37",
+    "unit": "m (40 um radius)",
+    "source": "CSBSJU table"
+   },
+   {
+    "value": "about 0.15",
+    "unit": "m (100 um radius)",
+    "source": "CSBSJU table 0.148 m"
+   },
+   {
+    "value": "about 6",
+    "unit": "cm (500 um wide vessel)",
+    "source": "Checker arithmetic r = 250 um: 0.059 m"
+   },
+   {
+    "value": "about 0.15",
+    "unit": "um radius (0.3 um wide) for a 100 m rise",
+    "source": "OpenStax Physics worked example (sap, 1050 kg/m3) ~0.14 um; checker arithmetic (pure water) 0.149 um"
+   }
+  ],
+  "do_not_say": [
+   "Do not say capillarity lifts water 'under 1-2 m' in the narrowest tracheids: about 3 m is correct for 10 um-wide tracheids.",
+   "Do not say 'about 180 times narrower than xylem' as a general fact: 180x is OpenStax's comparison with one 25 um radius; versus a 5 um radius tracheid it is only ~34x. Use 'far narrower'.",
+   "Do not imply capillarity could keep water flowing even if pipes were narrow enough (CSBSJU: it 'would only move to the top of the plant once')."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://arxiv.org/pdf/1404.3066",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Oxford, Faculty of Philosophy (arXiv preprint): page fetched directly. Quote checked: 'Even with the optimal 10µm, a sap rise of only 3m is achieved.'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'Vessels are too wide to support movement very high and obviously capillarity can...'"
+   },
+   {
+    "url": "https://openstax.org/books/college-physics-2e/pages/11-8-cohesion-and-adhesion-in-liquids-surface-tension-and-capillary-action",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): quote spans an elided [...]; both halves confirmed on page. Quote checked: 'This value is about 180 times as large as the radius found necessary here to rai...'"
+   }
+  ],
+  "note": "Arithmetic (gamma 0.0728 N/m, rho 998 kg/m3, g 9.81, contact angle 0) reproduces every CSBSJU table value and Brown's 3 m (diameter reading). The 'radius ~0.15 um' is right; the '180 times' generalisation is not."
+ },
+ {
+  "id": "4.4",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "The pipes are too wide, but the pores in the wet cell walls inside a leaf are only a few nanometres across. A water surface curved across a pore that small can, in principle, hold against a pull of tens of megapascals, far more than a tree needs.",
+  "allowed_numbers": [
+   {
+    "value": "about 10",
+    "unit": "nm (cell-wall pore size, order of magnitude)",
+    "source": "Brown arXiv quoting Steudle 2001"
+   },
+   {
+    "value": "30",
+    "unit": "MPa (capillary pressure of ~10 nm pores)",
+    "source": "Brown quoting Steudle 2001"
+   },
+   {
+    "value": "0.005 um (5 nm) radius -> about 3 km",
+    "unit": "theoretical capillary height",
+    "source": "CSBSJU table: 2975 m"
+   },
+   {
+    "value": "about 29",
+    "unit": "MPa",
+    "source": "Checker arithmetic 2 x 0.0728 / 5 nm = 29.1 MPa; consistent with Steudle if 10 nm is a diameter"
+   }
+  ],
+  "do_not_say": [
+   "Do not say water actually rises 3 km in a tree; that is a theoretical capillary height.",
+   "Do not give a precise pore size; say 'a few nanometres'.",
+   "Do not conflate these cell-wall pores in the leaf with pit membrane pores (beat 6)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://arxiv.org/pdf/1404.3066",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Oxford, Faculty of Philosophy (arXiv preprint): page fetched directly. Quote checked: 'Pores (interfibrillar spaces) are of an order of 10 nm, which corresponds to 30 ...'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: '0.005 (size of pores in wall) 2975 ( ca . 3 kilometers)'"
+   }
+  ],
+  "note": "Brown (quoting Steudle) and CSBSJU are independent and agree once 10 nm is read as a diameter. Brown is quoting, so the primary is Steudle 2001 (not opened)."
+ },
+ {
+  "id": "5.1",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "In 1894 and 1895, two scientists at Trinity College Dublin, the botanist Henry Dixon and the physicist and geologist John Joly, set out the explanation still used today: water is pulled up from the top, held together by its own cohesion.",
+  "allowed_numbers": [
+   {
+    "value": "1894",
+    "unit": "year (first publication, abstract)",
+    "source": "Britannica; Brown arXiv ('In 1894, Dixon and Joly published the abstract'); Bentrup 'Dixon and Joly (1894)'"
+   },
+   {
+    "value": "1895",
+    "unit": "year (full paper, Phil. Trans. R. Soc. B 186)",
+    "source": "Crossref record for 10.1098/rstb.1895.0012; TCD"
+   }
+  ],
+  "do_not_say": [
+   "Do not say Dixon and Joly were the first or only originators: Bentrup credits Boehm (1893) jointly, and Brown says Askenasy independently published a detailed account (1895-96) and that 'arguably equal honours' go to Boehm.",
+   "Do not say 'first proposed in 1895' (TCD) without 1894: Britannica, Brown and Bentrup all give 1894 for the first publication."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.tcd.ie/botany/about/tercentenary/300-years/henry-horatio-dixon/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Trinity College Dublin, School of Natural Sciences (Botany): page fetched directly. Quote checked: 'An explanation of this mechanism was first proposed by Henry Dixon and John Joly...'"
+   },
+   {
+    "url": "https://www.tcd.ie/botany/about/tercentenary/300-years/henry-horatio-dixon/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Trinity College Dublin, School of Natural Sciences (Botany): page fetched directly. Quote checked: 'The change to natural science appears to have been stimulated by his friendship ...'"
+   },
+   {
+    "url": "https://www.britannica.com/biography/Henry-Horatio-Dixon",
+    "opened": true,
+    "quote_found": true,
+    "note": "Encyclopaedia Britannica: curl 403; opened via WebFetch, quote confirmed; page dates \"On the Ascent of Sap\" to 1894. Quote checked: 'with John Joly, developed the tension theory of sap ascent.'"
+   },
+   {
+    "url": "https://arxiv.org/pdf/1404.3066",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Oxford, Faculty of Philosophy (arXiv preprint): page fetched directly. Quote checked: 'In 1894, Dixon and Joly published the abstract to a paper on the ascent of sap'"
+   },
+   {
+    "url": "https://doi.org/10.1098/rstb.1895.0012",
+    "opened": true,
+    "quote_found": true,
+    "note": "Philosophical Transactions of the Royal Society of London B 186:563-576: not in Europe PMC; publisher 403; abstract/first paragraph read via Crossref API, quote confirmed. Quote checked: 'Many theories have been formed to account for the ascent of sap in high trees, w...'"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00709-016-1009-4",
+    "opened": true,
+    "quote_found": true,
+    "note": "Springer (Protoplasma), open access PMC5591614: abstract via Europe PMC REST, full text via Europe PMC (PMC5591614). Quote checked: 'The cohesion-tension theory (C-T theory) by Boehm (1893) and Dixon and Joly (189...'"
+   }
+  ],
+  "note": "TCD, Britannica (opened via WebFetch), Brown arXiv, Bentrup and the Royal Society paper record (Crossref) are independent. Date conflict reconciled by Brown: 1894 abstract, 1895 revised paper."
+ },
+ {
+  "id": "5.2",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "A key clue came from the German botanist Eduard Strasburger in the early 1890s. He cut a tall tree, stood it in poison, and it kept drawing liquid up even as the poison killed the living cells in the trunk. So there was no living pump in the wood.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not give a single date for Strasburger's experiments: Brown says evidence 'by 1891', TCD says Dixon and Joly saw them in 1892, Dixon and Joly's own 1895 paper says Bonn, summer 1893, and the LJWorld article says 1893.",
+   "'The flow stopped only when the leaves were killed' rests on one newspaper source (LJWorld/Baltimore Sun); say it only as 'according to accounts of the experiment' or leave it out.",
+   "The 70-foot oak and picric acid details: oak and 70 ft are LJWorld only; picric acid has two sources (LJWorld, CSBSJU)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.tcd.ie/botany/about/tercentenary/300-years/henry-horatio-dixon/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Trinity College Dublin, School of Natural Sciences (Botany): page fetched directly. Quote checked: 'in 1892 Dixon and Joly, on one of their joint visits to the continent, also saw ...'"
+   },
+   {
+    "url": "https://doi.org/10.1098/rstb.1895.0012",
+    "opened": true,
+    "quote_found": true,
+    "note": "Philosophical Transactions of the Royal Society of London B 186:563-576: not in Europe PMC; publisher 403; abstract/first paragraph read via Crossref API, quote confirmed. Quote checked: 'Our attention was particularly directed to the problem as we were together in Bo...'"
+   },
+   {
+    "url": "https://www2.ljworld.com/news/2004/apr/25/scientists_tackle_stumper/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Lawrence Journal-World: page fetched directly. Quote checked: 'It was only when the acid invaded and killed the leaves that the liquid’s vertic...'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'when German physiologists cut off a tree in a vat of picric acid it continued to...'"
+   }
+  ],
+  "note": "Core claim (stem killed, water still rose) is in TCD and LJWorld and CSBSJU; Brown names 'Eduard Strasburger' and dates his evidence by 1891."
+ },
+ {
+  "id": "5.3",
+  "verdict": "PASS",
+  "safe_wording": "The pull starts in the leaf. Water evaporates from the wet walls of cells lining the air spaces inside the leaf, the vapour escapes through the stomata, and that loss tugs on the water behind it, a pull passed down unbroken columns of water all the way to the roots.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not show the stomata as the evaporating surface; evaporation is from wet cell walls inside the leaf, stomata are the exit."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'The wet cell wall is exposed to this leaf internal air space, and the water on t...'"
+   },
+   {
+    "url": "https://www.tcd.ie/botany/about/tercentenary/300-years/henry-horatio-dixon/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Trinity College Dublin, School of Natural Sciences (Botany): page fetched directly. Quote checked: 'The hypothesis was that evaporation of water from the leaves caused a suction wh...'"
+   },
+   {
+    "url": "https://doi.org/10.1038/nature07226",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 455:208-212: abstract via Europe PMC REST, publisher page. Quote checked: 'loss of water by evaporation reduces the pressure of the liquid water within the...'"
+   },
+   {
+    "url": "https://rhs.org.uk/advice/understanding-plants/how-plants-lose-water",
+    "opened": true,
+    "quote_found": true,
+    "note": "Royal Horticultural Society (RHS): page fetched directly. Quote checked: 'As water moves out of leaf cells it is warmed by the sun and evaporates, filling...'"
+   }
+  ],
+  "note": "OpenStax, TCD, Wheeler & Stroock (Nature 2008) and RHS are independent."
+ },
+ {
+  "id": "5.4",
+  "verdict": "PASS",
+  "safe_wording": "Water can be pulled like this because its molecules cling to each other, cohesion, through hydrogen bonds, and to the walls of the pipes, adhesion. Pull on one end of the chain and the whole column moves up a notch.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not quote OpenStax Physics' 'The question has not been completely resolved' as current; cohesion-tension is the mainstream explanation (see 5.11)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://open.lib.umn.edu/horticulture/chapter/11-1-plants-and-water/",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Minnesota Libraries Publishing (open textbook): page fetched directly. Quote checked: 'When water molecules are near one other, the negative region of one molecule is ...'"
+   },
+   {
+    "url": "https://open.lib.umn.edu/horticulture/chapter/11-1-plants-and-water/",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Minnesota Libraries Publishing (open textbook): page fetched directly. Quote checked: 'This force of adhesion between the water and walls of the xylem helps hold the w...'"
+   },
+   {
+    "url": "https://openstax.org/books/college-physics-2e/pages/11-8-cohesion-and-adhesion-in-liquids-surface-tension-and-capillary-action",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'it appears that it is pulled up like a chain held together by cohesive forces. A...'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'Because of the cohesive/adhesive properties of water, as one water molecule evap...'"
+   }
+  ],
+  "note": "UMN, OpenStax Physics and CSBSJU are independent."
+ },
+ {
+  "id": "5.5",
+  "verdict": "PASS",
+  "safe_wording": "So the water in a working tree is under tension: its pressure is often below zero, below even a perfect vacuum. It's a stretched liquid, like a rope being pulled.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not say xylem pressure is always below absolute zero; Wheeler & Stroock say 'often'."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1146/annurev-fluid-010313-141411",
+    "opened": true,
+    "quote_found": true,
+    "note": "Annual Review of Fluid Mechanics 46:615-642: not in Europe PMC; publisher 403; abstract read via Crossref API, quote confirmed. Quote checked: 'To remain hydrated, they exploit liquid water in the thermodynamically metastabl...'"
+   },
+   {
+    "url": "https://doi.org/10.1038/nature07226",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 455:208-212: abstract via Europe PMC REST, publisher page. Quote checked: 'Strikingly, the absolute pressure of the water within the xylem is often negativ...'"
+   },
+   {
+    "url": "https://doi.org/10.1098/rsif.2014.0480",
+    "opened": true,
+    "quote_found": true,
+    "note": "Journal of the Royal Society Interface 11:20140480 (PMC4233727): abstract via Europe PMC REST. Quote checked: 'Water columns are thus elastic, and not rigid, 'wires of water' set under tensio...'"
+   }
+  ],
+  "note": "Stroock et al. 2014 (Crossref abstract) and Wheeler & Stroock 2008 share Stroock: one family. Ponomarenko et al. 2014 (J R Soc Interface) is the independent second."
+ },
+ {
+  "id": "5.6",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Measured in plants, that tension ranges from about minus 0.4 to minus 0.5 megapascals in a damp forest to about minus 8 megapascals in the desert. Many trees on a dry afternoon run at around minus one to minus two.",
+  "allowed_numbers": [
+   {
+    "value": "-4 to -5",
+    "unit": "atm (damp forest) = about -0.4 to -0.5 MPa",
+    "source": "Scholander et al. 1965; conversion checker arithmetic (1 atm = 0.101 MPa)"
+   },
+   {
+    "value": "-80",
+    "unit": "atm (desert) = about -8 MPa",
+    "source": "Scholander et al. 1965"
+   },
+   {
+    "value": "-35 to -60",
+    "unit": "atm (mangroves/halophytes) = about -3.5 to -6 MPa",
+    "source": "Scholander et al. 1965"
+   },
+   {
+    "value": "about -2",
+    "unit": "MPa (leaf surface, varies with humidity)",
+    "source": "OpenStax Biology 30.5"
+   },
+   {
+    "value": "-0.7 trunk, -2.3 twig, -2.5 leaf",
+    "unit": "MPa (typical tree water potentials)",
+    "source": "CSBSJU lecture"
+   }
+  ],
+  "do_not_say": [
+   "Do not quote a single 'typical' xylem tension for tall trees as measured; no opened source gives tall-tree values (Koch's values were abstract-only).",
+   "Do not use the synthetic-tree '-1.0 MPa or lower' (Wheeler & Stroock) as a tree measurement; it is a hydrogel device."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1126/science.148.3668.339",
+    "opened": true,
+    "quote_found": true,
+    "note": "Science 148(3668):339-346: abstract via Europe PMC REST. Quote checked: 'sap pressures during transpiration are normally negative, ranging from -4 or -5 ...'"
+   },
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'This value varies greatly depending on the vapor pressure deficit, which can be ...'"
+   },
+   {
+    "url": "https://doi.org/10.1038/nature07226",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 455:208-212: abstract via Europe PMC REST, publisher page. Quote checked: 'stabilization and flow of liquid water at large negative pressures (-1.0 MPa or ...'"
+   }
+  ],
+  "note": "Scholander (Science 1965), OpenStax and CSBSJU independent. Scholander values are in atmospheres; MPa are conversions."
+ },
+ {
+  "id": "5.7",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "In the lab, pure water has been stretched to tensions of tens of megapascals, and in one experiment with tiny sealed droplets to about minus 140 megapascals, before it snapped. That's hundreds to over a thousand atmospheres of pull.",
+  "allowed_numbers": [
+   {
+    "value": "-26 to -17",
+    "unit": "MPa (0 to 80 C, focused sound waves)",
+    "source": "Herbert et al. 2006, Phys Rev E 74:041603"
+   },
+   {
+    "value": "-140",
+    "unit": "MPa (1400 bar, at 42 C, quartz inclusions)",
+    "source": "Zheng et al. 1991, Science 254:829"
+   },
+   {
+    "value": "about -120",
+    "unit": "MPa (at 40 C)",
+    "source": "Herbert et al. 2006 describing the Zheng/Angell result"
+   }
+  ],
+  "do_not_say": [
+   "Do not give one value for 'the' tensile strength of water: methods disagree by about five-fold and the reason is unresolved (Herbert: 'Possible reasons for this discrepancy are considered').",
+   "Do not say trees use water's full strength: xylem fails far earlier, at a few MPa, by air seeding at pits."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1103/physreve.74.041603",
+    "opened": true,
+    "quote_found": true,
+    "note": "Physical Review E 74:041603: abstract via Europe PMC REST. Quote checked: 'The cavitation pressure is found to increase monotonically from -26 MPa at 0 deg...'"
+   },
+   {
+    "url": "https://doi.org/10.1126/science.254.5033.829",
+    "opened": true,
+    "quote_found": true,
+    "note": "Science 254:829-832: abstract via Europe PMC REST. Quote checked: 'A maximum tension of 140 megapascals (=1400 bars) was reached at 42 degrees C'"
+   }
+  ],
+  "note": "Herbert et al. (Paris, acoustic) and Zheng et al. (Angell group, isochoric) are independent; Herbert cites Zheng's figure as ~-120 MPa at 40 C while Zheng's abstract gives 140 MPa at 42 C."
+ },
+ {
+  "id": "5.8",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "The tension was finally measured in 1965 by Per Scholander's team with a pressure chamber, nicknamed the pressure bomb: a cut leafy twig is sealed inside, and gas pressure is raised until sap just appears at the cut end. In 1995 a test that spun branches in a centrifuge confirmed the method and showed the wood can sustain large negative pressures.",
+  "allowed_numbers": [
+   {
+    "value": "1965",
+    "unit": "year (Scholander pressure chamber)",
+    "source": "Scholander et al. Science 148:339; TCD"
+   },
+   {
+    "value": "1995",
+    "unit": "year (centrifuge validation)",
+    "source": "Holbrook, Burns & Field, Science 270:1193 (Crossref abstract)"
+   },
+   {
+    "value": "1922 (single source)",
+    "unit": "year (Dixon's glass chamber)",
+    "source": "TCD only"
+   }
+  ],
+  "do_not_say": [
+   "Dixon's 1922 glass pressure chamber that 'exploded' is single-source (TCD). If used, attribute it ('according to Trinity College Dublin's history').",
+   "Do not say the pressure chamber is beyond dispute: Bentrup 2017 (Zimmermann school) contests how its readings should be interpreted.",
+   "The first name 'Per' is not in an opened source for this claim (CSBSJU mentions 'Per Scholander stories'); acceptable but light support."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1126/science.148.3668.339",
+    "opened": true,
+    "quote_found": true,
+    "note": "Science 148(3668):339-346: abstract via Europe PMC REST. Quote checked: 'A method is described which permits measurement of sap pressure in the xylem of ...'"
+   },
+   {
+    "url": "https://doi.org/10.1126/science.270.5239.1193",
+    "opened": true,
+    "quote_found": true,
+    "note": "Science 270(5239):1193-1194: not in Europe PMC; publisher 403; abstract read via Crossref API, quote confirmed. Quote checked: 'This agreement demonstrates that the xylem is capable of sustaining large negati...'"
+   },
+   {
+    "url": "https://www.tcd.ie/botany/about/tercentenary/300-years/henry-horatio-dixon/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Trinity College Dublin, School of Natural Sciences (Botany): page fetched directly. Quote checked: 'this piece of apparatus was 'reinvented' in 1965 by Scholander and co- workers i...'"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00709-016-1009-4",
+    "opened": true,
+    "quote_found": true,
+    "note": "Springer (Protoplasma), open access PMC5591614: abstract via Europe PMC REST, full text via Europe PMC (PMC5591614). Quote checked: 'This survey illustrates how recently developed minimum invasive or non-invasive ...'"
+   }
+  ],
+  "note": "Scholander abstract (Europe PMC), Holbrook abstract (Crossref) and TCD are independent. Mechanism description is standard and consistent with Holbrook's 'balancing pressure'."
+ },
+ {
+  "id": "5.9",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "You can even measure the pull: tree trunks shrink slightly during the day and swell back at night. Precise sensors record the stem's radius changing by up to a fifth of a millimetre a day; the wood itself changes by only a few hundredths of a millimetre.",
+  "allowed_numbers": [
+   {
+    "value": "1-200",
+    "unit": "um per day (stem radius incl. bark)",
+    "source": "WSL media release via waldwissen.net"
+   },
+   {
+    "value": "about 25",
+    "unit": "um (daily xylem amplitude, dry period, Scots pine)",
+    "source": "Oberhuber et al. 2023, Biology 12:1251"
+   },
+   {
+    "value": "about 140",
+    "unit": "um (daily inner-bark amplitude, dry period)",
+    "source": "Oberhuber et al. 2023"
+   },
+   {
+    "value": "about 3 p.m. / about 6 a.m.",
+    "unit": "time (xylem minimum / maximum)",
+    "source": "Oberhuber et al. 2023"
+   },
+   {
+    "value": "10-50",
+    "unit": "min (time lag between heights, lower stem later)",
+    "source": "Sevanto et al. 2002 (Crossref abstract)"
+   }
+  ],
+  "do_not_say": [
+   "Do not say the trunk shrinks 'a few tenths of a millimetre' as a radius: WSL's 200 um is a radius change; most of the whole-stem change is the living bark, not the wood.",
+   "Do not attribute all shrinkage to tension in the wood; Oberhuber shows inner bark changes ~5x more than xylem.",
+   "These values are Scots pine and Swiss trees, not redwoods.",
+   "Sevanto's top-first lag applies to xylem diameter; for whole-stem diameter the treetop lagged. Only use the 'pull travels down' visual for the wood."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.waldwissen.net/en/forestry/silviculture/forest-growth/why-trees-grow-at-night",
+    "opened": true,
+    "quote_found": true,
+    "note": "Swiss Federal Research Institute WSL (via waldwissen.net): page fetched directly. Quote checked: 'stems shrink under the effect of water stress and expand in a range of 1-200 µm ...'"
+   },
+   {
+    "url": "https://doi.org/10.3390/biology12091251",
+    "opened": true,
+    "quote_found": true,
+    "note": "Biology (Basel) 12:1251 (MDPI, open access PMC10525319): abstract via Europe PMC REST, full text via Europe PMC (PMC10525319). Quote checked: 'The amplitude of daily variation during the dry period reached c. 140 µm in inne...'"
+   },
+   {
+    "url": "https://doi.org/10.1046/j.1365-3040.2002.00884.x",
+    "opened": true,
+    "quote_found": true,
+    "note": "Plant, Cell & Environment 25:1071-1077: not in Europe PMC; publisher 403; abstract read via Crossref API, quote confirmed. Quote checked: 'Xylem diameter measurements at the different heights had time lags varying from ...'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'These experiments show that the diameter of the stem is smallest during the day ...'"
+   }
+  ],
+  "note": "The two WSL pages are one family. Oberhuber (MDPI), Sevanto (PCE) and CSBSJU are independent."
+ },
+ {
+  "id": "5.10",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "The energy for the lift comes from the sun and the dry air, which evaporate water from the leaves. The lift itself costs the tree none of its own energy.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not say 'powered solely by the sun' without the dry air: OpenStax frames the driver as the energy difference between soil water and atmospheric water; transpiration continues on dry, cloudy days.",
+   "Do not say the tree spends no energy on water at all (root ion uptake and stomatal control cost energy)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.tcd.ie/botany/about/tercentenary/300-years/henry-horatio-dixon/",
+    "opened": true,
+    "quote_found": true,
+    "note": "Trinity College Dublin, School of Natural Sciences (Botany): page fetched directly. Quote checked: 'The energy to drive this process came solely from the sun which evaporated water...'"
+   },
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'The energy driving transpiration is the difference in energy between the water i...'"
+   },
+   {
+    "url": "https://rhs.org.uk/advice/understanding-plants/how-plants-lose-water",
+    "opened": true,
+    "quote_found": true,
+    "note": "Royal Horticultural Society (RHS): page fetched directly. Quote checked: 'As water moves out of leaf cells it is warmed by the sun and evaporates'"
+   }
+  ],
+  "note": "TCD ('solely from the sun'), OpenStax and RHS are independent; the safe wording merges their framings."
+ },
+ {
+  "id": "5.11",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Cohesion-tension is the accepted explanation, but it took a long time to win over doubters. From the 1990s a German group around the plant physiologist Zimmermann argued that direct probe readings showed much smaller tensions; experiments such as a 1995 centrifuge test backed the pressure chamber and the high tensions, though a few scientists still dispute details.",
+  "allowed_numbers": [
+   {
+    "value": "0.4",
+    "unit": "MPa (max tension recorded by xylem pressure probe, 10 m liana)",
+    "source": "Bentrup 2017 (challenger's data)"
+   },
+   {
+    "value": "1995",
+    "unit": "year (centrifuge validation)",
+    "source": "Holbrook et al. Science 270:1193"
+   }
+  ],
+  "do_not_say": [
+   "Do not say the centrifuge validation came 'later' than the challenge; the 1995 test was contemporary with it (checker's knowledge that the probe challenge began in the early 1990s is unsourced; avoid sequencing).",
+   "Do not present the multi-force theory as mainstream or as refuted by name; present cohesion-tension as accepted, not as beyond all debate.",
+   "Do not name 'Ulrich' unless needed: the first name appears only in Bentrup's citation 'U. Zimmermann'."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1007/s00709-016-1009-4",
+    "opened": true,
+    "quote_found": true,
+    "note": "Springer (Protoplasma), open access PMC5591614: abstract via Europe PMC REST, full text via Europe PMC (PMC5591614). Quote checked: 'Water acquisition of trees and lianas indeed relies upon an amazing diversity of...'"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00709-016-1009-4",
+    "opened": true,
+    "quote_found": true,
+    "note": "Springer (Protoplasma), open access PMC5591614: abstract via Europe PMC REST, full text via Europe PMC (PMC5591614). Quote checked: 'On a tropical liana, Tetrastigma voinierianum, filling a greenhouse up to a heig...'"
+   },
+   {
+    "url": "https://doi.org/10.1126/science.270.5239.1193",
+    "opened": true,
+    "quote_found": true,
+    "note": "Science 270(5239):1193-1194: not in Europe PMC; publisher 403; abstract read via Crossref API, quote confirmed. Quote checked: 'Balancing pressure measurements of leaves attached to a spinning branch at the a...'"
+   },
+   {
+    "url": "https://doi.org/10.1038/nature07226",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 455:208-212: abstract via Europe PMC REST, publisher page. Quote checked: 'This mechanism is described by the cohesion-tension theory'"
+   }
+  ],
+  "note": "Bentrup (challenger), Holbrook (validation) and Wheeler & Stroock (mainstream statement) are independent."
+ },
+ {
+  "id": "6.1",
+  "verdict": "PASS",
+  "safe_wording": "If the tension gets too high, a water column can snap. A gas bubble forms or gets in, the pipe fills with air, and it's blocked. That blockage is called an embolism.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not imply drought is the only cause: freezing also causes embolism in some species."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1038/nature11688",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 491:752-755: abstract via Europe PMC REST, publisher page. Quote checked: 'Drought stress creates trapped gas emboli in the water transport system, which r...'"
+   },
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'The formation of gas bubbles in xylem interrupts the continuous stream of water ...'"
+   },
+   {
+    "url": "https://doi.org/10.1098/rsif.2014.0480",
+    "opened": true,
+    "quote_found": true,
+    "note": "Journal of the Royal Society Interface 11:20140480 (PMC4233727): abstract via Europe PMC REST. Quote checked: 'Cavitation bubbles are at the origin of an embolism, whose development was follo...'"
+   },
+   {
+    "url": "https://doi.org/10.1146/annurev-fluid-010313-141411",
+    "opened": true,
+    "quote_found": true,
+    "note": "Annual Review of Fluid Mechanics 46:615-642: not in Europe PMC; publisher 403; abstract read via Crossref API, quote confirmed. Quote checked: 'When this liquid rope breaks, owing to cavitation, they catch the ends to keep i...'"
+   }
+  ],
+  "note": "Choat et al. 2012 (Nature), OpenStax, Ponomarenko et al. 2014 and Stroock et al. 2014 are independent."
+ },
+ {
+  "id": "6.2",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Embolisms usually spread by 'air seeding': air is pulled through the tiny pores in the membranes between an air-filled pipe and its water-filled neighbour.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not claim how the very first bubble in a healthy pipe forms is settled (Kaack et al.: 'embolism spreading remains puzzling').",
+   "Say 'usually spreads', not 'always'."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1111/pce.14327",
+    "opened": true,
+    "quote_found": true,
+    "note": "Plant, Cell & Environment 45:2231-2266 (Wiley, open access PMC9544843): abstract via Europe PMC REST, full text via Europe PMC (PMC9544843). Quote checked: 'The spread of air bubbles within the xylem results from air seeding at inter‐con...'"
+   },
+   {
+    "url": "https://sperry.biology.utah.edu/publications/AJB_special_06.pdf",
+    "opened": true,
+    "quote_found": true,
+    "note": "American Journal of Botany 93(10):1490-1500 (author PDF, Sperry lab, University of Utah): two-column PDF; quote confirmed by line search (\"lm\" is the PDF rendering of um). Quote checked: 'the typical intervessel pit membrane must have much narrower pores because witho...'"
+   },
+   {
+    "url": "https://doi.org/10.1111/nph.17282",
+    "opened": true,
+    "quote_found": true,
+    "note": "New Phytologist 230:1829-1843: abstract via Europe PMC REST. Quote checked: 'Embolism spreading in angiosperm xylem occurs via mesoporous pit membranes betwe...'"
+   }
+  ],
+  "note": "Johnson et al. 2022 (PCE), Sperry et al. 2006 (AJB) and Kaack et al. 2021 (New Phytol) are independent. All three are about spread between conduits."
+ },
+ {
+  "id": "6.3",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Scientists can listen for this. In 1966, researchers picked up tiny 'clicks' from thirsty castor-bean plants. Today, ultrasonic sensors, tuned above the range of human hearing, count them; in lab experiments on thin slices of wood, each ultrasonic pulse matched one bubble forming.",
+  "allowed_numbers": [
+   {
+    "value": "1966",
+    "unit": "year",
+    "source": "Milburn & Johnson, Planta 69:43-52 (Springer page); PROMETHEUS reference"
+   },
+   {
+    "value": "above 20",
+    "unit": "kHz (ultrasonic)",
+    "source": "PROMETHEUS (Duke)"
+   },
+   {
+    "value": "50-200",
+    "unit": "kHz (most common sensor range, single source)",
+    "source": "PROMETHEUS"
+   }
+  ],
+  "do_not_say": [
+   "Do not say 'you can hear a tree drinking/cavitating' or present a sound effect as a real recording: modern detection is ultrasonic; any SFX must be labelled an illustration (slowed or shifted).",
+   "Do not call the 1966 clicks ultrasonic or audible: the opened summary says neither.",
+   "Do not generalise 'each pulse is one bubble' to living trees: Ponomarenko's result is from wood slices in the lab.",
+   "Citation detail: Springer's title is 'The conduction of sap. II.'; PROMETHEUS lists it as 'I.' and spells the author 'Millburn'. Use Milburn & Johnson 1966, Planta 69:43-52."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://link.springer.com/article/10.1007/BF00380209",
+    "opened": true,
+    "quote_found": true,
+    "note": "Planta 69:43-52 (Springer): curl gave a stub; opened via WebFetch, summary quotes confirmed; Springer title is \"The conduction of sap. II.\". Quote checked: 'An apparatus has been constructed for the detection of vibrations generated with...'"
+   },
+   {
+    "url": "https://link.springer.com/article/10.1007/BF00380209",
+    "opened": true,
+    "quote_found": true,
+    "note": "Planta 69:43-52 (Springer): curl gave a stub; opened via WebFetch, summary quotes confirmed; Springer title is \"The conduction of sap. II.\". Quote checked: 'That 'click' production is correlated with the water status of the plant tissue.'"
+   },
+   {
+    "url": "https://doi.org/10.1098/rsif.2014.0480",
+    "opened": true,
+    "quote_found": true,
+    "note": "Journal of the Royal Society Interface 11:20140480 (PMC4233727): abstract via Europe PMC REST. Quote checked: 'we resolved the rapid development of all cavitation bubbles and demonstrated tha...'"
+   },
+   {
+    "url": "https://prometheusprotocols.net/detection-of-xylem-embolism-using-ultrasonic-acoustic-emissions/",
+    "opened": true,
+    "quote_found": true,
+    "note": "PROMETHEUS (Prometheus Wiki plant ecophysiology protocols; page lists Duke University): curl 403; opened via WebFetch, quote confirmed; lists affiliation Duke University, no named author. Quote checked: 'This energy is detectable with ultrasonic (i.e. above 20 kHz) sensors.'"
+   }
+  ],
+  "note": "Milburn & Johnson (Springer, opened via WebFetch), Ponomarenko et al. (J R Soc Interface) and PROMETHEUS (opened via WebFetch; curl 403) are independent."
+ },
+ {
+  "id": "6.4",
+  "verdict": "PASS",
+  "safe_wording": "The connections between pipes work like safety valves. Their membranes let water through but stop a bubble spreading. In conifers, each one has a porous rim holding a solid central plug that slams shut against the opening when the neighbouring pipe fills with air.",
+  "allowed_numbers": [
+   {
+    "value": "over 50",
+    "unit": "% of total xylem hydraulic resistance from pits (averaged across species)",
+    "source": "Choat et al. 2008, New Phytol 177:608 - single source"
+   }
+  ],
+  "do_not_say": [
+   "Do not show the torus-margo plug in broadleaved trees: most rely on a fine-pored membrane without a torus (Sperry); torus-margo pits are in most conifers and a few angiosperm families (Johnson)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1111/j.1469-8137.2007.02317.x",
+    "opened": true,
+    "quote_found": true,
+    "note": "New Phytologist 177:608-626: abstract via Europe PMC REST. Quote checked: 'The pit membrane, which lies in the center of each pit, allows water to pass bet...'"
+   },
+   {
+    "url": "https://sperry.biology.utah.edu/publications/AJB_special_06.pdf",
+    "opened": true,
+    "quote_found": true,
+    "note": "American Journal of Botany 93(10):1490-1500 (author PDF, Sperry lab, University of Utah): page fetched directly. Quote checked: 'This membrane permits large pores to maximize water flow in the margo region wit...'"
+   },
+   {
+    "url": "https://doi.org/10.1111/pce.14327",
+    "opened": true,
+    "quote_found": true,
+    "note": "Plant, Cell & Environment 45:2231-2266 (Wiley, open access PMC9544843): abstract via Europe PMC REST, full text via Europe PMC (PMC9544843). Quote checked: 'As a bubble becomes unstable and begins to expand, the torus margo shuts rapidly...'"
+   },
+   {
+    "url": "https://doi.org/10.1073/pnas.0710418105",
+    "opened": true,
+    "quote_found": true,
+    "note": "PNAS 105:12069-12074 (PMC2575339): abstract via Europe PMC REST. Quote checked: 'The resulting increase in the ratio of torus to pit aperture diameter allows the...'"
+   }
+  ],
+  "note": "Johnson 2022 and Domec 2008 share an author (one family). Choat 2008 and Sperry 2006 are independent of them. Trade-off (safer pits are harder to push water through) is supported by Choat and Domec."
+ },
+ {
+  "id": "6.5",
+  "verdict": "PASS",
+  "safe_wording": "Scientists measure how vulnerable a tree is with a 'vulnerability curve': how much of its water-carrying capacity is lost as the tension rises. The usual benchmark is P50, the tension at which half the capacity is gone.",
+  "allowed_numbers": [
+   {
+    "value": "50",
+    "unit": "% loss of conductivity (or embolised area) defining P50",
+    "source": "Johnson et al. 2022; Smith-Martin et al. 2025"
+   }
+  ],
+  "do_not_say": [
+   "Do not quote species P50 values: none were gathered or checked."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1111/pce.14327",
+    "opened": true,
+    "quote_found": true,
+    "note": "Plant, Cell & Environment 45:2231-2266 (Wiley, open access PMC9544843): abstract via Europe PMC REST, full text via Europe PMC (PMC9544843). Quote checked: 'ψ50, which represents the xylem pressure causing 50% loss of the initial hydraul...'"
+   },
+   {
+    "url": "https://doi.org/10.1093/treephys/tpaf041",
+    "opened": true,
+    "quote_found": true,
+    "note": "Tree Physiology: abstract via Europe PMC REST. Quote checked: 'the xylem-embolism thresholds (water potential at 12% (P12), 50% (P50) and 88% (...'"
+   },
+   {
+    "url": "https://doi.org/10.1111/jipb.12534",
+    "opened": true,
+    "quote_found": true,
+    "note": "Journal of Integrative Plant Biology 59:356-389: abstract via Europe PMC REST. Quote checked: 'We describe the great variety of techniques existing for evaluating xylem resist...'"
+   }
+  ],
+  "note": "Johnson (PCE), Smith-Martin (Tree Physiology) and Venturas (JIPB) are independent. Methods differ (conductivity loss vs embolised area)."
+ },
+ {
+  "id": "6.6",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Drought kills trees mainly by breaking their water columns. In a study of many tree species that died in drought, every species had lost at least 60 percent of its water-conducting capacity.",
+  "allowed_numbers": [
+   {
+    "value": "60 or more",
+    "unit": "% loss of xylem hydraulic conductivity at drought death (all species assessed)",
+    "source": "Adams et al. 2017, Nature Ecol Evol"
+   },
+   {
+    "value": "95",
+    "unit": "% loss of leaf hydraulic conductance at max recoverable stress (4 potted conifers)",
+    "source": "Brodribb & Cochard 2009 - species-specific"
+   }
+  ],
+  "do_not_say": [
+   "Do not say hydraulic failure is the only way drought kills: Adams et al. found carbon starvation evidence in some species ('not universal').",
+   "Do not present the 95% figure as a general rule: four conifer species, leaves, lab-type setting."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1038/s41559-017-0248-x",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature Ecology & Evolution 1:1285-1291: abstract via Europe PMC REST, publisher page. Quote checked: 'Here, we show that xylem hydraulic failure was ubiquitous across multiple tree t...'"
+   },
+   {
+    "url": "https://doi.org/10.1038/nature11688",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 491:752-755: abstract via Europe PMC REST, publisher page. Quote checked: 'One primary cause of productivity loss and plant mortality during drought is hyd...'"
+   },
+   {
+    "url": "https://doi.org/10.1104/pp.108.129783",
+    "opened": true,
+    "quote_found": true,
+    "note": "Plant Physiology 149:575-584: abstract via Europe PMC REST. Quote checked: 'Maximum recoverable water stress (Psimin) corresponded to a 95% loss of Kleaf.'"
+   }
+  ],
+  "note": "Choat 2012 and Brodribb & Cochard 2009 share authors (one family). Adams et al. 2017 is the independent second."
+ },
+ {
+  "id": "6.7",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Whether trees can repair these air blocks is still argued over. Some studies reported routine repair, but careful recent work suggests many of those results were artefacts of how samples were cut. What trees certainly do is grow new wood each year.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not say trees routinely refill embolised pipes overnight (Stroock 2014, CSBSJU say so; Venturas 2017 and Stewart 2026 call it debated or artefactual).",
+   "Do not say embolism is always permanent: Stewart's 'no refilling' result is in sunflowers, not trees.",
+   "'Grow new wood' is supported by CSBSJU ('forming new xylem cells'), not by the sources listed for this claim."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1111/jipb.12534",
+    "opened": true,
+    "quote_found": true,
+    "note": "Journal of Integrative Plant Biology 59:356-389: abstract via Europe PMC REST. Quote checked: 'We address several methodological issues and their connection with current debat...'"
+   },
+   {
+    "url": "https://doi.org/10.1093/jxb/erag294",
+    "opened": true,
+    "quote_found": true,
+    "note": "Journal of Experimental Botany (open access PMC13577751): abstract via Europe PMC REST, full text via Europe PMC (PMC13577751). Quote checked: 'Refilling of xylem embolism during recovery from drought has been studied for de...'"
+   },
+   {
+    "url": "https://doi.org/10.1093/jxb/erag294",
+    "opened": true,
+    "quote_found": true,
+    "note": "Journal of Experimental Botany (open access PMC13577751): abstract via Europe PMC REST, full text via Europe PMC (PMC13577751). Quote checked: 'We found no evidence of xylem embolism refilling in sunflowers, highlighting the...'"
+   },
+   {
+    "url": "https://doi.org/10.1146/annurev-fluid-010313-141411",
+    "opened": true,
+    "quote_found": true,
+    "note": "Annual Review of Fluid Mechanics 46:615-642: not in Europe PMC; publisher 403; abstract read via Crossref API, quote confirmed. Quote checked: 'When this liquid rope breaks, owing to cavitation, they catch the ends to keep i...'"
+   }
+  ],
+  "note": "Venturas et al. 2017 (JIPB), Stewart et al. 2026 (JXB) and Stroock et al. 2014 are independent; they disagree, which is the point of the claim."
+ },
+ {
+  "id": "7.1",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "In 2004, a team led by George Koch climbed the tallest redwoods and found the leaves get thirstier the higher they are. Extrapolating that trend, they estimated redwoods could grow no taller than about 122 to 130 metres, barring damage.",
+  "allowed_numbers": [
+   {
+    "value": "122-130",
+    "unit": "m (estimated maximum height)",
+    "source": "Koch et al. 2004 Nature 428:851; Nature News; Baltimore Sun via Vindicator (425 ft = 129.5 m)"
+   },
+   {
+    "value": "112.7",
+    "unit": "m (tallest tree they studied, 2004)",
+    "source": "Koch et al. 2004; Nature News"
+   }
+  ],
+  "do_not_say": [
+   "Do not call 122-130 m a law or a measured limit: it is a regression extrapolation ('may ultimately limit').",
+   "Do not say it applies to 'all trees' (that extension is the newspaper's).",
+   "Do not quote leaf water potential values from Koch: only the abstract was read.",
+   "Do not say Koch's study included Hyperion: it predates Hyperion's 2006 discovery (tallest then 112.7 m, Stratosphere Giant)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1038/nature02417",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 428:851-854: abstract via Europe PMC REST, publisher page. Quote checked: 'Our regression analyses of height gradients in leaf functional characteristics e...'"
+   },
+   {
+    "url": "https://www.nature.com/news/2004/040419/full/news040419-5.html",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature News (Nature Publishing Group; same publisher as Koch 2004 but editorially separate): page fetched directly. Quote checked: 'the tug of gravity and the friction between the water and the vessels through wh...'"
+   },
+   {
+    "url": "https://vindyarchives.com/news/2004/apr/24/researchers-find-limit-to-how-high-a-tree-can-grow",
+    "opened": true,
+    "quote_found": true,
+    "note": "The Vindicator (reprinting the Baltimore Sun): page fetched directly. Quote checked: 'Redwoods, and perhaps all trees, can grow no higher than 425 feet into the sky.'"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00709-016-1009-4",
+    "opened": true,
+    "quote_found": true,
+    "note": "Springer (Protoplasma), open access PMC5591614: abstract via Europe PMC REST, full text via Europe PMC (PMC5591614). Quote checked: 'Koch et al. (2004) reported on the classical experiment of recording height-depe...'"
+   }
+  ],
+  "note": "Primary paper abstract (Europe PMC) plus independent newspaper coverage. Nature News shares a publisher with Nature. Bentrup criticises the method."
+ },
+ {
+  "id": "7.2",
+  "verdict": "PASS",
+  "safe_wording": "Gravity alone adds about 0.01 megapascals of tension for every metre of height, roughly one atmosphere every 10 metres. So the top of a 116-metre tree needs more than one megapascal of extra pull just to hold the water up, before friction is counted.",
+  "allowed_numbers": [
+   {
+    "value": "0.01",
+    "unit": "MPa per m",
+    "source": "Bentrup 2017; CSBSJU; checker arithmetic 998 x 9.81 = 0.0098 MPa/m"
+   },
+   {
+    "value": "about 1.1",
+    "unit": "MPa (gravity over 116 m)",
+    "source": "Checker arithmetic 0.0098 x 116.07 = 1.14 MPa"
+   },
+   {
+    "value": "about 1",
+    "unit": "atm per 10 m",
+    "source": "Checker arithmetic; matches the 10.3 m barometer figure (KFUPM)"
+   }
+  ],
+  "do_not_say": [
+   "Do not use OpenStax Biology's '-0.1 MPa per metre ... extra 10 MPa': it is ten times too large (confirmed on the page and by arithmetic).",
+   "Do not present CSBSJU's friction figure (0.02 MPa/m) as measured; it is a worked estimate."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1007/s00709-016-1009-4",
+    "opened": true,
+    "quote_found": true,
+    "note": "Springer (Protoplasma), open access PMC5591614: abstract via Europe PMC REST, full text via Europe PMC (PMC5591614). Quote checked: 'They report a linear increase of the balance pressure which, however, does not m...'"
+   },
+   {
+    "url": "https://faculty.csbsju.edu/SSAUPE/biol327/Lecture/water-trans.htm",
+    "opened": true,
+    "quote_found": true,
+    "note": "College of St. Benedict / St. John's University, Biology Dept.: page fetched directly. Quote checked: 'However, we must also take into account the effects of gravity (0.01 MPa m -1 ).'"
+   },
+   {
+    "url": "https://doi.org/10.1126/science.148.3668.339",
+    "opened": true,
+    "quote_found": true,
+    "note": "Science 148(3668):339-346: abstract via Europe PMC REST. Quote checked: 'In tall conifers there is a hydrostatic pressure gradient that closely correspon...'"
+   }
+  ],
+  "note": "Bentrup and CSBSJU independent; Scholander 1965 observed a hydrostatic gradient corresponding to height in tall conifers. Arithmetic checked."
+ },
+ {
+  "id": "7.3",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "At the very top of the tallest redwoods the leaves live in what researchers called constant drought. They are small and crowded compared with the broad leaves lower down, and they photosynthesise less.",
+  "allowed_numbers": [
+   {
+    "value": "78.4",
+    "unit": "m (height where area-based peak photosynthesis occurred in Ishii's redwoods, single family)",
+    "source": "Ishii et al. 2008 Oecologia - optional"
+   }
+  ],
+  "do_not_say": [
+   "Do not say redwood top leaves are 'thicker' as checked fact: the opened redwood sources say 'small and scrunched' (Nature News) and morphology changes with height (Ishii abstract); the leaf-mass-per-area figures (326-943 g/m2) are from giant sequoia (Ambrose), not coast redwood.",
+   "Do not quote Ambrose LMA values for coast redwood.",
+   "Keep it qualitative: Koch, Ishii and Ambrose share authors (one research family)."
+  ],
+  "independence_ok": false,
+  "sources_checked": [
+   {
+    "url": "https://www.nature.com/news/2004/040419/full/news040419-5.html",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature News (Nature Publishing Group; same publisher as Koch 2004 but editorially separate): page fetched directly. Quote checked: 'Leaves near the ground are broad and well-spaced; those at the top are small and...'"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00442-008-1032-z",
+    "opened": true,
+    "quote_found": true,
+    "note": "Oecologia 156:751-763: abstract via Europe PMC REST. Quote checked: 'Bulk leaf water potential (Psi) decreased linearly and light availability increa...'"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00442-008-1032-z",
+    "opened": true,
+    "quote_found": true,
+    "note": "Oecologia 156:751-763: abstract via Europe PMC REST. Quote checked: 'Our results suggest that hydrostatic limitation of morphological development con...'"
+   },
+   {
+    "url": "https://doi.org/10.1038/nature02417",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 428:851-854: abstract via Europe PMC REST, publisher page. Quote checked: 'As trees grow taller, increasing leaf water stress due to gravity and path lengt...'"
+   },
+   {
+    "url": "https://mail.conifers.org/cu/se/ambrose2006.pdf",
+    "opened": true,
+    "quote_found": true,
+    "note": "UC Berkeley / Humboldt State / NAU authors; PDF hosted by The Gymnosperm Database: page fetched directly. Quote checked: 'Leaf mass per unit area (LMA) increased with height in all trees, ranging from 3...'"
+   }
+  ],
+  "note": "Koch 2004, Ishii 2008 and Ambrose 2006 are one research family; Nature News reports Koch. Independence is thin, hence qualitative wording only. Still acceptable as PASS_WITH_EDIT because the qualitative point is in two distinct publications (Koch paper and Ishii paper) plus independent journalism."
+ },
+ {
+  "id": "7.4",
+  "verdict": "PASS",
+  "safe_wording": "Even Hyperion, at about 116 metres, is still below that predicted ceiling.",
+  "allowed_numbers": [
+   {
+    "value": "6-14",
+    "unit": "m (gap to predicted ceiling)",
+    "source": "Checker arithmetic: 122-130 m minus 116.07 m"
+   }
+  ],
+  "do_not_say": [
+   "Do not say Hyperion 'proves' the model; it is consistent with it."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.guinnessworldrecords.com/world-records/tallest-tree-living",
+    "opened": true,
+    "quote_found": true,
+    "note": "Guinness World Records: page fetched directly. Quote checked: 'By 2019, the height had grown to 116.07 m (380 ft 9.7 in).'"
+   },
+   {
+    "url": "https://doi.org/10.1038/nature02417",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 428:851-854: abstract via Europe PMC REST, publisher page. Quote checked: 'estimate a maximum tree height of 122-130 m barring mechanical damage'"
+   }
+  ],
+  "note": "Guinness height and Koch range both verified; difference is arithmetic."
+ },
+ {
+  "id": "7.5",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Other approaches land in the same neighbourhood. A different team, studying Douglas-fir and a different part of the plumbing, the valves between pipes, extrapolated that water flow through the trunk would dwindle to nothing at roughly 110 metres.",
+  "allowed_numbers": [
+   {
+    "value": "about 109",
+    "unit": "m (trunk extrapolation, Douglas-fir)",
+    "source": "Domec et al. 2008 PNAS - single source"
+   },
+   {
+    "value": "up to 120",
+    "unit": "m (other models)",
+    "source": "Koch et al. 2004 abstract"
+   }
+  ],
+  "do_not_say": [
+   "Do not quote Domec's 138 m (branches) or 107 m (twig threshold) without context; they are single-source extrapolations.",
+   "Do not say all models agree on one number."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1073/pnas.0710418105",
+    "opened": true,
+    "quote_found": true,
+    "note": "PNAS 105:12069-12074 (PMC2575339): abstract via Europe PMC REST. Quote checked: 'Extrapolations of vertical trends for trunks and branches show that water transp...'"
+   },
+   {
+    "url": "https://doi.org/10.1038/nature02417",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 428:851-854: abstract via Europe PMC REST, publisher page. Quote checked: 'Some models predict heights of up to 120 m in the absence of mechanical damage'"
+   }
+  ],
+  "note": "Domec (PNAS) and Koch (Nature) are independent families. Specific Douglas-fir numbers are Domec only."
+ },
+ {
+  "id": "7.6",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "There are old reports of even taller trees, such as Douglas-firs said to have topped 120 metres, but none can be checked today.",
+  "allowed_numbers": [
+   {
+    "value": "100-127",
+    "unit": "m (historic Douglas-fir height records)",
+    "source": "Domec et al. 2008"
+   },
+   {
+    "value": "120",
+    "unit": "m (a 1924 estimate, Washington Douglas-fir)",
+    "source": "Brown arXiv"
+   }
+  ],
+  "do_not_say": [
+   "Do not present any historical height as measured fact.",
+   "Do not add Australian mountain ash giant claims: not in any opened source.",
+   "The Baltimore Sun's 417-foot Douglas-fir felled in British Columbia in 1895 is 'reportedly' and single-source; avoid or attribute."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://doi.org/10.1038/nature02417",
+    "opened": true,
+    "quote_found": true,
+    "note": "Nature 428:851-854: abstract via Europe PMC REST, publisher page. Quote checked: 'Some models predict heights of up to 120 m in the absence of mechanical damage, ...'"
+   },
+   {
+    "url": "https://doi.org/10.1073/pnas.0710418105",
+    "opened": true,
+    "quote_found": true,
+    "note": "PNAS 105:12069-12074 (PMC2575339): abstract via Europe PMC REST. Quote checked: 'which is consistent with historic height records of 100-127 m for this species.'"
+   },
+   {
+    "url": "https://arxiv.org/pdf/1404.3066",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Oxford, Faculty of Philosophy (arXiv preprint): page fetched directly. Quote checked: 'estimated a Douglas-fir in Washington to be 120m in 1924'"
+   }
+  ],
+  "note": "Koch ('historical accounts of taller trees'), Domec and Brown are independent. 'Not measured to modern standards' is an inference, so the safe wording says 'can't be checked'."
+ },
+ {
+  "id": "8.1",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "A big tree can move hundreds of litres of water on a summer day. Across dozens of studies, measured trees used anywhere from about 10 litres to well over 1,000 litres a day, and a large oak can give off around 150,000 litres in a year.",
+  "allowed_numbers": [
+   {
+    "value": "10 to 1,180",
+    "unit": "kg (litres) per day (range across 52 studies, 67 species)",
+    "source": "Wullschleger et al. 1998 Tree Physiology"
+   },
+   {
+    "value": "10-200",
+    "unit": "kg per day (almost 90% of observations, trees averaging 21 m)",
+    "source": "Wullschleger et al. 1998"
+   },
+   {
+    "value": "up to 900",
+    "unit": "L per day (mature tree)",
+    "source": "RHS"
+   },
+   {
+    "value": "40,000 US gal / 151,000",
+    "unit": "L per year (large oak)",
+    "source": "USGS Water Science School - no source given on page; illustrative"
+   },
+   {
+    "value": "about 410",
+    "unit": "L per day (year-round average of the oak figure)",
+    "source": "Checker arithmetic 151,000 / 365 = 414"
+   }
+  ],
+  "do_not_say": [
+   "Do not present the USGS oak figure as a measurement; the page gives no source.",
+   "Do not say a typical tree uses ~1,000 L/day: 1,180 kg/day is one Amazon canopy tree; most observations are 10-200 kg/day.",
+   "Do not convert RHS '200 gallons' to US gallons as 200 (900 L is about 238 US gal)."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://www.usgs.gov/water-science-school/science/evapotranspiration-and-water-cycle",
+    "opened": true,
+    "quote_found": true,
+    "note": "USGS Water Science School: page fetched directly. Quote checked: 'An acre of corn gives off about 3,000-4,000 gallons (11,400-15,100 liters) of wa...'"
+   },
+   {
+    "url": "https://doi.org/10.1093/treephys/18.8-9.499",
+    "opened": true,
+    "quote_found": true,
+    "note": "Tree Physiology 18:499-512: abstract via Europe PMC REST. Quote checked: 'A survey of 52 studies conducted since 1970 indicated that rates of water use ra...'"
+   },
+   {
+    "url": "https://rhs.org.uk/advice/understanding-plants/how-plants-lose-water",
+    "opened": true,
+    "quote_found": true,
+    "note": "Royal Horticultural Society (RHS): page fetched directly. Quote checked: 'A mature tree can drink up to 900 litres (200 gallons) of water a day, yet plant...'"
+   }
+  ],
+  "note": "USGS, Wullschleger (Oak Ridge) and RHS are independent."
+ },
+ {
+  "id": "8.2",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "Almost all of that water just passes through and evaporates. Only a few percent stays in the tree or goes into building it.",
+  "allowed_numbers": [
+   {
+    "value": "less than 5",
+    "unit": "% remains in the plant",
+    "source": "University of Nebraska-Lincoln"
+   },
+   {
+    "value": "around 2",
+    "unit": "% used in photosynthesis and tissue building",
+    "source": "RHS"
+   },
+   {
+    "value": "about 1-2",
+    "unit": "% of what is transpired is needed for photosynthesis",
+    "source": "UMN open textbook 11.1 (found on page, not cited by researcher)"
+   }
+  ],
+  "do_not_say": [
+   "Do not say '97-99%' as a precise figure; sources give different numbers.",
+   "Do not use OpenStax Biology's 'up to 90 percent' lost; it conflicts with UNL, RHS, LibreTexts and UMN.",
+   "LibreTexts is adapted from OpenStax and Kimball; do not count it as an independent family from OpenStax."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://passel2.unl.edu/view/lesson/c242ac4fbaaf/3",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Nebraska-Lincoln, Agronomy and Horticulture: page fetched directly. Quote checked: 'Although only less than 5% of the water taken up by roots remains in the plant, ...'"
+   },
+   {
+    "url": "https://rhs.org.uk/advice/understanding-plants/how-plants-lose-water",
+    "opened": true,
+    "quote_found": true,
+    "note": "Royal Horticultural Society (RHS): page fetched directly. Quote checked: 'Only around two per cent is used in processes like photosynthesis'"
+   },
+   {
+    "url": "https://bio.libretexts.org/Bookshelves/Botany/Botany_(Ha_Morrow_and_Algiers)/04%3A_Plant_Physiology_and_Regulation/4.05%3A_Transport/4.5.01%3A_Water_Transport/4.5.1.02%3A_Transpiration",
+    "opened": true,
+    "quote_found": true,
+    "note": "LibreTexts (text adapted largely from OpenStax Biology; same family as OpenStax): page fetched directly. Quote checked: 'Less than 1% of the water reaching the leaves is used in photosynthesis and plan...'"
+   },
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'Up to 90 percent of the water taken up by roots may be lost through transpiratio...'"
+   }
+  ],
+  "note": "UNL, RHS and UMN are independent and agree on 'a few percent or less'."
+ },
+ {
+  "id": "9.1",
+  "verdict": "PASS_WITH_EDIT",
+  "safe_wording": "For the model: conifer tracheids are single cells only a few millimetres long. Vessels in broadleaved plants are chains of cells about ten times longer or more, from about a centimetre to tens of centimetres on average, and in some trees the longest run past 75 centimetres.",
+  "allowed_numbers": [
+   {
+    "value": "less than 6",
+    "unit": "mm (tracheid length)",
+    "source": "Sperry et al. 2006"
+   },
+   {
+    "value": "1.17-27",
+    "unit": "cm (mean vessel length range across species studied)",
+    "source": "Sperry et al. 2006; 27 cm is kudzu, a vine"
+   },
+   {
+    "value": "over 75",
+    "unit": "cm (maximum vessel length, Acacia mearnsii and Eucalyptus globulus)",
+    "source": "Smith-Martin et al. 2025 Tree Physiology"
+   }
+  ],
+  "do_not_say": [
+   "Do not say tree vessels average 27 cm: the 27 cm mean is kudzu (a vine); Sperry's samples are small branches."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://sperry.biology.utah.edu/publications/AJB_special_06.pdf",
+    "opened": true,
+    "quote_found": true,
+    "note": "American Journal of Botany 93(10):1490-1500 (author PDF, Sperry lab, University of Utah): two-column PDF; quote confirmed by line search (\"lm\" is the PDF rendering of um). Quote checked: 'Tracheids, being unicellular, were restricted to less than 6 mm in length'"
+   },
+   {
+    "url": "https://sperry.biology.utah.edu/publications/AJB_special_06.pdf",
+    "opened": true,
+    "quote_found": true,
+    "note": "American Journal of Botany 93(10):1490-1500 (author PDF, Sperry lab, University of Utah): two-column PDF; quote confirmed by line search (\"lm\" is the PDF rendering of um). Quote checked: 'Multicellular vessels, in contrast, were an order of magnitude longer, ranging f...'"
+   },
+   {
+    "url": "https://doi.org/10.1093/treephys/tpaf041",
+    "opened": true,
+    "quote_found": true,
+    "note": "Tree Physiology: abstract via Europe PMC REST. Quote checked: 'two adult trees (Acacia mearnsii De Wild. and Eucalyptus globulus Labill.) known...'"
+   }
+  ],
+  "note": "Sperry (AJB) and Smith-Martin (Tree Physiology) are independent. Visual reference only."
+ },
+ {
+  "id": "9.2",
+  "verdict": "PASS",
+  "safe_wording": "Inside a typical broad leaf: under the top skin is a layer of tightly packed column-shaped cells, then a spongy layer of loose cells with big air spaces. Stomata, each guarded by two cells, are mostly on the underside, and a waxy cuticle coats the outside.",
+  "allowed_numbers": [],
+  "do_not_say": [
+   "Do not label this as a redwood or conifer needle: it is a typical broadleaf (dicot) leaf."
+  ],
+  "independence_ok": true,
+  "sources_checked": [
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-4-leaves",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'The palisade parenchyma (also called the palisade mesophyll) has column-shaped, ...'"
+   },
+   {
+    "url": "https://openstax.org/books/biology-2e/pages/30-4-leaves",
+    "opened": true,
+    "quote_found": true,
+    "note": "OpenStax (Rice University): page fetched directly. Quote checked: 'Stomata on the leaf underside allow gas exchange. A waxy cuticle covers all aeri...'"
+   },
+   {
+    "url": "https://open.lib.umn.edu/horticulture/chapter/5-1-inside-leaves/",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Minnesota Libraries Publishing (open textbook): page fetched directly. Quote checked: 'Spongy mesophyll — loosely packed cells with large air spaces between them. The ...'"
+   },
+   {
+    "url": "https://open.lib.umn.edu/horticulture/chapter/5-1-inside-leaves/",
+    "opened": true,
+    "quote_found": true,
+    "note": "University of Minnesota Libraries Publishing (open textbook): page fetched directly. Quote checked: 'Lower epidermis with guard cells that regulate the size of the stomata , the gap...'"
+   }
+  ],
+  "note": "OpenStax Biology 30.4 and UMN 5.1 are independent."
+ }
+]
