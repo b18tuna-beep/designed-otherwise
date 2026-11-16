@@ -6,6 +6,7 @@ list.json: [{"name": "p1_newborn_screen", "kind": "page", "url": "<page with the
             {"name": "gray919_ossicles", "kind": "commons", "title": "File:Gray919.png"}]
 kind "page":    downloads the page, takes the largest-looking image link containing `pick` (or og:image)
 kind "commons": asks the Wikimedia Commons API for the original file URL and its licence metadata
+kind "file":    downloads `url` as-is (direct media links, e.g. NPS B-roll mp4s); record `license` text in the item
 Writes each image as <name>.<ext> plus licenses.json (source page, file URL, licence fields as published).
 """
 import json
@@ -67,7 +68,10 @@ def main():
     log = []
     for it in items:
         try:
-            url, meta = from_commons(it) if it["kind"] == "commons" else from_page(it)
+            if it["kind"] == "file":
+                url, meta = it["url"], {"license": it.get("license"), "credit": it.get("credit")}
+            else:
+                url, meta = from_commons(it) if it["kind"] == "commons" else from_page(it)
             ext = os.path.splitext(urllib.parse.urlparse(url).path)[1].lower() or ".jpg"
             path = os.path.join(out, it["name"] + ext)
             data = get(url, binary=True)  # download first so a failure never leaves an empty file behind

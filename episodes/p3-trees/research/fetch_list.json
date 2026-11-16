@@ -1,0 +1,223 @@
+[
+ {
+  "name": "r1_redwoods_looking_up",
+  "kind": "page",
+  "url": "https://npgallery.nps.gov/AssetDetail/fbcf44ce-0a69-45cc-9987-62dbf7724677",
+  "pick": "fbcf44ce0a6945cc998762dbf7724677/original"
+ },
+ {
+  "name": "r2_redwoods_fog_sunbeams",
+  "kind": "page",
+  "url": "https://npgallery.nps.gov/AssetDetail/14fbe861-f031-42aa-8d83-a31d7d408acc",
+  "pick": "14fbe861f03142aa8d83a31d7d408acc/original"
+ },
+ {
+  "name": "r3_redwood_np_redw9345",
+  "kind": "commons",
+  "title": "File:Redwood National Park REDW9345.jpg"
+ },
+ {
+  "name": "r4_redwood_np_redw2151",
+  "kind": "commons",
+  "title": "File:Redwood National Park REDW2151.jpg"
+ },
+ {
+  "name": "r5_redwood_np_redw9343",
+  "kind": "commons",
+  "title": "File:Redwood National Park REDW9343.jpg"
+ },
+ {
+  "name": "r6_sequoia_horseback_scale",
+  "kind": "commons",
+  "title": "File:Giant Sequoia trees in Sequoia and Kings Canyon National Parks (d83c9958-9901-4481-b46f-647fefd01c15).jpg"
+ },
+ {
+  "name": "r7_sequoia_crescent_meadow",
+  "kind": "commons",
+  "title": "File:Giant Forest in Crescent Meadow of Sequoia National Park (edfb1c90-b5a3-4333-87ff-d15202c9485e).jpg"
+ },
+ {
+  "name": "r8_sequoia_grove_sunrise",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/images/sequoia-grove-sunrise",
+  "pick": "Photo_6b_Sequoia_grove_at_sunrise"
+ },
+ {
+  "name": "r9_sequoia_two_measure",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/images/it-takes-two-measure-giant-sequoia",
+  "pick": "IMG_20190717_095400267_HDR"
+ },
+ {
+  "name": "r10_sequoia_condition_check",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/images/giant-sequoias",
+  "pick": "IMG_2377"
+ },
+ {
+  "name": "r11_watkins_mariposa_hollow_sequoia",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/images/a-photo-some-men-and-a-sequoia-mariposa-grove",
+  "pick": "ynp4.jpg"
+ },
+ {
+  "name": "r12_big_trees_sp_1913",
+  "kind": "commons",
+  "title": "File:Big Trees of California Southern Pacific (1913) (14598096447).jpg"
+ },
+ {
+  "name": "h1_magdeburg_hemispheres_1672",
+  "kind": "commons",
+  "title": "File:Magdeburg.jpg"
+ },
+ {
+  "name": "h2_magdeburg_hemispheres_fotothek",
+  "kind": "commons",
+  "title": "File:Magdeburg hemispheres, drawing from Fotothek 0005669.jpg"
+ },
+ {
+  "name": "h3_nlm_guericke_globes_1672",
+  "kind": "page",
+  "url": "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-101435294-img",
+  "pick": "101435294"
+ },
+ {
+  "name": "h4_nlm_boyle_air_pump_1777",
+  "kind": "page",
+  "url": "https://digirepo.nlm.nih.gov/catalog/nlm:nlmuid-101436390-img",
+  "pick": "101436390"
+ },
+ {
+  "name": "h5_si_experimenta_nova_title",
+  "kind": "page",
+  "url": "https://library.si.edu/image-gallery/105454",
+  "pick": "SIL-76-15313"
+ },
+ {
+  "name": "m1_marshall_ward_oak_wood_elements",
+  "kind": "commons",
+  "title": "File:The Oak (Marshall Ward) Fig 16.jpg"
+ },
+ {
+  "name": "m2_usgs_stomata_diagram",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/images/generalized-diagram-water-vapor-being-released-through-stomata-a-leaf-surface",
+  "pick": "Infiltration_fig4_stomata"
+ },
+ {
+  "name": "m3_usgs_transpiration_poster",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/images/wtwtranspiration",
+  "pick": "WTW_Transpiration"
+ },
+ {
+  "name": "m4_ars_stomatal_conductance",
+  "kind": "page",
+  "url": "https://www.ars.usda.gov/oc/images/photos/nov12/d2683-1/",
+  "pick": "300dpi/kesa/d2683-1"
+ },
+ {
+  "name": "m5_ars_sem_loading",
+  "kind": "page",
+  "url": "https://www.ars.usda.gov/oc/images/photos/dec00/k9162-1/",
+  "pick": "300dpi/kesa/k9162-1"
+ },
+ {
+  "name": "w1_usfs_drought_dead_pines",
+  "kind": "page",
+  "url": "https://www.jpl.nasa.gov/news/nasa-maps-california-drought-effects-on-sierra-trees/",
+  "pick": "btree-full"
+ },
+ {
+  "name": "w2_usgs_sequoia_drought_dieback",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/images/giant-sequoia-foliage-dieback-during-californias-extreme-drought",
+  "pick": "Stephenson%201"
+ },
+ {
+  "name": "w3_usgs_sap_flow_sensors",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/images/sap-flow-sensors-blackwater-national-wildlife-preserve",
+  "pick": "Sap%20flow%20sensor"
+ },
+ {
+  "name": "w4_usgs_sap_probe_install",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/images/sap-probe-install",
+  "pick": "IMG_1968"
+ },
+ {
+  "name": "w5_usfs_maple_sap_lines_a",
+  "kind": "page",
+  "url": "https://www.dvidshub.net/image/9603124/twin-maple-sugarbush-operation",
+  "pick": "9603124"
+ },
+ {
+  "name": "w6_usfs_maple_sap_lines_b",
+  "kind": "page",
+  "url": "https://www.dvidshub.net/image/9603116/twin-maple-sugarbush-operation",
+  "pick": "9603116"
+ },
+ {
+  "name": "w7_usgs_water_droplets_leaf",
+  "kind": "page",
+  "url": "https://www.usgs.gov/media/11982",
+  "pick": "Water_droplets_on_leaf"
+ },
+ {
+  "name": "v1_redwood_trunk",
+  "kind": "file",
+  "url": "https://www.nps.gov/nps-audiovideo/legacy/redw/F2A4BB60-A45E-4EEC-90F74BD73067803E/redw-Creeksideredwood-PrairieCreek_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "credit": "NPS: G Litten"
+ },
+ {
+  "name": "v2_fog_in_redwood_trees",
+  "kind": "file",
+  "url": "https://www.nps.gov/nps-audiovideo/legacy/redw/DF2E96F7-C3A9-2CAE-A9ACBB156616B570/redw-FogInTreesB-Roll_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "credit": "NPS: Liam Carey-Rand"
+ },
+ {
+  "name": "v3_creek_to_canopy",
+  "kind": "file",
+  "url": "https://www.nps.gov/nps-audiovideo/legacy/redw/F087D99A-A318-2DAF-174262B1B4AB228E/redw-Creektotreetoppan30secs_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "credit": "NPS: G Litten"
+ },
+ {
+  "name": "v4_sun_in_redwood_canopy",
+  "kind": "file",
+  "url": "https://www.nps.gov/nps-audiovideo/legacy/redw/8C7A8FCB-A1F3-787A-8521EC1B84BBA0FA/redw-SuninredwoodsLostmanCreek_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "credit": "NPS: G Litten"
+ },
+ {
+  "name": "v5_redwood_trunk__close_up",
+  "kind": "file",
+  "url": "https://www.nps.gov/nps-audiovideo/legacy/redw/F4618936-A6B7-F0A0-3DD82D1579EE21C1/redw-Trunkpan30secs_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "credit": "NPS: G Litten"
+ },
+ {
+  "name": "v6_redwood_groves",
+  "kind": "file",
+  "url": "https://www.nps.gov/nps-audiovideo/legacy/redw/DE96C05B-ABAD-08F8-9FBB4E3168B63587/redw-RedwoodsB-Roll_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "credit": "Liam Carey-Rand, NPS"
+ },
+ {
+  "name": "v7_revelation_trail_part_1",
+  "kind": "file",
+  "url": "https://www.nps.gov/nps-audiovideo/legacy/redw/F3FC6727-BE91-6A3E-9186A2B2BB8370E8/redw-RevelationTrailPrairieCreekRedwoods1_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "credit": "NPS: G Litten"
+ },
+ {
+  "name": "v8_redwood_tree",
+  "kind": "file",
+  "url": "https://www.nps.gov/nps-audiovideo/legacy/redw/EFE6A42C-BE08-9DC4-6DD87ABB4DAE3BDF/redw-RedwoodatLostmanCreek2_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "credit": "NPS: G Litten"
+ }
+]

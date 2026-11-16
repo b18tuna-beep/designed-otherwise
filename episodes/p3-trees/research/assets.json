@@ -1,0 +1,919 @@
+[
+  {
+    "id": "R1",
+    "kind": "page",
+    "title": "Looking up through the redwoods, Redwood National and State Parks, 2015",
+    "url": "https://npgallery.nps.gov/AssetDetail/fbcf44ce-0a69-45cc-9987-62dbf7724677",
+    "direct_url": "https://npgallery.nps.gov/GetAsset/fbcf44ce0a6945cc998762dbf7724677/original.jpg",
+    "creator": "U.S. National Park Service (publisher); contact Redwood National and State Parks; no photographer named",
+    "license_quote": "Constraints: \"Public domain\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": true,
+    "why": "NPS-published park photo, constraint field says Public domain, no third-party credit.",
+    "beat": "1, 7 (looking up a trunk)",
+    "resolution_length": "2048x1356 JPG",
+    "fetch": {
+      "kind": "page",
+      "url": "https://npgallery.nps.gov/AssetDetail/fbcf44ce-0a69-45cc-9987-62dbf7724677",
+      "pick": "fbcf44ce0a6945cc998762dbf7724677/original"
+    }
+  },
+  {
+    "id": "R2",
+    "kind": "page",
+    "title": "Sun beaming through the foggy coastal redwood forest, Redwood National and State Parks, 2015",
+    "url": "https://npgallery.nps.gov/AssetDetail/14fbe861-f031-42aa-8d83-a31d7d408acc",
+    "direct_url": "https://npgallery.nps.gov/GetAsset/14fbe861f03142aa8d83a31d7d408acc/original.jpg",
+    "creator": "U.S. National Park Service (publisher); Redwood National and State Parks; collection \"National Park Service Facebook Photos\"; no photographer named",
+    "license_quote": "Constraints: \"Public domain\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": true,
+    "why": "NPS-published, Public domain constraint. The page caption itself explains fog drip feeding redwoods (useful for beat 5/7).",
+    "beat": "1, 5 (fog in redwoods), 7",
+    "resolution_length": "1360x1020 JPG (smallish)",
+    "fetch": {
+      "kind": "page",
+      "url": "https://npgallery.nps.gov/AssetDetail/14fbe861-f031-42aa-8d83-a31d7d408acc",
+      "pick": "14fbe861f03142aa8d83a31d7d408acc/original"
+    }
+  },
+  {
+    "id": "R3",
+    "kind": "commons",
+    "title": "File:Redwood National Park REDW9345.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9345.jpg",
+    "checked_via": "https://download.osmand.net/wiki/File:Redwood_National_Park_REDW9345.jpg",
+    "original_source": "http://www.nps.gov/storage/images/redw/Webpages/originals/389.jpg",
+    "creator": "National Park Service Digital Image Archives",
+    "license_quote": "\"All photographs and images in this archive [National Park Service Digital Image Archives] are public domain images.\"",
+    "usable": true,
+    "why": "NPS Digital Image Archives, stated public domain. Description is the park's generic blurb, so the actual picture (portrait old-growth redwoods) must be checked on the preview.",
+    "beat": "1, 7, 8 (old-growth redwood, portrait)",
+    "resolution_length": "2048x3072",
+    "fetch": {
+      "kind": "commons",
+      "title": "File:Redwood National Park REDW9345.jpg"
+    }
+  },
+  {
+    "id": "R4",
+    "kind": "commons",
+    "title": "File:Redwood National Park REDW2151.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW2151.jpg",
+    "checked_via": "https://download.osmand.net/wiki/File:Redwood_National_Park_REDW2151.jpg",
+    "original_source": "http://www.nps.gov/storage/images/redw/Webpages/originals/386.jpg",
+    "creator": "National Park Service Digital Image Archives",
+    "license_quote": "\"All photographs and images in this archive [National Park Service Digital Image Archives] are public domain images.\"",
+    "usable": true,
+    "why": "NPS Digital Image Archives, stated public domain. Description is the park's generic blurb, so the actual picture (portrait old-growth redwoods) must be checked on the preview.",
+    "beat": "1, 7, 8 (old-growth redwood, portrait)",
+    "resolution_length": "2048x3072",
+    "fetch": {
+      "kind": "commons",
+      "title": "File:Redwood National Park REDW2151.jpg"
+    }
+  },
+  {
+    "id": "R5",
+    "kind": "commons",
+    "title": "File:Redwood National Park REDW9343.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg",
+    "checked_via": "https://download.osmand.net/wiki/File:Redwood_National_Park_REDW9343.jpg",
+    "original_source": "http://www.nps.gov/storage/images/redw/Webpages/originals/387.jpg",
+    "creator": "National Park Service Digital Image Archives",
+    "license_quote": "\"All photographs and images in this archive [National Park Service Digital Image Archives] are public domain images.\"",
+    "usable": true,
+    "why": "NPS Digital Image Archives, stated public domain. Description is the park's generic blurb, so the actual picture (portrait old-growth redwoods) must be checked on the preview.",
+    "beat": "1, 7, 8 (old-growth redwood, portrait)",
+    "resolution_length": "2013x2970",
+    "fetch": {
+      "kind": "commons",
+      "title": "File:Redwood National Park REDW9343.jpg"
+    }
+  },
+  {
+    "id": "R6",
+    "kind": "commons",
+    "title": "File:Giant Sequoia trees in Sequoia and Kings Canyon National Parks (d83c9958-9901-4481-b46f-647fefd01c15).jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Giant_Sequoia_trees_in_Sequoia_and_Kings_Canyon_National_Parks_(d83c9958-9901-4481-b46f-647fefd01c15).jpg",
+    "checked_via": "download.osmand.net mirror (license block not rendered by the mirror); NPGallery source page https://npgallery.nps.gov/AssetDetail/d83c9958-9901-4481-b46f-647fefd01c15 could not be opened (permission prompt timed out)",
+    "creator": "\"NPS staff\"; publisher U.S. National Park Service; source NPGallery",
+    "license_quote": "Mirror showed author \"NPS staff\" and source NPGallery; the license template text was not rendered. Re-check the Commons tag (expected PD-USGov-NPS) in the fetch step.",
+    "usable": true,
+    "why": "Man on horseback in front of a giant sequoia: classic scale shot. Author is NPS staff, so a federal work; only the tag text is unconfirmed.",
+    "beat": "8 (scale), 1",
+    "resolution_length": "2048x3072",
+    "fetch": {
+      "kind": "commons",
+      "title": "File:Giant Sequoia trees in Sequoia and Kings Canyon National Parks (d83c9958-9901-4481-b46f-647fefd01c15).jpg"
+    }
+  },
+  {
+    "id": "R7",
+    "kind": "commons",
+    "title": "File:Giant Forest in Crescent Meadow of Sequoia National Park (edfb1c90-b5a3-4333-87ff-d15202c9485e).jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Giant_Forest_in_Crescent_Meadow_of_Sequoia_National_Park_(edfb1c90-b5a3-4333-87ff-d15202c9485e).jpg",
+    "checked_via": "download.osmand.net mirror; NPGallery source page blocked by permission timeout",
+    "creator": "\"NPS staff\"; publisher U.S. National Park Service; source NPGallery",
+    "license_quote": "Same as R6: author NPS staff; license template not rendered on mirror. Re-check tag in fetch step.",
+    "usable": true,
+    "why": "NPS staff photo of giant sequoias at Crescent Meadow (1980s?).",
+    "beat": "1, 8",
+    "resolution_length": "2048x3072",
+    "fetch": {
+      "kind": "commons",
+      "title": "File:Giant Forest in Crescent Meadow of Sequoia National Park (edfb1c90-b5a3-4333-87ff-d15202c9485e).jpg"
+    }
+  },
+  {
+    "id": "R8",
+    "kind": "page",
+    "title": "Sequoia grove at sunrise",
+    "url": "https://www.usgs.gov/media/images/sequoia-grove-sunrise",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/Photo_6b_Sequoia_grove_at_sunrise_McFarland.jpeg",
+    "creator": "J. McFarland, USGS",
+    "license_quote": "\"Public Domain.\"",
+    "usable": true,
+    "why": "USGS employee photo, page says Public Domain. Healthy grove in Giant Forest glowing at sunrise: good for 'every sunny day'.",
+    "beat": "1, 5 (sun drives the pump), 8",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/images/sequoia-grove-sunrise",
+      "pick": "Photo_6b_Sequoia_grove_at_sunrise"
+    }
+  },
+  {
+    "id": "R9",
+    "kind": "page",
+    "title": "It takes two to measure this Giant Sequoia",
+    "url": "https://www.usgs.gov/media/images/it-takes-two-measure-giant-sequoia",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/IMG_20190717_095400267_HDR.jpg",
+    "creator": "Elizabeth MacDougal, USGS Western Ecological Research Center",
+    "license_quote": "\"Public Domain.\"",
+    "usable": true,
+    "why": "USGS photo, Public Domain. Two technicians stretching a tape round one trunk: people for scale.",
+    "beat": "8 (scale), 7",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/images/it-takes-two-measure-giant-sequoia",
+      "pick": "IMG_20190717_095400267_HDR"
+    }
+  },
+  {
+    "id": "R10",
+    "kind": "page",
+    "title": "Giant sequoias (checking the condition of giant sequoias)",
+    "url": "https://www.usgs.gov/media/images/giant-sequoias",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/IMG_2377.JPG",
+    "creator": "USGS Ecosystems Land Change Science Program",
+    "license_quote": "\"Public Domain.\"",
+    "usable": true,
+    "why": "USGS, Public Domain. Content (likely researchers at sequoias) to confirm on preview.",
+    "beat": "8, 6",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/images/giant-sequoias",
+      "pick": "IMG_2377"
+    }
+  },
+  {
+    "id": "R11",
+    "kind": "page",
+    "title": "A photo of some men and a sequoia in Mariposa Grove (Watkins' Pacific Coast Series, No. 1171)",
+    "url": "https://www.usgs.gov/media/images/a-photo-some-men-and-a-sequoia-mariposa-grove",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/ynp4.jpg",
+    "creator": "Watkins' Pacific Coast Series (Carleton Watkins, 19th century); hosted by USGS Geology and Ecology of National Parks",
+    "license_quote": "No statement on the page. Public domain by age: Watkins' Pacific Coast Series was published in the 1870s-1880s (pre-1929).",
+    "usable": true,
+    "why": "19th-century published photograph, public domain by date regardless of host. Hollow sequoia with two men, one on a white horse. Probably low resolution (thumbnail path).",
+    "beat": "8 (scale), 2 (historical texture)",
+    "resolution_length": "not stated; thumbnail path, likely small",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/images/a-photo-some-men-and-a-sequoia-mariposa-grove",
+      "pick": "ynp4.jpg"
+    }
+  },
+  {
+    "id": "R12",
+    "kind": "commons",
+    "title": "File:Big Trees of California Southern Pacific (1913) (14598096447).jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Big_Trees_of_California_Southern_Pacific_(1913)_(14598096447).jpg",
+    "checked_via": "https://download.osmand.net/wiki/File:Big_Trees_of_California_Southern_Pacific_(1913)_(14598096447).jpg",
+    "creator": "Passenger Department, Southern Pacific Company (1913); photo credited in text to Charles Weidner; scan Internet Archive Book Images",
+    "license_quote": "\"confirmed to be licensed under the terms of the No known copyright restrictions\" (Flickr Commons). Published 1913, so public domain in the US by date.",
+    "usable": true,
+    "why": "1913 publication, PD by date. Page photo of a sequoia (probably the Calaveras hollow tree). Content to confirm on preview.",
+    "beat": "8 (historical scale)",
+    "resolution_length": "3166x4588",
+    "fetch": {
+      "kind": "commons",
+      "title": "File:Big Trees of California Southern Pacific (1913) (14598096447).jpg"
+    }
+  },
+  {
+    "id": "R13",
+    "kind": "page",
+    "title": "Crowds at the General Sherman Tree",
+    "url": "https://npgallery.nps.gov/AssetDetail/095e134c-e47b-4bad-a80c-eaadcf2eeedd",
+    "creator": "Photo credit \"Rebecca Paterson\"",
+    "license_quote": "Constraints: \"Public domain:Full Granting Rights\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": false,
+    "why": "Best people-for-scale sequoia shot found, but the photographer is a named individual with no NPS affiliation stated. Maybe: usable only if SEKI confirms she was staff/volunteer.",
+    "beat": "8",
+    "resolution_length": "768x1024 PNG"
+  },
+  {
+    "id": "R14",
+    "kind": "page",
+    "title": "General Sherman Tree in snow, Joseph Dixon in foreground (SEKI Historic Image)",
+    "url": "https://npgallery.nps.gov/AssetDetail/6c64048d-e4b9-4786-943a-8a87dd2b1509",
+    "creator": "Photographer \"Unknown\"; publisher NPS",
+    "license_quote": "Constraints: \"Public domain\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": false,
+    "why": "Photographer and date unknown; cannot confirm federal authorship or pre-1929 publication. Maybe.",
+    "beat": "8",
+    "resolution_length": "2633x4400 TIF"
+  },
+  {
+    "id": "R15",
+    "kind": "page",
+    "title": "Yosemite Ranger School on tour in Sequoia, at the General Sherman Tree",
+    "url": "https://npgallery.nps.gov/AssetDetail/b74447cf-c4d2-4964-8e95-51b42cd14835",
+    "creator": "Jack Hickey",
+    "license_quote": "Constraints: \"Public domain\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": false,
+    "why": "Group at the base of General Sherman (scale), but photographer's NPS status not stated. Maybe.",
+    "beat": "8",
+    "resolution_length": "3911x3188 TIF / JPG"
+  },
+  {
+    "id": "R16",
+    "kind": "page",
+    "title": "Photographing General Sherman Tree",
+    "url": "https://npgallery.nps.gov/AssetDetail/a6af7f33-17c8-4c96-b359-031a338b647a",
+    "creator": "Hank Jones",
+    "license_quote": "Constraints: \"Public domain\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": false,
+    "why": "Named photographer, affiliation not stated. Maybe.",
+    "beat": "8",
+    "resolution_length": "2177x1755 TIF"
+  },
+  {
+    "id": "R17",
+    "kind": "page",
+    "title": "Winter Scenes, Giant Forest area, Giant Sequoia",
+    "url": "https://npgallery.nps.gov/AssetDetail/250deb6f-521a-4cdf-b8e4-e3429dc9ad51",
+    "creator": "Sam Pusateri",
+    "license_quote": "Constraints: \"Public domain\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": false,
+    "why": "Named photographer, affiliation not stated; 200 MB TIF. Maybe.",
+    "beat": "1",
+    "resolution_length": "9219x11385 TIF"
+  },
+  {
+    "id": "R18",
+    "kind": "page",
+    "title": "Giant Sequoia, Overgrown Sequoia stump",
+    "url": "https://npgallery.nps.gov/AssetDetail/aa199c80-7174-46c2-b0e6-fc7f7646cb7c",
+    "creator": "Photographer \"Unknown\"",
+    "license_quote": "Constraints: \"Public domain\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": false,
+    "why": "Unknown photographer; also off-topic.",
+    "beat": "-",
+    "resolution_length": "2944x4511 TIF"
+  },
+  {
+    "id": "R19",
+    "kind": "page",
+    "title": "Giant Sequoia Sections",
+    "url": "https://npgallery.nps.gov/AssetDetail/3a8d87a2-abcd-4f44-b929-745da5b623d2",
+    "creator": "\"Unknown Photographer, Unknown Date\"",
+    "license_quote": "Constraints: \"Public domain\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": false,
+    "why": "Unknown photographer. Cut trunk sections would suit beat 8, but authorship unclear. Maybe.",
+    "beat": "8",
+    "resolution_length": "4031x2787"
+  },
+  {
+    "id": "R20",
+    "kind": "page",
+    "title": "Visitors at Muir Woods",
+    "url": "https://npgallery.nps.gov/AssetDetail/90bca2e3-f83d-c411-2bf5-06c1904808e8",
+    "creator": "\"GGNRA, Park Archives, GOGA 32470-0003\"",
+    "license_quote": "Constraints: \"Public domain:Full Granting Rights\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": false,
+    "why": "Archive item, photographer and date unknown. Maybe.",
+    "beat": "8",
+    "resolution_length": "1074x737"
+  },
+  {
+    "id": "R21",
+    "kind": "page",
+    "title": "Muir Woods Image Gallery",
+    "url": "https://www.nps.gov/goga/learn/photosmultimedia/muir-woods-images.htm",
+    "creator": "Golden Gate NRA Park Archives",
+    "license_quote": "\"Images within these albums may be used for any legitimate non-commercial public or press use\"",
+    "usable": false,
+    "why": "Non-commercial only. A monetised channel cannot use these.",
+    "beat": "-",
+    "resolution_length": "-"
+  },
+  {
+    "id": "R22",
+    "kind": "page",
+    "title": "Scientist Climbs Giant Sequoia",
+    "url": "https://www.usgs.gov/media/images/scientist-climbs-giant-sequoia",
+    "creator": "\"Photo credit: A. Ambrose, UC Berkeley\"",
+    "license_quote": "No licence statement (USGS page, non-federal photographer)",
+    "usable": false,
+    "why": "University photographer, not a federal work.",
+    "beat": "5, 7",
+    "resolution_length": "-"
+  },
+  {
+    "id": "H1",
+    "kind": "commons",
+    "title": "File:Magdeburg.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Magdeburg.jpg",
+    "checked_via": "https://wiki.riteme.site/wiki/File:Magdeburg.jpg",
+    "creator": "Otto von Guericke, Experimenta nova (ut vocantur) Magdeburgica, 1672 (engraving); scan via imgbase-scd-ulp.u-strasbg.fr",
+    "license_quote": "Mirror did not render the licence block. Source stated as \"Guericke, Otto von (1672) Experimenta nova (ut vocantur) Magdeburg...\". A 1672 engraving is public domain by date; re-check the Commons tag in the fetch step.",
+    "usable": true,
+    "why": "The famous Magdeburg hemispheres plate (teams of horses failing to pull apart an evacuated sphere): shows air pressure is the force that suction borrows. High resolution.",
+    "beat": "2 (air pressure does the lifting)",
+    "resolution_length": "4196x3381",
+    "fetch": {
+      "kind": "commons",
+      "title": "File:Magdeburg.jpg"
+    }
+  },
+  {
+    "id": "H2",
+    "kind": "commons",
+    "title": "File:Magdeburg hemispheres, drawing from Fotothek 0005669.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Magdeburg_hemispheres,_drawing_from_Fotothek_0005669.jpg",
+    "checked_via": "https://wiki.riteme.site/wiki/File:Magdeburg_hemispheres,_drawing_from_Fotothek_0005669.jpg",
+    "creator": "Otto von Guericke (author field); retouched by Ariadacapo from Deutsche Fotothek df_tg_0005669",
+    "license_quote": "\"Public domain\" ... \"This work is in the public domain in its country of origin and other countries\" (page notes a US tag should be added).",
+    "usable": true,
+    "why": "17th-century engraving, PD by date; retouched crop of the hemispheres. Low resolution, use as a backup to H1.",
+    "beat": "2",
+    "resolution_length": "727x671",
+    "fetch": {
+      "kind": "commons",
+      "title": "File:Magdeburg hemispheres, drawing from Fotothek 0005669.jpg"
+    }
+  },
+  {
+    "id": "H3",
+    "kind": "page",
+    "title": "[Experiments on atmospheric pressure] (Guericke, Amsterdam 1672)",
+    "url": "https://collections.nlm.nih.gov/dc/nlm:nlmuid-101435294-img",
+    "creator": "Otto von Guericke (author); NLM Digital Collections",
+    "license_quote": "\"The National Library of Medicine believes this item to be in the public domain\" (links to Creative Commons Public Domain Mark 1.0)",
+    "usable": true,
+    "why": "1672 plate, NLM says public domain. Two globes apparatus for atmospheric pressure. No direct image URL seen (catalog page asked for permission and timed out); NLM pages sometimes show a captcha to runners.",
+    "beat": "2",
+    "resolution_length": "TIFF master listed, size not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-101435294-img",
+      "pick": "101435294"
+    }
+  },
+  {
+    "id": "H4",
+    "kind": "page",
+    "title": "[Respiration: Air pump used by R. Boyle ...] (London, 1777)",
+    "url": "https://digirepo.nlm.nih.gov/catalog/nlm:nlmuid-101436390-img",
+    "creator": "Unnamed engraver; NLM Digital Collections",
+    "license_quote": "\"The National Library of Medicine believes this item to be in the public domain.\"",
+    "usable": true,
+    "why": "1777 engraving of Boyle's air pump, PD by date. Secondary option for the vacuum/pump history.",
+    "beat": "2 (optional)",
+    "resolution_length": "TIFF/JPG offered, sizes not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://digirepo.nlm.nih.gov/catalog/nlm:nlmuid-101436390-img",
+      "pick": "101436390"
+    }
+  },
+  {
+    "id": "H5",
+    "kind": "page",
+    "title": "Title Page of Experimenta nova showing printer's device of plant (Guericke 1672)",
+    "url": "https://library.si.edu/image-gallery/105454",
+    "direct_url": "https://ids.si.edu/ids/deliveryService?id=SIL-76-15313",
+    "creator": "Smithsonian Libraries and Archives, Image ID SIL-76-15313",
+    "license_quote": "\"No Copyright - United States\"",
+    "usable": true,
+    "why": "Clear rights statement. Title page of Guericke's vacuum book; minor accent only.",
+    "beat": "2 (optional accent)",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://library.si.edu/image-gallery/105454",
+      "pick": "SIL-76-15313"
+    }
+  },
+  {
+    "id": "H6",
+    "kind": "page",
+    "title": "Dixon, Transpiration and the Ascent of Sap in Plants (Macmillan, 1914), BHL",
+    "url": "https://biodiversitylibrary.org/bibliography/44194",
+    "creator": "Henry Horatio Dixon",
+    "license_quote": "No rights statement in fetched page content; published London 1914, so public domain in the US by date (pre-1929).",
+    "usable": true,
+    "why": "Dixon's own 1914 monograph: source for his original apparatus figures. Figures not yet identified page by page, so no fetch entry yet.",
+    "beat": "5 (Dixon and Joly)",
+    "resolution_length": "BHL page scans"
+  },
+  {
+    "id": "H7",
+    "kind": "page",
+    "title": "Figuier, Merveilles de la science (1867): Duke Ferdinando II asking Galileo about pumps; Torricellian tube carried up a mountain",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/evangelista-torricelli",
+    "creator": "Linda Hall Library scans",
+    "license_quote": "Footer: \"©2026, The Linda Hall: Science Library and Arboretum, All Rights Reserved\"",
+    "usable": false,
+    "why": "The ideal beat-2 image (the Florentine well-pump story), and the 1867 engraving itself is PD, but this copy sits under a rights-reserved claim. Find a Gallica/Internet Archive scan of Figuier 1867 instead.",
+    "beat": "2",
+    "resolution_length": "-"
+  },
+  {
+    "id": "H8",
+    "kind": "page",
+    "title": "Otto von Guericke, Experimenta Nova (Caltech Archives)",
+    "url": "https://digital.archives.caltech.edu/collections/Images/RB-OG1672-1",
+    "creator": "Caltech Archives, Watson Collection",
+    "license_quote": "\"These digitized collections are accessible for purposes of education and research.\"",
+    "usable": false,
+    "why": "Education/research only. Use H1 instead.",
+    "beat": "2",
+    "resolution_length": "-"
+  },
+  {
+    "id": "H9",
+    "kind": "page",
+    "title": "Evangelista Torricelli, line engraving by P. Anichinius (Wellcome V0005861)",
+    "url": "https://kaweah.freedombox.rocks/kiwix/wikipedia_en_all_maxi_2023-10/Torricelli's_experiment",
+    "creator": "Wellcome Collection",
+    "license_quote": "Not opened; Wellcome Images uploads on Commons carry CC BY 4.0",
+    "usable": false,
+    "why": "CC BY not allowed by our rules.",
+    "beat": "2",
+    "resolution_length": "-"
+  },
+  {
+    "id": "H10",
+    "kind": "page",
+    "title": "Two botanists (Royal Society picture library)",
+    "url": "https://pictures.royalsociety.org/image-rs-18734",
+    "creator": "Royal Society",
+    "license_quote": "\"Credit: ©The Royal Society\"",
+    "usable": false,
+    "why": "Rights-managed. No PD Dixon portrait found.",
+    "beat": "5",
+    "resolution_length": "-"
+  },
+  {
+    "id": "H11",
+    "kind": "page",
+    "title": "File:Tracheiden Picea abies.jpg (bordered pits)",
+    "url": "https://commons.wikimedia.org/wiki/File:Tracheiden_Picea_abies.jpg",
+    "creator": "Dr. Michael Rosenthal, TU Dresden",
+    "license_quote": "Share-alike/attribution licence text (\"share alike - If you remix...\") i.e. CC BY-SA",
+    "usable": false,
+    "why": "CC BY-SA not allowed. Good reference for drawing pits in Blender.",
+    "beat": "4, 6",
+    "resolution_length": "-"
+  },
+  {
+    "id": "M1",
+    "kind": "commons",
+    "title": "File:The Oak (Marshall Ward) Fig 16.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:The_Oak_(Marshall_Ward)_Fig_16.jpg",
+    "checked_via": "https://download.osmand.net/wiki/File:The_Oak_(Marshall_Ward)_Fig_16.jpg",
+    "creator": "H. Marshall Ward, The Oak: A Popular Introduction to Forest-Botany (1892)",
+    "license_quote": "\"This work is in the public domain in its country of origin and other countries and areas where the copyright term...\"; \"This file has been identified as being free of known restrictions under copyright law\"; Public Domain Mark 1.0",
+    "usable": true,
+    "why": "1890s plate: \"The various chief elements of the wood of the oak, isolated by maceration, and highly magnified\" (vessels, tracheids, fibres). Matches the chalk-line style well.",
+    "beat": "4 (the pipes are thin), 6 (pitted vessel walls)",
+    "resolution_length": "1450x2000",
+    "fetch": {
+      "kind": "commons",
+      "title": "File:The Oak (Marshall Ward) Fig 16.jpg"
+    }
+  },
+  {
+    "id": "M2",
+    "kind": "page",
+    "title": "Generalized diagram of water vapor being released through stomata on a leaf surface",
+    "url": "https://www.usgs.gov/media/images/generalized-diagram-water-vapor-being-released-through-stomata-a-leaf-surface",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/Infiltration_fig4_stomata_water_vapor_release.png",
+    "creator": "USGS Pacific Islands Water Science Center",
+    "license_quote": "\"Public Domain.\"",
+    "usable": true,
+    "why": "USGS diagram, Public Domain. Reference for our own leaf animation rather than an on-screen asset.",
+    "beat": "5 (reference)",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/images/generalized-diagram-water-vapor-being-released-through-stomata-a-leaf-surface",
+      "pick": "Infiltration_fig4_stomata"
+    }
+  },
+  {
+    "id": "M3",
+    "kind": "page",
+    "title": "WTW_Transpiration (Where's the Water poster set)",
+    "url": "https://www.usgs.gov/media/images/wtwtranspiration",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/WTW_Transpiration.png",
+    "creator": "USGS Water Science School",
+    "license_quote": "\"Public Domain.\"",
+    "usable": true,
+    "why": "USGS, Public Domain. Reference/diagram.",
+    "beat": "5, 8 (reference)",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/images/wtwtranspiration",
+      "pick": "WTW_Transpiration"
+    }
+  },
+  {
+    "id": "M4",
+    "kind": "page",
+    "title": "D2683-1: Huihui Zhang measures peach tree leaf stomatal conductance",
+    "url": "https://www.ars.usda.gov/oc/images/photos/nov12/d2683-1/",
+    "direct_url": "https://www.ars.usda.gov/ARSUserFiles/oc/graphics/photos/300dpi/kesa/d2683-1.jpg",
+    "creator": "Photo by Peggy Greb (ARS)",
+    "license_quote": "ARS image gallery terms (https://www.ars.usda.gov/oc/images/copyright): \"available free of charge and are copyright-free, public domain, images unless otherwise indicated.\" Credit: \"Photo courtesy of USDA ARS.\"",
+    "usable": true,
+    "why": "ARS staff photographer. A scientist clipping a porometer on a leaf to measure stomatal conductance (water loss and water stress).",
+    "beat": "5 (leaves lose water through stomata)",
+    "resolution_length": "300 dpi download",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.ars.usda.gov/oc/images/photos/nov12/d2683-1/",
+      "pick": "300dpi/kesa/d2683-1"
+    }
+  },
+  {
+    "id": "M5",
+    "kind": "page",
+    "title": "K9162-1: Leona Horst loads a leaf sample into a scanning electron microscope",
+    "url": "https://www.ars.usda.gov/oc/images/photos/dec00/k9162-1/",
+    "direct_url": "https://www.ars.usda.gov/ARSUserFiles/oc/graphics/photos/300dpi/kesa/k9162-1.jpg",
+    "creator": "Photo by Peggy Greb (ARS)",
+    "license_quote": "ARS image gallery terms (https://www.ars.usda.gov/oc/images/copyright): \"available free of charge and are copyright-free, public domain, images unless otherwise indicated.\" Credit: \"Photo courtesy of USDA ARS.\"",
+    "usable": true,
+    "why": "ARS staff photo; 'how we see the pipes' cutaway moment. Weak but clean.",
+    "beat": "4 (optional)",
+    "resolution_length": "300 dpi download",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.ars.usda.gov/oc/images/photos/dec00/k9162-1/",
+      "pick": "300dpi/kesa/k9162-1"
+    }
+  },
+  {
+    "id": "M6",
+    "kind": "page",
+    "title": "D2901-1: SEM of a Cryptosporidium oocyst in a spinach leaf stoma",
+    "url": "https://www.ars.usda.gov/is/graphics/photos/aug13/d2901-1.htm",
+    "creator": "ARS Electron and Confocal Microscopy Unit",
+    "license_quote": "ARS image gallery terms (https://www.ars.usda.gov/oc/images/copyright): \"available free of charge and are copyright-free, public domain, images unless otherwise indicated.\" Credit: \"Photo courtesy of USDA ARS.\"",
+    "usable": false,
+    "why": "Licence fine, but it is a pathogen in a stoma: wrong message for this episode.",
+    "beat": "5",
+    "resolution_length": "-"
+  },
+  {
+    "id": "M7",
+    "kind": "page",
+    "title": "K7778-1: Puccinia infection tube growing toward a stoma",
+    "url": "https://ars.usda.gov/oc/images/photos/jul97/k7778-1",
+    "creator": "Gilbert Ahlstrand",
+    "license_quote": "ARS image gallery terms (https://www.ars.usda.gov/oc/images/copyright): \"available free of charge and are copyright-free, public domain, images unless otherwise indicated.\" Credit: \"Photo courtesy of USDA ARS.\"",
+    "usable": false,
+    "why": "Off-topic and photographer affiliation unclear.",
+    "beat": "5",
+    "resolution_length": "-"
+  },
+  {
+    "id": "M8",
+    "kind": "page",
+    "title": "Stomata on Surface of a Plant (EurekAlert)",
+    "url": "https://www.eurekalert.org/multimedia/862058",
+    "creator": "\"Courtesy of Jin Suk Lee, Nature\"",
+    "license_quote": "\"Licensed content\"; \"Photo credit required.\"",
+    "usable": false,
+    "why": "Journal image, not public domain.",
+    "beat": "5",
+    "resolution_length": "-"
+  },
+  {
+    "id": "W1",
+    "kind": "page",
+    "title": "Dead and dying ponderosa and sugar pine, Hume Lake Ranger District, Sequoia National Forest (2016)",
+    "url": "https://www.jpl.nasa.gov/news/nasa-maps-california-drought-effects-on-sierra-trees/",
+    "direct_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/imagesearth20160627btree-full.jpg",
+    "creator": "\"USDA Forest Service\" (credit line on the JPL release)",
+    "license_quote": "Credit \"USDA Forest Service\"; no other statement. USFS photo = federal work (17 USC 105).",
+    "usable": true,
+    "why": "Drought die-off of conifers in the southern Sierra (2012-2016 event). Shows what happens when the rope snaps at landscape scale.",
+    "beat": "6 (drought kills trees this way)",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.jpl.nasa.gov/news/nasa-maps-california-drought-effects-on-sierra-trees/",
+      "pick": "btree-full"
+    }
+  },
+  {
+    "id": "W2",
+    "kind": "page",
+    "title": "Giant sequoia foliage dieback during California's extreme drought (Giant Forest, 17 Sep 2014)",
+    "url": "https://www.usgs.gov/media/images/giant-sequoia-foliage-dieback-during-californias-extreme-drought",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/Stephenson%201.png",
+    "creator": "\"(USGS photo by N. Stephenson)\"",
+    "license_quote": "\"Public Domain.\"",
+    "usable": true,
+    "why": "USGS scientist's photo. Older shoots dead, young tip shoots kept green: a tree shedding the parts it cannot keep supplied.",
+    "beat": "6, 7 (water-starved crowns)",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/images/giant-sequoia-foliage-dieback-during-californias-extreme-drought",
+      "pick": "Stephenson%201"
+    }
+  },
+  {
+    "id": "W3",
+    "kind": "page",
+    "title": "Sap flow sensors at Blackwater National Wildlife Preserve",
+    "url": "https://www.usgs.gov/media/images/sap-flow-sensors-blackwater-national-wildlife-preserve",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/Sap%20flow%20sensor.jpeg",
+    "creator": "USGS Eastern Ecological Science Center (sensors installed by Justine Neville and Ken Krauss, USGS)",
+    "license_quote": "\"Public Domain.\"",
+    "usable": true,
+    "why": "Close-up of sap flow sensors on a trunk: real instruments measuring the water a tree moves.",
+    "beat": "5 (evidence), 8 (how much water)",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/images/sap-flow-sensors-blackwater-national-wildlife-preserve",
+      "pick": "Sap%20flow%20sensor"
+    }
+  },
+  {
+    "id": "W4",
+    "kind": "page",
+    "title": "Sap probe install (Justine Neville installing sap flow probes)",
+    "url": "https://www.usgs.gov/media/images/sap-probe-install",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/IMG_1968.jpeg",
+    "creator": "USGS Eastern Ecological Science Center (photographer not named)",
+    "license_quote": "\"Public Domain.\"",
+    "usable": true,
+    "why": "USGS fellow fitting probes to measure transpiration. Pairs with W3.",
+    "beat": "5, 8",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/images/sap-probe-install",
+      "pick": "IMG_1968"
+    }
+  },
+  {
+    "id": "W5",
+    "kind": "page",
+    "title": "Twin Maple sugarbush operation: Maple sap lines wind through a sugarbush in the Green Mountain National Forest, Vt., April 2, 2026",
+    "url": "https://www.dvidshub.net/image/9603124/twin-maple-sugarbush-operation",
+    "creator": "\"Forest Service photo by Briana Shepherd\" (USDA Forest Service)",
+    "license_quote": "\"PUBLIC DOMAIN\"",
+    "usable": true,
+    "why": "USFS photo. Spring maple sap is the textbook case of root/stem pressure pushing sap; tubing lines rather than buckets. No image URL was visible in the fetched text: the fetch step must find the DVIDS cloudfront link containing the ID.",
+    "beat": "3 (push from below is real, in spring)",
+    "resolution_length": "5184x3456",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.dvidshub.net/image/9603124/twin-maple-sugarbush-operation",
+      "pick": "9603124"
+    }
+  },
+  {
+    "id": "W6",
+    "kind": "page",
+    "title": "Twin Maple sugarbush operation: Maple lines winding their way through the sugarbush in early April",
+    "url": "https://www.dvidshub.net/image/9603116/twin-maple-sugarbush-operation",
+    "creator": "\"Forest Service photo by Briana Shepherd\" (USDA Forest Service)",
+    "license_quote": "\"PUBLIC DOMAIN\"",
+    "usable": true,
+    "why": "USFS photo. Spring maple sap is the textbook case of root/stem pressure pushing sap; tubing lines rather than buckets. No image URL was visible in the fetched text: the fetch step must find the DVIDS cloudfront link containing the ID.",
+    "beat": "3 (push from below is real, in spring)",
+    "resolution_length": "5184x3456",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.dvidshub.net/image/9603116/twin-maple-sugarbush-operation",
+      "pick": "9603116"
+    }
+  },
+  {
+    "id": "W7",
+    "kind": "page",
+    "title": "Water droplets on a leaf",
+    "url": "https://www.usgs.gov/media/11982",
+    "direct_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/Water_droplets_on_leaf.jpg",
+    "creator": "USGS Office of Communications",
+    "license_quote": "\"This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication\"",
+    "usable": true,
+    "why": "CC0 USGS photo. Not identified as guttation, so do not caption it as guttation; use only as generic droplet texture.",
+    "beat": "3 (texture only)",
+    "resolution_length": "not stated",
+    "fetch": {
+      "kind": "page",
+      "url": "https://www.usgs.gov/media/11982",
+      "pick": "Water_droplets_on_leaf"
+    }
+  },
+  {
+    "id": "W8",
+    "kind": "page",
+    "title": "Monitoring giants (USFS post-fire giant sequoia monitoring photos)",
+    "url": "https://fs.usda.gov/about-agency/features/monitoring-giants",
+    "creator": "\"(USDA Forest Service photo by Jamie Hinrichs)\"",
+    "license_quote": "Credit \"USDA Forest Service photo by Jamie Hinrichs\"; no other statement (USFS employee work).",
+    "usable": true,
+    "why": "USFS photos of burned giant sequoias and field crew. Fire, not drought, so only marginal; page serves 320 px versions, full size in same path.",
+    "beat": "6 (optional), 8",
+    "resolution_length": "320 px shown; originals in /sites/default/files/2022-08/"
+  },
+  {
+    "id": "W9",
+    "kind": "page",
+    "title": "AVIRIS tree health classification map, Sierra National Forest (PIA20717)",
+    "url": "https://www.jpl.nasa.gov/news/nasa-maps-california-drought-effects-on-sierra-trees/",
+    "creator": "\"NASA/JPL-Caltech/USDA Forest Service\"",
+    "license_quote": "Credit line only; JPL-Caltech content is governed by JPL's image use policy (not opened).",
+    "usable": false,
+    "why": "JPL-Caltech co-credit; check JPL image use policy before use. Our own 2D map would be cleaner anyway.",
+    "beat": "6",
+    "resolution_length": "-"
+  },
+  {
+    "id": "V1",
+    "kind": "video",
+    "title": "Redwood Trunk (Redwood National and State Parks B-roll)",
+    "url": "https://www.nps.gov/media/video/view.htm?id=F2A4BB60-A45E-4EEC-90F74BD73067803E",
+    "direct_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/F2A4BB60-A45E-4EEC-90F74BD73067803E/redw-Creeksideredwood-PrairieCreek_1280x720.mp4",
+    "creator": "NPS: G Litten",
+    "license_quote": "Park B-roll page (nps.gov/redw/learn/photosmultimedia/broll.htm): \"You can download and freely use this HD footage for any media project.\" Clip page: \"Multimedia made available by NPS should not be presumed to be public domain.\"",
+    "usable": true,
+    "why": "Shot by NPS staff (credit format 'NPS: name') and offered by the park as free-to-use B-roll. The clip-page boilerplate warns against presuming PD in general, but the park's own page grants free use and the credit is NPS. Slow pan up a 300 foot redwood near a creek.",
+    "beat": "1, 7 (the hero 'how high' tilt)",
+    "resolution_length": "1280x720 MP4, 1:37"
+  },
+  {
+    "id": "V2",
+    "kind": "video",
+    "title": "Fog in Redwood Trees (Redwood National and State Parks B-roll)",
+    "url": "https://www.nps.gov/media/video/view.htm?id=DF2E96F7-C3A9-2CAE-A9ACBB156616B570",
+    "direct_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/DF2E96F7-C3A9-2CAE-A9ACBB156616B570/redw-FogInTreesB-Roll_1280x720.mp4",
+    "creator": "NPS: Liam Carey-Rand",
+    "license_quote": "Park B-roll page (nps.gov/redw/learn/photosmultimedia/broll.htm): \"You can download and freely use this HD footage for any media project.\" Clip page: \"Multimedia made available by NPS should not be presumed to be public domain.\"",
+    "usable": true,
+    "why": "Shot by NPS staff (credit format 'NPS: name') and offered by the park as free-to-use B-roll. The clip-page boilerplate warns against presuming PD in general, but the park's own page grants free use and the credit is NPS. Old growth redwoods shrouded in fog. No audio.",
+    "beat": "5, 7 (fog)",
+    "resolution_length": "1280x720 MP4, 0:23"
+  },
+  {
+    "id": "V3",
+    "kind": "video",
+    "title": "Creek to Canopy (Redwood National and State Parks B-roll)",
+    "url": "https://www.nps.gov/media/video/view.htm?id=F087D99A-A318-2DAF-174262B1B4AB228E",
+    "direct_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/F087D99A-A318-2DAF-174262B1B4AB228E/redw-Creektotreetoppan30secs_1280x720.mp4",
+    "creator": "NPS: G Litten",
+    "license_quote": "Park B-roll page (nps.gov/redw/learn/photosmultimedia/broll.htm): \"You can download and freely use this HD footage for any media project.\" Clip page: \"Multimedia made available by NPS should not be presumed to be public domain.\"",
+    "usable": true,
+    "why": "Shot by NPS staff (credit format 'NPS: name') and offered by the park as free-to-use B-roll. The clip-page boilerplate warns against presuming PD in general, but the park's own page grants free use and the credit is NPS. Slow pan from Prairie Creek to the top of a nearby redwood.",
+    "beat": "1, 2 (water at the bottom, leaves at the top)",
+    "resolution_length": "1280x720 MP4, 0:37 (filename says 30 s)"
+  },
+  {
+    "id": "V4",
+    "kind": "video",
+    "title": "Sun In Redwood Canopy (Redwood National and State Parks B-roll)",
+    "url": "https://www.nps.gov/media/video/view.htm?id=8C7A8FCB-A1F3-787A-8521EC1B84BBA0FA",
+    "direct_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/8C7A8FCB-A1F3-787A-8521EC1B84BBA0FA/redw-SuninredwoodsLostmanCreek_1280x720.mp4",
+    "creator": "NPS: G Litten",
+    "license_quote": "Park B-roll page (nps.gov/redw/learn/photosmultimedia/broll.htm): \"You can download and freely use this HD footage for any media project.\" Clip page: \"Multimedia made available by NPS should not be presumed to be public domain.\"",
+    "usable": true,
+    "why": "Shot by NPS staff (credit format 'NPS: name') and offered by the park as free-to-use B-roll. The clip-page boilerplate warns against presuming PD in general, but the park's own page grants free use and the credit is NPS. Sun and glare crossing the tops of redwoods near Lost Man Creek.",
+    "beat": "5 (sun powers the pull), 8",
+    "resolution_length": "1280x720 MP4, 1:07"
+  },
+  {
+    "id": "V5",
+    "kind": "video",
+    "title": "Redwood Trunk - Close Up (Redwood National and State Parks B-roll)",
+    "url": "https://www.nps.gov/media/video/view.htm?id=F4618936-A6B7-F0A0-3DD82D1579EE21C1",
+    "direct_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/F4618936-A6B7-F0A0-3DD82D1579EE21C1/redw-Trunkpan30secs_1280x720.mp4",
+    "creator": "NPS: G Litten",
+    "license_quote": "Park B-roll page (nps.gov/redw/learn/photosmultimedia/broll.htm): \"You can download and freely use this HD footage for any media project.\" Clip page: \"Multimedia made available by NPS should not be presumed to be public domain.\"",
+    "usable": true,
+    "why": "Shot by NPS staff (credit format 'NPS: name') and offered by the park as free-to-use B-roll. The clip-page boilerplate warns against presuming PD in general, but the park's own page grants free use and the credit is NPS. Slow pan up a redwood trunk.",
+    "beat": "4, 5 (into the trunk cutaway)",
+    "resolution_length": "1280x720 MP4, 0:32"
+  },
+  {
+    "id": "V6",
+    "kind": "video",
+    "title": "Redwood Groves (Redwood National and State Parks B-roll)",
+    "url": "https://www.nps.gov/media/video/view.htm?id=DE96C05B-ABAD-08F8-9FBB4E3168B63587",
+    "direct_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/DE96C05B-ABAD-08F8-9FBB4E3168B63587/redw-RedwoodsB-Roll_1280x720.mp4",
+    "creator": "Liam Carey-Rand, NPS",
+    "license_quote": "Park B-roll page (nps.gov/redw/learn/photosmultimedia/broll.htm): \"You can download and freely use this HD footage for any media project.\" Clip page: \"Multimedia made available by NPS should not be presumed to be public domain.\"",
+    "usable": true,
+    "why": "Shot by NPS staff (credit format 'NPS: name') and offered by the park as free-to-use B-roll. The clip-page boilerplate warns against presuming PD in general, but the park's own page grants free use and the credit is NPS. Old growth redwood trees, trails past the trees, and tree canopy. No audio.",
+    "beat": "1, 8",
+    "resolution_length": "1280x720 MP4, 0:58"
+  },
+  {
+    "id": "V7",
+    "kind": "video",
+    "title": "Revelation Trail: Part 1 (Redwood National and State Parks B-roll)",
+    "url": "https://www.nps.gov/media/video/view.htm?id=F3FC6727-BE91-6A3E-9186A2B2BB8370E8",
+    "direct_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/F3FC6727-BE91-6A3E-9186A2B2BB8370E8/redw-RevelationTrailPrairieCreekRedwoods1_1280x720.mp4",
+    "creator": "NPS: G Litten",
+    "license_quote": "Park B-roll page (nps.gov/redw/learn/photosmultimedia/broll.htm): \"You can download and freely use this HD footage for any media project.\" Clip page: \"Multimedia made available by NPS should not be presumed to be public domain.\"",
+    "usable": true,
+    "why": "Shot by NPS staff (credit format 'NPS: name') and offered by the park as free-to-use B-roll. The clip-page boilerplate warns against presuming PD in general, but the park's own page grants free use and the credit is NPS. Pan of redwood trunks and forest canopy.",
+    "beat": "8",
+    "resolution_length": "1280x720 MP4, 1:21"
+  },
+  {
+    "id": "V8",
+    "kind": "video",
+    "title": "Redwood Tree (Redwood National and State Parks B-roll)",
+    "url": "https://www.nps.gov/media/video/view.htm?id=EFE6A42C-BE08-9DC4-6DD87ABB4DAE3BDF",
+    "direct_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/EFE6A42C-BE08-9DC4-6DD87ABB4DAE3BDF/redw-RedwoodatLostmanCreek2_1280x720.mp4",
+    "creator": "NPS: G Litten",
+    "license_quote": "Park B-roll page (nps.gov/redw/learn/photosmultimedia/broll.htm): \"You can download and freely use this HD footage for any media project.\" Clip page: \"Multimedia made available by NPS should not be presumed to be public domain.\"",
+    "usable": true,
+    "why": "Shot by NPS staff (credit format 'NPS: name') and offered by the park as free-to-use B-roll. The clip-page boilerplate warns against presuming PD in general, but the park's own page grants free use and the credit is NPS. Slow pan of a large redwood.",
+    "beat": "7, 8",
+    "resolution_length": "1280x720 MP4, 1:04"
+  },
+  {
+    "id": "V9",
+    "kind": "video",
+    "title": "Firefighters in Redwood Canyon after the KNP Complex",
+    "url": "https://npgallery.nps.gov/AssetDetail/8c3e1034-170b-4ebc-b3bf-ac4da0d5cff0",
+    "direct_url": "https://npgallery.nps.gov/GetAsset/8c3e1034-170b-4ebc-b3bf-ac4da0d5cff0/compressed",
+    "creator": "NPS/Joe Suarez",
+    "license_quote": "Constraints: \"Public domain:Full Granting Rights\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": true,
+    "why": "NPS-credited 4K clip in a giant sequoia grove after the 2021 fire. Fire, not drought: only as optional texture.",
+    "beat": "6 (optional)",
+    "resolution_length": "3840x2160, 0:26"
+  },
+  {
+    "id": "V10",
+    "kind": "video",
+    "title": "Sequoia & Kings Canyon clips by Midpines Media (e.g. AmbientSounds_CrescentMeadow.mp4, AmericanCoots_FeedingFlushing.mp4)",
+    "url": "https://npgallery.nps.gov/AssetDetail/df10493d-6d5d-4caa-84b4-973a6f966ed1",
+    "creator": "\"Steven Bumgardner of Midpines Media for the National Park Service\"",
+    "license_quote": "Constraints: \"Public domain\". \"Permission must be secured from the individual copyright owners to reproduce any copyrighted materials contained within this website.\" \"Digital assets without any copyright restrictions are public domain.\"",
+    "usable": false,
+    "why": "Contractor footage. NPS marks it public domain, but the brief requires federal authorship; treat as maybe and only if Michael accepts contractor works marked PD by NPS. Search NPGallery for Midpines sequoia clips if he does.",
+    "beat": "1, 8",
+    "resolution_length": "1920x1080, ~1 min each"
+  },
+  {
+    "id": "V11",
+    "kind": "video",
+    "title": "GEDI Forest Height (NASA SVS 4950)",
+    "url": "https://svs.gsfc.nasa.gov/4950",
+    "creator": "NASA's Scientific Visualization Studio (Kel Elkins USRA, Horace Mitchell and Greg Shirah NASA/GSFC); data GEDI (UMD)",
+    "license_quote": "Page: \"Please give credit to: NASA's Scientific Visualization Studio\". No copyright line on the page; NASA media guidelines page could not be opened from this workspace (permission timeout).",
+    "usable": true,
+    "why": "NASA SVS visualisation of global forest height from lidar, including a West Coast close-up where the redwood belt stands out. SVS work is generally free to use with credit; confirm NASA guidelines wording in the fetch step.",
+    "beat": "7, 8 (where the tallest forests are)",
+    "resolution_length": "1920x1080 and 3840x2160 MP4 (with and without colour bar), ProRes"
+  },
+  {
+    "id": "V12",
+    "kind": "video",
+    "title": "USFS/GEDI Old Growth Forest Visualizations (NASA SVS 5095)",
+    "url": "https://svs.gsfc.nasa.gov/5095",
+    "creator": "NASA's Scientific Visualization Studio (Kel Elkins, USRA); producers Katie Jepson and Jefferson Beck (KBR Wyle)",
+    "license_quote": "Page: \"Please credit NASA's Scientific Visualization Studio.\" No copyright line of its own.",
+    "usable": true,
+    "why": "Includes 'Old growth, Northwest US' zoom. Same caveat as V11.",
+    "beat": "8",
+    "resolution_length": "1920x1080 / 3840x2160 MP4"
+  }
+]
