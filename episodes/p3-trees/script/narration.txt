@@ -39,7 +39,7 @@ The explanation most scientists accept today was put forward in the eighteen-nin
 A key clue came from experiments in Germany. Tall stems that had been killed with poison kept drawing water up. The flow only stopped when the leaves were killed.
 So the engine isn't in the trunk. It's in the leaves.
 Inside every leaf, water evaporates from the wet walls of the cells, and the vapour escapes through tiny pores called stomata.
-Those cell walls are full of pores about a hundred-thousandth of a millimetre across. And a water surface stretched across a pore that small can hold back an enormous pull.
+Those cell walls are full of pores about a hundred-thousandth of a millimetre across. And a water surface stretched across a pore that small can pull back with enormous force.
 As water evaporates, it tugs on the water behind it.
 And water molecules cling to each other, and to the walls of the pipes.
 So the tug travels down an unbroken column of water, through the trunk, all the way to the roots.
@@ -47,10 +47,10 @@ The whole column rises like a rope pulled from the top.
 It's called the cohesion-tension theory.
 And it means the water inside a tree is in a very strange state.
 Its pressure is below zero. Not low. Negative. A liquid being stretched.
-In many trees, that pull can reach about twenty times the pressure of the air around you, pulling the wrong way.
+In many trees, the water is being pulled about twenty times harder than the air presses on you.
 Pure water can take it, because in the lab it can be stretched much harder before it snaps.
-In nineteen sixty-five, scientists measured that pull with a device now nicknamed the pressure bomb. Seal a cut twig in a chamber, raise the pressure until sap appears at the cut, and you've measured how hard the tree was pulling.
-You can even watch it work. On a sunny day, a tree trunk shrinks, very slightly, as the pull squeezes it. At night, it swells back.
+In nineteen sixty-five, scientists found a way to measure that tension, with a device now nicknamed the pressure bomb. Seal a cut twig in a chamber, raise the pressure until sap appears at the cut, and you've measured how hard the tree was pulling.
+You can even watch it work. On a sunny day, a tree trunk shrinks, very slightly, as the tension squeezes it. At night, it swells back.
 And the energy? The sun and the dry air do the work. The tree spends none of its own energy on the lift.
 It took the best part of a century for the idea to win over its doubters, and a few scientists still argue the details.
 But stretched water is risky water.

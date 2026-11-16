@@ -1,0 +1,1359 @@
+{
+ "source_words": "audio/final.words.json",
+ "fps": 30,
+ "total_s": 539.08,
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": 1,
+   "anchor": "here's an engineering challenge",
+   "tool": "motion-canvas",
+   "visual": "Dark slate, a chalk blueprint sheet slides in: 'THE BRIEF'. During the 1 s beat only the title sits there. Then three spec lines write themselves; beside them a 30-storey building silhouette grows from the baseline, a dashed '10 m' line marks its lower floors.",
+   "changes": [
+    "building grows and spec 1 on 'thirty-storey building'",
+    "spec 2 on 'no pump'",
+    "spec 3 and 10 m line on 'suck it up'"
+   ],
+   "text": [
+    "THE BRIEF",
+    "1. Lift water above 30 storeys",
+    "2. No pump, no motor, no moving parts",
+    "3. No suction",
+    "10 m"
+   ],
+   "facts": [
+    "1.5",
+    "1.6",
+    "2.1"
+   ],
+   "asset": null,
+   "start": 0.0,
+   "end": 18.67,
+   "duration": 18.67,
+   "cues": [
+    6.47,
+    8.58,
+    14.16
+   ],
+   "words": "here's an engineering challenge lift water higher than a thirty storey building no pump no motor no moving parts and one more rule you can't suck it up suction stops working at about ten metres",
+   "change_every_s": 6.2
+  },
+  {
+   "id": "S02",
+   "beat": 1,
+   "anchor": "sounds impossible",
+   "tool": "motion-canvas",
+   "visual": "A chalk window frame; outside it a chalk tree in leaf, a chalk sun outline above. Inside the trunk, faint violet dashes rise steadily: the job being done, quietly.",
+   "changes": [
+    "window and tree on 'tree outside your window'",
+    "violet dashes rise in the trunk on 'right now'"
+   ],
+   "text": [
+    "right now"
+   ],
+   "facts": [
+    "1.6",
+    "1.7"
+   ],
+   "asset": null,
+   "start": 18.67,
+   "end": 28.12,
+   "duration": 9.45,
+   "cues": [
+    2.83,
+    7.89
+   ],
+   "words": "sounds impossible but if there's a tree outside your window in leaf and the sun is up it's doing exactly this right now",
+   "change_every_s": 4.7
+  },
+  {
+   "id": "S03",
+   "beat": 1,
+   "anchor": "the tallest tree on earth",
+   "tool": "blender",
+   "visual": "HERO 1 (3D). A stylised chalk coast redwood beside the 30-storey building and a glowing 10 m line; the camera starts at the base and rises up the trunk past the building's roof to the crown. 2D overlay: 'Hyperion · coast redwood · ≈ 116 m'.",
+   "changes": [
+    "camera rises on 'hyperion'",
+    "height label on 'metres up'"
+   ],
+   "text": [
+    "Hyperion",
+    "coast redwood",
+    "≈ 116 m"
+   ],
+   "facts": [
+    "1.1"
+   ],
+   "asset": null,
+   "start": 28.12,
+   "end": 35.91,
+   "duration": 7.79,
+   "cues": [
+    3.12,
+    6.14
+   ],
+   "words": "the tallest tree on earth a coast redwood called hyperion does it about a hundred and sixteen metres up",
+   "change_every_s": 3.9
+  },
+  {
+   "id": "S04",
+   "beat": 1,
+   "anchor": "so let's try to solve it",
+   "tool": "motion-canvas",
+   "visual": "The brief sheet returns with three empty boxes: 'Attempt 1', 'Attempt 2', 'Attempt 3'. Ends on the slate ground for the intro sting.",
+   "changes": [
+    "three boxes on 'every obvious answer'"
+   ],
+   "text": [
+    "Attempt 1",
+    "Attempt 2",
+    "Attempt 3"
+   ],
+   "facts": [],
+   "asset": null,
+   "start": 35.91,
+   "end": 42.83,
+   "duration": 6.92,
+   "cues": [
+    3.81
+   ],
+   "words": "so let's try to solve it the way an engineer would and watch every obvious answer fail",
+   "change_every_s": 6.9
+  },
+  {
+   "id": "S05",
+   "beat": 2,
+   "anchor": "first idea put a pump",
+   "tool": "motion-canvas",
+   "visual": "Attempt 1 box fills: 'SUCK IT UP'. A chalk well: a long pipe down into water, a hand pump at the top. The handle works; water (chalk fill) rises in the pipe.",
+   "changes": [
+    "water starts rising on 'like a straw'"
+   ],
+   "text": [
+    "Attempt 1: suck it up"
+   ],
+   "facts": [],
+   "asset": null,
+   "start": 42.83,
+   "end": 47.91,
+   "duration": 5.08,
+   "cues": [
+    3.23
+   ],
+   "words": "first idea put a pump at the top and suck the water up like a straw",
+   "change_every_s": 5.1
+  },
+  {
+   "id": "S06",
+   "beat": 2,
+   "anchor": "people tried this for centuries",
+   "tool": "archival",
+   "visual": "Guericke's Magdeburg hemispheres plate (1672), slow push-in; chalk frame and credit. Sets the 1600s and the vacuum.",
+   "changes": [
+    "push-in on 'pump makers'"
+   ],
+   "text": [
+    "Otto von Guericke, 1672 (public domain)"
+   ],
+   "facts": [
+    "2.3"
+   ],
+   "asset": "H1 Magdeburg hemispheres plate, Guericke 1672, Commons File:Magdeburg.jpg",
+   "start": 47.91,
+   "end": 54.91,
+   "duration": 7.0,
+   "cues": [
+    4.01
+   ],
+   "words": "people tried this for centuries and in the sixteen hundreds pump makers kept hitting the same wall",
+   "change_every_s": 7.0
+  },
+  {
+   "id": "S07",
+   "beat": 2,
+   "anchor": "their suction pumps would not raise",
+   "tool": "motion-canvas",
+   "visual": "Back to the well pump: the water column rises and stops dead at a line, however hard the handle works. Line labelled '18 braccia ≈ 10-11 m'.",
+   "changes": [
+    "water stops at the line on 'eighteen braccia'"
+   ],
+   "text": [
+    "≈ 18 braccia",
+    "≈ 10-11 m"
+   ],
+   "facts": [
+    "2.3"
+   ],
+   "asset": null,
+   "start": 54.91,
+   "end": 63.41,
+   "duration": 8.5,
+   "cues": [
+    3.58
+   ],
+   "words": "their suction pumps would not raise water past about eighteen braccia roughly ten or eleven metres",
+   "change_every_s": 8.5
+  },
+  {
+   "id": "S08",
+   "beat": 2,
+   "anchor": "galileo puzzled over the problem",
+   "tool": "motion-canvas",
+   "visual": "A chalk note card: 'Galileo, 1630' with a question mark; on 'couldn't explain it' the card dims to muted.",
+   "changes": [
+    "card dims on 'couldn't explain it'"
+   ],
+   "text": [
+    "Galileo, 1630",
+    "no explanation"
+   ],
+   "facts": [
+    "2.3"
+   ],
+   "asset": null,
+   "start": 63.41,
+   "end": 67.29,
+   "duration": 3.88,
+   "cues": [
+    1.99
+   ],
+   "words": "galileo puzzled over the problem and couldn't explain it",
+   "change_every_s": 3.9
+  },
+  {
+   "id": "S09",
+   "beat": 2,
+   "anchor": "the answer came in the sixteen-forties",
+   "tool": "motion-canvas",
+   "visual": "Torricelli's tube: a glass tube upside-down in a dish of mercury, the column stops; the space above it empty. Label 'Torricelli, 1643-44 · Galileo's successor in Florence'.",
+   "changes": [
+    "tube draws on 'torricelli'"
+   ],
+   "text": [
+    "Evangelista Torricelli, 1643-44",
+    "Galileo's successor in Florence"
+   ],
+   "facts": [
+    "2.3",
+    "A1"
+   ],
+   "asset": null,
+   "start": 67.29,
+   "end": 75.25,
+   "duration": 7.96,
+   "cues": [
+    3.49
+   ],
+   "words": "the answer came in the sixteen forties from evangelista torricelli galileo's successor in florence",
+   "change_every_s": 8.0
+  },
+  {
+   "id": "S10",
+   "beat": 2,
+   "anchor": "a suction pump doesn't really pull",
+   "tool": "motion-canvas",
+   "visual": "The well again, now with the air drawn as a stippled chalk blanket pressing on the open water. As the pressure above the column drops, the blanket's push drives the water up the pipe (dots travel down outside, water rises inside).",
+   "changes": [
+    "pressure above drops on 'lowers the pressure'",
+    "stipple presses on 'weight of the air'"
+   ],
+   "text": [
+    "the air pushes",
+    "low pressure"
+   ],
+   "facts": [
+    "2.2",
+    "2.3"
+   ],
+   "asset": null,
+   "start": 75.25,
+   "end": 85.69,
+   "duration": 10.44,
+   "cues": [
+    3.61,
+    6.13
+   ],
+   "words": "a suction pump doesn't really pull water at all it lowers the pressure above the water and the weight of the air outside pushes the water up the pipe",
+   "change_every_s": 5.2
+  },
+  {
+   "id": "S11",
+   "beat": 2,
+   "anchor": "and air can only push so hard",
+   "tool": "motion-canvas",
+   "visual": "A balance: a tall stippled air column on one pan vs a water column on the other, level at ≈ 10 m. On 'perfect vacuum' the space above the water clears to nothing; the column doesn't move.",
+   "changes": [
+    "balance settles on 'ten metres tall'",
+    "vacuum clears on 'perfect vacuum'"
+   ],
+   "text": [
+    "≈ 10 m at sea level",
+    "perfect vacuum"
+   ],
+   "facts": [
+    "2.1",
+    "2.2"
+   ],
+   "asset": null,
+   "start": 85.69,
+   "end": 96.81,
+   "duration": 11.12,
+   "cues": [
+    5.32,
+    8.13
+   ],
+   "words": "and air can only push so hard at sea level it balances a column of water about ten metres tall even a perfect vacuum can't beat that",
+   "change_every_s": 5.6
+  },
+  {
+   "id": "S12",
+   "beat": 2,
+   "anchor": "so suction has a hard ceiling",
+   "tool": "motion-canvas",
+   "visual": "The scale view: the 10 m line, then the chalk redwood outline towering past it to 116 m; a '×10+' bracket. Attempt 1 box gets a muted 'failed' stamp.",
+   "changes": [
+    "tree towers on 'ten times higher'",
+    "failed stamp on 'isn't sucking'"
+   ],
+   "text": [
+    "10 m",
+    "≈ 116 m",
+    "×10+",
+    "failed"
+   ],
+   "facts": [
+    "2.1",
+    "2.4"
+   ],
+   "asset": null,
+   "start": 96.81,
+   "end": 108.93,
+   "duration": 12.12,
+   "cues": [
+    6.78,
+    10.65
+   ],
+   "words": "so suction has a hard ceiling about ten metres the tallest trees lift water more than ten times higher whatever a tree is doing it isn't sucking",
+   "change_every_s": 6.1
+  },
+  {
+   "id": "S13",
+   "beat": 3,
+   "anchor": "next idea forget the top",
+   "tool": "motion-canvas",
+   "visual": "Attempt 2 box: 'PUSH FROM BELOW'. A chalk root system in section; tiny chalk dots (minerals) packed into the central pipe, water follows (inflow lines), a small pressure gauge at the stem base rises. A moon icon: mostly at night.",
+   "changes": [
+    "minerals pack in on 'pack minerals'",
+    "water follows on 'osmosis'",
+    "moon on 'mostly at night'"
+   ],
+   "text": [
+    "Attempt 2: push from below",
+    "minerals in, water follows"
+   ],
+   "facts": [
+    "3.1"
+   ],
+   "asset": null,
+   "start": 108.93,
+   "end": 126.43,
+   "duration": 17.5,
+   "cues": [
+    8.27,
+    11.71,
+    14.19
+   ],
+   "words": "next idea forget the top push from the bottom and roots really can do this root cells pack minerals into their water pipes water follows by osmosis and pressure builds mostly at night when the leaves are resting",
+   "change_every_s": 5.8
+  },
+  {
+   "id": "S14",
+   "beat": 3,
+   "anchor": "you can see it on a still",
+   "tool": "motion-canvas",
+   "visual": "A grass blade at night, close: droplets bead and grow at the tip and edges. Label 'guttation' and, small, 'not dew'.",
+   "changes": [
+    "droplets form on 'push droplets'",
+    "label on 'guttation'"
+   ],
+   "text": [
+    "guttation",
+    "not dew"
+   ],
+   "facts": [
+    "3.2"
+   ],
+   "asset": null,
+   "start": 126.43,
+   "end": 136.41,
+   "duration": 9.98,
+   "cues": [
+    3.65,
+    7.59
+   ],
+   "words": "you can see it on a still humid night some plants push droplets out of the edges and tips of their leaves it's called guttation and it isn't dew",
+   "change_every_s": 5.0
+  },
+  {
+   "id": "S15",
+   "beat": 3,
+   "anchor": "and in spring a cut birch",
+   "tool": "motion-canvas",
+   "visual": "A cut birch branch (chalk, birch-bark dashes) dripping sap; a vine cane beside it dripping.",
+   "changes": [
+    "drips on 'drip sap'"
+   ],
+   "text": [
+    "birch",
+    "grapevine",
+    "spring"
+   ],
+   "facts": [
+    "3.3"
+   ],
+   "asset": null,
+   "start": 136.41,
+   "end": 142.97,
+   "duration": 6.56,
+   "cues": [
+    3.29
+   ],
+   "words": "and in spring a cut birch or grapevine will drip sap pushed up from its roots",
+   "change_every_s": 6.6
+  },
+  {
+   "id": "S16",
+   "beat": 3,
+   "anchor": "maple syrup by the way",
+   "tool": "archival",
+   "visual": "USFS maple sap tubing lines in a sugarbush, slow drift; overlay 'maple: freeze-thaw inside the trunk, not the roots'.",
+   "changes": [
+    "overlay on 'freezing and thawing'"
+   ],
+   "text": [
+    "maple sap: freeze-thaw in the trunk",
+    "USDA Forest Service (public domain)"
+   ],
+   "facts": [
+    "3.4"
+   ],
+   "asset": "W5/W6 USFS maple sap lines (DVIDS)",
+   "start": 142.97,
+   "end": 152.29,
+   "duration": 9.32,
+   "cues": [
+    4.69
+   ],
+   "words": "maple syrup by the way is a different story maple sap runs because of freezing and thawing inside the trunk not because of the roots",
+   "change_every_s": 9.3
+  },
+  {
+   "id": "S17",
+   "beat": 3,
+   "anchor": "but root pressure is weak",
+   "tool": "motion-canvas",
+   "visual": "The scale view: the root push reaches a few storeys up the chalk redwood and stops; the rest of the tree towers above it.",
+   "changes": [
+    "push stops low on 'worth of push'",
+    "tree towers above on 'tall tree'"
+   ],
+   "text": [
+    "root push: a few storeys"
+   ],
+   "facts": [
+    "3.5"
+   ],
+   "asset": null,
+   "start": 152.29,
+   "end": 159.97,
+   "duration": 7.68,
+   "cues": [
+    3.51,
+    6.01
+   ],
+   "words": "but root pressure is weak at best a few storeys' worth of push a small fraction of a tall tree",
+   "change_every_s": 3.8
+  },
+  {
+   "id": "S18",
+   "beat": 3,
+   "anchor": "and when scientists measure the water",
+   "tool": "motion-canvas",
+   "visual": "A pressure gauge clipped to a trunk on a sunny day: the needle swings through zero into a violet negative zone. Attempt 2 box: muted 'failed' stamp on 'pulled'.",
+   "changes": [
+    "needle below zero on 'pushed at all'",
+    "violet zone and failed stamp on 'being pulled'"
+   ],
+   "text": [
+    "0",
+    "pulled"
+   ],
+   "facts": [
+    "3.7"
+   ],
+   "asset": null,
+   "start": 159.97,
+   "end": 171.51,
+   "duration": 11.54,
+   "cues": [
+    5.17,
+    7.31
+   ],
+   "words": "and when scientists measure the water inside a tree on a sunny day it isn't being pushed at all it's being pulled hold that thought",
+   "change_every_s": 5.8
+  },
+  {
+   "id": "S19",
+   "beat": 4,
+   "anchor": "third idea capillary action",
+   "tool": "motion-canvas",
+   "visual": "Attempt 3 box: 'THIN PIPES'. Glass tubes of decreasing width standing in a dish; water climbs higher in narrower tubes.",
+   "changes": [
+    "water climbs on 'climbs up it'",
+    "narrowest tube highest on 'the higher it goes'"
+   ],
+   "text": [
+    "Attempt 3: thin pipes",
+    "narrower = higher"
+   ],
+   "facts": [
+    "4.1"
+   ],
+   "asset": null,
+   "start": 171.51,
+   "end": 182.81,
+   "duration": 11.3,
+   "cues": [
+    5.87,
+    9.39
+   ],
+   "words": "third idea capillary action dip a thin glass tube in water and the water climbs up it on its own the narrower the tube the higher it goes",
+   "change_every_s": 5.7
+  },
+  {
+   "id": "S20",
+   "beat": 4,
+   "anchor": "and a tree is full of thin tubes",
+   "tool": "blender",
+   "visual": "HERO 2 (3D). Camera pushes into a chalk trunk cross-section: growth rings, then a bundle of long thin pipes (tracheids) with pits along their sides, running up out of frame. Overlay labels 'xylem'.",
+   "changes": [
+    "push into the wood on 'xylem'"
+   ],
+   "text": [
+    "xylem",
+    "microscopic pipes"
+   ],
+   "facts": [
+    "4.2",
+    "9.1"
+   ],
+   "asset": null,
+   "start": 182.81,
+   "end": 191.27,
+   "duration": 8.46,
+   "cues": [
+    4.61
+   ],
+   "words": "and a tree is full of thin tubes the wood that carries water the xylem is a bundle of microscopic pipes",
+   "change_every_s": 8.5
+  },
+  {
+   "id": "S21",
+   "beat": 4,
+   "anchor": "but they're not thin enough",
+   "tool": "motion-canvas",
+   "visual": "Two scale bars beside a millimetre ruler: 'narrowest ≈ a few hundredths of a mm', 'widest ≈ 0.5 mm'.",
+   "changes": [
+    "narrow bar on 'few hundredths'",
+    "wide bar on 'half a millimetre'"
+   ],
+   "text": [
+    "≈ 0.01-0.06 mm",
+    "up to ≈ 0.5 mm",
+    "1 mm"
+   ],
+   "facts": [
+    "4.2"
+   ],
+   "asset": null,
+   "start": 191.27,
+   "end": 199.43,
+   "duration": 8.16,
+   "cues": [
+    2.67,
+    6.07
+   ],
+   "words": "but they're not thin enough the narrowest are a few hundredths of a millimetre wide the widest about half a millimetre",
+   "change_every_s": 4.1
+  },
+  {
+   "id": "S22",
+   "beat": 4,
+   "anchor": "in tubes that size",
+   "tool": "motion-canvas",
+   "visual": "Back to the scale view: capillary rise reaches centimetres to a few metres at the redwood's base; a 'needed: 100 m' bracket, and a tube shrinking 100+ times narrower.",
+   "changes": [
+    "rise bars on 'few metres at most'",
+    "tube shrinks on 'times narrower'"
+   ],
+   "text": [
+    "cm to a few m",
+    "needed: 100 m",
+    "≈ 30× narrower"
+   ],
+   "facts": [
+    "4.3"
+   ],
+   "asset": null,
+   "start": 199.43,
+   "end": 215.19,
+   "duration": 15.76,
+   "cues": [
+    4.95,
+    13.83
+   ],
+   "words": "in tubes that size capillary action lifts water a few centimetres a few metres at most to reach a hundred metres by capillary action alone even the thinnest pipes would need to be about thirty times narrower",
+   "change_every_s": 7.9
+  },
+  {
+   "id": "S23",
+   "beat": 4,
+   "anchor": "so three good ideas",
+   "tool": "motion-canvas",
+   "visual": "The brief: all three attempt boxes stamped 'failed' (muted). Then a single violet thread rises the full height of the chalk redwood outline.",
+   "changes": [
+    "third stamp on 'three failures'",
+    "violet thread rises on 'gets there'"
+   ],
+   "text": [
+    "failed",
+    "failed",
+    "failed"
+   ],
+   "facts": [
+    "1.1"
+   ],
+   "asset": null,
+   "start": 215.19,
+   "end": 221.59,
+   "duration": 6.4,
+   "cues": [
+    1.83,
+    4.79
+   ],
+   "words": "so three good ideas three failures and yet the water gets there",
+   "change_every_s": 3.2
+  },
+  {
+   "id": "S24",
+   "beat": 5,
+   "anchor": "the explanation most scientists accept",
+   "tool": "motion-canvas",
+   "visual": "Two name cards, no portraits: 'Henry Dixon · botanist' and 'John Joly · physicist', under 'Trinity College Dublin · 1890s'.",
+   "changes": [
+    "Dixon card on 'henry dixon'",
+    "Joly card on 'john joly'"
+   ],
+   "text": [
+    "Henry Dixon · botanist",
+    "John Joly · physicist",
+    "Trinity College Dublin · 1890s"
+   ],
+   "facts": [
+    "5.1"
+   ],
+   "asset": null,
+   "start": 221.59,
+   "end": 235.41,
+   "duration": 13.82,
+   "cues": [
+    8.81,
+    10.99
+   ],
+   "words": "the explanation most scientists accept today was put forward in the eighteen nineties by two scientists at trinity college dublin henry dixon a botanist and john joly a physicist",
+   "change_every_s": 6.9
+  },
+  {
+   "id": "S25",
+   "beat": 5,
+   "anchor": "a key clue came from experiments",
+   "tool": "motion-canvas",
+   "visual": "A tall cut stem standing in a beaker labelled 'poison'; a chalk level line in the stem keeps rising. On 'leaves were killed' the leaves go muted and the level stops.",
+   "changes": [
+    "level keeps rising on 'drawing water up'",
+    "leaves mute and flow stops on 'leaves were killed'",
+    "'engine: the leaves' on 'in the leaves'"
+   ],
+   "text": [
+    "poison",
+    "the engine is in the leaves"
+   ],
+   "facts": [
+    "5.2",
+    "5.3"
+   ],
+   "asset": null,
+   "start": 235.41,
+   "end": 250.55,
+   "duration": 15.14,
+   "cues": [
+    5.89,
+    9.23,
+    13.67
+   ],
+   "words": "a key clue came from experiments in germany tall stems that had been killed with poison kept drawing water up the flow only stopped when the leaves were killed so the engine isn't in the trunk it's in the leaves",
+   "change_every_s": 5.0
+  },
+  {
+   "id": "S26",
+   "beat": 5,
+   "anchor": "inside every leaf water evaporates",
+   "tool": "blender",
+   "visual": "HERO 3 (3D), the signature shot. A leaf cross-section: cuticle, palisade columns, spongy cells with air spaces, a stoma with two guard cells on the underside; chalk vapour wisps drift out of the stoma. The camera pushes into a wet cell wall: tiny curved water surfaces in its pores glow violet and pull.",
+   "changes": [
+    "vapour leaves the stoma on 'stomata'",
+    "push into the wall on 'cell walls'",
+    "menisci glow violet on 'enormous force'"
+   ],
+   "text": [
+    "stoma",
+    "cell wall pores ≈ 1/100,000 mm"
+   ],
+   "facts": [
+    "5.3",
+    "4.4",
+    "9.2"
+   ],
+   "asset": null,
+   "start": 250.55,
+   "end": 271.77,
+   "duration": 21.22,
+   "cues": [
+    7.75,
+    9.73,
+    19.19
+   ],
+   "words": "inside every leaf water evaporates from the wet walls of the cells and the vapour escapes through tiny pores called stomata those cell walls are full of pores about a hundred thousandth of a millimetre across and a water surface stretched across a pore that small can pull back with enormous force",
+   "change_every_s": 7.1
+  },
+  {
+   "id": "S27",
+   "beat": 5,
+   "anchor": "as water evaporates it tugs",
+   "tool": "blender",
+   "visual": "HERO 4 (3D). Inside one pipe: the water column as a chain of linked molecule beads (chalk), the top bead lifted away by evaporation; the whole chain shifts up together, a violet tension glow along it, all the way down to the roots.",
+   "changes": [
+    "top bead lifts on 'tugs'",
+    "chain glows violet on 'cling to each other'",
+    "whole column rises on 'like a rope'"
+   ],
+   "text": [
+    "cohesion",
+    "a rope of water"
+   ],
+   "facts": [
+    "5.3",
+    "5.4",
+    "5.5"
+   ],
+   "asset": null,
+   "start": 271.77,
+   "end": 293.17,
+   "duration": 21.4,
+   "cues": [
+    1.95,
+    5.77,
+    18.59
+   ],
+   "words": "as water evaporates it tugs on the water behind it and water molecules cling to each other and to the walls of the pipes so the tug travels down an unbroken column of water through the trunk all the way to the roots the whole column rises like a rope pulled from the top",
+   "change_every_s": 7.1
+  },
+  {
+   "id": "S28",
+   "beat": 5,
+   "anchor": "it's called the cohesion-tension theory",
+   "tool": "motion-canvas",
+   "visual": "Title card 'COHESION-TENSION' with two lines: 'cohesion: water clings to water' and 'tension: pulled from the top' (violet).",
+   "changes": [
+    "title on 'cohesion-tension'"
+   ],
+   "text": [
+    "COHESION-TENSION",
+    "cohesion: water clings to water",
+    "tension: pulled from the top"
+   ],
+   "facts": [
+    "5.1",
+    "5.4"
+   ],
+   "asset": null,
+   "start": 293.17,
+   "end": 296.53,
+   "duration": 3.36,
+   "cues": [
+    0.95
+   ],
+   "words": "it's called the cohesion tension theory",
+   "change_every_s": 3.4
+  },
+  {
+   "id": "S29",
+   "beat": 5,
+   "anchor": "and it means the water inside",
+   "tool": "motion-canvas",
+   "visual": "A vertical pressure scale: 'air around you' at the top, 'zero' (vacuum), then below zero a violet 'negative: stretched' zone. A chalk droplet slides down the scale to ≈ 20 atmospheres of pull.",
+   "changes": [
+    "droplet passes zero on 'below zero'",
+    "settles on 'twenty times harder'"
+   ],
+   "text": [
+    "air ≈ 1 atm",
+    "0",
+    "negative",
+    "≈ 20 atm of pull"
+   ],
+   "facts": [
+    "5.5",
+    "5.6"
+   ],
+   "asset": null,
+   "start": 296.53,
+   "end": 314.67,
+   "duration": 18.14,
+   "cues": [
+    6.13,
+    14.33
+   ],
+   "words": "and it means the water inside a tree is in a very strange state its pressure is below zero not low negative a liquid being stretched in many trees the water is being pulled about twenty times harder than the air presses on you",
+   "change_every_s": 9.1
+  },
+  {
+   "id": "S30",
+   "beat": 5,
+   "anchor": "pure water can take it",
+   "tool": "motion-canvas",
+   "visual": "The scale extends far down: a muted 'lab: water snaps' band many times deeper than the tree's pull.",
+   "changes": [
+    "lab band on 'stretched much harder'"
+   ],
+   "text": [
+    "lab limit",
+    "tree"
+   ],
+   "facts": [
+    "5.7"
+   ],
+   "asset": null,
+   "start": 314.67,
+   "end": 322.97,
+   "duration": 8.3,
+   "cues": [
+    3.23
+   ],
+   "words": "pure water can take it because in the lab it can be stretched much harder before it snaps in nineteen sixty five",
+   "change_every_s": 8.3
+  },
+  {
+   "id": "S31",
+   "beat": 5,
+   "anchor": "scientists found a way to measure",
+   "tool": "motion-canvas",
+   "visual": "Pressure chamber diagram: a leafy twig sealed in a steel chamber, cut end poking out of the lid; gas pressure gauge climbs until a chalk sap bead appears at the cut.",
+   "changes": [
+    "chamber seals on 'cut twig'",
+    "gauge climbs on 'raise the pressure'",
+    "bead appears on 'sap appears'"
+   ],
+   "text": [
+    "the pressure bomb, 1965",
+    "balancing pressure = the pull"
+   ],
+   "facts": [
+    "5.8"
+   ],
+   "asset": null,
+   "start": 322.97,
+   "end": 337.47,
+   "duration": 14.5,
+   "cues": [
+    6.01,
+    7.59,
+    9.19
+   ],
+   "words": "scientists found a way to measure that tension with a device now nicknamed the pressure bomb seal a cut twig in a chamber raise the pressure until sap appears at the cut and you've measured how hard the tree was pulling",
+   "change_every_s": 4.8
+  },
+  {
+   "id": "S32",
+   "beat": 5,
+   "anchor": "you can even watch it work",
+   "tool": "motion-canvas",
+   "visual": "A trunk cross-section with a dendrometer band; a 24-hour trace: diameter dips by day (sun), recovers at night (moon). Exaggerated, labelled 'tenths of a millimetre'.",
+   "changes": [
+    "trace dips on 'shrinks'",
+    "recovers on 'swells back'"
+   ],
+   "text": [
+    "day",
+    "night",
+    "a fraction of a millimetre"
+   ],
+   "facts": [
+    "5.9"
+   ],
+   "asset": null,
+   "start": 337.47,
+   "end": 346.93,
+   "duration": 9.46,
+   "cues": [
+    3.43,
+    7.77
+   ],
+   "words": "you can even watch it work on a sunny day a tree trunk shrinks very slightly as the tension squeezes it at night it swells back",
+   "change_every_s": 4.7
+  },
+  {
+   "id": "S33",
+   "beat": 5,
+   "anchor": "and the energy",
+   "tool": "motion-canvas",
+   "visual": "The sun (orange: heat) over the leaf; orange warmth drives chalk vapour off; label 'the sun and dry air do the work'; a small meter 'tree's own energy on the lift: 0'.",
+   "changes": [
+    "sun warms on 'the sun'",
+    "meter on 'none of its own energy'"
+   ],
+   "text": [
+    "the sun and dry air do the work",
+    "tree's own energy: 0"
+   ],
+   "facts": [
+    "5.10",
+    "1.6"
+   ],
+   "asset": null,
+   "start": 346.93,
+   "end": 354.39,
+   "duration": 7.46,
+   "cues": [
+    1.31,
+    4.69
+   ],
+   "words": "and the energy the sun and the dry air do the work the tree spends none of its own energy on the lift",
+   "change_every_s": 3.7
+  },
+  {
+   "id": "S34",
+   "beat": 5,
+   "anchor": "it took the best part of a century",
+   "tool": "motion-canvas",
+   "visual": "A short timeline: 1890s (Dixon & Joly) → 1965 (pressure chamber) → today; small muted 'doubters' tick marks fading along it.",
+   "changes": [
+    "timeline on 'century'"
+   ],
+   "text": [
+    "1890s",
+    "1965",
+    "today"
+   ],
+   "facts": [
+    "5.11"
+   ],
+   "asset": null,
+   "start": 354.39,
+   "end": 362.84,
+   "duration": 8.45,
+   "cues": [
+    1.55
+   ],
+   "words": "it took the best part of a century for the idea to win over its doubters and a few scientists still argue the details",
+   "change_every_s": 8.4
+  },
+  {
+   "id": "S35",
+   "beat": 6,
+   "anchor": "but stretched water is risky water",
+   "tool": "blender",
+   "visual": "HERO 5 (3D). Two neighbouring pipes under violet tension; in one, a bubble pops into existence and expands, the pipe fills with air (muted grey). In the pit between them, the plug (torus) slams shut against the opening, so the neighbour stays full.",
+   "changes": [
+    "bubble on 'snap'",
+    "pipe greys on 'blocked'",
+    "pit plug slams on (overlay timing, S37)"
+   ],
+   "text": [
+    "air bubble",
+    "blocked"
+   ],
+   "facts": [
+    "6.1",
+    "6.4"
+   ],
+   "asset": null,
+   "start": 362.84,
+   "end": 374.83,
+   "duration": 11.99,
+   "cues": [
+    5.62,
+    10.5,
+    8.99
+   ],
+   "words": "but stretched water is risky water pull too hard and the column can snap a bubble of air forms in a pipe and the pipe fills with air it's blocked",
+   "change_every_s": 4.0
+  },
+  {
+   "id": "S36",
+   "beat": 6,
+   "anchor": "scientists first picked up the sound",
+   "tool": "motion-canvas",
+   "visual": "A sensor clipped to a thin stem; a trace beside it showing sharp single pulses, each with a tiny bubble icon.",
+   "changes": [
+    "clicks on 'tiny clicks'",
+    "pulses on 'ultrasonic sensors'"
+   ],
+   "text": [
+    "1960s: clicks",
+    "lab tests: one pulse, one bubble"
+   ],
+   "facts": [
+    "6.3"
+   ],
+   "asset": null,
+   "start": 374.83,
+   "end": 388.25,
+   "duration": 13.42,
+   "cues": [
+    3.77,
+    6.99
+   ],
+   "words": "scientists first picked up the sound of this in the nineteen sixties as tiny clicks from thirsty plants today ultrasonic sensors record them in lab tests each pulse matches a single bubble",
+   "change_every_s": 6.7
+  },
+  {
+   "id": "S37",
+   "beat": 6,
+   "anchor": "so trees are built to contain",
+   "tool": "motion-canvas",
+   "visual": "Close diagram of a pit: water dots pass through the porous membrane; an air front stops at it. Then a conifer pit: rim (margo) and central plug (torus) shutting. Then a slider 'safety ↔ flow'.",
+   "changes": [
+    "water passes on 'water gets through'",
+    "air stops on 'air doesn't'",
+    "plug shuts on 'slams shut'",
+    "slider on 'safety has a price'"
+   ],
+   "text": [
+    "pit membrane",
+    "torus",
+    "safer = harder to push through"
+   ],
+   "facts": [
+    "6.4"
+   ],
+   "asset": null,
+   "start": 388.25,
+   "end": 414.67,
+   "duration": 26.42,
+   "cues": [
+    10.05,
+    11.29,
+    16.31,
+    20.63
+   ],
+   "words": "so trees are built to contain the damage their pipes connect through tiny pits and the thin membranes in those pits work like safety valves water gets through air doesn't in conifers each pit even has a little plug that slams shut when the pipe next door fills with air but safety has a price the safer the valve the harder it is to push water through it",
+   "change_every_s": 6.6
+  },
+  {
+   "id": "S38",
+   "beat": 6,
+   "anchor": "and in a drought",
+   "tool": "motion-canvas",
+   "visual": "A bundle of chalk pipes under violet tension; as the pull strengthens, air pushes through one pit, then the next: pipe after pipe turns grey (muted) until the bundle is mostly grey.",
+   "changes": [
+    "first pipe greys on 'forcing its way'",
+    "greying spreads on 'pipe after pipe'",
+    "bundle mostly grey on 'shuts down'"
+   ],
+   "text": [
+    "drought"
+   ],
+   "facts": [
+    "6.1",
+    "6.2"
+   ],
+   "asset": null,
+   "start": 414.67,
+   "end": 426.79,
+   "duration": 12.12,
+   "cues": [
+    4.25,
+    6.85,
+    10.23
+   ],
+   "words": "and in a drought the pull keeps getting stronger until air starts forcing its way through the valves pipe after pipe fills with air and the tree's plumbing shuts down",
+   "change_every_s": 4.0
+  },
+  {
+   "id": "S38b",
+   "beat": 6,
+   "anchor": "that's one of the main ways",
+   "tool": "archival",
+   "visual": "USGS photo of giant sequoia foliage dieback in the 2014 drought, slow push-in (W1 USFS photo refused the download, 403).",
+   "changes": [
+    "push-in on 'water lines break'"
+   ],
+   "text": [
+    "Giant sequoia dieback, 2014 drought",
+    "N. Stephenson, USGS (public domain)"
+   ],
+   "facts": [
+    "6.6"
+   ],
+   "asset": "W2 USGS sequoia dieback 2014",
+   "start": 426.79,
+   "end": 432.03,
+   "duration": 5.24,
+   "cues": [
+    3.17
+   ],
+   "words": "that's one of the main ways drought kills trees their water lines break",
+   "change_every_s": 5.2
+  },
+  {
+   "id": "S39",
+   "beat": 6,
+   "anchor": "whether a tree can ever clear",
+   "tool": "motion-canvas",
+   "visual": "A trunk cross-section: older rings grey (air-filled) stay grey; a new chalk ring grows at the outside and its pipes fill with water.",
+   "changes": [
+    "new ring grows on 'grow new wood'"
+   ],
+   "text": [
+    "new wood"
+   ],
+   "facts": [
+    "6.7"
+   ],
+   "asset": null,
+   "start": 432.03,
+   "end": 439.89,
+   "duration": 7.86,
+   "cues": [
+    5.57
+   ],
+   "words": "whether a tree can ever clear a blocked pipe is still debated mostly it seems to grow new wood instead",
+   "change_every_s": 7.9
+  },
+  {
+   "id": "S40",
+   "beat": 7,
+   "anchor": "this design has one more consequence",
+   "tool": "motion-canvas",
+   "visual": "The redwood scale view with a tension ladder up the trunk: one violet tick per 10 m, '+1 atm per 10 m'; the crown glows driest.",
+   "changes": [
+    "consequence card on 'limit on how tall'",
+    "ticks climb on 'every metre'",
+    "crown highlights on 'thirstiest'"
+   ],
+   "text": [
+    "+1 atmosphere every 10 m"
+   ],
+   "facts": [
+    "7.2",
+    "7.3"
+   ],
+   "asset": null,
+   "start": 439.89,
+   "end": 460.99,
+   "duration": 21.1,
+   "cues": [
+    3.61,
+    6.49,
+    17.25
+   ],
+   "words": "this design has one more consequence it may set a limit on how tall a tree can grow every metre of height adds more pull just to hold the water up about one atmosphere for every ten metres so the top of a tall tree is always the thirstiest part in two thousand and four",
+   "change_every_s": 7.0
+  },
+  {
+   "id": "S41",
+   "beat": 7,
+   "anchor": "a team of scientists climbed",
+   "tool": "footage",
+   "visual": "NPS 'Redwood Trunk' B-roll: the slow tilt up a 300 ft redwood. Overlay: 'Koch et al., 2004'.",
+   "changes": [
+    "overlay on 'climbed'"
+   ],
+   "text": [
+    "Redwood National and State Parks (NPS)"
+   ],
+   "facts": [
+    "7.1"
+   ],
+   "asset": "V1 NPS Redwood Trunk B-roll (G Litten)",
+   "start": 460.99,
+   "end": 468.71,
+   "duration": 7.72,
+   "cues": [
+    1.11
+   ],
+   "words": "a team of scientists climbed the tallest redwoods in california and measured their leaves from bottom to top",
+   "change_every_s": 7.7
+  },
+  {
+   "id": "S42",
+   "beat": 7,
+   "anchor": "near the top the leaves were",
+   "tool": "motion-canvas",
+   "visual": "Two chalk shoot drawings: low in the tree, broad flat leaves; at the top, small, thick, tightly packed leaves. Label 'water-starved'.",
+   "changes": [
+    "top shoot on 'small thick'",
+    "label on 'water-starved'"
+   ],
+   "text": [
+    "low: broad and flat",
+    "top: small, thick, packed"
+   ],
+   "facts": [
+    "7.3"
+   ],
+   "asset": null,
+   "start": 468.71,
+   "end": 473.93,
+   "duration": 5.22,
+   "cues": [
+    1.51,
+    3.87
+   ],
+   "words": "near the top the leaves were small thick and tightly packed water starved",
+   "change_every_s": 2.6
+  },
+  {
+   "id": "S43",
+   "beat": 7,
+   "anchor": "following that trend upward",
+   "tool": "blender",
+   "visual": "HERO 6 (3D). The chalk redwood grows upward toward a translucent ceiling band (122-130 m); the trend line extends dashed; Hyperion's height marker at 116 m just under the band.",
+   "changes": [
+    "band on 'no taller than'",
+    "dashed trend on 'prediction'",
+    "Hyperion marker on 'just under it'"
+   ],
+   "text": [
+    "≈ 122-130 m (predicted)",
+    "Hyperion ≈ 116 m"
+   ],
+   "facts": [
+    "7.1",
+    "7.4",
+    "7.5",
+    "1.1"
+   ],
+   "asset": null,
+   "start": 473.93,
+   "end": 500.36,
+   "duration": 26.43,
+   "cues": [
+    4.19,
+    10.65,
+    24.63
+   ],
+   "words": "following that trend upward they estimated redwoods could grow no taller than about a hundred and twenty two to a hundred and thirty metres that's a prediction from the data not a law of nature but a different team studying a different tree found a similar ceiling and the tallest tree known today hyperion at about a hundred and sixteen metres stands just under it",
+   "change_every_s": 8.8
+  },
+  {
+   "id": "S44",
+   "beat": 8,
+   "anchor": "a big tree can move hundreds",
+   "tool": "footage",
+   "visual": "NPS 'Sun in Redwood Canopy' B-roll. Overlay: 'hundreds of litres on a summer day' then 'almost all of it evaporates'.",
+   "changes": [
+    "second line on 'simply evaporates'"
+   ],
+   "text": [
+    "hundreds of litres a day",
+    "almost all of it evaporates",
+    "NPS (public domain)"
+   ],
+   "facts": [
+    "8.1",
+    "8.2"
+   ],
+   "asset": "V4 NPS Sun In Redwood Canopy B-roll",
+   "start": 500.36,
+   "end": 511.19,
+   "duration": 10.83,
+   "cues": [
+    6.52
+   ],
+   "words": "a big tree can move hundreds of litres of water on a summer day and almost all of it simply evaporates out through the leaves into the air",
+   "change_every_s": 10.8
+  },
+  {
+   "id": "S45",
+   "beat": 8,
+   "anchor": "so the next time you walk",
+   "tool": "footage",
+   "visual": "NPS 'Fog in Redwood Trees' B-roll, quiet.",
+   "changes": [],
+   "text": [
+    "NPS (public domain)"
+   ],
+   "facts": [],
+   "asset": "V2 NPS Fog in Redwood Trees B-roll",
+   "start": 511.19,
+   "end": 517.77,
+   "duration": 6.58,
+   "cues": [],
+   "words": "so the next time you walk past a tree on a sunny day think about what's going on inside it",
+   "change_every_s": 6.6
+  },
+  {
+   "id": "S46",
+   "beat": 8,
+   "anchor": "columns of water stretched tight",
+   "tool": "blender",
+   "visual": "HERO 7 (3D, reuses HERO 1). The chalk redwood from the cold open, now with violet threads glowing up the trunk from roots to crown; the 10 m line faint at its base.",
+   "changes": [
+    "threads glow on 'stretched tight'",
+    "10 m line on 'no pump can beat'"
+   ],
+   "text": [],
+   "facts": [
+    "5.5",
+    "2.4"
+   ],
+   "asset": null,
+   "start": 517.77,
+   "end": 527.29,
+   "duration": 9.52,
+   "cues": [
+    1.21,
+    8.41
+   ],
+   "words": "columns of water stretched tight hanging from the leaves lifted by the sun through pipes too wide to work past a limit no pump can beat",
+   "change_every_s": 4.8
+  },
+  {
+   "id": "S47",
+   "beat": 8,
+   "anchor": "the tallest pump on earth",
+   "tool": "motion-canvas",
+   "visual": "The wordmark settles (as P1/P2's closing); 'Next time' card.",
+   "changes": [
+    "wordmark on 'designed otherwise'"
+   ],
+   "text": [
+    "DESIGNED OTHERWISE"
+   ],
+   "facts": [
+    "1.6"
+   ],
+   "asset": null,
+   "start": 527.29,
+   "end": 539.08,
+   "duration": 11.79,
+   "cues": [
+    5.47
+   ],
+   "words": "the tallest pump on earth has no moving parts it was designed otherwise next time on designed otherwise",
+   "change_every_s": 11.8
+  }
+ ]
+}
