@@ -44,7 +44,7 @@ def from_page(item):
         m = re.search(r'property="og:image"\s+content="([^"]+)"', html)
         links = [m.group(1)] if m else []
     if not links:
-        raise SystemExit(f"no image found on {item['url']}")
+        raise ValueError(f"no image found on {item['url']}")
     # defense.gov: the original is the -1/-1/0 variant; otherwise prefer the longest URL (usually the full size)
     best = sorted(set(links), key=lambda l: ("/-1/-1/0/" in l, "large" in l.lower(), len(l)), reverse=True)[0]
     rights = re.findall(r"(public domain[^<]{0,160}|cleared for release[^<]{0,80})", html, flags=re.I)[:3]
