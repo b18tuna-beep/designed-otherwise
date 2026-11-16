@@ -2,8 +2,9 @@
 
     python tools/anim/composite_heroes.py <ep> <episode.mp4> <heroes_dir> <overlay_frames_dir> <out.mp4>
 
-Heroes are the scenes with tool == "blender" in episodes/<ep>/scenes/scenes.json, in order. Each one's clip is
-<heroes_dir>/<scene id>.mp4 if present, else <heroes_dir>/H<k>.mp4 (k = 1.. in order: P2 naming).
+Heroes are the scenes with tool == "blender" or "footage" in episodes/<ep>/scenes/scenes.json, in order. Each one's clip is
+<heroes_dir>/<scene id>.mp4 if present, else <heroes_dir>/H<k>.mp4 (k = 1.. counting blender scenes only: P2 naming).
+Footage scenes (public-domain video, P3) are prepared as <heroes_dir>/<scene id>.mp4 and get an overlay scene like a hero.
 Overlay frames come from the episode's overlays Motion Canvas project (one overlay scene per hero, in the same
 order, groupByScene off, consecutive %06d.png). Scene frame ranges are round(start*30) .. round(end*30), the
 same rule the scene runner uses. A clip shorter than its slot holds its last frame (P2 re-voice moved a few
@@ -41,7 +42,9 @@ def main():
     os.makedirs(work, exist_ok=True)
     total = frames(episode)
     offset, spans = 0, []
-    for k, s in enumerate([s for s in scenes if s["tool"] == "blender"], 1):
+    k = 0
+    for s in [s for s in scenes if s["tool"] in ("blender", "footage")]:
+        k += s["tool"] == "blender"
         f0, f1 = round(s["start"] * FPS), round(s["end"] * FPS)
         n = f1 - f0
         clip = os.path.join(heroes_dir, f"{s['id']}.mp4")

@@ -1,0 +1,50 @@
+[
+ {
+  "file": "magdeburg-1672.png",
+  "scene": "S06",
+  "source": "File:Magdeburg.jpg",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Magdeburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "license": "Public domain",
+  "artist": "<a href=\"https://en.wikipedia.org/wiki/Gaspar_Schott\" class=\"extiw\" title=\"en:Gaspar Schott\">Gaspar Schott</a>"
+ },
+ {
+  "file": "maple-sap-lines.png",
+  "scene": "S16",
+  "source": "https://www.dvidshub.net/image/9603116/twin-maple-sugarbush-operation",
+  "file_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2604/9603116/2000w_q95.jpg",
+  "license": null,
+  "artist": null
+ },
+ {
+  "file": "sequoia-dieback-2014.png",
+  "scene": "S38b",
+  "source": "https://www.usgs.gov/media/images/giant-sequoia-foliage-dieback-during-californias-extreme-drought",
+  "file_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/teaser/public/thumbnails/image/Stephenson%201.png?itok=Doj24Z1L",
+  "license": null,
+  "artist": null
+ },
+ {
+  "file": "footage/S41.mp4",
+  "scene": "S41",
+  "source": "https://www.nps.gov/nps-audiovideo/legacy/redw/F2A4BB60-A45E-4EEC-90F74BD73067803E/redw-Creeksideredwood-PrairieCreek_1280x720.mp4",
+  "file_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/F2A4BB60-A45E-4EEC-90F74BD73067803E/redw-Creeksideredwood-PrairieCreek_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "artist": "NPS: G Litten"
+ },
+ {
+  "file": "footage/S44.mp4",
+  "scene": "S44",
+  "source": "https://www.nps.gov/nps-audiovideo/legacy/redw/8C7A8FCB-A1F3-787A-8521EC1B84BBA0FA/redw-SuninredwoodsLostmanCreek_1280x720.mp4",
+  "file_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/8C7A8FCB-A1F3-787A-8521EC1B84BBA0FA/redw-SuninredwoodsLostmanCreek_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "artist": "NPS: G Litten"
+ },
+ {
+  "file": "footage/S45.mp4",
+  "scene": "S45",
+  "source": "https://www.nps.gov/nps-audiovideo/legacy/redw/DF2E96F7-C3A9-2CAE-A9ACBB156616B570/redw-FogInTreesB-Roll_1280x720.mp4",
+  "file_url": "https://www.nps.gov/nps-audiovideo/legacy/redw/DF2E96F7-C3A9-2CAE-A9ACBB156616B570/redw-FogInTreesB-Roll_1280x720.mp4",
+  "license": "NPS Redwood National and State Parks B-roll: 'You can download and freely use this HD footage for any media project.'",
+  "artist": "NPS: Liam Carey-Rand"
+ }
+]
