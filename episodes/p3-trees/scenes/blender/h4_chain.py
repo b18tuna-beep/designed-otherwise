@@ -7,6 +7,8 @@ fades (evaporation) and the tug travels down the chain as it closes the gap. On
 'cling to each other' (5.77 s) a violet tension glow runs down the chain (the pull).
 The camera tracks down the column so it reads as long. On 'like a rope' (18.59 s)
 the next top bead leaves and the whole column rises together, all at once.
+Re-voiced cues (1.97, 5.85, 18.61 s) are 0.02-0.08 s later than the authored ones,
+so each change still lands a few frames before its word.
 
     python h4_chain.py -- <out_dir> [first last] [--res PCT] [--samples S] [--test 1,200]
 """
@@ -21,7 +23,7 @@ import bpy  # noqa: E402
 from tree_common import (T, Args, DynMesh, Mat, bars, camera, lerp, place_camera, render_loop,  # noqa: E402
                          seg, setup_scene, smoothstep, static, sun, tube_along, uv_sphere)
 
-args = Args(642, "h4")
+args = Args(641, "h4")
 DUR = args.frames / 30.0
 sc = setup_scene(args)
 sc.cycles.transparent_max_bounces = 8

@@ -155,10 +155,10 @@ if MODE in ("h7", "hook"):
         rv.append(v); rf.append(f + ro); ro += len(v)
         zs = np.linspace(1.2, 113.0, 90)
         ang = a0 + 0.35 * np.sin(zs / 23.0 + j)
-        rad = 0.48 * trunk_radius(zs)
+        rad = (0.6 if MODE == "hook" else 0.48) * trunk_radius(zs)
         up = np.stack([rad * np.cos(ang), rad * np.sin(ang), zs], -1)
         path = np.concatenate([root[:-1], up])
-        for (V_, F_, H_, rr_, o_) in ((tv_, tf_, th_, 0.34, "t"), (hv, hf, hh, 0.95, "h")):
+        for (V_, F_, H_, rr_, o_) in ((tv_, tf_, th_, 0.14 if MODE == "hook" else 0.34, "t"), (hv, hf, hh, 0.95, "h")):
             v, f, s = tube_along(path, rr_, 8)
             off = to if o_ == "t" else ho
             V_.append(v); F_.append(f + off); H_.append(s)
@@ -226,13 +226,13 @@ def update(t, f):
         m_trunk.set(alpha=0.12)
         m_crown.set(alpha=0.1)
         m_thread.set(reveal=1.03, emit=lerp(1.25, 1.6, seg(t, 3.6, DUR)), phase=t * 6.0)
-        m_glow.set(reveal=1.03, emit=lerp(0.45, 0.7, seg(t, 3.6, DUR)), phase=t * 6.0)
+        m_glow.set(reveal=1.03, emit=lerp(0.0, 0.7, seg(t, 4.2, DUR)), alpha=lerp(0.0, 0.22, seg(t, 4.2, DUR)), phase=t * 6.0)
         k = seg(t, 3.7, DUR)
         hold = seg(t, 0.0, 3.7)
         dist = math.exp(lerp(math.log(lerp(10.5, 9.0, hold)), math.log(225.0), k ** 1.15))
-        Tg = np.array([lerp(0.0, 10.0, k), 0.0, lerp(lerp(36.0, 39.0, hold), 58.0, k)])
+        Tg = np.array([lerp(0.0, 3.0, k), 0.0, lerp(lerp(36.0, 39.0, hold), 58.0, k)])
         el = lerp(4.0, -3.5, k)
-        aim(Tg + np.array([lerp(-1.5, -10.0, k), -dist, dist * math.tan(math.radians(el))]), Tg)
+        aim(Tg + np.array([lerp(-1.5, -4.0, k), -dist, dist * math.tan(math.radians(el))]), Tg)
     else:
         # cues 1.13 'stretched tight' (threads), 8.39 'no pump can beat' (10 m line)
         g = seg(t, 0.15, 1.1)

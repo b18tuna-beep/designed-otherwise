@@ -3,11 +3,11 @@
 A leaf cross-section in chalk on slate (claim 9.2): waxy cuticle top and bottom,
 upper epidermis, tightly packed palisade columns, loosely packed spongy mesophyll
 with dark air spaces, lower epidermis with a stoma (two guard cells) over an air
-cavity. Chalk vapour wisps drift out of the stoma from 'stomata' (7.75 s). On 'cell
-walls' (9.73 s) the camera pushes into the wet wall of a spongy cell beside the
+cavity. Chalk vapour wisps drift out of the stoma from 'stomata' (7.57 s). On 'cell
+walls' (9.57 s) the camera pushes into the wet wall of a spongy cell beside the
 cavity, down to its pores: a mesh of wall fibres with a tiny curved water surface
 (meniscus, translucent chalk) in every pore, faint vapour leaving them. On
-'enormous force' (19.19 s) the menisci glow violet and curve deeper (the pull).
+'enormous force' (19.01 s) the menisci glow violet and curve deeper (the pull).
 The wall patch sits on the cell at true placement but is magnified (stylised zoom).
 
     python h3_leaf.py -- <out_dir> [first last] [--res PCT] [--samples S] [--test 1,300]
@@ -23,7 +23,7 @@ import bpy  # noqa: E402
 from tree_common import (T, Args, DynMesh, Mat, bars, box_mesh, camera, lathe_template, lerp,  # noqa: E402
                          look_rot, render_loop, seg, setup_scene, smoothstep, static, sun, tri_quads, uv_sphere)
 
-args = Args(637, "h3")
+args = Args(631, "h3")
 DUR = args.frames / 30.0
 sc = setup_scene(args)
 sc.cycles.transparent_max_bounces = 8
@@ -265,6 +265,8 @@ V_OVER /= np.linalg.norm(V_OVER)          # overview: looking from front, slight
 
 
 def update(t, f):
+    # timeline authored for cues 7.75/9.73/19.19 s; re-voiced cues are 7.57/9.57/19.01 s (0.18 s earlier)
+    t = t + 0.18
     # vapour
     P, R, Al = wisp_state(t)
     wisps.set_verts((P[:, None, :] + R[:, None, None] * WSV[None]).reshape(-1, 3))
