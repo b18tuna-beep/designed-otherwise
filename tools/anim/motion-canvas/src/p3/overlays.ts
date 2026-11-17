@@ -1,5 +1,6 @@
 import {makeProject} from '@motion-canvas/core';
 import '../fonts.css';
+import O00a from './overlays/O00a?scene';
 import O03 from './overlays/O03?scene';
 import O20 from './overlays/O20?scene';
 import O26 from './overlays/O26?scene';
@@ -15,5 +16,5 @@ await Promise.all(['600 44px Archivo', '500 30px Archivo', '500 30px "IBM Plex M
 
 export default makeProject({
   name: 'p3-overlays',
-  scenes: [O03, O20, O26, O27, O35, O41, O43, O44, O45, O46],
+  scenes: [O00a, O03, O20, O26, O27, O35, O41, O43, O44, O45, O46],
 });

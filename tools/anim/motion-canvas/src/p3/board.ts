@@ -1,5 +1,9 @@
 import {makeProject} from '@motion-canvas/core';
 import '../fonts.css';
+import S00a from './board/S00a?scene';
+import S00b from './board/S00b?scene';
+import S00c from './board/S00c?scene';
+import S00d from './board/S00d?scene';
 import S01 from './board/S01?scene';
 import S02 from './board/S02?scene';
 import S03 from './board/S03?scene';
@@ -53,5 +57,5 @@ await Promise.all(['600 44px Archivo', '500 30px Archivo', '500 30px "IBM Plex M
 
 export default makeProject({
   name: 'p3-board',
-  scenes: [S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S34, S35, S36, S37, S38, S38b, S39, S40, S41, S42, S43, S44, S45, S46, S47],
+  scenes: [S00a, S00b, S00c, S00d, S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S34, S35, S36, S37, S38, S38b, S39, S40, S41, S42, S43, S44, S45, S46, S47],
 });

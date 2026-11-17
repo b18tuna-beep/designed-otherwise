@@ -1,5 +1,9 @@
 import {makeProject} from '@motion-canvas/core';
 import '../fonts.css';
+import E00a from './episode/E00a?scene';
+import E00b from './episode/E00b?scene';
+import E00c from './episode/E00c?scene';
+import E00d from './episode/E00d?scene';
 import E01 from './episode/E01?scene';
 import E02 from './episode/E02?scene';
 import E03 from './episode/E03?scene';
@@ -53,5 +57,5 @@ await Promise.all(['600 44px Archivo', '500 30px Archivo', '500 30px "IBM Plex M
 
 export default makeProject({
   name: 'p3-episode',
-  scenes: [E01, E02, E03, E04, E05, E06, E07, E08, E09, E10, E11, E12, E13, E14, E15, E16, E17, E18, E19, E20, E21, E22, E23, E24, E25, E26, E27, E28, E29, E30, E31, E32, E33, E34, E35, E36, E37, E38, E38b, E39, E40, E41, E42, E43, E44, E45, E46, E47],
+  scenes: [E00a, E00b, E00c, E00d, E01, E02, E03, E04, E05, E06, E07, E08, E09, E10, E11, E12, E13, E14, E15, E16, E17, E18, E19, E20, E21, E22, E23, E24, E25, E26, E27, E28, E29, E30, E31, E32, E33, E34, E35, E36, E37, E38, E38b, E39, E40, E41, E42, E43, E44, E45, E46, E47],
 });
