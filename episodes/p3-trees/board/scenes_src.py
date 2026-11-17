@@ -14,14 +14,28 @@ Colour meanings for this episode (style bible: meanings never change):
   muted   failed attempts, air-filled (embolised) pipes, dead leaves
   no arrowheads (they mean heat); direction by motion, dashes and travelling dots.
 Locator: a small chalk tree in the corner with the current zoom boxed (trunk / wood / leaf / pipe).
-Michael's standing notes: hook first (no photo/footage before the sting), 1 s beat after the first line, sting after S04,
+Michael's standing notes: hook first (S00a-d, no photo/footage before the sting), 1 s beat after the first line, soft landing into
+the sting after S00d (0.6 s breath in the narration + mix_with_sting's eased music and picture),
 named people get a who-were-they line (Torricelli, Dixon, Joly are named; nobody else).
 """
 
 SCENES = [
     # ---------------------------------------------------------------- 1. cold open: the brief
-    dict(id="S01", beat=1, anchor="here's an engineering challenge", tool="motion-canvas",
-         visual="Dark slate, a chalk blueprint sheet slides in: 'THE BRIEF'. During the 1 s beat only the title sits there. Then three spec lines write themselves; beside them a 30-storey building silhouette grows from the baseline, a dashed '10 m' line marks its lower floors.",
+    # ---------------------------------------------------------------- 0. hook (Michael 2026-11-17: a real hook, soft landing into the intro, then the video)
+    dict(id="S00a", beat=1, anchor="inside the trees you walk past", tool="blender",
+         visual="HERO 8 (3D, reuses HERO 7's build). Opens close inside a chalk trunk cutaway: taut violet threads (the stretched water) running up through it, faintly pulsing. Through the 1 s beat only the threads. Slow pull-back reveals the whole redwood, the threads running from roots to crown.",
+         changes=["pull-back starts on 'being stretched'"], text=[], facts=["5.5"], asset=None),
+    dict(id="S00b", beat=1, anchor="pulled so hard that its pressure", tool="motion-canvas",
+         visual="The pressure dial (from lib/trees) alone on slate: the needle sweeps from 'air' through zero and down into the violet negative zone. Label 'below zero'.",
+         changes=["needle passes zero on 'below zero'"], text=["0", "below zero"], facts=["5.5"], asset=None),
+    dict(id="S00c", beat=1, anchor="it hangs from the leaves", tool="motion-canvas",
+         visual="A chalk leaf cluster at the top of frame; a single violet thread hangs from it, taut, like a rope, down out of frame. On 'snaps' the thread breaks with a small muted gap, the lower part drops away and the leaves fade to muted.",
+         changes=["thread tightens on 'like a rope'", "thread snaps on 'rope snaps'", "leaves go muted on 'can die'"], text=[], facts=["5.4", "6.1", "6.6"], asset=None),
+    dict(id="S00d", beat=1, anchor="it's how a tree does something", tool="motion-canvas",
+         visual="Teaser of the scale: a chalk suction pump stuck at a dashed 10 m line, the chalk redwood outline rising far above it. Holds, then eases to the slate ground for the soft landing into the intro sting.",
+         changes=["redwood rises past the line on 'ever could'"], text=["10 m"], facts=["2.1", "2.4"], asset=None),
+    dict(id="S01", beat=1, anchor="so here's the challenge", tool="motion-canvas",
+         visual="After the intro: a chalk blueprint sheet slides in: 'THE BRIEF'. Then three spec lines write themselves; beside them a 30-storey building silhouette grows from the baseline, a dashed '10 m' line marks its lower floors.",
          changes=["building grows and spec 1 on 'thirty-storey building'", "spec 2 on 'no pump'", "spec 3 and 10 m line on 'suck it up'"],
          text=["THE BRIEF", "1. Lift water above 30 storeys", "2. No pump, no motor, no moving parts", "3. No suction", "10 m"], facts=["1.5", "1.6", "2.1"], asset=None),
     dict(id="S02", beat=1, anchor="sounds impossible", tool="motion-canvas",
@@ -42,7 +56,7 @@ SCENES = [
          changes=["water starts rising on 'like a straw'"], text=["Attempt 1: suck it up"], facts=[], asset=None),
     dict(id="S06", beat=2, anchor="people tried this for centuries", tool="archival",
          visual="Guericke's Magdeburg hemispheres plate (1672), slow push-in; chalk frame and credit. Sets the 1600s and the vacuum.",
-         changes=["push-in on 'pump makers'"], text=["Otto von Guericke, 1672 (public domain)"], facts=["2.3"], asset="H1 Magdeburg hemispheres plate, Guericke 1672, Commons File:Magdeburg.jpg"),
+         changes=["push-in on 'pump makers'"], text=["Magdeburg hemispheres experiment, engraving, 1672 (public domain)"], facts=["2.3"], asset="H1 Magdeburg hemispheres plate, Guericke 1672, Commons File:Magdeburg.jpg"),
     dict(id="S07", beat=2, anchor="their suction pumps would not raise", tool="motion-canvas",
          visual="Back to the well pump: the water column rises and stops dead at a line, however hard the handle works. Line labelled '18 braccia ≈ 10-11 m'.",
          changes=["water stops at the line on 'eighteen braccia'"], text=["≈ 18 braccia", "≈ 10-11 m"], facts=["2.3"], asset=None),

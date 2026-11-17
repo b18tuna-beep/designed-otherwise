@@ -1,24 +1,31 @@
-# Trees Don't Pump Water. They Pull It. (working title)
+# The Water Inside Trees Is Being Stretched (working title)
 
-P3 · Designed Otherwise · Script v1.1 (2026-11-16, fact-check wording applied: research/factcheck.md, 17 PASS / 33 PASS_WITH_EDIT / 0 FAIL)
+P3 · Designed Otherwise · Script v2 (2026-11-17: Michael's checkpoint-2 note, a real hook before the intro; fact-check wording applied: research/factcheck.md)
 
 Every line ends with the claim ids it relies on (`research/claims.json`; wording follows each claim's notes and the fact check's safe wording). `[none]` = no factual claim. `[A1]` = script addendum claim checked separately (`research/factcheck-addendum.md`). Numbers are spelled the way George will say them.
 Format (inauthentic-content rule): P1 was a paradox explained, P2 a detective story. P3 is an engineering challenge: a brief that every obvious solution fails, then nature's answer.
 Michael's standing notes applied: hook first, no photo opening; 1 s beat after the first line; intro sting after the cold open; every named person gets a line on who they were.
 
-## 1. Cold open: the brief (0:00 to ~0:45)
+## 1. Hook (0:00 to ~0:22)
 
-Here's an engineering challenge. [none]
+Inside the trees you walk past every day, the water is being stretched. [5.5]
 (1 s beat)
+Pulled so hard that its pressure drops below zero. [5.5]
+It hangs from the leaves, like a rope. [5.4, 5.5]
+And if that rope snaps, the tree can die. [6.1, 6.6]
+It's how a tree does something no suction pump ever could. [2.1, 2.4]
+
+(soft landing: music eases out, intro sting)
+
+## 1b. The brief (~0:25 to ~0:55)
+
+So here's the challenge. [none]
 Lift water higher than a thirty-storey building. [1.5]
 No pump. No motor. No moving parts. [1.6]
-And one more rule. You can't suck it up. Suction stops working at about ten metres. [2.1]
-Sounds impossible. [none]
-But if there's a tree outside your window, in leaf, and the sun is up, it's doing exactly this, right now. [1.6, 1.7]
+And you can't suck it up. Suction stops working at about ten metres. [2.1]
+Sounds impossible. But if there's a tree outside your window, in leaf, and the sun is up, it's doing exactly this, right now. [1.6, 1.7]
 The tallest tree on Earth, a coast redwood called Hyperion, does it about a hundred and sixteen metres up. [1.1]
 So let's try to solve it the way an engineer would. And watch every obvious answer fail. [none]
-
-(intro sting)
 
 ## 2. Attempt one: suck it up (~0:50 to 2:10)
 

@@ -1,9 +1,13 @@
-Here's an engineering challenge.
+Inside the trees you walk past every day, the water is being stretched.
+Pulled so hard that its pressure drops below zero.
+It hangs from the leaves, like a rope.
+And if that rope snaps, the tree can die.
+It's how a tree does something no suction pump ever could.
+So here's the challenge.
 Lift water higher than a thirty-storey building.
 No pump. No motor. No moving parts.
-And one more rule. You can't suck it up. Suction stops working at about ten metres.
-Sounds impossible.
-But if there's a tree outside your window, in leaf, and the sun is up, it's doing exactly this, right now.
+And you can't suck it up. Suction stops working at about ten metres.
+Sounds impossible. But if there's a tree outside your window, in leaf, and the sun is up, it's doing exactly this, right now.
 The tallest tree on Earth, a coast redwood called Hyperion, does it about a hundred and sixteen metres up.
 So let's try to solve it the way an engineer would. And watch every obvious answer fail.
 First idea. Put a pump at the top and suck the water up, like a straw.
