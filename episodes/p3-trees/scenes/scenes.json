@@ -1,14 +1,118 @@
 {
  "source_words": "audio/final.words.json",
  "fps": 30,
- "total_s": 539.08,
+ "total_s": 558.54,
  "scenes": [
+  {
+   "id": "S00a",
+   "beat": 1,
+   "anchor": "inside the trees you walk past",
+   "tool": "blender",
+   "visual": "HERO 8 (3D, reuses HERO 7's build). Opens close inside a chalk trunk cutaway: taut violet threads (the stretched water) running up through it, faintly pulsing. Through the 1 s beat only the threads. Slow pull-back reveals the whole redwood, the threads running from roots to crown.",
+   "changes": [
+    "pull-back starts on 'being stretched'"
+   ],
+   "text": [],
+   "facts": [
+    "5.5"
+   ],
+   "asset": null,
+   "start": 0.0,
+   "end": 6.83,
+   "duration": 6.83,
+   "cues": [
+    3.78
+   ],
+   "words": "inside the trees you walk past every day the water is being stretched",
+   "change_every_s": 6.8
+  },
+  {
+   "id": "S00b",
+   "beat": 1,
+   "anchor": "pulled so hard that its pressure",
+   "tool": "motion-canvas",
+   "visual": "The pressure dial (from lib/trees) alone on slate: the needle sweeps from 'air' through zero and down into the violet negative zone. Label 'below zero'.",
+   "changes": [
+    "needle passes zero on 'below zero'"
+   ],
+   "text": [
+    "0",
+    "below zero"
+   ],
+   "facts": [
+    "5.5"
+   ],
+   "asset": null,
+   "start": 6.83,
+   "end": 10.93,
+   "duration": 4.1,
+   "cues": [
+    2.17
+   ],
+   "words": "pulled so hard that its pressure drops below zero",
+   "change_every_s": 4.1
+  },
+  {
+   "id": "S00c",
+   "beat": 1,
+   "anchor": "it hangs from the leaves",
+   "tool": "motion-canvas",
+   "visual": "A chalk leaf cluster at the top of frame; a single violet thread hangs from it, taut, like a rope, down out of frame. On 'snaps' the thread breaks with a small muted gap, the lower part drops away and the leaves fade to muted.",
+   "changes": [
+    "thread tightens on 'like a rope'",
+    "thread snaps on 'rope snaps'",
+    "leaves go muted on 'can die'"
+   ],
+   "text": [],
+   "facts": [
+    "5.4",
+    "6.1",
+    "6.6"
+   ],
+   "asset": null,
+   "start": 10.93,
+   "end": 17.71,
+   "duration": 6.78,
+   "cues": [
+    1.41,
+    3.87,
+    5.35
+   ],
+   "words": "it hangs from the leaves like a rope and if that rope snaps the tree can die",
+   "change_every_s": 2.3
+  },
+  {
+   "id": "S00d",
+   "beat": 1,
+   "anchor": "it's how a tree does something",
+   "tool": "motion-canvas",
+   "visual": "Teaser of the scale: a chalk suction pump stuck at a dashed 10 m line, the chalk redwood outline rising far above it. Holds, then eases to the slate ground for the soft landing into the intro sting.",
+   "changes": [
+    "redwood rises past the line on 'ever could'"
+   ],
+   "text": [
+    "10 m"
+   ],
+   "facts": [
+    "2.1",
+    "2.4"
+   ],
+   "asset": null,
+   "start": 17.71,
+   "end": 22.85,
+   "duration": 5.14,
+   "cues": [
+    2.91
+   ],
+   "words": "it's how a tree does something no suction pump ever could",
+   "change_every_s": 5.1
+  },
   {
    "id": "S01",
    "beat": 1,
-   "anchor": "here's an engineering challenge",
+   "anchor": "so here's the challenge",
    "tool": "motion-canvas",
-   "visual": "Dark slate, a chalk blueprint sheet slides in: 'THE BRIEF'. During the 1 s beat only the title sits there. Then three spec lines write themselves; beside them a 30-storey building silhouette grows from the baseline, a dashed '10 m' line marks its lower floors.",
+   "visual": "After the intro: a chalk blueprint sheet slides in: 'THE BRIEF'. Then three spec lines write themselves; beside them a 30-storey building silhouette grows from the baseline, a dashed '10 m' line marks its lower floors.",
    "changes": [
     "building grows and spec 1 on 'thirty-storey building'",
     "spec 2 on 'no pump'",
@@ -27,16 +131,16 @@
     "2.1"
    ],
    "asset": null,
-   "start": 0.0,
-   "end": 18.67,
-   "duration": 18.67,
+   "start": 22.85,
+   "end": 39.03,
+   "duration": 16.18,
    "cues": [
-    6.47,
-    8.58,
-    14.16
+    5.03,
+    7.05,
+    11.61
    ],
-   "words": "here's an engineering challenge lift water higher than a thirty storey building no pump no motor no moving parts and one more rule you can't suck it up suction stops working at about ten metres",
-   "change_every_s": 6.2
+   "words": "so here's the challenge lift water higher than a thirty storey building no pump no motor no moving parts and you can't suck it up suction stops working at about ten metres",
+   "change_every_s": 5.4
   },
   {
    "id": "S02",
@@ -56,15 +160,15 @@
     "1.7"
    ],
    "asset": null,
-   "start": 18.67,
-   "end": 28.12,
-   "duration": 9.45,
+   "start": 39.03,
+   "end": 47.69,
+   "duration": 8.66,
    "cues": [
-    2.83,
-    7.89
+    2.07,
+    6.99
    ],
    "words": "sounds impossible but if there's a tree outside your window in leaf and the sun is up it's doing exactly this right now",
-   "change_every_s": 4.7
+   "change_every_s": 4.3
   },
   {
    "id": "S03",
@@ -85,15 +189,15 @@
     "1.1"
    ],
    "asset": null,
-   "start": 28.12,
-   "end": 35.91,
-   "duration": 7.79,
+   "start": 47.69,
+   "end": 54.55,
+   "duration": 6.86,
    "cues": [
-    3.12,
-    6.14
+    3.05,
+    6.08
    ],
    "words": "the tallest tree on earth a coast redwood called hyperion does it about a hundred and sixteen metres up",
-   "change_every_s": 3.9
+   "change_every_s": 3.4
   },
   {
    "id": "S04",
@@ -111,14 +215,14 @@
    ],
    "facts": [],
    "asset": null,
-   "start": 35.91,
-   "end": 42.83,
-   "duration": 6.92,
+   "start": 54.55,
+   "end": 62.27,
+   "duration": 7.72,
    "cues": [
-    3.81
+    4.67
    ],
    "words": "so let's try to solve it the way an engineer would and watch every obvious answer fail",
-   "change_every_s": 6.9
+   "change_every_s": 7.7
   },
   {
    "id": "S05",
@@ -134,11 +238,11 @@
    ],
    "facts": [],
    "asset": null,
-   "start": 42.83,
-   "end": 47.91,
-   "duration": 5.08,
+   "start": 62.27,
+   "end": 67.41,
+   "duration": 5.14,
    "cues": [
-    3.23
+    3.25
    ],
    "words": "first idea put a pump at the top and suck the water up like a straw",
    "change_every_s": 5.1
@@ -153,20 +257,20 @@
     "push-in on 'pump makers'"
    ],
    "text": [
-    "Otto von Guericke, 1672 (public domain)"
+    "Magdeburg hemispheres experiment, engraving, 1672 (public domain)"
    ],
    "facts": [
     "2.3"
    ],
    "asset": "H1 Magdeburg hemispheres plate, Guericke 1672, Commons File:Magdeburg.jpg",
-   "start": 47.91,
-   "end": 54.91,
-   "duration": 7.0,
+   "start": 67.41,
+   "end": 74.69,
+   "duration": 7.28,
    "cues": [
-    4.01
+    3.99
    ],
    "words": "people tried this for centuries and in the sixteen hundreds pump makers kept hitting the same wall",
-   "change_every_s": 7.0
+   "change_every_s": 7.3
   },
   {
    "id": "S07",
@@ -185,14 +289,14 @@
     "2.3"
    ],
    "asset": null,
-   "start": 54.91,
-   "end": 63.41,
-   "duration": 8.5,
+   "start": 74.69,
+   "end": 82.21,
+   "duration": 7.52,
    "cues": [
-    3.58
+    3.28
    ],
    "words": "their suction pumps would not raise water past about eighteen braccia roughly ten or eleven metres",
-   "change_every_s": 8.5
+   "change_every_s": 7.5
   },
   {
    "id": "S08",
@@ -211,14 +315,14 @@
     "2.3"
    ],
    "asset": null,
-   "start": 63.41,
-   "end": 67.29,
-   "duration": 3.88,
+   "start": 82.21,
+   "end": 86.91,
+   "duration": 4.7,
    "cues": [
-    1.99
+    2.67
    ],
    "words": "galileo puzzled over the problem and couldn't explain it",
-   "change_every_s": 3.9
+   "change_every_s": 4.7
   },
   {
    "id": "S09",
@@ -238,14 +342,14 @@
     "A1"
    ],
    "asset": null,
-   "start": 67.29,
-   "end": 75.25,
-   "duration": 7.96,
+   "start": 86.91,
+   "end": 94.81,
+   "duration": 7.9,
    "cues": [
-    3.49
+    3.35
    ],
    "words": "the answer came in the sixteen forties from evangelista torricelli galileo's successor in florence",
-   "change_every_s": 8.0
+   "change_every_s": 7.9
   },
   {
    "id": "S10",
@@ -266,15 +370,15 @@
     "2.3"
    ],
    "asset": null,
-   "start": 75.25,
-   "end": 85.69,
-   "duration": 10.44,
+   "start": 94.81,
+   "end": 104.47,
+   "duration": 9.66,
    "cues": [
-    3.61,
-    6.13
+    3.53,
+    6.07
    ],
    "words": "a suction pump doesn't really pull water at all it lowers the pressure above the water and the weight of the air outside pushes the water up the pipe",
-   "change_every_s": 5.2
+   "change_every_s": 4.8
   },
   {
    "id": "S11",
@@ -295,15 +399,15 @@
     "2.2"
    ],
    "asset": null,
-   "start": 85.69,
-   "end": 96.81,
-   "duration": 11.12,
+   "start": 104.47,
+   "end": 116.29,
+   "duration": 11.82,
    "cues": [
-    5.32,
-    8.13
+    6.02,
+    8.83
    ],
    "words": "and air can only push so hard at sea level it balances a column of water about ten metres tall even a perfect vacuum can't beat that",
-   "change_every_s": 5.6
+   "change_every_s": 5.9
   },
   {
    "id": "S12",
@@ -326,15 +430,15 @@
     "2.4"
    ],
    "asset": null,
-   "start": 96.81,
-   "end": 108.93,
-   "duration": 12.12,
+   "start": 116.29,
+   "end": 128.87,
+   "duration": 12.58,
    "cues": [
     6.78,
     10.65
    ],
    "words": "so suction has a hard ceiling about ten metres the tallest trees lift water more than ten times higher whatever a tree is doing it isn't sucking",
-   "change_every_s": 6.1
+   "change_every_s": 6.3
   },
   {
    "id": "S13",
@@ -355,16 +459,16 @@
     "3.1"
    ],
    "asset": null,
-   "start": 108.93,
-   "end": 126.43,
-   "duration": 17.5,
+   "start": 128.87,
+   "end": 145.89,
+   "duration": 17.02,
    "cues": [
-    8.27,
-    11.71,
-    14.19
+    7.81,
+    11.25,
+    13.77
    ],
    "words": "next idea forget the top push from the bottom and roots really can do this root cells pack minerals into their water pipes water follows by osmosis and pressure builds mostly at night when the leaves are resting",
-   "change_every_s": 5.8
+   "change_every_s": 5.7
   },
   {
    "id": "S14",
@@ -384,15 +488,15 @@
     "3.2"
    ],
    "asset": null,
-   "start": 126.43,
-   "end": 136.41,
-   "duration": 9.98,
+   "start": 145.89,
+   "end": 156.29,
+   "duration": 10.4,
    "cues": [
-    3.65,
+    3.67,
     7.59
    ],
    "words": "you can see it on a still humid night some plants push droplets out of the edges and tips of their leaves it's called guttation and it isn't dew",
-   "change_every_s": 5.0
+   "change_every_s": 5.2
   },
   {
    "id": "S15",
@@ -412,14 +516,14 @@
     "3.3"
    ],
    "asset": null,
-   "start": 136.41,
-   "end": 142.97,
-   "duration": 6.56,
+   "start": 156.29,
+   "end": 161.89,
+   "duration": 5.6,
    "cues": [
-    3.29
+    2.89
    ],
    "words": "and in spring a cut birch or grapevine will drip sap pushed up from its roots",
-   "change_every_s": 6.6
+   "change_every_s": 5.6
   },
   {
    "id": "S16",
@@ -438,14 +542,14 @@
     "3.4"
    ],
    "asset": "W5/W6 USFS maple sap lines (DVIDS)",
-   "start": 142.97,
-   "end": 152.29,
-   "duration": 9.32,
+   "start": 161.89,
+   "end": 171.81,
+   "duration": 9.92,
    "cues": [
-    4.69
+    5.27
    ],
    "words": "maple syrup by the way is a different story maple sap runs because of freezing and thawing inside the trunk not because of the roots",
-   "change_every_s": 9.3
+   "change_every_s": 9.9
   },
   {
    "id": "S17",
@@ -464,12 +568,12 @@
     "3.5"
    ],
    "asset": null,
-   "start": 152.29,
-   "end": 159.97,
+   "start": 171.81,
+   "end": 179.49,
    "duration": 7.68,
    "cues": [
-    3.51,
-    6.01
+    3.49,
+    5.97
    ],
    "words": "but root pressure is weak at best a few storeys' worth of push a small fraction of a tall tree",
    "change_every_s": 3.8
@@ -492,15 +596,15 @@
     "3.7"
    ],
    "asset": null,
-   "start": 159.97,
-   "end": 171.51,
-   "duration": 11.54,
+   "start": 179.49,
+   "end": 190.35,
+   "duration": 10.86,
    "cues": [
-    5.17,
-    7.31
+    5.13,
+    7.27
    ],
    "words": "and when scientists measure the water inside a tree on a sunny day it isn't being pushed at all it's being pulled hold that thought",
-   "change_every_s": 5.8
+   "change_every_s": 5.4
   },
   {
    "id": "S19",
@@ -520,15 +624,15 @@
     "4.1"
    ],
    "asset": null,
-   "start": 171.51,
-   "end": 182.81,
-   "duration": 11.3,
+   "start": 190.35,
+   "end": 202.31,
+   "duration": 11.96,
    "cues": [
-    5.87,
-    9.39
+    6.51,
+    10.05
    ],
    "words": "third idea capillary action dip a thin glass tube in water and the water climbs up it on its own the narrower the tube the higher it goes",
-   "change_every_s": 5.7
+   "change_every_s": 6.0
   },
   {
    "id": "S20",
@@ -548,14 +652,14 @@
     "9.1"
    ],
    "asset": null,
-   "start": 182.81,
-   "end": 191.27,
-   "duration": 8.46,
+   "start": 202.31,
+   "end": 210.75,
+   "duration": 8.44,
    "cues": [
-    4.61
+    4.59
    ],
    "words": "and a tree is full of thin tubes the wood that carries water the xylem is a bundle of microscopic pipes",
-   "change_every_s": 8.5
+   "change_every_s": 8.4
   },
   {
    "id": "S21",
@@ -576,15 +680,15 @@
     "4.2"
    ],
    "asset": null,
-   "start": 191.27,
-   "end": 199.43,
-   "duration": 8.16,
+   "start": 210.75,
+   "end": 218.71,
+   "duration": 7.96,
    "cues": [
     2.67,
-    6.07
+    6.09
    ],
    "words": "but they're not thin enough the narrowest are a few hundredths of a millimetre wide the widest about half a millimetre",
-   "change_every_s": 4.1
+   "change_every_s": 4.0
   },
   {
    "id": "S22",
@@ -605,15 +709,15 @@
     "4.3"
    ],
    "asset": null,
-   "start": 199.43,
-   "end": 215.19,
-   "duration": 15.76,
+   "start": 218.71,
+   "end": 234.73,
+   "duration": 16.02,
    "cues": [
-    4.95,
-    13.83
+    5.15,
+    13.97
    ],
    "words": "in tubes that size capillary action lifts water a few centimetres a few metres at most to reach a hundred metres by capillary action alone even the thinnest pipes would need to be about thirty times narrower",
-   "change_every_s": 7.9
+   "change_every_s": 8.0
   },
   {
    "id": "S23",
@@ -634,12 +738,12 @@
     "1.1"
    ],
    "asset": null,
-   "start": 215.19,
-   "end": 221.59,
-   "duration": 6.4,
+   "start": 234.73,
+   "end": 241.04,
+   "duration": 6.31,
    "cues": [
-    1.83,
-    4.79
+    1.77,
+    4.73
    ],
    "words": "so three good ideas three failures and yet the water gets there",
    "change_every_s": 3.2
@@ -663,12 +767,12 @@
     "5.1"
    ],
    "asset": null,
-   "start": 221.59,
-   "end": 235.41,
-   "duration": 13.82,
+   "start": 241.04,
+   "end": 254.91,
+   "duration": 13.87,
    "cues": [
-    8.81,
-    10.99
+    8.84,
+    11.02
    ],
    "words": "the explanation most scientists accept today was put forward in the eighteen nineties by two scientists at trinity college dublin henry dixon a botanist and john joly a physicist",
    "change_every_s": 6.9
@@ -693,16 +797,16 @@
     "5.3"
    ],
    "asset": null,
-   "start": 235.41,
-   "end": 250.55,
-   "duration": 15.14,
+   "start": 254.91,
+   "end": 270.21,
+   "duration": 15.3,
    "cues": [
-    5.89,
-    9.23,
+    5.87,
+    9.21,
     13.67
    ],
    "words": "a key clue came from experiments in germany tall stems that had been killed with poison kept drawing water up the flow only stopped when the leaves were killed so the engine isn't in the trunk it's in the leaves",
-   "change_every_s": 5.0
+   "change_every_s": 5.1
   },
   {
    "id": "S26",
@@ -725,16 +829,16 @@
     "9.2"
    ],
    "asset": null,
-   "start": 250.55,
-   "end": 271.77,
-   "duration": 21.22,
+   "start": 270.21,
+   "end": 291.23,
+   "duration": 21.02,
    "cues": [
-    7.75,
-    9.73,
-    19.19
+    7.57,
+    9.57,
+    19.01
    ],
    "words": "inside every leaf water evaporates from the wet walls of the cells and the vapour escapes through tiny pores called stomata those cell walls are full of pores about a hundred thousandth of a millimetre across and a water surface stretched across a pore that small can pull back with enormous force",
-   "change_every_s": 7.1
+   "change_every_s": 7.0
   },
   {
    "id": "S27",
@@ -757,13 +861,13 @@
     "5.5"
    ],
    "asset": null,
-   "start": 271.77,
-   "end": 293.17,
-   "duration": 21.4,
+   "start": 291.23,
+   "end": 312.61,
+   "duration": 21.38,
    "cues": [
-    1.95,
-    5.77,
-    18.59
+    1.97,
+    5.85,
+    18.61
    ],
    "words": "as water evaporates it tugs on the water behind it and water molecules cling to each other and to the walls of the pipes so the tug travels down an unbroken column of water through the trunk all the way to the roots the whole column rises like a rope pulled from the top",
    "change_every_s": 7.1
@@ -787,11 +891,11 @@
     "5.4"
    ],
    "asset": null,
-   "start": 293.17,
-   "end": 296.53,
-   "duration": 3.36,
+   "start": 312.61,
+   "end": 316.01,
+   "duration": 3.4,
    "cues": [
-    0.95
+    0.99
    ],
    "words": "it's called the cohesion tension theory",
    "change_every_s": 3.4
@@ -817,12 +921,12 @@
     "5.6"
    ],
    "asset": null,
-   "start": 296.53,
-   "end": 314.67,
-   "duration": 18.14,
+   "start": 316.01,
+   "end": 334.17,
+   "duration": 18.16,
    "cues": [
     6.13,
-    14.33
+    14.31
    ],
    "words": "and it means the water inside a tree is in a very strange state its pressure is below zero not low negative a liquid being stretched in many trees the water is being pulled about twenty times harder than the air presses on you",
    "change_every_s": 9.1
@@ -844,11 +948,11 @@
     "5.7"
    ],
    "asset": null,
-   "start": 314.67,
-   "end": 322.97,
-   "duration": 8.3,
+   "start": 334.17,
+   "end": 342.43,
+   "duration": 8.26,
    "cues": [
-    3.23
+    3.21
    ],
    "words": "pure water can take it because in the lab it can be stretched much harder before it snaps in nineteen sixty five",
    "change_every_s": 8.3
@@ -872,13 +976,13 @@
     "5.8"
    ],
    "asset": null,
-   "start": 322.97,
-   "end": 337.47,
-   "duration": 14.5,
+   "start": 342.43,
+   "end": 356.87,
+   "duration": 14.44,
    "cues": [
-    6.01,
-    7.59,
-    9.19
+    6.03,
+    7.71,
+    9.23
    ],
    "words": "scientists found a way to measure that tension with a device now nicknamed the pressure bomb seal a cut twig in a chamber raise the pressure until sap appears at the cut and you've measured how hard the tree was pulling",
    "change_every_s": 4.8
@@ -902,15 +1006,15 @@
     "5.9"
    ],
    "asset": null,
-   "start": 337.47,
-   "end": 346.93,
-   "duration": 9.46,
+   "start": 356.87,
+   "end": 366.45,
+   "duration": 9.58,
    "cues": [
-    3.43,
-    7.77
+    3.51,
+    7.85
    ],
    "words": "you can even watch it work on a sunny day a tree trunk shrinks very slightly as the tension squeezes it at night it swells back",
-   "change_every_s": 4.7
+   "change_every_s": 4.8
   },
   {
    "id": "S33",
@@ -931,15 +1035,15 @@
     "1.6"
    ],
    "asset": null,
-   "start": 346.93,
-   "end": 354.39,
-   "duration": 7.46,
+   "start": 366.45,
+   "end": 373.59,
+   "duration": 7.14,
    "cues": [
-    1.31,
-    4.69
+    1.27,
+    4.67
    ],
    "words": "and the energy the sun and the dry air do the work the tree spends none of its own energy on the lift",
-   "change_every_s": 3.7
+   "change_every_s": 3.6
   },
   {
    "id": "S34",
@@ -959,14 +1063,14 @@
     "5.11"
    ],
    "asset": null,
-   "start": 354.39,
-   "end": 362.84,
-   "duration": 8.45,
+   "start": 373.59,
+   "end": 382.53,
+   "duration": 8.94,
    "cues": [
-    1.55
+    1.83
    ],
    "words": "it took the best part of a century for the idea to win over its doubters and a few scientists still argue the details",
-   "change_every_s": 8.4
+   "change_every_s": 8.9
   },
   {
    "id": "S35",
@@ -988,13 +1092,13 @@
     "6.4"
    ],
    "asset": null,
-   "start": 362.84,
-   "end": 374.83,
-   "duration": 11.99,
+   "start": 382.53,
+   "end": 394.65,
+   "duration": 12.12,
    "cues": [
-    5.62,
-    10.5,
-    8.99
+    5.41,
+    10.29,
+    9.09
    ],
    "words": "but stretched water is risky water pull too hard and the column can snap a bubble of air forms in a pipe and the pipe fills with air it's blocked",
    "change_every_s": 4.0
@@ -1017,15 +1121,15 @@
     "6.3"
    ],
    "asset": null,
-   "start": 374.83,
-   "end": 388.25,
-   "duration": 13.42,
+   "start": 394.65,
+   "end": 407.79,
+   "duration": 13.14,
    "cues": [
-    3.77,
-    6.99
+    3.43,
+    6.67
    ],
    "words": "scientists first picked up the sound of this in the nineteen sixties as tiny clicks from thirsty plants today ultrasonic sensors record them in lab tests each pulse matches a single bubble",
-   "change_every_s": 6.7
+   "change_every_s": 6.6
   },
   {
    "id": "S37",
@@ -1048,14 +1152,14 @@
     "6.4"
    ],
    "asset": null,
-   "start": 388.25,
-   "end": 414.67,
-   "duration": 26.42,
+   "start": 407.79,
+   "end": 434.35,
+   "duration": 26.56,
    "cues": [
-    10.05,
+    10.01,
     11.29,
-    16.31,
-    20.63
+    16.23,
+    20.53
    ],
    "words": "so trees are built to contain the damage their pipes connect through tiny pits and the thin membranes in those pits work like safety valves water gets through air doesn't in conifers each pit even has a little plug that slams shut when the pipe next door fills with air but safety has a price the safer the valve the harder it is to push water through it",
    "change_every_s": 6.6
@@ -1079,13 +1183,13 @@
     "6.2"
    ],
    "asset": null,
-   "start": 414.67,
-   "end": 426.79,
-   "duration": 12.12,
+   "start": 434.35,
+   "end": 446.25,
+   "duration": 11.9,
    "cues": [
-    4.25,
-    6.85,
-    10.23
+    4.03,
+    7.17,
+    10.01
    ],
    "words": "and in a drought the pull keeps getting stronger until air starts forcing its way through the valves pipe after pipe fills with air and the tree's plumbing shuts down",
    "change_every_s": 4.0
@@ -1107,14 +1211,14 @@
     "6.6"
    ],
    "asset": "W2 USGS sequoia dieback 2014",
-   "start": 426.79,
-   "end": 432.03,
-   "duration": 5.24,
+   "start": 446.25,
+   "end": 451.21,
+   "duration": 4.96,
    "cues": [
-    3.17
+    3.19
    ],
    "words": "that's one of the main ways drought kills trees their water lines break",
-   "change_every_s": 5.2
+   "change_every_s": 5.0
   },
   {
    "id": "S39",
@@ -1132,14 +1236,14 @@
     "6.7"
    ],
    "asset": null,
-   "start": 432.03,
-   "end": 439.89,
-   "duration": 7.86,
+   "start": 451.21,
+   "end": 459.51,
+   "duration": 8.3,
    "cues": [
-    5.57
+    5.89
    ],
    "words": "whether a tree can ever clear a blocked pipe is still debated mostly it seems to grow new wood instead",
-   "change_every_s": 7.9
+   "change_every_s": 8.3
   },
   {
    "id": "S40",
@@ -1160,13 +1264,13 @@
     "7.3"
    ],
    "asset": null,
-   "start": 439.89,
-   "end": 460.99,
-   "duration": 21.1,
+   "start": 459.51,
+   "end": 480.49,
+   "duration": 20.98,
    "cues": [
-    3.61,
-    6.49,
-    17.25
+    3.47,
+    6.71,
+    17.11
    ],
    "words": "this design has one more consequence it may set a limit on how tall a tree can grow every metre of height adds more pull just to hold the water up about one atmosphere for every ten metres so the top of a tall tree is always the thirstiest part in two thousand and four",
    "change_every_s": 7.0
@@ -1187,9 +1291,9 @@
     "7.1"
    ],
    "asset": "V1 NPS Redwood Trunk B-roll (G Litten)",
-   "start": 460.99,
-   "end": 468.71,
-   "duration": 7.72,
+   "start": 480.49,
+   "end": 488.23,
+   "duration": 7.74,
    "cues": [
     1.11
    ],
@@ -1214,15 +1318,15 @@
     "7.3"
    ],
    "asset": null,
-   "start": 468.71,
-   "end": 473.93,
-   "duration": 5.22,
+   "start": 488.23,
+   "end": 493.91,
+   "duration": 5.68,
    "cues": [
-    1.51,
-    3.87
+    1.47,
+    3.85
    ],
    "words": "near the top the leaves were small thick and tightly packed water starved",
-   "change_every_s": 2.6
+   "change_every_s": 2.8
   },
   {
    "id": "S43",
@@ -1246,16 +1350,16 @@
     "1.1"
    ],
    "asset": null,
-   "start": 473.93,
-   "end": 500.36,
-   "duration": 26.43,
+   "start": 493.91,
+   "end": 519.93,
+   "duration": 26.02,
    "cues": [
-    4.19,
-    10.65,
-    24.63
+    3.69,
+    10.15,
+    24.13
    ],
    "words": "following that trend upward they estimated redwoods could grow no taller than about a hundred and twenty two to a hundred and thirty metres that's a prediction from the data not a law of nature but a different team studying a different tree found a similar ceiling and the tallest tree known today hyperion at about a hundred and sixteen metres stands just under it",
-   "change_every_s": 8.8
+   "change_every_s": 8.7
   },
   {
    "id": "S44",
@@ -1276,14 +1380,14 @@
     "8.2"
    ],
    "asset": "V4 NPS Sun In Redwood Canopy B-roll",
-   "start": 500.36,
-   "end": 511.19,
-   "duration": 10.83,
+   "start": 519.93,
+   "end": 530.27,
+   "duration": 10.34,
    "cues": [
-    6.52
+    6.43
    ],
    "words": "a big tree can move hundreds of litres of water on a summer day and almost all of it simply evaporates out through the leaves into the air",
-   "change_every_s": 10.8
+   "change_every_s": 10.3
   },
   {
    "id": "S45",
@@ -1297,12 +1401,12 @@
    ],
    "facts": [],
    "asset": "V2 NPS Fog in Redwood Trees B-roll",
-   "start": 511.19,
-   "end": 517.77,
-   "duration": 6.58,
+   "start": 530.27,
+   "end": 537.27,
+   "duration": 7.0,
    "cues": [],
    "words": "so the next time you walk past a tree on a sunny day think about what's going on inside it",
-   "change_every_s": 6.6
+   "change_every_s": 7.0
   },
   {
    "id": "S46",
@@ -1320,15 +1424,15 @@
     "2.4"
    ],
    "asset": null,
-   "start": 517.77,
-   "end": 527.29,
-   "duration": 9.52,
+   "start": 537.27,
+   "end": 547.67,
+   "duration": 10.4,
    "cues": [
-    1.21,
-    8.41
+    1.13,
+    8.39
    ],
    "words": "columns of water stretched tight hanging from the leaves lifted by the sun through pipes too wide to work past a limit no pump can beat",
-   "change_every_s": 4.8
+   "change_every_s": 5.2
   },
   {
    "id": "S47",
@@ -1346,14 +1450,14 @@
     "1.6"
    ],
    "asset": null,
-   "start": 527.29,
-   "end": 539.08,
-   "duration": 11.79,
+   "start": 547.67,
+   "end": 558.54,
+   "duration": 10.87,
    "cues": [
-    5.47
+    4.57
    ],
    "words": "the tallest pump on earth has no moving parts it was designed otherwise next time on designed otherwise",
-   "change_every_s": 11.8
+   "change_every_s": 10.9
   }
  ]
 }
