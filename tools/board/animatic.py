@@ -3,8 +3,9 @@
     python tools/board/animatic.py <ep> <board_stills_dir> <heroes_dir> <overlay_frames_dir> <narration.wav> <out.mp4>
 
   2D and archival scenes: the board still (last frame of the scene) held for the scene's length.
-  Blender scenes: the hero clip <heroes_dir>/H<n>.mp4 with its transparent overlay frames composited on top
-                  (overlay project order = blender scene order; frames are consecutive, %06d.png).
+  Blender and footage scenes: <heroes_dir>/<scene id>.mp4 (else H<n>.mp4, n counting blender scenes only) with its
+                  transparent overlay frames composited on top (overlay project order = blender+footage scene order;
+                  frames are consecutive, %06d.png).
 Scene frame ranges are round(start*30) .. round(end*30) from episodes/<ep>/scenes/scenes.json, the same rule the
 scene runner uses, so the animatic lines up with the final render frame for frame.
 The intro sting is not in the animatic (it is spliced at assembly with tools/intro/mix_with_sting.py).
@@ -33,10 +34,12 @@ def main():
         f0, f1 = round(s["start"] * FPS), round(s["end"] * FPS)
         n = f1 - f0
         seg = os.path.join(work, f"{s['id']}.mp4")
-        if s["tool"] == "blender":
-            hero_n += 1
+        if s["tool"] in ("blender", "footage"):
+            hero_n += s["tool"] == "blender"
+            clip = os.path.join(heroes, f"{s['id']}.mp4")
+            clip = clip if os.path.exists(clip) else os.path.join(heroes, f"H{hero_n}.mp4")
             run("ffmpeg", "-loglevel", "error", "-y",
-                "-i", os.path.join(heroes, f"H{hero_n}.mp4"),
+                "-i", clip,
                 "-framerate", FPS, "-start_number", ov_offset, "-i", os.path.join(ov_dir, "%06d.png"),
                 "-filter_complex", f"[0:v]fps={FPS},scale=1920:1080,tpad=stop_mode=clone:stop=-1[h];"
                                    f"[1:v]format=rgba[o];[h][o]overlay=0:0:eof_action=pass[v]",
