@@ -157,8 +157,8 @@ export const ANIM: Record<string, () => Built> = {
     const v = sig(0.62), neg = sig(0), lab = sig(0);
     return {
       base: <Node>
-        <Dial x={0} y={170} r={320} v={v} neg={neg} />
-        <Label text="below zero" x={-360} y={-40} offset={[1, 0]} color={V} spacing={2} opacity={lab} />
+        <Dial x={0} y={250} r={320} v={v} neg={neg} />
+        <Label text="below zero" x={-360} y={40} offset={[1, 0]} color={V} spacing={2} opacity={lab} />
       </Node>,
       steps: [
         function* () { yield* all(v(-0.7, 1.0, ease), delay(0.35, neg(1, 0.6, ease)), delay(0.45, lab(1, 0.6, ease))); },
