@@ -47,7 +47,7 @@ SCENES = [
          changes=["camera rises on 'hyperion'", "height label on 'metres up'"],
          text=["Hyperion", "coast redwood", "≈ 116 m"], facts=["1.1"], asset=None),
     dict(id="S04", beat=1, anchor="so let's try to solve it", tool="motion-canvas",
-         visual="The brief sheet returns with three empty boxes: 'Attempt 1', 'Attempt 2', 'Attempt 3'. Ends on the slate ground for the intro sting.",
+         visual="The brief sheet returns with three empty boxes: 'Attempt 1', 'Attempt 2', 'Attempt 3'. (The intro sting now follows the hook, S00d.)",
          changes=["three boxes on 'every obvious answer'"], text=["Attempt 1", "Attempt 2", "Attempt 3"], facts=[], asset=None),
 
     # ---------------------------------------------------------------- 2. attempt one: suck it up
