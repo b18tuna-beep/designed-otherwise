@@ -33,10 +33,10 @@ m_cell = Mat("cell", T["chalk"], rough=0.8, spec=0.25)
 m_epi = Mat("epi", T["chalk"], rough=0.85)
 m_cut = Mat("cuticle", T["chalk"], rough=0.35, spec=0.6)
 m_guard = Mat("guard", T["chalk"], rough=0.7)
-m_vap = Mat("vapour", T["chalk"], alpha=0.5, rough=1.0, alpha_attr="a")
+m_vap = Mat("vapour", T["chalk"], alpha=0.6, rough=1.0, alpha_attr="a")
 m_fib = Mat("fibre", T["chalk"], rough=0.75)
-m_back = Mat("wallback", T["grid"], rough=0.9)
-m_men = Mat("meniscus", T["chalk"], alpha=1.0, rough=0.45, spec=0.35, alt=T["refrigerant"],
+m_back = Mat("wallback", T["chalk"], rough=0.9, alt=T["grid"])
+m_men = Mat("meniscus", T["chalk"], alpha=0.3, rim=0.95, rough=0.3, spec=0.5, alt=T["refrigerant"],
             emit_color=T["refrigerant"], emit=0.0)
 
 XW = 9.0                       # half width of the section
@@ -62,9 +62,9 @@ def add_boxes(name, boxes, mat, w):
 # cuticles (lower one has a slot at the stoma pore)
 add_boxes("cut_top", [(0, DEPTH / 2, Z_TOP + 0.06, 2 * XW, DEPTH, 0.12)], m_cut, 0.03)
 PY0, PY1 = 0.0, 1.7            # stoma pore runs y 0..1.7 (open at the cut)
-add_boxes("cut_bot", [((-XW + XS - 0.22) / 2, DEPTH / 2, Z_BOT - 0.06, XS - 0.22 + XW, DEPTH, 0.12),
-                      ((XW + XS + 0.22) / 2, DEPTH / 2, Z_BOT - 0.06, XW - XS - 0.22, DEPTH, 0.12),
-                      (XS, (PY1 + DEPTH) / 2, Z_BOT - 0.06, 0.44, DEPTH - PY1, 0.12)], m_cut, 0.03)
+add_boxes("cut_bot", [((-XW + XS - 0.3) / 2, DEPTH / 2, Z_BOT - 0.06, XS - 0.3 + XW, DEPTH, 0.12),
+                      ((XW + XS + 0.3) / 2, DEPTH / 2, Z_BOT - 0.06, XW - XS - 0.3, DEPTH, 0.12),
+                      (XS, (PY1 + DEPTH) / 2, Z_BOT - 0.06, 0.6, DEPTH - PY1, 0.12)], m_cut, 0.03)
 
 # epidermis: flat rounded cells in a grid
 def epidermis(z, skip_stoma):
@@ -73,7 +73,7 @@ def epidermis(z, skip_stoma):
         x = -XW + 0.45 + rng.uniform(0, 0.3)
         while x < XW - 0.4:
             w = rng.uniform(0.75, 1.05)
-            if not (skip_stoma and abs(x - XS) < 0.9 + w / 2 and y < PY1 + 0.5):
+            if not (skip_stoma and abs(x - XS) < 1.5 + w / 2 and y < PY1 + 0.5):
                 bx.append((x, y, z, w - 0.06, 0.88, 0.5))
             x += w
     return bx
@@ -86,15 +86,15 @@ add_boxes("epi_bot", epidermis(Z_BOT + 0.27, True), m_epi, 0.12)
 gv, gf, off = [], [], 0
 for sx in (-1, 1):
     zs = np.linspace(-0.85, 0.85, 12)
-    prof = [(0.3 * math.sqrt(max(1 - (z / 0.95) ** 2, 0.02)), z) for z in zs]
+    prof = [(0.34 * math.sqrt(max(1 - (z / 0.95) ** 2, 0.02)), z) for z in zs]
     v, f = lathe_template(prof, 16)
     v = v[:, [0, 2, 1]] * np.array([1.0, 1.0, 1.0])        # axis along y
     v[:, 0] *= 0.95
     v[:, 2] *= 1.1
-    v += np.array([XS + sx * 0.36, PY1 / 2 + 0.05, Z_BOT + 0.25])
+    v += np.array([XS + sx * 0.5, PY1 / 2 + 0.05, Z_BOT + 0.25])
     gv.append(v); gf.append(f + off); off += len(v)
 static("guard", np.concatenate(gv), np.concatenate(gf), m_guard.m, smooth=True)
-add_boxes("subsid", [(XS - 0.95, PY1 / 2, Z_BOT + 0.27, 0.62, PY1 + 0.3, 0.46), (XS + 0.95, PY1 / 2, Z_BOT + 0.27, 0.62, PY1 + 0.3, 0.46)],
+add_boxes("subsid", [(XS - 1.2, PY1 / 2, Z_BOT + 0.27, 0.62, PY1 + 0.3, 0.46), (XS + 1.2, PY1 / 2, Z_BOT + 0.27, 0.62, PY1 + 0.3, 0.46)],
           m_epi, 0.12)
 
 # palisade: tightly packed columns (capsules), two layers deep in y, staggered
@@ -144,23 +144,24 @@ P0 = TGT_C + TGT_R * N
 E1 = np.cross(N, np.array([0, 0, 1.0]))
 E1 /= np.linalg.norm(E1)
 E2 = np.cross(N, E1)
-RP = 0.17
+RP = 0.22
 A = 0.024                       # fibre pitch
 RF = 0.0032
+H0 = 0.014                      # the wall layer sits on top of the cell's (hidden) surface
 # backing (the wet wall body) as a slightly curved disc
 nr, na = 10, 48
 rr = np.linspace(0, RP * 1.15, nr)
 aa = np.linspace(0, 2 * np.pi, na, endpoint=False)
 D = np.stack([rr[:, None] * np.cos(aa)[None], rr[:, None] * np.sin(aa)[None]], -1).reshape(-1, 2)
 sag = (TGT_R - np.sqrt(TGT_R ** 2 - np.sum(D ** 2, 1)))
-BV = P0 + D[:, :1] * E1 + D[:, 1:2] * E2 - (sag[:, None] + 0.016) * N
-static("wallback", BV, tri_quads(nr, na, closed_cols=True), m_back.m, smooth=True)
+BV = P0 + D[:, :1] * E1 + D[:, 1:2] * E2 - (sag[:, None] - 0.003) * N          # sits just outside the cell surface
+wallback = static("wallback", BV, tri_quads(nr, na, closed_cols=True), m_back.m, smooth=True)
 
 
 def onwall(u, v, h):
     """local (u, v, height above the wall surface) -> world, following the cell's curvature."""
     s = TGT_R - np.sqrt(np.maximum(TGT_R ** 2 - u ** 2 - v ** 2, 0))
-    return P0 + np.asarray(u)[..., None] * E1 + np.asarray(v)[..., None] * E2 + (np.asarray(h) - s)[..., None] * N
+    return P0 + np.asarray(u)[..., None] * E1 + np.asarray(v)[..., None] * E2 + (np.asarray(h) + H0 - s)[..., None] * N
 
 
 # fibres: two crossing layers of rods (polylines on the curved wall)
@@ -179,7 +180,7 @@ for layer, (du, dv) in enumerate(((1, 0), (0, 1))):
         from tree_common import tube_along
         tv, tf, _ = tube_along(P, RF, 6)
         fv.append(tv); ff.append(tf + off); off += len(tv)
-static("fibres", np.concatenate(fv), np.concatenate(ff), m_fib.m, smooth=True)
+fibres = static("fibres", np.concatenate(fv), np.concatenate(ff), m_fib.m, smooth=True)
 
 # menisci: a concave water surface in every pore
 G = 7
@@ -205,7 +206,7 @@ def menisci_verts(depth):
     return onwall(u, v, h).reshape(-1, 3)
 
 
-men = DynMesh("menisci", menisci_verts(0.3), MF, m_men.m, smooth=True)
+men = DynMesh("menisci", menisci_verts(0.4), MF, m_men.m, smooth=True)
 print("wall pores %d" % NP_)
 
 # micro vapour: tiny chalk specks leaving the menisci
@@ -243,11 +244,11 @@ def wisp_state(t):
         if a < 1.0:
             q = a / 1.0
             P[k] = (XS + 0.5 * w_dx[k] * (1 - q) * 0.6, w_y[k], lerp(-1.6, Z_BOT - 0.1, q))
-            R[k] = lerp(0.07, 0.12, q)
+            R[k] = lerp(0.1, 0.18, q)
         else:
             q = a - 1.0
             P[k] = (XS + w_dx[k] * 0.55 * q + 0.2 * math.sin(q * 2 + k), w_y[k] - 0.15 * q, Z_BOT - 0.1 - 0.62 * q - 0.05 * q * q)
-            R[k] = 0.12 + 0.11 * q
+            R[k] = 0.18 + 0.15 * q
         Al[k] = min(1.0, a / 0.4) * (1 - smoothstep(2.4, 4.0, a))
     return P, R * w_size, Al
 
@@ -259,7 +260,7 @@ cam = camera(35)
 cam.data.clip_start = 0.002
 cam.data.clip_end = 200
 
-V_OVER = np.array([-0.18, -1.0, -0.12])
+V_OVER = np.array([0.08, 1.0, 0.2])
 V_OVER /= np.linalg.norm(V_OVER)          # overview: looking from front, slightly below
 
 
@@ -267,20 +268,24 @@ def update(t, f):
     # vapour
     P, R, Al = wisp_state(t)
     wisps.set_verts((P[:, None, :] + R[:, None, None] * WSV[None]).reshape(-1, 3))
-    wisps.set_attr("a", np.repeat(Al * 0.75, len(WSV)))
+    wisps.set_attr("a", np.repeat(Al * 0.95, len(WSV)))
     wisps.ob.hide_render = not np.any(Al > 0)
     # micro vapour specks: cycle every 2 s from random pores, along the normal
     ph = ((t - mvt) % 2.0) / 2.0
     on = t > 13.0
     mp = onwall(mvp[:, 0], mvp[:, 1], np.zeros(NMV)) + (0.002 + 0.03 * ph)[:, None] * N
-    mr = 0.0022 * (1 + ph)
+    mr = 0.0012 * (1 + 0.5 * ph)
     mvap.set_verts((mp[:, None, :] + mr[:, None, None] * MSV[None]).reshape(-1, 3))
     mvap.set_attr("a", np.repeat(np.sin(np.pi * ph) * 0.7 * on, len(MSV)))
     mvap.ob.hide_render = not on
     # menisci: 19.19 'enormous force' -> violet, curving deeper as they pull
     g = seg(t, 19.0, 19.7)
-    men.set_verts(menisci_verts(lerp(0.3, 0.55, g)))
-    m_men.set(mix=0.85 * g, emit=0.9 * g)
+    men.set_verts(menisci_verts(lerp(0.4, 0.62, g)))
+    m_men.set(mix=0.85 * g, emit=1.0 * g, alpha=lerp(0.3, 0.8, g))
+    # the wall patch only exists for the push-in (no decal on the cell in the overview)
+    for o in (wallback, fibres, men):
+        o.ob.hide_render = t < 9.6
+    m_back.set(mix=seg(t, 10.0, 12.5))
     # camera: overview slow push (0-9.73), then the push into the wall (9.73 -> ~15), slow drift after
     u = seg(t, 9.6, 15.2)
     d_over = lerp(18.5, 16.0, seg(t, 0, 9.6))
@@ -289,7 +294,8 @@ def update(t, f):
     tgt_over = np.array([-0.4, 1.0, -0.9])
     w = float(smoothstep(0.0, 0.55, u))
     tgt = lerp(tgt_over, P0, w)
-    direc = lerp(V_OVER, -N, float(smoothstep(0.15, 0.85, u)))
+    END_DIR = -N + 0.5 * E2                     # oblique at the end so the dished menisci read
+    direc = lerp(V_OVER, END_DIR / np.linalg.norm(END_DIR), float(smoothstep(0.15, 0.85, u)))
     direc /= np.linalg.norm(direc)
     # a slow drift across the pores at the end so nothing is static
     drift = (seg(t, 14.0, DUR) - 0.5) * 0.03 * E1

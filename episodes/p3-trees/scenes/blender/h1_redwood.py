@@ -3,17 +3,19 @@
 One stylised chalk coast redwood (116 m, Hyperion, claim 1.1), a 30-storey block
 (100 m, claim 1.5) and the glowing 10 m suction line (claim 2.1). Units: metres.
 
-H1 (--mode h1, 233 f): camera starts low at the trunk base beside the 10 m line,
-    rises past the building roof to the crown (cue 3.12 s), label at 6.14 s.
+H1 (--mode h1, 205 f): camera starts low at the trunk base beside the 10 m line,
+    rises past the building roof to the crown (cue 3.05 s), label at 6.08 s.
     Upper-left third kept empty for the 2D label.
-H6 (--mode h6, 793 f): no building. The tree grows 80 -> 116 m; a translucent
-    ceiling band at 122-130 m (claims 7.1/7.4) appears at 4.19 s; a height gauge
-    left of the tree continues dashed up into the band at 10.65 s; a Hyperion
-    marker at 116 m draws on at 24.63 s. Slow pull-back; right third kept calm.
-H7 (--mode h7, 286 f): wide; trunk and crown go ghostly and violet threads glow up
-    from the roots to the crown (1.21 s); the faint 10 m line brightens at 8.41 s.
+H6 (--mode h6, 781 f): no building. The tree grows 80 -> 116 m; a translucent
+    ceiling band at 122-130 m (claims 7.1/7.4) appears at 3.69 s; a height gauge
+    left of the tree continues dashed up into the band at 10.15 s; a Hyperion
+    marker at 116 m draws on at 24.13 s. Slow pull-back; right third kept calm.
+H7 (--mode h7, 312 f): wide; trunk and crown go ghostly and violet threads glow up
+    from the roots to the crown (1.13 s); the faint 10 m line brightens at 8.39 s.
+S00a (--mode hook, 205 f): the cold-open hook. No building or line: close inside the
+    ghost trunk on the taut violet threads, hold, then from 3.78 s pull back to the whole tree.
 
-    python h1_redwood.py -- <out_dir> [first last] [--mode h1|h6|h7] [--res PCT] [--samples S] [--test 1,120]
+    python h1_redwood.py -- <out_dir> [first last] [--mode h1|h6|h7|hook] [--res PCT] [--samples S] [--test 1,120]
 """
 import math
 import os
@@ -27,21 +29,21 @@ from tree_common import (LINE_Z, T, TREE_H, Args, DynMesh, Mat, bars, box_mesh, 
                          empty, ground_disc, lerp, look_rot, redwood_parts, render_loop, scenery_lights, seg, setup_scene,
                          smoothstep, static, trunk_radius, tube_along)
 
-DEFAULT_FRAMES = {"h1": 233, "h6": 793, "h7": 286}
-args = Args(233, "h1")
+DEFAULT_FRAMES = {"h1": 205, "h6": 781, "h7": 312, "hook": 205}
+args = Args(205, "h1")
 MODE = args.mode
 if "--frames" not in sys.argv:
     args.frames = DEFAULT_FRAMES[MODE]
-    if args.frame_list == list(range(1, 234)):
+    if args.frame_list == list(range(1, 206)):
         args.frame_list = list(range(1, args.frames + 1))
 DUR = args.frames / 30.0
 
 sc = setup_scene(args)
-sc.cycles.transparent_max_bounces = 24 if MODE == "h7" else 10
+sc.cycles.transparent_max_bounces = 24 if MODE in ("h7", "hook") else 10
 BX, BY = 42.0, 8.0
 
 # ------------------------------------------------------------------ materials
-ghost = MODE == "h7"
+ghost = MODE in ("h7", "hook")
 m_trunk = Mat("trunk", T["chalk"], rough=0.92, alpha=1.0, rim=0.75 if ghost else None)
 m_crown = Mat("crown", T["chalk"], rough=0.92, alpha=1.0, rim=0.6 if ghost else None)
 m_body = Mat("body", T["grid"], rough=0.95)
@@ -91,7 +93,7 @@ if MODE == "h6":
     fade = 1 - smoothstep(30, 85, xs)                 # soft right end: right third stays calm
     bv, bf = [], []
     zz = np.array([BAND0, BAND1])
-    yy = np.array([-22.0, 22.0])
+    yy = np.array([-7.0, 7.0])
     # a thin slab: front, back, top, bottom faces as x-strips
     for (ya, za), (yb, zb) in (((yy[0], zz[0]), (yy[0], zz[1])), ((yy[1], zz[1]), (yy[1], zz[0])),
                                ((yy[0], zz[1]), (yy[1], zz[1])), ((yy[1], zz[0]), (yy[0], zz[0]))):
@@ -130,10 +132,10 @@ if MODE == "h6":
     marker.ob.location = (GX, -2.0, TREE_H)
 
     def tree_h(t):
-        return lerp(80.0, TREE_H, seg(t, 0.3, 9.6))
+        return lerp(80.0, TREE_H, seg(t, 0.3, 9.1))
 
 # ------------------------------------------------------------------ H7 extras
-if MODE == "h7":
+if MODE in ("h7", "hook"):
     m_root = Mat("root", T["chalk"], rough=0.92)
     m_thread = Mat("thread", T["refrigerant"], alpha=1.0, emit_color=T["refrigerant"], emit=0.0,
                    reveal_attr="h", pulse=("h", 60.0, 0.55))
@@ -172,20 +174,20 @@ if MODE == "h7":
 # ------------------------------------------------------------------ update
 def update(t, f):
     if MODE == "h1":
-        # cues 3.12 'hyperion' (rise), 6.14 'metres up' (2D label)
-        u = seg(t, 2.95, 7.45)
-        P = np.array([lerp(-6.0, -12.0, u), lerp(lerp(-70.0, -64.0, seg(t, 0, 3.0)), -138.0, u),
-                      lerp(lerp(2.0, 4.0, seg(t, 0, 3.0)), 101.0, u)])
+        # cues 3.05 'hyperion' (rise), 6.08 'metres up' (2D label)
+        u = seg(t, 2.88, 6.62)
+        P = np.array([lerp(-6.0, -12.0, u), lerp(lerp(-70.0, -64.0, seg(t, 0, 2.9)), -138.0, u),
+                      lerp(lerp(2.0, 4.0, seg(t, 0, 2.9)), 101.0, u)])
         Tg = np.array([lerp(-6.0, -10.0, u), 0.0, lerp(15.0, 93.0, u)])
         aim(P, Tg)
     elif MODE == "h6":
         h = tree_h(t)
         s = h / TREE_H
         tree.scale = (s, s, s)
-        # band: 4.19 'no taller than'
-        b = seg(t, 4.05, 4.75)
-        m_band.set(alpha=0.2 * b, emit=0.22 * b)
-        dr = seg(t, 4.05, 5.0)                          # edges draw on from the left
+        # band: 3.69 'no taller than'
+        b = seg(t, 3.55, 4.25)
+        m_band.set(alpha=0.13 * b, emit=0.3 * b)
+        dr = seg(t, 3.55, 4.5)                          # edges draw on from the left
         xcut = lerp(-200.0, 90.0, dr)
         V = EV0.copy()
         V[:, 0] = np.minimum(V[:, 0], xcut)
@@ -193,9 +195,9 @@ def update(t, f):
         edges.ob.hide_render = dr <= 0
         band.ob.hide_render = b <= 0
         gauge.ob.scale = (1, 1, h)
-        # dashed trend: 10.65 'prediction', from the tree top up into the band, dashes march upward
-        top = lerp(TREE_H, 126.5, seg(t, 10.5, 12.4))
-        phase = max(0.0, t - 10.5) * 0.9
+        # dashed trend: 10.15 'prediction', from the tree top up into the band, dashes march upward
+        top = lerp(TREE_H, 126.5, seg(t, 10.0, 11.9))
+        phase = max(0.0, t - 10.0) * 0.9
         P0 = np.zeros((ND, 3)); P1 = np.zeros((ND, 3))
         for k in range(ND):
             z0 = TREE_H + 0.9 + ((k * DPER + phase) % (ND * DPER)) - 0.0
@@ -207,27 +209,40 @@ def update(t, f):
             P0[k] = (GX, -2.0, z0); P1[k] = (GX, -2.0, max(z1, z0 + 1e-3))
         v, _ = bars(P0, P1, np.full(ND, 0.38), 12)
         dashes.set_verts(v)
-        dashes.ob.hide_render = t < 10.5
-        # Hyperion marker: 24.63 'just under it'
-        mk = seg(t, 24.5, 25.1)
+        dashes.ob.hide_render = t < 10.0
+        # Hyperion marker: 24.13 'just under it'
+        mk = seg(t, 24.0, 24.6)
         marker.ob.scale = (max(1e-3, 30.0 * mk), 1, 1)
         marker.ob.hide_render = mk <= 0
-        u = seg(t, 0.0, 4.0)
-        v_ = seg(t, 4.0, DUR)
-        dist = lerp(lerp(170.0, 210.0, u), 285.0, v_)
-        tz = lerp(lerp(68.0, 76.0, u), 70.0, v_)
-        tx = lerp(lerp(22.0, 26.0, u), 34.0, v_)
+        u = seg(t, 0.0, 3.5)
+        v_ = seg(t, 3.5, DUR)
+        dist = lerp(lerp(215.0, 248.0, u), 300.0, v_)
+        tz = lerp(lerp(70.0, 80.0, u), 74.0, v_)
+        tx = lerp(lerp(26.0, 28.0, u), 36.0, v_)
         aim((tx - 8.0, -dist, tz - 6.0), (tx, 0.0, tz))
+    elif MODE == "hook":
+        # S00a hook: close inside the ghost trunk, taut violet threads pulsing faintly; hold ~3.5 s,
+        # then from the 3.78 s cue a slow pull-back to the whole tree, roots to crown
+        m_trunk.set(alpha=0.12)
+        m_crown.set(alpha=0.1)
+        m_thread.set(reveal=1.03, emit=lerp(1.25, 1.6, seg(t, 3.6, DUR)), phase=t * 6.0)
+        m_glow.set(reveal=1.03, emit=lerp(0.45, 0.7, seg(t, 3.6, DUR)), phase=t * 6.0)
+        k = seg(t, 3.7, DUR)
+        hold = seg(t, 0.0, 3.7)
+        dist = math.exp(lerp(math.log(lerp(10.5, 9.0, hold)), math.log(225.0), k ** 1.15))
+        Tg = np.array([lerp(0.0, 10.0, k), 0.0, lerp(lerp(36.0, 39.0, hold), 58.0, k)])
+        el = lerp(4.0, -3.5, k)
+        aim(Tg + np.array([lerp(-1.5, -10.0, k), -dist, dist * math.tan(math.radians(el))]), Tg)
     else:
-        # cues 1.21 'stretched tight' (threads), 8.41 'no pump can beat' (10 m line)
-        g = seg(t, 0.15, 1.15)
+        # cues 1.13 'stretched tight' (threads), 8.39 'no pump can beat' (10 m line)
+        g = seg(t, 0.15, 1.1)
         m_trunk.set(alpha=lerp(1.0, 0.12, g))
         m_crown.set(alpha=lerp(1.0, 0.1, g))
-        rv_ = lerp(0.0, 1.03, seg(t, 1.1, 5.6))
+        rv_ = lerp(0.0, 1.03, seg(t, 1.02, 5.5))
         m_thread.set(reveal=rv_, emit=1.7, phase=t * 9.0)
         m_glow.set(reveal=rv_, emit=0.7, phase=t * 9.0)
-        ln = seg(t, 8.3, 8.9)
-        m_line.set(emit=lerp(0.25, 1.8, ln))
+        ln = seg(t, 8.27, 8.87)
+        m_line.set(emit=lerp(0.25, 1.8, ln), alpha=lerp(0.3, 1.0, ln))
         k = seg(t, 0, DUR)
         dist = lerp(232.0, 218.0, k)
         Tg = np.array([lerp(14.0, 12.0, k), 0.0, 60.0])

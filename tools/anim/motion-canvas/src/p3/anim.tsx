@@ -146,6 +146,83 @@ const AX = -150, Z0 = -320;
 const atY = (p: number, k: number) => Z0 - p * k;
 
 export const ANIM: Record<string, () => Built> = {
+  // ================================================================ 0. hook (before the intro sting)
+  // S00a: HERO 8 (3D). The overlay stays empty so the hook opens clean: only the 3D threads through the 1 s beat.
+  S00a: () => ({
+    drift: false, overlay: true,
+    base: <Node />,
+    steps: [null],
+  }),
+  S00b: () => {
+    const v = sig(0.62), neg = sig(0), lab = sig(0);
+    return {
+      base: <Node>
+        <Dial x={0} y={170} r={320} v={v} neg={neg} />
+        <Label text="below zero" x={-360} y={-40} offset={[1, 0]} color={V} spacing={2} opacity={lab} />
+      </Node>,
+      steps: [
+        function* () { yield* all(v(-0.7, 1.0, ease), delay(0.35, neg(1, 0.6, ease)), delay(0.45, lab(1, 0.6, ease))); },
+      ],
+      ambient: function* () { yield* v(0.12, cue('S00b', 0), easeInOutCubic); },
+    };
+  },
+  S00c: () => {
+    const taut = sig(0), snap = sig(0), drop = sig(0), dead = sig(0);
+    const leaves: [number, number, number][] = [[-120, -400, -60], [-40, -430, -20], [50, -440, 20], [130, -405, 60], [-80, -350, -40], [90, -350, 40]];
+    const GAP = 90;
+    return {
+      base: <Node>
+        <Line points={[[-150, -380], [150, -380]]} stroke={C.chalk} lineWidth={LW.structure} lineCap="round" />
+        <Node opacity={() => 1 - dead()}>{leaves.map(([x, y, r]) => <Leaf x={x} y={y} rot={r} />)}</Node>
+        <Node opacity={dead}>{leaves.map(([x, y, r]) => <Leaf x={x} y={y} rot={r} stroke={M} />)}</Node>
+        {/* the rope of water: slack, then taut (violet = the pull); after the snap the tension is gone (muted) */}
+        <Spline smoothness={0.6} lineCap="round" lineWidth={LW.emphasis}
+          stroke={() => (snap() > 0.5 ? M : V)} shadowColor={V} shadowBlur={() => (snap() > 0.5 ? 0 : 6 + 16 * taut())}
+          points={() => {
+            const yb = snap() > 0.5 ? lerp(GAP - 10, -150, snap() * 2 - 1) : 580;
+            const sag = 60 * (1 - taut());
+            return [[0, -370], [sag, (yb - 370) / 2 - 140], [sag * 0.4, (yb - 370) / 2 + 60], [0, yb]] as P[];
+          }} />
+        {/* the lower part drops away */}
+        <Line points={[[0, GAP + 10], [0, 640]]} stroke={M} lineWidth={LW.emphasis} lineCap="round" y={() => drop() * 520}
+          opacity={() => (snap() > 0.5 ? 1 - drop() : 0)} />
+        <Node opacity={() => (snap() > 0.5 ? 1 - drop() : 0)}>
+          {[[-30, GAP - 6], [30, GAP + 4], [-18, GAP + 22], [22, GAP - 20]].map(([x, y]) => (
+            <Line points={[[x * 0.4, y], [x, y + (y - GAP) * 0.6]]} stroke={M} lineWidth={LW.structure} lineCap="round" />
+          ))}
+        </Node>
+      </Node>,
+      steps: [
+        function* () { yield* taut(1, 0.8, ease); },
+        function* () { yield* all(snap(1, 0.5, easeOutCubic), drop(1, 1.1, (t: number) => t * t)); },
+        function* () { yield* dead(1, 0.8, ease); },
+      ],
+    };
+  },
+  S00d: () => {
+    const grow = sig(0), out = sig(1);
+    const PX = -380, top = 22;
+    return {
+      base: <Node opacity={out}>
+        <Ground x0={-700} x1={620} />
+        {/* a suction pump: water stuck at the 10 m line, however tall the pipe */}
+        <Rect x={PX} y={GROUND + 18} width={220} height={36} fill={WATER} />
+        <Rect x={PX} y={(mY(10) + GROUND + 20) / 2} width={28} height={GROUND + 20 - mY(10)} fill={HEAVY} />
+        <Line points={[[PX - 18, GROUND + 24], [PX - 18, mY(top)]]} stroke={C.chalk} lineWidth={LW.structure} />
+        <Line points={[[PX + 18, GROUND + 24], [PX + 18, mY(top)]]} stroke={C.chalk} lineWidth={LW.structure} />
+        <Rect x={PX} y={mY(top) - 40} width={100} height={80} radius={12} stroke={C.chalk} lineWidth={LW.structure} fill={C.bg} />
+        <Node x={PX + 44} y={mY(top) - 80} rotation={() => -12 + 14 * Math.sin(T() * 4.2)}>
+          <Line points={[[0, 0], [170, 0]]} stroke={C.chalk} lineWidth={LW.emphasis} lineCap="round" />
+          <Circle size={18} fill={C.chalk} />
+        </Node>
+        <TenLine x0={-620} x1={480} />
+        <Node x={220} y={GROUND} scaleY={() => Math.max(0.001, grow())}><Redwood /></Node>
+      </Node>,
+      steps: [function* () { yield* grow(1, 1.8, easeOutCubic); }],
+      // holds, then eases to the slate ground for the soft landing into the intro sting
+      ambient: function* () { yield* waitFor(dur('S00d') - 0.95); yield* out(0, 0.8, ease); },
+    };
+  },
   // ================================================================ 1. cold open: the brief
   S01: () => {
     const sheet = sig(0), title = sig(0), s1 = sig(0), s2 = sig(0), s3 = sig(0), grow = sig(0), ten = sig(0);
@@ -164,7 +241,6 @@ export const ANIM: Record<string, () => Built> = {
         function* () { yield* s2(1, 1.4, linear); },
         function* () { yield* all(s3(1, 0.8, linear), ten(1, 0.9, ease)); },
       ],
-      // the first line, then the 1 s beat with only the title on the sheet
       ambient: function* () { yield* sheet(1, 0.7, ease); yield* title(1, 0.9, linear); },
     };
   },
@@ -213,8 +289,6 @@ export const ANIM: Record<string, () => Built> = {
         <BriefBuilding />
       </Node>,
       steps: [on(boxes, 0.7)],
-      // end on the slate ground for the intro sting
-      ambient: function* () { yield* waitFor(dur('S04') - 0.75); yield* out(0, 0.6, ease); },
     };
   },
 
@@ -235,7 +309,7 @@ export const ANIM: Record<string, () => Built> = {
       drift: false,
       base: <Node>
         <Node scale={push}><Still name="magdeburg-1672.png" w={1920} h={1080} /></Node>
-        <Backed text="Otto von Guericke, 1672 (public domain)" x={-864} y={380} />
+        <Backed text="Magdeburg hemispheres experiment, engraving, 1672 (public domain)" x={-864} y={380} />
       </Node>,
       steps: [function* () { yield* push(1.09, dur('S06') - cue('S06', 0), linear); }],
       ambient: function* () { yield* push(1.015, cue('S06', 0), linear); },
@@ -439,7 +513,7 @@ export const ANIM: Record<string, () => Built> = {
         function* () { yield* all(water(1, 0.8, ease), gauge(0.15, 0.8), rise(0.75, 4.0, ease)); yield* gauge(1, 2.6, ease); },
         on(moon, 0.6),
       ],
-      ambient: function* () { yield* waitFor(4.7); yield* roots(1, 1.4, ease); },
+      ambient: function* () { yield* waitFor(4.4); yield* roots(1, 1.4, ease); },
     };
   },
   S14: () => {
@@ -665,7 +739,7 @@ export const ANIM: Record<string, () => Built> = {
         on(rise, 0.6),
         function* () { yield* shrink(1, 1.4, ease); },
       ],
-      ambient: function* () { yield* waitFor(7.1); yield* need(1, 0.7, ease); },
+      ambient: function* () { yield* waitFor(7.3); yield* need(1, 0.7, ease); },
     };
   },
   S23: () => {
@@ -758,7 +832,7 @@ export const ANIM: Record<string, () => Built> = {
         function* () { yield* stoma(0, 0.4); },
         null,
       ],
-      ambient: function* () { yield* waitFor(11.4); yield* pores(1, 0.6, ease); },
+      ambient: function* () { yield* waitFor(11.2); yield* pores(1, 0.6, ease); },
     };
   },
   S27: () => ({
@@ -794,7 +868,7 @@ export const ANIM: Record<string, () => Built> = {
         function* () { yield* y(atY(-3, 32), 1.0, ease); yield* y(atY(-9, 32), cue('S29', 1) - cue('S29', 0) - 1.0, linear); },
         function* () { yield* all(y(atY(-20, 32), 1.0, ease), delay(0.5, pullL(1, 0.6, ease))); },
       ],
-      ambient: function* () { yield* waitFor(8.5); yield* negL(1, 0.6, ease); },
+      ambient: function* () { yield* waitFor(8.4); yield* negL(1, 0.6, ease); },
     };
   },
   S30: () => {
@@ -975,7 +1049,7 @@ export const ANIM: Record<string, () => Built> = {
         <Locator focus="trunk" />
       </Node>,
       steps: [on(clicks, 0.5), on(pulses, 0.6)],
-      ambient: function* () { yield* waitFor(9.2); yield* lab(1, 0.6, ease); },
+      ambient: function* () { yield* waitFor(8.9); yield* lab(1, 0.6, ease); },
     };
   },
   S37: () => {
@@ -1135,7 +1209,7 @@ export const ANIM: Record<string, () => Built> = {
         function* () { yield* ticks(1, 5.0, linear); },
         on(crown, 0.8),
       ],
-      ambient: function* () { yield* waitFor(11.1); yield* lab(1, 0.6, ease); },
+      ambient: function* () { yield* waitFor(11.0); yield* lab(1, 0.6, ease); },
     };
   },
   S41: () => ({
@@ -1222,7 +1296,7 @@ export const ANIM: Record<string, () => Built> = {
         <Small text="Next time" y={340} color={C.chalk} opacity={next} />
       </Node>,
       steps: [<Label text="DESIGNED OTHERWISE" y={250} size={72} spacing={14} />],
-      ambient: function* () { yield* waitFor(8.1); yield* next(1, 0.6, ease); },
+      ambient: function* () { yield* waitFor(7.1); yield* next(1, 0.6, ease); },
     };
   },
 };
