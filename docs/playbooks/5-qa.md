@@ -13,6 +13,7 @@ Reference: `episodes/p1-refrigerator/renders/visual-qa*.md` (8 passes to 40/40).
 - [ ] `checks.json`: -14 LUFS (+-1), true peak <= -1.5 dBTP, no clipping, sync within 0.1 s, no narration gap over 2.5 s.
 - [ ] Every scene PASS on the rubric: style bible colors, labels readable on a phone, no text cut off.
 - [ ] Nothing static for more than 8 s.
+- [ ] No empty panel or blank card for more than 1.5 s: something on screen must match the words being said (P2 S24 11 s hold; P3 S24 5 s blank card under "the explanation most scientists accept today", fixed 2026-11-20 with a heading on the first words).
 - [ ] Captions: one line per caption, at most 42 characters, every script word present.
 - [ ] Thumbnails readable at phone size.
 - [ ] Unusual words: tell Michael which timestamps to listen at.

@@ -763,11 +763,14 @@ export const ANIM: Record<string, () => Built> = {
 
   // ================================================================ 5. nature's answer: pull from the top
   S24: () => {
-    const head = sig(0);
+    // 2026-11-20 QA: the card sat empty for 5 s under "the explanation most scientists accept today";
+    // the heading now lands with those words, the place/date with "eighteen-nineties".
+    const head = sig(0), lead = sig(0);
     return {
       base: <Node>
         <Sheet x={0} y={20} w={1560} h={720}>
-          <Label text="Trinity College Dublin · 1890s" y={-220} spacing={2} opacity={head} />
+          <Title text="The accepted explanation" y={-250} size={64} opacity={lead} />
+          <Label text="Trinity College Dublin · 1890s" y={-170} spacing={2} opacity={head} />
         </Sheet>
       </Node>,
       steps: [
@@ -782,7 +785,10 @@ export const ANIM: Record<string, () => Built> = {
           <Small text="physicist" y={50} color={C.chalk} />
         </Node>,
       ],
-      ambient: function* () { yield* waitFor(4.3); yield* head(1, 0.6, ease); },
+      ambient: function* () {
+        yield* waitFor(0.3); yield* lead(1, 0.5, ease);
+        yield* waitFor(2.4); yield* head(1, 0.6, ease);
+      },
     };
   },
   S25: () => {
