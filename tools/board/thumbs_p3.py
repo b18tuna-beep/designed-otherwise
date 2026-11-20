@@ -22,7 +22,7 @@ def frame_right(path, fx=0.5, zoom=1.0):
     src = Image.open(path).convert("RGB")
     k = max(W / src.width, H / src.height) * zoom
     im = src.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
-    x = max(0, min(im.width - W, round(im.width * fx - W * 0.66)))
+    x = max(0, min(im.width - W, round(im.width * fx - W * 0.74)))
     y = (im.height - H) // 2
     img = ImageEnhance.Contrast(im.crop((x, y, x + W, y + H))).enhance(1.12)
     grad = Image.linear_gradient("L").rotate(90).resize((W, H)).point(lambda v: int(max(0, 255 - v * 1.8) * 0.85))
@@ -33,7 +33,7 @@ def frame_right(path, fx=0.5, zoom=1.0):
 def main():
     h7, hook, out = sys.argv[1:4]
     os.makedirs(out, exist_ok=True)
-    a = text(frame_right(h7, 0.5, 1.15), ["BELOW", "ZERO"], 200, 60, 150, [T["chalk"], T["refrigerant"]])
+    a = text(frame_right(h7, 0.47, 1.55), ["BELOW", "ZERO"], 200, 60, 150, [T["chalk"], T["refrigerant"]])
     a.save(os.path.join(out, "thumb-1.jpg"), quality=92)
     b = text(frame_right(hook, 0.5, 1.0), ["NO", "PUMP"], 220, 70, 140, [T["chalk"], T["refrigerant"]])
     b.save(os.path.join(out, "thumb-2.jpg"), quality=92)
