@@ -115,13 +115,20 @@ def main():
     sh("ffmpeg", "-y", "-loglevel", "error", "-i", narration, "-af", f"apad=whole_dur={vdur:.3f}", "-t", f"{vdur:.3f}",
        "-ar", "48000", "-ac", "1", narr)
 
-    # music: one bed per half, crossfaded at the start of the second track's beat
-    split = next(s["start"] for s in scenes["scenes"] if s["beat"] == MUSIC[1][1])
-    a = music_bed(os.path.join(MUSIC_DIR, MUSIC[0][0]), split + 1.0, os.path.join(out, "music-a.wav"))
-    b = music_bed(os.path.join(MUSIC_DIR, MUSIC[1][0]), vdur - split + 1.0, os.path.join(out, "music-b.wav"))
+    # music: one bed per track (2 or more, P3 uses 3 so no ~3.5 min Suno track has to loop), each crossfaded
+    # (2 s) in at the start of its beat. Every bed runs 1 s past each of its boundaries so the fades overlap there.
+    bounds = [0.0] + [next(s["start"] for s in scenes["scenes"] if s["beat"] == b) for _, b in MUSIC[1:]] + [vdur]
+    beds = []
+    for i, (f, _) in enumerate(MUSIC):
+        length = bounds[i + 1] - bounds[i] + (1.0 if i > 0 else 0) + (1.0 if i < len(MUSIC) - 1 else 0)
+        beds.append(music_bed(os.path.join(MUSIC_DIR, f), length, os.path.join(out, f"music-{chr(97 + i)}.wav")))
     bed = os.path.join(out, "music.wav")
-    sh("ffmpeg", "-y", "-loglevel", "error", "-i", a, "-i", b, "-filter_complex",
-       "[0:a][1:a]acrossfade=d=2:c1=tri:c2=tri[m]", "-map", "[m]", "-t", f"{vdur:.3f}", bed)
+    chain, last = [], "[0:a]"
+    for i in range(1, len(beds)):
+        chain.append(f"{last}[{i}:a]acrossfade=d=2:c1=tri:c2=tri[x{i}]")
+        last = f"[x{i}]"
+    sh("ffmpeg", "-y", "-loglevel", "error", *sum((["-i", p] for p in beds), []), "-filter_complex", ";".join(chain),
+       "-map", last, "-t", f"{vdur:.3f}", bed)
     mixed = mix(narr, bed, vdur, os.path.join(out, "mix.wav"))
 
     srt = os.path.join(out, "captions.srt")

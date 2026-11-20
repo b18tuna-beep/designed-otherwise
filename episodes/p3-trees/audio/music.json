@@ -1,4 +1,6 @@
 [
- {"file": "Mechanism - Designed Otherwise (ACE-Step 1.5).mp3", "from_beat": 1, "note": "FALLBACK until the Suno tracks land: hook, the brief and the three failed attempts (beats 1-4)"},
- {"file": "Frame-Dragging - The Grey Room & Density & Time.mp3", "from_beat": 5, "note": "FALLBACK: nature's answer, the rope snaps, the ceiling, close (beats 5-8)"}
+ {"file": "Wrong Turn - Suno.mp3", "from_beat": 1, "note": "tension: hook, the brief, attempt one (suction) fails (beats 1-2)"},
+ {"file": "Take It Apart - Suno.mp3", "from_beat": 3, "note": "curious: attempt two (roots) and three (thin pipes) (beats 3-4)"},
+ {"file": "The Penny Drops - Suno.mp3", "from_beat": 5, "note": "reveal: nature's answer, then the rope snaps (beats 5-6)"},
+ {"file": "Long Exposure - Suno.mp3", "from_beat": 7, "note": "reflective: the ceiling and the close (beats 7-8)"}
 ]
