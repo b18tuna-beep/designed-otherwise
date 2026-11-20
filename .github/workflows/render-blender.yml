@@ -101,4 +101,4 @@ jobs:
         env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}", NAME: "${{ inputs.name }}"}
         run: |
           bash tools/ci/studio.sh release "heroes-$EP" "out/$NAME.mp4"
-          bash tools/ci/studio.sh preview "blender/$EP" "out/$NAME-frame.png"
+          bash tools/ci/studio.sh preview "blender/$EP" "out/$NAME-frame.png" || echo "::warning::preview push failed (non-fatal)"
