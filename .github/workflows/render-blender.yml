@@ -26,6 +26,9 @@ on:
       samples:
         description: "Cycles samples (0 = script default)"
         default: "10"
+      mode:
+        description: "Optional --mode passed to the script (e.g. h6)"
+        default: ""
 
 permissions:
   contents: read
@@ -69,10 +72,10 @@ jobs:
           if [ -n "$got" ]; then tar -xJf /tmp/blender.tar.xz -C "$HOME" && echo "$HOME/${got%.tar.xz}" >> "$GITHUB_PATH"
           else sudo apt-get install -y -qq blender > /dev/null; fi
       - name: Render chunk
-        env: {SCRIPT: "${{ inputs.script }}", FRAMES: "${{ inputs.frames }}", RES: "${{ inputs.res }}", SAMPLES: "${{ inputs.samples }}", CHUNK: "${{ matrix.chunk }}"}
+        env: {SCRIPT: "${{ inputs.script }}", FRAMES: "${{ inputs.frames }}", RES: "${{ inputs.res }}", SAMPLES: "${{ inputs.samples }}", CHUNK: "${{ matrix.chunk }}", MODE: "${{ inputs.mode }}"}
         run: |
           set -o pipefail
-          blender -b --factory-startup -P "$SCRIPT" -- out/frames $CHUNK --frames "$FRAMES" --res "$RES" --samples "$SAMPLES" 2>&1 | grep --line-buffered -E "Saved:|blender:|Error|Traceback"
+          blender -b --factory-startup -P "$SCRIPT" -- out/frames $CHUNK --frames "$FRAMES" --res "$RES" --samples "$SAMPLES" ${MODE:+--mode "$MODE"} 2>&1 | grep --line-buffered -E "Saved:|blender:|Error|Traceback"
       - uses: actions/upload-artifact@v4
         with: {name: "frames-${{ strategy.job-index }}", path: out/frames/, retention-days: 1}
 
