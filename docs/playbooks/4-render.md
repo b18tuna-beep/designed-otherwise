@@ -28,3 +28,5 @@ Fetch results into the workspace: `git clone -b previews` of the studio, or `gh 
 - Chunk joins off by a frame: `encode_chunk.py` keeps exactly the frames the range holds; the stitch job fails if the total differs from scenes.json.
 - Long exporter runs: `RENDER_TIMEOUT_MIN` in render-episode.yml (100 min per chunk).
 - `composite_heroes.py` and `assemble.py` are P1-specific (hero ids, music plan). Generalise them per episode before P2.
+
+- 2026-11-25 (P4 QA): `encode_chunk.py` used the concat demuxer with per-file durations, which repeated each chunk's first frame and put the whole episode one frame late (a stale overlay frame showed at every hero end). Fixed to an image2 frame sequence; chunk RANGE starts half a frame early. P2 and P3 shipped with the 1-frame (33 ms) delay: not worth re-uploading.
