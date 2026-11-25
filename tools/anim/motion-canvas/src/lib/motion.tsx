@@ -21,6 +21,7 @@ export interface Built {
 export interface PlayOpts {
   transparent?: boolean; // overlay layer: no background fill
   scenes?: any; // the episode's scenes.json (default: P1)
+  keep?: boolean; // keep a step's own `yield`ed tweens alive after the step function returns (P4)
   until?: number; // board stills: stop the scene at this time (s) so its last frame is the key pose
 }
 export const sceneMeta = (id: string, scenes: any = SCENES) => scenes.scenes.find((s: any) => s.id === id);
@@ -56,7 +57,8 @@ export function* play(view: View2D, id: string, build: () => Built, opts: PlayOp
   });
 
   yield T(dur + 2, dur + 2, linear);
-  if (b.ambient) yield b.ambient();
+  const alive = (g: () => ThreadGenerator) => (opts.keep ? (function* () { yield* g(); while (true) yield* waitFor(1); })() : g());
+  if (b.ambient) yield alive(b.ambient);
   if (b.drift !== false) {
     // slow push, plus a small reframe at the midpoint of any gap longer than 6 s between changes
     yield stage().scale(1.04, dur, linear);
@@ -68,7 +70,7 @@ export function* play(view: View2D, id: string, build: () => Built, opts: PlayOp
       }
     }
   }
-  for (const p of plan) yield delay(p.at, p.run());
+  for (const p of plan) yield delay(p.at, alive(p.run));
   yield* waitFor(opts.until !== undefined ? Math.min(opts.until, dur) : dur);
 }
 

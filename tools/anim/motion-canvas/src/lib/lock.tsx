@@ -50,19 +50,19 @@ export const Key = ({x = 0, y = 0, s = 1, rotation = 0, bit = BIT, p = 1, bow = 
     <Node x={x} y={y} scale={s} rotation={rotation} opacity={opacity}>
       <Node opacity={() => fillOp * clamp((val(p) - 0.6) / 0.4)}>
         {bow === 'square'
-          ? <Rect x={-170} y={170} width={300} height={250} radius={34} fill={C.panel} />
+          ? <Rect x={-160} y={170} width={320} height={250} radius={34} fill={C.panel} />
           : <Circle x={-140} y={172} size={KEYR * 2} fill={C.panel} />}
         <Line closed points={() => bladePoints(bit)} fill={C.panel} />
       </Node>
       {bow === 'square'
-        ? <Rect x={-170} y={170} width={300} height={250} radius={34} stroke={color} lineWidth={LW.structure} lineDash={dash} end={e} />
+        ? <Rect x={-160} y={170} width={320} height={250} radius={34} stroke={color} lineWidth={LW.structure} lineDash={dash} end={e} />
         : <Circle x={-140} y={172} size={KEYR * 2} stroke={color} lineWidth={LW.structure} lineDash={dash} end={e} />}
       {bow === 'square'
         ? <Circle x={-200} y={170} size={64} stroke={color} lineWidth={LW.structure} lineDash={dash} opacity={() => clamp((val(p) - 0.4) * 3)} />
         : <Circle x={-140} y={172} size={64} stroke={color} lineWidth={LW.structure} lineDash={dash} opacity={() => clamp((val(p) - 0.4) * 3)} />}
       <Line closed points={() => bladePoints(bit)} stroke={color} lineWidth={LW.structure} lineJoin="round" lineDash={dash} end={e} />
       {/* violet dots on the five cuts */}
-      {bit.map((b, i) => (
+      {bit.map((b: any, i: number) => (
         <Circle x={KX(i)} y={() => Lof(val(b))} size={() => 38 * clamp(val(dots) * 1.4 - i * 0.14 - 0.0)} fill={V} shadowColor={V} shadowBlur={14} />
       ))}
     </Node>
@@ -139,7 +139,7 @@ export const Cyl = ({x = 0, y = 0, s = 1, rotation = 0, ins = 0, bit = BIT, pbit
       {/* holes drill down through shell and plug */}
       {SX.map((hx, i) => (
         <Rect x={hx} y={() => HOLE_TOP + (324 * clamp(val(holes) - i)) / 2} width={HW} height={() => 324 * clamp(val(holes) - i)}
-          fill={C.bg} stroke={C.chalk} lineWidth={LW.hairline + 1} opacity={() => val(hdim[i])} />
+          fill={C.bg} stroke={C.chalk} lineWidth={LW.hairline + 1} opacity={() => val(hdim[i]) * clamp((val(holes) - i) * 30)} />
       ))}
       {/* the key lies in the keyway, under the pins */}
       <Node opacity={key}>
@@ -169,7 +169,7 @@ export const Cyl = ({x = 0, y = 0, s = 1, rotation = 0, ins = 0, bit = BIT, pbit
           <Line points={[[0, 0], [58, 0]]} stroke={C.chalk} lineWidth={LW.emphasis} lineCap="round" />
           <Circle x={58} size={16} fill={C.chalk} />
         </Node>
-        <Rect x={() => 800 + 62 - val(turn) * 0.9 + 150} y={165} width={360} height={56} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
+        <Rect x={() => 972 - val(turn) * 0.9} y={165} width={260} height={56} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
       </Node>
       {children}
     </Node>
@@ -183,14 +183,14 @@ export const LOCW = {x: 664, y: -384, w: 400, h: 120};
 export const Locator = ({act = '', x = LOCW.x, y = LOCW.y, opacity = 1}: any) => (
   <Node x={x} y={y} opacity={opacity}>
     <Rect width={LOCW.w} height={LOCW.h} radius={16} fill={C.panel} stroke={C.grid} lineWidth={LW.hairline} />
-    <Node x={-LOCW.w / 2 + 62} y={0}>
-      <Rect y={-14} width={80} height={26} stroke={C.chalk} lineWidth={3} />
-      <Rect y={24} width={80} height={26} stroke={C.chalk} lineWidth={3} />
-      <Rect y={6} width={110} height={26} x={-20} stroke={C.chalk} lineWidth={3} fill={C.panel} />
-      {[-24, 0, 24].map(px => <Line points={[[px, -26], [px, 36]]} stroke={V} lineWidth={3} />)}
-      <Line points={[[-40, 1], [40, 1]]} stroke={V} lineWidth={3} />
+    <Node x={-LOCW.w / 2 + 62} y={0} scale={0.62}>
+      <Rect y={-34} width={110} height={36} stroke={C.chalk} lineWidth={4} />
+      <Rect y={34} width={110} height={36} stroke={C.chalk} lineWidth={4} />
+      <Rect y={0} x={-18} width={150} height={32} stroke={C.chalk} lineWidth={4} fill={C.panel} />
+      {[-36, 0, 36].map(px => <Line points={[[px, -52], [px, 52]]} stroke={V} lineWidth={4} />)}
+      <Line points={[[-92, 0], [74, 0]]} stroke={V} lineWidth={4} />
     </Node>
-    <Txt text={act} x={36} fontFamily="Archivo" fontWeight={500} fontSize={TY.small_label} fill={C.chalk} />
+    <Txt text={act} x={-LOCW.w / 2 + 128} offset={[-1, 0]} fontFamily="Archivo" fontWeight={500} fontSize={TY.small_label} fill={C.chalk} />
   </Node>
 );
 export const ACT = {
@@ -198,7 +198,7 @@ export const ACT = {
 } as Record<string, string>;
 
 // ------------------------------------------------------------------ archival still in a chalk frame with a credit line
-const ASSETS = import.meta.glob('../../../../../episodes/p4-lock/scenes/assets/*.jpg', {eager: true, query: '?url', import: 'default'}) as Record<string, string>;
+const ASSETS = import.meta.glob('../../../../../episodes/p4-lock/scenes/assets/*.jpg', {eager: true, query: '?inline', import: 'default'}) as Record<string, string>;
 export const assetUrl = (name: string) => {
   const key = Object.keys(ASSETS).find(k => k.endsWith('/' + name));
   return key ? ASSETS[key] : null;
@@ -332,4 +332,80 @@ export const Leader = ({from, to, color = M, opacity = 1, end = 1}: any) => (
 // big title at the top-left of the safe area
 export const Head = ({text, x = -864, y = -430, opacity = 1, color = C.chalk, size = 72}: any) => (
   <Txt text={text} x={x} y={y} offset={[-1, 0]} fontFamily="Archivo" fontWeight={600} fontSize={size} letterSpacing={3} fill={color} opacity={opacity} />
+);
+
+// ------------------------------------------------------------------ wooden pin lock (ancient Egypt, side section)
+// peg: per-peg drop 0..1 (0 = resting up in the fixture, 1 = down in the bolt holes); kx: key x offset (0 = aligned); lift: key pins rise 0..1;
+// slide: bolt + key slide to the left (px). Local origin: the boundary between fixture and bolt is y = -70.
+export const WX = [-210, -70, 70, 210];
+export const WoodLock = ({x = 0, y = 0, s = 1, peg = [0, 0, 0, 0], key = 0, kx = 600, lift = 0, slide = 0, drawn = 1, fixture = 1, opacity = 1}: any) => (
+  <Node x={x} y={y} scale={s} opacity={opacity}>
+    <Node opacity={fixture}>
+      <Rect x={0} y={-160} width={520} height={180} radius={10} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} end={drawn} />
+      {WX.map(wx => <Rect x={wx} y={-160} width={58} height={180} stroke={C.chalk} lineWidth={LW.hairline} fill={C.bg} />)}
+    </Node>
+    <Node x={() => -val(slide)}>
+      <Rect x={0} y={-5} width={840} height={130} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} end={drawn} />
+      {WX.map(wx => <Rect x={wx} y={-30} width={58} height={80} stroke={C.chalk} lineWidth={LW.hairline} fill={C.bg} />)}
+      <Rect x={0} y={42} width={800} height={36} fill={C.bg} stroke={C.chalk} lineWidth={LW.hairline} />
+      <Node opacity={key}>
+        <Node x={kx} y={0}>
+          <Rect x={420} y={80} width={900} height={44} radius={6} fill={C.panel} stroke={C.chalk} lineWidth={LW.structure} />
+          <Rect x={950} y={80} width={150} height={150} radius={22} fill={C.panel} stroke={C.chalk} lineWidth={LW.structure} />
+          <Circle x={950} y={80} size={36} stroke={C.chalk} lineWidth={LW.structure} />
+          {WX.map(wx => (
+            <Rect x={wx + 0} y={() => 56 - 40 * val(lift) - 0} width={36} height={() => 46 + 80 * val(lift)} fill={rgba(V, 0.25)} stroke={V} lineWidth={LW.structure} />
+          ))}
+        </Node>
+      </Node>
+    </Node>
+    {WX.map((wx, i) => (
+      <Rect x={wx} y={() => -150 + 120 * clamp(val(peg[i])) - 60 * clamp(val(lift))} width={40} height={150} radius={4}
+        stroke={C.chalk} lineWidth={LW.structure} fill={rgba(C.chalk, 0.2)} opacity={() => 1} />
+    ))}
+  </Node>
+);
+
+// ------------------------------------------------------------------ building icons: school (gabled, flag) and office (tall, windows)
+export const Bldg = ({x = 0, y = 0, kind = 'school', s = 1, color = C.chalk, opacity = 1}: any) => (
+  <Node x={x} y={y} scale={s} opacity={opacity}>
+    {kind === 'school' ? (
+      <Node>
+        <Rect y={20} width={220} height={150} stroke={color} lineWidth={LW.structure} fill={C.bg} />
+        <Line closed points={[[-130, -55], [0, -125], [130, -55]]} stroke={color} lineWidth={LW.structure} lineJoin="round" fill={C.bg} />
+        <Rect y={65} width={46} height={60} stroke={color} lineWidth={LW.structure} />
+        {[-70, 70].map(wx => <Rect x={wx} y={10} width={44} height={44} stroke={color} lineWidth={LW.hairline + 1} />)}
+        <Line points={[[0, -125], [0, -175]]} stroke={color} lineWidth={LW.structure} />
+        <Line closed points={[[0, -175], [44, -162], [0, -148]]} stroke={color} lineWidth={LW.hairline + 1} />
+      </Node>
+    ) : (
+      <Node>
+        <Rect y={-20} width={170} height={290} stroke={color} lineWidth={LW.structure} fill={C.bg} />
+        {[-100, -45, 10, 65].flatMap(wy => [-45, 45].map(wx => <Rect x={wx} y={wy} width={34} height={30} stroke={color} lineWidth={LW.hairline + 1} />))}
+        <Rect y={105} width={46} height={40} stroke={color} lineWidth={LW.structure} />
+      </Node>
+    )}
+  </Node>
+);
+// a check mark in a violet ring
+export const Tick = ({x = 0, y = 0, s = 1, p = 1}: any) => (
+  <Node x={x} y={y} scale={() => s * (0.6 + 0.4 * clamp(val(p)))} opacity={p}>
+    <Circle size={64} stroke={V} lineWidth={LW.structure} fill={C.bg} shadowColor={V} shadowBlur={12} />
+    <Line points={[[-14, 2], [-4, 13], [16, -12]]} stroke={V} lineWidth={LW.emphasis} lineCap="round" lineJoin="round" />
+  </Node>
+);
+// small door icon for hierarchy trees
+export const MiniDoor = ({x = 0, y = 0, color = C.chalk, opacity = 1}: any) => (
+  <Node x={x} y={y} opacity={opacity}>
+    <Rect width={58} height={86} radius={4} stroke={color} lineWidth={LW.structure} />
+    <Circle x={16} y={4} size={9} fill={color} />
+  </Node>
+);
+// multi-line text block on a dark backing, left aligned at x, y (centre of the block)
+export const Block = ({lines, x = 0, y = 0, size = TY.small_label, color = C.chalk, anchor = [-1, 0], opacity = 1, spacing = 1.35}: any) => (
+  <Rect layout x={x} y={y} offset={anchor} padding={[14, 24, 14, 24]} radius={10} fill={PANEL} opacity={opacity} direction="column" gap={size * (spacing - 1) + 2}>
+    {lines.map((t: string, i: number) => (
+      <Txt text={t} fill={i === 0 ? color : (i % 2 ? color : M)} fontFamily="Archivo" fontWeight={i === 0 ? 600 : 500} fontSize={size} />
+    ))}
+  </Rect>
 );

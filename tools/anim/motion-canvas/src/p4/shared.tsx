@@ -37,7 +37,7 @@ export const Padlock = ({x = 0, y = 0, s = 1, open = 0, color = C.chalk, flash =
 // draw: frame draw-on 0..1; card: card opacity; big: 0..1 enlarges the notice; open: shackle; flash: violet flash;
 // light: 0..1 day/night greys; sign: 'PICCADILLY, LONDON' plate opacity; stamp: 'unpicked'
 export const WIN = {w: 900, h: 560};
-export const ShopWindow = ({x = -120, y = 30, draw = 1, card = 1, big = 0, open = 0, flash = 0, light = 0, sign = 0, pad = 1, children = null as any}: any) => (
+export const ShopWindow = ({x = -120, y = 30, draw = 1, card = 1, big = 0, lift = 0, open = 0, flash = 0, light = 0, sign = 0, pad = 1, children = null as any}: any) => (
   <Node x={x} y={y}>
     <Rect width={WIN.w} height={WIN.h} radius={10} stroke={C.chalk} lineWidth={LW.structure} end={draw}
       fill={() => rgba(C.chalk, 0.02 + 0.07 * val(light))} />
@@ -52,11 +52,16 @@ export const ShopWindow = ({x = -120, y = 30, draw = 1, card = 1, big = 0, open 
       <Rect x={-150} y={192} width={250} height={44} radius={20} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
       <Padlock x={-150} y={104} open={open} flash={flash} />
     </Node>
-    <Node opacity={card} x={170} y={120} rotation={-5} scale={() => 1 - 0.0 * val(big)}>
+    <Node opacity={card} x={170} y={120} rotation={() => -5 - 9 * val(lift)} scale={() => 1 + 0.0 * val(big)}>
       <Rect width={270} height={180} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
       <Txt text="200" y={-34} fontFamily="IBM Plex Mono" fontWeight={500} fontSize={64} fill={C.chalk} />
       <Txt text="guineas" y={34} fontFamily="Archivo" fontWeight={600} fontSize={TY.label} fill={C.chalk} />
     </Node>
+    {/* a slow glint sweeps the glass */}
+    <Rect width={WIN.w - 12} height={WIN.h - 12} clip>
+      <Line points={[[-60, 300], [60, -300]]} x={() => -700 + ((T() * 150) % 1700)} stroke={C.chalk} lineWidth={LW.structure + 4} opacity={0.12} />
+      <Line points={[[-10, 300], [110, -300]]} x={() => -700 + ((T() * 150) % 1700)} stroke={C.chalk} lineWidth={LW.hairline} opacity={0.18} />
+    </Rect>
     {children}
   </Node>
 );
