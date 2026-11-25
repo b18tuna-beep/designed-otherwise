@@ -1,0 +1,82 @@
+[
+ {
+  "file": "wooden-lock-met.jpg",
+  "scene": "S30",
+  "credit": "Wooden lock, Damascus. The Metropolitan Museum of Art, Open Access",
+  "license": "Public domain (The Met Open Access)",
+  "source": "https://images.metmuseum.org/CRDImages/is/original/sf10-100-170b.jpg",
+  "file_url": "https://images.metmuseum.org/CRDImages/is/original/sf10-100-170b.jpg"
+ },
+ {
+  "file": "yale-sr.jpg",
+  "scene": "S34",
+  "credit": "Linus Yale Sr. Portrait, before 1858, via Wikimedia Commons",
+  "license": "Public domain",
+  "source": "File:Linus Yale Sr., father of Linus Yale Jr., founders of the Yale Lock Company.png",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Linus_Yale_Sr.%2C_father_of_Linus_Yale_Jr.%2C_founders_of_the_Yale_Lock_Company.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "patent-3630.jpg",
+  "scene": "S34",
+  "credit": "L. Yale, Door Lock, US patent 3,630 (1844). USPTO",
+  "license": "Public domain (US government work)",
+  "source": "https://patents.google.com/patent/US3630",
+  "file_url": "https://patentimages.storage.googleapis.com/7b/67/7d/d1d0a618f5e833/US3630-drawings-page-1.png"
+ },
+ {
+  "file": "yale-jr.jpg",
+  "scene": "S35",
+  "credit": "Linus Yale Jr. Portrait, via Wikimedia Commons",
+  "license": "Public domain",
+  "source": "File:Linus Yale Jr., portrait.jpg",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Linus_Yale_Jr.%2C_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "bramah-lock.jpg",
+  "scene": "S39",
+  "credit": "Bramah lock, Otto's Encyclopedia, via Wikimedia Commons",
+  "license": "Public domain",
+  "source": "File:Bramah lock, Otto's Encyclopedia.jpg",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Bramah_lock%2C_Otto%27s_Encyclopedia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "great-exhibition-nave.jpg",
+  "scene": "S42",
+  "credit": "The Great Industrial Exhibition of 1851, the British nave. Library of Congress",
+  "license": "Public domain",
+  "source": "File:The great industrial exhibition of 1851. Plate 3. The British nave LCCN2003665158.jpg",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/The_great_industrial_exhibition_of_1851._Plate_3._The_British_nave_LCCN2003665158.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "chubb-lock-engraving.jpg",
+  "scene": "S44",
+  "credit": "Chubb lock. A. C. Hobbs and C. Tomlinson, Construction of Locks (1853/1868), Internet Archive",
+  "license": "Public domain (pre-1929)",
+  "source": "https://archive.org/download/rudimentarytreat00hobb/page/n69_w1400.jpg",
+  "file_url": "https://archive.org/download/rudimentarytreat00hobb/page/n69_w1400.jpg"
+ },
+ {
+  "file": "chubb-detector.jpg",
+  "scene": "S45",
+  "credit": "Chubb detector lock, via Wikimedia Commons",
+  "license": "Public domain",
+  "source": "File:Chubb detector.jpg",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Chubb_detector.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "bramah-diagram.jpg",
+  "scene": "S49",
+  "credit": "Bramah lock diagram, fig. 34. A. C. Hobbs and C. Tomlinson, Construction of Locks, Internet Archive",
+  "license": "Public domain (pre-1929)",
+  "source": "https://archive.org/download/rudimentarytreat00hobb/page/n87_w1400.jpg",
+  "file_url": "https://archive.org/download/rudimentarytreat00hobb/page/n87_w1400.jpg"
+ },
+ {
+  "file": "great-exhibition-machinery.jpg",
+  "scene": "S50",
+  "credit": "Moving Machinery, Dickinson's Comprehensive Pictures of the Great Exhibition (1854), Louis Haghe",
+  "license": "Public domain",
+  "source": "File:Moving Machinery - Dickinson's comprehensive pictures of the Great Exhibition (1854) vol 2, plate XXI - Royal Coll.jpg",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Moving_Machinery_-_Dickinson%27s_comprehensive_pictures_of_the_Great_Exhibition_%281854%29_vol_2%2C_plate_XXI_-_Royal_Coll.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ }
+]
