@@ -1,0 +1,96 @@
+Next time you're stopped at a red light, listen to your engine.
+It's still turning, around seven hundred times a minute.
+Every engine idles a little differently, but that's nearly twelve turns every second.
+And in each cylinder, only one stroke in every four actually pushes.
+For the other three, the engine isn't driving itself. It's being carried.
+So today, we're going to follow one cycle of one cylinder. About a sixth of a second of real time, slowed right down.
+The clock in the corner is real time. Watch how little of it is spent working.
+Here's our cylinder.
+A piston, a connecting rod, a crankshaft. And on the end of the crank, a heavy wheel called the flywheel. Keep an eye on it.
+Up top, two valves: one lets air and fuel in, the other lets burnt gas out. Between them sits the spark plug.
+One full cycle takes two turns of the crankshaft. Seven hundred and twenty degrees.
+Four strokes, half a turn each.
+At this speed, each degree of that turn lasts about a quarter of a thousandth of a second.
+Stroke one: intake.
+The intake valve is open, and the piston falls.
+Here's the first surprise. The piston doesn't really suck anything in.
+As it falls, it lowers the pressure inside the cylinder, and the air outside, at higher pressure, pushes the charge in through the open valve.
+But at idle, there's a catch.
+The throttle, the valve your accelerator pedal opens, is partly closed. So the engine has to pull its air in against a restriction.
+That's called throttling, and it's one main reason a gasoline engine is less efficient when it's only lightly loaded. It adds to what engineers call pumping losses.
+And notice what's turning the crank right now.
+Not fuel. The flywheel. Its momentum is pulling the piston down.
+Watch the valves, too.
+They don't snap open and shut exactly at the ends of the strokes.
+The intake valve opened a little before the piston reached the top, and it will close well after the piston has passed the bottom.
+They're worked by a camshaft, which turns at half the speed of the crank, because each valve only opens once every two turns.
+Clock: four hundredths of a second. One stroke done, and nothing has been made yet.
+Stroke two: compression.
+The intake valve closes, and the piston climbs, squeezing the mixture into the small space at the top.
+How hard it squeezes is called the compression ratio: the volume at the bottom, divided by the space that's left at the top.
+In a typical gasoline car engine, that's roughly ten to one, up to about twelve to one.
+Squeeze harder, and you get better efficiency.
+So why stop there?
+Because squeezing the mixture makes it hotter.
+Push it past a limit, and the unburned mixture can ignite by itself. That's knock.
+The sudden release sends pressure waves through the cylinder. That's the knocking sound, and in severe cases it can damage the engine.
+A few engines push the limit. Mazda's Skyactiv G reached fourteen to one.
+And this is where the number on the fuel pump comes in.
+Octane isn't a measure of how much energy is in the fuel.
+It measures how well the fuel resists igniting by itself under compression.
+It's tested in a special engine that raises its compression until the fuel knocks, and compared against two reference fuels: iso-octane, rated one hundred, and heptane, rated zero.
+In the United States, regular is generally eighty-seven, and premium ninety-one to ninety-four.
+Higher compression needs fuel that resists knock. That's the trade-off.
+And this stroke, too, is paid for by the flywheel.
+Clock: nine hundredths of a second. Half the cycle gone. Still no work done.
+Now, something happens before the piston reaches the top.
+The spark fires, a few tens of degrees early.
+Why early? Because burning takes time.
+The spark doesn't set off an explosion.
+It starts a tiny, hot kernel, which grows into a flame. Wrinkled by the swirling air, it sweeps outward through the mixture until it has all burned.
+In MIT's figures for a modern engine, half the mixture has burned only after about twenty-five degrees of crank rotation.
+So the spark is timed to put the pressure peak just after the top, where the piston can use it.
+Fire too late, and the heat arrives too far into the stroke to be turned into work.
+Fire too early, and the engine wastes heat and makes knock more likely.
+Because the abnormal, much faster burn is knock: the mixture ahead of the flame igniting by itself.
+Modern engines listen for it, and delay the spark to stop it, at some cost in power and fuel economy.
+Stroke three: power.
+The burning gas raises the pressure, and pushes the piston down.
+This, and only this, is where the engine does its work.
+Half a turn. About four hundredths of a second.
+And the flywheel stores some of that push, and gives it back over the next three strokes. That evens out the pulses.
+A single cylinder fires only once every two turns.
+So engines share the job.
+In a four-cylinder engine, a power stroke starts every hundred and eighty degrees.
+A common firing order is one, three, four, two. So at any moment, each cylinder is on a different stroke: one pushing, while the others breathe in, squeeze, and breathe out.
+Six cylinders, a power stroke every hundred and twenty degrees. Eight, every ninety.
+The more cylinders, the more those pushes overlap, and the smoother the engine runs.
+Clock: thirteen hundredths of a second.
+Let's stop the clock for a moment.
+This four-stroke cycle is often called the Otto cycle.
+Nikolaus Otto was a German gas-engine builder. With his partner, Eugen Langen, he'd already won a gold medal at the eighteen sixty-seven Paris exhibition, for an earlier gas engine.
+In eighteen seventy-six, Otto built an engine on the four-stroke principle. It was an immediate commercial success.
+His American patent, from eighteen seventy-seven, describes the same four strokes, with the flywheel's momentum driving the piston back.
+But Otto wasn't the first to describe it.
+In eighteen sixty-two, a French engineer, Alphonse Beau de Rochas, had set out the four-stroke cycle on paper. He never built an engine.
+In eighteen eighty-six, after that earlier description was brought to light, Otto's German patent was revoked.
+His patent was really about a layered charge of fuel. It says that instead of an explosion ensuing, the flame passes gradually from one particle to another.
+Today's engines don't use his layered charge. But the burn is still a spreading flame, not a bang.
+Back to the clock.
+Stroke four: exhaust.
+The exhaust valve opened just before the bottom of the power stroke, to let the pressure drop. It costs a little work, but it's a net gain.
+Now the piston rises, and pushes the burnt gas out.
+Near the top, for a short moment, both valves are open together. Engineers call it valve overlap.
+And once again, it's the flywheel doing the work.
+So here's the bill.
+Of all the energy in the fuel, only about a fifth ends up moving a typical gasoline car.
+The U.S. Department of Energy puts it between twelve and thirty percent, depending on how it's driven.
+Most of the rest is lost in the engine itself, as heat. About sixty percent, out through the exhaust and the cooling system.
+Even at the crankshaft, before the gearbox and the tires, a gasoline engine turns roughly a third of its fuel energy into work, at best.
+Clock: seventeen hundredths of a second.
+One cycle.
+Two turns of the crank, four strokes, and only one of them pushing.
+Three strokes out of every four, each cylinder is carried, by a heavy spinning wheel and by the cylinders next to it.
+And then it all happens again. About six times a second, in every cylinder, while you wait for the light to change.
+That's the engine in your car. Designed otherwise.
+Next time on Designed Otherwise.

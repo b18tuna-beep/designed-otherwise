@@ -1,5 +1,5 @@
 {
- "_note": "Kokoro (misaki) phoneme overrides, applied at synthesis only; the word check still uses the plain script. British phoneme set: Q = əʊ, A = eɪ, I = aɪ. Secondary stress on 'tane' keeps isobutane from drifting toward 'isobutene'. Békésy: Hungarian BAY-kay-shee (é = eɪ, s = ʃ). prestin: PRES-tin; the light second stress keeps it from collapsing to 'Preston'. braccia: Italian BRAH-cha (historical length unit). Joly: John Joly, JOH-lee (not 'Jolie'). Bramah: Joseph Bramah, BRAH-muh.",
+ "_note": "Kokoro (misaki) phoneme overrides, applied at synthesis only; the word check still uses the plain script. British phoneme set: Q = əʊ, A = eɪ, I = aɪ. Secondary stress on 'tane' keeps isobutane from drifting toward 'isobutene'. Békésy: Hungarian BAY-kay-shee (é = eɪ, s = ʃ). prestin: PRES-tin; the light second stress keeps it from collapsing to 'Preston'. braccia: Italian BRAH-cha (historical length unit). Joly: John Joly, JOH-lee (not 'Jolie'). Bramah: Joseph Bramah, BRAH-muh. Beau de Rochas: Alphonse Beau de Rochas, French, boh duh rosh-AH.",
  "isobutane": "ˌIsQbjˈuːtˌAn",
  "Békésy": "bˈAkAʃi",
  "prestin": "pɹˈɛsˌtɪn",
@@ -7,5 +7,7 @@
  "Georg": "ɡˈAɔːɡ",
  "braccia": "bɹˈæʧə",
  "Joly": "ʤˈQli",
- "Bramah": "bɹˈɑːmə"
+ "Bramah": "bɹˈɑːmə",
+ "Rochas": "ɹɒʃˈɑː",
+ "Beau": "bˈQ"
 }
