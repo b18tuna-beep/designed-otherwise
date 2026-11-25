@@ -33,7 +33,7 @@ Each cut lifts its stack to a different height. And at the right height, the gap
 All five gaps on the line at once, and the plug is free. [2.3]
 That's the whole test. [1.2]
 The pins never feel the outline of your key. Only how high it lifts them, at five points. [1.2]
-The shape of the slot does a cruder check: it decides which blanks fit in at all. But the pins do the real work. [2.6]
+The shape of the slot does a rougher check: it decides which blanks fit in at all. But the pins do the real work. [2.6]
 Cut one position wrong, even slightly, and a pin stops short of the line, or pushes past it. [2.4, 1.3]
 Either way, the plug stays locked. [2.4]
 So the real secret isn't the key. It's a short list of numbers: how deep each cut goes. [1.2]

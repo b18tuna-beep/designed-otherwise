@@ -1,0 +1,2015 @@
+{
+ "source_words": "audio/final.words.json",
+ "fps": 30,
+ "total_s": 618.4,
+ "scenes": [
+  {
+   "id": "S00a",
+   "beat": 1,
+   "anchor": "take your front door key",
+   "tool": "motion-canvas",
+   "visual": "Slate. A large chalk house key draws itself in, bow left, blade right, tilted slightly, like it was just put on a table. On 'look at it' the five cuts along its top edge get small violet dots, one by one. Through the 1 s beat: only the key, breathing (tiny scale pulse).",
+   "changes": [
+    "key draws in on 'take your front door key'",
+    "five cut dots on 'look at it'"
+   ],
+   "text": [],
+   "facts": [],
+   "asset": null,
+   "start": 0.0,
+   "end": 5.31,
+   "duration": 5.31,
+   "cues": [
+    0.3,
+    3.16
+   ],
+   "words": "take your front door key out of your pocket and look at it",
+   "change_every_s": 2.7
+  },
+  {
+   "id": "S00b",
+   "beat": 1,
+   "anchor": "the lock in your door has never",
+   "tool": "blender",
+   "mode": "hook",
+   "visual": "HERO L1 hook (3D): 3/4 push-in on the chalk cutaway cylinder, five violet pin stacks. The key slides in, pins rise, each split lands on the shear line, which flashes violet; the plug turns. 2D overlay: on 'not its outline' a dashed chalk outline of the key appears and is crossed out (muted); on 'tiny gaps' five small violet ticks mark the gaps on the shear line.",
+   "changes": [
+    "outline crossed out on 'not its outline'",
+    "gap ticks on 'tiny gaps lines up'"
+   ],
+   "text": [
+    "shape ✕",
+    "5 gaps · 1 line"
+   ],
+   "facts": [
+    "1.2",
+    "2.3"
+   ],
+   "asset": null,
+   "start": 5.31,
+   "end": 16.89,
+   "duration": 11.58,
+   "cues": [
+    3.91,
+    9.19
+   ],
+   "words": "the lock in your door has never looked at it not its outline not its shape it checks one thing whether a row of tiny gaps lines up",
+   "change_every_s": 5.8
+  },
+  {
+   "id": "S00c",
+   "beat": 1,
+   "anchor": "and if your building has a master key",
+   "tool": "motion-canvas",
+   "visual": "A chalk door with its lock. Your key (square bow) slides in from the left and the lock opens (violet line). Then a second key with a round bow, drawn dashed as if unseen, slides in from the right; the same violet line glows again. Label 'key you've never seen'.",
+   "changes": [
+    "your key opens on 'master key'",
+    "second dashed key on 'a second key'",
+    "same glow on 'never seen'"
+   ],
+   "text": [
+    "your key",
+    "a key you've never seen"
+   ],
+   "facts": [
+    "1.4",
+    "3.1"
+   ],
+   "asset": null,
+   "start": 16.89,
+   "end": 24.89,
+   "duration": 8.0,
+   "cues": [
+    1.41,
+    4.35,
+    6.13
+   ],
+   "words": "and if your building has a master key that same lock is built to open for a second key one you've never seen",
+   "change_every_s": 2.7
+  },
+  {
+   "id": "S00d",
+   "beat": 1,
+   "anchor": "in eighteen fifty-one a lock in a london",
+   "tool": "motion-canvas",
+   "visual": "Our own drawing, not archival: a chalk shop window with a small padlock on a cushion and a handwritten card '200 guineas'. On 'an American took up the challenge' a chalk silhouette (no face) steps to the glass; the card's corner lifts.",
+   "changes": [
+    "window and card on 'shop window'",
+    "silhouette on 'american took up'"
+   ],
+   "text": [
+    "1851",
+    "200 guineas"
+   ],
+   "facts": [
+    "5.1",
+    "5.9"
+   ],
+   "asset": null,
+   "start": 24.89,
+   "end": 34.61,
+   "duration": 9.72,
+   "cues": [
+    2.51,
+    6.93
+   ],
+   "words": "in eighteen fifty one a lock in a london shop window had a prize on it for anyone who could pick it then an american took up the challenge",
+   "change_every_s": 4.9
+  },
+  {
+   "id": "S00e",
+   "beat": 1,
+   "anchor": "this is the story of the lock",
+   "tool": "motion-canvas",
+   "visual": "Back to the opening chalk key from S00a, smaller, at centre; it turns a quarter turn like in a lock and the frame eases to clean slate for the soft landing into the intro sting.",
+   "changes": [
+    "key turns on 'the lock on your door'"
+   ],
+   "text": [],
+   "facts": [],
+   "asset": null,
+   "start": 34.61,
+   "end": 39.21,
+   "duration": 4.6,
+   "cues": [
+    1.29
+   ],
+   "words": "this is the story of the lock on your door",
+   "change_every_s": 4.6
+  },
+  {
+   "id": "S01",
+   "beat": 2,
+   "anchor": "here's what's inside",
+   "tool": "motion-canvas",
+   "visual": "Act card: locator lights '1 · what it checks'. A flat chalk side-section of a cylinder lock draws in, clean and big: shell (top block) and plug (round part).",
+   "changes": [
+    "section draws on 'what's inside'"
+   ],
+   "text": [
+    "ACT 1 · WHAT IT CHECKS"
+   ],
+   "facts": [],
+   "asset": null,
+   "start": 39.21,
+   "end": 41.63,
+   "duration": 2.42,
+   "cues": [
+    0.47
+   ],
+   "words": "here's what's inside",
+   "change_every_s": 2.4
+  },
+  {
+   "id": "S02",
+   "beat": 2,
+   "anchor": "the part you turn is called the plug",
+   "tool": "motion-canvas",
+   "visual": "The plug highlights (chalk fill brightens) and rotates a few degrees back and forth; label 'plug'. Then the shell highlights, label 'shell (fixed to the door)'. A small bolt at the end slides when the plug turns.",
+   "changes": [
+    "plug label on 'called the plug'",
+    "shell label on 'fixed shell'",
+    "bolt slides on 'moves the bolt'"
+   ],
+   "text": [
+    "plug",
+    "shell",
+    "bolt"
+   ],
+   "facts": [
+    "2.1"
+   ],
+   "asset": null,
+   "start": 41.63,
+   "end": 49.35,
+   "duration": 7.72,
+   "cues": [
+    1.31,
+    3.71,
+    5.91
+   ],
+   "words": "the part you turn is called the plug it sits inside a fixed shell and turning it is what moves the bolt",
+   "change_every_s": 2.6
+  },
+  {
+   "id": "S03",
+   "beat": 2,
+   "anchor": "drilled down through both of them",
+   "tool": "motion-canvas",
+   "visual": "Five vertical holes drill down through shell and plug, one after another (left to right), as chalk outlines. Label '× 5 (usually)'.",
+   "changes": [
+    "holes drill on 'row of small holes'",
+    "count label on 'usually five'"
+   ],
+   "text": [
+    "usually 5"
+   ],
+   "facts": [
+    "2.7"
+   ],
+   "asset": null,
+   "start": 49.35,
+   "end": 55.27,
+   "duration": 5.92,
+   "cues": [
+    2.49,
+    4.11
+   ],
+   "words": "drilled down through both of them is a row of small holes usually five",
+   "change_every_s": 3.0
+  },
+  {
+   "id": "S04",
+   "beat": 2,
+   "anchor": "in each hole sits a stack",
+   "tool": "motion-canvas",
+   "visual": "Close on one hole: a violet key pin drops in (pointed bottom), then a violet driver pin, then a muted spring compresses on top. Each labelled as it lands.",
+   "changes": [
+    "key pin on 'key pin at the bottom'",
+    "driver pin on 'driver pin above'",
+    "spring on 'spring on top'"
+   ],
+   "text": [
+    "key pin",
+    "driver pin",
+    "spring"
+   ],
+   "facts": [
+    "2.2"
+   ],
+   "asset": null,
+   "start": 55.27,
+   "end": 64.01,
+   "duration": 8.74,
+   "cues": [
+    2.29,
+    3.83,
+    5.61
+   ],
+   "words": "in each hole sits a stack a key pin at the bottom a driver pin above it and a spring on top pushing them both down",
+   "change_every_s": 2.9
+  },
+  {
+   "id": "S05",
+   "beat": 2,
+   "anchor": "the line where the plug meets the shell",
+   "tool": "motion-canvas",
+   "visual": "Pull back to all five stacks. The boundary between plug and shell draws as a bright violet line across all five holes: 'SHEAR LINE'.",
+   "changes": [
+    "violet line draws on 'shear line'"
+   ],
+   "text": [
+    "shear line"
+   ],
+   "facts": [
+    "2.3"
+   ],
+   "asset": null,
+   "start": 64.01,
+   "end": 68.83,
+   "duration": 4.82,
+   "cues": [
+    3.15
+   ],
+   "words": "the line where the plug meets the shell is called the shear line",
+   "change_every_s": 4.8
+  },
+  {
+   "id": "S06",
+   "beat": 2,
+   "anchor": "with no key in the springs",
+   "tool": "motion-canvas",
+   "visual": "Springs push every driver pin down across the shear line; each crossing point gets a small muted 'bar'. The plug tries to turn and jolts to a stop: muted lock icon.",
+   "changes": [
+    "drivers cross on 'push every driver pin'",
+    "plug jolts on 'can't turn'"
+   ],
+   "text": [
+    "pinned"
+   ],
+   "facts": [
+    "2.5"
+   ],
+   "asset": null,
+   "start": 68.83,
+   "end": 77.89,
+   "duration": 9.06,
+   "cues": [
+    1.65,
+    7.65
+   ],
+   "words": "with no key in the springs push every driver pin across that line into the plug the plug is pinned in place it can't turn",
+   "change_every_s": 4.5
+  },
+  {
+   "id": "S07",
+   "beat": 2,
+   "anchor": "now slide the right key in",
+   "tool": "blender",
+   "mode": "hook",
+   "visual": "HERO L1 hook again (3D, re-timed): the right key slides in, each stack rises to a different height, every split lands on the shear line, the line flashes violet, the plug turns. 2D overlay: five small height bars beside the stacks fill to different heights as the key passes; on 'all five gaps' a violet tick for each gap.",
+   "changes": [
+    "height bars on 'different height'",
+    "gap ticks on 'exactly on the shear line'",
+    "'free' on 'the plug is free'"
+   ],
+   "text": [
+    "all 5 on the line",
+    "free"
+   ],
+   "facts": [
+    "2.2",
+    "2.3"
+   ],
+   "asset": null,
+   "start": 77.89,
+   "end": 94.97,
+   "duration": 17.08,
+   "cues": [
+    5.35,
+    9.79,
+    15.03
+   ],
+   "words": "now slide the right key in each cut lifts its stack to a different height and at the right height the gap between the two pins lands exactly on the shear line all five gaps on the line at once and the plug is free",
+   "change_every_s": 5.7
+  },
+  {
+   "id": "S08",
+   "beat": 2,
+   "anchor": "that's the whole test",
+   "tool": "motion-canvas",
+   "visual": "The test as a card: five little vertical gauges, each with a violet target line; five dots slide up and land on the targets. Title 'THE WHOLE TEST'.",
+   "changes": [
+    "dots land on 'whole test'"
+   ],
+   "text": [
+    "THE WHOLE TEST"
+   ],
+   "facts": [
+    "1.2"
+   ],
+   "asset": null,
+   "start": 94.97,
+   "end": 97.39,
+   "duration": 2.42,
+   "cues": [
+    0.61
+   ],
+   "words": "that's the whole test",
+   "change_every_s": 2.4
+  },
+  {
+   "id": "S09",
+   "beat": 2,
+   "anchor": "the pins never feel the outline",
+   "tool": "motion-canvas",
+   "visual": "The key in profile. Its outline (bow, shoulder, blade, tip) is drawn as dashed muted lines and fades; only five violet points on the top edge stay bright, with height numbers above them.",
+   "changes": [
+    "outline fades on 'outline of your key'",
+    "five points stay on 'at five points'"
+   ],
+   "text": [
+    "only these 5 heights"
+   ],
+   "facts": [
+    "1.2"
+   ],
+   "asset": null,
+   "start": 97.39,
+   "end": 103.57,
+   "duration": 6.18,
+   "cues": [
+    1.49,
+    4.37
+   ],
+   "words": "the pins never feel the outline of your key only how high it lifts them at five points",
+   "change_every_s": 3.1
+  },
+  {
+   "id": "S10",
+   "beat": 2,
+   "anchor": "the shape of the slot does a rougher",
+   "tool": "motion-canvas",
+   "visual": "Head-on view of the keyway: a chalk zig-zag slot. Three key blanks (cross-sections) try it: two bounce off (muted), one slides in. Then the camera tilts to the pins: 'the real check'.",
+   "changes": [
+    "blanks try the slot on 'which blanks fit'",
+    "pins highlight on 'the pins do the real work'"
+   ],
+   "text": [
+    "keyway: which keys fit",
+    "pins: the real check"
+   ],
+   "facts": [
+    "2.6"
+   ],
+   "asset": null,
+   "start": 103.57,
+   "end": 112.23,
+   "duration": 8.66,
+   "cues": [
+    3.69,
+    5.81
+   ],
+   "words": "the shape of the slot does a rougher check it decides which blanks fit in at all but the pins do the real work",
+   "change_every_s": 4.3
+  },
+  {
+   "id": "S12",
+   "beat": 2,
+   "anchor": "cut one position wrong",
+   "tool": "blender",
+   "mode": "wrong",
+   "visual": "HERO L1 wrong (3D): a wrong key slides in; stack 1 sits too high and stacks 2 and 4 too low; those three glow violet as the culprits while the others dim; the plug tries to turn, stops, shakes. 2D overlay: small labels 'too high' over stack 1 and 'too low' over stacks 2 and 4 when they settle; 'locked' at the end. (Merged with the old S11 on 2026-11-25: the wrong-key shot needs more than 3 s.)",
+   "changes": [
+    "'too low' labels on 'stops short of the line'",
+    "'too high' label on 'pushes past it'",
+    "'locked' on 'stays locked'"
+   ],
+   "text": [
+    "too low",
+    "too high",
+    "locked"
+   ],
+   "facts": [
+    "2.4",
+    "1.3"
+   ],
+   "asset": null,
+   "start": 112.23,
+   "end": 122.51,
+   "duration": 10.28,
+   "cues": [
+    3.31,
+    4.93,
+    8.27
+   ],
+   "words": "cut one position wrong even slightly and a pin stops short of the line or pushes past it either way the plug stays locked",
+   "change_every_s": 3.4
+  },
+  {
+   "id": "S13",
+   "beat": 2,
+   "anchor": "so the real secret isn't the key",
+   "tool": "motion-canvas",
+   "visual": "The key slides away to the left and leaves behind a row of five numbers in violet, e.g. '3 6 2 5 4', like a combination. Label 'bitting: the real secret'.",
+   "changes": [
+    "key slides away on 'isn't the key'",
+    "numbers on 'list of numbers'"
+   ],
+   "text": [
+    "3 6 2 5 4",
+    "the bitting"
+   ],
+   "facts": [
+    "1.2"
+   ],
+   "asset": null,
+   "start": 122.51,
+   "end": 129.33,
+   "duration": 6.82,
+   "cues": [
+    1.19,
+    3.15
+   ],
+   "words": "so the real secret isn't the key it's a short list of numbers how deep each cut goes",
+   "change_every_s": 3.4
+  },
+  {
+   "id": "S14",
+   "beat": 2,
+   "anchor": "makers choose from a small fixed menu",
+   "tool": "motion-canvas",
+   "visual": "Above each of the five positions, a small vertical menu of depth steps appears (between 4 and 10 rungs, shown as 8 here, generic). One rung per column lights violet.",
+   "changes": [
+    "menus appear on 'fixed menu of depths'",
+    "range label on 'about four and ten'"
+   ],
+   "text": [
+    "about 4 to 10 depths"
+   ],
+   "facts": [
+    "2.8"
+   ],
+   "asset": null,
+   "start": 129.33,
+   "end": 137.21,
+   "duration": 7.88,
+   "cues": [
+    1.87,
+    5.43
+   ],
+   "words": "makers choose from a small fixed menu of depths at each position somewhere between about four and ten",
+   "change_every_s": 3.9
+  },
+  {
+   "id": "S15",
+   "beat": 2,
+   "anchor": "by one security researcher's estimate",
+   "tool": "motion-canvas",
+   "visual": "A counter card: 'possible keys' with a big number range that rolls up: 'several thousand' to 'several million'. Small credit 'estimate: M. Blaze, 2003'.",
+   "changes": [
+    "counter rolls on 'several thousand'",
+    "upper end on 'several million'"
+   ],
+   "text": [
+    "several thousand",
+    "to several million",
+    "estimate: M. Blaze, 2003"
+   ],
+   "facts": [
+    "2.9"
+   ],
+   "asset": null,
+   "start": 137.21,
+   "end": 146.75,
+   "duration": 9.54,
+   "cues": [
+    4.95,
+    6.49
+   ],
+   "words": "by one security researcher's estimate a typical commercial lock has between several thousand and several million possible keys",
+   "change_every_s": 4.8
+  },
+  {
+   "id": "S16",
+   "beat": 2,
+   "anchor": "which sounds like your key is one of a kind",
+   "tool": "motion-canvas",
+   "visual": "Your key alone on slate with a small chalk crown/'1 of a kind' tag. On 'isn't meant to be' a second key slides in behind it, dashed, and the tag flickers to '1 of 2?'.",
+   "changes": [
+    "second key on 'isn't meant to be'"
+   ],
+   "text": [
+    "one of a kind?"
+   ],
+   "facts": [],
+   "asset": null,
+   "start": 146.75,
+   "end": 154.35,
+   "duration": 7.6,
+   "cues": [
+    5.47
+   ],
+   "words": "which sounds like your key is one of a kind except sometimes it isn't meant to be",
+   "change_every_s": 7.6
+  },
+  {
+   "id": "S17",
+   "beat": 3,
+   "anchor": "in a building with a master key system",
+   "tool": "motion-canvas",
+   "visual": "A chalk building cross-section with a grid of doors. Your door lights. A second figure's key (round bow) appears; on 'many other doors too' every door in the grid lights in sequence.",
+   "changes": [
+    "your door on 'opens your door'",
+    "all doors light on 'many other doors'"
+   ],
+   "text": [
+    "your key: 1 door",
+    "master key: many doors"
+   ],
+   "facts": [
+    "1.4",
+    "3.2"
+   ],
+   "asset": null,
+   "start": 154.35,
+   "end": 163.93,
+   "duration": 9.58,
+   "cues": [
+    4.55,
+    7.15
+   ],
+   "words": "in a building with a master key system someone else carries a key that opens your door and theirs opens many other doors too",
+   "change_every_s": 4.8
+  },
+  {
+   "id": "S18",
+   "beat": 3,
+   "anchor": "it's called a master key",
+   "tool": "motion-canvas",
+   "visual": "Title 'MASTER KEY'. Zoom into one pin stack of the lock section; a thin extra pin slides in between key pin and driver: lighter violet, labelled 'master pin'.",
+   "changes": [
+    "zoom on 'trick is tiny'",
+    "master pin on 'extra thin pin'"
+   ],
+   "text": [
+    "MASTER KEY",
+    "master pin"
+   ],
+   "facts": [
+    "3.1"
+   ],
+   "asset": null,
+   "start": 163.93,
+   "end": 173.33,
+   "duration": 9.4,
+   "cues": [
+    2.13,
+    6.01
+   ],
+   "words": "it's called a master key and the trick is tiny in some of the stacks there's an extra thin pin a master pin",
+   "change_every_s": 4.7
+  },
+  {
+   "id": "S19",
+   "beat": 3,
+   "anchor": "now that stack has two places",
+   "tool": "blender",
+   "mode": "master",
+   "visual": "HERO L1 master (3D): key A enters, the line flashes, the plug turns; it returns; key B (round bow, one cut deeper) enters, the line flashes again, the plug turns. 2D overlay: 'split 1' / 'split 2' labels at the two gaps; 'your key' and 'master key' as each key enters.",
+   "changes": [
+    "'2 heights' on 'two heights that both work'",
+    "'your key' on 'your key lines up'",
+    "'master key' on 'master key lines up'",
+    "'can't tell' on 'can't tell the difference'"
+   ],
+   "text": [
+    "2 heights that work",
+    "your key",
+    "master key",
+    "the lock can't tell"
+   ],
+   "facts": [
+    "3.1",
+    "1.2"
+   ],
+   "asset": null,
+   "start": 173.33,
+   "end": 186.45,
+   "duration": 13.12,
+   "cues": [
+    3.13,
+    5.33,
+    7.99,
+    10.29
+   ],
+   "words": "now that stack has two places where it can split two heights that both work your key lines up one gap the master key lines up the other the lock can't tell the difference",
+   "change_every_s": 3.3
+  },
+  {
+   "id": "S20",
+   "beat": 3,
+   "anchor": "systems come in levels",
+   "tool": "motion-canvas",
+   "visual": "A clean hierarchy tree in chalk: one 'grand master' key at the top, three 'master' keys below, each over a row of door icons.",
+   "changes": [
+    "masters on 'group of doors'",
+    "grand master on 'grand master'"
+   ],
+   "text": [
+    "grand master",
+    "master",
+    "master",
+    "master"
+   ],
+   "facts": [
+    "3.2"
+   ],
+   "asset": null,
+   "start": 186.45,
+   "end": 194.05,
+   "duration": 7.6,
+   "cues": [
+    2.89,
+    4.41
+   ],
+   "words": "systems come in levels a master key opens a group of doors a grand master opens several groups",
+   "change_every_s": 3.8
+  },
+  {
+   "id": "S21",
+   "beat": 3,
+   "anchor": "but there's a catch",
+   "tool": "motion-canvas",
+   "visual": "The hierarchy dims to muted; a single violet question mark sits over the top key.",
+   "changes": [
+    "dim on 'catch'"
+   ],
+   "text": [],
+   "facts": [],
+   "asset": null,
+   "start": 194.05,
+   "end": 196.39,
+   "duration": 2.34,
+   "cues": [
+    0.77
+   ],
+   "words": "but there's a catch",
+   "change_every_s": 2.3
+  },
+  {
+   "id": "S22",
+   "beat": 3,
+   "anchor": "in two thousand and three matt blaze",
+   "tool": "motion-canvas",
+   "visual": "Name card (no photo): 'Matt Blaze · researcher, AT&T Labs (2003)', and the paper as a chalk sheet: 'Rights amplification in master-keyed mechanical locks · IEEE Security & Privacy, 2003'.",
+   "changes": [
+    "name card on 'matt blaze'",
+    "paper sheet on 'published a study'"
+   ],
+   "text": [
+    "Matt Blaze",
+    "researcher, AT&T Labs (2003)",
+    "IEEE Security & Privacy, 2003"
+   ],
+   "facts": [
+    "3.4"
+   ],
+   "asset": null,
+   "start": 196.39,
+   "end": 204.79,
+   "duration": 8.4,
+   "cues": [
+    1.81,
+    5.61
+   ],
+   "words": "in two thousand and three matt blaze then a researcher at at and t labs published a study of master keyed locks",
+   "change_every_s": 4.2
+  },
+  {
+   "id": "S23",
+   "beat": 3,
+   "anchor": "because each stack works on its own",
+   "tool": "motion-canvas",
+   "visual": "Five stacks, two of them with two working heights (two violet ticks each). Under them, keys appear one by one: 'your key', 'master key', then a third and fourth key with mixed cuts, each with a small violet check. Counter: 'planned: 2 · accepted: more'.",
+   "changes": [
+    "ticks on 'works on its own'",
+    "extra keys appear on 'more keys than the two'"
+   ],
+   "text": [
+    "planned: 2",
+    "accepted: more"
+   ],
+   "facts": [
+    "3.3"
+   ],
+   "asset": null,
+   "start": 204.79,
+   "end": 212.87,
+   "duration": 8.08,
+   "cues": [
+    1.45,
+    4.65
+   ],
+   "words": "because each stack works on its own a master keyed lock accepts more keys than the two that were planned for it",
+   "change_every_s": 4.0
+  },
+  {
+   "id": "S24",
+   "beat": 3,
+   "anchor": "he tested real buildings",
+   "tool": "motion-canvas",
+   "visual": "A row of chalk building icons (school, office). Each gets a small violet check in turn. Text: 'in every system he tested: the top master key could, in principle, be worked out'.",
+   "changes": [
+    "checks run on 'every system he tested'"
+   ],
+   "text": [
+    "every system tested",
+    "top master key: could be worked out (in principle)"
+   ],
+   "facts": [
+    "3.5"
+   ],
+   "asset": null,
+   "start": 212.87,
+   "end": 223.03,
+   "duration": 10.16,
+   "cues": [
+    3.71
+   ],
+   "words": "he tested real buildings schools and offices and in every system he tested the building's top master key could in principle be worked out",
+   "change_every_s": 10.2
+  },
+  {
+   "id": "S25",
+   "beat": 3,
+   "anchor": "the weakness wasn't one brand",
+   "tool": "motion-canvas",
+   "visual": "Five blank brand badges (no names, no logos) all share the same violet warning dot. Then they merge into one diagram label: 'the design itself'.",
+   "changes": [
+    "badges merge on 'how master keying works'"
+   ],
+   "text": [
+    "not one brand",
+    "the design itself"
+   ],
+   "facts": [
+    "3.5"
+   ],
+   "asset": null,
+   "start": 223.03,
+   "end": 228.41,
+   "duration": 5.38,
+   "cues": [
+    3.01
+   ],
+   "words": "the weakness wasn't one brand it comes from how master keying works",
+   "change_every_s": 5.4
+  },
+  {
+   "id": "S26",
+   "beat": 3,
+   "anchor": "a lock that's happy with two answers",
+   "tool": "motion-canvas",
+   "visual": "A simple balance: 'answers it accepts' rises from 1 to 2 while 'how hard to fool' sinks. Then fades out on 'oldest claim'.",
+   "changes": [
+    "balance tips on 'easier to fool'",
+    "fade on 'oldest claim'"
+   ],
+   "text": [
+    "answers accepted",
+    "how hard to fool"
+   ],
+   "facts": [
+    "3.3"
+   ],
+   "asset": null,
+   "start": 228.41,
+   "end": 238.53,
+   "duration": 10.12,
+   "cues": [
+    3.49,
+    6.73
+   ],
+   "words": "a lock that's happy with two answers is a lock that's easier to fool which brings us to the oldest claim about locks",
+   "change_every_s": 5.1
+  },
+  {
+   "id": "S27",
+   "beat": 4,
+   "anchor": "you've probably heard that the pin lock",
+   "tool": "motion-canvas",
+   "visual": "Act card: locator '2 · an old idea'. A big claim plaque: '4,000 YEARS OLD · ANCIENT EGYPT' with a stylised chalk pyramid. On 'repeated everywhere' copies of the plaque multiply across the frame; on 'shaky' they all wobble and a muted crack runs through.",
+   "changes": [
+    "copies multiply on 'repeated everywhere'",
+    "crack on 'it's shaky'"
+   ],
+   "text": [
+    "ACT 2 · AN OLD IDEA",
+    "'4,000 years old'"
+   ],
+   "facts": [
+    "4.1"
+   ],
+   "asset": null,
+   "start": 238.53,
+   "end": 249.55,
+   "duration": 11.02,
+   "cues": [
+    7.41,
+    9.21
+   ],
+   "words": "you've probably heard that the pin lock is four thousand years old invented in ancient egypt it's repeated everywhere and it's shaky",
+   "change_every_s": 5.5
+  },
+  {
+   "id": "S28",
+   "beat": 4,
+   "anchor": "in nineteen ninety the archaeologist",
+   "tool": "motion-canvas",
+   "visual": "Paper-trail diagram: a chalk card 'Pitt-Rivers, 1883' → arrow-free dashed path → 'misread' → 'possibly 4,000 years old'. Name card 'D. T. Potts · archaeologist (1990)' traces it back; the dashed path turns muted at 'misread'.",
+   "changes": [
+    "Potts card on 'potts'",
+    "trail draws back on 'misreading'"
+   ],
+   "text": [
+    "D. T. Potts · archaeologist, 1990",
+    "unfounded",
+    "a misreading of 1883"
+   ],
+   "facts": [
+    "4.1"
+   ],
+   "asset": null,
+   "start": 249.55,
+   "end": 258.85,
+   "duration": 9.3,
+   "cues": [
+    2.75,
+    5.93
+   ],
+   "words": "in nineteen ninety the archaeologist d t potts argued the number was unfounded a misreading of a paper from eighteen eighty three",
+   "change_every_s": 4.7
+  },
+  {
+   "id": "S29",
+   "beat": 4,
+   "anchor": "and the man who wrote that paper",
+   "tool": "motion-canvas",
+   "visual": "The 1883 card enlarges: 'Pitt-Rivers · general and archaeologist'. A chalk Egyptian door with a simple bolt appears beside it, and the pyramid plaque greys out.",
+   "changes": [
+    "name card on 'pitt-rivers'",
+    "simple bolt door on 'doubted'"
+   ],
+   "text": [
+    "A. Pitt-Rivers · general and archaeologist",
+    "doubted it"
+   ],
+   "facts": [
+    "4.1",
+    "4.2"
+   ],
+   "asset": null,
+   "start": 258.85,
+   "end": 268.61,
+   "duration": 9.76,
+   "cues": [
+    4.02,
+    5.21
+   ],
+   "words": "and the man who wrote that paper the general and archaeologist pitt rivers doubted the ancient egyptians used the pin lock at all",
+   "change_every_s": 4.9
+  },
+  {
+   "id": "S30",
+   "beat": 4,
+   "anchor": "what archaeologists have actually found",
+   "tool": "archival",
+   "visual": "Met Open Access: wooden lock from Damascus (m3), slow push-in, in a chalk frame. Caption: 'Wooden lock · The Met (public domain)'. Overlay: 'Roman-era Egypt: wooden pin-lock bolts'. (The Met item is a later wooden lock of the same family: the caption does not call it Roman.)",
+   "changes": [
+    "push-in on 'roman-era egypt'"
+   ],
+   "text": [
+    "Wooden pin-lock bolts: Roman-era Egypt",
+    "Wooden lock, Damascus · The Met (public domain)"
+   ],
+   "facts": [
+    "4.3"
+   ],
+   "asset": "m3_met_damascus_wood_lock",
+   "start": 268.61,
+   "end": 275.81,
+   "duration": 7.2,
+   "cues": [
+    4.87
+   ],
+   "words": "what archaeologists have actually found is younger wooden pin lock bolts from roman era egypt",
+   "change_every_s": 7.2
+  },
+  {
+   "id": "S31",
+   "beat": 4,
+   "anchor": "here's how they work",
+   "tool": "motion-canvas",
+   "visual": "Animated wooden pin lock in chalk (warm wood is still chalk, no orange): a bolt with holes; pegs drop into them from a fixture above; a wooden key with matching pins slides in and lifts the pegs; the bolt slides free.",
+   "changes": [
+    "pegs drop on 'pegs drop into the holes'",
+    "key lifts pegs on 'lifts the pegs'",
+    "bolt slides on 'slides free'"
+   ],
+   "text": [
+    "bolt",
+    "pegs",
+    "key"
+   ],
+   "facts": [
+    "4.4"
+   ],
+   "asset": null,
+   "start": 275.81,
+   "end": 287.13,
+   "duration": 11.32,
+   "cues": [
+    3.51,
+    7.91,
+    9.71
+   ],
+   "words": "here's how they work a wooden bolt with holes in it pegs drop into the holes and hold it shut a wooden key with matching pins lifts the pegs and the bolt slides free",
+   "change_every_s": 3.8
+  },
+  {
+   "id": "S32",
+   "beat": 4,
+   "anchor": "same principle as your front door",
+   "tool": "motion-canvas",
+   "visual": "Split screen: the wooden lock (left) and the modern cylinder section (right); in both, pins rise to the same violet line at the same moment.",
+   "changes": [
+    "both lift on 'right height'"
+   ],
+   "text": [
+    "same principle"
+   ],
+   "facts": [
+    "4.4",
+    "1.2"
+   ],
+   "asset": null,
+   "start": 287.13,
+   "end": 293.19,
+   "duration": 6.06,
+   "cues": [
+    4.41
+   ],
+   "words": "same principle as your front door lift every pin to the right height",
+   "change_every_s": 6.1
+  },
+  {
+   "id": "S33",
+   "beat": 4,
+   "anchor": "and it lasted",
+   "tool": "motion-canvas",
+   "visual": "A horizontal timeline in chalk: 'Roman-era Egypt' on the left, a long bar running right through the centuries to '20th century', labelled 'still in everyday use in Egypt and the Near East'.",
+   "changes": [
+    "bar runs on 'everyday use'"
+   ],
+   "text": [
+    "Roman era",
+    "still in use: 20th century"
+   ],
+   "facts": [
+    "4.5"
+   ],
+   "asset": null,
+   "start": 293.19,
+   "end": 301.53,
+   "duration": 8.34,
+   "cues": [
+    2.85
+   ],
+   "words": "and it lasted locks like these were still in everyday use in egypt and the near east into the twentieth century",
+   "change_every_s": 8.3
+  },
+  {
+   "id": "S34",
+   "beat": 4,
+   "anchor": "then in eighteen forty-four linus yale",
+   "tool": "archival",
+   "visual": "Portrait of Linus Yale Sr. (c7, public domain) in a chalk frame, then a dissolve to his 1844 patent drawing (p1, US 3,630) with a slow pan. Name card 'Linus Yale Sr. · bank-lock maker, Newport, New York'.",
+   "changes": [
+    "patent drawing on 'patented a lock'"
+   ],
+   "text": [
+    "Linus Yale Sr. · bank-lock maker, Newport, NY",
+    "US patent 3,630 · 1844"
+   ],
+   "facts": [
+    "4.10",
+    "4.15"
+   ],
+   "asset": "c7_yale_sr_portrait;p1_yale_sr_us3630_p1",
+   "start": 301.53,
+   "end": 311.69,
+   "duration": 10.16,
+   "cues": [
+    7.23
+   ],
+   "words": "then in eighteen forty four linus yale an american who made handmade bank locks in newport new york patented a lock with spring loaded pins",
+   "change_every_s": 10.2
+  },
+  {
+   "id": "S35",
+   "beat": 4,
+   "anchor": "his son also linus yale",
+   "tool": "archival",
+   "visual": "Portrait of Linus Yale Jr. (c6, public domain), chalk frame. A small chalk easel and brush sketch fades in beside him on 'portrait painting', then becomes a lock outline on 'family lock business'.",
+   "changes": [
+    "easel on 'portrait painting'",
+    "easel becomes lock on 'family lock business'"
+   ],
+   "text": [
+    "Linus Yale Jr. (1821-1868)"
+   ],
+   "facts": [
+    "4.8",
+    "4.14"
+   ],
+   "asset": "c6_yale_jr_portrait",
+   "start": 311.69,
+   "end": 321.11,
+   "duration": 9.42,
+   "cues": [
+    3.29,
+    7.19
+   ],
+   "words": "his son also linus yale had studied portrait painting and hoped to be a painter before he joined the family lock business",
+   "change_every_s": 4.7
+  },
+  {
+   "id": "S36",
+   "beat": 4,
+   "anchor": "in eighteen sixty-five the son patented",
+   "tool": "motion-canvas",
+   "visual": "Our chalk redraw of a patent sheet (no scan: only a thumbnail exists): header 'L. YALE Jr. · LOCK · No. 48,475 · Patented June 27, 1865', a cylinder figure drawn in patent-style hatching; then the figure morphs into our chalk cylinder section with a small flat key.",
+   "changes": [
+    "morph on 'small flat steel key'"
+   ],
+   "text": [
+    "US patent 48,475 · 1865",
+    "the cylinder you carry today"
+   ],
+   "facts": [
+    "4.12",
+    "2.11"
+   ],
+   "asset": null,
+   "start": 321.11,
+   "end": 330.51,
+   "duration": 9.4,
+   "cues": [
+    6.77
+   ],
+   "words": "in eighteen sixty five the son patented the design you carry today a compact cylinder opened by a small flat steel key",
+   "change_every_s": 9.4
+  },
+  {
+   "id": "S37",
+   "beat": 4,
+   "anchor": "and here's the twist",
+   "tool": "motion-canvas",
+   "visual": "A pull-quote card from the 1865 patent, paraphrased in our type: '…improvements relating partly to the security of locks against picking.' with 'picking' underlined in violet.",
+   "changes": [
+    "underline on 'harder to pick'"
+   ],
+   "text": [
+    "Yale's 1865 patent:",
+    "security against picking"
+   ],
+   "facts": [
+    "4.13"
+   ],
+   "asset": null,
+   "start": 330.51,
+   "end": 337.09,
+   "duration": 6.58,
+   "cues": [
+    5.03
+   ],
+   "words": "and here's the twist even that patent says one of its goals was making the lock harder to pick",
+   "change_every_s": 6.6
+  },
+  {
+   "id": "S38",
+   "beat": 4,
+   "anchor": "because by then everyone knew",
+   "tool": "motion-canvas",
+   "visual": "A chalk map pin drops on London; the timeline from S33 rewinds to '1851'.",
+   "changes": [
+    "pin drops on 'london'"
+   ],
+   "text": [
+    "London · 1851"
+   ],
+   "facts": [],
+   "asset": null,
+   "start": 337.09,
+   "end": 342.67,
+   "duration": 5.58,
+   "cues": [
+    3.43
+   ],
+   "words": "because by then everyone knew what had happened in london",
+   "change_every_s": 5.6
+  },
+  {
+   "id": "S39",
+   "beat": 5,
+   "anchor": "in the seventeen-eighties an english",
+   "tool": "archival",
+   "visual": "Bramah lock engraving (c1, public domain), chalk frame, slow pan across the slider mechanism. Name card 'Joseph Bramah · English mechanic and inventor'.",
+   "changes": [
+    "name card on 'joseph bramah'",
+    "push-in on 'couldn't be picked'"
+   ],
+   "text": [
+    "Joseph Bramah · mechanic and inventor"
+   ],
+   "facts": [
+    "5.4"
+   ],
+   "asset": "c1_bramah_otto",
+   "start": 342.67,
+   "end": 354.71,
+   "duration": 12.04,
+   "cues": [
+    3.91,
+    8.77
+   ],
+   "words": "in the seventeen eighties an english mechanic and inventor named joseph bramah went into the lock business his team built a lock that couldn't be picked by any method of the day",
+   "change_every_s": 6.0
+  },
+  {
+   "id": "S40",
+   "beat": 5,
+   "anchor": "to prove it a padlock sat",
+   "tool": "motion-canvas",
+   "visual": "The S00d shop window again, now in full: 'Piccadilly, London' sign, the padlock on its cushion, the notice card legible: '200 guineas to anyone who can make an instrument to pick this lock'.",
+   "changes": [
+    "notice legible on 'two hundred guineas'"
+   ],
+   "text": [
+    "Piccadilly, London",
+    "200 guineas"
+   ],
+   "facts": [
+    "5.1"
+   ],
+   "asset": null,
+   "start": 354.71,
+   "end": 365.5,
+   "duration": 10.79,
+   "cues": [
+    6.25
+   ],
+   "words": "to prove it a padlock sat in the window of his shop in piccadilly london with a notice two hundred guineas to anyone who could make an instrument to pick it",
+   "change_every_s": 10.8
+  },
+  {
+   "id": "S41",
+   "beat": 5,
+   "anchor": "it sat there for decades",
+   "tool": "motion-canvas",
+   "visual": "Time-lapse on the window: the light outside cycles day/night in chalk greys, calendar leaves flick past, the padlock never moves. 'Unpicked' stamps on.",
+   "changes": [
+    "'unpicked' on 'unpicked'"
+   ],
+   "text": [
+    "for decades",
+    "unpicked"
+   ],
+   "facts": [
+    "5.2"
+   ],
+   "asset": null,
+   "start": 365.5,
+   "end": 369.45,
+   "duration": 3.95,
+   "cues": [
+    1.68
+   ],
+   "words": "it sat there for decades unpicked",
+   "change_every_s": 4.0
+  },
+  {
+   "id": "S42",
+   "beat": 5,
+   "anchor": "then came eighteen fifty-one",
+   "tool": "archival",
+   "visual": "The Great Exhibition nave print (c3, Library of Congress, public domain), slow push-in down the nave. Overlay: 'The Great Exhibition · Crystal Palace, Hyde Park · 1 May to 11 October 1851 · around 6 million visits'.",
+   "changes": [
+    "dates on 'crystal palace'",
+    "visits on 'six million visits'"
+   ],
+   "text": [
+    "The Great Exhibition, 1851",
+    "≈ 6 million visits"
+   ],
+   "facts": [
+    "5.6"
+   ],
+   "asset": "c3_great_exhibition_nave_loc",
+   "start": 369.45,
+   "end": 380.43,
+   "duration": 10.98,
+   "cues": [
+    5.81,
+    8.51
+   ],
+   "words": "then came eighteen fifty one and the great exhibition a show of the world's industry in the crystal palace in hyde park with around six million visits",
+   "change_every_s": 5.5
+  },
+  {
+   "id": "S43",
+   "beat": 5,
+   "anchor": "one of them was alfred charles hobbs",
+   "tool": "motion-canvas",
+   "visual": "No verified-licence portrait exists, so a name card on slate with a chalk silhouette: 'Alfred Charles Hobbs · American locksmith · in London for Day & Newell, New York'.",
+   "changes": [
+    "name card on 'alfred charles hobbs'"
+   ],
+   "text": [
+    "Alfred Charles Hobbs",
+    "American locksmith",
+    "for Day & Newell, New York"
+   ],
+   "facts": [
+    "5.5"
+   ],
+   "asset": null,
+   "start": 380.43,
+   "end": 387.93,
+   "duration": 7.5,
+   "cues": [
+    0.81
+   ],
+   "words": "one of them was alfred charles hobbs an american locksmith there to represent a new york lock company",
+   "change_every_s": 7.5
+  },
+  {
+   "id": "S44",
+   "beat": 5,
+   "anchor": "first on the twenty-second of july",
+   "tool": "archival",
+   "visual": "Chubb lock engraving from Hobbs/Tomlinson's book (t4, public domain), chalk frame. Overlay: '22 July 1851 · strongroom door, Westminster · under half an hour · witnessed'. A chalk stopwatch ring sweeps less than a half circle.",
+   "changes": [
+    "stopwatch on 'under half an hour'"
+   ],
+   "text": [
+    "22 July 1851",
+    "Chubb lock · Westminster",
+    "under 30 minutes"
+   ],
+   "facts": [
+    "5.7"
+   ],
+   "asset": "t4_book_leaf_n69",
+   "start": 387.93,
+   "end": 398.25,
+   "duration": 10.32,
+   "cues": [
+    7.99
+   ],
+   "words": "first on the twenty second of july he opened a chubb lock on a strongroom door in westminster in front of witnesses in under half an hour",
+   "change_every_s": 10.3
+  },
+  {
+   "id": "S45",
+   "beat": 5,
+   "anchor": "chubb's locks were famous",
+   "tool": "archival",
+   "visual": "Chubb detector lock photo (c5, public domain), chalk frame. Overlay: 'Chubb detector lock · patented 1818 · shows if it has been tampered with'.",
+   "changes": [
+    "label on 'detector lock'"
+   ],
+   "text": [
+    "Chubb detector lock · 1818"
+   ],
+   "facts": [
+    "5.8"
+   ],
+   "asset": "c5_chubb_detector_photo",
+   "start": 398.25,
+   "end": 407.09,
+   "duration": 8.84,
+   "cues": [
+    1.95
+   ],
+   "words": "chubb's locks were famous their detector lock patented in eighteen eighteen was built to reveal anyone who had tampered with it",
+   "change_every_s": 8.8
+  },
+  {
+   "id": "S46",
+   "beat": 5,
+   "anchor": "then hobbs went after the bramah lock",
+   "tool": "motion-canvas",
+   "visual": "Back to the shop window padlock; the silhouette sits down at a small table beside it.",
+   "changes": [
+    "silhouette sits on 'bramah lock'"
+   ],
+   "text": [],
+   "facts": [
+    "5.9"
+   ],
+   "asset": null,
+   "start": 407.09,
+   "end": 410.43,
+   "duration": 3.34,
+   "cues": [
+    1.9
+   ],
+   "words": "then hobbs went after the bramah lock",
+   "change_every_s": 3.3
+  },
+  {
+   "id": "S47",
+   "beat": 5,
+   "anchor": "three arbitrators were appointed",
+   "tool": "motion-canvas",
+   "visual": "Three chalk chairs (judges) at a long table. Then a two-row tally: '16 days' as a row of calendar squares filling, '51 hours' as a clock ring filling in chunks.",
+   "changes": [
+    "judges on 'three arbitrators'",
+    "16 day squares on 'sixteen days'",
+    "51 hour ring on 'fifty-one hours'"
+   ],
+   "text": [
+    "3 arbitrators",
+    "16 days",
+    "51 hours"
+   ],
+   "facts": [
+    "5.10",
+    "5.9"
+   ],
+   "asset": null,
+   "start": 410.43,
+   "end": 419.15,
+   "duration": 8.72,
+   "cues": [
+    0.3,
+    4.45,
+    5.95
+   ],
+   "words": "three arbitrators were appointed to judge hobbs worked on the lock for sixteen days fifty one hours in the room with it",
+   "change_every_s": 2.9
+  },
+  {
+   "id": "S48",
+   "beat": 5,
+   "anchor": "and he opened it",
+   "tool": "motion-canvas",
+   "visual": "The padlock's shackle pops open with a crisp violet flash. 'Undamaged'. Then a purse '200 guineas' slides to the silhouette on 'awarded'.",
+   "changes": [
+    "shackle pops on 'opened it'",
+    "purse on 'awarded him'"
+   ],
+   "text": [
+    "opened · undamaged",
+    "200 guineas"
+   ],
+   "facts": [
+    "5.9",
+    "5.10"
+   ],
+   "asset": null,
+   "start": 419.15,
+   "end": 426.17,
+   "duration": 7.02,
+   "cues": [
+    0.33,
+    4.09
+   ],
+   "words": "and he opened it undamaged the arbitrators awarded him the two hundred guineas",
+   "change_every_s": 3.5
+  },
+  {
+   "id": "S49",
+   "beat": 5,
+   "anchor": "bramah's firm protested",
+   "tool": "archival",
+   "visual": "Bramah lock engraving from the Hobbs/Tomlinson book (t2, fig. 34, public domain), chalk frame. Overlay bullets appear: 'never watched him work', 'apparatus screwed to the woodwork', 'not a real door'.",
+   "changes": [
+    "bullet 1 on 'never watched him work'",
+    "bullet 2 on 'screwed to the woodwork'",
+    "bullet 3 on 'real door'"
+   ],
+   "text": [
+    "never watched him work",
+    "apparatus fixed to the woodwork",
+    "not a real door"
+   ],
+   "facts": [
+    "5.11"
+   ],
+   "asset": "t2_book_leaf_n87",
+   "start": 426.17,
+   "end": 437.55,
+   "duration": 11.38,
+   "cues": [
+    3.73,
+    6.97,
+    10.09
+   ],
+   "words": "bramah's firm protested the arbitrators had never watched him work they said and his apparatus was screwed to the woodwork which could never be done on a real door",
+   "change_every_s": 3.8
+  },
+  {
+   "id": "S50",
+   "beat": 5,
+   "anchor": "it became known as the great lock",
+   "tool": "archival",
+   "visual": "Great Exhibition machinery court print (c4, public domain), push-in. Overlay headline in chalk serif: 'THE GREAT LOCK CONTROVERSY'; then a newspaper-column card: 'no feature of the Exhibition drew more attention'.",
+   "changes": [
+    "headline on 'great lock controversy'",
+    "column card on 'drew more attention'"
+   ],
+   "text": [
+    "THE GREAT LOCK CONTROVERSY"
+   ],
+   "facts": [
+    "5.13"
+   ],
+   "asset": "c4_great_exhibition_machinery",
+   "start": 437.55,
+   "end": 446.87,
+   "duration": 9.32,
+   "cues": [
+    2.01,
+    6.47
+   ],
+   "words": "it became known as the great lock controversy one newspaper said nothing at the exhibition drew more attention",
+   "change_every_s": 4.7
+  },
+  {
+   "id": "S51",
+   "beat": 5,
+   "anchor": "english locks famous for being inviolable",
+   "tool": "motion-canvas",
+   "visual": "Two flags drawn as plain chalk outlines (no colours): a crown icon card 'inviolable' cracks; a star card 'opened'.",
+   "changes": [
+    "crack on 'opened by an american'"
+   ],
+   "text": [
+    "'inviolable'",
+    "opened"
+   ],
+   "facts": [
+    "8.2"
+   ],
+   "asset": null,
+   "start": 446.87,
+   "end": 452.67,
+   "duration": 5.8,
+   "cues": [
+    3.15
+   ],
+   "words": "english locks famous for being inviolable had been opened by an american",
+   "change_every_s": 5.8
+  },
+  {
+   "id": "S52",
+   "beat": 5,
+   "anchor": "neither of those locks was a pin lock",
+   "tool": "motion-canvas",
+   "visual": "Three mini diagrams side by side: Bramah (sliders), Chubb (levers), pin tumbler (pins). The first two go muted with 'not a pin lock'; the pin tumbler stays chalk with violet pins.",
+   "changes": [
+    "Bramah sliders on 'used sliders'",
+    "Chubb levers on 'used levers'"
+   ],
+   "text": [
+    "Bramah: sliders",
+    "Chubb: levers",
+    "your door: pins"
+   ],
+   "facts": [
+    "5.3",
+    "5.8"
+   ],
+   "asset": null,
+   "start": 452.67,
+   "end": 459.67,
+   "duration": 7.0,
+   "cues": [
+    3.53,
+    5.27
+   ],
+   "words": "neither of those locks was a pin lock by the way bramah's used sliders and chubb's used levers",
+   "change_every_s": 3.5
+  },
+  {
+   "id": "S53",
+   "beat": 5,
+   "anchor": "but the lesson stuck",
+   "tool": "motion-canvas",
+   "visual": "A stamp 'UNPICKABLE' slams onto lock after lock along a conveyor of chalk locks; each stamp then cracks in turn.",
+   "changes": [
+    "stamps on 'promised an unpickable lock'",
+    "cracks on 'found a way in'"
+   ],
+   "text": [
+    "UNPICKABLE"
+   ],
+   "facts": [
+    "8.2",
+    "5.14",
+    "8.1"
+   ],
+   "asset": null,
+   "start": 459.67,
+   "end": 471.95,
+   "duration": 12.28,
+   "cues": [
+    4.85,
+    10.25
+   ],
+   "words": "but the lesson stuck to every lock that came after makers have promised an unpickable lock again and again since and again and again someone has found a way in",
+   "change_every_s": 6.1
+  },
+  {
+   "id": "S54",
+   "beat": 5,
+   "anchor": "the only real question is",
+   "tool": "motion-canvas",
+   "visual": "One lock, centred, with a big chalk stopwatch ring around it, ticking. Text: 'how long?'",
+   "changes": [
+    "ring ticks on 'how long'"
+   ],
+   "text": [
+    "how long?"
+   ],
+   "facts": [
+    "8.1"
+   ],
+   "asset": null,
+   "start": 471.95,
+   "end": 476.71,
+   "duration": 4.76,
+   "cues": [
+    2.05
+   ],
+   "words": "the only real question is how long does it take",
+   "change_every_s": 4.8
+  },
+  {
+   "id": "S55",
+   "beat": 6,
+   "anchor": "so what is it about the pin lock",
+   "tool": "motion-canvas",
+   "visual": "Act card: locator '3 · the bargain'. The cylinder section returns, centred.",
+   "changes": [
+    "section returns on 'pin lock'"
+   ],
+   "text": [
+    "ACT 3 · THE BARGAIN"
+   ],
+   "facts": [],
+   "asset": null,
+   "start": 476.71,
+   "end": 480.51,
+   "duration": 3.8,
+   "cues": [
+    1.43
+   ],
+   "words": "so what is it about the pin lock specifically",
+   "change_every_s": 3.8
+  },
+  {
+   "id": "S56",
+   "beat": 6,
+   "anchor": "it isn't a secret trick",
+   "tool": "motion-canvas",
+   "visual": "A chalk calliper/ruler measures the row of holes; a magnifier sweeps across and shows tiny offsets (exaggerated) between hole centres: '± a hair'.",
+   "changes": [
+    "magnifier on 'manufacturing detail'"
+   ],
+   "text": [
+    "a manufacturing detail"
+   ],
+   "facts": [
+    "6.1"
+   ],
+   "asset": null,
+   "start": 480.51,
+   "end": 485.09,
+   "duration": 4.58,
+   "cues": [
+    2.21
+   ],
+   "words": "it isn't a secret trick it's a manufacturing detail",
+   "change_every_s": 4.6
+  },
+  {
+   "id": "S57",
+   "beat": 6,
+   "anchor": "no real lock is machined perfectly",
+   "tool": "blender",
+   "mode": "tolerance",
+   "visual": "HERO L1 tolerance (3D top-view schematic): the holes deliberately off a perfect line; the plug slides under a gentle force; one pin catches first and turns violet, the others stay muted. 2D overlay: dashed 'perfect line' vs the real hole centres; label 'not all at the same instant'. No tools, no hands.",
+   "changes": [
+    "dashed perfect line on 'machined perfectly'",
+    "'not at once' on 'same instant'",
+    "'the weakness' on 'weakness picking exploits'"
+   ],
+   "text": [
+    "perfect line",
+    "real holes",
+    "never all at once"
+   ],
+   "facts": [
+    "6.1",
+    "6.2"
+   ],
+   "asset": null,
+   "start": 485.09,
+   "end": 498.43,
+   "duration": 13.34,
+   "cues": [
+    1.45,
+    7.09,
+    11.15
+   ],
+   "words": "no real lock is machined perfectly so the pins never all line up at exactly the same instant that tiny imperfection is the weakness picking exploits",
+   "change_every_s": 4.4
+  },
+  {
+   "id": "S58",
+   "beat": 6,
+   "anchor": "that's the flaw in principle",
+   "tool": "motion-canvas",
+   "visual": "The tolerance diagram freezes and a chalk curtain/shutter slides down over it: 'that's as far as we go'. Then a 'skill' meter and a 'well-made lock' meter: the second pushes the first down.",
+   "changes": [
+    "shutter on 'as far as we'll go'",
+    "meters on 'well-made lock'"
+   ],
+   "text": [
+    "concept only",
+    "skill",
+    "well-made lock"
+   ],
+   "facts": [
+    "6.3"
+   ],
+   "asset": null,
+   "start": 498.43,
+   "end": 510.03,
+   "duration": 11.6,
+   "cues": [
+    2.91,
+    9.05
+   ],
+   "words": "that's the flaw in principle and that's as far as we'll go with it it still takes real skill and it's much harder against a well made lock",
+   "change_every_s": 5.8
+  },
+  {
+   "id": "S59",
+   "beat": 7,
+   "anchor": "so lock makers fight back",
+   "tool": "blender",
+   "mode": "spool",
+   "visual": "HERO L1 spool (3D): a spool-shaped driver pin in one stack; the plug turns a little, the spool catches and rocks the plug back. 2D overlay: 'spool pin', a small chalk spool icon and a mushroom icon.",
+   "changes": [
+    "'spool pin' on 'shaped like spools'",
+    "mushroom icon on 'mushrooms'"
+   ],
+   "text": [
+    "security pins",
+    "spool",
+    "mushroom"
+   ],
+   "facts": [
+    "7.1"
+   ],
+   "asset": null,
+   "start": 510.03,
+   "end": 520.77,
+   "duration": 10.74,
+   "cues": [
+    4.39,
+    5.73
+   ],
+   "words": "so lock makers fight back some driver pins are shaped like spools or mushrooms narrower in the middle designed to resist picking",
+   "change_every_s": 5.4
+  },
+  {
+   "id": "S60",
+   "beat": 7,
+   "anchor": "others add more pins and more depths",
+   "tool": "motion-canvas",
+   "visual": "A quick 4-up grid, one icon per answer, each appearing on its words: more pins (six stacks), complicated keyway (a twisted slot profile), side bar (a bar along the plug that drops in when every pin turns), lock-up feature (a small block that jams).",
+   "changes": [
+    "more pins on 'more pins'",
+    "keyway on 'complicated keyways'",
+    "side bar on 'side bar'",
+    "jam on 'jam the lock'"
+   ],
+   "text": [
+    "more pins",
+    "complex keyway",
+    "side bar",
+    "lock-up"
+   ],
+   "facts": [
+    "7.2"
+   ],
+   "asset": null,
+   "start": 520.77,
+   "end": 532.49,
+   "duration": 11.72,
+   "cues": [
+    0.57,
+    2.67,
+    4.43,
+    8.87
+   ],
+   "words": "others add more pins and more depths complicated keyways a side bar that makes each pin turn as well as rise or features that jam the lock if someone tries",
+   "change_every_s": 2.9
+  },
+  {
+   "id": "S61",
+   "beat": 7,
+   "anchor": "in the us lock hardware is graded",
+   "tool": "motion-canvas",
+   "visual": "Three grade badges '1', '2', '3' (generic, no logos). A cycle counter spins under them: 'durability = cycles'. Then a separate badge 'pick resistance · own standard (UL 437)'.",
+   "changes": [
+    "cycle counter on 'how many times'",
+    "separate badge on 'rated separately'"
+   ],
+   "text": [
+    "Grade 1 · 2 · 3",
+    "mostly durability",
+    "pick resistance: rated separately (UL 437)"
+   ],
+   "facts": [
+    "7.3",
+    "7.4"
+   ],
+   "asset": null,
+   "start": 532.49,
+   "end": 547.95,
+   "duration": 15.46,
+   "cues": [
+    7.29,
+    11.55
+   ],
+   "words": "in the us lock hardware is graded grade one the best but those grades are mostly about durability how many times it can be used pick resistance is rated separately under its own standard",
+   "change_every_s": 7.7
+  },
+  {
+   "id": "S62",
+   "beat": 7,
+   "anchor": "but here's the twist",
+   "tool": "motion-canvas",
+   "visual": "Everything clears. A chalk front door, head-on, its lock highlighted violet. On 'don't bother' the lock highlight dims and the door frame itself gets highlighted instead.",
+   "changes": [
+    "highlight moves to the frame on 'don't bother'"
+   ],
+   "text": [],
+   "facts": [
+    "7.6",
+    "7.7"
+   ],
+   "asset": null,
+   "start": 547.95,
+   "end": 554.29,
+   "duration": 6.34,
+   "cues": [
+    3.41
+   ],
+   "words": "but here's the twist most burglars don't bother with any of this",
+   "change_every_s": 6.3
+  },
+  {
+   "id": "S63",
+   "beat": 7,
+   "anchor": "in the us in twenty nineteen",
+   "tool": "motion-canvas",
+   "visual": "Stacked bar, 100 %: forcible entry 55.7 % (chalk), unlawful entry without force 37.8 % (muted), attempted forcible entry 6.5 % (grid). Source line: 'FBI, US, 2019 (reported burglaries)'.",
+   "changes": [
+    "bar fills on 'forcible entry'"
+   ],
+   "text": [
+    "forcible entry 55.7 %",
+    "no force 37.8 %",
+    "attempted 6.5 %",
+    "FBI · US · 2019"
+   ],
+   "facts": [
+    "7.6"
+   ],
+   "asset": null,
+   "start": 554.29,
+   "end": 563.43,
+   "duration": 9.14,
+   "cues": [
+    7.37
+   ],
+   "words": "in the us in twenty nineteen fbi figures show that more than half of reported burglaries involved forcible entry",
+   "change_every_s": 9.1
+  },
+  {
+   "id": "S64",
+   "beat": 7,
+   "anchor": "and in us victim surveys",
+   "tool": "motion-canvas",
+   "visual": "The door again: on 'damaging or removing the door' the door outline cracks along the hinge side and lifts out of its frame (muted). Source: 'BJS victim survey, US, 2003-2007'.",
+   "changes": [
+    "door lifts out on 'removing the door'"
+   ],
+   "text": [
+    "most common way in: the door itself",
+    "BJS · US · 2003-2007"
+   ],
+   "facts": [
+    "7.7"
+   ],
+   "asset": null,
+   "start": 563.43,
+   "end": 573.99,
+   "duration": 10.56,
+   "cues": [
+    6.71
+   ],
+   "words": "and in us victim surveys from two thousand and three to two thousand and seven damaging or removing the door was the most common way in",
+   "change_every_s": 10.6
+  },
+  {
+   "id": "S65",
+   "beat": 7,
+   "anchor": "when nobody was home and no force",
+   "tool": "motion-canvas",
+   "visual": "Ten chalk house icons; four light up with an open door and window: '4 in 10 · unlocked'. Footnote: 'unlawful entries to unoccupied homes, BJS, US, 2003-2007'.",
+   "changes": [
+    "four houses on 'four in ten'"
+   ],
+   "text": [
+    "4 in 10",
+    "through something unlocked"
+   ],
+   "facts": [
+    "7.7"
+   ],
+   "asset": null,
+   "start": 573.99,
+   "end": 582.21,
+   "duration": 8.22,
+   "cues": [
+    3.29
+   ],
+   "words": "when nobody was home and no force was used four in ten got in through a door or window that wasn't even locked",
+   "change_every_s": 8.2
+  },
+  {
+   "id": "S66",
+   "beat": 7,
+   "anchor": "the lock on your door doesn't make",
+   "tool": "motion-canvas",
+   "visual": "A three-way slider triangle: 'cost', 'convenience', 'security' with a violet dot settling in the middle; a stopwatch icon 'time' grows from the security corner.",
+   "changes": [
+    "stopwatch on 'buys time'",
+    "dot settles on 'bargain'"
+   ],
+   "text": [
+    "it buys time",
+    "cost · convenience · security"
+   ],
+   "facts": [
+    "8.1"
+   ],
+   "asset": null,
+   "start": 582.21,
+   "end": 592.77,
+   "duration": 10.56,
+   "cues": [
+    4.39,
+    5.87
+   ],
+   "words": "the lock on your door doesn't make you untouchable it buys time it's a bargain between cost convenience and security",
+   "change_every_s": 5.3
+  },
+  {
+   "id": "S67",
+   "beat": 8,
+   "anchor": "so look at your key one more time",
+   "tool": "motion-canvas",
+   "visual": "The chalk key from S00a returns, large, same angle. Its outline dissolves leaving the five violet points; the points drop into five gauges and land on a violet line.",
+   "changes": [
+    "outline dissolves on 'never reads it'",
+    "points land on 'gap on a line'"
+   ],
+   "text": [
+    "5 heights · 1 line"
+   ],
+   "facts": [
+    "1.2"
+   ],
+   "asset": null,
+   "start": 592.77,
+   "end": 601.37,
+   "duration": 8.6,
+   "cues": [
+    3.81,
+    6.75
+   ],
+   "words": "so look at your key one more time the lock never reads it it checks five heights and a gap on a line",
+   "change_every_s": 4.3
+  },
+  {
+   "id": "S68",
+   "beat": 8,
+   "anchor": "it's an old trick made small",
+   "tool": "motion-canvas",
+   "visual": "The wooden lock shrinks and morphs into the modern cylinder, which shrinks into a key-sized silhouette in a pocket outline.",
+   "changes": [
+    "morph on 'small enough for your pocket'"
+   ],
+   "text": [],
+   "facts": [
+    "4.4",
+    "2.11"
+   ],
+   "asset": null,
+   "start": 601.37,
+   "end": 605.33,
+   "duration": 3.96,
+   "cues": [
+    1.59
+   ],
+   "words": "it's an old trick made small enough for your pocket",
+   "change_every_s": 4.0
+  },
+  {
+   "id": "S69",
+   "beat": 8,
+   "anchor": "and it was never meant to be perfect",
+   "tool": "blender",
+   "mode": "hook",
+   "visual": "HERO L1 hook, final shot: the key turns, the plug turns, hold on the lit shear line. 2D overlay on 'designed otherwise': the channel wordmark lockup, then end-screen space.",
+   "changes": [
+    "wordmark on 'designed otherwise'"
+   ],
+   "text": [
+    "Designed Otherwise"
+   ],
+   "facts": [
+    "8.1"
+   ],
+   "asset": null,
+   "start": 605.33,
+   "end": 618.4,
+   "duration": 13.07,
+   "cues": [
+    6.73
+   ],
+   "words": "and it was never meant to be perfect just good enough for long enough it was designed otherwise next time on designed otherwise",
+   "change_every_s": 13.1
+  }
+ ]
+}
