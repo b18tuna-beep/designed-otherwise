@@ -30,3 +30,4 @@ Fetch results into the workspace: `git clone -b previews` of the studio, or `gh 
 - `composite_heroes.py` and `assemble.py` are P1-specific (hero ids, music plan). Generalise them per episode before P2.
 
 - 2026-11-25 (P4 QA): `encode_chunk.py` used the concat demuxer with per-file durations, which repeated each chunk's first frame and put the whole episode one frame late (a stale overlay frame showed at every hero end). Fixed to an image2 frame sequence; chunk RANGE starts half a frame early. P2 and P3 shipped with the 1-frame (33 ms) delay: not worth re-uploading.
+- 2026-11-25 (P5 narrate): previews push failed 6 times with "fetch first". The actions/checkout Authorization extraheader overrode the studio token, so the previews branch looked absent and each attempt pushed a new orphan. `publish_preview.sh` now clears the extraheader on every git call (`g()`); the release upload was unaffected.
