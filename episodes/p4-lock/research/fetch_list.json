@@ -1,0 +1,142 @@
+[
+ {
+  "kind": "page",
+  "url": "https://patents.google.com/patent/US3630",
+  "pick": "US3630-drawings-page-1",
+  "name": "p1_yale_sr_us3630_p1"
+ },
+ {
+  "kind": "page",
+  "url": "https://patents.google.com/patent/US3630",
+  "pick": "US3630-drawings-page-2",
+  "name": "p2_yale_sr_us3630_p2"
+ },
+ {
+  "kind": "page",
+  "url": "https://patents.google.com/patent/US31278",
+  "pick": "US31278-drawings-page-1",
+  "name": "p3_yale_jr_us31278_p1"
+ },
+ {
+  "kind": "page",
+  "url": "https://patents.google.com/patent/US31278",
+  "pick": "US31278-drawings-page-2",
+  "name": "p4_yale_jr_us31278_p2"
+ },
+ {
+  "kind": "page",
+  "url": "https://patents.google.com/patent/US48475",
+  "pick": "US48475-drawings-page-1",
+  "name": "p5_yale_jr_us48475_p1"
+ },
+ {
+  "kind": "page",
+  "url": "https://patents.google.com/patent/US48475",
+  "pick": "US48475-drawings-page-2",
+  "name": "p6_yale_jr_us48475_p2"
+ },
+ {
+  "kind": "page",
+  "url": "https://patents.google.com/patent/US48475",
+  "pick": "US48475-drawings-page-3",
+  "name": "p7_yale_jr_us48475_p3"
+ },
+ {
+  "kind": "file",
+  "url": "https://archive.org/download/rudimentarytreat00hobb/page/n89_w1400.jpg",
+  "license": "Wood-engraved figure in a book first published 1853 (this edition's preface dated April 1868): public domain by date (pre-1929). archive.org item rudimentarytreat00hobb.",
+  "credit": "A. C. Hobbs / C. Tomlinson, Construction of Locks (Weale), Internet Archive",
+  "name": "t1_book_leaf_n89"
+ },
+ {
+  "kind": "file",
+  "url": "https://archive.org/download/rudimentarytreat00hobb/page/n87_w1400.jpg",
+  "license": "Wood-engraved figure in a book first published 1853 (this edition's preface dated April 1868): public domain by date (pre-1929). archive.org item rudimentarytreat00hobb.",
+  "credit": "A. C. Hobbs / C. Tomlinson, Construction of Locks (Weale), Internet Archive",
+  "name": "t2_book_leaf_n87"
+ },
+ {
+  "kind": "file",
+  "url": "https://archive.org/download/rudimentarytreat00hobb/page/n94_w1400.jpg",
+  "license": "Wood-engraved figure in a book first published 1853 (this edition's preface dated April 1868): public domain by date (pre-1929). archive.org item rudimentarytreat00hobb.",
+  "credit": "A. C. Hobbs / C. Tomlinson, Construction of Locks (Weale), Internet Archive",
+  "name": "t3_book_leaf_n94"
+ },
+ {
+  "kind": "file",
+  "url": "https://archive.org/download/rudimentarytreat00hobb/page/n69_w1400.jpg",
+  "license": "Wood-engraved figure in a book first published 1853 (this edition's preface dated April 1868): public domain by date (pre-1929). archive.org item rudimentarytreat00hobb.",
+  "credit": "A. C. Hobbs / C. Tomlinson, Construction of Locks (Weale), Internet Archive",
+  "name": "t4_book_leaf_n69"
+ },
+ {
+  "kind": "file",
+  "url": "https://archive.org/download/rudimentarytreat00hobb/page/n102_w1400.jpg",
+  "license": "Wood-engraved figure in a book first published 1853 (this edition's preface dated April 1868): public domain by date (pre-1929). archive.org item rudimentarytreat00hobb.",
+  "credit": "A. C. Hobbs / C. Tomlinson, Construction of Locks (Weale), Internet Archive",
+  "name": "t5_book_leaf_n102"
+ },
+ {
+  "kind": "file",
+  "url": "https://archive.org/download/rudimentarytreat00hobb/page/n113_w1400.jpg",
+  "license": "Wood-engraved figure in a book first published 1853 (this edition's preface dated April 1868): public domain by date (pre-1929). archive.org item rudimentarytreat00hobb.",
+  "credit": "A. C. Hobbs / C. Tomlinson, Construction of Locks (Weale), Internet Archive",
+  "name": "t6_book_leaf_n113"
+ },
+ {
+  "kind": "commons",
+  "title": "File:Bramah lock, Otto's Encyclopedia.jpg",
+  "name": "c1_bramah_otto"
+ },
+ {
+  "kind": "commons",
+  "title": "File:Miscellany - Mr. Bramah's patent lock ; Mr. Rowntree's patent lock - (...) del. ; Lowry scul. LCCN2006691762.jpg",
+  "name": "c2_bramah_rees_1814"
+ },
+ {
+  "kind": "commons",
+  "title": "File:The great industrial exhibition of 1851. Plate 3. The British nave LCCN2003665158.jpg",
+  "name": "c3_great_exhibition_nave_loc"
+ },
+ {
+  "kind": "commons",
+  "title": "File:Moving Machinery - Dickinson's comprehensive pictures of the Great Exhibition (1854) vol 2, plate XXI - Royal Coll.jpg",
+  "name": "c4_great_exhibition_machinery"
+ },
+ {
+  "kind": "commons",
+  "title": "File:Chubb detector.jpg",
+  "name": "c5_chubb_detector_photo"
+ },
+ {
+  "kind": "commons",
+  "title": "File:Linus Yale Jr., portrait.jpg",
+  "name": "c6_yale_jr_portrait"
+ },
+ {
+  "kind": "commons",
+  "title": "File:Linus Yale Sr., father of Linus Yale Jr., founders of the Yale Lock Company.png",
+  "name": "c7_yale_sr_portrait"
+ },
+ {
+  "kind": "file",
+  "url": "https://images.metmuseum.org/CRDImages/eg/original/LC-28_3_136_EGDP034803.jpg",
+  "license": "The Met Open Access, public domain (API isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Open Access",
+  "name": "m1_met_door_bolt_28_3_136"
+ },
+ {
+  "kind": "file",
+  "url": "https://images.metmuseum.org/CRDImages/eg/original/LC-28_3_134_EGDP037775.jpg",
+  "license": "The Met Open Access, public domain (API isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Open Access",
+  "name": "m2_met_door_bolt_28_3_134"
+ },
+ {
+  "kind": "file",
+  "url": "https://images.metmuseum.org/CRDImages/is/original/sf10-100-170b.jpg",
+  "license": "The Met Open Access, public domain (API isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Open Access",
+  "name": "m3_met_damascus_wood_lock"
+ }
+]

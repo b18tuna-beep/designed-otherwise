@@ -1,0 +1,2114 @@
+[
+ {
+  "id": "1.1",
+  "beat": 1,
+  "claim": "Mechanical locks guard the vast majority of homes and businesses, and the pin tumbler is the most common cylinder design in US door locks.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "In the United States and elsewhere, mechanical locks are the most common mechanisms for access control on doors and security containers. They are found in (and guard the entrances to) the vast majority of residences, commercial businesses, educational institutions, and government facilities",
+    "locator": "Section 1 Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "This is the most common cylinder tumbler used in U.S. door locks.",
+    "locator": "Section 5.1.2.1 Pin Tumbler Cylinder",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported_with_date_caveat",
+  "notes": "NIST says 'most common' in 1981 for US door locks; Blaze (2003) does not rank pin tumbler specifically. Safe: 'the pin tumbler is the design inside most American door locks' only with 'as of the 1980s and still the standard'. Do not give a percent. Not 'smart locks' era data."
+ },
+ {
+  "id": "1.2",
+  "beat": 1,
+  "claim": "A pin tumbler lock never reads the key's outline. It only asks whether each pin stack is lifted to the right height; the 'secret' is the set of cut depths (the bitting).",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "The height (or cut depth) of a key under each pin stack position is called its bitting; the bitting of a key is the “secret” needed to open a lock.",
+    "locator": "Section 2.2",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT Guide to Lockpicking (Ted the Tool, 1991), archive.org copy",
+    "publisher": "Theodore T. Tool (MIT hobbyist guide; used for concept only)",
+    "url": "https://archive.org/download/FugitiveDistro_MIT_Guide_To_Lockpicking_Anonymous/MIT%20Guide%20To%20Lockpicking_READ_EN_48.pdf",
+    "type": "book",
+    "quote": "The proper key lifts each pin pair until the gap between the key pin and the driver pin reaches the sheer line. When all the pins are in this position, the plug can rotate and the lock can be opened.",
+    "locator": "Ch. II How a Key Opens a Lock",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Wording trap: the keyway profile is a separate, cruder check (see 2.6), so say 'never checks the key's shape beyond whether it fits the slot and lifts the pins'. 'Reads' is a metaphor."
+ },
+ {
+  "id": "1.3",
+  "beat": 1,
+  "claim": "A key cut wrong at even one position will not open the lock.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "A key that is bitted to the wrong depth in even one pin position will not allow the lock to operate.",
+    "locator": "Section 2.2",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT Guide to Lockpicking (Ted the Tool, 1991), archive.org copy",
+    "publisher": "Theodore T. Tool (MIT hobbyist guide; used for concept only)",
+    "url": "https://archive.org/download/FugitiveDistro_MIT_Guide_To_Lockpicking_Anonymous/MIT%20Guide%20To%20Lockpicking_READ_EN_48.pdf",
+    "type": "book",
+    "quote": "An incorrect key will leave some of the pins protruding between the hull and the plug, and these pins will prevent the plug from rotating.",
+    "locator": "Ch. II",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": ""
+ },
+ {
+  "id": "1.4",
+  "beat": 1,
+  "claim": "Master key systems, where one extra key opens many locks that each also have their own key, are standard industry practice and are used mainly with pin and disk tumbler locks.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "MASTER KEY SYSTEM - A method of keying locks which allows a single key to operate multiple locks, each of which will also operate with an individual change key. ... Master key systems are used primarily with pin and disk tumbler locks",
+    "locator": "Glossary",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Systems tested were both relatively new and relatively old, had been both factory-keyed as well as privately rekeyed, and included locks manufactured by Arrow (SFIC), Best (SFIC), Corbin Russwin, Schlage, and Yale.",
+    "locator": "Section on field tests (real master-keyed installations, educational and commercial)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Blaze tested 'real master-keyed installations, including both educational and commercial environments'. No source gives how many buildings are master keyed: do not give a share."
+ },
+ {
+  "id": "2.1",
+  "beat": 2,
+  "claim": "The plug is the rotating part that works the lock; it sits in a shell (housing) fixed to the door. Turning the plug operates the bolt.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "The basic design consists of a rotatable cylinder tube, called a plug, that operates the underlying locking mechanism. Around the circumference of the plug is a shell, which is fixed to the door or container.",
+    "locator": "Section 2.2",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "SHELL - A lock cylinder, exclusive of the core. Also called HOUSING or BODY. ... enables the core to be turned and a linkage to operate the lock bolt.",
+    "locator": "Glossary; Section 5.1.2.1",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "NIST calls the plug the 'core'; MIT calls the shell the 'hull'. Use plug and shell (housing)."
+ },
+ {
+  "id": "2.2",
+  "beat": 2,
+  "claim": "Each pin stack is a key pin (bottom) and a driver pin (top) with a spring above, pushed down toward the keyway. Unless the joint between the two pins lines up with the edge between plug and shell, the plug cannot turn.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "Each set of pins is made up of two pins, one on top of the other, which are forced down into the keyway in the cylinder core by the spring. These pins prevent the core from turning within the body unless the joint between the top (driver) and bottom (key) pins lines up exactly with the 'shear line' joint between the core and the body.",
+    "locator": "Section 5.1.2.1",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "In the locked state the plug is prevented from rotating by a set of movable pin stacks, typically under spring pressure, that protrude from holes in the top of the opening in the shell into corresponding holes drilled into the top of the plug.",
+    "locator": "Section 2.2",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": ""
+ },
+ {
+  "id": "2.3",
+  "beat": 2,
+  "claim": "The shear line is the border between the plug and the shell. All the pin joints must sit on it at once.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "The plug/shell border is called the shear line. ... to rotate, all pin stacks must have a cut at the shear line.",
+    "locator": "Section 2.2",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "SHEAR LINE - The meeting surface between the shell and the core of a lock cylinder, the line at which the pins or discs of a lock cylinder must be aligned in order to permit rotation of the core.",
+    "locator": "Glossary",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": ""
+ },
+ {
+  "id": "2.4",
+  "beat": 2,
+  "claim": "A stack lifted too little or too far blocks the plug just as a missing lift does.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "The plug will be blocked from rotating if any pin stack is lifted either not far enough (with the cut still in the plug below the shear line) or too far (with the cut pushed above the shear line and into the shell)",
+    "locator": "Section 2.2",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT Guide to Lockpicking (Ted the Tool, 1991), archive.org copy",
+    "publisher": "Theodore T. Tool (MIT hobbyist guide; used for concept only)",
+    "url": "https://archive.org/download/FugitiveDistro_MIT_Guide_To_Lockpicking_Anonymous/MIT%20Guide%20To%20Lockpicking_READ_EN_48.pdf",
+    "type": "book",
+    "quote": "An incorrect key will leave some of the pins protruding between the hull and the plug",
+    "locator": "Ch. II",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": ""
+ },
+ {
+  "id": "2.5",
+  "beat": 2,
+  "claim": "With no key in, the springs push each driver pin across the shear line into the plug, which locks it.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "...forced down into the keyway in the cylinder core by the spring. These pins prevent the core from turning within the body unless the joint ... lines up exactly with the 'shear line'",
+    "locator": "Section 5.1.2.1",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT Guide to Lockpicking (Ted the Tool, 1991), archive.org copy",
+    "publisher": "Theodore T. Tool (MIT hobbyist guide; used for concept only)",
+    "url": "https://archive.org/download/FugitiveDistro_MIT_Guide_To_Lockpicking_Anonymous/MIT%20Guide%20To%20Lockpicking_READ_EN_48.pdf",
+    "type": "book",
+    "quote": "The key is inserted into the keyway of the plug. ... An incorrect key will leave some of the pins protruding between the hull and the plug, and these pins will prevent the plug from rotating.",
+    "locator": "Ch. II",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Animation-level explanation; neither source phrases it as 'driver straddles the line' verbatim, but both describe the same state. Fine for narration."
+ },
+ {
+  "id": "2.6",
+  "beat": 2,
+  "claim": "The keyway shape is a separate, cruder check: ridges (wards) in the slot decide which keys fit at all. A twisted or complex keyway only restricts which blanks go in.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "MIT Guide to Lockpicking (Ted the Tool, 1991), archive.org copy",
+    "publisher": "Theodore T. Tool (MIT hobbyist guide; used for concept only)",
+    "url": "https://archive.org/download/FugitiveDistro_MIT_Guide_To_Lockpicking_Anonymous/MIT%20Guide%20To%20Lockpicking_READ_EN_48.pdf",
+    "type": "book",
+    "quote": "The protrusions on the side of the keyway are called wards. Wards restrict the set of keys that can be inserted into the plug.",
+    "locator": "Ch. II",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "...making picking more difficult than a flat or simple cross section keyway.",
+    "locator": "Section 5.1.1 (warded keyway / paracentric keyway)",
+    "quote_kind": "paraphrase of surrounding passage",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "NIST wording is from a garbled two-column extraction. Narration should only say keyway profile limits which keys fit; the pins do the actual check."
+ },
+ {
+  "id": "2.7",
+  "beat": 2,
+  "claim": "Typical household cylinders have about five pin stacks (NIST, US door locks), and Blaze gives a range of four to seven.",
+  "numbers": [
+   {
+    "value": "5",
+    "unit": "pins",
+    "context": "NIST usual case"
+   },
+   {
+    "value": "4-7",
+    "unit": "pins",
+    "context": "Blaze typical range"
+   }
+  ],
+  "sources": [
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "It usually consists of five spring-loaded sets of pins less than 1/8\" in diameter",
+    "locator": "Section 5.1.2.1",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Typically, the number of pins is in the range of four to seven, and the number of possible depths ranges from four to ten, depending on the lock model.",
+    "locator": "Section 2.2",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "The brief's 'five or six' is NOT directly sourced. Safe line: 'usually five' or 'about five or six' only if a script editor accepts 'four to seven'. Pins 'less than 1/8 inch' diameter is NIST only."
+ },
+ {
+  "id": "2.8",
+  "beat": 2,
+  "claim": "Lock makers pick from a small number of standard cut depths at each position: between four and ten depending on the model.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Generally, a lock manufacturer will choose from among only a small number of standard bitting depths at each pin position. ... the number of possible depths ranges from four to ten, depending on the lock model. Better quality locks generally employ more pins and use more distinct cut depths on each.",
+    "locator": "Section 2.2",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "single_source",
+  "notes": "Only Blaze found. No independent source for depth counts (manufacturer key specs were behind forum or shop pages, not usable). Say 'a handful of depths'. Do not narrate 'ten depths'."
+ },
+ {
+  "id": "2.9",
+  "beat": 2,
+  "claim": "A typical commercial lock has anywhere from several thousand to several million possible distinct keys. Standards for key-related security ask for at least 100 to 100,000 distinct 'differs' depending on grade.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "On typical commercial locks, there are between several thousand and several million possible distinct keys.",
+    "locator": "Section 2.1",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "EN 1303 (grading table; read via WebFetch extraction)",
+    "publisher": "Union (ASSA ABLOY group) UK",
+    "url": "https://www.uniononline.co.uk/uk/en/help-support/standards-and-legislation/en-1303",
+    "type": "company",
+    "quote": "Minimum number of effective differs: 100, 300, 15000, 30000, 30000 and 100000 (EN 1303 key-related security grades 1 to 6)",
+    "locator": "EN 1303 table (as extracted)",
+    "quote_kind": "paraphrase of table",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported_range_only",
+  "notes": "Do NOT compute 'depths^pins' on screen as a fact for a named lock: no sourced pin/depth pair for a specific product. If the animation shows 5 pins x 10 depths = 100,000, label it 'a simple example' (our arithmetic, not a sourced product spec). Real keys have extra rules (adjacent-cut limits), so the true count is lower."
+ },
+ {
+  "id": "2.10",
+  "beat": 2,
+  "claim": "Not every combination of cuts is a legal key: many lock models forbid a very high cut right next to a very low one.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "in some lock designs, not all of the possible keys are “legal”. In particular, with some lock models it is not possible on a standard key to have a very high cut immediately adjacent to a very low cut",
+    "locator": "Section 3 (footnote text on MACS)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "single_source",
+  "notes": "Optional nuance for 'why the key-count is lower than the maths')."
+ },
+ {
+  "id": "2.11",
+  "beat": 2,
+  "claim": "The Yale pin tumbler cylinder was far more compact than earlier locks and opened with a small flat key.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "Being much more compact than any previous lock, the Pin Tumbler proved to be the start of miniaturization in industry for many products.",
+    "locator": "Section 5.1.2.1",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Linus Yale, Jr.",
+    "publisher": "ASME (American Society of Mechanical Engineers)",
+    "url": "https://www.asme.org/engineering-topics/articles/manufacturing-processing/linus-yale-jr",
+    "type": "org",
+    "quote": "Linus Yale, Jr., invented a small cylinder lock with a pin tumbler mechanism and small flat key.",
+    "locator": "Article body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "NIST 'start of miniaturization in industry' is a strong claim; keep it as 'much more compact than any earlier lock'."
+ },
+ {
+  "id": "3.1",
+  "beat": 3,
+  "claim": "Master keying cuts some pin stacks in more than one place (usually two), so that a stack has two heights that work.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "In the conventional split pin mastering scheme, however, some or all pin stacks are cut in more than one place (typically in two places), allowing additional bittings that align such pins.",
+    "locator": "Section 3 Master-keyed locks",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "MASTER PIN or DISC - Cylinder tumbler pin or disc tumbler used for the setting of the second or third combinations in a cylinder when setting up a master key combination. Tumbler master pins are made by adding extra segment(s) to the usual pin pairs.",
+    "locator": "Glossary",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "'Master pin' is an extra pin segment (NIST). Landlord/building-staff key opens many doors, each tenant key opens only one."
+ },
+ {
+  "id": "3.2",
+  "beat": 3,
+  "claim": "Master key systems come in levels: a master key opens all locks in a group; a grand master opens several master groups.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "Several levels of master keying are possible: one which will operate all locks of two or more master key systems ... a great grand master key will operate all locks of two or more grand master key system.",
+    "locator": "Glossary (MASTER KEY SYSTEM)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Multi-level master systems may or may not present a special challenge. ... 'submasters' are implemented by using a fixed change key bitting on certain pins for locks within each submaster group.",
+    "locator": "Section 5",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": ""
+ },
+ {
+  "id": "3.3",
+  "beat": 3,
+  "claim": "Because pin stacks do not communicate, a master-keyed lock also opens with keys that mix the two working heights position by position, not only the two intended keys.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "There is no “communication” among pins; the lock will operate not only with all pin stacks aligned at the change key depth or all pin stacks at the master key depth, but also by keys that align some stacks at the change depth and others at the master depth.",
+    "locator": "Section 4 (key space of master-keyed locks)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "single_source",
+  "notes": "Peer-reviewed IEEE paper. Single source; fine for one sentence, conceptual: 'a master-keyed lock accepts more keys than anyone planned'. No attack steps, no counts."
+ },
+ {
+  "id": "3.4",
+  "beat": 3,
+  "claim": "Matt Blaze wrote the 2003 paper on master-keyed locks while at AT&T Labs-Research; it appeared in IEEE Security & Privacy in 2003 (vol. 1, no. 2, pp. 24-32). He argued mechanical locks deserve study by computer scientists.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Matt Blaze AT&T Labs – Research ... PREPRINT — 15 Sept 2002 (Revised 2 March 2003). A version of this paper will appear in IEEE Security and Privacy, March/April 2003.",
+    "locator": "Title block",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "journal = {IEEE Secur. Priv.}, volume = {1}, number = {2}, pages = {24--32}, year = {2003}",
+    "locator": "Georgetown SecLab / DBLP record (https://seclab.cs.georgetown.edu/bibliography/DBLP_journals/ieeesp/Blaze03.html)",
+    "quote_kind": "bibliographic record; same author's paper, so count as one source family",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported_bibliographic",
+  "notes": "Both entries describe the same paper, so this is one source family for the content; the bibliographic facts are independent confirmations. The Stanford talk abstract (crypto.stanford.edu, 14 Feb 2003) also confirms the talk. Script: say 'Matt Blaze, then a researcher at AT&T Labs' (he is now an academic: not checked, so do not state his current post)."
+ },
+ {
+  "id": "3.5",
+  "beat": 3,
+  "claim": "Blaze studied real master-keyed buildings (educational and commercial) with locks from Arrow, Best, Corbin Russwin, Schlage and Yale, and the weakness appeared in every system he tested, because it comes from the master-keying design itself.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Systems tested were both relatively new and relatively old, ... and included locks manufactured by Arrow (SFIC), Best (SFIC), Corbin Russwin, Schlage, and Yale.",
+    "locator": "Section 6 Experimental results",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Several of the systems had multi-level mastering hierarchies; the attack yielded the TMK in all cases.",
+    "locator": "Section 6 Experimental results",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "single_source_conceptual_only",
+  "notes": "CONCEPTUAL ONLY. Say: 'he found that giving one door two working keys made the whole building's master key discoverable in principle'. Never describe the method, the tools or the number of test keys. Phrase 'every system he tested' only with that scope."
+ },
+ {
+  "id": "4.1",
+  "beat": 4,
+  "claim": "The oft-repeated figure that the pin lock is 'about 4,000 years old' is not supported by the archaeology. It traces to Britannica's 'possibly 4,000 years old', which Potts (1990) says came from a 1957 lock catalogue misreading Pitt-Rivers (1883).",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Lock and Key in Ancient Mesopotamia (D. T. Potts), Mesopotamia 25, 1990",
+    "publisher": "Universita di Torino / Mesopotamia journal",
+    "url": "https://www.yeshiva.org.il/midrash/pdf/wiki/potts_1990_-_lock_and_key_in_ancient_mes.pdf",
+    "type": "paper",
+    "quote": "Uncritical readers of Pitt-Rivers' treatise, however, such as Vincent J. M. Eras' in his 1957 catalogue ... have misconstrued the information given there regarding the Khorsabad find, attributing far greater antiquity to it than is warranted, and from Eras the unfounded statement entered the Encyclopaedia Britannica to the effect that the Khorsabad lock was «possibly 4,000 years old».",
+    "locator": "p. 187",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "On the Development and Distribution of Primitive Locks and Keys (Lt-Gen. A. Pitt-Rivers, 1883), Project Gutenberg #44022 (read via WebFetch extraction)",
+    "publisher": "Pitt-Rivers, 1883 (public domain)",
+    "url": "https://www.gutenberg.org/files/44022/44022-h/44022-h.htm",
+    "type": "book",
+    "quote": "It appears doubtful whether or not this pin-lock was known to the ancient Egyptians.",
+    "locator": "Egyptian lock section (read via WebFetch extraction)",
+    "quote_kind": "verbatim from tool extraction",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "corrected",
+  "notes": "BIG FLAG for the brief: the README's '4,000-year-old idea' (beats 4 and 8) cannot be said as fact. Also repeated by ASME/Lemelson/Yale UK/Britannica/Blaze ('ancient Egypt'). Safe: 'wooden pin locks from Egypt and the Near East, attested in Roman-period Egypt and described in the 19th century as old design; their true age is unclear'."
+ },
+ {
+  "id": "4.2",
+  "beat": 4,
+  "claim": "Pitt-Rivers (1883) found it doubtful that the Egyptian pin lock existed in pharaonic Egypt: the earliest solid example he cited dated to Roman Egypt (reign of Trajan, A.D. 90), and sculptures show doors fastened by simple bolts.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "On the Development and Distribution of Primitive Locks and Keys (Lt-Gen. A. Pitt-Rivers, 1883), Project Gutenberg #44022 (read via WebFetch extraction)",
+    "publisher": "Pitt-Rivers, 1883 (public domain)",
+    "url": "https://www.gutenberg.org/files/44022/44022-h/44022-h.htm",
+    "type": "book",
+    "quote": "If the pin-lock was in use in ancient Egypt it was certainly exceptional, as all the sculptures represent the doors as being fastened by simple bolts.",
+    "locator": "Egyptian lock section (read via WebFetch extraction)",
+    "quote_kind": "verbatim from tool extraction; the Trajan/A.D. 90 date is Wilkinson's view as reported there",
+    "opened": true
+   },
+   {
+    "title": "Lock and Key in Ancient Mesopotamia (D. T. Potts), Mesopotamia 25, 1990",
+    "publisher": "Universita di Torino / Mesopotamia journal",
+    "url": "https://www.yeshiva.org.il/midrash/pdf/wiki/potts_1990_-_lock_and_key_in_ancient_mes.pdf",
+    "type": "paper",
+    "quote": "noting that the antiquity of the Egyptian lock in Egypt itself did not appear to antedate the Roman period",
+    "locator": "p. 187, reporting Pitt-Rivers",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported_dated_source",
+  "notes": "1883 scholarship; later discoveries could push dates back, none found in this pass. Quote only as 'in 1883 the leading authority doubted it predated Roman times'."
+ },
+ {
+  "id": "4.3",
+  "beat": 4,
+  "claim": "Wooden pin-lock bolts are physically attested in Roman-period Egypt, for example in a Late Romano-Egyptian house at Amheida in the Dakhla Oasis, with parallels at Douch, Karanis and Kellis.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Amheida II: A Late Romano-Egyptian House in the Dakhla Oasis, ch. 18 Wood Objects (A. Cervi)",
+    "publisher": "NYU Institute for the Study of the Ancient World (ISAW)",
+    "url": "https://dlib.nyu.edu/awdl/isaw/amheida-ii-house-b2/chapter18.xhtml",
+    "type": "university",
+    "quote": "The type of bolt used was a pin-tumbler lock, a mechanism operated by a key that opened a barred door from outside.",
+    "locator": "Ch. 18, para on bolt 18.1",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "On the Development and Distribution of Primitive Locks and Keys (Lt-Gen. A. Pitt-Rivers, 1883), Project Gutenberg #44022 (read via WebFetch extraction)",
+    "publisher": "Pitt-Rivers, 1883 (public domain)",
+    "url": "https://www.gutenberg.org/files/44022/44022-h/44022-h.htm",
+    "type": "book",
+    "quote": "The wooden key-drawn pin-locks have spread over the region extending from Egypt to Yarkand.",
+    "locator": "Distribution paragraph (read via WebFetch extraction)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "ISAW record gives the house date as 'Late Romano-Egyptian' (3rd-4th century CE is the usual range, but the dated phase was not quoted in the fetched chapter, so say 'Roman-era'). Bolt: 17.2 cm long with three holes (ISAW catalogue)."
+ },
+ {
+  "id": "4.4",
+  "beat": 4,
+  "claim": "How the ancient wooden pin lock works: a wooden bolt with holes; pegs in a fixture on the door drop into the holes; a wooden key with matching pins is pushed in and lifted to raise the pegs so the bolt slides out.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Amheida II: A Late Romano-Egyptian House in the Dakhla Oasis, ch. 18 Wood Objects (A. Cervi)",
+    "publisher": "NYU Institute for the Study of the Ancient World (ISAW)",
+    "url": "https://dlib.nyu.edu/awdl/isaw/amheida-ii-house-b2/chapter18.xhtml",
+    "type": "university",
+    "quote": "A device affixed to the inner side of the door contained wooden pegs that would drop into the holes of the bolt and secure it. ... This shaft key had corresponding pins that lifted the pegs, allowing the bolt to slide out.",
+    "locator": "Ch. 18, para on bolt 18.1",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Smith College Museum of Ancient Inventions: Tumbler Lock",
+    "publisher": "Smith College (student-written museum page)",
+    "url": "https://www.smith.edu/bigbad/historyscitech/museum/ancient_inventions/hsc09b.htm",
+    "type": "university",
+    "quote": "The key is simply a bit of wood with small pins, usually of brass. These pins enter small holes in the bolt and lift similar pins in the lock.",
+    "locator": "Page body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Lock (security device), Early history / Development of modern types (read via WebFetch extraction)",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/lock-security",
+    "type": "encyclopedia",
+    "quote": "It consists of a large wooden bolt, which secures the door, through which is pierced a slot with several holes",
+    "locator": "Early history (extraction; quote shortened)",
+    "quote_kind": "verbatim fragment from tool extraction",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Smith page says brass pins; ISAW says wooden pegs. Say 'pins or pegs'."
+ },
+ {
+  "id": "4.5",
+  "beat": 4,
+  "claim": "Egyptian-type wooden pin locks were still in everyday use in Egypt and the Near East in the 19th and early 20th centuries.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Ancient Egyptian lock (object 1912-294)",
+    "publisher": "Science Museum Group",
+    "url": "https://collection.sciencemuseumgroup.org.uk/objects/co50298/ancient-egyptian-lock",
+    "type": "museum",
+    "quote": "Wooden free falling tumbler lock, modern Egyptian construction with two large iron nails, c.1912.",
+    "locator": "Object record 1912-294",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "On the Development and Distribution of Primitive Locks and Keys (Lt-Gen. A. Pitt-Rivers, 1883), Project Gutenberg #44022 (read via WebFetch extraction)",
+    "publisher": "Pitt-Rivers, 1883 (public domain)",
+    "url": "https://www.gutenberg.org/files/44022/44022-h/44022-h.htm",
+    "type": "book",
+    "quote": "a wooden pin-lock and key obtained by myself in Egypt, which is of the kind habitually in use there at the present time.",
+    "locator": "Fig. 10B-12B description (read via WebFetch extraction)",
+    "quote_kind": "verbatim from tool extraction",
+    "opened": true
+   },
+   {
+    "title": "Lock and Key in Ancient Mesopotamia (D. T. Potts), Mesopotamia 25, 1990",
+    "publisher": "Universita di Torino / Mesopotamia journal",
+    "url": "https://www.yeshiva.org.il/midrash/pdf/wiki/potts_1990_-_lock_and_key_in_ancient_mes.pdf",
+    "type": "paper",
+    "quote": "«was fastened by a huge wooden lock, like those still used in the East ... and by a bar which moved into a square hole in the wall»",
+    "locator": "p. 186, quoting J. Bonomi 1856-57",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Useful bridge: the design survived long enough that Yale could see it. Museum object is a c.1912 Egyptian make, not ancient."
+ },
+ {
+  "id": "4.6",
+  "beat": 4,
+  "claim": "At Khorsabad, the Assyrian palace excavated in the 1840s, a gate was reported fastened by 'a huge wooden lock, like those still used in the East'. That 19th-century description is the evidence behind the 'oldest known lock' line, and it did not give a date.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Lock and Key in Ancient Mesopotamia (D. T. Potts), Mesopotamia 25, 1990",
+    "publisher": "Universita di Torino / Mesopotamia journal",
+    "url": "https://www.yeshiva.org.il/midrash/pdf/wiki/potts_1990_-_lock_and_key_in_ancient_mes.pdf",
+    "type": "paper",
+    "quote": "during his excavcations at Khorsabad, P.E. Botta found what J. Bonomi in 1857 described as the gate of passage chamber X between two courtyards that «was fastened by a huge wooden lock, like those still used in the East ... and by a bar which moved into a square hole in the wall»",
+    "locator": "p. 186",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Lock (security device), Early history / Development of modern types (read via WebFetch extraction)",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/lock-security",
+    "type": "encyclopedia",
+    "quote": "The lock originated in the Near East; the oldest known example was found in the ruins of the palace of Khorsabad near Nineveh.",
+    "locator": "Early history (extraction)",
+    "quote_kind": "verbatim fragment from tool extraction",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "corrected",
+  "notes": "Potts: 'this statement cannot ... be taken at face value'. Do not call it the oldest lock. Do not say 'found at Khorsabad, 4,000 years old'. Khorsabad (Sargon II's capital) is 8th century BCE as a palace date (not sourced here), a gate lock inside it is not dated by these sources."
+ },
+ {
+  "id": "4.7",
+  "beat": 4,
+  "claim": "Earliest dated sources are disputed: a student-written Smith College page says the tumbler lock was 'probably invented around 1000 BCE, although a date of 2000 BCE has also been proposed'.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Smith College Museum of Ancient Inventions: Tumbler Lock",
+    "publisher": "Smith College (student-written museum page)",
+    "url": "https://www.smith.edu/bigbad/historyscitech/museum/ancient_inventions/hsc09b.htm",
+    "type": "university",
+    "quote": "This simple tumbler lock was probably invented around 1000 BCE, although a date of 2000 BCE has also been proposed.",
+    "locator": "Page body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Lock and Key in Ancient Mesopotamia (D. T. Potts), Mesopotamia 25, 1990",
+    "publisher": "Universita di Torino / Mesopotamia journal",
+    "url": "https://www.yeshiva.org.il/midrash/pdf/wiki/potts_1990_-_lock_and_key_in_ancient_mes.pdf",
+    "type": "paper",
+    "quote": "although the archaeological evidence for early locks remains slight",
+    "locator": "p. 187",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "notes": "Do not use the numbers. The Met holds two wooden 'door bolts' (ca. 721-664 BCE or later, Dyn. 25, Thebes) but the Met record does not say they were pin-lock bolts, so they are NOT evidence of pin locks."
+ },
+ {
+  "id": "4.8",
+  "beat": 4,
+  "claim": "Linus Yale Sr. (1797-1858) and his son Linus Yale Jr. (1821-1868) were American lock makers; Jr. founded the Yale Lock Manufacturing Company with Henry R. Towne at Stamford, Connecticut, in 1868.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Hagley Vault post on Linus Yale Sr. (Yale & Towne film clip, 2023)",
+    "publisher": "Hagley Museum and Library",
+    "url": "https://hagley.org/node/3696",
+    "type": "museum",
+    "quote": "Linus Yale, Sr. (1797-1858) ... Yale's son, Linus Yale, Jr. (1821-1868) ... founded the Yale Lock Manufacturing with the mechanical engineer and investor Henry Robinson Towne (1844-1924) in Stamford, Connecticut in 1868.",
+    "locator": "Post body",
+    "quote_kind": "paraphrase of two sentences",
+    "opened": true
+   },
+   {
+    "title": "Linus Yale, Jr.",
+    "publisher": "ASME (American Society of Mechanical Engineers)",
+    "url": "https://www.asme.org/engineering-topics/articles/manufacturing-processing/linus-yale-jr",
+    "type": "org",
+    "quote": "Linus Yale, Jr. (1821 – 1868) was born in Salisbury, NY, on April 4, 1821 ... In October 1868, he threw his full weight behind cylinder locks, joining forces with Henry Robinson Towne, his partner in the Yale Lock Manufacturing Company, which they founded in Stamford, CT. Yale died on Christmas day just two months later.",
+    "locator": "Article body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Yale Jr. died 25 Dec 1868 (ASME; Britannica kids/biography agrees on Dec 25, 1868 for 'Linus Yale' born 1821). ASME and Lemelson wrongly say the father died ~1850: the patents show Sr. alive in 1857 (US 18,169) and Hagley says 1858. Use Hagley for Sr."
+ },
+ {
+  "id": "4.9",
+  "beat": 4,
+  "claim": "Yale Sr. was alive and patenting in 1857, so claims that he died around 1850 are wrong.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "US Patent 18,169, Padlock, Linus Yale (Sr.), Newport NY, 8 Sept 1857",
+    "publisher": "USPTO via Google Patents",
+    "url": "https://patents.google.com/patent/US18169",
+    "type": "patent",
+    "quote": "Specification of Letters Patent No. 18,169, dated September 8, 1857. ... LINUS YALE, of Newport, in the county of Herkimer, in the State of New York, have invented a new and useful Improvement in the Construction of Padlocks",
+    "locator": "Patent text",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Hagley Vault post on Linus Yale Sr. (Yale & Towne film clip, 2023)",
+    "publisher": "Hagley Museum and Library",
+    "url": "https://hagley.org/node/3696",
+    "type": "museum",
+    "quote": "Linus Yale, Sr. (1797-1858)",
+    "locator": "Post body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Same name on the patent could be the son, but Hagley assigns this patent run to Sr. (fourteen patents; Wikipedia list, used only to find, puts 18,169 under Sr.). Medium on attribution of this specific patent; the death date rests on Hagley. Low priority: for correcting the ASME/Lemelson error only."
+ },
+ {
+  "id": "4.10",
+  "beat": 4,
+  "claim": "Yale Sr. received US patent 3,630 on 13 June 1844 for a door lock with spring-loaded pistons (pins) that lock a rotating tumbler, described by Hagley as a pin tumbler safe lock.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "US Patent 3,630, Door-Lock, Linus Yale, 13 June 1844",
+    "publisher": "USPTO via Google Patents",
+    "url": "https://patents.google.com/patent/US3630",
+    "type": "patent",
+    "quote": "LINUS YALE, of Springfield, in the county of Hampden and State of Massachusetts, have invented a new and useful Improvement in Door Locks ... apertures are placed cylindrical pistons D ... said pistons being kept pressed inward ... by springs G",
+    "locator": "Patent text (Google Patents OCR); priority date 1844-06-13",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Hagley Vault post on Linus Yale Sr. (Yale & Towne film clip, 2023)",
+    "publisher": "Hagley Museum and Library",
+    "url": "https://hagley.org/node/3696",
+    "type": "museum",
+    "quote": "On June 13, 1844, he received his eighth patent; U.S. Patent 3,630 for a pin tumbler safe lock.",
+    "locator": "Post body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Britannica ('In 1848 ... Linus Yale, who patented a pin tumbler lock') and Lemelson ('in the 1940s', a typo for 1840s) disagree with the patent date. Patent wins: 1844. Patent text says 'Door Locks'; Hagley says 'safe lock'. Say 'a lock with spring-loaded pins'."
+ },
+ {
+  "id": "4.11",
+  "beat": 4,
+  "claim": "Yale Jr.'s US patent 31,278 (29 Jan 1861) covers a small lock for drawers and cupboards with spring-loaded pins, drivers and a flat key: an early small pin tumbler.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "US Patent 31,278, Lock (drawer lock), Linus Yale Jr., 29 Jan 1861",
+    "publisher": "USPTO via Google Patents",
+    "url": "https://patents.google.com/patent/US31278",
+    "type": "patent",
+    "quote": "the key hole a, the pistons b b b b, their drivers c c c c, and their actuating springs h h h h, which are placed in cylindrical holes ... drilled for that purpose in the pin-chamber",
+    "locator": "Patent text",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "History of Yale",
+    "publisher": "Yale UK (ASSA ABLOY; company history, marketing page)",
+    "url": "https://yale.co.uk/history-of-yale",
+    "type": "company",
+    "quote": "Granted patents in 1861 and 1865, Yale finally succeeded in creating his most important invention – the Yale cylinder lock.",
+    "locator": "History of Yale page",
+    "quote_kind": "company marketing page",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "Brief says 'flat key + cylinder' 1860s. The 1861 lock is a drawer lock whose bolt revolves; the cylinder lock proper is the 1865 patent. Patent title 'Locks for Drawers, Closets, Cupboards, &c.'."
+ },
+ {
+  "id": "4.12",
+  "beat": 4,
+  "claim": "Yale Jr.'s US patent 48,475 (27 June 1865) is the pin-lock with a cylinder and a thin steel key; NIST dates the pin tumbler cylinder to 1865.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "US Patent 48,475, Improvement in Locks, Linus Yale Jr., 27 June 1865",
+    "publisher": "USPTO via Google Patents",
+    "url": "https://patents.google.com/patent/US48475",
+    "type": "patent",
+    "quote": "Specification forming part of Letters Patent No. 48,475, dated June 27, 1865. ... LINUS YALE, Jr., of Shelburne Falls ... The improvements herein described are chiefly applicable in that class of tumbler-locks known as pin-locks ... The key K is a thin slip of steel",
+    "locator": "Patent text (OCR cleaned)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "The Pin Tumbler cylinder, invented in 1865 by Linus Yale, Jr., was a major breakthrough in lock design",
+    "locator": "Section 5.1.2.1",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Wikipedia (find only) lists 48,475 for 27 June 1865 too. Britannica says only '1860s'. Cleanest line: 'patented in 1865' (not 1861, not 1868). Yale Jr. then of Shelburne Falls, Massachusetts. Drawings are public domain (US government works / expired)."
+ },
+ {
+  "id": "4.13",
+  "beat": 4,
+  "claim": "Even Yale Jr.'s 1865 patent says its improvements relate partly to the security of locks against picking, and it describes notched tumblers meant to make picking harder.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "US Patent 48,475, Improvement in Locks, Linus Yale Jr., 27 June 1865",
+    "publisher": "USPTO via Google Patents",
+    "url": "https://patents.google.com/patent/US48475",
+    "type": "patent",
+    "quote": "The improvements relate partly to the security of locks against picking, partly to methods of construction",
+    "locator": "Patent text (OCR cleaned; original has scan noise)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "single_source_primary",
+  "notes": "Primary patent text is strong, but no second source. Nice irony beat: picking was a known problem in 1865, 14 years after Hobbs. One sentence only; attribute to the patent."
+ },
+ {
+  "id": "4.14",
+  "beat": 4,
+  "claim": "Linus Yale Jr. began as a portrait painter before turning to locks.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Linus Yale",
+    "publisher": "Lemelson-MIT",
+    "url": "https://lemelson.mit.edu/resources/linus-yale",
+    "type": "university",
+    "quote": "The younger Yale, meanwhile, who was artistically talented, had begun serious studies in portrait painting. In 1850 he decided a career in painting wasn’t for him",
+    "locator": "Biography page",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Linus Yale, Jr.",
+    "publisher": "ASME (American Society of Mechanical Engineers)",
+    "url": "https://www.asme.org/engineering-topics/articles/manufacturing-processing/linus-yale-jr",
+    "type": "org",
+    "quote": "the young Yale spent his early adulthood indulging his interest in painting, hoping one day to become a respected portraitist.",
+    "locator": "Article body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Both pages also say the father died ~1850 (wrong, see 4.8). Painter fact itself agrees across both."
+ },
+ {
+  "id": "4.15",
+  "beat": 4,
+  "claim": "Yale Sr. specialised in bank locks at his lock shop in Newport, New York; Britannica lists the Yale 'Infallible' bank lock of 1851.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Linus Yale, Jr.",
+    "publisher": "ASME (American Society of Mechanical Engineers)",
+    "url": "https://www.asme.org/engineering-topics/articles/manufacturing-processing/linus-yale-jr",
+    "type": "org",
+    "quote": "Yale, Sr. went on to specialize in high-security bank locks, which he sold through the Yale Lock Shop he founded in Newport, NY, in 1847.",
+    "locator": "Article body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "History of Yale",
+    "publisher": "Yale UK (ASSA ABLOY; company history, marketing page)",
+    "url": "https://yale.co.uk/history-of-yale",
+    "type": "company",
+    "quote": "about 1840, Linus Yale Sr., began designing and manufacturing a series of innovative, high security locks at his Yale Lock Shop in Newport, New York. He specialised in expensive, handmade bank locks.",
+    "locator": "History of Yale page",
+    "quote_kind": "company marketing page",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "Date of the shop disagrees (1847 vs about 1840): say 'in the 1840s'. 'Infallible bank lock' is credited to Jr. in 1851 by ASME/Britannica biography; skip attributing it to Sr."
+ },
+ {
+  "id": "5.1",
+  "beat": 5,
+  "claim": "Bramah's lock sat in the window of his shop at 124 Piccadilly, London, with a notice offering 200 guineas to anyone who could make an instrument to pick or open it.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "A. C. Hobbs, Rudimentary Treatise on the Construction of Locks, ed. C. Tomlinson, later ed. rev. R. Mallet (Weale's series; preface dated April 1868), ch. 'The Lock Controversy'; archive.org id rudimentarytreat00hobb",
+    "publisher": "Weale / archive.org scan (pre-1929, public domain)",
+    "url": "https://archive.org/details/rudimentarytreat00hobb",
+    "type": "book",
+    "quote": "a padlock of great complexity and beauty; to which an announcement was affixed, that a reward of two hundred guineas would be given to any person who should succeed in picking that lock.",
+    "locator": "Ch. The Lock Controversy, p. 120",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Scientist of the Day: Joseph Bramah (13 Apr 2022)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/joseph-bramah/",
+    "type": "museum",
+    "quote": "\"The Artist who can make an Instrument that will pick or Open this Lock shall Receive 200 Guineas the Moment it is produced.\"",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "The latter had stood proudly in the firm’s Piccadilly shop window for decades, alongside a notice offering two hundred guineas to anyone who could devise an implement with which to pick it.",
+    "locator": "Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Notice wording: Tomlinson/arbitrators give 'shall receive two hundred guineas the moment it is produced'; Linda Hall gives 'Instrument', capitals. Use the Linda Hall/London form only if matching the Science Museum placard. Street number 124 appears in a collector site only (antiquebox.org), so say 'Piccadilly'."
+ },
+ {
+  "id": "5.2",
+  "beat": 5,
+  "claim": "The challenge lock was in the window since about 1790; sources disagree on the date: the Science Museum catalogues the padlock as made 1801-1851 and the board as 1801.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Scientist of the Day: Joseph Bramah (13 Apr 2022)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/joseph-bramah/",
+    "type": "museum",
+    "quote": "By 1790, they had their baby. ... The lock came to be known as the Challenge Lock and it stood in the window, unpicked, through Bramah's death in 1814.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Bramah padlock and key (object 1972-290; read via WebFetch extraction)",
+    "publisher": "Science Museum Group",
+    "url": "https://collection.sciencemuseumgroup.org.uk/objects/co50473/bramah-padlock-and-key",
+    "type": "museum",
+    "quote": "Bramah padlock and key (1801) - the challenge lock of Lock Controversy of 1851",
+    "locator": "Object 1972-290 (read via WebFetch extraction)",
+    "quote_kind": "paraphrase of record",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "notes": "Also: Churchill says the Bramah lock was 'first patented in 1785' (the patent, not the window lock); collector site antiquebox.org says 'around 1790'; the Science Museum board is dated 1801. Safe line: 'for decades' or 'since around the turn of the 19th century'. Do NOT say 61 years as a fact (Linda Hall's own counting, 1790 to 1851)."
+ },
+ {
+  "id": "5.3",
+  "beat": 5,
+  "claim": "Bramah's challenge lock was not a pin tumbler. It used sliders pushed by notches in the end of a tubular key. The challenge lock had 18 sliders; ordinary Bramah locks had four to six.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Scientist of the Day: Joseph Bramah (13 Apr 2022)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/joseph-bramah/",
+    "type": "museum",
+    "quote": "The key was not notched on the side like modern padlock keys, but instead had 18 slots of varying depths cut into the end. When the key was inserted, the notches pushed 18 \"sliders\" down to different depths",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "A. C. Hobbs, Rudimentary Treatise on the Construction of Locks, ed. C. Tomlinson, later ed. rev. R. Mallet (Weale's series; preface dated April 1868), ch. 'The Lock Controversy'; archive.org id rudimentarytreat00hobb",
+    "publisher": "Weale / archive.org scan (pre-1929, public domain)",
+    "url": "https://archive.org/details/rudimentarytreat00hobb",
+    "type": "book",
+    "quote": "the key, which has notches or clefts at the end of the pipe equal in number to the slides, and made to fit the ends of the slides when the key is inserted",
+    "locator": "Ch. The Bramah Lock, p. 76",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "IMPORTANT for the heist framing: 1851 beat must not say Hobbs picked a pin tumbler. Bramah and Chubb were different mechanisms (slider; lever). The lesson is general ('no mechanical lock is unpickable'), not about pins."
+ },
+ {
+  "id": "5.4",
+  "beat": 5,
+  "claim": "Joseph Bramah (born 1748) was an English mechanic and inventor who went into the lock business in 1784 and hired 18-year-old Henry Maudslay in 1789 to help build a lock that could not be picked.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Scientist of the Day: Joseph Bramah (13 Apr 2022)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/joseph-bramah/",
+    "type": "museum",
+    "quote": "Joseph Bramah, an English mechanic and inventor, was born Apr. 13, 1748. ... He went into the lock business in 1784 ... In 1789 he hired an 18-year-old budding mechanical engineer named Henry Maudslay",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "Bramah & Co.’s famous challenge lock, first patented in 1785.",
+    "locator": "Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "1784 vs 1785: Linda Hall counts start of business; Churchill dates the patent. Say 'in the 1780s'. Maudslay later became a famed precision engineer (Linda Hall)."
+ },
+ {
+  "id": "5.5",
+  "beat": 5,
+  "claim": "Alfred Charles Hobbs, born in Boston in 1812, was an American locksmith who went to London in 1851 to represent the New York firm Day & Newell at the Great Exhibition.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Scientist of the Day: Alfred Charles Hobbs (W. B. Ashworth Jr., 7 Oct 2021)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/alfred-charles-hobbs/",
+    "type": "museum",
+    "quote": "Alfred Charles Hobbs, an American locksmith, was born in Boston on Oct. 7, 1812. In 1851, he went to London to represent his lock firm, Day & Newell of New York, at the great Crystal Palace Exhibition.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "Alfred Charles Hobbs, who first arrived in Britain as a representative of the American lock-making firm Day & Newell",
+    "locator": "Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": ""
+ },
+ {
+  "id": "5.6",
+  "beat": 5,
+  "claim": "The Great Exhibition ran in the Crystal Palace in Hyde Park, London, from 1 May to 11 October 1851, with more than six million visits.",
+  "numbers": [
+   {
+    "value": "6000000",
+    "unit": "visitors",
+    "context": "V&A, London Museum"
+   }
+  ],
+  "sources": [
+   {
+    "title": "The foundation of the V&A's Collections: the Great Exhibition of 1851",
+    "publisher": "Victoria and Albert Museum",
+    "url": "https://www.vam.ac.uk/articles/the-great-exhibition-of-1851",
+    "type": "museum",
+    "quote": "In the long summer of 1851, through five and a half months, over six million visitors from all around the globe came to London's Hyde Park to experience the Great Exhibition.",
+    "locator": "Intro",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "What was the Great Exhibition of 1851?",
+    "publisher": "London Museum",
+    "url": "https://londonmuseum.org.uk/collections/london-stories/what-was-great-exhibition-1851",
+    "type": "museum",
+    "quote": "Key dates: 1 May – 11 October 1851 ... Six million people – equivalent to a third of the entire population of Britain at the time – visited the Great Exhibition.",
+    "locator": "Page body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "'Six million visits' is the museums' phrase ('visitors'); repeat visits were common, so say 'around six million visits'."
+ },
+ {
+  "id": "5.7",
+  "beat": 5,
+  "claim": "In July 1851 Hobbs opened a Chubb lock on a strongroom door in Great George Street, Westminster, in 25 minutes in front of witnesses; Chubb contested the fairness.",
+  "numbers": [
+   {
+    "value": "25",
+    "unit": "minutes",
+    "context": "Hobbs and the Chubb lock, certificate of 22 July 1851"
+   }
+  ],
+  "sources": [
+   {
+    "title": "A. C. Hobbs, Rudimentary Treatise on the Construction of Locks, ed. C. Tomlinson, later ed. rev. R. Mallet (Weale's series; preface dated April 1868), ch. 'The Lock Controversy'; archive.org id rudimentarytreat00hobb",
+    "publisher": "Weale / archive.org scan (pre-1929, public domain)",
+    "url": "https://archive.org/details/rudimentarytreat00hobb",
+    "type": "book",
+    "quote": "Mr. Hobbs commenced at 35 minutes past 11 o’clock a.m., and opened the lock within 25 minutes. Mr. Hobbs having been requested to lock it again with his instruments, accomplished it in the short space of 7 minutes",
+    "locator": "Ch. The Lock Controversy, p. 116 (certificate dated London, July 22, 1851)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "Hobbs widely credited with fairly picking the lock within thirty minutes, yet Chubb & Son contested this",
+    "locator": "Table of contests (as extracted)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "The lock was a six-lever 'Chubb's New Patent' fitted to a strongroom door, tested by invitation, not on the Exhibition floor. Tomlinson also says Hobbs had first shown a Chubb detector lock opened 'in a few minutes' to scientific men in the Crystal Palace. Differences: 25 min (certificate) vs 'within thirty minutes' (Churchill): say 'about 25 minutes' or 'under half an hour'."
+ },
+ {
+  "id": "5.8",
+  "beat": 5,
+  "claim": "The Chubb detector lock was patented in 1818 by Jeremiah Chubb; it was built so that tampering would be detected.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "A Brief History of Chubb 1818-1990s",
+    "publisher": "The Chubb Archive (History of Locks Museum resources)",
+    "url": "https://chubbarchive.co.uk/page5",
+    "type": "museum",
+    "quote": "On Feb. 3rd 1818, Jeremiah was granted a patent for his Detector Lock.",
+    "locator": "Chubb history page",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Scientist of the Day: Alfred Charles Hobbs (W. B. Ashworth Jr., 7 Oct 2021)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/alfred-charles-hobbs/",
+    "type": "museum",
+    "quote": "In 1818, another London lock-maker, Jeremiah Chubb, invented what he called a detector lock. This was a bolt lock, so designed that if it were tampered with, the tampering was detected by the mechanism",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "Chubb & Son’s ‘detector lock’, originally patented in 1818",
+    "locator": "Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Chubb Archive also says Chubb won a 100-guinea government reward (single source: skip). Chubb brothers were from Portsea (Chubb Archive); Linda Hall calls Jeremiah 'London lock-maker': say 'Chubb'."
+ },
+ {
+  "id": "5.9",
+  "beat": 5,
+  "claim": "Hobbs began on the Bramah lock on 24 July 1851 and showed it open on 23 August; he worked on it for 16 days, in the room with it for 51 hours, with a pause in between, and the lock was undamaged.",
+  "numbers": [
+   {
+    "value": "51",
+    "unit": "hours",
+    "context": "actual hours in the room"
+   },
+   {
+    "value": "16",
+    "unit": "days",
+    "context": "days occupied"
+   }
+  ],
+  "sources": [
+   {
+    "title": "A. C. Hobbs, Rudimentary Treatise on the Construction of Locks, ed. C. Tomlinson, later ed. rev. R. Mallet (Weale's series; preface dated April 1868), ch. 'The Lock Controversy'; archive.org id rudimentarytreat00hobb",
+    "publisher": "Weale / archive.org scan (pre-1929, public domain)",
+    "url": "https://archive.org/details/rudimentarytreat00hobb",
+    "type": "book",
+    "quote": "On July 24 Mr. Hobbs commenced his operations; and on August 23 Mr. Hobbs exhibited the lock opened ... so that the number of days occupied by Mr. Hobbs was sixteen, and the number of hours he was actually in the room with the lock was fifty-one.",
+    "locator": "Arbitrators' report, ch. The Lock Controversy, pp. 123-124",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Scientist of the Day: Joseph Bramah (13 Apr 2022)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/joseph-bramah/",
+    "type": "museum",
+    "quote": "it took Hobbs 51 hours of picking, spread over 16 days, and a whole host of very specialized tools",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "Hobbs took 16 days over picking the Bramah lock, during which time he enjoyed free and exclusive access to it",
+    "locator": "Section on competition fairness",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Safe: '51 hours of work over 16 days'. Not '51 hours straight' and not 'a month' (the calendar span is 24 July to 23 August with a break). Linda Hall says 'August'; Tomlinson gives 23 Aug for the opening and 30 Aug for the formal key test."
+ },
+ {
+  "id": "5.10",
+  "beat": 5,
+  "claim": "Three arbitrators supervised: George Rennie FRS of London, Professor Cowper of King's College London, and Dr Black of Kentucky. Bramah & Co. were paid out as £210 (200 guineas) to Hobbs.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "A. C. Hobbs, Rudimentary Treatise on the Construction of Locks, ed. C. Tomlinson, later ed. rev. R. Mallet (Weale's series; preface dated April 1868), ch. 'The Lock Controversy'; archive.org id rudimentarytreat00hobb",
+    "publisher": "Weale / archive.org scan (pre-1929, public domain)",
+    "url": "https://archive.org/details/rudimentarytreat00hobb",
+    "type": "book",
+    "quote": "George Rennie, Esq., F.R.S., of London; and Professor Cowper, of King’s College, London; and Dr. Black, of Kentucky; should act as arbitrators ... beg to hand you the 210/. awarded by the arbitrators to Mr. Hobbs.",
+    "locator": "Pp. 122-126",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "single_source",
+  "notes": "Primary period account (arbitrators' own report and Bramah's letter). Linda Hall: 'oversight committee ... paid the 200 gold coins'. £210 = 200 guineas (a guinea was 21 shillings). Fine to say 'the prize, 200 guineas'."
+ },
+ {
+  "id": "5.11",
+  "beat": 5,
+  "claim": "The outcome was disputed. Bramah & Co. protested that the arbitrators never watched Hobbs work, that the key was not tried until he finished, and that he used fixed apparatus screwed to the woodwork, which would not work on a door, so 'the spirit of the challenge' was not met.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "A. C. Hobbs, Rudimentary Treatise on the Construction of Locks, ed. C. Tomlinson, later ed. rev. R. Mallet (Weale's series; preface dated April 1868), ch. 'The Lock Controversy'; archive.org id rudimentarytreat00hobb",
+    "publisher": "Weale / archive.org scan (pre-1929, public domain)",
+    "url": "https://archive.org/details/rudimentarytreat00hobb",
+    "type": "book",
+    "quote": "the lock being opened by means of a fixed apparatus screwed to the wood-work in which the lock was enclosed for the purpose of experiment (which it is obvious could not have been applied to an iron door without discovery), and the addition of three or four other instruments, the spirit of the challenge has evidently not been complied with.",
+    "locator": "Letter of Bramah and Co., 9 Sept 1851, p. 126",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "For example, Hobbs took 16 days over picking the Bramah lock, during which time he enjoyed free and exclusive access to it, retaining an instrument in the keyhole throughout – conditions which, Bramah & Co. observed, ‘could only be afforded to an experimentalist.’",
+    "locator": "Section on ambiguity of results",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Scientist of the Day: Alfred Charles Hobbs (W. B. Ashworth Jr., 7 Oct 2021)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/alfred-charles-hobbs/",
+    "type": "museum",
+    "quote": "The oversight committee was not happy, since Hobbs' specialized approach was hardly one available to a burglar, but they paid the 200 gold coins",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Quote from Tomlinson is neutral reporting of Bramah's letter. Churchill: 'locks picked under such conditions were not necessarily deficient for practical purposes'. This is the scandal's true shape: 'unpickable' was disproved in theory, not in the street."
+ },
+ {
+  "id": "5.12",
+  "beat": 5,
+  "claim": "The scandal did not end the Bramah or Chubb firms: the lock had resisted 51 hours of expert effort, and sales were reportedly unaffected, even bolstered.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Scientist of the Day: Alfred Charles Hobbs (W. B. Ashworth Jr., 7 Oct 2021)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/alfred-charles-hobbs/",
+    "type": "museum",
+    "quote": "Any lock that can withstand attempts to open it for 51 hours is a fairly impregnable lock, and both Bramah and Chubb lock sales were unaffected.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "Yet ambiguity surround the result was not confined to such special circumstances ... Of course, if a lock survived a trial on such generous terms, its reputation was thereby enhanced",
+    "locator": "Section on ambiguity of results (partial quote)",
+    "quote_kind": "quote with ellipsis",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "Linda Hall gives sales unaffected as the author's judgement, not data. Say 'the firms carried on'."
+ },
+ {
+  "id": "5.13",
+  "beat": 5,
+  "claim": "Hobbs's success was called the 'Great Lock Controversy'; one newspaper said no feature of the Exhibition drew more public attention than this 'celebrated lock contest', and the press was anxious about British industry being bested by an American.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "one newspaper even asserted that no feature of the Exhibition had attracted greater public attention than this ‘celebrated lock contest’",
+    "locator": "Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "A. C. Hobbs, Rudimentary Treatise on the Construction of Locks, ed. C. Tomlinson, later ed. rev. R. Mallet (Weale's series; preface dated April 1868), ch. 'The Lock Controversy'; archive.org id rudimentarytreat00hobb",
+    "publisher": "Weale / archive.org scan (pre-1929, public domain)",
+    "url": "https://archive.org/details/rudimentarytreat00hobb",
+    "type": "book",
+    "quote": "probably no one suspected before the trial, that English locks, so celebrated over the greater part of the world for skilful mechanical design, beauty of workmanship, and perfect inviolability, would readily yield to a well-arranged system of lock-picking.",
+    "locator": "Ch. The Lock Controversy, p. 115",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": ""
+ },
+ {
+  "id": "5.14",
+  "beat": 5,
+  "claim": "Makers sold locks as 'unpickable' because buyers could not test them; public lock-picking contests turned that claim into a spectacle. Even in 1981 a US government review noted that inventors keep developing 'unpickable' locks only to find someone has found a way in.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "they had to convince potential consumers that their product was functionally effective – that the lock really was ‘unpickable’. ... consumers could find no guarantee, before purchasing, that a lock would work as promised.",
+    "locator": "Section on the security industry",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "Today, inventors still spend great amounts of time in developing and getting patented, ingenious new \"unpickable\" locks only to find that someone else has ingeniously discovered a method of picking or decoding the same lock.",
+    "locator": "Conclusions (p. 80)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Supports the thesis line: 'the only question is how long'. 'Only question is how long' is our paraphrase of Blaze/NIST (picking 'much more difficult' on better locks), not a quotation."
+ },
+ {
+  "id": "5.15",
+  "beat": 5,
+  "claim": "Hobbs later set up his own lock-making firm in London; in 1854 a Chubb foreman, John Goater, picked one of Hobbs's locks in public and Hobbs disputed it.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Scientist of the Day: Alfred Charles Hobbs (W. B. Ashworth Jr., 7 Oct 2021)",
+    "publisher": "Linda Hall Library",
+    "url": "https://www.lindahall.org/about/news/scientist-of-the-day/alfred-charles-hobbs/",
+    "type": "museum",
+    "quote": "Hobbs did set up a lock-making firm in London that was quite successful.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "John Goater’s much-disputed picking of a Hobbs lock in 1854",
+    "locator": "Introduction / table of contests",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "Hobbs's 'Protector' lock is depicted in Tomlinson fig. 47. The Churchill table says Goater was 'Chubb's foreman' and Hobbs claimed it was a cheap model."
+ },
+ {
+  "id": "5.16",
+  "beat": 5,
+  "claim": "The 1850s contests shaped a security industry: locks became a branded product whose strength was proven in public.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "this article argues that lockpicking contests played a significant role in the commodification of security and the emergence of the security industry in the 1850s and 1860s.",
+    "locator": "Abstract",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "A. C. Hobbs, Rudimentary Treatise on the Construction of Locks, ed. C. Tomlinson, later ed. rev. R. Mallet (Weale's series; preface dated April 1868), ch. 'The Lock Controversy'; archive.org id rudimentarytreat00hobb",
+    "publisher": "Weale / archive.org scan (pre-1929, public domain)",
+    "url": "https://archive.org/details/rudimentarytreat00hobb",
+    "type": "book",
+    "quote": "a lock, like a watch or a steam-engine, is a machine whose construction rests on principles worthy of study",
+    "locator": "Quoting Chambers's Edinburgh Journal, 25 Dec 1852, via Churchill",
+    "quote_kind": "quote relayed through Churchill",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "The Tomlinson-linked quote actually appears in Churchill (quoting Chambers's Edinburgh Journal), not directly in the Tomlinson scan; treat as Churchill. Single-source in effect."
+ },
+ {
+  "id": "6.1",
+  "beat": 6,
+  "claim": "Picking works because real locks are not machined perfectly: it exploits small manufacturing imperfections and mechanical tolerances.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "The most common (or at least famous) manipulation method involves picking, which exploits small manufacturing imperfections and mechanical tolerances to set a lock to a keyed state without using a key.",
+    "locator": "Section 1 Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "Pick resistance varies according to: ... Variations between manufacturers concerning pin lengths, hole drilling, tolerances and key cuts.",
+    "locator": "Section 6.x (obstacles; extraction)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "This is the design-flaw line (conceptual). Safe wording: 'no hole is drilled exactly in line, so the pins do not all bind equally'. Neither source says 'holes off a line' verbatim: Blaze says 'small manufacturing imperfections and mechanical tolerances'; MIT: 'pins bind one at a time' (6.2)."
+ },
+ {
+  "id": "6.2",
+  "beat": 6,
+  "claim": "Because of those imperfections, the pins do not all press at once: typically one pin binds before the others, so a lock can be set pin by pin instead of all at once.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "MIT Guide to Lockpicking (Ted the Tool, 1991), archive.org copy",
+    "publisher": "Theodore T. Tool (MIT hobbyist guide; used for concept only)",
+    "url": "https://archive.org/download/FugitiveDistro_MIT_Guide_To_Lockpicking_Anonymous/MIT%20Guide%20To%20Lockpicking_READ_EN_48.pdf",
+    "type": "book",
+    "quote": "This defect makes it possible to open a lock by lifting the pins one at a time, and thus you don't need a key to lift all the pins at the same time. ... The most common defect in a lock is that only one pin will bind.",
+    "locator": "Ch. IV Basic Picking & The Binding Defect (concept sentences only; the surrounding chapter is instructional and must not be quoted)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "The spool shape of the tumblers prevents picking of one pin at a time if rotational force also is applied to the plug at the same time.",
+    "locator": "Section 5.1.2.1 (magnetic pin tumbler paragraph)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "SAFETY: concept only, on screen: an exaggerated off-line hole, one pin pressing first. No tool names, no 'apply torque and push' steps. The MIT guide is an instruction manual; the quoted sentences describe why it works, not how to do it. The NIST sentence is about one design but confirms the one-at-a-time principle."
+ },
+ {
+  "id": "6.3",
+  "beat": 6,
+  "claim": "Picking needs skill and is much harder against better-quality locks, especially those built with security features; how resistant a lock is depends on the maker's tolerances, pin lengths and key cuts and on the skill of the person.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Both picking and impressioning require finesse and skill, however, and are much more difficult to carry out against locks of better quality, especially designs that employ security features intended specifically to thwart manipulation.",
+    "locator": "Section 1 Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "PICK RESISTANCE - That level of resistance to surreptitious manipulation of the lock tumblers in order to unlock a lock. Resistance depends on the difficulty involved in bypassing the normal operation, which in turn depends on the availability of picking information and devices.",
+    "locator": "Glossary",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": ""
+ },
+ {
+  "id": "7.1",
+  "beat": 7,
+  "claim": "Lock makers answer with special 'security pins' (spool and mushroom shapes) that are thinner in the middle and mislead the person trying to set them. NIST also notes mushroom pins in high-security pin tumblers.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Notes on Picking Pin Tumbler Locks (Matt Blaze, Univ. of Pennsylvania; concept sentences only)",
+    "publisher": "Matt Blaze / University of Pennsylvania",
+    "url": "https://www.mattblaze.org/papers/notes/picking/",
+    "type": "university",
+    "quote": "Some lock manufacturers and locksmiths install special \"security pins\" intended to resist lock picking. The most common security pins are the \"spool\" and \"mushroom\" top pin designs, which are thinner in their mid-section.",
+    "locator": "Exercise 10 (the next sentences are technique: do not quote)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Anti-Picking Designs (BosnianBill's LockLab)",
+    "publisher": "LockLab (hobbyist)",
+    "url": "https://lock-lab.com/locklab-university/anti-picking-design/",
+    "type": "other",
+    "quote": "Lock makers don’t want us picking their locks and do several things to prevent it. The most common design element is “security pins”.",
+    "locator": "Page body",
+    "quote_kind": "hobbyist site",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "All of the bottom pins and some of the driver pins are of a mushroom type which increase the pick resistance.",
+    "locator": "Section 5.1.2 (multi-row pin tumbler)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "No institutional (standards body or museum) source for spool pins by name; Blaze (Penn professor) is the best. Allowed on screen: one spool pin shape in cutaway. Not allowed: how a spool behaves under picking, false-set explanations."
+ },
+ {
+  "id": "7.2",
+  "beat": 7,
+  "claim": "Other answers: tighter tolerances, more pins and more cut depths, complex keyways, side-bar designs that also require each pin to be rotated, and rotating or pick-lockout features.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Better quality locks generally employ more pins and use more distinct cut depths on each.",
+    "locator": "Section 2.2",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "PIN TUMBLER WITH SIDE-BAR - Integral to the Side-Bar Pin Tumbler Cylinder is a dual action pin tumbler mechanism, the first element of which is a series of pin tumblers which must be elevated to the predetermined levels to establish a shear line. The second element ... is attained by rotation of each tumbler individually.",
+    "locator": "Section 5.1.2.1 (side-bar paragraph; spacing in extraction garbled)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "partly_single_source",
+  "notes": "Sidebar is single-source (NIST). 'Tighter tolerances' is supported by Blaze/NIST only indirectly: NIST ties pick resistance to tolerances. Do not name brands."
+ },
+ {
+  "id": "7.3",
+  "beat": 7,
+  "claim": "ANSI/BHMA grades (1 best, 2, 3) for hardware are mostly about durability: for example, Grade 1 cylinders must pass 40,000 operating cycles; the most significant difference between the grades is the cycle test.",
+  "numbers": [
+   {
+    "value": "40000",
+    "unit": "cycles",
+    "context": "Grade 1 cylinder test per BHMA page"
+   }
+  ],
+  "sources": [
+   {
+    "title": "A156.5-2020 Cylinders and Input Devices for Locks (Hardware Highlights)",
+    "publisher": "Builders Hardware Manufacturers Association (BHMA)",
+    "url": "https://www.buildershardware.com/ANSI-BHMA-Standards/Hardware-Highlights/A1565-2020-Cylinders-and-Input-Devices-for-Locks",
+    "type": "standards body",
+    "quote": "Grade 1 cylinders, for example, must pass a rigorous test through 40,000 cycles and still operate at reasonable forces.",
+    "locator": "A156.5 Hardware Highlights",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Understanding BHMA grading & testing",
+    "publisher": "Allegion (Schlage maker)",
+    "url": "https://dev-cs-schlage-commercial.allegion.com/content/dam/allegion-us-2/web-files/allegion/information-documents/Understanding_BHMA_Grading_and_Testing_009968.pdf",
+    "type": "company",
+    "quote": "The most significant difference between the ANSI/BHMA grades is the cycle test.",
+    "locator": "'Understanding BHMA grading & testing'",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "Page title says A156.5 'Cylinders and Input Devices for Locks' but its 'what this standard covers' sentence in the extraction mentions bored and preassembled locks, so the source page is internally inconsistent: do not quote scope sentence. A156.5 also has strength, operational and security tests (BHMA page lists them), but the grade-level security thresholds were not found in a free source. Do not state what grade 1/2/3 'test for picking'."
+ },
+ {
+  "id": "7.4",
+  "beat": 7,
+  "claim": "Pick and drill resistance is rated separately under UL 437 (the standard for key locks); BHMA function numbers mark cylinders 'drill and pick resistant, per UL 437'.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "A156.5-2020 Cylinders and Input Devices for Locks (Hardware Highlights)",
+    "publisher": "Builders Hardware Manufacturers Association (BHMA)",
+    "url": "https://www.buildershardware.com/ANSI-BHMA-Standards/Hardware-Highlights/A1565-2020-Cylinders-and-Input-Devices-for-Locks",
+    "type": "standards body",
+    "quote": "E09231AL refers to a Grade 1 cylinder used in bored locks only and is rated to be drill and pick resistant, per UL 437.",
+    "locator": "A156.5 Hardware Highlights",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "Locks can be obtained with a pick-resistance certification [32], and be tested for resistance to four levels of burglary attacks [33].",
+    "locator": "Section 2.4 (1981)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "partial",
+  "notes": "UL's own page is paywalled: the UL 437 test details (durations, number of picks) were NOT verified, and NIST's tabulation is garbled. Do not give any UL 437 test times or counts. Safe: 'a separate UL standard certifies pick and drill resistance'."
+ },
+ {
+  "id": "7.5",
+  "beat": 7,
+  "claim": "In Europe, EN 1303 rates cylinders with an eight-part code that covers durability, corrosion, key-related security (six grades, with minimum numbers of key differs and moving pins) and attack resistance; the best code shown is 1-6-0-B-0-C-6-D.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Standards and patent protection for mechanical cylinders (read via WebFetch extraction)",
+    "publisher": "ASSA ABLOY",
+    "url": "https://www.assaabloy.com/it/en/stories/blog/standards-and-patent-protection-for-mechanical-cylinders",
+    "type": "company",
+    "quote": "EN 1303 uses an 8-digit coding to report on performance tests. ... The highest grading a cylinder can achieve is 1-6-0-B-0-C-6-D; the lowest is 1-4-0-0-0-0-1-0.",
+    "locator": "ASSA ABLOY article (extraction)",
+    "quote_kind": "paraphrase / verbatim fragments from tool extraction",
+    "opened": true
+   },
+   {
+    "title": "EN 1303 (grading table; read via WebFetch extraction)",
+    "publisher": "Union (ASSA ABLOY group) UK",
+    "url": "https://www.uniononline.co.uk/uk/en/help-support/standards-and-legislation/en-1303",
+    "type": "company",
+    "quote": "Six grades of key related security ... Minimum number of effective differs: 100, 300, 15000, 30000, 30000 and 100000. Minimum number of movable levers, pins, discs, etc.: 2, 3, 5, 5, 6 and 6.",
+    "locator": "Union EN 1303 table (extraction)",
+    "quote_kind": "paraphrase of table",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported_with_edit",
+  "notes": "Union lists the eight digits in an order that does not match ASSA's example string, so do not narrate digit by digit and do not quote a digit meaning. Both are manufacturer pages (ASSA ABLOY group, one family: counts as one source family!). Independent confirmation of the table needs the BSI/DIN standard (paywalled). Treat as medium; script may say 'a European standard rates how many distinct keys and pins a cylinder has'."
+ },
+ {
+  "id": "7.6",
+  "beat": 7,
+  "claim": "In 2019 US police reports show 55.7% of burglaries involved forcible entry, 37.8% unlawful entry without force and 6.5% attempted forcible entry (about 1.12 million burglaries).",
+  "numbers": [
+   {
+    "value": "55.7",
+    "unit": "percent",
+    "context": "forcible entry, reported burglaries, US 2019"
+   },
+   {
+    "value": "37.8",
+    "unit": "percent",
+    "context": "unlawful entry (no force)"
+   },
+   {
+    "value": "6.5",
+    "unit": "percent",
+    "context": "attempted forcible entry"
+   },
+   {
+    "value": "1117696",
+    "unit": "burglaries",
+    "context": "estimated, US 2019"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Crime in the United States 2019: Burglary (read via WebFetch extraction)",
+    "publisher": "FBI Uniform Crime Reporting Program",
+    "url": "https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/burglary.pdf/at_download/file",
+    "type": "gov",
+    "quote": "55.7 percent of burglaries involved forcible entry ... 37.8 percent were unlawful entries ... 6.5 percent were attempted forcible entry",
+    "locator": "FBI UCR Crime in the US 2019, burglary topic page (extraction)",
+    "quote_kind": "verbatim fragments from tool extraction",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "single_source",
+  "notes": "Country US, year 2019, police-reported. UCR 'forcible entry' includes any force (kick, pry, break glass) and gives NO share for lock picking. Cite as 'in 2019 in the US'. Page was read through the WebFetch extractor only (the FBI PDF blocks scripted download): re-open before use."
+ },
+ {
+  "id": "7.7",
+  "beat": 7,
+  "claim": "Victim-survey data point the same way: in forcible burglaries, damaging or removing a door was the most common way in, and in 40% of unlawful entries to unoccupied homes offenders came in through an unlocked door or window; only 5% went through a locked door or window by unknown means.",
+  "numbers": [
+   {
+    "value": "40",
+    "unit": "percent",
+    "context": "unlawful entries to unoccupied US homes through unlocked door/window, 2003-2007"
+   },
+   {
+    "value": "5",
+    "unit": "percent",
+    "context": "through locked door/window by unknown means (unoccupied homes)"
+   },
+   {
+    "value": "70",
+    "unit": "percent",
+    "context": "England & Wales: entry through a door (approx.)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Victimization During Household Burglary (NCJ 227379), Sept 2010; NCVS 2003-2007",
+    "publisher": "U.S. Bureau of Justice Statistics",
+    "url": "https://bjs.ojp.gov/content/pub/ascii/vdhb.txt",
+    "type": "gov",
+    "quote": "Damaging or removing a door was the most common type of entry in forcible and attempted forcible entry burglaries",
+    "locator": "Special Report NCJ 227379 (NCVS 2003-2007), findings",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Victimization During Household Burglary (NCJ 227379), Sept 2010; NCVS 2003-2007",
+    "publisher": "U.S. Bureau of Justice Statistics",
+    "url": "https://bjs.ojp.gov/content/pub/ascii/vdhb.txt",
+    "type": "gov",
+    "quote": "In 40% of unlawful entries to unoccupied residences, offenders gained access through an unlocked door or window (table 7). A smaller percentage (5%) of unlawful entries while no one was home was through a locked door or window by unknown means; 8% of offenders used a key to the residence to gain access.",
+    "locator": "Same report, unlawful-entry section",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Overview of burglary and other household theft, England and Wales (read via WebFetch extraction)",
+    "publisher": "UK Office for National Statistics",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/overviewofburglaryandotherhouseholdtheft/latest",
+    "type": "gov",
+    "quote": "the offender gained entry through a door around 70% of the time and through a window around 30% of the time",
+    "locator": "ONS overview (England and Wales; 'last decade' to year ending March 2017; extraction)",
+    "quote_kind": "verbatim fragment from tool extraction",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "BJS source family is one (report + press release). Country/year must be stated on screen: US 2003-2007 NCVS (published 2010); England and Wales to YE March 2017. NO statistic on how many burglars pick locks was found by any of the sources: do NOT say 'almost nobody picks'. Safe: 'the data record forced doors, kicked doors, unlocked doors and keys. Picking does not show up as its own category'. BJS 'unlocked' = 'no lock to beat'."
+ },
+ {
+  "id": "7.8",
+  "beat": 7,
+  "claim": "The 5% 'locked door or window by unknown means' is the closest official figure to 'how many get past a locked door without leaving a trace', and it includes more than picking.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Victimization During Household Burglary (NCJ 227379), Sept 2010; NCVS 2003-2007",
+    "publisher": "U.S. Bureau of Justice Statistics",
+    "url": "https://bjs.ojp.gov/content/pub/ascii/vdhb.txt",
+    "type": "gov",
+    "quote": "A smaller percentage (5%) of unlawful entries while no one was home was through a locked door or window by unknown means",
+    "locator": "Same report",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Crime in the United States 2019: Burglary (read via WebFetch extraction)",
+    "publisher": "FBI Uniform Crime Reporting Program",
+    "url": "https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/burglary.pdf/at_download/file",
+    "type": "gov",
+    "quote": "37.8 percent were unlawful entries",
+    "locator": "FBI UCR 2019 (extraction; unlawful entry means no force)",
+    "quote_kind": "verbatim fragment from tool extraction",
+    "opened": true
+   }
+  ],
+  "confidence": "low",
+  "status": "interpretation",
+  "notes": "This is a caution note, not a fact for the script. Different definitions: BJS 5% is of unlawful entries to unoccupied homes, so about 5% of a subset. Do not combine with FBI figures."
+ },
+ {
+  "id": "8.1",
+  "beat": 8,
+  "claim": "The lock buys time rather than certainty: no mechanical lock is unpickable, designs trade cost, convenience and seconds, and better locks make picking much harder.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "Both picking and impressioning require finesse and skill, however, and are much more difficult to carry out against locks of better quality",
+    "locator": "Section 1 Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "The search continues to go on for the perfect lock--one that is economical in both cost and maintenance, that is convenient to use, easy to control and practically unpenetrable by enemy or criminal attack.",
+    "locator": "Conclusions (p. 80)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Both sources frame it as a compromise between cost, convenience and security. 'Buys time' is our paraphrase (not a quote)."
+ },
+ {
+  "id": "8.2",
+  "beat": 8,
+  "claim": "The 1851 episode is the origin of 'no lock is unpickable': contemporaries took away that English locks, 'perfect inviolability' included, could be opened by a skilled American.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "A. C. Hobbs, Rudimentary Treatise on the Construction of Locks, ed. C. Tomlinson, later ed. rev. R. Mallet (Weale's series; preface dated April 1868), ch. 'The Lock Controversy'; archive.org id rudimentarytreat00hobb",
+    "publisher": "Weale / archive.org scan (pre-1929, public domain)",
+    "url": "https://archive.org/details/rudimentarytreat00hobb",
+    "type": "book",
+    "quote": "probably no one suspected before the trial, that English locks ... perfect inviolability, would readily yield to a well-arranged system of lock-picking.",
+    "locator": "p. 115",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Spectacle of Security: Lock-Picking Competitions and the Security Industry in Mid-Victorian Britain (D. Churchill), History Workshop Journal 80(1), 2015, 52-74",
+    "publisher": "Oxford University Press / University of Leeds (White Rose accepted version)",
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/83078/1/Spectacles%20of%20Security.pdf",
+    "type": "paper",
+    "quote": "Hobbs’s conquest of these two ‘unpickable’ locks captivated the press",
+    "locator": "Introduction",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Keep the 'only question is how long' framing on our wording."
+ },
+ {
+  "id": "8.3",
+  "beat": 8,
+  "claim": "Scale: no sourced figure for how many pin tumbler locks exist or how many Yale makes. Skipped.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Cryptology and Physical Security: Rights Amplification in Master-Keyed Mechanical Locks (preprint rev. 2 Mar 2003; IEEE Security & Privacy 1(2), 2003, pp. 24-32)",
+    "publisher": "Matt Blaze, AT&T Labs-Research (peer-reviewed in IEEE Security & Privacy)",
+    "url": "https://www.mattblaze.org/papers/mk.pdf",
+    "type": "paper",
+    "quote": "They are found in (and guard the entrances to) the vast majority of residences, commercial businesses, educational institutions, and government facilities",
+    "locator": "Introduction (mechanical locks, all types)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "High Security Locking Devices: A State-of-the-Art Report (NBSIR 81-2233, 1981/82)",
+    "publisher": "U.S. National Bureau of Standards (now NIST)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir81-2233.pdf",
+    "type": "gov",
+    "quote": "This is the most common cylinder tumbler used in U.S. door locks.",
+    "locator": "Section 5.1.2.1",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "low",
+  "status": "gap",
+  "notes": "Both sources are qualitative. The Yale company growth numbers on ASME (35 employees at start, 12,000 later) are a single, undated source: skipped. Use only 1.1 wording."
+ }
+]
