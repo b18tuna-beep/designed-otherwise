@@ -347,7 +347,7 @@ export const A2: Record<string, () => Built> = {
       base: <Node>
         <Loc act="2" />
         <Photo name="wooden-lock-met.jpg" x={-250} y={-10} w={1100} h={700} zoom={zoom} />
-        <Backed text="Wooden lock, Damascus · The Met (public domain)" x={-250 - fw / 2} y={385} size={28} color={M} />
+        <Backed text="Wooden lock, Damascus · The Met (public domain)" x={-250 - fw / 2} y={385} size={34} color={M} />
         <Node opacity={pre}><Block lines={['WHAT WAS', 'ACTUALLY FOUND']} x={440} y={-120} size={TY.label} /></Node>
         <Node opacity={txt}><Block lines={['Wooden pin-lock bolts', 'Roman-era Egypt']} x={440} y={60} size={TY.small_label} /></Node>
       </Node>,
@@ -421,7 +421,7 @@ export const A2: Record<string, () => Built> = {
         <Node opacity={pat}><Photo name="patent-3630.jpg" x={-420} y={-10} w={560} h={700} zoom={() => 1.55} py={py} /></Node>
         <Node opacity={card}><NameCard x={330} y={-110} w={840} name="Linus Yale Sr." role={'bank-lock maker,\nNewport, New York'} nameSize={60} /></Node>
         <Node opacity={pt}><Backed text="US patent 3,630 · 1844" x={330} y={110} font="label" anchor={[0, 0]} /></Node>
-        <Backed text={() => (pat() > 0.5 ? 'US patent 3,630 (1844), USPTO' : 'Linus Yale Sr., portrait (public domain)')} x={-700} y={385} size={28} color={M} anchor={[-1, 0]} />
+        <Backed text={() => (pat() > 0.5 ? 'US patent 3,630 (1844), USPTO' : 'Linus Yale Sr., portrait (public domain)')} x={-700} y={385} size={34} color={M} anchor={[-1, 0]} />
       </Node>,
       ambient: function* () { yield* all(card(1, 0.7), zoom(1.12, dur('S34'), linear)); },
       steps: [function* () { yield* all(port(0, 0.6), pat(1, 0.6), pt(1, 0.8)); yield* py(-200, Math.max(1.0, dur('S34') - cue('S34', 0) - 0.8), linear); }],
@@ -435,7 +435,7 @@ export const A2: Record<string, () => Built> = {
         <Loc act="2" />
         <Photo name="yale-jr.jpg" x={-380} y={-10} w={540} h={700} zoom={z} />
         <Node opacity={nm}><Lab text="LINUS YALE JR. (1821-1868)" x={170} y={-250} size={TY.label} offset={[-1, 0]} /></Node>
-        <Backed text="Linus Yale Jr., portrait (public domain)" x={-700} y={385} size={28} color={M} anchor={[-1, 0]} />
+        <Backed text="Linus Yale Jr., portrait (public domain)" x={-700} y={385} size={34} color={M} anchor={[-1, 0]} />
         <Node x={480} y={60} opacity={() => easel() * (1 - toLock())} scale={() => 1 - 0.2 * toLock()}>
           <Line points={[[-120, 200], [0, -150], [120, 200]]} stroke={C.chalk} lineWidth={LW.structure} lineCap="round" />
           <Line points={[[0, -150], [0, 200]]} stroke={C.chalk} lineWidth={LW.structure} lineCap="round" />

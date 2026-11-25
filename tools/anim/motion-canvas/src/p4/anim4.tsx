@@ -214,9 +214,9 @@ export const A4: Record<string, () => Built> = {
     };
   },
   S63: () => {
-    const draw = sig(0), mark = sig(0), seg = sigs(3), leg = sig(0);
+    const draw = sig(0), mark = sig(0), seg = sigs(3), leg = sigs(3);
     const W = 1400, X0 = -700, Y = 40, H = 150;
-    const P = [55.7, 37.8, 6.5], cols = [C.chalk, C.muted, C.grid];
+    const P = [55.7, 37.8, 6.5], cols = [C.chalk, C.muted, C.panel];
     const x0 = (i: number) => X0 + (W * P.slice(0, i).reduce((a, b) => a + b, 0)) / 100;
     const names = ['forcible entry', 'no force', 'attempted'];
     return {
@@ -225,20 +225,29 @@ export const A4: Record<string, () => Built> = {
         <Lab text="REPORTED BURGLARIES · US · 2019" x={-864} y={-430} size={TY.label} offset={[-1, 0]} />
         <Rect x={0} y={Y} width={W} height={H} stroke={C.chalk} lineWidth={LW.structure} end={draw} />
         {P.map((p, i) => (
-          <Rect x={() => x0(i) + (W * p * seg[i]()) / 200} y={Y} width={() => (W * p * seg[i]()) / 100} height={H - 6} fill={cols[i]} />
+          <Rect x={() => x0(i) + (W * p * seg[i]()) / 200} y={Y} width={() => (W * p * seg[i]()) / 100} height={H - 6} fill={cols[i]} stroke={i === 2 ? M : undefined} lineWidth={i === 2 ? 4 : 0} />
         ))}
         <Line points={[[0, Y - 120], [0, Y + 120]]} stroke={V} lineWidth={LW.structure} lineDash={[12, 10]} opacity={mark} />
         <Mono text="50 %" x={0} y={Y - 150} size={44} color={V} opacity={mark} />
         {P.map((p, i) => (
-          <Node opacity={() => leg() * 1} x={X0 + (W * (P.slice(0, i).reduce((a, b) => a + b, 0) + p / 2)) / 100} y={Y + 110}>
-            <Mono text={`${p} %`} y={0} size={i === 0 ? 56 : 44} color={i === 2 ? M : C.chalk} />
-            <Sm text={names[i]} y={i === 2 ? 56 : 58} color={M} />
+          <Node opacity={leg[i]} x={i === 2 ? 640 : X0 + (W * (P.slice(0, i).reduce((a, b) => a + b, 0) + p / 2)) / 100} y={Y + 125}>
+            <Mono text={`${p} %`} y={0} size={i === 0 ? 60 : 48} color={i === 2 ? M : C.chalk} />
+            <Sm text={names[i]} y={58} color={i === 2 ? M : C.chalk} size={38} />
           </Node>
         ))}
-        <Sm text="FBI · US · 2019 (reported burglaries)" x={0} y={340} color={M} />
+        <Sm text="FBI · US · 2019 (reported burglaries)" x={0} y={340} color={M} size={36} />
       </Node>,
-      ambient: function* () { yield* draw(1, 1.4, ease); yield* waitFor(Math.max(cue('S63', 0) - 4.6, 0)); yield* mark(1, 0.6); },
-      steps: [function* () { yield* all(...seg.map((s, i) => delay(i * 0.5, s(1, 0.9, ease)))); yield* leg(1, 0.5); }],
+      ambient: function* () {
+        yield* draw(1, 1.2, ease);
+        yield* waitFor(0.8);
+        yield seg[0](1, 1.5, ease);
+        yield delay(1.0, seg[1](1, 1.2, ease));
+        yield delay(2.0, seg[2](1, 0.8, ease));
+        yield* waitFor(2.39);
+        yield* all(...leg.map((l, i) => delay(i * 0.25, l(1, 0.4))));
+        yield* mark(1, 0.6);
+      },
+      steps: [],
     };
   },
   S64: () => {

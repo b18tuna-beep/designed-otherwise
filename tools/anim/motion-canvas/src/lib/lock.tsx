@@ -229,7 +229,7 @@ export const photoBox = (name: string, w: number, h: number) => {
   const [iw, ih] = PHOTO_SIZE[name], k = Math.min(w / iw, h / ih);
   return [iw * k + 36, ih * k + 36] as P;
 };
-export const Credit = ({text, x = 0, y = 0, anchor = [0, 0]}: any) => <Backed text={text} x={x} y={y} anchor={anchor} size={30} color={M} />;
+export const Credit = ({text, x = 0, y = 0, anchor = [0, 0]}: any) => <Backed text={text} x={x} y={y} anchor={anchor} size={34} color={M} />;
 
 // ------------------------------------------------------------------ small drawings
 // name card: big name, role line, optional silhouette (no face)

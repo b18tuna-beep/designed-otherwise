@@ -9,7 +9,7 @@ const at = (id: string, i: number, extra: number) => Math.min(cue(id, i) + extra
 const PX = -380;
 const credit = (name: string, w: number, h: number, text: string, x = PX, y = 385) => {
   const [fw] = photoBox(name, w, h);
-  return <Backed text={text} x={x - fw / 2} y={y} size={28} color={M} anchor={[-1, 0]} />;
+  return <Backed text={text} x={x - fw / 2} y={y} size={34} color={M} anchor={[-1, 0]} />;
 };
 const fadeIn = (s: any, d = 0.6) => function* () { yield* s(1, d, ease); };
 const Chair = ({x = 0, y = 0, o = 1}: any) => (
