@@ -13,5 +13,7 @@ Each file is one stage of making an episode. Open only the one you need. Every r
 | Workflows, secrets, minutes, metrics, recurring chores | `docs/playbooks/7-ops.md` | studio (private) |
 | The quality bar | `quality-bar.md` | here |
 
+Crew (who does each stage, on which model) and chat handoffs: `docs/crew/README.md`.
+
 Where things live: look `style/style-bible.md` + `style/tokens.json`; voice `style/voice.md`; packaging `style/packaging.md`; brand `brand/README.md`; studio job files `jobs/README.md` in the studio.
 Reference episode (copy this): `episodes/p1-refrigerator/`.

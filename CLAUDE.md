@@ -59,3 +59,6 @@ Before any task open `docs/playbooks/README.md` and read only the playbook for t
 - Motion Canvas `Video` nodes render as a frozen frame headlessly. Hero shots are therefore 2D overlay scenes (`overlays` project, transparent PNG frames) composited over the Blender mp4s by `tools/anim/composite_heroes.py`.
 - Blender view transform must be Standard: AgX washes the lime and orange tokens toward cream.
 - P1's approved audio and captions still say "Next time on The Hidden Mechanism" (S40). Re-voicing that line as "Designed Otherwise" is a pending P1 finishing task that needs Michael's approval of the new clip; until then scenes, script and words.json stay matched to the approved audio.
+
+## Crew and chat protocol
+Specialist crew briefs, which model runs each, and the one-chat-per-phase handoff protocol: `docs/crew/README.md`. The main chat is the showrunner and dispatches crew; it does not do craft work itself.
