@@ -1,0 +1,1834 @@
+[
+ {
+  "id": "1.1",
+  "beat": 1,
+  "claim": "A warm petrol car engine idles at a few hundred to under a thousand revolutions per minute. Service specifications and test papers cluster at roughly 550 to 800 rpm (for example 550-650 manual or 650-750 automatic for one Toyota, 700-750 for one Honda, 650 for a Toyota V6).",
+  "numbers": [
+   {
+    "value": "550-800",
+    "unit": "rpm",
+    "context": "idle range across the sources checked"
+   },
+   {
+    "value": "650-750",
+    "unit": "rpm",
+    "context": "Toyota Yaris 2007 automatic"
+   },
+   {
+    "value": "700+/-50 to 750+/-50",
+    "unit": "rpm",
+    "context": "Honda CRX 1987"
+   }
+  ],
+  "sources": [
+   {
+    "title": "2007 Toyota Yaris L4-1.5L (1NZ-FE), Idle Speed: Specifications (Toyota service data as reproduced by workshop-manuals.com)",
+    "publisher": "Toyota Motor Corp. service data, hosted by workshop-manuals.com",
+    "url": "https://workshop-manuals.com/toyota/yaris/l4-1.5l_(1nz-fe)/maintenance/tune-up_and_engine_performance_checks/idle_speed/system_information/specifications/",
+    "type": "company",
+    "quote": "ENGINE IDLING SPEED Idling speed ............................................................................................. 550 to 650 rpm for manual transaxle 650 to 750 rpm for automatic transaxle",
+    "locator": "Specifications page 1 of 2",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "1987 Honda CRX L4-1488cc 1.5L SOHC (D15A3) MFI, Idle Speed: Specifications (Honda service data as reproduced by workshop-manuals.com)",
+    "publisher": "Honda service data, hosted by workshop-manuals.com",
+    "url": "https://workshop-manuals.com/honda/crx/l4-1488cc_1.5l_sohc_(d15a3)__mfi/maintenance/tune-up_and_engine_performance_checks/idle_speed/system_information/specifications/",
+    "type": "company",
+    "quote": "Base Idle Base Idle Except HF Model Manual Transmission California 700+/-50 rpm 49 state 750+/-50 rpm",
+    "locator": "Idle Speed: Specifications",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Reducing the idle speed of a spark-ignited gasoline engine with hydrogen addition (Int. J. Hydrogen Energy, DOI 10.1016/J.IJHYDENE.2010.08.002; abstract record)",
+    "publisher": "OSTI / ETDEWEB record of a peer-reviewed journal article",
+    "url": "https://www.osti.gov/etdeweb/biblio/21341179",
+    "type": "paper",
+    "quote": "at reduced idle speeds of 600, 700 and 800 rpm",
+    "locator": "Abstract (800 rpm is the baseline: \"30.8 MJ/h at 800 rpm\")",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "S.I. engine idle control improvement by using automobile reversible \"alternator\" (LAAS-CNRS report)",
+    "publisher": "CNRS / LAAS (France), via OSTI",
+    "url": "https://www.osti.gov/etdeweb/servlets/purl/508818",
+    "type": "paper",
+    "quote": "nominal idle-speed equal to 650 rpm",
+    "locator": "Section on simulation of the starter-alternator assist",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Wikipedia says \"customarily between 600 and 1000 rpm\" for passenger cars: not used as a source, but consistent. Modern engines run lower when warm (550-750 here) and higher when cold. The brief's \"about 13 times a second\" is 800 rpm, the TOP of what these sources show. Safer on-screen number: about 700 rpm (11.7 rev/s) or give a range. Do not say \"a car idles at 1,000 rpm\"."
+ },
+ {
+  "id": "1.2",
+  "beat": 1,
+  "claim": "One full four-stroke cycle (intake, compression, power, exhaust) takes two revolutions of the crankshaft, which is 720 degrees of crank angle.",
+  "numbers": [
+   {
+    "value": "2",
+    "unit": "crank revolutions per cycle",
+    "context": ""
+   },
+   {
+    "value": "720",
+    "unit": "degrees",
+    "context": "crank angle per cycle"
+   }
+  ],
+  "sources": [
+   {
+    "title": "four-stroke cycle",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/four-stroke-cycle",
+    "type": "encyclopedia",
+    "quote": "Each cycle thus requires four strokes of the piston—intake, compression, power, and exhaust",
+    "locator": "Four-stroke cycle article",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   },
+   {
+    "title": "Four Stroke Cycle Engines (University of Windsor engine manual, hosted on a University of Washington course site)",
+    "publisher": "University of Windsor / University of Washington (course page)",
+    "url": "https://courses.washington.edu/engr100/Section_Wei/engine/UofWindsorManual/Four%20Stroke%20Cycle%20Engines.htm",
+    "type": "university",
+    "quote": "An operating cycle requires two revolutions (720) of the crankshaft.",
+    "locator": "First paragraph",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Engine Configuration and Smoothness: Introduction and Basic Theory (Autozine Technical School)",
+    "publisher": "Autozine (independent automotive engineering site)",
+    "url": "https://autozine.org/technical_school/engine/Smoothness1.html",
+    "type": "org",
+    "quote": "A cylinder takes 720° crankshaft angle (i.e., 2 revolutions) to complete 1 cycle of 4-stroke operation.",
+    "locator": "Smooth power delivery",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "4-Stroke Internal Combustion Engine (Beginner's Guide to Aeronautics)",
+    "publisher": "NASA Glenn Research Center",
+    "url": "https://www.grc.nasa.gov/www/K-12/airplane/engopt.html",
+    "type": "gov",
+    "quote": "Notice that the crankshaft makes two revolutions for every one revolution of the cams.",
+    "locator": "Mechanical operation section (valves and cams)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Four families agree (Britannica x2 counts as one)."
+ },
+ {
+  "id": "1.3",
+  "beat": 1,
+  "claim": "Real time of one cycle at idle follows from rpm: one cycle is 120 divided by rpm in seconds. 800 rpm gives 0.150 s, 700 rpm gives about 0.171 s, 600 rpm gives 0.200 s. Each crank degree lasts about 0.2 ms at idle (1 degree = 1/(6 x rpm) s).",
+  "numbers": [
+   {
+    "value": "0.150",
+    "unit": "s",
+    "context": "800 rpm"
+   },
+   {
+    "value": "0.171",
+    "unit": "s",
+    "context": "700 rpm"
+   },
+   {
+    "value": "0.200",
+    "unit": "s",
+    "context": "600 rpm"
+   },
+   {
+    "value": "0.208",
+    "unit": "ms",
+    "context": "1 crank degree at 800 rpm"
+   },
+   {
+    "value": "0.238",
+    "unit": "ms",
+    "context": "1 crank degree at 700 rpm"
+   }
+  ],
+  "sources": [
+   {
+    "title": "four-stroke cycle",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/four-stroke-cycle",
+    "type": "encyclopedia",
+    "quote": "n/a (derived arithmetic from claims 1.1 and 1.2; see notes)",
+    "locator": "Premise: two crank revolutions per cycle (claim 1.2)",
+    "quote_kind": "derived arithmetic",
+    "opened": true
+   },
+   {
+    "title": "2007 Toyota Yaris L4-1.5L (1NZ-FE), Idle Speed: Specifications (Toyota service data as reproduced by workshop-manuals.com)",
+    "publisher": "Toyota Motor Corp. service data, hosted by workshop-manuals.com",
+    "url": "https://workshop-manuals.com/toyota/yaris/l4-1.5l_(1nz-fe)/maintenance/tune-up_and_engine_performance_checks/idle_speed/system_information/specifications/",
+    "type": "company",
+    "quote": "n/a (derived arithmetic from claims 1.1 and 1.2; see notes)",
+    "locator": "Premise: idle rpm range (claim 1.1)",
+    "quote_kind": "derived arithmetic",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "derived",
+  "notes": "Pure arithmetic from claims 1.1 and 1.2, no outside source states it. Check: 800 rpm = 13.33 rev/s, a cycle is 2 revs = 0.150 s. For the clock, use the rpm that is on screen and say it is typical, not universal. The brief's \"about 0.15 s\" holds only at 800 rpm; at 700 rpm it is about 0.17 s (\"about a sixth of a second\")."
+ },
+ {
+  "id": "1.4",
+  "beat": 1,
+  "claim": "In each cylinder only one of the four strokes is the power stroke. The piston is pushed by burning gas on the power stroke; for the other three strokes the crankshaft, carried by the flywheel and the other cylinders, moves the piston.",
+  "numbers": [
+   {
+    "value": "1 of 4",
+    "unit": "strokes",
+    "context": "power stroke per cycle"
+   }
+  ],
+  "sources": [
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "Energy imparted to the flywheel by the power stroke is sufficient to keep it rotating through the exhaust, intake, and compression strokes.",
+    "locator": "Section 2 Principles of operation, para 2b (flywheel)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Engine Configuration and Smoothness: Introduction and Basic Theory (Autozine Technical School)",
+    "publisher": "Autozine (independent automotive engineering site)",
+    "url": "https://autozine.org/technical_school/engine/Smoothness1.html",
+    "type": "org",
+    "quote": "Only the power stroke (expansion stroke) generates positive power, while intake stroke, exhaust stroke and compression stroke consume power, especially the latter.",
+    "locator": "Smooth power delivery",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Otto Cycle Thermodynamic Analysis",
+    "publisher": "NASA Glenn Research Center",
+    "url": "https://www.grc.nasa.gov/www/K-12/airplane/ottoa.html",
+    "type": "gov",
+    "quote": "For the ideal four stroke engine, the intake stroke (1-2) and exhaust stroke (6-1) are done at constant pressure and do not contribute to the generation of power by the engine.",
+    "locator": "Page body, p-V discussion",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Same idea as claim 5.1; kept in beat 1 for the cold open. NASA says intake and exhaust \"do not contribute\" in the ideal cycle; Autozine says all three consume power. Say \"only the power stroke makes power\" and not \"the other three cost energy\" unless leaning on Autozine."
+ },
+ {
+  "id": "2.1",
+  "beat": 2,
+  "claim": "On the intake stroke the piston moves from top dead centre to bottom dead centre with the intake valve open. This lowers the pressure in the cylinder and the pressure outside pushes the air-fuel mixture in (the engine acts as an air pump).",
+  "numbers": [
+   {
+    "value": "0-180",
+    "unit": "degrees",
+    "context": "crank angle of the intake stroke"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Four Stroke Cycle Engines (University of Windsor engine manual, hosted on a University of Washington course site)",
+    "publisher": "University of Windsor / University of Washington (course page)",
+    "url": "https://courses.washington.edu/engr100/Section_Wei/engine/UofWindsorManual/Four%20Stroke%20Cycle%20Engines.htm",
+    "type": "university",
+    "quote": "The intake event occurs when the piston moves from TDC to BDC and the intake valve is open.",
+    "locator": "Intake Stroke",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Four Stroke Cycle Engines (University of Windsor engine manual, hosted on a University of Washington course site)",
+    "publisher": "University of Windsor / University of Washington (course page)",
+    "url": "https://courses.washington.edu/engr100/Section_Wei/engine/UofWindsorManual/Four%20Stroke%20Cycle%20Engines.htm",
+    "type": "university",
+    "quote": "The movement of the piston toward BDC creates a low pressure in the cylinder. Ambient atmospheric pressure forces the air-fuel mixture through the open intake valve into the cylinder to fill the low pressure area created by the piston movement.",
+    "locator": "Intake Stroke",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "4-Stroke Internal Combustion Engine (Beginner's Guide to Aeronautics)",
+    "publisher": "NASA Glenn Research Center",
+    "url": "https://www.grc.nasa.gov/www/K-12/airplane/engopt.html",
+    "type": "gov",
+    "quote": "The engine cycle begins with the intake stroke as the piston is pulled towards the crankshaft",
+    "locator": "Intake Stroke",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "four-stroke cycle",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/four-stroke-cycle",
+    "type": "encyclopedia",
+    "quote": "the piston first descends on the intake stroke.",
+    "locator": "Four-stroke cycle article",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Windsor and Britannica are two families; NASA a third. The two Windsor entries are one source."
+ },
+ {
+  "id": "2.2",
+  "beat": 2,
+  "claim": "In theory each stroke begins at top or bottom dead centre and lasts 180 degrees of crank rotation, so the four strokes span 0-180, 180-360, 360-540 and 540-720 degrees.",
+  "numbers": [
+   {
+    "value": "180",
+    "unit": "degrees",
+    "context": "per stroke"
+   },
+   {
+    "value": "720",
+    "unit": "degrees",
+    "context": "per cycle"
+   }
+  ],
+  "sources": [
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "In theory, an event or stroke of the cycle begins at the top or bottom center of the piston movement and continues for 180° rotation of the crankshaft.",
+    "locator": "Section 27, Valve timing, para a",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Engine Configuration and Smoothness: Introduction and Basic Theory (Autozine Technical School)",
+    "publisher": "Autozine (independent automotive engineering site)",
+    "url": "https://autozine.org/technical_school/engine/Smoothness1.html",
+    "type": "org",
+    "quote": "A cylinder takes 720° crankshaft angle (i.e., 2 revolutions) to complete 1 cycle of 4-stroke operation.",
+    "locator": "Smooth power delivery",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 3: Engine Cycles",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e9421a34d0cd5c5fc4fc81365975503e_MIT2_61S17_lec3.pdf",
+    "type": "university",
+    "quote": "Sequence of events in four-stroke spark-ignition engine operating cycle.",
+    "locator": "Fig. 1-8 (cylinder pressure, volume and burned fraction plotted against crank angle)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "TM 10-570 adds \"in theory\" because valve events actually shift (claim 2.3). The 0-180-360-540-720 labelling is the brief's convention; crank angle zero at start of intake is the textbook choice but many texts put 0 at firing TDC, so the clock must say which it uses."
+ },
+ {
+  "id": "2.3",
+  "beat": 2,
+  "claim": "The valves do not open and close exactly at the ends of the strokes. The intake valve opens a little before top dead centre and closes well after bottom dead centre; the exhaust valve opens before bottom dead centre and closes at or just after top dead centre, so the two are briefly open together (overlap).",
+  "numbers": [
+   {
+    "value": "4-20",
+    "unit": "degrees before TDC",
+    "context": "intake valve opens (Toyota V6: 4; NPTEL 5-20)"
+   },
+   {
+    "value": "40-60",
+    "unit": "degrees after BDC",
+    "context": "intake valve closes (Toyota V6: 44; NPTEL 40-60)"
+   },
+   {
+    "value": "30-50",
+    "unit": "degrees before BDC",
+    "context": "exhaust valve opens (Toyota V6: 46; NPTEL 30-50)"
+   },
+   {
+    "value": "2-20",
+    "unit": "degrees after TDC",
+    "context": "exhaust valve closes (Toyota V6: 2; NPTEL 8-20)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "For this reason, the intake valves open slightly before top dead center.",
+    "locator": "Section 27, Valve timing, para d",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "By closing the intake valve after the piston has passed through its period of rock at bottom dead center, full advantage can be taken of the momentum of the incoming charge.",
+    "locator": "Section 27, Valve timing, para d",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Valve Timing (fluids course notes)",
+    "publisher": "Colorado State University, Dept. of Mechanical Engineering",
+    "url": "https://www.engr.colostate.edu/~allan/fluids/page6/page6.html",
+    "type": "university",
+    "quote": "The inlet valve begins to open before top dead center so that there will be a large effective area, A e , at the start of induction. The exhaust valve begins to open before bottom dead center to give the combustion products time to escape",
+    "locator": "Valve Timing page",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Module 1, Lecture 1: Introduction to IC Engines and Air Pollution (NPTEL course 112104033)",
+    "publisher": "NPTEL / Indian Institutes of Technology",
+    "url": "https://archive.nptel.ac.in/content/storage2/courses/112104033/lecture1/1_4.htm",
+    "type": "university",
+    "quote": "Intake valve opens (IO) 20 - 5º CA bTDC at the end of exhaust stroke Exhaust valve closes (EC) 8 to 20º CA aTDC in the beginning of intake stroke Intake valve closes (IC) 60 -40º CA aBDC in the beginning of compression stroke",
+    "locator": "Table 1.2 Sequence of Events in 4-Stroke SI Engine Cycle",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Additional Engine Considerations (University of Windsor engine manual, hosted on a University of Washington course site)",
+    "publisher": "University of Windsor / University of Washington (course page)",
+    "url": "https://courses.washington.edu/engr100/Section_Wei/engine/UofWindsorManual/Additional%20Engine%20Considerations.htm",
+    "type": "university",
+    "quote": "Valve overlap is the period during engine operation when both intake and exhaust valves are open at the same time.",
+    "locator": "Valve Overlap",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Toyota Camry engine specifications, New Car Features excerpt (NHTSA ODI file PE04-021, Attachment 12)",
+    "publisher": "Toyota Motor Sales (filed with U.S. NHTSA)",
+    "url": "https://static.nhtsa.gov/odi/inv/2004/INRD-PE04021-18337.pdf",
+    "type": "company",
+    "quote": "Open 4°BTDC Intake Valve Close 44°ABDC Timing Open 46°BBDC Exhaust Close 2°ATDC",
+    "locator": "Engine Specification table, 2002 Camry V6 (document also covers the 2AZ-FE four)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported_range_only",
+  "notes": "Conceptual wording is safe. Numbers differ by engine and by speed (the Windsor page gives overlap as 10-20 degrees; NPTEL ranges imply more): give only \"a few to a few tens of degrees\", never one set of angles as universal. Modern engines with variable valve timing (fueleconomy.gov lists VVT) move these angles while running. Toyota table OCR order is Intake Open/Close then Exhaust Open/Close for the V6 (line \"Valve Timing\") - confirm against the PDF image."
+ },
+ {
+  "id": "2.4",
+  "beat": 2,
+  "claim": "Valves are opened by cams on a camshaft that turns at half the speed of the crankshaft, because each valve opens once per two crank revolutions.",
+  "numbers": [
+   {
+    "value": "2:1",
+    "unit": "crank to cam revolutions",
+    "context": ""
+   }
+  ],
+  "sources": [
+   {
+    "title": "4-Stroke Internal Combustion Engine (Beginner's Guide to Aeronautics)",
+    "publisher": "NASA Glenn Research Center",
+    "url": "https://www.grc.nasa.gov/www/K-12/airplane/engopt.html",
+    "type": "gov",
+    "quote": "Notice that the crankshaft makes two revolutions for every one revolution of the cams.",
+    "locator": "Mechanical operation (timing chain)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "gasoline engine: Camshaft",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/gasoline-engine/Camshaft",
+    "type": "encyclopedia",
+    "quote": "the camshaft turns half as fast as the crankshaft",
+    "locator": "Britannica, Camshaft section",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "NASA and Britannica agree."
+ },
+ {
+  "id": "2.5",
+  "beat": 2,
+  "claim": "At low load, including idle, the throttle partly closes the intake and the engine has to pull air in against that restriction. This throttling is a main reason a petrol engine is less efficient at part load: it increases pumping losses.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Methods to improve efficiency of four stroke, spark ignition engines at part load (Energy Conversion and Management 46, DOI 10.1016/j.enconman.2005.03.008; abstract record)",
+    "publisher": "OSTI / ETDEWEB record of a peer-reviewed journal article",
+    "url": "https://www.osti.gov/etdeweb/biblio/20647074",
+    "type": "paper",
+    "quote": "The main reason for efficiency decrease at part load conditions for these types of engines is the flow restriction at the cross sectional area of the intake system by partially closing the throttle valve, which leads to increased pumping losses",
+    "locator": "Abstract",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 19: Engine Friction and Lubrication",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/ad971a51c4a7f2db8a20f9570c870f0d_MIT2_61S17_lec19.pdf",
+    "type": "university",
+    "quote": "Work per cycle to move the working fluid through the engine",
+    "locator": "Slide \"Engine Friction: terminology\" (pumping work Wp), and the pumping-loss slide showing throttling work",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Where the Energy Goes: Gasoline Vehicles",
+    "publisher": "U.S. DOE / EPA, fueleconomy.gov",
+    "url": "https://fueleconomy.gov/feg/atv.shtml",
+    "type": "gov",
+    "quote": "Smaller amounts of energy are lost through engine friction, pumping air into and out of the engine, and combustion inefficiency.",
+    "locator": "Engine losses paragraph",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported_with_inference",
+  "notes": "Sources state part-load throttling and pumping loss. \"At idle\" is the lowest-load case so it is the extreme of this, but none of the sources fetched says \"at idle\" in those words. Say \"at low load such as idle\". Pumping loss is a \"smaller amount\" per fueleconomy.gov; do not make it the main loss. No percentage given (see decisions.md)."
+ },
+ {
+  "id": "3.1",
+  "beat": 3,
+  "claim": "Compression ratio is the cylinder volume at the start of compression divided by the volume left at the top of the stroke (the total volume over the clearance volume).",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Otto Cycle Thermodynamic Analysis",
+    "publisher": "NASA Glenn Research Center",
+    "url": "https://www.grc.nasa.gov/www/K-12/airplane/ottoa.html",
+    "type": "gov",
+    "quote": "We call the ratio of the volume at the beginning of compression to the volume at the end of compression the compression ratio, r .",
+    "locator": "Page body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "The ratio of compression or compression ratio of an engine is the total volume of the cylinder divided by the clearance volume",
+    "locator": "Section 10, Compression ratios, para a",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "TM 10-570 gives a worked example that comes out at 5:1 (1941), a reminder that ratios were far lower then."
+ },
+ {
+  "id": "3.2",
+  "beat": 3,
+  "claim": "Modern naturally aspirated petrol engines typically have compression ratios of about 10:1 to 11:1 (examples: 9.6:1 Toyota 2.4 four, 10.5:1 Toyota 3.0 V6). Knock has long capped them near 12:1 (13:1 with direct injection); a few engines go higher (Mazda SKYACTIV-G, 14:1).",
+  "numbers": [
+   {
+    "value": "9.6-10.5",
+    "unit": ":1",
+    "context": "two Toyota Camry engines, same document"
+   },
+   {
+    "value": "10-11",
+    "unit": ":1",
+    "context": "Mazda: conventional naturally aspirated petrol"
+   },
+   {
+    "value": "12 (13 with direct injection)",
+    "unit": ":1",
+    "context": "MIT: knock-limited for SI engines"
+   },
+   {
+    "value": "14",
+    "unit": ":1",
+    "context": "Mazda SKYACTIV-G, a high outlier"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Where Engine Dreams Meet Possibilities: The SKYACTIV-Z Challenge (interview with Mazda engine developers)",
+    "publisher": "Mazda Motor Corporation",
+    "url": "https://www.mazda.com/en/mazda-mirai-base/articles/20250319-multisolution-skyactivez/",
+    "type": "company",
+    "quote": "conventional naturally aspirated gasoline engines typically set compression ratios at around 10 to 11:1, but with SKYACTIV-G, we increased it to 14:1",
+    "locator": "Yamakawa answer, \"What measures did you take to improve this control factor?\"",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 3: Engine Cycles",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e9421a34d0cd5c5fc4fc81365975503e_MIT2_61S17_lec3.pdf",
+    "type": "university",
+    "quote": "SI engine CR limited by knocking to 12",
+    "locator": "Slide \"Effects of compression ratio\"",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Toyota Camry engine specifications, New Car Features excerpt (NHTSA ODI file PE04-021, Attachment 12)",
+    "publisher": "Toyota Motor Sales (filed with U.S. NHTSA)",
+    "url": "https://static.nhtsa.gov/odi/inv/2004/INRD-PE04021-18337.pdf",
+    "type": "company",
+    "quote": "Compression Ratio 9.6 : 1",
+    "locator": "Engine Specification table, 2AZ-FE 2.4 L four; the 3.0 L V6 table in the same document reads 10.5 : 1",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported_range_only",
+  "notes": "The brief says \"about 8 to 12:1\". The sources support about 9.5 to 12:1 for current engines; 8.4:1 appears only as MIT's example engine (Fig 5-1, 3500 rpm) and 5:1 only in the 1941 manual. Recommend the script says \"roughly 10 to 12 to 1\". Turbocharged engines often run lower geometric ratios (not sourced here, so not claimed)."
+ },
+ {
+  "id": "3.3",
+  "beat": 3,
+  "claim": "Compression ratio is limited because squeezing the mixture harder raises its temperature and pressure until the unburned part can ignite by itself (knock). Higher ratios give better efficiency but need fuel that resists knock.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Where Engine Dreams Meet Possibilities: The SKYACTIV-Z Challenge (interview with Mazda engine developers)",
+    "publisher": "Mazda Motor Corporation",
+    "url": "https://www.mazda.com/en/mazda-mirai-base/articles/20250319-multisolution-skyactivez/",
+    "type": "company",
+    "quote": "Higher compression ratios improve engine thermal efficiency, leading to better output and fuel economy, but they also cause “knocking”",
+    "locator": "Yamakawa answer, \"What measures did you take...\"",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Selecting the Right Octane Fuel",
+    "publisher": "U.S. DOE / EPA, fueleconomy.gov",
+    "url": "https://www.fueleconomy.gov/feg/octane.shtml",
+    "type": "gov",
+    "quote": "Higher octane fuels are often required or recommended for engines that use a higher compression ratio and/or use supercharging or turbocharging to force more air into the engine.",
+    "locator": "Why do some manufacturers require or recommend higher octane",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 3: Engine Cycles",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e9421a34d0cd5c5fc4fc81365975503e_MIT2_61S17_lec3.pdf",
+    "type": "university",
+    "quote": "SI engine CR limited by knocking to 12",
+    "locator": "Slide \"Effects of compression ratio\": theoretical efficiency increases with CR",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Mazda adds that wording \"uneven burning\" is how they describe knock; MIT and EIA (3.4) are more precise: auto-ignition of the end-gas."
+ },
+ {
+  "id": "3.4",
+  "beat": 3,
+  "claim": "Knock is not the normal burn. After the spark starts a flame, the unburned mixture ahead of it (the end gas) is squeezed hotter and can ignite spontaneously. The sudden release of energy makes pressure waves, the audible knock, and can damage the engine.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 10: SI engine combustion II",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/35c1c5bbf304c0f41e1de0cec0b0ee85_MIT2_61S17_lec10.pdf",
+    "type": "university",
+    "quote": "Most evidence indicates that knock originates with the auto-ignition of one or more local regions within the end-gas.",
+    "locator": "Slide \"Knock Fundamentals\"",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Octane in depth (Gasoline explained)",
+    "publisher": "U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/energyexplained/gasoline/octane-in-depth.php",
+    "type": "gov",
+    "quote": "In comparison, spontaneous combustion , also called auto-ignition , detonation , or knock , happens when rising temperature and pressure from the primary combustion causes unburned fuel to ignite.",
+    "locator": "How does the octane level affect my vehicle?",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 10: SI engine combustion II",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/35c1c5bbf304c0f41e1de0cec0b0ee85_MIT2_61S17_lec10.pdf",
+    "type": "university",
+    "quote": "Knock originates in the extremely rapid release of much of the fuel chemical energy contained in the end-gas of the propagating turbulent flame, resulting in high local pressures.",
+    "locator": "Slide \"Knock Fundamentals\" (same lecture; count once)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "MIT and EIA are two families. Visual: normal flame front growing from the plug vs a second ignition site in the far corner."
+ },
+ {
+  "id": "3.5",
+  "beat": 3,
+  "claim": "The octane rating measures a fuel's resistance to knocking (to auto-ignition under compression). It is not a measure of how much energy the fuel contains.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Selecting the Right Octane Fuel",
+    "publisher": "U.S. DOE / EPA, fueleconomy.gov",
+    "url": "https://www.fueleconomy.gov/feg/octane.shtml",
+    "type": "gov",
+    "quote": "Octane rating is the measure of a fuel's ability to resist \"knocking\" or \"pinging\" during combustion, caused by the air/fuel mixture detonating prematurely in the engine.",
+    "locator": "What is octane rating?",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Octane in depth (Gasoline explained)",
+    "publisher": "U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/energyexplained/gasoline/octane-in-depth.php",
+    "type": "gov",
+    "quote": "The octane rating is the measure of fuel stability.",
+    "locator": "What is octane?",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 10: SI engine combustion II",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/35c1c5bbf304c0f41e1de0cec0b0ee85_MIT2_61S17_lec10.pdf",
+    "type": "university",
+    "quote": "A practical measure of a fuel's resistance to knock is the octane number.",
+    "locator": "Slide \"Fuel factors\"",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "\"Not a measure of energy\" is not stated word for word in these three; it follows from their definition and fueleconomy.gov's \"under normal driving conditions, you may get little to no benefit\" from higher octane than required (3.7). Script may say \"octane measures resistance to knock\" without further claim, or \"higher octane is not more energy\" only if the fact check accepts the inference."
+ },
+ {
+  "id": "3.6",
+  "beat": 3,
+  "claim": "Octane is measured by matching the fuel's knock behaviour in a test engine to a blend of two reference fuels: iso-octane (rated 100) and normal heptane (rated 0). The octane number is the percentage of iso-octane in the matching blend. The test engine changes its compression ratio until knock of a set intensity appears.",
+  "numbers": [
+   {
+    "value": "100",
+    "unit": "octane number",
+    "context": "iso-octane reference"
+   },
+   {
+    "value": "0",
+    "unit": "octane number",
+    "context": "heptane reference"
+   }
+  ],
+  "sources": [
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 10: SI engine combustion II",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/35c1c5bbf304c0f41e1de0cec0b0ee85_MIT2_61S17_lec10.pdf",
+    "type": "university",
+    "quote": "Blend primary reference fuels (iso-octane and normal heptane) so its knock characteristics matches those of the actual fuel.",
+    "locator": "Slide \"Fuel anti-knock rating\"; the next bullet reads \"Octane no. = % by vol. of iso-octane\"",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Octane in depth (Gasoline explained)",
+    "publisher": "U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/energyexplained/gasoline/octane-in-depth.php",
+    "type": "gov",
+    "quote": "This measurement is taken by adjusting the octane engine's cylinder height, which changes the compression ratio/pressure in the engine until the knocking reaches a specific intensity level.",
+    "locator": "How is octane measured?",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Octane in depth (Gasoline explained)",
+    "publisher": "U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/energyexplained/gasoline/octane-in-depth.php",
+    "type": "gov",
+    "quote": "This iso-octane has been assigned the reference value of 100 for testing purposes.",
+    "locator": "What is octane? (same page; count once)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "MIT and EIA are two families. EIA also says the pump label is (R+M)/2 (average of research and motor octane): single source, left out of claims (decisions.md)."
+ },
+ {
+  "id": "3.7",
+  "beat": 3,
+  "claim": "Modern engines detect knock and delay the spark to stop it, at some cost in efficiency.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "Octane in depth (Gasoline explained)",
+    "publisher": "U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/energyexplained/gasoline/octane-in-depth.php",
+    "type": "gov",
+    "quote": "When detected, the computer delays the initial spark, which causes the controlled combustion to take place at a point when compression is not at its highest point.",
+    "locator": "How does the octane level affect my vehicle?",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Selecting the Right Octane Fuel",
+    "publisher": "U.S. DOE / EPA, fueleconomy.gov",
+    "url": "https://www.fueleconomy.gov/feg/octane.shtml",
+    "type": "gov",
+    "quote": "Many newer vehicles can adjust the spark timing to reduce knock, but engine power and fuel economy will still suffer.",
+    "locator": "What if I use a lower octane fuel than required?",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "The claim that higher octane than needed gives little or no benefit is fueleconomy.gov only: dropped as a claim (decisions.md)."
+ },
+ {
+  "id": "3.8",
+  "beat": 3,
+  "claim": "In the United States regular petrol is generally 87 octane and premium 91 to 94. Higher octane is aimed at engines with higher compression or turbocharging.",
+  "numbers": [
+   {
+    "value": "87",
+    "unit": "octane (pump rating)",
+    "context": "regular"
+   },
+   {
+    "value": "91-94",
+    "unit": "octane (pump rating)",
+    "context": "premium"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Selecting the Right Octane Fuel",
+    "publisher": "U.S. DOE / EPA, fueleconomy.gov",
+    "url": "https://www.fueleconomy.gov/feg/octane.shtml",
+    "type": "gov",
+    "quote": "In the U.S., unleaded gasoline typically has octane ratings of 87 (regular), 88–90 (midgrade), and 91–94 (premium).",
+    "locator": "What is octane rating?",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Octane in depth (Gasoline explained)",
+    "publisher": "U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/energyexplained/gasoline/octane-in-depth.php",
+    "type": "gov",
+    "quote": "Regular (the lowest octane fuel—generally 87) Midgrade (the middle range octane fuel—generally 89–90) Premium (the highest octane fuel—generally 91–94)",
+    "locator": "What is octane?",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported_range_only",
+  "notes": "Sources disagree on midgrade (88-90 vs 89-90): say nothing about midgrade. Regular 87 and premium 91-94 agree."
+ },
+ {
+  "id": "4.1",
+  "beat": 4,
+  "claim": "The spark fires before the piston reaches top dead centre, near the end of the compression stroke. Textbook ranges are tens of degrees before TDC (about 15 to 45 degrees in one table); the best timing depends on speed and load.",
+  "numbers": [
+   {
+    "value": "15-45",
+    "unit": "degrees before TDC",
+    "context": "NPTEL table, spark ignition"
+   },
+   {
+    "value": "30",
+    "unit": "degrees before TDC",
+    "context": "MIT example: MBT timing at wide-open throttle, 50 over-advanced, 10 retarded"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Module 1, Lecture 1: Introduction to IC Engines and Air Pollution (NPTEL course 112104033)",
+    "publisher": "NPTEL / Indian Institutes of Technology",
+    "url": "https://archive.nptel.ac.in/content/storage2/courses/112104033/lecture1/1_4.htm",
+    "type": "university",
+    "quote": "Spark ignition 45 -15º CA bTDC towards the end of compression stroke",
+    "locator": "Table 1.2",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 9: SI engine combustion I",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+    "type": "university",
+    "quote": "overadvanced spark timing (50o BTDC), MBT timing (30o BTDC), and retarded timing (10o BTDC)",
+    "locator": "Fig. 9-3 caption (slide \"Spark timing effects\")",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 9: SI engine combustion I",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+    "type": "university",
+    "quote": "MBT spark timing depends on speed, load, EGR, , temperature, charge motion",
+    "locator": "Slide \"Optimum Combustion Phasing\" (same lecture; count once)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported_range_only",
+  "notes": "No source fetched gives the idle value. The MIT 30 degrees is at wide-open throttle (a figure caption). Say \"a few tens of degrees before top dead centre\", not a single angle. The ECU also moves it constantly. Toyota's document mentions a 5 degree BTDC default (fallback) setting only: do not use as typical."
+ },
+ {
+  "id": "4.2",
+  "beat": 4,
+  "claim": "The spark comes early because burning takes time: the flame needs part of a stroke to spread, so the pressure peak should land just after top dead centre. Spark too late means the heat is released too far into the expansion to be turned into work; too early lowers the effective compression ratio, wastes heat and risks knock.",
+  "numbers": [
+   {
+    "value": "14-17",
+    "unit": "degrees after TDC",
+    "context": "MIT: peak cylinder pressure location at best (MBT) timing in the example"
+   }
+  ],
+  "sources": [
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 9: SI engine combustion I",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+    "type": "university",
+    "quote": "heat release occurs far into expansion and work cannot be fully extracted",
+    "locator": "Slide \"Optimum Combustion Phasing\", Spark too late",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Module 1, Lecture 1: Introduction to IC Engines and Air Pollution (NPTEL course 112104033)",
+    "publisher": "NPTEL / Indian Institutes of Technology",
+    "url": "https://archive.nptel.ac.in/content/storage2/courses/112104033/lecture1/1_4.htm",
+    "type": "university",
+    "quote": "Combustion by turbulent flame propagation Begins shortly after ignition up to 15 to 30º CA aTDC",
+    "locator": "Table 1.2",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 3: Engine Cycles",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e9421a34d0cd5c5fc4fc81365975503e_MIT2_61S17_lec3.pdf",
+    "type": "university",
+    "quote": "Peak pressure at 14-17o atdc for MBT",
+    "locator": "Slide \"Pressure-volume diagram\"",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "MIT lec 3 and 9 are one family. NPTEL is the second."
+ },
+ {
+  "id": "4.3",
+  "beat": 4,
+  "claim": "Combustion in a petrol engine is a flame spreading outward from the spark plug through the mixture, not an explosion. The spark makes a small hot kernel that grows into a nearly spherical flame, wrinkled by turbulence, that sweeps through the cylinder until the fuel is burned. The explosive event is knock.",
+  "numbers": [
+   {
+    "value": "1",
+    "unit": "mm",
+    "context": "MIT: initial kernel size on slide, with ~100 microseconds (slide text \"1mm, 100 s\")"
+   }
+  ],
+  "sources": [
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 10: SI engine combustion II",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/35c1c5bbf304c0f41e1de0cec0b0ee85_MIT2_61S17_lec10.pdf",
+    "type": "university",
+    "quote": "creating an outward propagating flame which is almost spherical.",
+    "locator": "Slide \"Ignition and Flame Development Process\", steps 1-4",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Octane in depth (Gasoline explained)",
+    "publisher": "U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/energyexplained/gasoline/octane-in-depth.php",
+    "type": "gov",
+    "quote": "A flame starts at the spark plug and burns throughout the cylinder until all fuel in the cylinder is burned.",
+    "locator": "How does the octane level affect my vehicle?",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Module 1, Lecture 1: Introduction to IC Engines and Air Pollution (NPTEL course 112104033)",
+    "publisher": "NPTEL / Indian Institutes of Technology",
+    "url": "https://archive.nptel.ac.in/content/storage2/courses/112104033/lecture1/1_4.htm",
+    "type": "university",
+    "quote": "Combustion by turbulent flame propagation Begins shortly after ignition up to 15 to 30º CA aTDC",
+    "locator": "Table 1.2",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "EIA contrasts \"controlled combustion\" with knock (\"spontaneous combustion\"). Do not say \"there is no explosion at all\" about knock; knock is the explosive-like event. NASA's page says \"rapid combustion\" in an idealised cycle: fine, but \"rapid\" is not \"explosion\". The 1 mm / 100 us kernel figure is a slide fragment, so left out of numbers for script use."
+ },
+ {
+  "id": "4.4",
+  "beat": 4,
+  "claim": "The burn takes a stretch of crank angle: for a modern fast-burn engine at medium speed and part load, about 15 degrees to burn the first 10% of the mixture, 25 degrees for half and 35 degrees for 90%. At an engine speed of 1000 rpm one millisecond is 6 crank degrees, so that is a few milliseconds.",
+  "numbers": [
+   {
+    "value": "15 / 25 / 35",
+    "unit": "crank degrees",
+    "context": "0-10% / 0-50% / 0-90% mass burned, medium speed part load (MIT)"
+   },
+   {
+    "value": "6",
+    "unit": "crank degrees per ms",
+    "context": "1000 rpm (MIT conversion slide); 4.5 degrees/ms at 750 rpm"
+   },
+   {
+    "value": "5.8",
+    "unit": "ms",
+    "context": "35 degrees at 1000 rpm; about 7.8 ms at 750 rpm"
+   }
+  ],
+  "sources": [
+   {
+    "title": "MIT 2.61 Internal Combustion Engines (Spring 2017), Lecture 9: SI engine combustion I",
+    "publisher": "MIT OpenCourseWare",
+    "url": "https://www.ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+    "type": "university",
+    "quote": "For modern fast-burn engines under medium speed, part load condition: 0-10% ~ 15o 0-50% ~ 25o 0-90% ~ 35o",
+    "locator": "Slide \"Burn duration\"",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Module 1, Lecture 1: Introduction to IC Engines and Air Pollution (NPTEL course 112104033)",
+    "publisher": "NPTEL / Indian Institutes of Technology",
+    "url": "https://archive.nptel.ac.in/content/storage2/courses/112104033/lecture1/1_4.htm",
+    "type": "university",
+    "quote": "Combustion by turbulent flame propagation Begins shortly after ignition up to 15 to 30º CA aTDC",
+    "locator": "Table 1.2 (combustion runs on past top dead centre into the expansion stroke)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "derived_rough",
+  "notes": "MIT gives the burn angles for medium speed part load, not idle; its slide says burn angle rises roughly as rpm^0.2, so an idle burn is probably no longer in degrees, but that is an inference, not a number. The millisecond figures use the MIT conversion (1000 rpm = 6 degrees per ms). NPTEL is a looser second source (it gives where combustion ends relative to TDC, not its length). Use as \"a few thousandths of a second\", not a precise number."
+ },
+ {
+  "id": "5.1",
+  "beat": 5,
+  "claim": "The power stroke is the only stroke that delivers work. Burning raises the pressure of the trapped gas, which pushes the piston down; the intake, compression and exhaust strokes are driven by stored momentum and the other cylinders.",
+  "numbers": [
+   {
+    "value": "1 of 4",
+    "unit": "strokes",
+    "context": ""
+   }
+  ],
+  "sources": [
+   {
+    "title": "4-Stroke Internal Combustion Engine (Beginner's Guide to Aeronautics)",
+    "publisher": "NASA Glenn Research Center",
+    "url": "https://www.grc.nasa.gov/www/K-12/airplane/engopt.html",
+    "type": "gov",
+    "quote": "The sudden opening of the contact produces a spark in the combustion chamber which ignites the fuel/air mixture.",
+    "locator": "Power Stroke",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "Energy imparted to the flywheel by the power stroke is sufficient to keep it rotating through the exhaust, intake, and compression strokes.",
+    "locator": "Section 2, para 2b",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Engine Configuration and Smoothness: Introduction and Basic Theory (Autozine Technical School)",
+    "publisher": "Autozine (independent automotive engineering site)",
+    "url": "https://autozine.org/technical_school/engine/Smoothness1.html",
+    "type": "org",
+    "quote": "Only the power stroke (expansion stroke) generates positive power, while intake stroke, exhaust stroke and compression stroke consume power, especially the latter.",
+    "locator": "Smooth power delivery",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Same family caution as 1.4."
+ },
+ {
+  "id": "5.2",
+  "beat": 5,
+  "claim": "The flywheel stores some of the energy of each power stroke and gives it back during the other strokes, evening out the pulses of torque.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "One end of the crankshaft is ordinarily fitted with a flywheel to smooth out the power impulses and to continue the rotation of the crankshaft between power impulses.",
+    "locator": "Section 2, para 2b",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Engine Power Train",
+    "publisher": "NASA Glenn Research Center",
+    "url": "https://www.grc.nasa.gov/www/k-12/airplane/powert.html",
+    "type": "gov",
+    "quote": "The job of the flywheel is to store the energy from the individual firings so that the engine runs more smoothly.",
+    "locator": "Page body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Flywheel (University of Windsor engine manual, hosted on a University of Washington course site)",
+    "publisher": "University of Windsor / University of Washington (course page)",
+    "url": "https://courses.washington.edu/engr100/Section_Wei/engine/UofWindsorManual/Flywheel.htm",
+    "type": "university",
+    "quote": "The flywheel supplies the inertia required to prevent loss of engine speed and possible stoppage of crankshaft rotation between combustion intervals.",
+    "locator": "Flywheel page",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "The sentence in TM 10-570 begins \"One end of the crankshaft is ordinarily fitted with a flywheel\"; the quote is the continuing clause as printed."
+ },
+ {
+  "id": "5.3",
+  "beat": 5,
+  "claim": "In a four-cylinder four-stroke engine a power stroke begins every 180 degrees of crank rotation (a single cylinder fires once every two revolutions, a six every 120 degrees, an eight every 90). With more cylinders the power strokes overlap more, so the torque is smoother.",
+  "numbers": [
+   {
+    "value": "180",
+    "unit": "degrees",
+    "context": "between firings, 4 cylinders"
+   },
+   {
+    "value": "120",
+    "unit": "degrees",
+    "context": "between firings, 6 cylinders"
+   },
+   {
+    "value": "90",
+    "unit": "degrees",
+    "context": "between firings, 8 cylinders"
+   },
+   {
+    "value": "720/n",
+    "unit": "degrees",
+    "context": "general rule, n cylinders"
+   }
+  ],
+  "sources": [
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "diagram shows a new power stroke starting each 120° of crankshaft rotation and lasting for one stroke or 180°. This gives a 60° overlap of power.",
+    "locator": "Section 2, six-cylinder paragraph (Fig. 16)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Engine Configuration and Smoothness: Introduction and Basic Theory (Autozine Technical School)",
+    "publisher": "Autozine (independent automotive engineering site)",
+    "url": "https://autozine.org/technical_school/engine/Smoothness1.html",
+    "type": "org",
+    "quote": "While a single-cylinder engine fires once every 2 revolutions, twin-cylinder engine fires once every revolution, 3-cylinder fires once every 720 / 3 = 240° crank angle, 4-cylinder fires once every 180° (half a revolution).",
+    "locator": "Smooth power delivery",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "As the number of cylinders is increased in an engine, the number of power strokes in each cycle increases accordingly.",
+    "locator": "Section 2 (same manual; count once)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "TM 10-570 and Autozine are two families. The 180-degree four-cylinder interval is Autozine; TM 10-570 shows it in Fig. 15 (a four-cylinder chart, \"power is being developed throughout the cycle\"). Even-firing engines only; odd-fire and V-engine angles differ (not covered)."
+ },
+ {
+  "id": "5.4",
+  "beat": 5,
+  "claim": "A typical inline four-cylinder fires in the order 1-3-4-2, so each cylinder is at a different stroke at any moment: while one is on the power stroke, the others are on exhaust, intake and compression.",
+  "numbers": [
+   {
+    "value": "1-3-4-2",
+    "unit": "firing order",
+    "context": "inline four"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Toyota Camry engine specifications, New Car Features excerpt (NHTSA ODI file PE04-021, Attachment 12)",
+    "publisher": "Toyota Motor Sales (filed with U.S. NHTSA)",
+    "url": "https://static.nhtsa.gov/odi/inv/2004/INRD-PE04021-18337.pdf",
+    "type": "company",
+    "quote": "Firing Order 1-3-4-2",
+    "locator": "Engine Specification table, 2AZ-FE 2.4 L inline four",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "Figure 15 shows the power strokes of a four-cylinder engine. It will be noted that power is being developed throughout the cycle in a four-cylinder engine.",
+    "locator": "Section 2, Figs. 15-17; Figure 15 chart rows read cyl 1 P-E-I-C, cyl 3 C-P-E-I, cyl 4 I-C-P-E, cyl 2 E-I-C-P",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "The Gas, Petrol and Oil Engine, vol. 2 (Dugald Clerk and G. A. Burls, Longmans, 1909; archive.org item cu31924004083352)",
+    "publisher": "Longmans, Green and Co. (1909), scan on Internet Archive",
+    "url": "https://archive.org/details/cu31924004083352",
+    "type": "book",
+    "quote": "Hence the two firing orders are : 1243, 1243 ... and 1342, 1342 . . . Both are employed, but 1342 appears to be most usually adopted.",
+    "locator": "Vol. 2, Four-Cylinder Engines (multi-cylinder firing orders section)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Toyota (2.4 L inline four) states 1-3-4-2; Clerk (1909) says the two possible orders for the normal four-cylinder crankshaft are 1-2-4-3 and 1-3-4-2, \"1342 most usually adopted\". The TM 10-570 Fig. 15 chart implies 1-3-4-2 from its row labels (OCR of the figure). Do not call 1-3-4-2 universal; \"typical\" is safe. Cylinder numbering is front to back."
+ },
+ {
+  "id": "6.1",
+  "beat": 6,
+  "claim": "On the exhaust stroke the piston rises and pushes the burnt gas out through the open exhaust valve. The exhaust valve opens before the piston reaches the bottom of the power stroke to let the pressure fall, which costs a little work but is a net gain.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "The exhaust gases immediately start out the exhaust port, relieving the pressure on the piston, making it easier for the flywheel to move the piston up to top center. Some of the power is lost at the end of the power stroke, but the gain is greater than the loss, and a net gain in power results.",
+    "locator": "Section 27, Valve timing, para b",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Valve Timing (fluids course notes)",
+    "publisher": "Colorado State University, Dept. of Mechanical Engineering",
+    "url": "https://www.engr.colostate.edu/~allan/fluids/page6/page6.html",
+    "type": "university",
+    "quote": "The exhaust valve begins to open before bottom dead center to give the combustion products time to escape",
+    "locator": "Valve Timing page",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "four-stroke cycle",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/four-stroke-cycle",
+    "type": "encyclopedia",
+    "quote": "During the exhaust stroke the ascending piston forces the spent products of combustion through the open exhaust valve.",
+    "locator": "Four-stroke cycle article",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": ""
+ },
+ {
+  "id": "6.2",
+  "beat": 6,
+  "claim": "Only a minority of the fuel energy reaches the wheels of a conventional car: fueleconomy.gov gives about 12% to 30% depending on the drive cycle, and a peer-reviewed global estimate for an average passenger car gives 21.5%.",
+  "numbers": [
+   {
+    "value": "12-30",
+    "unit": "% of fuel energy",
+    "context": "moves the car, depending on drive cycle (DOE/EPA)"
+   },
+   {
+    "value": "21.5",
+    "unit": "% of fuel energy",
+    "context": "used to move the car, average passenger car (Holmberg et al. 2012)"
+   },
+   {
+    "value": "17-21",
+    "unit": "% of fuel energy",
+    "context": "power to wheels, combined cycle (DOE Fact 709)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Where the Energy Goes: Gasoline Vehicles",
+    "publisher": "U.S. DOE / EPA, fueleconomy.gov",
+    "url": "https://fueleconomy.gov/feg/atv.shtml",
+    "type": "gov",
+    "quote": "Only about 12%–30% of the energy from the fuel you put in a conventional vehicle is used to move it down the road, depending on the drive cycle",
+    "locator": "Opening paragraph",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "FOTW #1044, August 27, 2018: 12-30% of Energy Put into a Conventional Car is Used to Move the Car Down the Road",
+    "publisher": "U.S. DOE Vehicle Technologies Office (Fact of the Week), source: DOE/EPA Fuel Economy Guide",
+    "url": "https://www.energy.gov/node/3604327",
+    "type": "gov",
+    "quote": "only 12-30% of the energy put into a conventional car is used for that purpose.",
+    "locator": "Body (same DOE/EPA data; one family with fueleconomy.gov)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Global energy consumption due to friction in passenger cars (Holmberg, Andersson, Erdemir; Tribology International 47 (2012) 221-234)",
+    "publisher": "VTT Technical Research Centre of Finland / Argonne National Laboratory (peer-reviewed; VTT portal abstract)",
+    "url": "https://cris.vtt.fi/en/publications/global-energy-consumption-due-to-friction-in-passenger-cars/",
+    "type": "paper",
+    "quote": "In total, 21.5% of the fuel energy is used to move the car.",
+    "locator": "Abstract, conclusion 1 (Tribology International 47 (2012) 221-234)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Holmberg K., Global Impact of Friction on Energy Consumption, Economy and Environment (FME Transactions 43(3), author overview)",
+    "publisher": "K. Holmberg, VTT (journal article, FME Transactions)",
+    "url": "https://www.mas.bg.ac.rs/_media/istrazivanje/fme/vol43/3/01_kholmberg.pdf",
+    "type": "paper",
+    "quote": "Thus actually only 21.5 % of the fuel energy is used for moving the car, consisting of the tire rolling resistance, the air drag and the brake/acceleration energy",
+    "locator": "Section 4, Energy consumption in road traffic",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Fact #709: January 9, 2012, Engine Energy Use: Where Does the Energy Go?",
+    "publisher": "U.S. DOE Vehicle Technologies Office (Fact of the Week), source: DOE/EPA Fuel Economy Guide",
+    "url": "https://www.energy.gov/eere/vehicles/fact-709-january-9-2012-engine-energy-use-where-does-energy-go",
+    "type": "gov",
+    "quote": "Power to Wheels, dissipated as: 17-21% 14-16% 20-26%",
+    "locator": "Table (Combined, City, Highway)",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Two families: DOE/EPA (fueleconomy.gov, Fact 1044 and 709: same data) and Holmberg et al. (Argonne co-author, peer-reviewed; includes a global-average assumption, and counts braking/acceleration energy as \"moving the car\"). \"12-30%\" is a wide range and 21.5% sits inside it. Say \"roughly a fifth, and in city driving less\". \"Power to wheels\" in Fact 709 (17-21% combined) is the same ballpark. Holmberg's 38% mechanical includes diesels in the global fleet. Safe numbers: about 12-30%, about one fifth."
+ },
+ {
+  "id": "6.3",
+  "beat": 6,
+  "claim": "Most of the fuel energy is lost in the engine itself, mostly as heat out of the exhaust and through the cooling system. Holmberg et al. put exhaust at 33%, cooling at 29% and mechanical power at 38%; DOE Fact 709 puts thermal losses (radiator, exhaust heat) at 60-62% for a typical car.",
+  "numbers": [
+   {
+    "value": "33",
+    "unit": "% of fuel energy",
+    "context": "exhaust (Holmberg et al.)"
+   },
+   {
+    "value": "29",
+    "unit": "% of fuel energy",
+    "context": "cooling (Holmberg et al.)"
+   },
+   {
+    "value": "38",
+    "unit": "% of fuel energy",
+    "context": "mechanical power at the crank, before friction and drag"
+   },
+   {
+    "value": "60-62",
+    "unit": "% of fuel energy",
+    "context": "thermal losses, combined cycle (DOE Fact 709)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Where the Energy Goes: Gasoline Vehicles",
+    "publisher": "U.S. DOE / EPA, fueleconomy.gov",
+    "url": "https://fueleconomy.gov/feg/atv.shtml",
+    "type": "gov",
+    "quote": "In gasoline-powered vehicles, most of the fuel's energy is lost in the engine, primarily as heat.",
+    "locator": "Engine losses paragraph",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Holmberg K., Global Impact of Friction on Energy Consumption, Economy and Environment (FME Transactions 43(3), author overview)",
+    "publisher": "K. Holmberg, VTT (journal article, FME Transactions)",
+    "url": "https://www.mas.bg.ac.rs/_media/istrazivanje/fme/vol43/3/01_kholmberg.pdf",
+    "type": "paper",
+    "quote": "More than half of the fuel energy in an internal combustion engine goes to exhaust (33 %) and cooling (29 %), while the rest is transformed to mechanical power (38 %).",
+    "locator": "Section 4",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Fact #709: January 9, 2012, Engine Energy Use: Where Does the Energy Go?",
+    "publisher": "U.S. DOE Vehicle Technologies Office (Fact of the Week), source: DOE/EPA Fuel Economy Guide",
+    "url": "https://www.energy.gov/eere/vehicles/fact-709-january-9-2012-engine-energy-use-where-does-energy-go",
+    "type": "gov",
+    "quote": "Thermal - radiator, exhaust heat, etc. 60-62% 63-64% 56-60%",
+    "locator": "Table (Combined, City, Highway)",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Holmberg (exhaust+cooling = 62%) and DOE (60-62%) agree. Safe line: \"about 60% leaves as heat\". The Holmberg split (33/29) is a global-average estimate; DOE does not split exhaust from coolant. Do not say \"a third out the exhaust\" as an established fact without the fact check."
+ },
+ {
+  "id": "6.4",
+  "beat": 6,
+  "claim": "At the crankshaft, before the transmission and tyres, a petrol engine delivers roughly a third of the fuel energy at best: low 30s per cent for a modern engine at its best point (MIT), 38% in an average-car estimate (Holmberg et al.). The rest leaves as heat.",
+  "numbers": [
+   {
+    "value": "low 30s",
+    "unit": "% of fuel energy",
+    "context": "peak brake efficiency of modern SI engines (MIT note)"
+   },
+   {
+    "value": "38",
+    "unit": "% of fuel energy",
+    "context": "mechanical power at the crank, average passenger car (Holmberg et al.)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "MIT 2.61 lecture notes, Lec. 18: Engine Heat Transfer",
+    "publisher": "MIT (web.mit.edu/2.61)",
+    "url": "https://web.mit.edu/2.61/www/Lecture%20notes/Lec.%2018%20Heat%20transf.pdf",
+    "type": "university",
+    "quote": "Update for modern engines: SI engine in the low 30's",
+    "locator": "Slide \"Energy flow distribution for SI and Diesel\"",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Holmberg K., Global Impact of Friction on Energy Consumption, Economy and Environment (FME Transactions 43(3), author overview)",
+    "publisher": "K. Holmberg, VTT (journal article, FME Transactions)",
+    "url": "https://www.mas.bg.ac.rs/_media/istrazivanje/fme/vol43/3/01_kholmberg.pdf",
+    "type": "paper",
+    "quote": "More than half of the fuel energy in an internal combustion engine goes to exhaust (33 %) and cooling (29 %), while the rest is transformed to mechanical power (38 %).",
+    "locator": "Section 4",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Where Engine Dreams Meet Possibilities: The SKYACTIV-Z Challenge (interview with Mazda engine developers)",
+    "publisher": "Mazda Motor Corporation",
+    "url": "https://www.mazda.com/en/mazda-mirai-base/articles/20250319-multisolution-skyactivez/",
+    "type": "company",
+    "quote": "Internal combustion engines traditionally waste over half their potential energy as heat and friction.",
+    "locator": "Introduction to the SKYACTIV engine discussion (Mazda editorial text)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported_range_only",
+  "notes": "Numbers differ (low 30s vs 38%): say \"roughly a third\" without a digit. MIT slide is a one-line fragment (\"Update for modern engines: SI engine in the low 30's\") for peak efficiency, not a drive-cycle average. Mazda is a manufacturer statement without a number."
+ },
+ {
+  "id": "7.1",
+  "beat": 7,
+  "claim": "The four-stroke cycle was set out in 1862 by the French engineer Alphonse Beau de Rochas, who never built an engine.",
+  "numbers": [
+   {
+    "value": "1862",
+    "unit": "year",
+    "context": "Beau de Rochas description"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Alphonse Eugene Beau de Rochas",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/biography/Alphonse-Eugene-Beau-de-Rochas",
+    "type": "encyclopedia",
+    "quote": "Beau de Rochas patented his idea in 1862 but did not build such an engine, leaving the development to others.",
+    "locator": "Britannica biography",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   },
+   {
+    "title": "The Gas, Petrol and Oil Engine, vol. 2 (Dugald Clerk and G. A. Burls, Longmans, 1909; archive.org item cu31924004083352)",
+    "publisher": "Longmans, Green and Co. (1909), scan on Internet Archive",
+    "url": "https://archive.org/details/cu31924004083352",
+    "type": "book",
+    "quote": "in 1862 a French engineer actually proposed the Otto cycle gas engine and discussed carefully the conditions of its success, but left it to be independently discovered and reduced to practice by Otto in 1876",
+    "locator": "Vol. 2, introductory discussion of invention history (search \"in 1862 a French engineer\")",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "On Beau de Rochas' Engines: Transcription from his 1862 handwritten memoire (C. Naaktgeboren, preprint, 2023)",
+    "publisher": "engrXiv preprint (not peer reviewed), Universidade Tecnologica Federal do Parana",
+    "url": "https://engrxiv.org/preprint/download/3003/5771/4567",
+    "type": "paper",
+    "quote": "The 1862 mémoire authored by Alphonse Beau de Rochas [1] is deemed as the earliest document that describes a piston-in-cylinder, 4-stroke engine operation",
+    "locator": "Abstract (preprint; not peer reviewed)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "gasoline engine: Development of gasoline engines",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/gasoline-engine/Development-of-gasoline-engines",
+    "type": "encyclopedia",
+    "quote": "Beau de Rochas never built his engine, and no four-stroke engine appeared for more than a decade.",
+    "locator": "Britannica, Development of gasoline engines",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported_with_date_caveat",
+  "notes": "Date and form disagree: Britannica says he \"patented\" it in 1862; Encyclopedia.com says the patent (filed 1862) was never published because fees went unpaid; EBSCO says an obscure privately published pamphlet of 1861; Naaktgeboren and Clerk say 1862 (a handwritten memoire / a proposal). Safe: \"in 1862 Beau de Rochas set the four-stroke cycle down on paper\". Do not say \"patented\" or \"published\"."
+ },
+ {
+  "id": "7.2",
+  "beat": 7,
+  "claim": "Nikolaus Otto built an engine working on the four-stroke principle in 1876.",
+  "numbers": [
+   {
+    "value": "1876",
+    "unit": "year",
+    "context": "Otto four-stroke engine"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Nikolaus Otto",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/biography/Nikolaus-August-Otto",
+    "type": "encyclopedia",
+    "quote": "In 1876 Otto built an internal-combustion engine utilizing the four-stroke cycle",
+    "locator": "Britannica biography",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   },
+   {
+    "title": "The Gas, Petrol and Oil Engine, vol. 2 (Dugald Clerk and G. A. Burls, Longmans, 1909; archive.org item cu31924004083352)",
+    "publisher": "Longmans, Green and Co. (1909), scan on Internet Archive",
+    "url": "https://archive.org/details/cu31924004083352",
+    "type": "book",
+    "quote": "in 1862 a French engineer actually proposed the Otto cycle gas engine and discussed carefully the conditions of its success, but left it to be independently discovered and reduced to practice by Otto in 1876",
+    "locator": "Vol. 2 (same passage as 7.1)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Otto's Practical Internal Combustion Engine (EBSCO Research Starters)",
+    "publisher": "EBSCO Information Services (Research Starters)",
+    "url": "https://www.ebsco.com/research-starters/history/ottos-practical-internal-combustion-engine",
+    "type": "encyclopedia",
+    "quote": "Otto built the first practical alternative to the steam engine in May, 1876.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Otto, Nikolaus August (1832-1891)",
+    "publisher": "Encyclopedia.com (Complete Dictionary of Scientific Biography / Gale)",
+    "url": "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/otto-nikolaus-august-1832-1891",
+    "type": "encyclopedia",
+    "quote": "A prototype four-stroke cycle engine was constructed in 1876.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "EBSCO says May 1876; do not give a month unless the fact check finds a second source. Encyclopedia.com says \"prototype\". Britannica: \"since Otto was the first to build an engine based upon this principle, it is commonly known as the Otto cycle\"."
+ },
+ {
+  "id": "7.3",
+  "beat": 7,
+  "claim": "Otto took out United States patent No. 194,047, \"Improvement in gas-motor engines\", granted 14 August 1877; Otto was then at the Gas-Motoren-Fabrik Deutz in Germany.",
+  "numbers": [
+   {
+    "value": "194,047",
+    "unit": "US patent number",
+    "context": ""
+   },
+   {
+    "value": "1877-08-14",
+    "unit": "date",
+    "context": "grant date"
+   }
+  ],
+  "sources": [
+   {
+    "title": "US Patent 194,047, Improvement in gas-motor engines (N. A. Otto, 14 Aug 1877)",
+    "publisher": "USPTO via Google Patents",
+    "url": "https://patents.google.com/patent/US194047",
+    "type": "patent",
+    "quote": "194,047, dated August 14, 1877",
+    "locator": "Patent text, page 1 (OCR of the scan)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Otto, Nikolaus August (1832-1891)",
+    "publisher": "Encyclopedia.com (Complete Dictionary of Scientific Biography / Gale)",
+    "url": "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/otto-nikolaus-august-1832-1891",
+    "type": "encyclopedia",
+    "quote": "Otto's ideas concerning stratification were patented in 1877.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Otto's Practical Internal Combustion Engine (EBSCO Research Starters)",
+    "publisher": "EBSCO Information Services (Research Starters)",
+    "url": "https://www.ebsco.com/research-starters/history/ottos-practical-internal-combustion-engine",
+    "type": "encyclopedia",
+    "quote": "Otto was granted a patent for his four-stroke engine in 1877.",
+    "locator": "Body (see note: the US patent text is about a stratified charge)",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported_with_caveat",
+  "notes": "IMPORTANT: the US patent text is about a gas engine whose charge is a mixture dispersed in air so that \"instead of an explosion ensuing\" the flame spreads gradually (stratified charge), not a claim on the four-stroke cycle as such. EBSCO's \"patent for his four-stroke engine\" is looser than the patent text; Encyclopedia.com says \"ideas concerning stratification were patented in 1877\". The script should say \"Otto's 1877 patent\" not \"patent on the four-stroke cycle\". Google Patents header OCR is noisy (inventor line reads NIOOLAUS A. OTTO, OF DEUTZ, GERMANY); the grant date and number are clean in the text."
+ },
+ {
+  "id": "7.4",
+  "beat": 7,
+  "claim": "Otto's patent was built on a stratified-charge idea: a combustible mixture spread through air so that, as the patent puts it, \"instead of an explosion ensuing\" the flame is passed gradually from one combustible particle to another. The patent also describes the piston's return stroke driven by the momentum of the flywheel.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "US Patent 194,047, Improvement in gas-motor engines (N. A. Otto, 14 Aug 1877)",
+    "publisher": "USPTO via Google Patents",
+    "url": "https://patents.google.com/patent/US194047",
+    "type": "patent",
+    "quote": "instead of an explosion ensuing",
+    "locator": "Specification, summary of the invention (OCR: \"so that ou ignition, instead of an explosion ensuing, the ame will be communicated gradually from one combustible particle to another\")",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "US Patent 194,047, Improvement in gas-motor engines (N. A. Otto, 14 Aug 1877)",
+    "publisher": "USPTO via Google Patents",
+    "url": "https://patents.google.com/patent/US194047",
+    "type": "patent",
+    "quote": "Motion being thus imparted to the fly-wheel by the piston-rod, its momentum causes the piston to perform its return stroke, whereby the products of combustion are expelled",
+    "locator": "Specification, description of Fig. 1 (OCR)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Otto, Nikolaus August (1832-1891)",
+    "publisher": "Encyclopedia.com (Complete Dictionary of Scientific Biography / Gale)",
+    "url": "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/otto-nikolaus-august-1832-1891",
+    "type": "encyclopedia",
+    "quote": "These actions, while effectively emasculating other engine builders, acted as a stimulus for basic research into the correctness of Otto's ideas on stratified charge and in turn the validity of his patent.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported_with_caveat",
+  "notes": "Nice tie to beats 4 and 5 (explosion vs flame, flywheel carries the strokes), but it is a primary text read through OCR and a second, secondary source. The patent describes an engine in which the first outstroke draws a layered charge, not the compress-before-ignite cycle; do not say it describes the modern four-stroke. Fact check should read the PDF itself."
+ },
+ {
+  "id": "7.5",
+  "beat": 7,
+  "claim": "In 1886 Otto's German patent was overturned (revoked) after an earlier description of the four-stroke principle, by Beau de Rochas, was brought to light.",
+  "numbers": [
+   {
+    "value": "1886",
+    "unit": "year",
+    "context": "German patent overturned"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Nikolaus Otto",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/biography/Nikolaus-August-Otto",
+    "type": "encyclopedia",
+    "quote": "in 1886 Otto's patent was revoked when Beau de Rochas' earlier patent was brought to light",
+    "locator": "Britannica biography",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   },
+   {
+    "title": "Otto, Nikolaus August (1832-1891)",
+    "publisher": "Encyclopedia.com (Complete Dictionary of Scientific Biography / Gale)",
+    "url": "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/otto-nikolaus-august-1832-1891",
+    "type": "encyclopedia",
+    "quote": "The Otto patents were overturned in Germany in 1886.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Otto's Practical Internal Combustion Engine (EBSCO Research Starters)",
+    "publisher": "EBSCO Information Services (Research Starters)",
+    "url": "https://www.ebsco.com/research-starters/history/ottos-practical-internal-combustion-engine",
+    "type": "encyclopedia",
+    "quote": "Otto’s patent for the Otto engine was revoked in 1886, when it was discovered that French inventor Alphonse Beau de Rochas had described the four-cycle principle in 1861 in a rather obscure, privately published pamphlet.",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Nikolaus August Otto (Inventor Biographies)",
+    "publisher": "MadeHow.com / Gale",
+    "url": "https://www.madehow.com/inventorbios/76/Nikolaus-August-Otto.html",
+    "type": "encyclopedia",
+    "quote": "Although the courts invalidated Otto's patent in 1886 due to the claims of Beau de Rochas and others",
+    "locator": "Body",
+    "quote_kind": "quote",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Four sources agree on the year and the cause. They disagree on whether Beau de Rochas' document was a patent (Britannica, Encyclopedia.com) or a pamphlet (EBSCO) and on whether \"courts\" or the patent office did it (madehow says courts; Wikipedia says patent office; neither is a source here). Safe: \"Otto's German patent was overturned in 1886 once Beau de Rochas's earlier description surfaced\". Do not name the court. Encyclopedia.com: Crossley (Otto's English licensee) defended the British patent against the same document: single-source, not claimed."
+ },
+ {
+  "id": "7.6",
+  "beat": 7,
+  "claim": "Otto and Eugen Langen had built an atmospheric engine, shown in 1867, before Otto's four-stroke engine; the four-stroke Otto engine was then an immediate commercial success.",
+  "numbers": [
+   {
+    "value": "1867",
+    "unit": "year",
+    "context": "Otto and Langen atmospheric engine"
+   },
+   {
+    "value": "1876",
+    "unit": "year",
+    "context": "four-stroke engine"
+   }
+  ],
+  "sources": [
+   {
+    "title": "The Gas, Petrol and Oil Engine, vol. 2 (Dugald Clerk and G. A. Burls, Longmans, 1909; archive.org item cu31924004083352)",
+    "publisher": "Longmans, Green and Co. (1909), scan on Internet Archive",
+    "url": "https://archive.org/details/cu31924004083352",
+    "type": "book",
+    "quote": "achieved a partial success in 1867 with the Otto & Langen atmospheric engine",
+    "locator": "Vol. 2, invention-history passage (OCR)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Nikolaus Otto",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/biography/Nikolaus-August-Otto",
+    "type": "encyclopedia",
+    "quote": "formed a partnership with the German industrialist Eugen Langen",
+    "locator": "Britannica biography",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   },
+   {
+    "title": "gasoline engine: Development of gasoline engines",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/gasoline-engine/Development-of-gasoline-engines",
+    "type": "encyclopedia",
+    "quote": "The four-stroke Otto engine was an immediate success.",
+    "locator": "Britannica, Development of gasoline engines",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   }
+  ],
+  "confidence": "medium",
+  "status": "supported",
+  "notes": "The 1867 date is Clerk (1909) and NPTEL (\"1867 J. E. E. Lenoir and Nikolaus Otto developed atmospheric engine\": this wording merges Lenoir and Otto and is not used). Encyclopedia.com: \"By 1867 the engine design was perfected and a patent applied for.\" Keep this to a one-line aside."
+ },
+ {
+  "id": "7.7",
+  "beat": 7,
+  "claim": "The four-stroke cycle is often called the Otto cycle, after Nikolaus Otto, even though Beau de Rochas described it first.",
+  "numbers": [],
+  "sources": [
+   {
+    "title": "four-stroke cycle",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/technology/four-stroke-cycle",
+    "type": "encyclopedia",
+    "quote": "The four-stroke cycle was originated by French engineer Alphonse Beau de Rochas in 1862.",
+    "locator": "Four-stroke cycle article",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   },
+   {
+    "title": "TM 10-570 The Internal Combustion Engine (War Department Technical Manual, 4 Feb 1941)",
+    "publisher": "U.S. War Department / U.S. Government Publishing Office",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-W-4251326e95fd1360d74b0778679fed0d/html/GOVPUB-W-4251326e95fd1360d74b0778679fed0d.htm",
+    "type": "gov",
+    "quote": "Otto cycle.—A cycle of four events which occur in a gasoline engine in the following order: intake, compression, power, and exhaust.",
+    "locator": "Section I, Definitions (Otto cycle)",
+    "quote_kind": "quote",
+    "opened": true
+   },
+   {
+    "title": "Alphonse Eugene Beau de Rochas",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com/biography/Alphonse-Eugene-Beau-de-Rochas",
+    "type": "encyclopedia",
+    "quote": "since Otto was the first to build an engine based upon this principle, it is commonly known as the Otto cycle.",
+    "locator": "Britannica, Beau de Rochas biography (fragment as returned by the tool)",
+    "quote_kind": "verbatim fragment from WebFetch tool extraction (page blocks scripted download)",
+    "opened": true
+   }
+  ],
+  "confidence": "high",
+  "status": "supported",
+  "notes": "Fragment quote comes from the Beau de Rochas biography extraction."
+ }
+]
