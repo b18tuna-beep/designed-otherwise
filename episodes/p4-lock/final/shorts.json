@@ -1,0 +1,39 @@
+{
+ "_style": {
+  "glow": [
+   40,
+   26,
+   70
+  ]
+ },
+ "s1": {
+  "title": "Your lock never looks at your key",
+  "description": "It only feels how high each pin is lifted. Five heights, one line.\n\n#Shorts #howthingswork #science",
+  "start": 71.85,
+  "end": 107.28
+ },
+ "s2": {
+  "title": "Someone else has a key to your door",
+  "description": "In a master-keyed building, one tiny extra pin lets a second key open your lock.\n\n#Shorts #howthingswork #science",
+  "start": 157.82,
+  "end": 189.2
+ },
+ "s3": {
+  "title": "That 4,000-year-old lock? Probably not",
+  "description": "An archaeologist traced the famous figure back to a misreading. The evidence is much younger.\n\n#Shorts #howthingswork #science",
+  "start": 241.45,
+  "end": 271.72
+ },
+ "s4": {
+  "title": "The lock nobody could pick",
+  "description": "For decades a London shop offered 200 guineas to anyone who could pick its lock. Then came 1851.\n\n#Shorts #howthingswork #science",
+  "start": 345.65,
+  "end": 372.5
+ },
+ "s5": {
+  "title": "Most burglars never touch the lock",
+  "description": "What US crime data actually shows about how burglars get in.\n\n#Shorts #howthingswork #science",
+  "start": 550.9,
+  "end": 585.55
+ }
+}
