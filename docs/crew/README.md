@@ -27,6 +27,21 @@ Every message in a chat re-reads the whole chat, so long chats cost more per mes
 3. Every showrunner reply ends with a status footer: `DO · <slug> · phase <A-D> · chat: fresh | long | START NEW`. When it says START NEW, Michael opens a new chat in the project and types `DO next`.
 4. `DO next` means: load the skill, read the backlog and the newest `HANDOFF.md`, and continue. Read nothing else until the task needs it.
 
+## Michael's commands (treat these as exact)
+- `DO next` (optionally `DO next: <direction>`): resume from backlog + newest HANDOFF.md, state where things stand in one line, start the next step.
+- `continue`: a background run or render finished (he got the ntfy ping). Check the run, carry on. No recap.
+- `approved`: the current checkpoint is approved. Record it, finish the phase, write HANDOFF.md, say START NEW.
+- Numbered notes (often with timestamps): apply all of them in one pass, re-verify, report back once.
+- `park: <idea>`: append the idea to the backlog with today's date. Don't discuss it, don't act on it.
+- `wrap up`: write HANDOFF.md now and say START NEW, wherever the phase stands.
+- `status`: the footer line plus up to 3 lines. Nothing else.
+
+## What each phase ends with (Michael's checkpoint)
+- A: script (and the topic pick, if not already in the lineup). Batch the next 2 or 3 episodes' research when he asks.
+- B: `board-summary.md` (1 page) plus `look.md`.
+- C: alpha cut uploaded privately, QA passed. He replies with numbered timestamped notes or `approved`.
+- D: 3 titles + 2 thumbnails to pick from, then the final private upload; on `approved`, schedule the release and point HANDOFF.md at the next episode.
+
 ## HANDOFF.md template (max 25 lines)
 ```
 # <slug> handoff, <date>
