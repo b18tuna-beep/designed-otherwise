@@ -24,7 +24,7 @@ export function* play4(view: View2D, id: string, build: () => Built, opts: PlayO
 }
 
 // Board still: the scene's key pose = last cue + 1.6 s (or an override), on the slate background.
-const KEY: Record<string, number> = {S16: 7.4};
+const KEY: Record<string, number> = {S16: 7.4, S19: 4.4, S12: 6.5};
 export const keyTime = (id: string) => {
   if (KEY[id] !== undefined) return KEY[id];
   const m = meta(id);

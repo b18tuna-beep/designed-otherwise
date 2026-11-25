@@ -73,7 +73,7 @@ jobs:
           RENDER_TIMEOUT_MIN: "100"
         run: |
           if [[ "$PROJECT" == *episode ]]; then
-            export RANGE="$(python3 -c "import os; print(f\"{int(os.environ['F0'])/30:.6f},{int(os.environ['F1'])/30:.6f}\")")"
+            export RANGE="$(python3 -c "import os; print(f\"{max(int(os.environ['F0'])-0.5,0)/30:.6f},{(int(os.environ['F1'])-0.5)/30:.6f}\")")"
             echo "range $RANGE s"
           fi
           node render.mjs ../../../out/frames "$PROJECT" --frames

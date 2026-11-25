@@ -51,7 +51,7 @@ export const A3: Record<string, () => Built> = {
             textAlign="center" lineHeight={52} />
         </Node>
       </Node>,
-      ambient: function* () { yield* all(draw(1, 1.6, ease), delay(1.2, sign(1, 0.7)), delay(2.6, pad(1, 0.7)), delay(3.4, card(1, 0.7))); },
+      ambient: function* () { yield* all(draw(1, 1.0, ease), delay(0.2, pad(1, 0.4)), delay(1.0, sign(1, 0.7)), delay(2.4, card(1, 0.7))); },
       steps: [fadeIn(notice, 0.8)],
     };
   },

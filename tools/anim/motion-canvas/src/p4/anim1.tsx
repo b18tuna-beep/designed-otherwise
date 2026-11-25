@@ -4,7 +4,7 @@
 import {Circle, Line, Node, Rect, Txt} from '@motion-canvas/2d';
 import type {Built} from '../lib/motion';
 import {BIT, Cyl, Door, Gauge, Head, Key, KX, Lab, Leader, Lof, Mono, Silhouette, Sm} from '../lib/lock';
-import {all, C, clamp, cue, D, delay, dur, ease, easeOutCubic, linear, Loc, LW, M, Padlock, rgba, ShopWindow, sig, sigs, T, to, TY, V, waitFor} from './shared';
+import {interp, all, C, clamp, cue, D, delay, dur, ease, easeOutCubic, linear, Loc, LW, M, Padlock, rgba, ShopWindow, sig, sigs, T, to, TY, V, waitFor} from './shared';
 import {Backed} from '../lib/lock';
 
 const LA = {x: -190, y: -20, s: 0.85}; // with the cam and bolt on the right
@@ -21,27 +21,28 @@ export const A1: Record<string, () => Built> = {
     return {
       drift: false,
       base: <Node scale={() => 1 + 0.012 * Math.sin(T() * 2.4)}><Key x={-345} y={-165} rotation={-5} p={p} dots={dots} /></Node>,
-      steps: [function* () { yield* p(1, D('S00a', 0, 1.7), ease); }, to(dots, 1, 1.3)],
+      steps: [function* () { yield* p(1, D('S00a', 0, 0.8), ease); }, to(dots, 1, 1.3)],
     };
   },
   // overlay: the hook hero
   S00b: () => {
     const a = sig(0), cross = sig(0), ticks = sig(0);
+    const CX = 715; // clean slate column right of the 3D lock (the hero never reaches x > 1450 px)
     return {
       drift: false, overlay: true,
       base: <Node>
         <Node opacity={a}>
-          <Key x={-760} y={170} s={0.33} dashed />
-          <Line points={[[-650, 190], [-540, 300]]} stroke={M} lineWidth={LW.emphasis} lineCap="round" end={cross} />
-          <Line points={[[-540, 190], [-650, 300]]} stroke={M} lineWidth={LW.emphasis} lineCap="round" end={cross} />
-          <Backed text="shape" x={-864} y={130} />
+          <Key x={CX - 91} y={-330} s={0.28} dashed />
+          <Line points={[[CX - 55, -385], [CX + 55, -275]]} stroke={M} lineWidth={LW.emphasis} lineCap="round" end={cross} />
+          <Line points={[[CX + 55, -385], [CX - 55, -275]]} stroke={M} lineWidth={LW.emphasis} lineCap="round" end={cross} />
+          <Backed text="shape" x={CX} y={-230} anchor={[0, 0]} size={44} />
         </Node>
         <Node opacity={ticks}>
-          <Backed text="5 gaps · 1 line" x={-864} y={385} />
+          <Backed text="5 gaps · 1 line" x={CX} y={-100} anchor={[0, 0]} size={44} />
         </Node>
-        <Line points={[[-860, 335], [-420, 335]]} stroke={V} lineWidth={LW.emphasis} lineCap="round" end={ticks} shadowColor={V} shadowBlur={14} />
+        <Line points={[[CX - 175, -20], [CX + 175, -20]]} stroke={V} lineWidth={LW.emphasis} lineCap="round" end={ticks} shadowColor={V} shadowBlur={14} />
         {[0, 1, 2, 3, 4].map(i => (
-          <Line points={[[-820 + i * 100, 318], [-820 + i * 100, 352]]} stroke={V} lineWidth={LW.emphasis} lineCap="round"
+          <Line points={[[CX - 175 + i * 87.5, -38], [CX - 175 + i * 87.5, -2]]} stroke={V} lineWidth={LW.emphasis} lineCap="round"
             opacity={() => clamp(ticks() * 6 - i)} />
         ))}
       </Node>,
@@ -56,8 +57,8 @@ export const A1: Record<string, () => Built> = {
         <Door x={0} y={-20} w={360} h={560} open={open} />
         <Node opacity={k1o}><Key x={k1} y={KY} s={0.34} /></Node>
         <Node opacity={k2o} x={k2} y={KY} scale={[-0.34, 0.34]}><Key bow="round" dashed color={C.muted} /></Node>
-        <Lab text="your key" x={-420} y={150} size={TY.small_label + 4} opacity={l1} color={C.chalk} />
-        <Lab text="a key you've never seen" x={600} y={140} size={TY.small_label + 4} opacity={l2} color={M} />
+        <Lab text="your key" x={-420} y={150} size={44} opacity={l1} color={C.chalk} />
+        <Lab text="a key you've never seen" x={600} y={140} size={44} opacity={l2} color={M} />
       </Node>,
       steps: [
         function* () { yield* all(k1(K1END, D('S00c', 0, 1.0), ease), l1(1, 0.5)); yield* open(1, 0.35); },
@@ -67,14 +68,14 @@ export const A1: Record<string, () => Built> = {
     };
   },
   S00d: () => {
-    const draw = sig(0), card = sig(0), lift = sig(0), sil = sig(0), sx = sig(780), t1851 = sig(0);
+    const draw = sig(0), card = sig(0), pd = sig(0), lift = sig(0), sil = sig(0), sx = sig(780), t1851 = sig(0);
     return {
       base: <Node>
         <Lab text="1851" x={-864} y={-430} size={88} offset={[-1, 0]} opacity={t1851} />
-        <ShopWindow x={-100} y={40} draw={draw} card={card} pad={card} lift={lift} />
+        <ShopWindow x={-100} y={40} draw={draw} card={card} pad={pd} lift={lift} />
         <Node opacity={sil} x={sx} y={190}><Silhouette s={2.1} /></Node>
       </Node>,
-      ambient: function* () { yield* all(t1851(1, 0.6), draw(1, 1.6, ease)); },
+      ambient: function* () { yield* all(t1851(1, 0.6), draw(1, 0.9, ease), delay(0.25, pd(1, 0.4))); },
       steps: [to(card, 1, 0.7), function* () { sil(1); yield* all(sx(420, 1.2, ease), delay(0.8, lift(1, 0.7, ease))); }],
     };
   },
@@ -206,21 +207,20 @@ export const A1: Record<string, () => Built> = {
   // overlay: the right key goes in, height bars, gap ticks
   S07: () => {
     const h = sigs(5), ticks = sig(0), lab = sig(0), free = sig(0);
-    const BX = (i: number) => -770 + i * 110;
+    const BX = (i: number) => 560 + i * 85; // right-hand clean column
     return {
       drift: false, overlay: true,
       base: <Node>
-        <Loc act="1" />
         {BIT.map((b, i) => (
-          <Node x={BX(i)} y={290}>
-            <Rect width={50} height={240} radius={12} stroke={C.chalk} lineWidth={LW.structure} />
-            <Rect y={() => 120 - (h[i]() * b * 34) / 2 - 4} width={36} height={() => h[i]() * b * 34} radius={8} fill={rgba(C.chalk, 0.7)} />
-            <Line points={[[-34, 0], [34, 0]]} stroke={V} lineWidth={LW.emphasis + 2} lineCap="round" shadowColor={V} shadowBlur={16}
+          <Node x={BX(i)} y={230}>
+            <Rect width={44} height={240} radius={12} stroke={C.chalk} lineWidth={LW.structure} />
+            <Rect y={() => 120 - (h[i]() * b * 34) / 2 - 4} width={30} height={() => h[i]() * b * 34} radius={8} fill={rgba(C.chalk, 0.7)} />
+            <Line points={[[-30, 0], [30, 0]]} stroke={V} lineWidth={LW.emphasis + 2} lineCap="round" shadowColor={V} shadowBlur={16}
               y={() => 120 - b * 34 - 4} opacity={() => clamp(ticks() * 5 - i)} />
           </Node>
         ))}
-        <Node opacity={lab}><Backed text="all 5 on the line" x={-864} y={130} /></Node>
-        <Lab text="FREE" x={-250} y={330} size={88} color={V} offset={[-1, 0]} opacity={free} />
+        <Node opacity={lab}><Backed text="all 5 on the line" x={730} y={40} anchor={[0, 0]} size={40} /></Node>
+        <Lab text="FREE" x={730} y={430} size={80} color={V} opacity={free} />
       </Node>,
       steps: [
         function* () { yield* all(...h.map((s, i) => delay(i * 0.3, s(1, 0.9, ease)))); },
@@ -315,22 +315,33 @@ export const A1: Record<string, () => Built> = {
   },
   // overlay: the wrong key; stack 1 too high, stacks 2 and 4 too low
   S12: () => {
+    // labels follow the 3D stacks: x/top measured from the hero clip (1920x1080 px, canvas = px - (960, 540))
+    const TS: number[] = [0, 2, 3, 4, 5, 6, 7, 8, 9, 10.3];
+    const XS: Record<number, number[]> = {
+      1: [1001, 998, 991, 977, 954, 932, 917, 908, 904, 903],
+      2: [1099, 1097, 1090, 1076, 1054, 1034, 1019, 1010, 1007, 1006],
+      4: [1290, 1286, 1280, 1267, 1246, 1226, 1212, 1204, 1200, 1199],
+    };
+    const TOP = [131, 130, 128, 125, 118, 111, 106, 104, 103, 103];
+    const k = (arr: number[]): [number, number][] => arr.map((v, i) => [TS[i], v]);
     const lo = sig(0), hi = sig(0), lk = sig(0);
-    const SX5 = (i: number) => -770 + i * 170;
+    const tag = (i: number, text: string, op: any, dx = 0) => (
+      <Node opacity={op}>
+        <Line points={() => [[interp(k(XS[i]), T()) - 960 + dx, -540 + 102], [interp(k(XS[i]), T()) - 960, interp(k(TOP), T()) - 540 - 2]]}
+          stroke={C.chalk} lineWidth={3} shadowColor={C.bg} shadowBlur={6} />
+        <Node x={() => interp(k(XS[i]), T()) - 960 + dx} y={-540 + 70}><Backed text={text} anchor={[0, 0]} size={40} color={V} /></Node>
+      </Node>
+    );
     return {
       drift: false, overlay: true,
       base: <Node>
-        <Loc act="1" />
-        {[0, 1, 2, 3, 4].map(i => (
-          <Circle x={SX5(i)} y={330} size={26} fill={rgba(V, [0, 1, 3].includes(i) ? 1 : 0)} stroke={[0, 1, 3].includes(i) ? V : M} lineWidth={LW.structure}
-            opacity={() => (i === 0 ? hi() : [1, 3].includes(i) ? lo() : 0.5 * Math.max(lo(), hi()))} />
-        ))}
-        <Node opacity={hi} x={SX5(0)} y={270}><Sm text="too high" color={V} size={TY.small_label} /></Node>
-        <Node opacity={lo}>
-          <Sm text="too low" x={SX5(1)} y={270} color={V} />
-          <Sm text="too low" x={SX5(3)} y={270} color={V} />
+        {tag(2, 'too low', lo, 15)}
+        {tag(4, 'too low', lo)}
+        {tag(1, 'too high', hi, -60)}
+        <Node opacity={lk}>
+          <Rect x={715} y={-100} width={400} height={130} radius={14} fill={C.panel} stroke={V} lineWidth={LW.structure} />
+          <Lab text="LOCKED" x={715} y={-100} size={76} />
         </Node>
-        <Lab text="LOCKED" x={-250} y={330} size={88} color={M} offset={[-1, 0]} opacity={lk} />
       </Node>,
       steps: [to(lo, 1, 0.5), to(hi, 1, 0.5), to(lk, 1, 0.5)],
     };

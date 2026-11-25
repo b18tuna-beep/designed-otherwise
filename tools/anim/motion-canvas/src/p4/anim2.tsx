@@ -81,21 +81,27 @@ export const A2: Record<string, () => Built> = {
   },
   // overlay: the master hero
   S19: () => {
-    const a = sig(0), k1 = sig(0), k2 = sig(0), cant = sig(0);
+    // 3rd stack = the master stack; its two gaps sit at x ~1142 px, y ~341 and ~364 px (measured from the hero clip)
+    const a = sig(0), sp = sig(0), k1 = sig(0), k2 = sig(0), cant = sig(0);
+    const GX = 1142 - 960, G1 = 341 - 540, G2 = 364 - 540, CX = 815;
+    const leader = (y: number, gy: number, text: string) => (
+      <Node>
+        <Line points={[[CX - 78, y], [GX, gy]]} stroke={C.chalk} lineWidth={3} shadowColor={C.bg} shadowBlur={6} />
+        <Circle x={GX} y={gy} size={14} fill={V} stroke={C.bg} lineWidth={3} />
+        <Backed text={text} x={CX} y={y} anchor={[0, 0]} size={40} color={V} />
+      </Node>
+    );
     return {
       drift: false, overlay: true,
       base: <Node>
-        <Loc act="1" />
-        <Node opacity={a}>
-          <Backed text="2 heights that work" x={-864} y={90} />
-          <Backed text="split 1" x={-864} y={160} color={V} />
-          <Backed text="split 2" x={-640} y={160} color={V} />
-        </Node>
-        <Node opacity={k1}><Key x={-760} y={215} s={0.16} /><Backed text="your key" x={-600} y={260} anchor={[-1, 0]} /></Node>
-        <Node opacity={k2}><Key x={-760} y={215} s={0.16} bow="round" color={VL} /><Backed text="master key" x={-600} y={260} anchor={[-1, 0]} color={VL} /></Node>
-        <Node opacity={cant}><Backed text="the lock can't tell" x={-864} y={345} font="label" /></Node>
+        <Node opacity={a}><Backed text={'2 heights\nthat work'} x={CX} y={-330} anchor={[0, 0]} size={38} /></Node>
+        <Node opacity={sp}>{leader(-170, G1, 'split 1')}{leader(-60, G2, 'split 2')}</Node>
+        <Node opacity={k1}><Backed text="your key" x={CX} y={150} anchor={[0, 0]} size={44} /></Node>
+        <Node opacity={k2}><Backed text="master key" x={CX} y={150} anchor={[0, 0]} size={44} color={VL} /></Node>
+        <Node opacity={cant}><Backed text={'the lock\ncan\'t tell'} x={CX} y={300} anchor={[0, 0]} size={40} /></Node>
       </Node>,
-      steps: [to(a, 1, 0.6), to(k1, 1, 0.5), function* () { yield k1(0, 0.25); yield* k2(1, 0.5); }, to(cant, 1, 0.6)],
+      ambient: function* () { yield* waitFor(5.2); yield* sp(0, 0.4); },
+      steps: [function* () { yield a(1, 0.6); yield* sp(1, 0.5); }, to(k1, 1, 0.5), function* () { yield k1(0, 0.25); yield* k2(1, 0.5); }, to(cant, 1, 0.6)],
     };
   },
   S20: () => {

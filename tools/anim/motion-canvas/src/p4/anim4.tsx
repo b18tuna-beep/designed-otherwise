@@ -83,11 +83,10 @@ export const A4: Record<string, () => Built> = {
     return {
       drift: false, overlay: true,
       base: <Node>
-        <Loc act="3" />
         <Tol x={-560} y={290} s={0.62} perfect={perfect} real={real} violet={v} />
         <Node opacity={l1}><Backed text="perfect line" x={-864} y={180} /></Node>
         <Node opacity={real}><Backed text="real holes" x={-864} y={385} /></Node>
-        <Node opacity={l2}><Backed text="never all at once" x={-864} y={60} font="label" /></Node>
+        <Node opacity={l2}><Backed text="never all at once" x={-864} y={-440} font="label" size={40} /></Node>
         <Lab text="THE WEAKNESS" x={-250} y={280} size={72} color={V} offset={[-1, 0]} opacity={l3} />
       </Node>,
       steps: [
@@ -127,10 +126,9 @@ export const A4: Record<string, () => Built> = {
     return {
       drift: false, overlay: true,
       base: <Node>
-        <Loc act="3" />
-        <Node opacity={sec}><Backed text="security pins" x={-864} y={90} font="label" /></Node>
-        <Node opacity={sp}><Spool x={-760} y={250} s={1.0} /><Lab text="spool" x={-690} y={250} size={TY.label} offset={[-1, 0]} /></Node>
-        <Node opacity={mu}><Mushroom x={-340} y={250} s={1.0} /><Lab text="mushroom" x={-270} y={250} size={TY.label} offset={[-1, 0]} /></Node>
+        <Node opacity={sec}><Backed text="security pins" x={715} y={-250} anchor={[0, 0]} font="label" size={44} /></Node>
+        <Node opacity={sp}><Spool x={575} y={-110} s={1.0} /><Lab text="spool" x={630} y={-110} size={44} offset={[-1, 0]} /></Node>
+        <Node opacity={mu}><Mushroom x={575} y={40} s={1.0} /><Lab text="mushroom" x={630} y={40} size={44} offset={[-1, 0]} /></Node>
       </Node>,
       ambient: function* () { yield* sec(1, 0.6); },
       steps: [fadeIn(sp), fadeIn(mu)],
@@ -216,7 +214,7 @@ export const A4: Record<string, () => Built> = {
   S63: () => {
     const draw = sig(0), mark = sig(0), seg = sigs(3), leg = sigs(3);
     const W = 1400, X0 = -700, Y = 40, H = 150;
-    const P = [55.7, 37.8, 6.5], cols = [C.chalk, C.muted, C.panel];
+    const P = [55.7, 37.8, 6.5], cols = [C.chalk, C.muted, rgba(M, 0.3)];
     const x0 = (i: number) => X0 + (W * P.slice(0, i).reduce((a, b) => a + b, 0)) / 100;
     const names = ['forcible entry', 'no force', 'attempted'];
     return {
@@ -363,14 +361,14 @@ export const A4: Record<string, () => Built> = {
       drift: false, overlay: true,
       base: <Node>
         <Node opacity={mark} y={() => 12 * (1 - mark())}>
-          <Node x={-590} y={262} scale={0.2}>
+          <Node x={715} y={-170} scale={0.36}>
             <Rect x={20} y={10} width={330} height={560} fill={C.heat} />
             <Line closed points={[[-170, -270], [170, -270], [170, 270], [-170, 270]]} stroke={C.chalk} lineWidth={44} lineJoin="round" />
             <Line closed points={[[-60, -230], [150, -170], [150, 330], [-60, 270]]} fill={C.cold} />
             <Line points={[[-200, 210], [200, 210]]} stroke={C.refrigerant} lineWidth={36} />
           </Node>
-          <Txt text="DESIGNED" x={-470} y={225} offset={[-1, 0]} fontFamily="Archivo" fontWeight={500} fontSize={78} letterSpacing={7} fill={C.chalk} />
-          <Txt text="OTHERWISE" x={-470} y={300} offset={[-1, 0]} fontFamily="Archivo" fontWeight={600} fontSize={78} letterSpacing={7} fill={C.chalk} />
+          <Txt text="DESIGNED" x={715} y={60} fontFamily="Archivo" fontWeight={500} fontSize={58} letterSpacing={5} fill={C.chalk} />
+          <Txt text="OTHERWISE" x={715} y={125} fontFamily="Archivo" fontWeight={600} fontSize={58} letterSpacing={5} fill={C.chalk} />
         </Node>
       </Node>,
       steps: [fadeIn(mark, 0.9)],

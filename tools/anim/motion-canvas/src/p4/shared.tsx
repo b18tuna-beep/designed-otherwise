@@ -65,3 +65,10 @@ export const ShopWindow = ({x = -120, y = 30, draw = 1, card = 1, big = 0, lift 
     {children}
   </Node>
 );
+
+// piecewise-linear lookup for labels that follow a moving 3D hero: keys = [[t, value], ...]
+export const interp = (ks: [number, number][], t: number) => {
+  if (t <= ks[0][0]) return ks[0][1];
+  for (let i = 1; i < ks.length; i++) if (t <= ks[i][0]) return ks[i - 1][1] + ((ks[i][1] - ks[i - 1][1]) * (t - ks[i - 1][0])) / (ks[i][0] - ks[i - 1][0]);
+  return ks[ks.length - 1][1];
+};

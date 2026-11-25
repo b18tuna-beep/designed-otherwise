@@ -18,13 +18,16 @@ def main():
     print(f"chunk: {len(frames)} frames rendered, {expected} expected")
     if len(frames) < expected:
         raise SystemExit(f"chunk is short: {len(frames)} < {expected}")
-    with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as fh:
-        for f in frames[:expected]:
-            fh.write(f"file '{os.path.abspath(os.path.join(frames_dir, f))}'\nduration {1 / 30:.10f}\n")
-        listing = fh.name
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", listing,
-                    "-r", "30", "-frames:v", str(expected), "-c:v", "libx264", "-preset", "medium", "-crf", "14",
+    # image2 demuxer on an explicit frame list: the concat demuxer with per-file durations repeated the first
+    # frame, which delayed every chunk by one frame (hero joins showed one stale overlay frame).
+    import shutil
+    seq = tempfile.mkdtemp(prefix="chunk_")
+    for i, f in enumerate(frames[:expected]):
+        os.symlink(os.path.abspath(os.path.join(frames_dir, f)), os.path.join(seq, f"{i:06d}.png"))
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", "30", "-i", os.path.join(seq, "%06d.png"),
+                    "-frames:v", str(expected), "-r", "30", "-c:v", "libx264", "-preset", "medium", "-crf", "14",
                     "-pix_fmt", "yuv420p", out], check=True)
+    shutil.rmtree(seq, ignore_errors=True)
     print("wrote", out)
 
 
