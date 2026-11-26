@@ -364,8 +364,8 @@ export const A2: Record<string, (k: Clk) => Built> = {
       base: <Node>
         <Tag text="ZOOM · THE CHAMBER, NOT TO SCALE" x={-864} y={-430} anchor={[-1, 0]} size={34} />
         <Node opacity={k}><Tag text="kernel" x={-640} y={-150} /><Lead from={[-570, -150]} to={[-40, -125]} color={C.chalk} /></Node>
-        <Node opacity={f}><Tag text="flame front" x={-640} y={40} /><Lead from={[-560, 40]} to={[-200, 20]} color={C.chalk} /></Node>
-        <Node opacity={w}><Tag text="wrinkled by swirling air" x={650} y={100} /><Lead from={[490, 100]} to={[200, 60]} color={C.chalk} /></Node>
+        <Node opacity={f}><Tag text="flame front" x={-640} y={40} /><Lead from={[-560, 40]} to={[-200, 20]} color={C.chalk} opacity={() => 1 - clamp((T() / dur('S38') - 0.38) / 0.1)} /></Node>
+        <Node opacity={w}><Tag text="wrinkled by swirling air" x={650} y={100} /><Lead from={[490, 100]} to={[200, 60]} color={C.chalk} opacity={() => 1 - clamp((T() / dur('S38') - 0.38) / 0.1)} /></Node>
       </Node>,
       steps: [to(k, 1, 0.5), to(f, 1, 0.5), to(w, 1, 0.5), () => (function* () { })()],
     };
@@ -379,8 +379,8 @@ export const A2: Record<string, (k: Clk) => Built> = {
       base: <Node x={-150} y={60}>
         <Line points={[[-W / 2, H / 2], [W / 2, H / 2]]} stroke={C.grid} lineWidth={LW.structure} />
         <Line points={[[-W / 2, H / 2], [-W / 2, -H / 2]]} stroke={C.grid} lineWidth={LW.structure} />
-        <Tag text="fraction burned" x={-W / 2} y={-H / 2 - 40} anchor={[-1, 0]} color={M} size={30} />
-        <Tag text="crank degrees" x={W / 2} y={H / 2 + 50} anchor={[1, 0]} color={M} size={30} />
+        <Tag text="fraction burned" x={-W / 2} y={-H / 2 - 40} anchor={[-1, 0]} color={M} size={34} />
+        <Tag text="crank degrees" x={W / 2} y={H / 2 + 50} anchor={[1, 0]} color={M} size={34} />
         <Line points={() => Array.from({length: 61}, (_, i) => { const u = i / 60; return [-W / 2 + u * W, H / 2 - H * f(u * 1.15)] as [number, number]; })}
           stroke={C.chalk} lineWidth={LW.emphasis} end={cv} lineCap="round" />
         <Node opacity={mk}>
@@ -389,7 +389,7 @@ export const A2: Record<string, (k: Clk) => Built> = {
           <Mono text="50%" x={-W / 2 - 60} y={0} size={34} color={M} />
         </Node>
         <Node opacity={lab}><Mono text="≈ 25° of crank rotation" x={170} y={110} size={38} /></Node>
-        <Tag text="MIT figures, modern engine" x={0} y={H / 2 + 110} color={M} size={30} opacity={cv} />
+        <Tag text="MIT figures, modern engine" x={0} y={H / 2 + 110} color={M} size={34} opacity={cv} />
       </Node>,
       steps: [to(cv, 1, 2.0), to(mk, 1, 0.6), to(lab, 1, 0.6)],
     };

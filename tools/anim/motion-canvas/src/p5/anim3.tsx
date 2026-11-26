@@ -2,7 +2,7 @@
 import {Circle, Line, Node, Rect, Txt} from '@motion-canvas/2d';
 import type {Built} from './motion';
 import type {Clk} from './shared';
-import {all, C, Card, clamp, CUT, Credit, delay, Dots, Engine2D, EP, ease, FadeTag, HeatArrow, Lab, Lead, linear, LW, M, Mono, Photo, photoSize, Pulses, Ring, rgba, sig, Slots, Tag, to, T, Trail,
+import {all, C, Card, clamp, CUT, dur, SWEEP, Credit, delay, Dots, Engine2D, EP, ease, FadeTag, HeatArrow, Lab, Lead, linear, LW, M, Mono, Photo, photoSize, Pulses, Ring, rgba, sig, Slots, Tag, to, T, Trail,
   TY, Cross, V, waitFor, val, Wheel, Wordmark, mixc, Light, HEAT_SOFT, Bar} from './shared';
 
 const CX = CUT.x, CY = CUT.y;
@@ -26,7 +26,7 @@ export const A3: Record<string, (k: Clk) => Built> = {
         <Node x={CX + 190} y={CY - 100} opacity={() => Math.min(1, bar() * 4)}>
           <Rect width={44} height={240} stroke={C.chalk} lineWidth={LW.structure} />
           <Rect y={() => 120 - 4 - (232 * bar()) / 2} width={30} height={() => Math.max(1, 232 * bar())} fill={C.chalk} />
-          <Tag text="pressure" y={150} color={M} size={30} />
+          <Tag text="pressure" y={150} color={M} size={34} />
         </Node>
         <Trail x={CX} y={CY + 207} r={205} from={20} p={tr} />
       </Node>,
@@ -90,8 +90,8 @@ export const A3: Record<string, (k: Clk) => Built> = {
     return {
       base: <Node>
         <Pulses x={-100} y={70} w={1000} h={150} n={1} draw={b} />
-        <Tag text="0°" x={-600} y={120} color={M} size={28} opacity={b} />
-        <Tag text="720°" x={400} y={120} color={M} size={28} opacity={b} />
+        <Tag text="0°" x={-600} y={120} color={M} size={34} opacity={b} />
+        <Tag text="720°" x={400} y={120} color={M} size={34} opacity={b} />
         <Lab text="once every two turns" x={-100} y={230} size={60} opacity={lab} />
       </Node>,
       steps: [to(b, 1, 1.4), to(lab, 1, 0.6)],
@@ -143,13 +143,22 @@ export const A3: Record<string, (k: Clk) => Built> = {
   },
   S52: () => {
     const t0 = sig(0), t1 = sig(0), t2 = sig(0), t3 = sig(0);
+    // cylinders 1..4 left to right; cycle angle = crank angle + OFF (firing order 1-3-4-2). Positions: the crank hero camera
+    // (e1_engine.py build_crank) projected to the screen, above each sleeve, clear of the clock at top right.
+    const XS = [-628, -298, 10, 298], YS = [-195, -217, -238, -257], OFF = [360, 540, 180, 0];
+    const beta = () => 30 + 660 * clamp((T() / dur('S52') - SWEEP[0]) / (SWEEP[1] - SWEEP[0]));
+    const cyc = (i: number) => (beta() + OFF[i]) % 720;
+    const word = (i: number) => (cyc(i) < 180 ? 'in' : cyc(i) < 360 ? 'squeeze' : cyc(i) < 540 ? 'one pushing' : 'out');
     return {
       overlay: true,
       base: <Node>
         <Tag text="FIRING ORDER 1-3-4-2" x={-864} y={-430} anchor={[-1, 0]} size={40} opacity={t0} />
-        <Tag text="each on a different stroke" x={-864} y={340} anchor={[-1, 0]} size={34} opacity={t1} />
-        <Tag text="one pushing" x={400} y={340} size={34} opacity={t2} />
-        <Tag text="in · squeeze · out" x={0} y={410} size={34} color={M} opacity={t3} />
+        <Tag text="each on a different stroke" x={-864} y={-360} anchor={[-1, 0]} size={34} opacity={t1} />
+        {[0, 1, 2, 3].map(i => (
+          <Node x={XS[i]} y={YS[i]} opacity={() => (cyc(i) >= 360 && cyc(i) < 540 ? t2() : t3())}>
+            <Tag text={() => word(i)} color={() => (cyc(i) >= 360 && cyc(i) < 540 ? C.chalk : M)} size={34} />
+          </Node>
+        ))}
       </Node>,
       steps: [to(t0, 1, 0.5), to(t1, 1, 0.5), to(t2, 1, 0.5), to(t3, 1, 0.5)],
     };
@@ -194,14 +203,18 @@ export const A3: Record<string, (k: Clk) => Built> = {
   S56: (k) => {
     const cyl = sig(1), tag = sig(0);
     return {
-      base: <Node><Engine2D x={CX} y={CY} th={540} hl={dim} opacity={cyl} /></Node>,
-      steps: [function* () { yield* all(k.dim(1, 0.7), cyl(0, 0.9)); }, to(k.stop, 1, 0.6)],
+      base: <Node>
+        <Engine2D x={CX} y={CY} th={540} hl={dim} opacity={cyl} />
+        <Lab text="CLOCK STOPPED" x={-60} y={20} size={96} color={M} opacity={tag} />
+      </Node>,
+      steps: [function* () { yield* all(k.dim(1, 0.7), cyl(0, 0.9)); }, function* () { yield* all(k.stop(1, 0.5), tag(1, 0.5)); }],
     };
   },
   S57: () => {
     const t = sig(0), q = sig(0);
     return {
       base: <Node>
+        <Lab text="the four-stroke cycle" x={-60} y={0} size={72} color={M} opacity={() => clamp((T() - 0.2) / 0.6) * (1 - t())} />
         <Lab text="THE OTTO CYCLE" x={-60} y={0} size={110} opacity={t} />
         <Lab text="whose cycle?" x={-60} y={140} size={56} color={M} opacity={q} />
       </Node>,
@@ -242,7 +255,7 @@ export const A3: Record<string, (k: Clk) => Built> = {
     const a = sig(0), b = sig(0), c = sig(0), line = sig(0);
     return {
       base: <Node>
-        <Line points={[[-640, 60], [620, 60]]} stroke={C.muted} lineWidth={LW.structure} end={line} />
+        <Line points={[[-640, 60], [620, 60]]} stroke={C.muted} lineWidth={LW.structure} end={() => Math.max(line(), clamp((T() - 0.2) / 0.9))} />
         <Node x={-420} y={60} opacity={a}>
           <Circle size={26} fill={C.chalk} />
           <Mono text="1867" y={-60} size={52} />
@@ -294,6 +307,8 @@ export const A3: Record<string, (k: Clk) => Built> = {
     const card = sig(0), sheet = sig(0), eng = sig(0);
     return {
       base: <Node>
+        <Mono text="1862" x={-160} y={-190} size={150} opacity={() => clamp(T() / 0.5) * (1 - card())} />
+        <Tag text="a French engineer" x={-160} y={-80} color={M} size={40} opacity={() => clamp((T() - 1.2) / 0.5) * (1 - card())} />
         <Card x={-160} y={-170} w={900} h={250} lines={['ALPHONSE BEAU DE ROCHAS', 'French engineer', '1862: set out the cycle on paper']} sizes={[56, 38, 38]} colors={[C.chalk, C.muted, C.chalk]} opacity={card} />
         <Node x={-300} y={190} opacity={sheet}>
           <Rect width={300} height={170} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
@@ -315,7 +330,7 @@ export const A3: Record<string, (k: Clk) => Built> = {
         <Node x={-330} y={30} opacity={sheet}>
           <Rect width={330} height={430} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
           <Mono text="1862" y={-120} size={60} />
-          <Tag text="brought to light" y={40} color={M} size={30} />
+          <Tag text="brought to light" y={40} color={M} size={34} />
         </Node>
         <Node x={130} y={30}>
           <Rect width={420} height={430} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
@@ -382,7 +397,7 @@ export const A3: Record<string, (k: Clk) => Built> = {
         <Node x={CX + 190} y={CY - 100}>
           <Rect width={44} height={240} stroke={C.chalk} lineWidth={LW.structure} />
           <Rect y={() => 120 - 4 - (232 * bar()) / 2} width={30} height={() => Math.max(1, 232 * bar())} fill={C.chalk} />
-          <Tag text="pressure" y={150} color={M} size={30} />
+          <Tag text="pressure" y={150} color={M} size={34} />
         </Node>
         <Tag text="a little work, a net gain" x={CX + 400} y={CY + 140} anchor={[-1, 0]} size={34} color={M} opacity={cost} />
       </Node>,
@@ -573,12 +588,13 @@ export const A3: Record<string, (k: Clk) => Built> = {
   S82: (k) => {
     const wm = sig(0);
     return {
-      base: <Node><Wordmark y={-10} opacity={wm} /></Node>,
+      base: <Node><Wordmark y={-10} opacity={() => Math.max(wm(), clamp((T() - 0.5) / 0.9))} /></Node>,
       steps: [function* () { k.over(720); yield* k.over(0, 1.3, ease); }, to(wm, 1, 0.9)],
     };
   },
-  S83: () => {
+  S83: (k) => {
     const bx = sig(0);
+    k.over(0); // S82 ends at CRANK 0; do not flip back to 720 for the same instant
     return {
       base: <Node>
         <Wordmark y={-180} s={0.7} />

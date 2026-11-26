@@ -52,7 +52,7 @@ export const A1: Record<string, (k: Clk) => Built> = {
           <Line points={[[420 - 260 + (i + 0.5) * (520 / 12), -58], [420 - 260 + (i + 0.5) * (520 / 12), -92]]} stroke={C.chalk} lineWidth={LW.emphasis} lineCap="round"
             opacity={() => (fill() * 12 > i && fill() * 12 < i + 1.6 ? 1 : 0.18)} />
         ))}
-        <Tag text="idle differs by engine" x={-100} y={300} color={M} opacity={note} />
+        <Tag text="idle differs by engine" x={-100} y={300} color={M} size={34} opacity={note} />
         <Mono text="≈ 12 turns every second" x={420} y={90} size={40} opacity={lab} />
       </Node>,
       steps: [to(note, 1, 0.5), function* () { yield* all(fill(1, 1.0, linear), lab(1, 0.5)); }],
@@ -80,20 +80,21 @@ export const A1: Record<string, (k: Clk) => Built> = {
     };
   },
   S00f: () => {
-    const cyl = sig(0), p = sig(0), lab = sig(0), ghost = sig(1), hand = sig(0);
+    const cyl = sig(0), p = sig(0), lab = sig(0), ghost = sig(1), hand = sig(0), one = sig(0);
     return {
       base: <Node>
-        <Engine2D x={-330} y={20} s={0.8} th={0} opacity={cyl} />
+        <Engine2D x={-330} y={20} s={0.8} th={0} opacity={() => Math.max(cyl(), clamp((T() - 0.3) / 0.9))} />
+        <Lab text="one cycle" x={-330} y={300} size={56} opacity={one} />
         <Node x={420} y={20}>
           <Circle size={340} stroke={C.grid} lineWidth={LW.structure} />
           <Ring r={170} p={p} />
           <Circle size={340} stroke={M} lineWidth={LW.hairline + 1} opacity={() => 0.5 * ghost()} rotation={() => T() * 540} startAngle={-90} endAngle={-30} />
           <Line points={() => { const a = ((T() * 25 * hand()) * Math.PI) / 180 - Math.PI / 2; return [[0, 0], [Math.cos(a) * 150, Math.sin(a) * 150]]; }} stroke={C.chalk} lineWidth={LW.emphasis} lineCap="round" opacity={hand} />
           <Lab text="1/6 second" y={250} size={44} opacity={lab} />
-          <Tag text="real time" y={310} color={M} opacity={lab} />
+          <Tag text="real time" y={310} color={M} size={34} opacity={lab} />
         </Node>
       </Node>,
-      steps: [to(cyl, 1, 0.8), function* () { yield* all(p(1 / 6, 1.2, ease), lab(1, 0.6)); }, function* () { yield* all(ghost(0, 0.6), hand(1, 0.6)); }],
+      steps: [to(one, 1, 0.5), function* () { yield* all(p(1 / 6, 1.2, ease), lab(1, 0.6)); }, function* () { yield* all(ghost(0, 0.6), hand(1, 0.6)); }],
     };
   },
   S00g: (k) => {

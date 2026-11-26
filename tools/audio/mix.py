@@ -6,6 +6,7 @@
 - loudness(): measure integrated loudness and true peak of a finished file
 """
 import json
+import os
 import re
 import subprocess
 
@@ -21,8 +22,29 @@ def duration(path):
     return float(sh("ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path).strip().split()[0])
 
 
+LOOPS = []  # one entry per bed that had to loop, read by assemble.py for the report
+
+
 def music_bed(track, length, out):
-    sh("ffmpeg", "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", track, "-t", f"{length:.3f}",
+    """Bed of `length` s from one track. A track shorter than the slot is not hard-looped (that left a dead tail and a
+    restart from the intro): its tail silence is trimmed and it is crossfaded (4 s) into a mid-track loop point."""
+    src = track
+    tdur = duration(track)
+    if tdur < length:
+        fade, lp = 4.0, 0.45 * tdur
+        trimmed = out + ".trim.wav"
+        sh("ffmpeg", "-y", "-loglevel", "error", "-i", track, "-af",
+           "areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse", "-ar", "48000", "-ac", "2", trimmed)
+        cur, n = trimmed, 0
+        while duration(cur) < length + 2:
+            n += 1
+            nxt = f"{out}.loop{n}.wav"
+            sh("ffmpeg", "-y", "-loglevel", "error", "-i", cur, "-ss", f"{lp:.3f}", "-i", trimmed,
+               "-filter_complex", f"[0:a][1:a]acrossfade=d={fade}:c1=tri:c2=tri", "-ar", "48000", nxt)
+            cur = nxt
+        src = cur
+        LOOPS.append({"track": os.path.basename(track), "bed_s": round(length, 1), "loops": n, "crossfade_s": fade})
+    sh("ffmpeg", "-y", "-loglevel", "error", "-i", src, "-t", f"{length:.3f}",
        "-af", f"loudnorm=I=-30:TP=-6:LRA=11,afade=t=in:d=1.5,afade=t=out:st={max(length - 2, 0):.3f}:d=2",
        "-ar", "48000", "-ac", "2", out)
     return out

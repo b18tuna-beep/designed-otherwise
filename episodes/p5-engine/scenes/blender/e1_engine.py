@@ -67,7 +67,7 @@ BLOCK = Mat("block", mixhex(T["panel"], T["chalk"], 0.5))
 PANEL = Mat("panel", T["panel"], rough=1.0, spec=0.0)
 MUTED = Mat("muted", T["muted"])
 GRID = Mat("grid", mixhex(T["grid"], T["muted"], 0.3))
-LIME = Mat("lime", T["electric"], emit_color=T["electric"])
+LIME = Mat("lime", T["electric"], alt=T["chalk"], emit_color=T["electric"])  # lime only at the spark: chalk otherwise
 CHARGE = Mat("charge", T["refrigerant"])
 BURNT = Mat("burnt", T["heat_soft"], emit_color=T["heat"])
 FRONT = Mat("front", T["heat"], emit_color=T["heat"], alpha=0.1, rim=2.2)
@@ -147,7 +147,7 @@ class Engine:
         slab("boss", BLOCK, -0.18, 0.18, h, h + 1.57)
         put(box("plug", -0.11, 0.11, -0.04, 0.5, h + 0.45, h + 1.75), CHALK)
         put(box("tip", -0.04, 0.04, -0.04, 0.3, h - 0.09, h + 0.45), LIME)
-        LIME.set(emit=0.15)
+        LIME.set(mix=1, emit=0)
         # piston, rings, pin
         self.piston = empty("piston")
         slab("pst", CHALK, -BORE + 0.03, BORE - 0.03, -0.5, 0.55, 0.0, 0.5, self.piston)
@@ -297,7 +297,7 @@ def build_flame():
         eng.pose(th)
         crown = zp(th) + 0.55
         flash = float(seg(p, 0.07, 0.10) * (1 - seg(p, 0.10, 0.15)))
-        LIME.set(emit=0.15 + 14.0 * flash)
+        LIME.set(mix=1 - min(1.0, flash * 1.6), emit=14.0 * flash)
         r = 0.02 + 1.65 * float(seg(p, 0.12, 0.97, lambda x: np.clip(x, 0, 1)))
         t = p * 9.0
         nz = (0.5 * np.sin(5 * D[:, 0] + 2.1 * t) + 0.5 * np.sin(6 * D[:, 2] - 1.7 * t + 1.3)
@@ -350,7 +350,7 @@ def build_crank():
         # thin sleeve guides (no block in this shot)
         for s in (-1, 1):
             slab("g", GRID, XK[k] + s * BORE, XK[k] + s * BORE + 0.03, 1.3, 5.3, 0.0, 0.5)
-    place_camera(cam, (0, 0.3, 2.6), 24.0, 14.0, -20.0, 60.0)
+    place_camera(cam, (1.5, 0.3, 3.4), 31.0, 14.0, -20.0, 60.0)  # clear of the clock dial at top right
 
     def update(vf, f):
         p = (vf - 1) / (MODES["crank"] - 1)

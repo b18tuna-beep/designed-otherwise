@@ -20,7 +20,7 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 EP = os.path.join(ROOT, "episodes", sys.argv[4] if len(sys.argv) > 4 else "p1-refrigerator")
 MUSIC_DIR = os.environ.get("MUSIC_DIR", os.path.join(ROOT, "assets", "music"))
 sys.path.insert(0, HERE)
-from mix import duration, loudness, mix, music_bed, sh  # noqa: E402
+from mix import LOOPS, duration, loudness, mix, music_bed, sh  # noqa: E402
 
 MUSIC = [("Dreamscape - Density & Time.mp3", 1), ("Frame-Dragging - The Grey Room & Density & Time.mp3", 5)]
 _plan = os.path.join(EP, "audio", "music.json")
@@ -148,7 +148,13 @@ def main():
     inner_gaps = [(float(s), g) for s, g in zip(starts, gaps) if float(s) < speech_end - 0.5]
     vol = sh("ffmpeg", "-hide_banner", "-nostats", "-i", final, "-af", "volumedetect", "-f", "null", "-")
     peak = float(re.search(r"max_volume: (-?[0-9.]+) dB", vol).group(1))
+    # music gap / loop seam guard: the finished mix must have no digital silence (under -60 dB for 0.3 s) outside the
+    # first 0.5 s and the last 4 s, which is what a dead loop tail leaves
+    msil = sh("ffmpeg", "-hide_banner", "-nostats", "-i", final, "-af", "silencedetect=noise=-60dB:d=0.3", "-f", "null", "-")
+    mgaps = [(float(a), float(b)) for a, b in re.findall(r"silence_start: ([0-9.]+)[\s\S]*?silence_duration: ([0-9.]+)", msil)]
+    mgaps = [(a, b) for a, b in mgaps if a > 0.5 and a < fdur - 4.0]
     checks = {
+        "music_gaps": mgaps, "music_gaps_ok": not mgaps, "music_loops": LOOPS,
         "loudness_lufs": ld["lufs"], "loudness_ok": abs(ld["lufs"] + 14) <= 1.0,
         "true_peak_dbtp": ld["true_peak"], "true_peak_ok": ld["true_peak"] <= -1.5,
         "sample_peak_db": peak, "no_clipping": peak < -0.1,

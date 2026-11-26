@@ -31,7 +31,7 @@ export const num = (id: string) => parseInt(id.slice(1), 10);
 // crank angle the cylinder rests at in scene n (hold), before any sweep
 export const holdDeg = (n: number) => (n <= 7 ? 0 : n <= 17 ? 180 : n <= 45 ? 360 : n <= 68 ? 540 : 720);
 export const arcOf = (n: number) => (n <= 16 ? 0 : n <= 44 ? 1 : n <= 67 ? 2 : 3);
-export const MS_PER_DEG = 0.2375; // 0.171 s / 720 degrees
+export const MS_PER_DEG = 0.238; // 0.238 ms per degree: 180=0.043, 360=0.086, 540=0.129, 720=0.171
 export const clockText = (deg: number) => (deg * MS_PER_DEG / 1000).toFixed(3) + ' s';
 
 export interface Clk {
