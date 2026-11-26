@@ -1,6 +1,6 @@
 # Your Car Engine Only Pushes One Stroke in Four (working title)
 
-P5 · Designed Otherwise · Script v1 (2026-11-25: written from `research/factcheck.json` safe wording; checkpoint 2 is Michael's review of the narrated script)
+P5 · Designed Otherwise · Script v1, approved by Michael at checkpoint 2 (2026-11-25 8:35 PM ET, narrated take script-v1, no notes)
 
 Every line ends with the claim ids it relies on (`research/claims.json`, wording per `research/factcheck.json` safe_wording). `[none]` = no factual claim. Numbers are spelled the way George will say them.
 Format (inauthentic-content rule): P1 paradox, P2 detective, P3 engineering challenge, P4 heist. P5 is one cycle in slow motion: a single cylinder at idle, about a sixth of a second of real time, with a real-time clock and crank-angle dial on screen. Each chapter is one stroke; the history is an aside with the clock stopped.
