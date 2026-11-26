@@ -22,7 +22,11 @@ on:
         description: "Asset in studio release narration-<episode>"
         default: final.flac
       heroes:
-        description: "Composite the Blender hero shots (P1: S02, S29)"
+        description: "Composite the Blender hero shots (scenes with tool blender)"
+        type: boolean
+        default: true
+      sting:
+        description: "Insert THE HINGE after the cold open (tools/intro/mix_with_sting.py)"
         type: boolean
         default: true
 
@@ -50,8 +54,10 @@ jobs:
       - name: Tools
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q numpy scipy pillow shapely
+          mkdir -p assets/music
           cp _studio/assets/music/*.mp3 assets/music/
-          ls -la assets/music
+          ls assets/music | wc -l
       - name: Fetch renders and narration from the studio
         env:
           STUDIO_TOKEN: ${{ secrets.STUDIO_TOKEN }}
@@ -64,20 +70,47 @@ jobs:
           if [ "$HEROES" = "true" ]; then
             bash tools/ci/studio.sh fetch "episode-$EP" in overlays-frames.tar
             mkdir -p in/overlays && tar -xf in/overlays-frames.tar -C in/overlays
-            bash tools/ci/studio.sh fetch "heroes-$EP" tools/anim/motion-canvas/src/p1/renders '*.mp4'
+            bash tools/ci/studio.sh fetch "heroes-$EP" in/heroes '*.mp4'
           fi
-          ls -la in tools/anim/motion-canvas/src/p1/renders 2>/dev/null || true
+          ls -la in in/heroes 2>/dev/null || true
       - name: Composite heroes
         if: inputs.heroes
-        run: python3 tools/anim/composite_heroes.py in/episode.mp4 in/overlays out/episode_comp.mp4
+        run: python3 tools/anim/composite_heroes.py "${{ inputs.episode }}" in/episode.mp4 in/heroes in/overlays out/episode_comp.mp4
       - name: Assemble and check
-        env: {NARR: "${{ inputs.narration }}", HEROES: "${{ inputs.heroes }}"}
+        env: {NARR: "${{ inputs.narration }}", HEROES: "${{ inputs.heroes }}", EP: "${{ inputs.episode }}"}
         run: |
           set +e -o pipefail
           video=in/episode.mp4; [ "$HEROES" = "true" ] && video=out/episode_comp.mp4
-          python3 tools/audio/assemble.py "$video" "in/$NARR" out/final 2>&1 | tee assemble.log; rc=${PIPESTATUS[0]}
+          python3 tools/audio/assemble.py "$video" "in/$NARR" out/final "$EP" 2>&1 | tee assemble.log; rc=${PIPESTATUS[0]}
           echo "::notice title=Checks::$(tr -d '\n ' < out/final/checks.json 2>/dev/null | cut -c1-900)"
           [ "$rc" -eq 0 ] || { echo "::error title=Assembly checks failed::$(tail -c 900 assemble.log | tr '\n' ' ')"; exit 1; }
+          echo "VIDEO=$video" >> "$GITHUB_ENV"
+      - name: Intro sting (THE HINGE) after the cold open
+        if: inputs.sting
+        env: {EP: "${{ inputs.episode }}"}
+        run: |
+          set -e
+          python3 tools/intro/hinge.py out/sting_frames
+          python3 tools/intro/sonic_logo.py out/logo.wav
+          ffmpeg -loglevel error -framerate 30 -i out/sting_frames/f%04d.png -i out/logo.wav -filter_complex "[1:a]volume=-3dB[a]" -map 0:v -map "[a]" \
+            -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest out/sting.mp4
+          # the cut: the scene boundary after the cold open (first scene of beat 2)
+          cut=$(python3 -c "import json,os; d=json.load(open(f'episodes/{os.environ[\"EP\"]}/scenes/scenes.json'))['scenes']; print(next(s['start'] for s in d if s['beat']==2))")
+          echo "sting cut at $cut s"
+          python3 tools/intro/mix_with_sting.py "$VIDEO" out/final/narration.wav out/final/music.wav out/final/captions.srt "$cut" out/sting.mp4 out/logo.wav out/withsting
+          python3 - <<'PY'
+          import json
+          c = json.load(open("out/final/checks.json")); s = json.load(open("out/withsting/sting-checks.json"))
+          c.update({k: s[k] for k in ("loudness_lufs", "loudness_ok", "true_peak_dbtp", "true_peak_ok")})
+          c["sting"] = s
+          c["video_s"] = c["final_s"] = s["final_s"]
+          json.dump(c, open("out/final/checks.json", "w"), indent=1)
+          print(json.dumps(c, indent=1))
+          PY
+          cp out/withsting/final.mp4 out/final/final.mp4
+          cp out/withsting/captions.srt out/final/captions.srt
+          ok=$(python3 -c "import json; c=json.load(open('out/final/checks.json')); print(all(v for k,v in c.items() if k.endswith('_ok')) and c['sting']['length_ok'])")
+          [ "$ok" = "True" ] || { echo "::error title=Sting checks failed::see checks.json"; exit 1; }
       - name: Hand to the studio (private release render-<job>)
         env:
           STUDIO_TOKEN: ${{ secrets.STUDIO_TOKEN }}
@@ -86,6 +119,6 @@ jobs:
         run: |
           F=out/final
           mv $F/final.mp4 $F/video.mp4
-          cp episodes/$EP/final/thumbs/thumb-*.jpg $F/
-          bash tools/ci/studio.sh release "render-$JOB" $F/video.mp4 $F/captions.srt $F/checks.json $F/thumb-*.jpg
+          cp episodes/$EP/final/thumbs/thumb-*.jpg $F/ 2>/dev/null || echo "no thumbs yet for $EP"
+          bash tools/ci/studio.sh release "render-$JOB" $F/video.mp4 $F/captions.srt $F/checks.json $(ls $F/thumb-*.jpg 2>/dev/null)
           bash tools/ci/studio.sh preview "assemble/$JOB/run-${{ github.run_id }}" $F/checks.json $F/captions.srt

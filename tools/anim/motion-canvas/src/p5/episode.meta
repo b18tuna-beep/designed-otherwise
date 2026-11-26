@@ -3,8 +3,8 @@
   "shared": {
     "background": "rgb(17,21,27)",
     "range": [
-      20.36,
-      20.4
+      0,
+      null
     ],
     "size": {
       "x": 1920,
