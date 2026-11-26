@@ -19,14 +19,16 @@ const framesDir = path.resolve('output', project);
 const PROJECT_URL = {project: 'src/project', board: 'src/p1/board', episode: 'src/p1/episode', overlays: 'src/p1/overlays',
   'p2-board': 'src/p2/board', 'p2-episode': 'src/p2/episode', 'p2-overlays': 'src/p2/overlays',
   'p3-board': 'src/p3/board', 'p3-episode': 'src/p3/episode', 'p3-overlays': 'src/p3/overlays',
-  'p4-board': 'src/p4/board', 'p4-episode': 'src/p4/episode', 'p4-overlays': 'src/p4/overlays'};
+  'p4-board': 'src/p4/board', 'p4-episode': 'src/p4/episode', 'p4-overlays': 'src/p4/overlays',
+  'p5-episode': 'src/p5/episode', 'p5-overlays': 'src/p5/overlays'};
 const PORT = 9000;
 
 // RANGE="start,end" (seconds) renders only part of the project; the meta file is restored afterwards.
 const META = {project: 'src/project.meta', board: 'src/p1/board.meta', episode: 'src/p1/episode.meta', overlays: 'src/p1/overlays.meta',
   'p2-board': 'src/p2/board.meta', 'p2-episode': 'src/p2/episode.meta', 'p2-overlays': 'src/p2/overlays.meta',
   'p3-board': 'src/p3/board.meta', 'p3-episode': 'src/p3/episode.meta', 'p3-overlays': 'src/p3/overlays.meta',
-  'p4-board': 'src/p4/board.meta', 'p4-episode': 'src/p4/episode.meta', 'p4-overlays': 'src/p4/overlays.meta'}[project];
+  'p4-board': 'src/p4/board.meta', 'p4-episode': 'src/p4/episode.meta', 'p4-overlays': 'src/p4/overlays.meta',
+  'p5-episode': 'src/p5/episode.meta', 'p5-overlays': 'src/p5/overlays.meta'}[project];
 // all PNGs under a folder (scene subfolders when the exporter groups by scene)
 const pngs = dir => !fs.existsSync(dir) ? [] : fs.readdirSync(dir, {withFileTypes: true}).flatMap(e =>
   e.isDirectory() ? pngs(path.join(dir, e.name)) : e.name.endsWith('.png') ? [path.join(dir, e.name)] : []);

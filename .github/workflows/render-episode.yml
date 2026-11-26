@@ -16,7 +16,7 @@ on:
       project:
         description: "Motion Canvas project: episode | overlays (P1) or <ep>-episode | <ep>-overlays (p2-episode, p2-overlays)"
         type: choice
-        options: [episode, overlays, p2-episode, p2-overlays, p3-episode, p3-overlays, p4-episode, p4-overlays]
+        options: [episode, overlays, p2-episode, p2-overlays, p3-episode, p3-overlays, p4-episode, p4-overlays, p5-episode, p5-overlays]
         default: episode
       chunks:
         description: "Parallel runners for project=episode (overlays always uses 1)"

@@ -71,9 +71,9 @@ LIME = Mat("lime", T["electric"], emit_color=T["electric"])
 CHARGE = Mat("charge", T["refrigerant"])
 BURNT = Mat("burnt", T["heat_soft"], emit_color=T["heat"])
 FRONT = Mat("front", T["heat"], emit_color=T["heat"], alpha=0.1, rim=2.2)
-FRONT.set(emit=2.2)
-BURNT.set(emit=0.25)
-GAS = Mat("gas", T["heat_soft"], emit_color=T["heat"], alpha=0.55)
+FRONT.set(emit=1.8)
+BURNT.set(emit=0.08)
+GAS = Mat("gas", T["heat_soft"], emit_color=T["heat"], alpha=0.4)
 GAS.set(emit=0.12)
 
 
@@ -158,7 +158,7 @@ class Engine:
         slab("rodb", CHALK, -0.1, 0.1, -L / 2, L / 2, 0.14, 0.36, self.rod)
         # crank: rotating group at the origin, flywheel behind
         self.crank = empty("crank")
-        disc("web", CHALK, 1.18, 0.0, 0.32, 64, self.crank)
+        disc("web", BLOCK, 1.18, 0.0, 0.32, 64, self.crank)
         slab("notch", PANEL, -0.08, 0.08, 0.7, 1.15, -0.012, 0.0, self.crank)
         disc("pin", CHALK, 0.2, 0.0, 0.5, 24, self.crank).location = (0, 0, R)
         self.fly = empty("fly")
@@ -249,7 +249,8 @@ def sweep(p):
     return seg(p, SWEEP[0], SWEEP[1], lambda x: np.clip(x, 0, 1))
 
 
-def frame_cam(width=1920 / 90.0, target=(0.0, 0.0, 2.3)):
+def frame_cam(width=1920 / 90.0, target=(200 / 90.0, 0.0, 2.3 - 20 / 90.0)):
+    # the engine sits at screen x = -200 px, y = +20 px (90 px per unit), the same place the 2D cutaway is drawn
     set_cam(cam, cam_side(target=target, width=width, lens=100.0, el=0.0))
 
 
@@ -297,7 +298,7 @@ def build_flame():
         crown = zp(th) + 0.55
         flash = float(seg(p, 0.07, 0.10) * (1 - seg(p, 0.10, 0.15)))
         LIME.set(emit=0.15 + 14.0 * flash)
-        r = 0.02 + 1.75 * float(ease(seg(p, 0.12, 0.93, lambda x: np.clip(x, 0, 1))))
+        r = 0.02 + 1.65 * float(seg(p, 0.12, 0.97, lambda x: np.clip(x, 0, 1)))
         t = p * 9.0
         nz = (0.5 * np.sin(5 * D[:, 0] + 2.1 * t) + 0.5 * np.sin(6 * D[:, 2] - 1.7 * t + 1.3)
               + 0.5 * np.sin(7 * D[:, 0] * D[:, 2] + 1.1 * t) + 0.35 * np.sin(11 * D[:, 1] + 3 * t)) / 1.85
@@ -353,7 +354,7 @@ def build_crank():
 
     def update(vf, f):
         p = (vf - 1) / (MODES["crank"] - 1)
-        beta = 720.0 * sweep(p)
+        beta = 30.0 + 660.0 * sweep(p)
         axis.rotation_euler = (math.radians(beta), 0, 0)
         for k in range(4):
             a = math.radians(beta + PHI[k])
@@ -365,7 +366,7 @@ def build_crank():
             rods[k].scale = (1, 1, (P1 - P0).length)
             rods[k].rotation_euler = (P1 - P0).to_track_quat("Z", "Y").to_euler()
             cyc = (beta + OFF[k]) % 720
-            lit = float(smoothstep(352, 366, cyc) * (1 - smoothstep(534, 548, cyc)))
+            lit = float(smoothstep(358, 372, cyc) * (1 - smoothstep(528, 542, cyc)))
             mats[k].set(mix=1 - lit)
             pmat[k].set(mix=1 - lit)
     return update
