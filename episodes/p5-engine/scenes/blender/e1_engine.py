@@ -70,7 +70,7 @@ GRID = Mat("grid", mixhex(T["grid"], T["muted"], 0.3))
 LIME = Mat("lime", T["electric"], emit_color=T["electric"])
 CHARGE = Mat("charge", T["refrigerant"])
 BURNT = Mat("burnt", T["heat_soft"], emit_color=T["heat"])
-FRONT = Mat("front", T["heat"], emit_color=T["heat"], alpha=0.25, rim=1.6)
+FRONT = Mat("front", T["heat"], emit_color=T["heat"], alpha=0.1, rim=2.2)
 FRONT.set(emit=2.2)
 BURNT.set(emit=0.25)
 GAS = Mat("gas", T["heat_soft"], emit_color=T["heat"], alpha=0.55)
@@ -275,7 +275,7 @@ def build_flame():
     frame_cam(width=6.2, target=(0.0, 0.0, h - 0.55))
     # wrinkled front: icosphere, vertices moved every frame
     bm = bmesh.new()
-    bmesh.ops.create_icosphere(bm, subdivisions=4, radius=1.0)
+    bmesh.ops.create_icosphere(bm, subdivisions=5, radius=1.0)
     D = np.array([v.co[:] for v in bm.verts])
     me1 = bpy.data.meshes.new("front")
     bm.to_mesh(me1)
@@ -297,7 +297,7 @@ def build_flame():
         crown = zp(th) + 0.55
         flash = float(seg(p, 0.07, 0.10) * (1 - seg(p, 0.10, 0.15)))
         LIME.set(emit=0.15 + 14.0 * flash)
-        r = 0.02 + 2.35 * float(ease(seg(p, 0.12, 0.92, lambda x: np.clip(x, 0, 1))))
+        r = 0.02 + 1.75 * float(ease(seg(p, 0.12, 0.93, lambda x: np.clip(x, 0, 1))))
         t = p * 9.0
         nz = (0.5 * np.sin(5 * D[:, 0] + 2.1 * t) + 0.5 * np.sin(6 * D[:, 2] - 1.7 * t + 1.3)
               + 0.5 * np.sin(7 * D[:, 0] * D[:, 2] + 1.1 * t) + 0.35 * np.sin(11 * D[:, 1] + 3 * t)) / 1.85
@@ -358,7 +358,7 @@ def build_crank():
         for k in range(4):
             a = math.radians(beta + PHI[k])
             z = R * math.cos(a) + math.sqrt(L * L - (R * math.sin(a)) ** 2)
-            pist[k].location = (XK[k], 0.25, z)
+            pist[k].location = (0, 0.0, z)
             P0 = Vector((XK[k], 0.25 - R * math.sin(a), R * math.cos(a)))
             P1 = Vector((XK[k], 0.25, z))
             rods[k].location = (P0 + P1) / 2
