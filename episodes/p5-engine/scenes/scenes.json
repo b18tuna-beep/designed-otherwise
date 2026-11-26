@@ -1,0 +1,2855 @@
+{
+ "source_words": "audio/words.json",
+ "fps": 30,
+ "total_s": 582.84,
+ "scenes": [
+  {
+   "id": "S00a",
+   "beat": 1,
+   "anchor": "next time you're stopped",
+   "tool": "motion-canvas",
+   "visual": "Slate. A chalk traffic light draws in, tilted slightly, like a sticker on a window. On 'red light' the top lamp fills chalk (no red). On 'listen to your engine' three small chalk sound arcs pulse beside it. Through the 1 s beat after the first line: only the lamp, breathing (tiny scale pulse), then the hum arcs.",
+   "changes": [
+    "light draws in on 'next time'",
+    "top lamp fills on 'red light'",
+    "sound arcs on 'listen to your engine'"
+   ],
+   "text": [],
+   "facts": [],
+   "hook": true,
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 2.0,
+   "start": 0.0,
+   "end": 4.71,
+   "duration": 4.71,
+   "cues": [
+    0.3,
+    1.6,
+    2.66
+   ],
+   "words": "next time you're stopped at a red light listen to your engine",
+   "change_every_s": 1.6,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S00b",
+   "beat": 1,
+   "anchor": "it's still turning",
+   "tool": "motion-canvas",
+   "visual": "The traffic light slides to the side; at centre an end-on chalk crank wheel turns steadily. A counter '700' with 'per minute' ticks up on 'seven hundred times a minute'.",
+   "changes": [
+    "wheel starts turning on 'still turning'",
+    "counter on 'seven hundred times a minute'"
+   ],
+   "text": [
+    "700 per minute"
+   ],
+   "facts": [
+    "1.1"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 3.1,
+   "start": 4.71,
+   "end": 9.23,
+   "duration": 4.52,
+   "cues": [
+    0.37,
+    1.46
+   ],
+   "words": "it's still turning around seven hundred times a minute",
+   "change_every_s": 2.3,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S00c",
+   "beat": 1,
+   "anchor": "every engine idles",
+   "tool": "motion-canvas",
+   "visual": "The wheel stays; a one-second bar fills beside it with twelve chalk ticks, one per turn, flashing as the wheel passes. Label '≈ 12 turns every second'. A faint note: 'idle differs by engine'.",
+   "changes": [
+    "'idle differs by engine' on 'idles a little differently'",
+    "twelve ticks flash on 'twelve turns every second'"
+   ],
+   "text": [
+    "idle differs",
+    "≈ 12 turns every second"
+   ],
+   "facts": [
+    "1.1"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 2.8,
+   "start": 9.23,
+   "end": 15.51,
+   "duration": 6.28,
+   "cues": [
+    0.83,
+    3.53
+   ],
+   "words": "every engine idles a little differently but that's nearly twelve turns every second",
+   "change_every_s": 3.1,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S00d",
+   "beat": 1,
+   "anchor": "and in each cylinder",
+   "tool": "motion-canvas",
+   "visual": "Four chalk slots in a row, each a mini piston stroke (down, up, down, up) with the labels in, squeeze, push, out. On 'only one stroke in every four actually pushes' slot three lights chalk bright and the other three go muted.",
+   "changes": [
+    "four slots draw on 'each cylinder'",
+    "slot three lights on 'actually pushes'"
+   ],
+   "text": [
+    "1 in 4 pushes"
+   ],
+   "facts": [
+    "1.4"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 3.0,
+   "start": 15.51,
+   "end": 20.93,
+   "duration": 5.42,
+   "cues": [
+    0.39,
+    3.35
+   ],
+   "words": "and in each cylinder only one stroke in every four actually pushes",
+   "change_every_s": 2.7,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S00e",
+   "beat": 1,
+   "anchor": "for the other three",
+   "tool": "motion-canvas",
+   "visual": "The three muted slots get a dashed muted momentum trail from a small flywheel at the right end, so they look pulled along. A single chalk word 'carried' under them.",
+   "changes": [
+    "trail dashes in on 'isn't driving itself'",
+    "'carried' on 'being carried'"
+   ],
+   "text": [
+    "carried"
+   ],
+   "facts": [
+    "1.4"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 2.0,
+   "start": 20.93,
+   "end": 26.11,
+   "duration": 5.18,
+   "cues": [
+    1.77,
+    3.77
+   ],
+   "words": "for the other three the engine isn't driving itself it's being carried",
+   "change_every_s": 2.6,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S00f",
+   "beat": 1,
+   "anchor": "so today we're going to follow",
+   "tool": "motion-canvas",
+   "visual": "One cylinder outline appears at centre alone. A stopwatch ring shows a sixth of a circle filled in chalk, label '1/6 second'. On 'slowed right down' a muted fast ghost of the ring is replaced by the slow single hand.",
+   "changes": [
+    "cylinder draws on 'one cylinder'",
+    "ring fills a sixth on 'about a sixth of a second'",
+    "slow hand on 'slowed right down'"
+   ],
+   "text": [
+    "one cycle",
+    "1/6 second, real time"
+   ],
+   "facts": [
+    "1.3"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 3.0,
+   "start": 26.11,
+   "end": 35.25,
+   "duration": 9.14,
+   "cues": [
+    3.03,
+    4.47,
+    6.95
+   ],
+   "words": "so today we're going to follow one cycle of one cylinder about a sixth of a second of real time slowed right down",
+   "change_every_s": 3.0,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S00g",
+   "beat": 1,
+   "anchor": "the clock in the corner is real time",
+   "tool": "motion-canvas",
+   "visual": "The clock and the crank-angle dial draw in at the top right (the only entrance of either): '0.000 s', dial at 0°, tag '0° = START OF INTAKE'. On 'how little of it is spent working' the three muted arcs light and the chalk arc is the only thick one. Then the frame eases to clean slate for the soft landing into the intro sting (music eases out).",
+   "changes": [
+    "clock and dial enter on 'in the corner'",
+    "dial arcs split on 'how little of it'",
+    "frame eases to slate on 'spent working'"
+   ],
+   "text": [
+    "0.000 s",
+    "0° = START OF INTAKE"
+   ],
+   "facts": [
+    "1.3",
+    "1.4"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 2.5,
+   "start": 35.25,
+   "end": 41.05,
+   "duration": 5.8,
+   "cues": [
+    0.43,
+    2.95,
+    3.99
+   ],
+   "words": "the clock in the corner is real time watch how little of it is spent working",
+   "change_every_s": 1.9,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S01",
+   "beat": 2,
+   "anchor": "here's our cylinder",
+   "tool": "motion-canvas",
+   "visual": "The cylinder cutaway (frozen H1 still: chalk on panel, no colour) draws in at centre, large, with the clock and dial live in the corner. Locator inset reads 'ENGINE'.",
+   "changes": [
+    "cutaway draws on 'our cylinder'"
+   ],
+   "text": [],
+   "facts": [],
+   "note": "first appearance of the H1 cutaway; every later 2D aside sits on this frozen still",
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 1.9,
+   "start": 41.05,
+   "end": 43.41,
+   "duration": 2.36,
+   "cues": [
+    0.49
+   ],
+   "words": "here's our cylinder",
+   "change_every_s": 2.4,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S02",
+   "beat": 2,
+   "anchor": "a piston a connecting rod",
+   "tool": "motion-canvas",
+   "visual": "Part isolation (look vocabulary 6), one subject at a time over the frozen cutaway: piston, then rod, then crankshaft each brighten in turn with the others dimmed; labels outside the shape. On 'heavy wheel' the flywheel brightens, rim ticks readable; on 'keep an eye on it' a soft ring pulses around it.",
+   "changes": [
+    "piston on 'a piston'",
+    "rod on 'a connecting rod'",
+    "crank on 'a crankshaft'",
+    "flywheel on 'a heavy wheel called the flywheel'",
+    "ring pulses on 'keep an eye on it'"
+   ],
+   "text": [
+    "piston",
+    "rod",
+    "crank",
+    "flywheel"
+   ],
+   "facts": [
+    "5.2",
+    "7.3"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 2.6,
+   "start": 43.41,
+   "end": 52.11,
+   "duration": 8.7,
+   "cues": [
+    0.3,
+    0.95,
+    2.11,
+    4.71,
+    6.85
+   ],
+   "words": "a piston a connecting rod a crankshaft and on the end of the crank a heavy wheel called the flywheel keep an eye on it",
+   "change_every_s": 1.7,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S03",
+   "beat": 2,
+   "anchor": "up top two valves",
+   "tool": "motion-canvas",
+   "visual": "Over the still: the two valves brighten; labels 'intake: air and fuel in' and 'exhaust: burnt gas out' outside the shape. On 'between them' the spark plug brightens, only its electrode tip lime-dotted, label 'spark plug'.",
+   "changes": [
+    "valves on 'two valves'",
+    "labels on 'burnt gas out'",
+    "plug on 'spark plug'"
+   ],
+   "text": [
+    "intake valve",
+    "exhaust valve",
+    "spark plug"
+   ],
+   "facts": [
+    "2.1",
+    "6.1",
+    "4.1"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 3.5,
+   "start": 52.11,
+   "end": 60.41,
+   "duration": 8.3,
+   "cues": [
+    0.57,
+    4.03,
+    6.55
+   ],
+   "words": "up top two valves one lets air and fuel in the other lets burnt gas out between them sits the spark plug",
+   "change_every_s": 2.8,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S04",
+   "beat": 2,
+   "anchor": "one full cycle takes two turns",
+   "tool": "motion-canvas",
+   "visual": "A chalk crank wheel turns twice; two full-circle outlines stack into '720°'. The dial at the corner is not touched.",
+   "changes": [
+    "first turn on 'two turns of the crankshaft'",
+    "'720°' on 'seven hundred and twenty degrees'"
+   ],
+   "text": [
+    "2 turns = 720°"
+   ],
+   "facts": [
+    "1.2"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 3.7,
+   "start": 60.41,
+   "end": 67.07,
+   "duration": 6.66,
+   "cues": [
+    1.53,
+    2.93
+   ],
+   "words": "one full cycle takes two turns of the crankshaft seven hundred and twenty degrees",
+   "change_every_s": 3.3,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S05",
+   "beat": 2,
+   "anchor": "four strokes half a turn each",
+   "tool": "motion-canvas",
+   "visual": "The 720° ring splits into four 180° arcs labelled intake, compression, power, exhaust; the intake arc is chalk, the others muted (same grammar as the corner dial).",
+   "changes": [
+    "ring splits on 'four strokes'",
+    "180° tags on 'half a turn each'"
+   ],
+   "text": [
+    "4 strokes × 180°"
+   ],
+   "facts": [
+    "2.2"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 2.0,
+   "start": 67.07,
+   "end": 70.19,
+   "duration": 3.12,
+   "cues": [
+    0.3,
+    1.07
+   ],
+   "words": "four strokes half a turn each",
+   "change_every_s": 1.6,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S06",
+   "beat": 2,
+   "anchor": "at this speed each degree",
+   "tool": "motion-canvas",
+   "visual": "A magnifier sweeps onto the corner dial and isolates a single degree tick; label '1° = 0.24 ms' (a quarter of a thousandth of a second). The hand moves one tick and the clock digits barely change.",
+   "changes": [
+    "magnifier on 'each degree'",
+    "label on 'a quarter of a thousandth of a second'"
+   ],
+   "text": [
+    "1° ≈ 0.24 ms"
+   ],
+   "facts": [
+    "1.3"
+   ],
+   "clock_start": 0.0,
+   "clock_end": 0.0,
+   "static_s": 3.0,
+   "start": 70.19,
+   "end": 76.83,
+   "duration": 6.64,
+   "cues": [
+    1.23,
+    3.61
+   ],
+   "words": "at this speed each degree of that turn lasts about a quarter of a thousandth of a second",
+   "change_every_s": 3.3,
+   "chapter": "cold open and set-up"
+  },
+  {
+   "id": "S07",
+   "beat": 2,
+   "anchor": "stroke one intake",
+   "tool": "blender",
+   "visual": "HERO H1 cutaway, clip `intake` (5 s, constant crank speed, locked camera, 8 percent push): piston falls, intake valve open. Overlay: chapter tag 'STROKE 1 · INTAKE', 34 px mono 'OPEN' beside the intake valve, 'CLOSED' on the exhaust valve; dial arc 0-180 chalk, the rest muted. The flywheel rim ticks show the turn.",
+   "changes": [
+    "tag on 'stroke one intake'",
+    "OPEN/CLOSED tags on 'valve is open'",
+    "piston ghost trail on 'the piston falls'"
+   ],
+   "text": [
+    "STROKE 1 · INTAKE",
+    "OPEN",
+    "CLOSED"
+   ],
+   "facts": [
+    "2.1"
+   ],
+   "clip": "intake",
+   "clock_start": 0.0,
+   "clock_end": 14.3,
+   "static_s": 3.0,
+   "start": 76.83,
+   "end": 83.69,
+   "duration": 6.86,
+   "cues": [
+    0.3,
+    3.29,
+    4.81
+   ],
+   "words": "stroke one intake the intake valve is open and the piston falls",
+   "change_every_s": 2.3,
+   "chapter": "intake"
+  },
+  {
+   "id": "S08",
+   "beat": 2,
+   "anchor": "here's the first surprise",
+   "tool": "motion-canvas",
+   "visual": "Charge fill (vocab 2) over the frozen cutaway: a chalk 'suck' label with a muted cross-out on 'doesn't really suck'. A small gauge inside shows 'lower pressure'; outside 'higher pressure'. Violet charge dots stream through the intake valve on 'pushes the charge in' (no arrows: motion and dots only).",
+   "changes": [
+    "'suck' crossed out on 'doesn't really suck anything in'",
+    "'lower pressure inside' on 'lowers the pressure inside'",
+    "'higher pressure outside' on 'at higher pressure'",
+    "violet dots stream on 'pushes the charge in'"
+   ],
+   "text": [
+    "not sucked",
+    "pushed in by outside air"
+   ],
+   "facts": [
+    "2.1"
+   ],
+   "clock_start": 14.3,
+   "clock_end": 45.7,
+   "static_s": 4.1,
+   "start": 83.69,
+   "end": 98.69,
+   "duration": 15.0,
+   "cues": [
+    2.51,
+    6.65,
+    10.41,
+    11.67
+   ],
+   "words": "here's the first surprise the piston doesn't really suck anything in as it falls it lowers the pressure inside the cylinder and the air outside at higher pressure pushes the charge in through the open valve",
+   "change_every_s": 3.8,
+   "chapter": "intake"
+  },
+  {
+   "id": "S09",
+   "beat": 2,
+   "anchor": "but at idle there's a catch",
+   "tool": "motion-canvas",
+   "visual": "The intake pipe draws in beside the valve; a small tag 'AT IDLE'. The viewer sees a plain open pipe first, so the next scene's restriction reads as the catch.",
+   "changes": [
+    "pipe draws on 'there's a catch'",
+    "tag on 'at idle'"
+   ],
+   "text": [
+    "at idle"
+   ],
+   "facts": [
+    "2.5"
+   ],
+   "clock_start": 45.7,
+   "clock_end": 51.4,
+   "static_s": 1.6,
+   "start": 98.69,
+   "end": 101.41,
+   "duration": 2.72,
+   "cues": [
+    1.11,
+    0.33
+   ],
+   "words": "but at idle there's a catch",
+   "change_every_s": 1.4,
+   "chapter": "intake"
+  },
+  {
+   "id": "S10",
+   "beat": 2,
+   "anchor": "the throttle the valve your accelerator",
+   "tool": "motion-canvas",
+   "visual": "A throttle plate in the pipe, partly closed (a chalk flap at 70 degrees); a dashed chalk link to a pedal icon labelled 'accelerator'. On 'pull its air in against a restriction' the violet dots squeeze through the gap and thin out behind it.",
+   "changes": [
+    "plate on 'the throttle'",
+    "pedal link on 'your accelerator pedal opens'",
+    "'partly closed' on 'partly closed'",
+    "dots squeeze on 'against a restriction'"
+   ],
+   "text": [
+    "throttle",
+    "accelerator",
+    "partly closed"
+   ],
+   "facts": [
+    "2.5"
+   ],
+   "clock_start": 51.4,
+   "clock_end": 71.2,
+   "static_s": 3.6,
+   "start": 101.41,
+   "end": 110.91,
+   "duration": 9.5,
+   "cues": [
+    0.3,
+    1.51,
+    3.85,
+    7.47
+   ],
+   "words": "the throttle the valve your accelerator pedal opens is partly closed so the engine has to pull its air in against a restriction",
+   "change_every_s": 2.4,
+   "chapter": "intake"
+  },
+  {
+   "id": "S11",
+   "beat": 2,
+   "anchor": "that's called throttling",
+   "tool": "motion-canvas",
+   "visual": "Title card 'THROTTLING' over the pipe; a bar labelled 'light load' sits low on an efficiency scale ('less efficient at light load'). On 'pumping losses' a small muted pump loop icon appears with the term.",
+   "changes": [
+    "title on 'called throttling'",
+    "efficiency bar on 'less efficient'",
+    "loop shows on 'what engineers call'",
+    "'pumping losses' on 'pumping losses'"
+   ],
+   "text": [
+    "THROTTLING",
+    "less efficient at light load",
+    "pumping losses"
+   ],
+   "facts": [
+    "2.5"
+   ],
+   "clock_start": 71.2,
+   "clock_end": 95.1,
+   "static_s": 4.1,
+   "start": 110.91,
+   "end": 122.35,
+   "duration": 11.44,
+   "cues": [
+    0.49,
+    4.57,
+    8.27,
+    9.47
+   ],
+   "words": "that's called throttling and it's one main reason a gasoline engine is less efficient when it's only lightly loaded it adds to what engineers call pumping losses",
+   "change_every_s": 2.9,
+   "chapter": "intake"
+  },
+  {
+   "id": "S12",
+   "beat": 2,
+   "anchor": "and notice what's turning the crank",
+   "tool": "motion-canvas",
+   "visual": "Over the frozen cutaway: a small fuel drop icon crossed out on 'not fuel'; the flywheel brightens with a muted momentum trail (dashes, no arrowheads) tracing its rim. On 'pulling the piston down' the rod and piston brighten along the trail.",
+   "changes": [
+    "fuel crossed out on 'not fuel'",
+    "flywheel and trail on 'the flywheel'",
+    "piston brightens on 'pulling the piston down'"
+   ],
+   "text": [
+    "not fuel",
+    "the flywheel"
+   ],
+   "facts": [
+    "1.4",
+    "5.1"
+   ],
+   "clock_start": 95.1,
+   "clock_end": 114.1,
+   "static_s": 3.7,
+   "start": 122.35,
+   "end": 131.43,
+   "duration": 9.08,
+   "cues": [
+    3.66,
+    4.81,
+    6.79
+   ],
+   "words": "and notice what's turning the crank right now not fuel the flywheel its momentum is pulling the piston down",
+   "change_every_s": 3.0,
+   "chapter": "intake"
+  },
+  {
+   "id": "S13",
+   "beat": 2,
+   "anchor": "watch the valves too",
+   "tool": "motion-canvas",
+   "visual": "The two valves brighten. A square-wave timing bar (dashed, idealised: opens exactly at the end) appears as 'what you'd guess', then a rounded real lift curve overdraws it on 'don't snap open and shut'.",
+   "changes": [
+    "valves brighten on 'watch the valves'",
+    "dashed ideal bar on 'don't snap open'",
+    "real lift curve on 'exactly at the ends of the strokes'"
+   ],
+   "text": [
+    "what you'd guess",
+    "what happens"
+   ],
+   "facts": [
+    "2.3"
+   ],
+   "clock_start": 114.1,
+   "clock_end": 129.4,
+   "static_s": 2.8,
+   "start": 131.43,
+   "end": 138.75,
+   "duration": 7.32,
+   "cues": [
+    0.3,
+    2.75,
+    4.53
+   ],
+   "words": "watch the valves too they don't snap open and shut exactly at the ends of the strokes",
+   "change_every_s": 2.4,
+   "chapter": "intake"
+  },
+  {
+   "id": "S14",
+   "beat": 2,
+   "anchor": "the intake valve opened a little",
+   "tool": "motion-canvas",
+   "visual": "The 720° dial redrawn large: the intake window as an arc that starts slightly before the top mark (OPEN tag) and ends well after the bottom mark (CLOSED tag). Piston icons at top and bottom mark the two moments.",
+   "changes": [
+    "arc opens early on 'opened a little before'",
+    "'OPEN' on 'reached the top'",
+    "arc ends late on 'well after'",
+    "'CLOSED' on 'passed the bottom'"
+   ],
+   "text": [
+    "OPEN: a little early",
+    "CLOSED: well after bottom"
+   ],
+   "facts": [
+    "2.3"
+   ],
+   "clock_start": 129.4,
+   "clock_end": 148.3,
+   "static_s": 2.1,
+   "start": 138.75,
+   "end": 147.79,
+   "duration": 9.04,
+   "cues": [
+    1.13,
+    3.05,
+    5.15,
+    7.03
+   ],
+   "words": "the intake valve opened a little before the piston reached the top and it will close well after the piston has passed the bottom",
+   "change_every_s": 2.3,
+   "chapter": "intake"
+  },
+  {
+   "id": "S15",
+   "beat": 2,
+   "anchor": "they're worked by a camshaft",
+   "tool": "motion-canvas",
+   "visual": "A chalk lobed cam disc turns at half the crank wheel's speed beside the crank wheel; label 'HALF SPEED' once. On 'only opens once every two turns' the valve lifts once while the crank wheel completes two turns.",
+   "changes": [
+    "cam appears on 'a camshaft'",
+    "'HALF SPEED' on 'half the speed of the crank'",
+    "valve lifts once on 'once every two turns'"
+   ],
+   "text": [
+    "camshaft",
+    "HALF SPEED"
+   ],
+   "facts": [
+    "2.4"
+   ],
+   "clock_start": 148.3,
+   "clock_end": 167.5,
+   "static_s": 3.5,
+   "start": 147.79,
+   "end": 157.01,
+   "duration": 9.22,
+   "cues": [
+    0.67,
+    2.59,
+    6.11
+   ],
+   "words": "they're worked by a camshaft which turns at half the speed of the crank because each valve only opens once every two turns",
+   "change_every_s": 3.1,
+   "chapter": "intake"
+  },
+  {
+   "id": "S16",
+   "beat": 2,
+   "anchor": "clock four hundredths of a second",
+   "tool": "motion-canvas",
+   "visual": "The corner clock grows to the centre and reads '0.043 s'; the intake arc closes. Under it a counter 'work made so far: 0' stays at zero. Then it shrinks back to the corner.",
+   "changes": [
+    "clock grows on 'clock four hundredths'",
+    "'0' counter on 'nothing has been made yet'"
+   ],
+   "text": [
+    "0.043 s",
+    "work made: 0"
+   ],
+   "facts": [
+    "1.3",
+    "1.4"
+   ],
+   "clock_start": 167.5,
+   "clock_end": 180.0,
+   "static_s": 3.1,
+   "start": 157.01,
+   "end": 162.97,
+   "duration": 5.96,
+   "cues": [
+    0.3,
+    3.35
+   ],
+   "words": "clock four hundredths of a second one stroke done and nothing has been made yet",
+   "change_every_s": 3.0,
+   "chapter": "intake"
+  },
+  {
+   "id": "S17",
+   "beat": 3,
+   "anchor": "stroke two compression",
+   "tool": "blender",
+   "visual": "HERO H1 cutaway, clip `compression` (5 s): both valves closed, the piston climbs, violet dots keep their count while the volume shrinks, so density rises (no colour change). Overlay: chapter tag 'STROKE 2 · COMPRESSION', 'CLOSED' tags on both valves, dial arc 180-360 chalk.",
+   "changes": [
+    "tag on 'stroke two compression'",
+    "'CLOSED' on 'valve closes'",
+    "label 'small space at the top' on 'small space at the top'"
+   ],
+   "text": [
+    "STROKE 2 · COMPRESSION",
+    "CLOSED"
+   ],
+   "facts": [
+    "2.2",
+    "2.3",
+    "3.1"
+   ],
+   "clip": "compression",
+   "clock_start": 180.0,
+   "clock_end": 196.4,
+   "static_s": 4.6,
+   "start": 162.97,
+   "end": 172.75,
+   "duration": 9.78,
+   "cues": [
+    0.3,
+    2.83,
+    7.39
+   ],
+   "words": "stroke two compression the intake valve closes and the piston climbs squeezing the mixture into the small space at the top",
+   "change_every_s": 3.3,
+   "chapter": "compression"
+  },
+  {
+   "id": "S18",
+   "beat": 3,
+   "anchor": "how hard it squeezes",
+   "tool": "motion-canvas",
+   "visual": "Two cylinder sections side by side with identical violet dot counts: left at the bottom (big volume), right at the top (small volume). Labels 'volume at the bottom' and 'volume left at the top'; a divider bar reads 'compression ratio'.",
+   "changes": [
+    "left section on 'volume at the bottom'",
+    "right section on 'space that's left at the top'",
+    "'compression ratio' on 'compression ratio'"
+   ],
+   "text": [
+    "compression ratio",
+    "bottom ÷ top"
+   ],
+   "facts": [
+    "3.1"
+   ],
+   "clock_start": 196.4,
+   "clock_end": 211.0,
+   "static_s": 2.6,
+   "start": 172.75,
+   "end": 181.51,
+   "duration": 8.76,
+   "cues": [
+    3.87,
+    6.19,
+    2.11
+   ],
+   "words": "how hard it squeezes is called the compression ratio the volume at the bottom divided by the space that's left at the top",
+   "change_every_s": 2.9,
+   "chapter": "compression"
+  },
+  {
+   "id": "S19",
+   "beat": 3,
+   "anchor": "in a typical gasoline car engine",
+   "tool": "motion-canvas",
+   "visual": "A ratio counter rolls '10 : 1' and then '12 : 1', with a bracket 'typical gasoline car'.",
+   "changes": [
+    "'10 : 1' on 'ten to one'",
+    "'12 : 1' on 'about twelve to one'"
+   ],
+   "text": [
+    "10:1 to 12:1"
+   ],
+   "facts": [
+    "3.2"
+   ],
+   "clock_start": 211.0,
+   "clock_end": 223.0,
+   "static_s": 3.3,
+   "start": 181.51,
+   "end": 188.63,
+   "duration": 7.12,
+   "cues": [
+    3.33,
+    4.85
+   ],
+   "words": "in a typical gasoline car engine that's roughly ten to one up to about twelve to one",
+   "change_every_s": 3.6,
+   "chapter": "compression"
+  },
+  {
+   "id": "S20",
+   "beat": 3,
+   "anchor": "squeeze harder and you get",
+   "tool": "motion-canvas",
+   "visual": "A bar 'efficiency' rises as the ratio dial turns up.",
+   "changes": [
+    "ratio dial turns on 'squeeze harder'",
+    "bar rises on 'better efficiency'"
+   ],
+   "text": [
+    "higher ratio, better efficiency"
+   ],
+   "facts": [
+    "3.3"
+   ],
+   "clock_start": 223.0,
+   "clock_end": 228.8,
+   "static_s": 2.1,
+   "start": 188.63,
+   "end": 192.09,
+   "duration": 3.46,
+   "cues": [
+    0.3,
+    1.35
+   ],
+   "words": "squeeze harder and you get better efficiency",
+   "change_every_s": 1.7,
+   "chapter": "compression"
+  },
+  {
+   "id": "S21",
+   "beat": 3,
+   "anchor": "so why stop there",
+   "tool": "motion-canvas",
+   "visual": "The ratio counter keeps climbing past 12 : 1 and hits a chalk wall labelled '?'. Single tag 'WHY STOP?'.",
+   "changes": [
+    "counter climbs on 'so why'",
+    "wall appears on 'stop there'"
+   ],
+   "text": [
+    "why stop?"
+   ],
+   "facts": [
+    "3.2"
+   ],
+   "clock_start": 228.8,
+   "clock_end": 232.6,
+   "static_s": 1.8,
+   "start": 192.09,
+   "end": 194.39,
+   "duration": 2.3,
+   "cues": [
+    0.3,
+    0.49
+   ],
+   "words": "so why stop there",
+   "change_every_s": 1.1,
+   "chapter": "compression"
+  },
+  {
+   "id": "S22",
+   "beat": 3,
+   "anchor": "because squeezing the mixture makes it hotter",
+   "tool": "motion-canvas",
+   "visual": "A chalk thermometer beside the compressed section fills with a heat-soft level that rises as the piston climbs. The compressed dots get a thin heat-soft edge.",
+   "changes": [
+    "thermometer fills on 'makes it hotter'"
+   ],
+   "text": [
+    "squeezing = hotter"
+   ],
+   "facts": [
+    "3.3"
+   ],
+   "clock_start": 232.6,
+   "clock_end": 239.1,
+   "static_s": 2.0,
+   "start": 194.39,
+   "end": 198.25,
+   "duration": 3.86,
+   "cues": [
+    1.81
+   ],
+   "words": "because squeezing the mixture makes it hotter",
+   "change_every_s": 3.9,
+   "chapter": "compression"
+  },
+  {
+   "id": "S23",
+   "beat": 3,
+   "anchor": "push it past a limit",
+   "tool": "motion-canvas",
+   "visual": "The thermometer passes a dashed limit line. In the chamber a pocket of unburned mixture, far from where the flame would be, flashes orange by itself. Tag 'KNOCK' appears on 'that's knock'.",
+   "changes": [
+    "limit line on 'past a limit'",
+    "pocket ignites on 'ignite by itself'",
+    "'KNOCK' tag on 'that's knock'"
+   ],
+   "text": [
+    "limit",
+    "KNOCK"
+   ],
+   "facts": [
+    "3.3",
+    "3.4"
+   ],
+   "clock_start": 239.1,
+   "clock_end": 249.2,
+   "static_s": 2.5,
+   "start": 198.25,
+   "end": 204.27,
+   "duration": 6.02,
+   "cues": [
+    0.37,
+    2.89,
+    4.53
+   ],
+   "words": "push it past a limit and the unburned mixture can ignite by itself that's knock",
+   "change_every_s": 2.0,
+   "chapter": "compression"
+  },
+  {
+   "id": "S24",
+   "beat": 3,
+   "anchor": "the sudden release sends pressure waves",
+   "tool": "motion-canvas",
+   "visual": "Concentric dashed pressure ripples cross the chamber (no arrowheads). A chalk sound-wave glyph for 'the knocking sound'. On 'damage the engine' a muted crack runs across the piston crown.",
+   "changes": [
+    "ripples on 'pressure waves through the cylinder'",
+    "sound glyph on 'the knocking sound'",
+    "crack on 'damage the engine'"
+   ],
+   "text": [
+    "pressure waves",
+    "knocking sound",
+    "can damage the engine"
+   ],
+   "facts": [
+    "3.4"
+   ],
+   "clock_start": 249.2,
+   "clock_end": 264.7,
+   "static_s": 2.9,
+   "start": 204.27,
+   "end": 213.53,
+   "duration": 9.26,
+   "cues": [
+    1.47,
+    4.17,
+    7.09
+   ],
+   "words": "the sudden release sends pressure waves through the cylinder that's the knocking sound and in severe cases it can damage the engine",
+   "change_every_s": 3.1,
+   "chapter": "compression"
+  },
+  {
+   "id": "S25",
+   "beat": 3,
+   "anchor": "a few engines push the limit",
+   "tool": "motion-canvas",
+   "visual": "The ratio counter rolls to '14 : 1' with a chalk car-badge card 'Mazda Skyactiv-G'.",
+   "changes": [
+    "card on 'a few engines'",
+    "'14 : 1' on 'fourteen to one'"
+   ],
+   "text": [
+    "Mazda Skyactiv-G: 14 : 1"
+   ],
+   "facts": [
+    "3.2"
+   ],
+   "clock_start": 264.7,
+   "clock_end": 274.8,
+   "static_s": 3.6,
+   "start": 213.53,
+   "end": 219.55,
+   "duration": 6.02,
+   "cues": [
+    0.3,
+    3.91
+   ],
+   "words": "a few engines push the limit mazda's skyactiv g reached fourteen to one",
+   "change_every_s": 3.0,
+   "chapter": "compression"
+  },
+  {
+   "id": "S26",
+   "beat": 3,
+   "anchor": "and this is where the number",
+   "tool": "motion-canvas",
+   "visual": "A chalk fuel-pump nozzle with a label plate '87'. The plate zooms toward the viewer.",
+   "changes": [
+    "pump draws on 'fuel pump'",
+    "plate zooms on 'the number'"
+   ],
+   "text": [
+    "the number on the pump"
+   ],
+   "facts": [
+    "3.5"
+   ],
+   "clock_start": 274.8,
+   "clock_end": 282.6,
+   "static_s": 2.4,
+   "start": 219.55,
+   "end": 224.21,
+   "duration": 4.66,
+   "cues": [
+    2.23,
+    1.23
+   ],
+   "words": "and this is where the number on the fuel pump comes in",
+   "change_every_s": 2.3,
+   "chapter": "compression"
+  },
+  {
+   "id": "S27",
+   "beat": 3,
+   "anchor": "octane isn't a measure of how much",
+   "tool": "motion-canvas",
+   "visual": "A muted energy-bolt icon beside 'octane' is struck through. Label 'NOT ENERGY'.",
+   "changes": [
+    "strike on 'how much energy'"
+   ],
+   "text": [
+    "octane is not energy"
+   ],
+   "facts": [
+    "3.5"
+   ],
+   "clock_start": 282.6,
+   "clock_end": 290.6,
+   "static_s": 3.2,
+   "start": 224.21,
+   "end": 228.99,
+   "duration": 4.78,
+   "cues": [
+    1.61
+   ],
+   "words": "octane isn't a measure of how much energy is in the fuel",
+   "change_every_s": 4.8,
+   "chapter": "compression"
+  },
+  {
+   "id": "S28",
+   "beat": 3,
+   "anchor": "it measures how well the fuel resists",
+   "tool": "motion-canvas",
+   "visual": "A resistance meter 'knock resistance' fills; the pump plate '87' sits at a point on it.",
+   "changes": [
+    "meter fills on 'resists igniting by itself'",
+    "plate on 'under compression'"
+   ],
+   "text": [
+    "octane = knock resistance"
+   ],
+   "facts": [
+    "3.5"
+   ],
+   "clock_start": 290.6,
+   "clock_end": 301.0,
+   "static_s": 2.2,
+   "start": 228.99,
+   "end": 235.23,
+   "duration": 6.24,
+   "cues": [
+    2.07,
+    4.05
+   ],
+   "words": "it measures how well the fuel resists igniting by itself under compression",
+   "change_every_s": 3.1,
+   "chapter": "compression"
+  },
+  {
+   "id": "S29",
+   "beat": 3,
+   "anchor": "it's tested in a special engine",
+   "tool": "motion-canvas",
+   "visual": "A chalk test-engine box with its own ratio dial turning up on 'raises its compression'; a knock tag flashes on 'until the fuel knocks'. Two reference columns draw on 'two reference fuels': 'iso-octane 100' and 'heptane 0' with the sample's reading placed between them.",
+   "changes": [
+    "test engine on 'special engine'",
+    "ratio dial turns on 'raises its compression'",
+    "knock tag on 'until the fuel knocks'",
+    "scale on 'two reference fuels'",
+    "'100' on 'rated one hundred'",
+    "'0' on 'heptane rated zero'"
+   ],
+   "text": [
+    "test engine",
+    "iso-octane = 100",
+    "heptane = 0"
+   ],
+   "facts": [
+    "3.6"
+   ],
+   "clock_start": 301.0,
+   "clock_end": 322.6,
+   "static_s": 2.7,
+   "start": 235.23,
+   "end": 248.09,
+   "duration": 12.86,
+   "cues": [
+    1.19,
+    2.23,
+    3.41,
+    6.13,
+    8.65,
+    10.43
+   ],
+   "words": "it's tested in a special engine that raises its compression until the fuel knocks and compared against two reference fuels iso octane rated one hundred and heptane rated zero",
+   "change_every_s": 2.1,
+   "chapter": "compression"
+  },
+  {
+   "id": "S30",
+   "beat": 3,
+   "anchor": "in the united states regular is generally",
+   "tool": "motion-canvas",
+   "visual": "Three chalk pump buttons: 'regular 87', 'premium 91 to 94'.",
+   "changes": [
+    "'regular 87' on 'regular is generally eighty-seven'",
+    "'premium 91-94' on 'ninety-one to ninety-four'"
+   ],
+   "text": [
+    "regular 87",
+    "premium 91 to 94"
+   ],
+   "facts": [
+    "3.8"
+   ],
+   "clock_start": 322.6,
+   "clock_end": 335.3,
+   "static_s": 2.9,
+   "start": 248.09,
+   "end": 255.71,
+   "duration": 7.62,
+   "cues": [
+    1.95,
+    4.75
+   ],
+   "words": "in the united states regular is generally eighty seven and premium ninety one to ninety four",
+   "change_every_s": 3.8,
+   "chapter": "compression"
+  },
+  {
+   "id": "S31",
+   "beat": 3,
+   "anchor": "higher compression needs fuel",
+   "tool": "motion-canvas",
+   "visual": "A balance: compression ratio on one pan, knock resistance on the other, rising together. Tag 'TRADE-OFF'.",
+   "changes": [
+    "balance on 'needs fuel that resists knock'",
+    "tag on 'trade-off'"
+   ],
+   "text": [
+    "the trade-off"
+   ],
+   "facts": [
+    "3.3"
+   ],
+   "clock_start": 335.3,
+   "clock_end": 343.3,
+   "static_s": 2.8,
+   "start": 255.71,
+   "end": 260.47,
+   "duration": 4.76,
+   "cues": [
+    0.71,
+    3.49
+   ],
+   "words": "higher compression needs fuel that resists knock that's the trade off",
+   "change_every_s": 2.4,
+   "chapter": "compression"
+  },
+  {
+   "id": "S32",
+   "beat": 3,
+   "anchor": "and this stroke too is paid for",
+   "tool": "motion-canvas",
+   "visual": "Back on the frozen cutaway: the flywheel with its muted momentum trail pulls the piston up; 'paid for by the flywheel'.",
+   "changes": [
+    "trail on 'paid for by the flywheel'"
+   ],
+   "text": [
+    "paid for by the flywheel"
+   ],
+   "facts": [
+    "1.4"
+   ],
+   "clock_start": 343.3,
+   "clock_end": 350.7,
+   "static_s": 2.6,
+   "start": 260.47,
+   "end": 264.87,
+   "duration": 4.4,
+   "cues": [
+    1.85
+   ],
+   "words": "and this stroke too is paid for by the flywheel",
+   "change_every_s": 4.4,
+   "chapter": "compression"
+  },
+  {
+   "id": "S33",
+   "beat": 3,
+   "anchor": "clock nine hundredths",
+   "tool": "motion-canvas",
+   "visual": "Clock grows centre: '0.086 s', the compression arc closes. The dial shows half a revolution complete. Counter 'work made so far: 0' still zero.",
+   "changes": [
+    "clock grows on 'clock nine hundredths'",
+    "half-ring on 'half the cycle gone'",
+    "'0' on 'still no work done'"
+   ],
+   "text": [
+    "0.086 s",
+    "half the cycle",
+    "work made: 0"
+   ],
+   "facts": [
+    "1.3",
+    "1.4"
+   ],
+   "clock_start": 350.7,
+   "clock_end": 360.0,
+   "static_s": 2.2,
+   "start": 264.87,
+   "end": 270.45,
+   "duration": 5.58,
+   "cues": [
+    0.3,
+    2.03,
+    3.41
+   ],
+   "words": "clock nine hundredths of a second half the cycle gone still no work done",
+   "change_every_s": 1.9,
+   "chapter": "compression"
+  },
+  {
+   "id": "S34",
+   "beat": 4,
+   "anchor": "now something happens before the piston",
+   "tool": "motion-canvas",
+   "visual": "Tag 'ZOOM · LAST 30° OF COMPRESSION' (the dial hand stays at 360° / 0.086 s: this is a close look, not later in time). A one-cycle pressure trace (vocab 5) draws: chalk line rising, with a dotted TOP marker. The corner clock does not move.",
+   "changes": [
+    "zoom tag on 'now something happens'",
+    "pressure trace draws on 'before the piston reaches the top'"
+   ],
+   "text": [
+    "ZOOM · last 30°"
+   ],
+   "facts": [
+    "4.1"
+   ],
+   "note": "decision for the showrunner: the approved script says the clock reads 0.086 s before the spark, so this chapter is a replay, not a continuation",
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 3.2,
+   "start": 270.45,
+   "end": 274.85,
+   "duration": 4.4,
+   "cues": [
+    0.3,
+    1.21
+   ],
+   "words": "now something happens before the piston reaches the top",
+   "change_every_s": 2.2,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S35",
+   "beat": 4,
+   "anchor": "the spark fires",
+   "tool": "motion-canvas",
+   "visual": "H1 moment: the cutaway is nearly colourless; the lime arc fires at the electrode (6 frame glow), a few tens of degrees before the top mark on the trace. SPARK marker on the trace, dial untouched.",
+   "changes": [
+    "lime arc on 'the spark fires'",
+    "marker on 'tens of degrees early'"
+   ],
+   "text": [
+    "SPARK",
+    "a few tens of degrees early"
+   ],
+   "facts": [
+    "4.1"
+   ],
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 2.3,
+   "start": 274.85,
+   "end": 278.83,
+   "duration": 3.98,
+   "cues": [
+    0.3,
+    1.71
+   ],
+   "words": "the spark fires a few tens of degrees early",
+   "change_every_s": 2.0,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S36",
+   "beat": 4,
+   "anchor": "why early because burning takes time",
+   "tool": "motion-canvas",
+   "visual": "A chalk stopwatch with a ring that fills while the piston icon keeps rising: label 'burning takes time'.",
+   "changes": [
+    "ring fills on 'because burning takes time'"
+   ],
+   "text": [
+    "burning takes time"
+   ],
+   "facts": [
+    "4.2"
+   ],
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 2.3,
+   "start": 278.83,
+   "end": 282.25,
+   "duration": 3.42,
+   "cues": [
+    1.07
+   ],
+   "words": "why early because burning takes time",
+   "change_every_s": 3.4,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S37",
+   "beat": 4,
+   "anchor": "the spark doesn't set off an explosion",
+   "tool": "motion-canvas",
+   "visual": "A chalk 'BANG' burst appears and is crossed out in muted; the word 'explosion' under it.",
+   "changes": [
+    "burst appears on 'set off'",
+    "cross-out on 'an explosion'"
+   ],
+   "text": [
+    "not an explosion"
+   ],
+   "facts": [
+    "4.3"
+   ],
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 1.6,
+   "start": 282.25,
+   "end": 285.45,
+   "duration": 3.2,
+   "cues": [
+    1.19,
+    1.65
+   ],
+   "words": "the spark doesn't set off an explosion",
+   "change_every_s": 1.6,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S38",
+   "beat": 4,
+   "anchor": "it starts a tiny hot kernel",
+   "tool": "blender",
+   "visual": "HERO H2 flame front (6 s clip, close on the chamber, emission only): lime flash, a small orange kernel, a wrinkled orange front spreading through violet charge; behind the front the charge turns heat-soft, ahead it stays violet. Overlay labels: 'kernel', 'flame front', 'wrinkled by swirling air'.",
+   "changes": [
+    "'kernel' on 'a tiny hot kernel'",
+    "'flame front' on 'grows into a flame'",
+    "'wrinkled' on 'wrinkled by the swirling air'",
+    "'burned' fills on 'until it has all burned'"
+   ],
+   "text": [
+    "kernel",
+    "flame front",
+    "swirl wrinkles it"
+   ],
+   "facts": [
+    "4.3"
+   ],
+   "clip": "flame",
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 3.7,
+   "start": 285.45,
+   "end": 296.33,
+   "duration": 10.88,
+   "cues": [
+    0.95,
+    2.81,
+    4.69,
+    8.35
+   ],
+   "words": "it starts a tiny hot kernel which grows into a flame wrinkled by the swirling air it sweeps outward through the mixture until it has all burned",
+   "change_every_s": 2.7,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S39",
+   "beat": 4,
+   "anchor": "in mit's figures",
+   "tool": "motion-canvas",
+   "visual": "A burn-progress plot: x crank degrees, y fraction burned, an S-curve; a marker at 50 percent reads '≈ 25° of crank rotation'. Source tag 'MIT figures, modern engine'.",
+   "changes": [
+    "plot draws on 'figures for a modern engine'",
+    "50 percent marker on 'half the mixture has burned'",
+    "'25°' on 'about twenty-five degrees'"
+   ],
+   "text": [
+    "half burned after ≈ 25°",
+    "MIT figures"
+   ],
+   "facts": [
+    "4.4"
+   ],
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 3.6,
+   "start": 296.33,
+   "end": 305.49,
+   "duration": 9.16,
+   "cues": [
+    1.01,
+    3.25,
+    5.55
+   ],
+   "words": "in mit's figures for a modern engine half the mixture has burned only after about twenty five degrees of crank rotation",
+   "change_every_s": 3.1,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S40",
+   "beat": 4,
+   "anchor": "so the spark is timed",
+   "tool": "motion-canvas",
+   "visual": "Pressure trace again: the peak lands just after the top mark with the piston icon able to use it. Tag 'PEAK just after the top'.",
+   "changes": [
+    "peak on 'pressure peak just after the top'",
+    "piston icon on 'where the piston can use it'"
+   ],
+   "text": [
+    "peak just after the top"
+   ],
+   "facts": [
+    "4.2"
+   ],
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 2.3,
+   "start": 305.49,
+   "end": 311.53,
+   "duration": 6.04,
+   "cues": [
+    1.91,
+    4.23
+   ],
+   "words": "so the spark is timed to put the pressure peak just after the top where the piston can use it",
+   "change_every_s": 3.0,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S41",
+   "beat": 4,
+   "anchor": "fire too late",
+   "tool": "motion-canvas",
+   "visual": "Trace variant: spark moved later, peak low and late; heat-soft area under the trace arrives after the piston is already low. Tag 'too late: heat can't be used'.",
+   "changes": [
+    "spark moves later on 'fire too late'",
+    "heat-soft area on 'too far into the stroke'"
+   ],
+   "text": [
+    "too late"
+   ],
+   "facts": [
+    "4.2"
+   ],
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 3.8,
+   "start": 311.53,
+   "end": 318.31,
+   "duration": 6.78,
+   "cues": [
+    0.3,
+    2.99
+   ],
+   "words": "fire too late and the heat arrives too far into the stroke to be turned into work",
+   "change_every_s": 3.4,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S42",
+   "beat": 4,
+   "anchor": "fire too early",
+   "tool": "motion-canvas",
+   "visual": "Trace variant: spark moved earlier, peak before the top, a heat-soft puff leaking from the chamber. Tags 'wasted heat' and 'knock more likely'.",
+   "changes": [
+    "spark moves earlier on 'fire too early'",
+    "'wasted heat' on 'wastes heat'",
+    "'knock more likely' on 'knock more likely'"
+   ],
+   "text": [
+    "too early",
+    "wasted heat",
+    "knock more likely"
+   ],
+   "facts": [
+    "4.2"
+   ],
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 2.0,
+   "start": 318.31,
+   "end": 323.65,
+   "duration": 5.34,
+   "cues": [
+    0.3,
+    1.93,
+    3.31
+   ],
+   "words": "fire too early and the engine wastes heat and makes knock more likely",
+   "change_every_s": 1.8,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S43",
+   "beat": 4,
+   "anchor": "because the abnormal much faster burn",
+   "tool": "motion-canvas",
+   "visual": "Knock vs smooth burn (vocab 9): two chamber sections side by side. Left: a clean spreading front. Right: a second orange pocket ignites ahead of the front by itself. Labels 'smooth burn' and 'knock'.",
+   "changes": [
+    "both sections on 'much faster burn is knock'",
+    "pocket ignites on 'igniting by itself'"
+   ],
+   "text": [
+    "smooth burn",
+    "knock: ahead of the flame"
+   ],
+   "facts": [
+    "4.3"
+   ],
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 3.2,
+   "start": 323.65,
+   "end": 330.75,
+   "duration": 7.1,
+   "cues": [
+    1.37,
+    4.61
+   ],
+   "words": "because the abnormal much faster burn is knock the mixture ahead of the flame igniting by itself",
+   "change_every_s": 3.5,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S44",
+   "beat": 4,
+   "anchor": "modern engines listen for it",
+   "tool": "motion-canvas",
+   "visual": "A chalk knock sensor icon on the block with sound arcs; the SPARK marker on the trace slides later. Two tags: 'less power', 'worse economy'.",
+   "changes": [
+    "sensor on 'listen for it'",
+    "marker slides later on 'delay the spark'",
+    "tags on 'power and fuel economy'"
+   ],
+   "text": [
+    "listen",
+    "delay the spark",
+    "cost: power, economy"
+   ],
+   "facts": [
+    "3.7"
+   ],
+   "clock_start": 360.0,
+   "clock_end": 360.0,
+   "static_s": 3.2,
+   "start": 330.75,
+   "end": 338.21,
+   "duration": 7.46,
+   "cues": [
+    0.65,
+    2.05,
+    5.25
+   ],
+   "words": "modern engines listen for it and delay the spark to stop it at some cost in power and fuel economy",
+   "change_every_s": 2.5,
+   "chapter": "spark replay"
+  },
+  {
+   "id": "S45",
+   "beat": 5,
+   "anchor": "stroke three power",
+   "tool": "blender",
+   "visual": "HERO H1 cutaway, clip `power` (5 s): both valves closed, the burnt gas (heat-soft) pushes the piston down hard; dial arc 360-540 chalk. Overlay: chapter tag 'STROKE 3 · POWER', a pressure bar over the piston rising on 'raises the pressure', the flywheel gets its muted momentum trail on 'pushes the piston down'.",
+   "changes": [
+    "tag on 'stroke three power'",
+    "pressure bar on 'raises the pressure'",
+    "piston push on 'pushes the piston down'"
+   ],
+   "text": [
+    "STROKE 3 · POWER"
+   ],
+   "facts": [
+    "5.1"
+   ],
+   "clip": "power",
+   "clock_start": 360.0,
+   "clock_end": 381.6,
+   "static_s": 3.3,
+   "start": 338.21,
+   "end": 346.01,
+   "duration": 7.8,
+   "cues": [
+    0.3,
+    3.63,
+    5.35
+   ],
+   "words": "stroke three power the burning gas raises the pressure and pushes the piston down",
+   "change_every_s": 2.6,
+   "chapter": "power"
+  },
+  {
+   "id": "S46",
+   "beat": 5,
+   "anchor": "this and only this",
+   "tool": "motion-canvas",
+   "visual": "Over the frozen cutaway: the power arc glows chalk and a counter 'work made: +' flips on. Words 'ONLY HERE'.",
+   "changes": [
+    "arc glows on 'this and only this'",
+    "counter flips on 'the engine does its work'"
+   ],
+   "text": [
+    "only here: work"
+   ],
+   "facts": [
+    "5.1"
+   ],
+   "clock_start": 381.6,
+   "clock_end": 394.0,
+   "static_s": 2.5,
+   "start": 346.01,
+   "end": 350.49,
+   "duration": 4.48,
+   "cues": [
+    0.3,
+    1.95
+   ],
+   "words": "this and only this is where the engine does its work",
+   "change_every_s": 2.2,
+   "chapter": "power"
+  },
+  {
+   "id": "S47",
+   "beat": 5,
+   "anchor": "half a turn about four hundredths",
+   "tool": "motion-canvas",
+   "visual": "The dial arc (180° wide) pulses; the clock label compares '0.043 s' next to the arc.",
+   "changes": [
+    "arc pulses on 'half a turn'",
+    "'0.043 s' on 'four hundredths of a second'"
+   ],
+   "text": [
+    "half a turn",
+    "≈ 0.04 s"
+   ],
+   "facts": [
+    "1.3"
+   ],
+   "clock_start": 394.0,
+   "clock_end": 404.5,
+   "static_s": 2.5,
+   "start": 350.49,
+   "end": 354.31,
+   "duration": 3.82,
+   "cues": [
+    0.3,
+    1.35
+   ],
+   "words": "half a turn about four hundredths of a second",
+   "change_every_s": 1.9,
+   "chapter": "power"
+  },
+  {
+   "id": "S48",
+   "beat": 5,
+   "anchor": "and the flywheel stores some",
+   "tool": "motion-canvas",
+   "visual": "The flywheel's muted momentum trail grows (stored push) and then spreads along the next three dial arcs (muted) as it is given back. 'smoother pulses' bar flattens from a spike on 'evens out the pulses'.",
+   "changes": [
+    "trail grows on 'stores some of that push'",
+    "trail spreads on 'over the next three strokes'",
+    "spike flattens on 'evens out the pulses'"
+   ],
+   "text": [
+    "stored push",
+    "given back over 3 strokes"
+   ],
+   "facts": [
+    "5.2"
+   ],
+   "clock_start": 404.5,
+   "clock_end": 425.8,
+   "static_s": 2.5,
+   "start": 354.31,
+   "end": 361.99,
+   "duration": 7.68,
+   "cues": [
+    0.73,
+    3.27,
+    5.47
+   ],
+   "words": "and the flywheel stores some of that push and gives it back over the next three strokes that evens out the pulses",
+   "change_every_s": 2.6,
+   "chapter": "power"
+  },
+  {
+   "id": "S49",
+   "beat": 5,
+   "anchor": "a single cylinder fires only once",
+   "tool": "motion-canvas",
+   "visual": "A 720° timeline with one chalk bump (the power stroke) and a long muted flat; label 'once every two turns'.",
+   "changes": [
+    "bump on 'a single cylinder'",
+    "label on 'once every two turns'"
+   ],
+   "text": [
+    "1 power stroke per 2 turns"
+   ],
+   "facts": [
+    "5.3"
+   ],
+   "clock_start": 425.8,
+   "clock_end": 437.8,
+   "static_s": 2.3,
+   "start": 361.99,
+   "end": 366.33,
+   "duration": 4.34,
+   "cues": [
+    0.3,
+    2.07
+   ],
+   "words": "a single cylinder fires only once every two turns",
+   "change_every_s": 2.2,
+   "chapter": "power"
+  },
+  {
+   "id": "S50",
+   "beat": 5,
+   "anchor": "so engines share the job",
+   "tool": "motion-canvas",
+   "visual": "Four small cylinders line up under the timeline, each with its own chalk bump staggered.",
+   "changes": [
+    "cylinders appear on 'engines share the job'",
+    "bumps stagger on 'share'"
+   ],
+   "text": [
+    "share the job"
+   ],
+   "facts": [
+    "5.3"
+   ],
+   "clock_start": 437.8,
+   "clock_end": 447.3,
+   "static_s": 2.3,
+   "start": 366.33,
+   "end": 369.79,
+   "duration": 3.46,
+   "cues": [
+    0.69,
+    1.15
+   ],
+   "words": "so engines share the job",
+   "change_every_s": 1.7,
+   "chapter": "power"
+  },
+  {
+   "id": "S51",
+   "beat": 5,
+   "anchor": "in a four-cylinder engine",
+   "tool": "motion-canvas",
+   "visual": "The staggered bumps with a ruler: '180°' between each. Four-cylinder card 'every 180°'.",
+   "changes": [
+    "ruler on 'a power stroke starts'",
+    "'180°' on 'hundred and eighty degrees'"
+   ],
+   "text": [
+    "4 cylinders: every 180°"
+   ],
+   "facts": [
+    "5.3"
+   ],
+   "clock_start": 447.3,
+   "clock_end": 463.9,
+   "static_s": 2.6,
+   "start": 369.79,
+   "end": 375.77,
+   "duration": 5.98,
+   "cues": [
+    1.75,
+    3.35
+   ],
+   "words": "in a four cylinder engine a power stroke starts every hundred and eighty degrees",
+   "change_every_s": 3.0,
+   "chapter": "power"
+  },
+  {
+   "id": "S52",
+   "beat": 5,
+   "anchor": "a common firing order",
+   "tool": "blender",
+   "visual": "HERO H3 four-cylinder crank (7 s, crank and pistons only): one throw chalk-bright and pushing, three muted; the lit throw rotates 1-3-4-2 every 180°. Overlay: 'FIRING ORDER 1-3-4-2', labels on the muted throws 'in', 'squeeze', 'out'.",
+   "changes": [
+    "'1-3-4-2' on 'one three four two'",
+    "'each cylinder on a different stroke' on 'a different stroke'",
+    "'one pushing' on 'one pushing'",
+    "labels on 'breathe in squeeze and breathe out'"
+   ],
+   "text": [
+    "FIRING ORDER 1-3-4-2",
+    "one pushing",
+    "in · squeeze · out"
+   ],
+   "facts": [
+    "5.4"
+   ],
+   "clip": "crank",
+   "clock_start": 463.9,
+   "clock_end": 496.1,
+   "static_s": 4.0,
+   "start": 375.77,
+   "end": 387.45,
+   "duration": 11.68,
+   "cues": [
+    1.53,
+    5.51,
+    6.73,
+    8.41
+   ],
+   "words": "a common firing order is one three four two so at any moment each cylinder is on a different stroke one pushing while the others breathe in squeeze and breathe out",
+   "change_every_s": 2.9,
+   "chapter": "power"
+  },
+  {
+   "id": "S53",
+   "beat": 5,
+   "anchor": "six cylinders a power stroke every",
+   "tool": "motion-canvas",
+   "visual": "Two more timeline strips: six cylinders '120°', eight cylinders '90°'.",
+   "changes": [
+    "six strip on 'six cylinders'",
+    "eight strip on 'eight every ninety'"
+   ],
+   "text": [
+    "6: every 120°",
+    "8: every 90°"
+   ],
+   "facts": [
+    "5.3"
+   ],
+   "clock_start": 496.1,
+   "clock_end": 513.2,
+   "static_s": 4.0,
+   "start": 387.45,
+   "end": 393.63,
+   "duration": 6.18,
+   "cues": [
+    0.3,
+    4.25
+   ],
+   "words": "six cylinders a power stroke every hundred and twenty degrees eight every ninety",
+   "change_every_s": 3.1,
+   "chapter": "power"
+  },
+  {
+   "id": "S54",
+   "beat": 5,
+   "anchor": "the more cylinders",
+   "tool": "motion-canvas",
+   "visual": "The power bumps of the strips overlap: summed curve flattens: 'smoother'.",
+   "changes": [
+    "bumps overlap on 'pushes overlap'",
+    "curve flattens on 'the smoother the engine runs'"
+   ],
+   "text": [
+    "more overlap = smoother"
+   ],
+   "facts": [
+    "5.3"
+   ],
+   "clock_start": 513.2,
+   "clock_end": 531.9,
+   "static_s": 3.0,
+   "start": 393.63,
+   "end": 400.37,
+   "duration": 6.74,
+   "cues": [
+    2.23,
+    3.73
+   ],
+   "words": "the more cylinders the more those pushes overlap and the smoother the engine runs",
+   "change_every_s": 3.4,
+   "chapter": "power"
+  },
+  {
+   "id": "S55",
+   "beat": 5,
+   "anchor": "clock thirteen hundredths",
+   "tool": "motion-canvas",
+   "visual": "Clock grows centre: '0.129 s'. Three of four arcs complete, power arc chalk. Then the dial prepares to freeze (dims on the next line).",
+   "changes": [
+    "clock grows on 'clock thirteen hundredths'"
+   ],
+   "text": [
+    "0.129 s"
+   ],
+   "facts": [
+    "1.3"
+   ],
+   "clock_start": 531.9,
+   "clock_end": 540.0,
+   "static_s": 2.6,
+   "start": 400.37,
+   "end": 403.31,
+   "duration": 2.94,
+   "cues": [
+    0.3
+   ],
+   "words": "clock thirteen hundredths of a second",
+   "change_every_s": 2.9,
+   "chapter": "power"
+  },
+  {
+   "id": "S56",
+   "beat": 6,
+   "anchor": "let's stop the clock",
+   "tool": "motion-canvas",
+   "visual": "The clock and dial freeze at 0.129 s and dim to muted; 34 px tag 'CLOCK STOPPED'. The cylinder fades out; the slate is empty for a beat.",
+   "changes": [
+    "clock freezes on 'stop the clock'",
+    "tag on 'for a moment'"
+   ],
+   "text": [
+    "CLOCK STOPPED"
+   ],
+   "facts": [],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 1.9,
+   "start": 403.31,
+   "end": 406.27,
+   "duration": 2.96,
+   "cues": [
+    0.37,
+    1.03
+   ],
+   "words": "let's stop the clock for a moment",
+   "change_every_s": 1.5,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S57",
+   "beat": 6,
+   "anchor": "this four-stroke cycle is often called",
+   "tool": "motion-canvas",
+   "visual": "Title card 'THE OTTO CYCLE'; below it a small question 'whose cycle?'.",
+   "changes": [
+    "title on 'the otto cycle'"
+   ],
+   "text": [
+    "THE OTTO CYCLE"
+   ],
+   "facts": [
+    "7.7"
+   ],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 2.4,
+   "start": 406.27,
+   "end": 410.89,
+   "duration": 4.62,
+   "cues": [
+    2.41
+   ],
+   "words": "this four stroke cycle is often called the otto cycle",
+   "change_every_s": 4.6,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S58",
+   "beat": 6,
+   "anchor": "nikolaus otto was a german",
+   "tool": "archival",
+   "visual": "Name card with the public-domain Otto portrait (asset I1, c. 1868, Commons) in a chalk frame: 'Nikolaus Otto · German gas-engine builder'. Credit line 'portrait: unknown, c. 1868 (public domain)'.",
+   "changes": [
+    "portrait on 'nikolaus otto'",
+    "role line on 'gas-engine builder'"
+   ],
+   "text": [
+    "Nikolaus Otto",
+    "German gas-engine builder"
+   ],
+   "facts": [
+    "7.3"
+   ],
+   "asset": "I1",
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 1.5,
+   "start": 410.89,
+   "end": 414.19,
+   "duration": 3.3,
+   "cues": [
+    0.3,
+    1.75
+   ],
+   "words": "nikolaus otto was a german gas engine builder",
+   "change_every_s": 1.6,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S59",
+   "beat": 6,
+   "anchor": "with his partner",
+   "tool": "motion-canvas",
+   "visual": "Second name card beside Otto's: 'Eugen Langen · Otto's partner' (no portrait; name card only). A chalk medal icon '1867 Paris exhibition · gold medal · earlier gas engine'.",
+   "changes": [
+    "Langen card on 'his partner eugen langen'",
+    "medal on 'gold medal'",
+    "'1867' on 'sixty-seven paris exhibition'",
+    "'earlier gas engine' on 'for an earlier gas engine'"
+   ],
+   "text": [
+    "Eugen Langen · Otto's partner",
+    "1867 Paris · gold medal"
+   ],
+   "facts": [
+    "7.3",
+    "7.6"
+   ],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 3.3,
+   "start": 414.19,
+   "end": 424.03,
+   "duration": 9.84,
+   "cues": [
+    0.31,
+    3.29,
+    4.93,
+    6.55
+   ],
+   "words": "with his partner eugen langen he'd already won a gold medal at the eighteen sixty seven paris exhibition for an earlier gas engine",
+   "change_every_s": 2.5,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S60",
+   "beat": 6,
+   "anchor": "in eighteen seventy-six otto built",
+   "tool": "motion-canvas",
+   "visual": "A chalk timeline: '1867' (earlier gas engine) then '1876' with a four-stroke engine box; a sales-curve tick 'immediate commercial success'.",
+   "changes": [
+    "'1876' on 'seventy-six'",
+    "engine box on 'built an engine'",
+    "'success' on 'immediate commercial success'"
+   ],
+   "text": [
+    "1876 · four-stroke principle",
+    "immediate commercial success"
+   ],
+   "facts": [
+    "7.2",
+    "7.6"
+   ],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 3.5,
+   "start": 424.03,
+   "end": 432.35,
+   "duration": 8.32,
+   "cues": [
+    1.1,
+    2.17,
+    5.71
+   ],
+   "words": "in eighteen seventy six otto built an engine on the four stroke principle it was an immediate commercial success",
+   "change_every_s": 2.8,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S61",
+   "beat": 6,
+   "anchor": "his american patent from eighteen",
+   "tool": "archival",
+   "visual": "Patent sheet US 194,047 (asset P1, 14 Aug 1877, USPTO, public domain) in a chalk frame with a slow pan over the flywheel and cylinder. Caption 'Otto, US patent 1877: a gas engine with a layered charge' (not the modern engine).",
+   "changes": [
+    "sheet on 'american patent'",
+    "highlight on 'flywheel's momentum driving the piston back'",
+    "pan to the cylinder on 'four strokes'"
+   ],
+   "text": [
+    "US patent 1877",
+    "flywheel drives the piston back"
+   ],
+   "facts": [
+    "7.3",
+    "7.4"
+   ],
+   "asset": "P1",
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 4.2,
+   "start": 432.35,
+   "end": 442.05,
+   "duration": 9.7,
+   "cues": [
+    0.3,
+    6.13,
+    4.49
+   ],
+   "words": "his american patent from eighteen seventy seven describes the same four strokes with the flywheel's momentum driving the piston back",
+   "change_every_s": 3.2,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S62",
+   "beat": 6,
+   "anchor": "but otto wasn't the first",
+   "tool": "motion-canvas",
+   "visual": "The Otto name card slides left; an empty chalk frame with a dashed outline appears to its right with a question 'first?'.",
+   "changes": [
+    "card slides on 'wasn't the first'"
+   ],
+   "text": [
+    "not the first?"
+   ],
+   "facts": [
+    "7.1"
+   ],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 3.0,
+   "start": 442.05,
+   "end": 445.73,
+   "duration": 3.68,
+   "cues": [
+    0.71
+   ],
+   "words": "but otto wasn't the first to describe it",
+   "change_every_s": 3.7,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S63",
+   "beat": 6,
+   "anchor": "in eighteen sixty-two a french engineer",
+   "tool": "motion-canvas",
+   "visual": "Name card, no portrait: 'ALPHONSE BEAU DE ROCHAS', 'French engineer', '1862: set out the cycle on paper'. A sheet icon gets four stroke sketches; on 'never built an engine' a dashed empty engine outline appears beside it.",
+   "changes": [
+    "card on 'alphonse beau de rochas'",
+    "sheet on 'on paper'",
+    "dashed engine on 'never built an engine'"
+   ],
+   "text": [
+    "ALPHONSE BEAU DE ROCHAS",
+    "French engineer",
+    "1862: set out the cycle on paper"
+   ],
+   "facts": [
+    "7.1"
+   ],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 3.7,
+   "start": 445.73,
+   "end": 456.13,
+   "duration": 10.4,
+   "cues": [
+    3.06,
+    6.81,
+    8.15
+   ],
+   "words": "in eighteen sixty two a french engineer alphonse beau de rochas had set out the four stroke cycle on paper he never built an engine",
+   "change_every_s": 3.5,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S64",
+   "beat": 6,
+   "anchor": "in eighteen eighty-six after that earlier",
+   "tool": "motion-canvas",
+   "visual": "A chalk patent document 'Otto, German patent' gets a muted diagonal stamp 'REVOKED 1886' next to the 1862 sheet marked 'brought to light'.",
+   "changes": [
+    "1862 sheet on 'after that earlier description'",
+    "stamp on 'patent was revoked'",
+    "stamp settles on 'german patent'"
+   ],
+   "text": [
+    "REVOKED 1886"
+   ],
+   "facts": [
+    "7.5"
+   ],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 3.6,
+   "start": 456.13,
+   "end": 464.25,
+   "duration": 8.12,
+   "cues": [
+    1.91,
+    5.83,
+    5.49
+   ],
+   "words": "in eighteen eighty six after that earlier description was brought to light otto's german patent was revoked",
+   "change_every_s": 2.7,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S65",
+   "beat": 6,
+   "anchor": "his patent was really about a layered charge",
+   "tool": "motion-canvas",
+   "visual": "A chamber section with violet charge in layers (dense near the plug, thinner away). Quote card in chalk: 'instead of an explosion ensuing, the flame passes gradually from one particle to another'.",
+   "changes": [
+    "layers on 'layered charge of fuel'",
+    "quote on 'instead of an explosion ensuing'",
+    "particles hop layer to layer on 'one particle to another'"
+   ],
+   "text": [
+    "a layered charge",
+    "flame passes gradually"
+   ],
+   "facts": [
+    "7.3",
+    "7.4"
+   ],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 4.2,
+   "start": 464.25,
+   "end": 476.01,
+   "duration": 11.76,
+   "cues": [
+    1.97,
+    4.85,
+    9.03
+   ],
+   "words": "his patent was really about a layered charge of fuel it says that instead of an explosion ensuing the flame passes gradually from one particle to another",
+   "change_every_s": 3.9,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S66",
+   "beat": 6,
+   "anchor": "today's engines don't use his layered charge",
+   "tool": "motion-canvas",
+   "visual": "The layers dissolve to a uniform violet charge; an orange wrinkled front still sweeps across. Tag 'a spreading flame, not a bang'.",
+   "changes": [
+    "layers dissolve on 'don't use his layered charge'",
+    "front sweeps on 'a spreading flame'"
+   ],
+   "text": [
+    "a spreading flame, not a bang"
+   ],
+   "facts": [
+    "4.3"
+   ],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 3.3,
+   "start": 476.01,
+   "end": 483.05,
+   "duration": 7.04,
+   "cues": [
+    0.63,
+    3.93
+   ],
+   "words": "today's engines don't use his layered charge but the burn is still a spreading flame not a bang",
+   "change_every_s": 3.5,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S67",
+   "beat": 6,
+   "anchor": "back to the clock",
+   "tool": "motion-canvas",
+   "visual": "The frozen clock re-brightens to full chalk, the 'CLOCK STOPPED' tag clears and the cylinder cutaway returns.",
+   "changes": [
+    "clock resumes on 'back to the clock'"
+   ],
+   "text": [],
+   "facts": [],
+   "clock_start": 540.0,
+   "clock_end": 540.0,
+   "static_s": 1.8,
+   "start": 483.05,
+   "end": 485.15,
+   "duration": 2.1,
+   "cues": [
+    0.3
+   ],
+   "words": "back to the clock",
+   "change_every_s": 2.1,
+   "chapter": "clock stopped"
+  },
+  {
+   "id": "S68",
+   "beat": 7,
+   "anchor": "stroke four exhaust",
+   "tool": "blender",
+   "visual": "HERO H1 cutaway, clip `exhaust` (5 s): the exhaust valve open, the piston rises, burnt gas (heat-soft) leaves as orange-edged particles. Overlay: chapter tag 'STROKE 4 · EXHAUST'; on 'opened just before the bottom' the OPEN tag appears at the exhaust valve and a pressure bar drops; on 'costs a little work' a small muted cost tag.",
+   "changes": [
+    "tag on 'stroke four exhaust'",
+    "'OPEN' on 'valve opened just before the bottom'",
+    "bar drops on 'let the pressure drop'",
+    "tag on 'costs a little work'"
+   ],
+   "text": [
+    "STROKE 4 · EXHAUST",
+    "OPEN",
+    "a little work, a net gain"
+   ],
+   "facts": [
+    "6.1"
+   ],
+   "clip": "exhaust",
+   "clock_start": 540.0,
+   "clock_end": 571.4,
+   "static_s": 3.6,
+   "start": 485.15,
+   "end": 496.77,
+   "duration": 11.62,
+   "cues": [
+    0.3,
+    3.09,
+    6.69,
+    8.39
+   ],
+   "words": "stroke four exhaust the exhaust valve opened just before the bottom of the power stroke to let the pressure drop it costs a little work but it's a net gain",
+   "change_every_s": 2.9,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S69",
+   "beat": 7,
+   "anchor": "now the piston rises",
+   "tool": "motion-canvas",
+   "visual": "Over the frozen cutaway: a small heat arrow (the only arrowhead) at the exhaust port as orange-edged particles leave; muted trail from the flywheel.",
+   "changes": [
+    "particles leave on 'pushes the burnt gas out'",
+    "heat arrow on 'burnt gas out'"
+   ],
+   "text": [
+    "burnt gas out"
+   ],
+   "facts": [
+    "6.1"
+   ],
+   "clock_start": 571.4,
+   "clock_end": 585.0,
+   "static_s": 2.3,
+   "start": 496.77,
+   "end": 501.81,
+   "duration": 5.04,
+   "cues": [
+    2.27,
+    2.85
+   ],
+   "words": "now the piston rises and pushes the burnt gas out",
+   "change_every_s": 2.5,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S70",
+   "beat": 7,
+   "anchor": "near the top for a short moment",
+   "tool": "motion-canvas",
+   "visual": "Both valves highlighted chalk emphasis for about 2 s, the rest dimmed; tag 'VALVE OVERLAP' on 'engineers call it'.",
+   "changes": [
+    "both valves on 'both valves are open together'",
+    "tag on 'valve overlap'"
+   ],
+   "text": [
+    "both valves open",
+    "VALVE OVERLAP"
+   ],
+   "facts": [
+    "2.3"
+   ],
+   "clock_start": 585.0,
+   "clock_end": 604.0,
+   "static_s": 3.1,
+   "start": 501.81,
+   "end": 508.85,
+   "duration": 7.04,
+   "cues": [
+    2.11,
+    5.17
+   ],
+   "words": "near the top for a short moment both valves are open together engineers call it valve overlap",
+   "change_every_s": 3.5,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S71",
+   "beat": 7,
+   "anchor": "and once again it's the flywheel",
+   "tool": "motion-canvas",
+   "visual": "The flywheel with the muted momentum trail rises into the piston once more; 'again: the flywheel'.",
+   "changes": [
+    "trail on 'the flywheel doing the work'"
+   ],
+   "text": [
+    "the flywheel again"
+   ],
+   "facts": [
+    "1.4"
+   ],
+   "clock_start": 604.0,
+   "clock_end": 614.5,
+   "static_s": 2.5,
+   "start": 508.85,
+   "end": 512.77,
+   "duration": 3.92,
+   "cues": [
+    1.41
+   ],
+   "words": "and once again it's the flywheel doing the work",
+   "change_every_s": 3.9,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S72",
+   "beat": 7,
+   "anchor": "so here's the bill",
+   "tool": "motion-canvas",
+   "visual": "Energy bill bar (vocab 7): an empty full-width chalk bar draws in, label 'energy in the fuel'.",
+   "changes": [
+    "bar draws on 'the bill'"
+   ],
+   "text": [
+    "energy in the fuel"
+   ],
+   "facts": [
+    "6.2"
+   ],
+   "clock_start": 614.5,
+   "clock_end": 621.0,
+   "static_s": 1.6,
+   "start": 512.77,
+   "end": 515.15,
+   "duration": 2.38,
+   "cues": [
+    0.77
+   ],
+   "words": "so here's the bill",
+   "change_every_s": 2.4,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S73",
+   "beat": 7,
+   "anchor": "of all the energy in the fuel",
+   "tool": "motion-canvas",
+   "visual": "A chalk segment fills about a fifth: 'moves the car, about a fifth'. A moving car silhouette icon.",
+   "changes": [
+    "segment fills on 'about a fifth'",
+    "car icon on 'a typical gasoline car'"
+   ],
+   "text": [
+    "about a fifth moves the car"
+   ],
+   "facts": [
+    "6.2"
+   ],
+   "clock_start": 621.0,
+   "clock_end": 638.9,
+   "static_s": 2.5,
+   "start": 515.15,
+   "end": 521.81,
+   "duration": 6.66,
+   "cues": [
+    2.25,
+    4.15
+   ],
+   "words": "of all the energy in the fuel only about a fifth ends up moving a typical gasoline car",
+   "change_every_s": 3.3,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S74",
+   "beat": 7,
+   "anchor": "the u s department of energy puts it",
+   "tool": "motion-canvas",
+   "visual": "A bracket around the chalk segment widens to '12 to 30 percent'; qualifier 'depending on how it's driven'. Credit 'US Dept. of Energy'.",
+   "changes": [
+    "bracket on 'between twelve and thirty percent'",
+    "qualifier on 'depending on how it's driven'"
+   ],
+   "text": [
+    "12 to 30 percent",
+    "depends on driving",
+    "US DOE"
+   ],
+   "facts": [
+    "6.2"
+   ],
+   "clock_start": 638.9,
+   "clock_end": 660.0,
+   "static_s": 2.9,
+   "start": 521.81,
+   "end": 529.63,
+   "duration": 7.82,
+   "cues": [
+    2.91,
+    5.23
+   ],
+   "words": "the u s department of energy puts it between twelve and thirty percent depending on how it's driven",
+   "change_every_s": 3.9,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S75",
+   "beat": 7,
+   "anchor": "most of the rest is lost in the engine",
+   "tool": "motion-canvas",
+   "visual": "The rest of the bar fills with heat segments: 'about 60%' out through exhaust and cooling system. A small heat arrow at the exhaust and one at the radiator (the only arrowheads).",
+   "changes": [
+    "heat segments on 'lost in the engine itself'",
+    "'about 60%' on 'about sixty percent'",
+    "arrow on 'exhaust'",
+    "arrow on 'cooling system'"
+   ],
+   "text": [
+    "lost as heat: about 60%",
+    "exhaust",
+    "cooling"
+   ],
+   "facts": [
+    "6.3"
+   ],
+   "clock_start": 660.0,
+   "clock_end": 684.3,
+   "static_s": 3.0,
+   "start": 529.63,
+   "end": 538.63,
+   "duration": 9.0,
+   "cues": [
+    1.03,
+    3.99,
+    6.09,
+    7.13
+   ],
+   "words": "most of the rest is lost in the engine itself as heat about sixty percent out through the exhaust and the cooling system",
+   "change_every_s": 2.2,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S76",
+   "beat": 7,
+   "anchor": "even at the crankshaft",
+   "tool": "motion-canvas",
+   "visual": "A second bar at the crank: chalk segment 'about a third, at best'; markers 'before the gearbox and tires'.",
+   "changes": [
+    "second bar on 'even at the crankshaft'",
+    "gearbox/tyres marker on 'before the gearbox and the tires'",
+    "segment on 'roughly a third'",
+    "'at best' on 'at best'"
+   ],
+   "text": [
+    "at the crank: roughly a third",
+    "at best"
+   ],
+   "facts": [
+    "6.4"
+   ],
+   "clock_start": 684.3,
+   "clock_end": 710.4,
+   "static_s": 3.9,
+   "start": 538.63,
+   "end": 548.29,
+   "duration": 9.66,
+   "cues": [
+    0.3,
+    1.41,
+    5.31,
+    8.29
+   ],
+   "words": "even at the crankshaft before the gearbox and the tires a gasoline engine turns roughly a third of its fuel energy into work at best",
+   "change_every_s": 2.4,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S77",
+   "beat": 7,
+   "anchor": "clock seventeen hundredths",
+   "tool": "motion-canvas",
+   "visual": "Clock grows centre: '0.171 s', the hand has completed two turns; dial full ring.",
+   "changes": [
+    "clock grows on 'clock seventeen hundredths'"
+   ],
+   "text": [
+    "0.171 s"
+   ],
+   "facts": [
+    "1.3"
+   ],
+   "clock_start": 710.4,
+   "clock_end": 720.0,
+   "static_s": 3.3,
+   "start": 548.29,
+   "end": 551.85,
+   "duration": 3.56,
+   "cues": [
+    0.3
+   ],
+   "words": "clock seventeen hundredths of a second",
+   "change_every_s": 3.6,
+   "chapter": "exhaust"
+  },
+  {
+   "id": "S78",
+   "beat": 8,
+   "anchor": "one cycle",
+   "tool": "motion-canvas",
+   "visual": "The dial ring fills once completely, caption 'ONE CYCLE'.",
+   "changes": [
+    "ring completes on 'one cycle'"
+   ],
+   "text": [
+    "one cycle"
+   ],
+   "facts": [
+    "1.2"
+   ],
+   "clock_start": 720.0,
+   "clock_end": 720.0,
+   "static_s": 1.5,
+   "start": 551.85,
+   "end": 553.65,
+   "duration": 1.8,
+   "cues": [
+    0.3
+   ],
+   "words": "one cycle",
+   "change_every_s": 1.8,
+   "chapter": "close"
+  },
+  {
+   "id": "S79",
+   "beat": 8,
+   "anchor": "two turns of the crank four strokes",
+   "tool": "motion-canvas",
+   "visual": "A crank wheel turns twice beside the four-arc ring; three arcs muted, one chalk. Tag 'only one pushing'.",
+   "changes": [
+    "two turns on 'two turns of the crank'",
+    "four arcs on 'four strokes'",
+    "chalk arc on 'only one of them pushing'"
+   ],
+   "text": [
+    "2 turns · 4 strokes",
+    "only one pushing"
+   ],
+   "facts": [
+    "1.2",
+    "1.4"
+   ],
+   "clock_start": 720.0,
+   "clock_end": 720.0,
+   "static_s": 2.1,
+   "start": 553.65,
+   "end": 558.59,
+   "duration": 4.94,
+   "cues": [
+    0.3,
+    1.69,
+    2.81
+   ],
+   "words": "two turns of the crank four strokes and only one of them pushing",
+   "change_every_s": 1.6,
+   "chapter": "close"
+  },
+  {
+   "id": "S80",
+   "beat": 8,
+   "anchor": "three strokes out of every four",
+   "tool": "motion-canvas",
+   "visual": "Three muted strokes with a dashed momentum trail to the flywheel and to neighbouring cylinder icons: 'carried by the flywheel and the others'.",
+   "changes": [
+    "trail to flywheel on 'a heavy spinning wheel'",
+    "trails to neighbours on 'the cylinders next to it'"
+   ],
+   "text": [
+    "carried by a wheel and neighbours"
+   ],
+   "facts": [
+    "1.4",
+    "5.2"
+   ],
+   "clock_start": 720.0,
+   "clock_end": 720.0,
+   "static_s": 4.0,
+   "start": 558.59,
+   "end": 566.61,
+   "duration": 8.02,
+   "cues": [
+    4.03,
+    5.77
+   ],
+   "words": "three strokes out of every four each cylinder is carried by a heavy spinning wheel and by the cylinders next to it",
+   "change_every_s": 4.0,
+   "chapter": "close"
+  },
+  {
+   "id": "S81",
+   "beat": 8,
+   "anchor": "and then it all happens again",
+   "tool": "motion-canvas",
+   "visual": "The dial hand loops; four cylinder icons cycle; a counter ticks '≈ 6 per second'; the traffic light from the opening returns small.",
+   "changes": [
+    "hand loops on 'happens again'",
+    "counter on 'about six times a second'",
+    "four icons cycle on 'in every cylinder'",
+    "light returns on 'while you wait for the light'"
+   ],
+   "text": [
+    "≈ 6 cycles a second"
+   ],
+   "facts": [
+    "1.1",
+    "1.3"
+   ],
+   "clock_start": 720.0,
+   "clock_end": 720.0,
+   "static_s": 3.0,
+   "start": 566.61,
+   "end": 574.66,
+   "duration": 8.05,
+   "cues": [
+    0.75,
+    2.17,
+    3.71,
+    5.03
+   ],
+   "words": "and then it all happens again about six times a second in every cylinder while you wait for the light to change",
+   "change_every_s": 2.0,
+   "chapter": "close"
+  },
+  {
+   "id": "S82",
+   "beat": 8,
+   "anchor": "that's the engine in your car",
+   "tool": "motion-canvas",
+   "visual": "The clock holds 0.171 s and the dial hand returns to 0. Chalk wordmark lockup 'Designed Otherwise' reveals on the title words.",
+   "changes": [
+    "hand returns on 'the engine in your car'",
+    "wordmark on 'designed otherwise'"
+   ],
+   "text": [
+    "Designed Otherwise"
+   ],
+   "facts": [],
+   "clock_start": 720.0,
+   "clock_end": 720.0,
+   "static_s": 2.1,
+   "start": 574.66,
+   "end": 579.11,
+   "duration": 4.45,
+   "cues": [
+    0.46,
+    2.34
+   ],
+   "words": "that's the engine in your car designed otherwise",
+   "change_every_s": 2.2,
+   "chapter": "close"
+  },
+  {
+   "id": "S83",
+   "beat": 8,
+   "anchor": "next time on designed otherwise",
+   "tool": "motion-canvas",
+   "visual": "End-screen space: wordmark holds with the chalk frame; two empty chalk boxes for the end-screen elements. Last frame holds 1.5 s past the last word.",
+   "changes": [
+    "boxes appear on 'next time'"
+   ],
+   "text": [
+    "Designed Otherwise"
+   ],
+   "facts": [],
+   "clock_start": 720.0,
+   "clock_end": 720.0,
+   "static_s": 3.4,
+   "start": 579.11,
+   "end": 582.84,
+   "duration": 3.73,
+   "cues": [
+    0.3
+   ],
+   "words": "next time on designed otherwise",
+   "change_every_s": 3.7,
+   "chapter": "close"
+  }
+ ]
+}
