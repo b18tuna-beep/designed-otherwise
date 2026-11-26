@@ -1,0 +1,63 @@
+{
+ "episode": "p5-engine",
+ "pass": 2,
+ "date": "2026-11-26",
+ "release": "render-2026-12-p5-engine",
+ "assets_updated": "2026-11-26T04:03Z",
+ "verdict": "FAIL",
+ "duration_s": 585.966,
+ "pass1_items": {
+  "blueprint_loop": "pass",
+  "S00f_empty": "pass",
+  "S56_S57_empty": "pass",
+  "S63_empty": "pass",
+  "S52_labels": "pass",
+  "S38_lime": "pass",
+  "clock_0.129": "pass"
+ },
+ "automated": {
+  "lufs": -14.1,
+  "true_peak_dbtp": -1.71,
+  "clipping": false,
+  "captions": 254,
+  "caption_max_chars": 42,
+  "caption_multiline": 0,
+  "script_words_missing": 0,
+  "static_over_8s": [],
+  "cues_checked": 199,
+  "cues_within_window": 172,
+  "cues_early_0.3_to_0.5": 24,
+  "cues_late": 0,
+  "thumbnails": "not in release"
+ },
+ "must_fix": [
+  {
+   "t": "467.5-469.8",
+   "scene": "S65",
+   "issue": "2.25 s bare slate under 'His patent was really about a layered charge'",
+   "fix": "show layered-charge box or 1877 card at the cut 467.45; first cue +1.97 s to +0.2 s"
+  }
+ ],
+ "nits": [
+  "73.4-74.9 S06 1.5 s clock only",
+  "285.5-286.7 S37 1.2 s bare",
+  "S38 from 295.6 orphan labels",
+  "S52 387.5 and S63 label/card touching clock text",
+  "thin lime electrode in 2D cutaway (look.md allows)",
+  "sub-labels under 34 px"
+ ],
+ "listen_at_s": [
+  452.5,
+  418.8,
+  403.7,
+  552.1,
+  220.7,
+  219.4,
+  188.1,
+  247,
+  305.6,
+  254.3,
+  270,
+  277
+ ]
+}
