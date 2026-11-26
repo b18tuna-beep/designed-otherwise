@@ -145,7 +145,7 @@ export const A3: Record<string, (k: Clk) => Built> = {
     const t0 = sig(0), t1 = sig(0), t2 = sig(0), t3 = sig(0);
     // cylinders 1..4 left to right; cycle angle = crank angle + OFF (firing order 1-3-4-2). Positions: the crank hero camera
     // (e1_engine.py build_crank) projected to the screen, above each sleeve, clear of the clock at top right.
-    const XS = [-628, -298, 10, 298], YS = [-195, -217, -238, -257], OFF = [360, 540, 180, 0];
+    const XS = [-628, -298, 10, 278], YS = [-195, -217, -238, -257], OFF = [360, 540, 180, 0];
     const beta = () => 30 + 660 * clamp((T() / dur('S52') - SWEEP[0]) / (SWEEP[1] - SWEEP[0]));
     const cyc = (i: number) => (beta() + OFF[i]) % 720;
     const word = (i: number) => (cyc(i) < 180 ? 'in' : cyc(i) < 360 ? 'squeeze' : cyc(i) < 540 ? 'one pushing' : 'out');
@@ -307,9 +307,9 @@ export const A3: Record<string, (k: Clk) => Built> = {
     const card = sig(0), sheet = sig(0), eng = sig(0);
     return {
       base: <Node>
-        <Mono text="1862" x={-160} y={-190} size={150} opacity={() => clamp(T() / 0.5) * (1 - card())} />
-        <Tag text="a French engineer" x={-160} y={-80} color={M} size={40} opacity={() => clamp((T() - 1.2) / 0.5) * (1 - card())} />
-        <Card x={-160} y={-170} w={900} h={250} lines={['ALPHONSE BEAU DE ROCHAS', 'French engineer', '1862: set out the cycle on paper']} sizes={[56, 38, 38]} colors={[C.chalk, C.muted, C.chalk]} opacity={card} />
+        <Mono text="1862" x={-180} y={-190} size={150} opacity={() => clamp(T() / 0.5) * (1 - card())} />
+        <Tag text="a French engineer" x={-180} y={-80} color={M} size={40} opacity={() => clamp((T() - 1.2) / 0.5) * (1 - card())} />
+        <Card x={-180} y={-170} w={900} h={250} lines={['ALPHONSE BEAU DE ROCHAS', 'French engineer', '1862: set out the cycle on paper']} sizes={[56, 38, 38]} colors={[C.chalk, C.muted, C.chalk]} opacity={card} />
         <Node x={-300} y={190} opacity={sheet}>
           <Rect width={300} height={170} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
           {[0, 1, 2, 3].map(i => <Rect x={-105 + i * 70} width={50} height={110} stroke={C.chalk} lineWidth={LW.hairline + 1} />)}

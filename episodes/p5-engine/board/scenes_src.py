@@ -86,7 +86,7 @@ SCENES = [
        ["ring splits on 'four strokes'", "180° tags on 'half a turn each'"], ["4 strokes × 180°"], ["2.2"]),
     sc("S06", 2, "at this speed each degree", "motion-canvas",
        "A magnifier sweeps onto the corner dial and isolates a single degree tick; label '1° = 0.24 ms' (a quarter of a thousandth of a second). The hand moves one tick and the clock digits barely change.",
-       ["magnifier on 'each degree'", "label on 'a quarter of a thousandth of a second'"], ["1° ≈ 0.24 ms"], ["1.3"]),
+       ["magnifier on 'at this speed'", "label on 'a quarter of a thousandth of a second'"], ["1° ≈ 0.24 ms"], ["1.3"]),
     sc("S07", 2, "stroke one intake", "blender",
        "HERO H1 cutaway, clip `intake` (5 s, constant crank speed, locked camera, 8 percent push): piston falls, intake valve open. Overlay: chapter tag 'STROKE 1 · INTAKE', 34 px mono 'OPEN' beside the intake valve, 'CLOSED' on the exhaust valve; dial arc 0-180 chalk, the rest muted. "
        "The flywheel rim ticks show the turn.",
@@ -302,7 +302,7 @@ SCENES = [
        ["1862 sheet on 'after that earlier description'", "stamp on 'patent was revoked'", "stamp settles on 'german patent'"], ["REVOKED 1886"], ["7.5"]),
     sc("S65", 6, "his patent was really about a layered charge", "motion-canvas",
        "A chamber section with violet charge in layers (dense near the plug, thinner away). Quote card in chalk: 'instead of an explosion ensuing, the flame passes gradually from one particle to another'.",
-       ["layers on 'layered charge of fuel'", "quote on 'instead of an explosion ensuing'", "particles hop layer to layer on 'one particle to another'"],
+       ["layers on 'his patent'", "quote on 'instead of an explosion ensuing'", "particles hop layer to layer on 'one particle to another'"],
        ["a layered charge", "flame passes gradually"], ["7.3", "7.4"]),
     sc("S66", 6, "today's engines don't use his layered charge", "motion-canvas",
        "The layers dissolve to a uniform violet charge; an orange wrinkled front still sweeps across. Tag 'a spreading flame, not a bang'.",

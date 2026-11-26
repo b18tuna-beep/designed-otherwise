@@ -1,5 +1,5 @@
 {
- "source_words": "audio/words.json",
+ "source_words": "audio/final.words.json",
  "fps": 30,
  "total_s": 582.84,
  "scenes": [
@@ -388,7 +388,7 @@
    "tool": "motion-canvas",
    "visual": "A magnifier sweeps onto the corner dial and isolates a single degree tick; label '1° = 0.24 ms' (a quarter of a thousandth of a second). The hand moves one tick and the clock digits barely change.",
    "changes": [
-    "magnifier on 'each degree'",
+    "magnifier on 'at this speed'",
     "label on 'a quarter of a thousandth of a second'"
    ],
    "text": [
@@ -399,12 +399,12 @@
    ],
    "clock_start": 0.0,
    "clock_end": 0.0,
-   "static_s": 3.0,
+   "static_s": 3.3,
    "start": 70.19,
    "end": 76.83,
    "duration": 6.64,
    "cues": [
-    1.23,
+    0.3,
     3.61
    ],
    "words": "at this speed each degree of that turn lasts about a quarter of a thousandth of a second",
@@ -2273,7 +2273,7 @@
    "tool": "motion-canvas",
    "visual": "A chamber section with violet charge in layers (dense near the plug, thinner away). Quote card in chalk: 'instead of an explosion ensuing, the flame passes gradually from one particle to another'.",
    "changes": [
-    "layers on 'layered charge of fuel'",
+    "layers on 'his patent'",
     "quote on 'instead of an explosion ensuing'",
     "particles hop layer to layer on 'one particle to another'"
    ],
@@ -2287,12 +2287,12 @@
    ],
    "clock_start": 540.0,
    "clock_end": 540.0,
-   "static_s": 4.2,
+   "static_s": 4.5,
    "start": 464.25,
    "end": 476.01,
    "duration": 11.76,
    "cues": [
-    1.97,
+    0.3,
     4.85,
     9.03
    ],

@@ -359,13 +359,19 @@ export const A2: Record<string, (k: Clk) => Built> = {
   },
   S38: () => {
     const k = sig(0), f = sig(0), w = sig(0);
+    // The labels keep a leader line to the front for the whole shot. The line ends on the wrinkled boundary of the growing ball
+    // (radius = e1_engine.py build_flame: 0.02 + 1.65 over 12 to 97 percent of the clip, 310 px per unit, tip at about (0, -135)),
+    // clamped to the chamber walls (x +-256, floor y 195) once the charge is full, so it never crosses the filled chamber.
+    const reach = () => { const u = clamp((T() / dur('S38') - 0.12) / 0.85); return 310 * (0.02 + 1.65 * u) * 0.72; };
+    const endL = (): [number, number] => [Math.max(-256, -reach()), Math.min(195, -135 + reach())];
+    const endR = (): [number, number] => [Math.min(256, reach()), Math.min(195, -135 + reach())];
     return {
       overlay: true,
       base: <Node>
         <Tag text="ZOOM · THE CHAMBER, NOT TO SCALE" x={-864} y={-430} anchor={[-1, 0]} size={34} />
         <Node opacity={k}><Tag text="kernel" x={-640} y={-150} /><Lead from={[-570, -150]} to={[-40, -125]} color={C.chalk} /></Node>
-        <Node opacity={f}><Tag text="flame front" x={-640} y={40} /><Lead from={[-560, 40]} to={[-200, 20]} color={C.chalk} opacity={() => 1 - clamp((T() / dur('S38') - 0.38) / 0.1)} /></Node>
-        <Node opacity={w}><Tag text="wrinkled by swirling air" x={650} y={100} /><Lead from={[490, 100]} to={[200, 60]} color={C.chalk} opacity={() => 1 - clamp((T() / dur('S38') - 0.38) / 0.1)} /></Node>
+        <Node opacity={f}><Tag text="flame front" x={-640} y={40} /><Line points={() => [[-560, 40], endL()]} stroke={C.chalk} lineWidth={LW.hairline + 1} lineCap="round" /></Node>
+        <Node opacity={w}><Tag text="wrinkled by swirling air" x={650} y={100} /><Line points={() => [[490, 100], endR()]} stroke={C.chalk} lineWidth={LW.hairline + 1} lineCap="round" /></Node>
       </Node>,
       steps: [to(k, 1, 0.5), to(f, 1, 0.5), to(w, 1, 0.5), () => (function* () { })()],
     };

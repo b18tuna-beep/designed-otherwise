@@ -4,7 +4,7 @@ Reference: `episodes/p1-refrigerator/renders/visual-qa*.md` (8 passes to 40/40).
 
 ## Steps
 1. Pull `video.mp4` from studio release `render-<job>` (`scripts/qa_review.sh jobs/<slug>` in the studio downloads it and makes frame sheets).
-2. `tools/board/qa_frames.py <video> episodes/<ep>/scenes/scenes.json <out>`: one strip per scene (after the cut, after each cue, before the next cut). Look at every strip.
+2. `tools/board/qa_frames.py <video> episodes/<ep>/scenes/scenes.json <out>`: one strip per scene (after the cut, after each cue, before the next cut). Look at every strip. The tool adds THE HINGE (3.2 s) to every scene from the first beat-2 scene on (cut read from scenes.json, length from `--checks checks.json` or 3.2 s; `--no-sting` for a silent episode.mp4). Before 2026-11-26 it ignored the sting and every strip after the cut was 3.2 s early (P5 QA 2 had to shift a copy of scenes.json by hand).
 3. Check cues against independent faster-whisper word times: each change lands on its word, 0 to 0.3 s early.
 4. Re-render, then compare the new final with the last pass frame by frame (96x54 greyscale) so untouched scenes are proven unchanged.
 5. Write `renders/visual-qa.md` + `.json` (keep the previous pass as `visual-qa-passN.*`).
