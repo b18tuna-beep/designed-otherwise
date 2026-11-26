@@ -1,0 +1,62 @@
+{
+ "episode": "p5-engine",
+ "pass": 3,
+ "date": "2026-11-26",
+ "release": "render-2026-12-p5-engine",
+ "run": "45854680835",
+ "assets_updated": "2026-11-26T16:13Z",
+ "verdict": "PASS",
+ "must_fix": [],
+ "requested": {
+  "S65_box_at_cut": "pass",
+  "S38_leaders": "pass",
+  "S52_one_pushing_clear": "pass",
+  "S63_card_1862_clear": "pass",
+  "S06_magnifier_on_speed": "pass",
+  "no_regression": "pass"
+ },
+ "automated": {
+  "lufs": -14.1,
+  "true_peak_dbtp": -1.71,
+  "clipping": false,
+  "captions": 254,
+  "caption_max_chars": 42,
+  "caption_multiline": 0,
+  "script_words_missing": 0,
+  "static_over_8s": [],
+  "bare_over_1_5s": [],
+  "clock_backwards": false,
+  "clock_0_128": false,
+  "lime_only_spark": true,
+  "blue": false,
+  "thumbnails": "not present"
+ },
+ "measurements": {
+  "S65_box_on_s": 467.8,
+  "S06_magnifier_start_s": 73.8,
+  "S06_word_speed_s": 73.94,
+  "S63_card_clock_gap_px": 28,
+  "S52_label_clock_gap_px": 55
+ },
+ "nits": [
+  "S35 278.1-282.0 SPARK label overlapped by caption: move caption down 16 px",
+  "S00f 29.0-35.2 'one cycle' over flywheel rim: move label down 40 px",
+  "S37 285.5-286.75 bare 1.25 s",
+  "lime electrode decision",
+  "sub-labels under 34 px"
+ ],
+ "listen_new": [
+  [
+   73.5,
+   74.5
+  ],
+  [
+   467.4,
+   470.0
+  ],
+  [
+   449.0,
+   452.5
+  ]
+ ]
+}
