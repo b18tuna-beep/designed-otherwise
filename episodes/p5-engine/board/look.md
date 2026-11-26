@@ -72,3 +72,8 @@ Total about 33 s, 990 frames, about 3.3 runner hours; split across a 30 runner m
 2. Bible reserves violet for the refrigerant. P5 reuses the `refrigerant` token as the air-fuel charge. Recommend adding a `charge` alias in `tokens.json` (same hex) so code reads a name that matches the meaning; do not recolour.
 3. The bible says "exactly three meaningful colors: heat, cold, refrigerant". P5 uses heat, violet and lime and never cold; blue is unused.
 4. Clock is "real time" but the video runs 9 min for a 0.171 s cycle; the freeze in chapter 6 is the only stoppage and the dial still shows true angle.
+
+## Showrunner rulings (2026-11-25)
+- Three Blender heroes approved. Precedent: P4 ran 8 Blender scenes; the bible's "one or two 3D shots" was written for P1. Every hero keeps its 2D fallback.
+- Violet = the working substance of the episode (P4 precedent: the pins and shear line). Use the `refrigerant` token hex as is; no `charge` alias, tokens.json stays untouched.
+- The three meaningful colours are per episode (README "Colour meanings"). P5: heat, violet, lime (spark only); cold unused. Heat and lime keep their fixed meanings.
