@@ -360,7 +360,7 @@ export const A1: Record<string, (k: Clk) => Built> = {
     return {
       base: <Node>
         <Engine2D x={CX} y={CY} th={180} hl={{piston: 0.35, rod: 0.35, crank: 0.35, fly: 0.35, valves: 0.35, plug: 0.35, block: 0.35}} />
-        <Mono text="work made so far: 0" x={0} y={290} size={52} opacity={lab} />
+        <Mono text="work made so far: 0" x={330} y={100} size={46} opacity={lab} />
       </Node>,
       steps: [
         function* () { yield* k.grow(1, 0.9, ease); yield* waitFor(2.4); yield* k.grow(0, 0.8, ease); },

@@ -41,10 +41,10 @@ export const A3: Record<string, (k: Clk) => Built> = {
         <Node x={330} y={90}>
           <Circle size={300} stroke={C.grid} lineWidth={LW.structure} />
           <Circle size={300} startAngle={90} endAngle={180} stroke={C.chalk} lineWidth={LW.emphasis + 6} opacity={arc} />
-          <Tag text="POWER" x={-120} y={170} opacity={arc} />
+          <Tag text="POWER" x={0} y={0} opacity={arc} />
         </Node>
         <Mono text="work made: +" x={300} y={-110} size={52} opacity={plus} />
-        <Lab text="ONLY HERE" x={300} y={300} size={72} opacity={only} />
+        <Lab text="ONLY HERE" x={330} y={330} size={72} opacity={only} />
       </Node>,
       steps: [to(arc, 1, 0.6), function* () { yield* all(plus(1, 0.5), only(1, 0.5)); }],
     };
@@ -103,8 +103,8 @@ export const A3: Record<string, (k: Clk) => Built> = {
       base: <Node>
         {[0, 1, 2, 3].map(i => (
           <Node y={-130 + i * 110} opacity={() => clamp(c() * 4 - i)}>
-            <Rect x={-690} width={70} height={60} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
-            <Txt text={String([1, 3, 4, 2][i])} x={-690} fontFamily="IBM Plex Mono" fontWeight={500} fontSize={34} fill={C.chalk} />
+            <Rect x={-650} width={70} height={60} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
+            <Txt text={String([1, 3, 4, 2][i])} x={-650} fontFamily="IBM Plex Mono" fontWeight={500} fontSize={34} fill={C.chalk} />
           </Node>
         ))}
         {[0, 1, 2, 3].map(i => <Line points={[[-600, -100 + i * 110], [400, -100 + i * 110]]} stroke={C.grid} lineWidth={LW.structure} />)}
@@ -149,7 +149,7 @@ export const A3: Record<string, (k: Clk) => Built> = {
         <Tag text="FIRING ORDER 1-3-4-2" x={-864} y={-430} anchor={[-1, 0]} size={40} opacity={t0} />
         <Tag text="each on a different stroke" x={-864} y={340} anchor={[-1, 0]} size={34} opacity={t1} />
         <Tag text="one pushing" x={400} y={340} size={34} opacity={t2} />
-        <Tag text="in · squeeze · out" x={-100} y={-300} size={34} color={M} opacity={t3} />
+        <Tag text="in · squeeze · out" x={0} y={410} size={34} color={M} opacity={t3} />
       </Node>,
       steps: [to(t0, 1, 0.5), to(t1, 1, 0.5), to(t2, 1, 0.5), to(t3, 1, 0.5)],
     };
@@ -280,12 +280,12 @@ export const A3: Record<string, (k: Clk) => Built> = {
     const sl = sig(0);
     return {
       base: <Node>
-        <Photo name="otto-portrait.jpg" x={() => -80 - 340 * sl()} y={-40} w={() => 520 - 160 * sl()} h={390} />
+        <Photo name="otto-portrait.jpg" x={() => -80 - 340 * sl()} y={-40} w={400} h={300} />
         <Node opacity={sl} x={260} y={-30}>
           <Rect width={420} height={310} radius={14} stroke={C.muted} lineWidth={LW.structure} lineDash={[16, 12]} />
           <Txt text="first?" fontFamily="Archivo" fontWeight={600} fontSize={96} fill={C.muted} />
         </Node>
-        <Tag text="Nikolaus Otto" x={() => -80 - 340 * sl()} y={185} />
+        <Tag text="Nikolaus Otto" x={() => -80 - 340 * sl()} y={150} />
       </Node>,
       steps: [to(sl, 1, 0.9)],
     };
@@ -312,14 +312,14 @@ export const A3: Record<string, (k: Clk) => Built> = {
     const sheet = sig(0), stamp = sig(0), settle = sig(0);
     return {
       base: <Node>
-        <Node x={-340} y={30} opacity={sheet}>
+        <Node x={-330} y={30} opacity={sheet}>
           <Rect width={330} height={430} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
           <Mono text="1862" y={-120} size={60} />
           <Tag text="brought to light" y={40} color={M} size={30} />
         </Node>
-        <Node x={170} y={30}>
-          <Rect width={330} height={430} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
-          <Txt text="Otto, German patent" y={-120} fontFamily="Archivo" fontWeight={600} fontSize={36} fill={C.chalk} />
+        <Node x={130} y={30}>
+          <Rect width={420} height={430} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
+          <Txt text="Otto, German patent" y={-120} fontFamily="Archivo" fontWeight={600} fontSize={34} fill={C.chalk} />
           <Node rotation={-18} scale={() => 1.6 - 0.6 * settle()} opacity={stamp} y={40}>
             <Rect width={300} height={90} radius={6} stroke={C.muted} lineWidth={LW.emphasis} />
             <Mono text="REVOKED 1886" size={38} color={C.muted} />
@@ -353,8 +353,10 @@ export const A3: Record<string, (k: Clk) => Built> = {
       base: <Node>
         <Node x={-100} y={30}>
           <Rect width={420} height={300} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
-          {[0, 1, 2, 3, 4].map(i => <Dots y={() => (-120 + i * 60) * (1 - mix()) + (0) * mix()} w={400} h={() => 44 + 256 * mix() / 5} n={12} seed={i + 2} opacity={() => 1} />)}
-          <Circle y={-130} size={() => 20 + 560 * fr()} fill={rgba(C.heat_soft, 0.35)} stroke={C.heat} lineWidth={LW.emphasis} opacity={() => (fr() > 0.01 ? 1 : 0)} />
+          <Rect width={420} height={300} clip>
+            {[0, 1, 2, 3, 4].map(i => <Dots y={() => (-120 + i * 60) * (1 - mix()) + (0) * mix()} w={400} h={() => 44 + 256 * mix() / 5} n={12} seed={i + 2} opacity={() => 1} />)}
+            <Circle y={-130} size={() => 20 + 560 * fr()} fill={rgba(C.heat_soft, 0.35)} stroke={C.heat} lineWidth={LW.emphasis} opacity={() => (fr() > 0.01 ? 1 : 0)} />
+          </Rect>
         </Node>
         <Lab text="a spreading flame, not a bang" x={-100} y={270} size={52} opacity={tg} />
       </Node>,
@@ -520,7 +522,7 @@ export const A3: Record<string, (k: Clk) => Built> = {
       base: <Node>
         <Circle x={-100} y={20} size={420} stroke={C.grid} lineWidth={LW.structure} />
         <Ring x={-100} y={20} r={210} p={ring} />
-        <Lab text="ONE CYCLE" x={-100} y={20} size={72} opacity={cap} />
+        <Lab text="ONE CYCLE" x={-100} y={20} size={52} opacity={cap} />
       </Node>,
       steps: [function* () { yield* all(ring(1, 1.6, ease), delay(0.8, cap(1, 0.6))); }],
     };

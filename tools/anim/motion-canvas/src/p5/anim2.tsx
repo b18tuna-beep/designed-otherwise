@@ -12,8 +12,10 @@ const HC = EP.head; // head underside, px relative to the cutaway origin
 const Chamber = ({x = 0, y = 0, w = 300, h = 300, n = 40, seed = 3, hot = 0, label = '', opacity = 1, kids = null as any}: any) => (
   <Node x={x} y={y} opacity={opacity}>
     <Rect width={w} height={h} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
-    <Dots y={0} w={w} h={h} n={n} seed={seed} edge={hot !== 0} />
-    {kids}
+    <Rect width={w} height={h} clip>
+      <Dots y={0} w={w} h={h} n={n} seed={seed} edge={hot !== 0} />
+      {kids}
+    </Rect>
     {label ? <Tag text={label} y={-val(h) / 2 - 40} color={M} /> : null}
   </Node>
 );
@@ -57,8 +59,8 @@ export const A2: Record<string, (k: Clk) => Built> = {
         <Tag text="volume left at the top" x={110} y={-190} opacity={b} />
         <Node opacity={r}>
           <Line points={[[-180, 20], [-20, 20]]} stroke={C.chalk} lineWidth={LW.structure} lineDash={[12, 10]} />
-          <Lab text="compression ratio" x={-100} y={110} size={TY.small_label} />
-          <Mono text="bottom ÷ top" x={-100} y={170} size={34} color={M} />
+          <Lab text="compression ratio" x={110} y={110} size={TY.small_label} />
+          <Mono text="bottom ÷ top" x={110} y={165} size={34} color={M} />
         </Node>
       </Node>,
       steps: [to(a, 1, 0.6), to(b, 1, 0.6), to(r, 1, 0.6)],
@@ -204,9 +206,9 @@ export const A2: Record<string, (k: Clk) => Built> = {
         <Rect x={() => -60 - 380 + 380 * 0.42 * fill()} y={20} width={() => 760 * 0.42 * fill()} height={64} fill={rgba(C.chalk, 0.4)} />
         <Tag text="knock resistance" x={-60} y={-70} />
         <Node x={() => -60 - 380 + 760 * 0.42} y={20} opacity={plate}>
-          <Rect y={-100} width={110} height={70} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
-          <Mono y={-100} text="87" size={50} />
-          <Line points={[[0, -62], [0, -40]]} stroke={C.chalk} lineWidth={LW.structure} />
+          <Rect y={110} width={110} height={70} radius={8} stroke={C.chalk} lineWidth={LW.structure} fill={C.panel} />
+          <Mono y={110} text="87" size={50} />
+          <Line points={[[0, 75], [0, 45]]} stroke={C.chalk} lineWidth={LW.structure} />
         </Node>
       </Node>,
       steps: [to(fill, 1, 1.4), to(plate, 1, 0.5)],
@@ -291,11 +293,11 @@ export const A2: Record<string, (k: Clk) => Built> = {
       base: <Node>
         <Engine2D x={CX} y={CY} th={360} hl={{piston: 0.35, rod: 0.35, crank: 0.35, fly: 0.35, valves: 0.35, plug: 0.35, block: 0.35}} />
         <Node opacity={half}>
-          <Ring x={300} y={60} r={150} p={0.5} />
-          <Circle x={300} y={60} size={300} stroke={C.grid} lineWidth={LW.structure} />
-          <Tag text="half the cycle" x={300} y={260} />
+          <Ring x={330} y={190} r={110} p={0.5} />
+          <Circle x={330} y={190} size={220} stroke={C.grid} lineWidth={LW.structure} />
+          <Tag text="half the cycle" x={330} y={340} />
         </Node>
-        <Mono text="work made so far: 0" x={0} y={330} size={46} opacity={z} />
+        <Mono text="work made so far: 0" x={330} y={0} size={40} opacity={z} />
       </Node>,
       steps: [function* () { yield* k.grow(1, 0.9, ease); yield* waitFor(2.4); yield* k.grow(0, 0.8, ease); }, to(half, 1, 0.6), to(z, 1, 0.5)],
     };
@@ -361,9 +363,9 @@ export const A2: Record<string, (k: Clk) => Built> = {
       overlay: true,
       base: <Node>
         <Tag text="ZOOM · THE CHAMBER, NOT TO SCALE" x={-864} y={-430} anchor={[-1, 0]} size={34} />
-        <Node opacity={k}><Tag text="kernel" x={-640} y={-60} /><Lead from={[-560, -60]} to={[-60, -90]} color={C.chalk} /></Node>
-        <Node opacity={f}><Tag text="flame front" x={-640} y={110} /><Lead from={[-560, 110]} to={[-250, 40]} color={C.chalk} /></Node>
-        <Node opacity={w}><Tag text="wrinkled by swirling air" x={640} y={-120} /><Lead from={[460, -120]} to={[300, -40]} color={C.chalk} /></Node>
+        <Node opacity={k}><Tag text="kernel" x={-640} y={-150} /><Lead from={[-570, -150]} to={[-40, -125]} color={C.chalk} /></Node>
+        <Node opacity={f}><Tag text="flame front" x={-640} y={40} /><Lead from={[-560, 40]} to={[-200, 20]} color={C.chalk} /></Node>
+        <Node opacity={w}><Tag text="wrinkled by swirling air" x={650} y={100} /><Lead from={[490, 100]} to={[200, 60]} color={C.chalk} /></Node>
       </Node>,
       steps: [to(k, 1, 0.5), to(f, 1, 0.5), to(w, 1, 0.5), () => (function* () { })()],
     };
@@ -386,7 +388,7 @@ export const A2: Record<string, (k: Clk) => Built> = {
           <Circle x={-W / 2 + (half / 1.15) * W} y={H / 2 - H * f(half)} size={24} fill={C.chalk} />
           <Mono text="50%" x={-W / 2 - 60} y={0} size={34} color={M} />
         </Node>
-        <Node opacity={lab}><Mono text="≈ 25° of crank rotation" x={160} y={-70} size={40} /></Node>
+        <Node opacity={lab}><Mono text="≈ 25° of crank rotation" x={170} y={110} size={38} /></Node>
         <Tag text="MIT figures, modern engine" x={0} y={H / 2 + 110} color={M} size={30} opacity={cv} />
       </Node>,
       steps: [to(cv, 1, 2.0), to(mk, 1, 0.6), to(lab, 1, 0.6)],
