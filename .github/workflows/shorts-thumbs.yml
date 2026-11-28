@@ -9,6 +9,7 @@ on:
     inputs:
       episode: {description: "Episode folder name", default: p5-engine}
       job: {description: "Studio job slug", default: 2026-12-p5-engine}
+      shorts: {description: "Cut and release the 5 Shorts", type: boolean, default: true}
       thumbs: {description: "Also build thumbnails (p5 only)", type: boolean, default: true}
       thumb_times: {description: "Video seconds for thumb-1,2,3", default: "348,380,91"}
 
@@ -31,12 +32,14 @@ jobs:
           bash tools/ci/studio.sh fetch "render-$JOB" in video.mp4
           bash tools/ci/studio.sh fetch "render-$JOB" in captions.srt
       - name: End card
+        if: inputs.shorts
         run: |
           python3 tools/intro/hinge.py out/endcard --format vertical-end
           python3 tools/intro/sonic_logo.py out/logo.wav
           ffmpeg -loglevel error -framerate 30 -i out/endcard/f%04d.png -i out/logo.wav -filter_complex "[1:a]volume=-3dB[a]" -map 0:v -map "[a]" \
             -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest out/endcard.mp4
       - name: Shorts
+        if: inputs.shorts
         env: {EP: "${{ inputs.episode }}"}
         run: |
           python3 tools/shorts/make_shorts.py in/video.mp4 in/captions.srt episodes/$EP/final/shorts.json out/shorts out/endcard.mp4
@@ -49,9 +52,9 @@ jobs:
           i=1; for t in ${TIMES//,/ }; do ffmpeg -loglevel error -y -ss "$t" -i in/video.mp4 -frames:v 1 out/frames/f$i.png; i=$((i+1)); done
           python3 tools/board/thumbs_p5.py out/frames/f1.png out/frames/f2.png out/frames/f3.png out/thumbs
       - name: Hand to the studio
-        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}", JOB: "${{ inputs.job }}", EP: "${{ inputs.episode }}", DO_THUMBS: "${{ inputs.thumbs }}"}
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}", JOB: "${{ inputs.job }}", EP: "${{ inputs.episode }}", DO_THUMBS: "${{ inputs.thumbs }}", DO_SHORTS: "${{ inputs.shorts }}"}
         run: |
-          bash tools/ci/studio.sh release "render-$JOB" out/shorts/short-s*.mp4
+          if [ "$DO_SHORTS" = "true" ]; then bash tools/ci/studio.sh release "render-$JOB" out/shorts/short-s*.mp4; fi
           if [ "$DO_THUMBS" = "true" ]; then
             bash tools/ci/studio.sh release "render-$JOB" out/thumbs/thumb-1.jpg out/thumbs/thumb-2.jpg out/thumbs/thumb-3.jpg
             bash tools/ci/studio.sh preview "board/$EP/thumbs" out/thumbs/thumb-1-320.jpg out/thumbs/thumb-2-320.jpg out/thumbs/thumb-3-320.jpg out/thumbs/mobile-check.png
