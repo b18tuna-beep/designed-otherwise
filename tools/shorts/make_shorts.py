@@ -57,7 +57,7 @@ def background(title, path, glow=(70, 32, 8)):
     f3 = ImageFont.truetype(SEMI, 40)
     d.text((fx + 130, 1668), "DESIGNED", font=f2, fill=(236, 231, 220, 255))
     d.text((fx + 130, 1712), "OTHERWISE", font=f3, fill=(236, 231, 220, 255))
-    d.text((W / 2, 1800), "Full explainer on the channel", font=ImageFont.truetype(MED, 34), fill=(139, 149, 163, 255), anchor="ma")
+    d.text((W / 2, 1536), "Full explainer on the channel", font=ImageFont.truetype(MED, 34), fill=(139, 149, 163, 255), anchor="ma")
     im.convert("RGB").save(path)
 
 

@@ -11,7 +11,7 @@ on:
       job: {description: "Studio job slug", default: 2026-12-p5-engine}
       shorts: {description: "Cut and release the 5 Shorts", type: boolean, default: true}
       thumbs: {description: "Also build thumbnails (p5 only)", type: boolean, default: true}
-      thumb_times: {description: "Video seconds for thumb-1,2,3", default: "348,380,91"}
+      thumb_times: {description: "Video seconds for thumb-1,2,3", default: "344,380,91"}
 
 permissions:
   contents: read

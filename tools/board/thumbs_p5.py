@@ -3,7 +3,7 @@
     python tools/board/thumbs_p5.py <frame_348.png> <frame_380.png> <frame_91.png> <out_dir>
 
 Title: "Your Car Engine Is Being Carried Right Now". Thumbnails never repeat its words; max 3 words, readable at 160 px.
-1 "ONLY NOW?"        t=348 s  the one power stroke (orange charge)
+1 "ONLY NOW?"        t=344 s  the one power stroke (orange charge)
 2 "THE OTHER 3?"     t=380 s  four-cylinder crank, one piston lit
 3 "NOTHING MADE YET" t=91 s   empty intake wireframe
 Only the mechanism is cropped out of the frame (scene labels, header text, clock and dial are left behind: unreadable at
@@ -64,7 +64,7 @@ def main():
     # 1: cylinder + pressure bar, scaled to ~0.8, right of the words; warm light only behind the charge
     s1 = scene(f1, (430, 100, 1090, 1000), 0.76, (690, 20),
                [(940, 300, 420, slate, 0.55), (940, 250, 150, rgb(T["heat_soft"]), 0.9)],
-               paint=[(850, 575, 1035, 648), (100, 80, 520, 140)], keep=(762, 757, 170))
+               paint=[(100, 80, 520, 140)])
     # 2: four pistons + crank, pushed lower/right so the words own the upper left
     s2 = scene(f2, (140, 300, 1420, 1040), 0.80, (270, 140), [(800, 450, 560, slate, 0.55)], gain=1.45)
     # 3: empty intake wireframe
