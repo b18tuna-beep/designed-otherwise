@@ -1,0 +1,32 @@
+{
+ "s1": {
+  "title": "Your idling engine is being carried",
+  "description": "At a red light, only one stroke in four actually pushes. What does the work the rest of the time?\n\n#Shorts #howthingswork #cars",
+  "start": 0.0,
+  "end": 35.2
+ },
+ "s2": {
+  "title": "Why the spark fires early",
+  "description": "Burning takes time. The spark starts a kernel that grows into a flame, so it fires before the piston reaches the top.\n\n#Shorts #howthingswork #cars",
+  "start": 273.8,
+  "end": 314.86
+ },
+ "s3": {
+  "title": "The only stroke that does any work",
+  "description": "One stroke in four makes power. The flywheel and the other cylinders carry the rest.\n\n#Shorts #howthingswork #cars",
+  "start": 341.6,
+  "end": 390.4
+ },
+ "s4": {
+  "title": "Otto built it. Then his patent was revoked.",
+  "description": "A French engineer had described the four-stroke cycle in 1862. In 1886 Otto's German patent was revoked.\n\n#Shorts #howthingswork #cars",
+  "start": 427.4,
+  "end": 466.8
+ },
+ "s5": {
+  "title": "Where the fuel energy actually goes",
+  "description": "Only about a fifth of the energy in the fuel moves a typical gasoline car. Most of the rest leaves as heat.\n\n#Shorts #howthingswork #cars",
+  "start": 516.1,
+  "end": 551.0
+ }
+}

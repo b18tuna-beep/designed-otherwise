@@ -1,0 +1,58 @@
+name: Shorts and thumbnails
+
+# Cuts the 5 vertical Shorts (tools/shorts/make_shorts.py, episodes/<ep>/final/shorts.json) and builds the 3 thumbnails
+# (tools/board/thumbs_<ep prefix>.py) from the finished video in the PRIVATE studio release render-<job>.
+# Results go back ONLY to that release (short-s1..s5.mp4, thumb-1..3.jpg); 320 px thumb previews go to the studio previews branch.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode: {description: "Episode folder name", default: p5-engine}
+      job: {description: "Studio job slug", default: 2026-12-p5-engine}
+      thumbs: {description: "Also build thumbnails (p5 only)", type: boolean, default: true}
+      thumb_times: {description: "Video seconds for thumb-1,2,3", default: "348,380,91"}
+
+permissions:
+  contents: read
+
+jobs:
+  cut:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          pip install -q numpy scipy pillow shapely
+      - name: Fetch the video
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}", JOB: "${{ inputs.job }}"}
+        run: |
+          bash tools/ci/studio.sh fetch "render-$JOB" in video.mp4
+          bash tools/ci/studio.sh fetch "render-$JOB" in captions.srt
+      - name: End card
+        run: |
+          python3 tools/intro/hinge.py out/endcard --format vertical-end
+          python3 tools/intro/sonic_logo.py out/logo.wav
+          ffmpeg -loglevel error -framerate 30 -i out/endcard/f%04d.png -i out/logo.wav -filter_complex "[1:a]volume=-3dB[a]" -map 0:v -map "[a]" \
+            -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest out/endcard.mp4
+      - name: Shorts
+        env: {EP: "${{ inputs.episode }}"}
+        run: |
+          python3 tools/shorts/make_shorts.py in/video.mp4 in/captions.srt episodes/$EP/final/shorts.json out/shorts out/endcard.mp4
+          for f in out/shorts/short-*.mp4; do ffprobe -v error -show_entries format=duration -of csv=p=0 "$f" | xargs echo "$f"; done
+      - name: Thumbnails
+        if: inputs.thumbs
+        env: {TIMES: "${{ inputs.thumb_times }}"}
+        run: |
+          mkdir -p out/frames out/thumbs
+          i=1; for t in ${TIMES//,/ }; do ffmpeg -loglevel error -y -ss "$t" -i in/video.mp4 -frames:v 1 out/frames/f$i.png; i=$((i+1)); done
+          python3 tools/board/thumbs_p5.py out/frames/f1.png out/frames/f2.png out/frames/f3.png out/thumbs
+      - name: Hand to the studio
+        env: {STUDIO_TOKEN: "${{ secrets.STUDIO_TOKEN }}", JOB: "${{ inputs.job }}", EP: "${{ inputs.episode }}", DO_THUMBS: "${{ inputs.thumbs }}"}
+        run: |
+          bash tools/ci/studio.sh release "render-$JOB" out/shorts/short-s*.mp4
+          if [ "$DO_THUMBS" = "true" ]; then
+            bash tools/ci/studio.sh release "render-$JOB" out/thumbs/thumb-1.jpg out/thumbs/thumb-2.jpg out/thumbs/thumb-3.jpg
+            bash tools/ci/studio.sh preview "board/$EP/thumbs" out/thumbs/thumb-1-320.jpg out/thumbs/thumb-2-320.jpg out/thumbs/thumb-3-320.jpg out/thumbs/mobile-check.png
+          fi
