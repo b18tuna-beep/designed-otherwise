@@ -1,0 +1,19 @@
+{
+ "pass": 4,
+ "date": "2026-11-28",
+ "video": "PASS",
+ "shorts": "PASS",
+ "thumbnails": "FAIL",
+ "fixes": [
+  {
+   "file": "thumb-1.jpg",
+   "issue": "cream bar x1066-1103 y200-381 and dark notch x1010-1070 y380-440 left from blanked label/gauge",
+   "change": "rebuild from frame without gauge/label or mask both with matching background and wall texture, rerun shorts-thumbs for thumb-1"
+  }
+ ],
+ "nits": [
+  "shorts endcard line 'Full explainer on the channel' at ~95% height inside Shorts UI overlay",
+  "thumb-3 is flat diagram, against packaging.md",
+  "small labels in Shorts band"
+ ]
+}
