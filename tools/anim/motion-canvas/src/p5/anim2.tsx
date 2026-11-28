@@ -324,7 +324,7 @@ export const A2: Record<string, (k: Clk) => Built> = {
           shadowColor={C.electric} shadowBlur={() => 34 * arc()} opacity={arc} />
         <Trace x={480} y={90} w={640} h={360} spark={-20} mark={mk} />
         <Tag text="SPARK" x={480 + trackPx(640, -20)} y={90 + 215} color={C.electric} opacity={mk} />
-        <Tag text="a few tens of degrees early" x={480} y={340} color={M} opacity={lab} />
+        <Tag text="a few tens of degrees early" x={480} y={356} color={M} opacity={lab} />
       </Node>,
       steps: [function* () { yield* arc(1, 0.1); yield* waitFor(0.2); yield* arc(0.5, 0.5); }, function* () { yield* all(mk(1, 0.4), lab(1, 0.5)); }],
     };

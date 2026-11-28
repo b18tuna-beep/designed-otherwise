@@ -84,7 +84,7 @@ export const A1: Record<string, (k: Clk) => Built> = {
     return {
       base: <Node>
         <Engine2D x={-330} y={20} s={0.8} th={0} opacity={() => Math.max(cyl(), clamp((T() - 0.3) / 0.9))} />
-        <Lab text="one cycle" x={-330} y={300} size={56} opacity={one} />
+        <Lab text="one cycle" x={-330} y={340} size={56} opacity={one} />
         <Node x={420} y={20}>
           <Circle size={340} stroke={C.grid} lineWidth={LW.structure} />
           <Ring r={170} p={p} />
